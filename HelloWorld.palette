@@ -1,20 +1,808 @@
-{ "class": "go.GraphLinksModel",
-  "copiesArrays": true,
-  "copiesArrayObjects": true,
-  "modelData": {"repo":"ICRAR/dlg_test_repo", "sha":"", "fileType":"palette", "git_url":"", "filePath":"HelloWorld.palette"},
-  "nodeDataArray": [ 
-{"category":"Start", "outputPorts":[], "isData":false, "fields":[], "colour":" #229954", "canHaveOutputs":true, "canHaveInputs":false, "categoryType":"ControlComponent", "isGroup":false, "key":-1, "text":"Enter label", "type":"Start", "inputPorts":[]},
-{"category":"End", "outputPorts":[], "isData":false, "fields":[], "colour":" #CB4335", "canHaveOutputs":false, "canHaveInputs":true, "categoryType":"ControlComponent", "isGroup":false, "key":-10, "text":"Enter label", "type":"End", "inputPorts":[ {"IdText":"event", "Id":"308f6ebb-07e8-47eb-b30a-31ca91f54a69"} ]},
-{"category":"memory", "outputPorts":[], "isData":true, "fields":[ {"text":"Data volume", "name":"data_volume", "value":"5"},{"text":"Group end", "name":"group_end", "value":"0"} ], "colour":" #394BB2", "canHaveOutputs":true, "canHaveInputs":true, "categoryType":"DataDrop", "shape":"Card", "isGroup":false, "key":-4, "text":"Enter label", "type":"Memory Drop", "inputPorts":[]},
-{"category":"file", "outputPorts":[], "isData":true, "fields":[ {"text":"Data volume", "name":"data_volume", "value":"5"},{"text":"Group end", "name":"group_end", "value":"0"},{"text":"Check file path exists", "name":"check_filepath_exists", "value":"1"},{"text":"File path", "name":"filepath", "value":""},{"text":"Directory name", "name":"dirname", "value":""} ], "colour":" #394BB2", "canHaveOutputs":true, "canHaveInputs":true, "categoryType":"DataDrop", "shape":"Card", "isGroup":false, "key":-5, "text":"Enter label", "type":"File Drop", "inputPorts":[]},
-{"category":"s3", "outputPorts":[], "isData":true, "fields":[ {"text":"Data volume", "name":"data_volume", "value":"5"},{"text":"Group end", "name":"group_end", "value":"0"} ], "colour":" #394BB2", "canHaveOutputs":true, "canHaveInputs":true, "categoryType":"DataDrop", "shape":"Card", "isGroup":false, "key":-6, "text":"Enter label", "type":"S3 Drop", "inputPorts":[]},
-{"category":"ngas", "outputPorts":[], "isData":true, "fields":[ {"text":"Data volume", "name":"data_volume", "value":"5"},{"text":"Group end", "name":"group_end", "value":"0"} ], "colour":" #394BB2", "canHaveOutputs":true, "canHaveInputs":true, "categoryType":"DataDrop", "shape":"Card", "isGroup":false, "key":-7, "text":"Enter label", "type":"NGAS Drop", "inputPorts":[]},
-{"category":"Comment", "outputPorts":[], "isData":false, "fields":[], "colour":" #799938", "canHaveOutputs":false, "canHaveInputs":false, "categoryType":"Other", "shape":"File", "isGroup":false, "key":-12, "text":"Enter comment", "type":"Comment", "inputPorts":[]},
-{"category":"Description", "outputPorts":[], "isData":false, "fields":[ {"text":"Description", "value":""} ], "colour":" #9b3065", "canHaveOutputs":false, "canHaveInputs":false, "categoryType":"Other", "isGroup":false, "key":-21, "text":"Enter label", "type":"Graph Description", "inputPorts":[]},
-{"category":"Component", "loc":"163.609375 95", "outputPorts":[ {"IdText":"event", "Id":"64c1fc46-305b-45fd-945c-070038cf1e49"} ], "isData":false, "fields":[ {"text":"Execution time", "name":"execution_time", "value":"5"},{"text":"Num CPUs", "name":"num_cpus", "value":"1"},{"text":"Group start", "name":"group_start", "value":"0"},{"text":"Appclass", "name":"appclass", "value":"apps.pyfunc.PyFuncApp"},{"text":"Arg01", "name":"Arg01", "value":""},{"text":"Arg02", "name":"Arg02", "value":""},{"text":"Arg03", "name":"Arg03", "value":""},{"text":"Arg04", "name":"Arg04", "value":""},{"text":"Arg05", "name":"Arg05", "value":""},{"text":"Arg06", "name":"Arg06", "value":""},{"text":"Arg07", "name":"Arg07", "value":""},{"text":"Arg08", "name":"Arg08", "value":""},{"text":"Arg09", "name":"Arg09", "value":""},{"text":"Arg10", "name":"Arg10", "value":""} ], "colour":" #3498DB", "canHaveOutputs":true, "canHaveInputs":true, "categoryType":"ApplicationDrop", "isGroup":false, "key":-18, "text":"Python Function", "type":"Python App", "inputPorts":[ {"IdText":"event", "Id":"c7c75304-9e9b-411e-8ef8-6b453147fc88"} ]},
-{"category":"Component", "loc":"271.609375 217", "outputPorts":[ {"IdText":"list", "Id":"output_list"},{"IdText":"event", "Id":"3c65f92b-b5da-412a-ad03-54973b14a0f0"} ], "isData":false, "fields":[ {"text":"Execution time", "name":"execution_time", "value":"5"},{"text":"Num CPUs", "name":"num_cpus", "value":"1"},{"text":"Group start", "name":"group_start", "value":"0"},{"text":"Appclass", "name":"appclass", "value":"apps.pyfunc.PyFuncApp"},{"text":"Arg01", "name":"Arg01", "value":"urllib2.urlopen"},{"text":"Arg02", "name":"Arg02", "value":""},{"text":"Arg03", "name":"Arg03", "value":""},{"text":"Arg04", "name":"Arg04", "value":""},{"text":"Arg05", "name":"Arg05", "value":""},{"text":"Arg06", "name":"Arg06", "value":""},{"text":"Arg07", "name":"Arg07", "value":""},{"text":"Arg08", "name":"Arg08", "value":""},{"text":"Arg09", "name":"Arg09", "value":""},{"text":"Arg10", "name":"Arg10", "value":""} ], "colour":" #3498DB", "canHaveOutputs":true, "canHaveInputs":true, "categoryType":"ApplicationDrop", "isGroup":false, "key":-19, "text":"urlopen", "type":"Python App", "inputPorts":[ {"IdText":"string", "Id":"input_string"},{"IdText":"event", "Id":"2c578ae5-dcbc-4ceb-9382-4fa728b7e142"} ]},
-{"category":"Component", "loc":"125.28125 100", "outputPorts":[ {"IdText":"dlg_out", "Id":"output_dlg_out"},{"IdText":"event", "Id":"66508f63-17f0-4734-92fd-47a34105d94a"} ], "isData":false, "fields":[ {"text":"Execution time", "name":"execution_time", "value":"5"},{"text":"Num CPUs", "name":"num_cpus", "value":"1"},{"text":"Group start", "name":"group_start", "value":"0"},{"text":"Appclass", "name":"appclass", "value":"apps.archiving.NgasArchivingApp"},{"text":"Arg01", "name":"Arg01", "value":"dummy_in"},{"text":"Arg02", "name":"Arg02", "value":"dummy_out"},{"text":"Arg03", "name":"Arg03", "value":"ngasSrv=ngas.ddns.net"},{"text":"Arg04", "name":"Arg04", "value":"ngasPort=7777"},{"text":"Arg05", "name":"Arg05", "value":"ngasTimeout=2."},{"text":"Arg06", "name":"Arg06", "value":"ngasConnectTimeout=2."},{"text":"Arg07", "name":"Arg07", "value":""},{"text":"Arg08", "name":"Arg08", "value":""},{"text":"Arg09", "name":"Arg09", "value":""},{"text":"Arg10", "name":"Arg10", "value":""} ], "colour":" #3498DB", "canHaveOutputs":true, "canHaveInputs":true, "categoryType":"ApplicationDrop", "isGroup":false, "key":-20, "text":"NGAS Archiving", "type":"Python App", "inputPorts":[ {"IdText":"dlg_in", "Id":"input_dlg_in"},{"IdText":"file", "Id":"input_file"},{"IdText":"event", "Id":"6a8119ef-f323-471c-b406-9106d4de974d"} ]},
-{"category":"Component", "type":"Python App", "isData":false, "outputPorts":[ {"IdText":"data", "Id":"323150da-ad2c-4162-8499-75c1f2e26e9f"} ], "text":"Sleep", "colour":" #3498DB", "canHaveOutputs":true, "canHaveInputs":true, "isGroup":false, "key":-2, "fields":[ {"text":"Execution time", "name":"execution_time", "value":"5"},{"text":"Num CPUs", "name":"num_cpus", "value":"1"},{"text":"Group start", "name":"group_start", "value":"0"},{"text":"Appclass", "name":"appclass", "value":"dlg.apps.simple.SleepApp"},{"text":"Arg01", "name":"Arg01", "value":"sleepTime=5."},{"text":"Arg02", "name":"Arg02", "value":""},{"text":"Arg03", "name":"Arg03", "value":""},{"text":"Arg04", "name":"Arg04", "value":""},{"text":"Arg05", "name":"Arg05", "value":""},{"text":"Arg06", "name":"Arg06", "value":""},{"text":"Arg07", "name":"Arg07", "value":""},{"text":"Arg08", "name":"Arg08", "value":""},{"text":"Arg09", "name":"Arg09", "value":""},{"text":"Arg10", "name":"Arg10", "value":""} ], "categoryType":"ApplicationDrop", "inputPorts":[ {"IdText":"data", "Id":"d73e47fb-2bb2-48c5-8d9e-7711df0eb8ff"} ]},
-{"category":"BashShellApp", "type":"Shell App", "outputPorts":[ {"IdText":"event", "Id":"1edca8e4-92ef-442a-895c-a14b079ac669"} ], "isData":false, "fields":[ {"text":"Execution time", "name":"execution_time", "value":"5"},{"text":"Num CPUs", "name":"num_cpus", "value":"1"},{"text":"Group start", "name":"group_start", "value":"0"},{"text":"Arg01", "name":"Arg01", "value":""},{"text":"Arg02", "name":"Arg02", "value":""},{"text":"Arg03", "name":"Arg03", "value":""},{"text":"Arg04", "name":"Arg04", "value":""},{"text":"Arg05", "name":"Arg05", "value":""},{"text":"Arg06", "name":"Arg06", "value":""},{"text":"Arg07", "name":"Arg07", "value":""},{"text":"Arg08", "name":"Arg08", "value":""},{"text":"Arg09", "name":"Arg09", "value":""},{"text":"Arg10", "name":"Arg10", "value":""} ], "colour":" #1C2833", "canHaveOutputs":true, "canHaveInputs":true, "isGroup":false, "key":-3, "text":"cat file", "categoryType":"ApplicationDrop", "inputPorts":[ {"IdText":"event", "Id":"df650d73-4456-4238-a14d-6c3e1b629a82"} ]}
- ],
-  "linkDataArray": []}
+{
+    "copiesArrayObjects": true, 
+    "copiesArrays": true, 
+    "linkDataArray": [], 
+    "nodeDataArray": [
+        {
+            "category": "Start", 
+            "outputPorts": [], 
+            "isData": false, 
+            "fields": [], 
+            "colour": " #229954", 
+            "canHaveOutputs": true, 
+            "canHaveInputs": false, 
+            "categoryType": "ControlComponent", 
+            "isGroup": false, 
+            "key": -1, 
+            "text": "Enter label", 
+            "type": "Start", 
+            "inputPorts": []
+        }, 
+        {
+            "category": "End", 
+            "outputPorts": [], 
+            "isData": false, 
+            "fields": [], 
+            "colour": " #CB4335", 
+            "canHaveOutputs": false, 
+            "canHaveInputs": true, 
+            "categoryType": "ControlComponent", 
+            "isGroup": false, 
+            "key": -10, 
+            "text": "Enter label", 
+            "type": "End", 
+            "inputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "308f6ebb-07e8-47eb-b30a-31ca91f54a69"
+                }
+            ]
+        }, 
+        {
+            "category": "memory", 
+            "outputPorts": [], 
+            "isData": true, 
+            "fields": [
+                {
+                    "text": "Data volume", 
+                    "name": "data_volume", 
+                    "value": "5"
+                }, 
+                {
+                    "text": "Group end", 
+                    "name": "group_end", 
+                    "value": "0"
+                }
+            ], 
+            "colour": " #394BB2", 
+            "canHaveOutputs": true, 
+            "canHaveInputs": true, 
+            "categoryType": "DataDrop", 
+            "shape": "Card", 
+            "isGroup": false, 
+            "key": -4, 
+            "text": "Enter label", 
+            "type": "Memory Drop", 
+            "inputPorts": []
+        }, 
+        {
+            "category": "file", 
+            "outputPorts": [], 
+            "isData": true, 
+            "fields": [
+                {
+                    "text": "Data volume", 
+                    "name": "data_volume", 
+                    "value": "5"
+                }, 
+                {
+                    "text": "Group end", 
+                    "name": "group_end", 
+                    "value": "0"
+                }, 
+                {
+                    "text": "Check file path exists", 
+                    "name": "check_filepath_exists", 
+                    "value": "1"
+                }, 
+                {
+                    "text": "File path", 
+                    "name": "filepath", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Directory name", 
+                    "name": "dirname", 
+                    "value": ""
+                }
+            ], 
+            "colour": " #394BB2", 
+            "canHaveOutputs": true, 
+            "canHaveInputs": true, 
+            "categoryType": "DataDrop", 
+            "shape": "Card", 
+            "isGroup": false, 
+            "key": -5, 
+            "text": "Enter label", 
+            "type": "File Drop", 
+            "inputPorts": []
+        }, 
+        {
+            "category": "s3", 
+            "outputPorts": [], 
+            "isData": true, 
+            "fields": [
+                {
+                    "text": "Data volume", 
+                    "name": "data_volume", 
+                    "value": "5"
+                }, 
+                {
+                    "text": "Group end", 
+                    "name": "group_end", 
+                    "value": "0"
+                }
+            ], 
+            "colour": " #394BB2", 
+            "canHaveOutputs": true, 
+            "canHaveInputs": true, 
+            "categoryType": "DataDrop", 
+            "shape": "Card", 
+            "isGroup": false, 
+            "key": -6, 
+            "text": "Enter label", 
+            "type": "S3 Drop", 
+            "inputPorts": []
+        }, 
+        {
+            "category": "ngas", 
+            "outputPorts": [], 
+            "isData": true, 
+            "fields": [
+                {
+                    "text": "Data volume", 
+                    "name": "data_volume", 
+                    "value": "5"
+                }, 
+                {
+                    "text": "Group end", 
+                    "name": "group_end", 
+                    "value": "0"
+                }
+            ], 
+            "colour": " #394BB2", 
+            "canHaveOutputs": true, 
+            "canHaveInputs": true, 
+            "categoryType": "DataDrop", 
+            "shape": "Card", 
+            "isGroup": false, 
+            "key": -7, 
+            "text": "Enter label", 
+            "type": "NGAS Drop", 
+            "inputPorts": []
+        }, 
+        {
+            "category": "Comment", 
+            "outputPorts": [], 
+            "isData": false, 
+            "fields": [], 
+            "colour": " #799938", 
+            "canHaveOutputs": false, 
+            "canHaveInputs": false, 
+            "categoryType": "Other", 
+            "shape": "File", 
+            "isGroup": false, 
+            "key": -12, 
+            "text": "Enter comment", 
+            "type": "Comment", 
+            "inputPorts": []
+        }, 
+        {
+            "category": "Description", 
+            "outputPorts": [], 
+            "isData": false, 
+            "fields": [
+                {
+                    "text": "Description", 
+                    "value": ""
+                }
+            ], 
+            "colour": " #9b3065", 
+            "canHaveOutputs": false, 
+            "canHaveInputs": false, 
+            "categoryType": "Other", 
+            "isGroup": false, 
+            "key": -21, 
+            "text": "Enter label", 
+            "type": "Graph Description", 
+            "inputPorts": []
+        }, 
+        {
+            "category": "Component", 
+            "loc": "163.609375 95", 
+            "outputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "64c1fc46-305b-45fd-945c-070038cf1e49"
+                }
+            ], 
+            "isData": false, 
+            "fields": [
+                {
+                    "text": "Execution time", 
+                    "name": "execution_time", 
+                    "value": "5"
+                }, 
+                {
+                    "text": "Num CPUs", 
+                    "name": "num_cpus", 
+                    "value": "1"
+                }, 
+                {
+                    "text": "Group start", 
+                    "name": "group_start", 
+                    "value": "0"
+                }, 
+                {
+                    "text": "Appclass", 
+                    "name": "appclass", 
+                    "value": "apps.pyfunc.PyFuncApp"
+                }, 
+                {
+                    "text": "Arg01", 
+                    "name": "Arg01", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg02", 
+                    "name": "Arg02", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg03", 
+                    "name": "Arg03", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg04", 
+                    "name": "Arg04", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg05", 
+                    "name": "Arg05", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg06", 
+                    "name": "Arg06", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg07", 
+                    "name": "Arg07", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg08", 
+                    "name": "Arg08", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg09", 
+                    "name": "Arg09", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg10", 
+                    "name": "Arg10", 
+                    "value": ""
+                }
+            ], 
+            "colour": " #3498DB", 
+            "canHaveOutputs": true, 
+            "canHaveInputs": true, 
+            "categoryType": "ApplicationDrop", 
+            "isGroup": false, 
+            "key": -18, 
+            "text": "Python Function", 
+            "type": "Python App", 
+            "inputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "c7c75304-9e9b-411e-8ef8-6b453147fc88"
+                }
+            ]
+        }, 
+        {
+            "category": "Component", 
+            "loc": "271.609375 217", 
+            "outputPorts": [
+                {
+                    "IdText": "list", 
+                    "Id": "output_list"
+                }, 
+                {
+                    "IdText": "event", 
+                    "Id": "3c65f92b-b5da-412a-ad03-54973b14a0f0"
+                }
+            ], 
+            "isData": false, 
+            "fields": [
+                {
+                    "text": "Execution time", 
+                    "name": "execution_time", 
+                    "value": "5"
+                }, 
+                {
+                    "text": "Num CPUs", 
+                    "name": "num_cpus", 
+                    "value": "1"
+                }, 
+                {
+                    "text": "Group start", 
+                    "name": "group_start", 
+                    "value": "0"
+                }, 
+                {
+                    "text": "Appclass", 
+                    "name": "appclass", 
+                    "value": "apps.pyfunc.PyFuncApp"
+                }, 
+                {
+                    "text": "Arg01", 
+                    "name": "Arg01", 
+                    "value": "urllib2.urlopen"
+                }, 
+                {
+                    "text": "Arg02", 
+                    "name": "Arg02", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg03", 
+                    "name": "Arg03", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg04", 
+                    "name": "Arg04", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg05", 
+                    "name": "Arg05", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg06", 
+                    "name": "Arg06", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg07", 
+                    "name": "Arg07", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg08", 
+                    "name": "Arg08", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg09", 
+                    "name": "Arg09", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg10", 
+                    "name": "Arg10", 
+                    "value": ""
+                }
+            ], 
+            "colour": " #3498DB", 
+            "canHaveOutputs": true, 
+            "canHaveInputs": true, 
+            "categoryType": "ApplicationDrop", 
+            "isGroup": false, 
+            "key": -19, 
+            "text": "urlopen", 
+            "type": "Python App", 
+            "inputPorts": [
+                {
+                    "IdText": "string", 
+                    "Id": "input_string"
+                }, 
+                {
+                    "IdText": "event", 
+                    "Id": "2c578ae5-dcbc-4ceb-9382-4fa728b7e142"
+                }
+            ]
+        }, 
+        {
+            "category": "Component", 
+            "loc": "125.28125 100", 
+            "outputPorts": [
+                {
+                    "IdText": "dlg_out", 
+                    "Id": "output_dlg_out"
+                }, 
+                {
+                    "IdText": "event", 
+                    "Id": "66508f63-17f0-4734-92fd-47a34105d94a"
+                }
+            ], 
+            "isData": false, 
+            "fields": [
+                {
+                    "text": "Execution time", 
+                    "name": "execution_time", 
+                    "value": "5"
+                }, 
+                {
+                    "text": "Num CPUs", 
+                    "name": "num_cpus", 
+                    "value": "1"
+                }, 
+                {
+                    "text": "Group start", 
+                    "name": "group_start", 
+                    "value": "0"
+                }, 
+                {
+                    "text": "Appclass", 
+                    "name": "appclass", 
+                    "value": "apps.archiving.NgasArchivingApp"
+                }, 
+                {
+                    "text": "Arg01", 
+                    "name": "Arg01", 
+                    "value": "dummy_in"
+                }, 
+                {
+                    "text": "Arg02", 
+                    "name": "Arg02", 
+                    "value": "dummy_out"
+                }, 
+                {
+                    "text": "Arg03", 
+                    "name": "Arg03", 
+                    "value": "ngasSrv=ngas.ddns.net"
+                }, 
+                {
+                    "text": "Arg04", 
+                    "name": "Arg04", 
+                    "value": "ngasPort=7777"
+                }, 
+                {
+                    "text": "Arg05", 
+                    "name": "Arg05", 
+                    "value": "ngasTimeout=2."
+                }, 
+                {
+                    "text": "Arg06", 
+                    "name": "Arg06", 
+                    "value": "ngasConnectTimeout=2."
+                }, 
+                {
+                    "text": "Arg07", 
+                    "name": "Arg07", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg08", 
+                    "name": "Arg08", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg09", 
+                    "name": "Arg09", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg10", 
+                    "name": "Arg10", 
+                    "value": ""
+                }
+            ], 
+            "colour": " #3498DB", 
+            "canHaveOutputs": true, 
+            "canHaveInputs": true, 
+            "categoryType": "ApplicationDrop", 
+            "isGroup": false, 
+            "key": -20, 
+            "text": "NGAS Archiving", 
+            "type": "Python App", 
+            "inputPorts": [
+                {
+                    "IdText": "dlg_in", 
+                    "Id": "input_dlg_in"
+                }, 
+                {
+                    "IdText": "file", 
+                    "Id": "input_file"
+                }, 
+                {
+                    "IdText": "event", 
+                    "Id": "6a8119ef-f323-471c-b406-9106d4de974d"
+                }
+            ]
+        }, 
+        {
+            "category": "Component", 
+            "type": "Python App", 
+            "isData": false, 
+            "outputPorts": [
+                {
+                    "IdText": "data", 
+                    "Id": "323150da-ad2c-4162-8499-75c1f2e26e9f"
+                }
+            ], 
+            "text": "Sleep", 
+            "colour": " #3498DB", 
+            "canHaveOutputs": true, 
+            "canHaveInputs": true, 
+            "isGroup": false, 
+            "key": -2, 
+            "fields": [
+                {
+                    "text": "Execution time", 
+                    "name": "execution_time", 
+                    "value": "5"
+                }, 
+                {
+                    "text": "Num CPUs", 
+                    "name": "num_cpus", 
+                    "value": "1"
+                }, 
+                {
+                    "text": "Group start", 
+                    "name": "group_start", 
+                    "value": "0"
+                }, 
+                {
+                    "text": "Appclass", 
+                    "name": "appclass", 
+                    "value": "dlg.apps.simple.SleepApp"
+                }, 
+                {
+                    "text": "Arg01", 
+                    "name": "Arg01", 
+                    "value": "sleepTime=5."
+                }, 
+                {
+                    "text": "Arg02", 
+                    "name": "Arg02", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg03", 
+                    "name": "Arg03", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg04", 
+                    "name": "Arg04", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg05", 
+                    "name": "Arg05", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg06", 
+                    "name": "Arg06", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg07", 
+                    "name": "Arg07", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg08", 
+                    "name": "Arg08", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg09", 
+                    "name": "Arg09", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg10", 
+                    "name": "Arg10", 
+                    "value": ""
+                }
+            ], 
+            "categoryType": "ApplicationDrop", 
+            "inputPorts": [
+                {
+                    "IdText": "data", 
+                    "Id": "d73e47fb-2bb2-48c5-8d9e-7711df0eb8ff"
+                }
+            ]
+        }, 
+        {
+            "category": "BashShellApp", 
+            "type": "Shell App", 
+            "outputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "1edca8e4-92ef-442a-895c-a14b079ac669"
+                }
+            ], 
+            "isData": false, 
+            "fields": [
+                {
+                    "text": "Execution time", 
+                    "name": "execution_time", 
+                    "value": "5"
+                }, 
+                {
+                    "text": "Num CPUs", 
+                    "name": "num_cpus", 
+                    "value": "1"
+                }, 
+                {
+                    "text": "Group start", 
+                    "name": "group_start", 
+                    "value": "0"
+                }, 
+                {
+                    "text": "Arg01", 
+                    "name": "Arg01", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg02", 
+                    "name": "Arg02", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg03", 
+                    "name": "Arg03", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg04", 
+                    "name": "Arg04", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg05", 
+                    "name": "Arg05", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg06", 
+                    "name": "Arg06", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg07", 
+                    "name": "Arg07", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg08", 
+                    "name": "Arg08", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg09", 
+                    "name": "Arg09", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg10", 
+                    "name": "Arg10", 
+                    "value": ""
+                }
+            ], 
+            "colour": " #1C2833", 
+            "canHaveOutputs": true, 
+            "canHaveInputs": true, 
+            "isGroup": false, 
+            "key": -3, 
+            "text": "cat file", 
+            "categoryType": "ApplicationDrop", 
+            "inputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "df650d73-4456-4238-a14d-6c3e1b629a82"
+                }
+            ]
+        }, 
+        {
+            "category": "SplitData", 
+            "type": "Scatter", 
+            "isData": false, 
+            "outputPorts": [], 
+            "outputLocalPorts": [], 
+            "text": "Sleep", 
+            "colour": " #DDAD00", 
+            "canHaveOutputs": true, 
+            "canHaveInputs": true, 
+            "application": "Component", 
+            "inputLocalPorts": [], 
+            "isGroup": true, 
+            "key": -14, 
+            "fields": [
+                {
+                    "text": "Number of copies", 
+                    "name": "num_of_copies", 
+                    "value": "4"
+                }, 
+                {
+                    "text": "Scatter axis", 
+                    "name": "scatter_axis", 
+                    "value": "time"
+                }
+            ], 
+            "categoryType": "GroupComponent", 
+            "inputPorts": [], 
+            "appFields": [
+                {
+                    "text": "Execution time", 
+                    "name": "execution_time", 
+                    "value": "5"
+                }, 
+                {
+                    "text": "Num CPUs", 
+                    "name": "num_cpus", 
+                    "value": "1"
+                }, 
+                {
+                    "text": "Group start", 
+                    "name": "group_start", 
+                    "value": "0"
+                }, 
+                {
+                    "text": "Appclass", 
+                    "name": "appclass", 
+                    "value": "dlg.apps.simple.SleepApp"
+                }, 
+                {
+                    "text": "Arg01", 
+                    "name": "Arg01", 
+                    "value": "sleepTime=5."
+                }, 
+                {
+                    "text": "Arg02", 
+                    "name": "Arg02", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg03", 
+                    "name": "Arg03", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg04", 
+                    "name": "Arg04", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg05", 
+                    "name": "Arg05", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg06", 
+                    "name": "Arg06", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg07", 
+                    "name": "Arg07", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg08", 
+                    "name": "Arg08", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg09", 
+                    "name": "Arg09", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg10", 
+                    "name": "Arg10", 
+                    "value": ""
+                }
+            ]
+        }
+    ], 
+    "modelData": {
+        "repo": "ICRAR/dlg_test_repo", 
+        "sha": "", 
+        "fileType": "palette", 
+        "git_url": "", 
+        "filePath": "HelloWorld.palette"
+    }, 
+    "class": "go.GraphLinksModel"
+}
