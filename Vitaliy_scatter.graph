@@ -214,24 +214,70 @@
             "fromPort": "7915aba4-7ce8-428c-9529-dccd4766ef68"
         }, 
         {
-            "toPort": "9919ed57-34d4-45b6-895b-50a546e8c09f", 
+            "toPort": "f0666a31-eb44-40a7-8f5c-cd8bd89c3f8a", 
             "to": -12, 
             "points": [
                 879.5500030517578, 
                 538.6, 
                 889.5500030517578, 
                 538.6, 
-                889.5500030517578, 
+                892, 
                 538.6, 
-                889.5500030517578, 
+                892, 
                 538.6, 
-                1100.0500030517578, 
+                1028, 
                 538.6, 
-                1110.0500030517578, 
-                538.6
+                1028, 
+                366, 
+                1088.0500030517578, 
+                366, 
+                1098.0500030517578, 
+                366
             ], 
             "from": -15, 
             "fromPort": "cd502646-77b7-4c5e-98e9-a57a37f3a1b7"
+        }, 
+        {
+            "toPort": "c1d25e0d-4daf-44f6-9932-4762730a6e53", 
+            "fromPort": "5fdab3c9-fcee-4468-bf8f-7cc76b1cd663", 
+            "points": [
+                1138.5500030517578, 
+                409, 
+                1138.5500030517578, 
+                419, 
+                1138.5500030517578, 
+                420, 
+                1138.5500030517578, 
+                420, 
+                1138.5500030517578, 
+                533.6, 
+                1218.5500030517578, 
+                533.6, 
+                1228.5500030517578, 
+                533.6
+            ], 
+            "from": -12, 
+            "to": -17
+        }, 
+        {
+            "toPort": "dcea605d-4b78-427f-8c8a-2ed3dee79335", 
+            "fromPort": "4320b1af-cfe4-4e43-94ef-9e4d65720a15", 
+            "points": [
+                1402.5500030517578, 
+                533.6, 
+                1412.5500030517578, 
+                533.6, 
+                1412.5500030517578, 
+                533.6, 
+                1412.5500030517578, 
+                533.6, 
+                1556.0500030517578, 
+                533.6, 
+                1566.0500030517578, 
+                533.6
+            ], 
+            "from": -17, 
+            "to": -16
         }
     ], 
     "nodeDataArray": [
@@ -776,27 +822,6 @@
             ]
         }, 
         {
-            "category": "End", 
-            "loc": "1110.0500030517578 508", 
-            "type": "End", 
-            "outputPorts": [], 
-            "isData": false, 
-            "fields": [], 
-            "colour": " #CB4335", 
-            "canHaveOutputs": false, 
-            "canHaveInputs": true, 
-            "isGroup": false, 
-            "key": -12, 
-            "text": "Enter label", 
-            "categoryType": "ControlComponent", 
-            "inputPorts": [
-                {
-                    "IdText": "data", 
-                    "Id": "9919ed57-34d4-45b6-895b-50a546e8c09f"
-                }
-            ]
-        }, 
-        {
             "category": "memory", 
             "loc": "280.5500030517578 336.5", 
             "outputPorts": [
@@ -997,6 +1022,193 @@
                 {
                     "IdText": "data", 
                     "Id": "e44598db-31ac-431d-b7cb-0c4204c8fac1"
+                }
+            ]
+        }, 
+        {
+            "category": "DataGather", 
+            "loc": "1125.0500030517578 392", 
+            "type": "Gather", 
+            "isData": false, 
+            "outputPorts": [
+                {
+                    "IdText": "data", 
+                    "Id": "aa45528d-450c-43d6-83d7-63324eaf8479"
+                }
+            ], 
+            "outputLocalPorts": [
+                {
+                    "IdText": "data", 
+                    "Id": "5fdab3c9-fcee-4468-bf8f-7cc76b1cd663"
+                }
+            ], 
+            "text": "Sleep", 
+            "colour": " #D35400", 
+            "canHaveOutputs": true, 
+            "canHaveInputs": true, 
+            "application": "Component", 
+            "desiredSize": {
+                "width": 358, 
+                "class": "go.Size", 
+                "height": 290
+            }, 
+            "inputLocalPorts": [
+                {
+                    "IdText": "data", 
+                    "Id": "216e4100-ff1e-47ed-b21a-9bdf2f98ebbd"
+                }
+            ], 
+            "isGroup": true, 
+            "key": -12, 
+            "fields": [
+                {
+                    "text": "Number of inputs", 
+                    "name": "num_of_inputs", 
+                    "value": "4"
+                }, 
+                {
+                    "text": "Gather axis", 
+                    "name": "gather_axis", 
+                    "value": "frequency"
+                }
+            ], 
+            "categoryType": "GroupComponent", 
+            "inputPorts": [
+                {
+                    "IdText": "data", 
+                    "Id": "f0666a31-eb44-40a7-8f5c-cd8bd89c3f8a"
+                }
+            ], 
+            "appFields": [
+                {
+                    "text": "Execution time", 
+                    "name": "execution_time", 
+                    "value": "5"
+                }, 
+                {
+                    "text": "Num CPUs", 
+                    "name": "num_cpus", 
+                    "value": "1"
+                }, 
+                {
+                    "text": "Group start", 
+                    "name": "group_start", 
+                    "value": "0"
+                }, 
+                {
+                    "text": "Appclass", 
+                    "name": "appclass", 
+                    "value": "dlg.apps.simple.SleepApp"
+                }, 
+                {
+                    "text": "Arg01", 
+                    "name": "Arg01", 
+                    "value": "sleepTime=5."
+                }, 
+                {
+                    "text": "Arg02", 
+                    "name": "Arg02", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg03", 
+                    "name": "Arg03", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg04", 
+                    "name": "Arg04", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg05", 
+                    "name": "Arg05", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg06", 
+                    "name": "Arg06", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg07", 
+                    "name": "Arg07", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg08", 
+                    "name": "Arg08", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg09", 
+                    "name": "Arg09", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg10", 
+                    "name": "Arg10", 
+                    "value": ""
+                }
+            ]
+        }, 
+        {
+            "category": "End", 
+            "loc": "1566.0500030517578 503", 
+            "outputPorts": [], 
+            "isData": false, 
+            "fields": [], 
+            "colour": " #CB4335", 
+            "canHaveOutputs": false, 
+            "canHaveInputs": true, 
+            "categoryType": "ControlComponent", 
+            "isGroup": false, 
+            "key": -16, 
+            "text": "Enter label", 
+            "type": "End", 
+            "inputPorts": [
+                {
+                    "IdText": "data", 
+                    "Id": "dcea605d-4b78-427f-8c8a-2ed3dee79335"
+                }
+            ]
+        }, 
+        {
+            "category": "memory", 
+            "loc": "1228.5500030517578 503", 
+            "group": -12, 
+            "outputPorts": [
+                {
+                    "IdText": "data", 
+                    "Id": "4320b1af-cfe4-4e43-94ef-9e4d65720a15"
+                }
+            ], 
+            "isData": true, 
+            "fields": [
+                {
+                    "text": "Data volume", 
+                    "name": "data_volume", 
+                    "value": "5"
+                }, 
+                {
+                    "text": "Group end", 
+                    "name": "group_end", 
+                    "value": "0"
+                }
+            ], 
+            "colour": " #394BB2", 
+            "canHaveOutputs": true, 
+            "canHaveInputs": true, 
+            "categoryType": "DataDrop", 
+            "shape": "Card", 
+            "isGroup": false, 
+            "key": -17, 
+            "text": "Enter label", 
+            "type": "Memory Drop", 
+            "inputPorts": [
+                {
+                    "IdText": "data", 
+                    "Id": "c1d25e0d-4daf-44f6-9932-4762730a6e53"
                 }
             ]
         }
