@@ -66,6 +66,122 @@
             ], 
             "from": -5, 
             "fromPort": "8e2a33c4-50e4-47bd-8833-699100f1b1b1"
+        }, 
+        {
+            "toPort": "206e6907-65f3-440b-ad06-0c24960220f1", 
+            "fromPort": "323150da-ad2c-4162-8499-75c1f2e26e9f", 
+            "points": [
+                473.0500030517578, 
+                665.6, 
+                483.0500030517578, 
+                665.6, 
+                484, 
+                665.6, 
+                484, 
+                665.6, 
+                500, 
+                665.6, 
+                500, 
+                640.6, 
+                560.0500030517578, 
+                640.6, 
+                570.0500030517578, 
+                640.6
+            ], 
+            "from": -7, 
+            "to": -8
+        }, 
+        {
+            "toPort": "f0dead7a-d6b4-406d-8656-26cb7af499eb", 
+            "fromPort": "f00c4ab2-75ce-44fe-b9af-ee089439d86d", 
+            "points": [
+                744.0500030517578, 
+                640.6, 
+                754.0500030517578, 
+                640.6, 
+                756, 
+                640.6, 
+                756, 
+                640.6, 
+                780, 
+                640.6, 
+                780, 
+                603, 
+                887.0500030517578, 
+                603, 
+                897.0500030517578, 
+                603
+            ], 
+            "from": -8, 
+            "to": -16
+        }, 
+        {
+            "toPort": "6a8119ef-f323-471c-b406-9106d4de974d", 
+            "to": -9, 
+            "points": [
+                940.5500030517578, 
+                629, 
+                940.5500030517578, 
+                619, 
+                940.5500030517578, 
+                619, 
+                1087.5500030517578, 
+                619, 
+                1087.5500030517578, 
+                714.6, 
+                1087.5500030517578, 
+                724.6
+            ], 
+            "from": -16, 
+            "fromPort": "774a4e12-88d9-42c0-8749-07dbda068202"
+        }, 
+        {
+            "toPort": "5b3072d0-3497-429b-9f83-70da2e2f3612", 
+            "to": -16, 
+            "points": [
+                1240.5500030517578, 
+                706.6, 
+                1240.5500030517578, 
+                696.6, 
+                1240.5500030517578, 
+                700, 
+                1240.5500030517578, 
+                700, 
+                1240.5500030517578, 
+                620, 
+                1369.5500030517578, 
+                620, 
+                1369.5500030517578, 
+                619, 
+                1369.5500030517578, 
+                629
+            ], 
+            "from": -9, 
+            "fromPort": "66508f63-17f0-4734-92fd-47a34105d94a"
+        }, 
+        {
+            "toPort": "6a8119ef-f323-471c-b406-9106d4de974d", 
+            "to": -10, 
+            "points": [
+                1416.0728505500658, 
+                577, 
+                1416.0728505500658, 
+                567, 
+                1416.0728505500658, 
+                564, 
+                1416.0728505500658, 
+                564, 
+                1416.0728505500658, 
+                524, 
+                1244.5500030517578, 
+                524, 
+                1244.5500030517578, 
+                325.6, 
+                1244.5500030517578, 
+                315.6
+            ], 
+            "from": -16, 
+            "fromPort": "a4d688d1-8a30-4b61-a928-aaa9f2872123"
         }
     ], 
     "nodeDataArray": [
@@ -520,6 +636,511 @@
                 {
                     "IdText": "data", 
                     "Id": "b3539ecd-546b-42e9-b9e7-46a47227cec5"
+                }
+            ]
+        }, 
+        {
+            "category": "SplitData", 
+            "loc": "924.0500030517578 612", 
+            "type": "Scatter", 
+            "isData": false, 
+            "outputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "a4d688d1-8a30-4b61-a928-aaa9f2872123"
+                }, 
+                {
+                    "IdText": "data", 
+                    "Id": "8bdf7c73-fa75-4c04-a8d6-989f16fa91c6"
+                }
+            ], 
+            "outputLocalPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "774a4e12-88d9-42c0-8749-07dbda068202"
+                }, 
+                {
+                    "IdText": "data", 
+                    "Id": "c4791564-294c-49d1-adad-8715f2d3bc2a"
+                }
+            ], 
+            "text": "Test", 
+            "colour": " #DDAD00", 
+            "canHaveOutputs": true, 
+            "canHaveInputs": true, 
+            "application": "Component", 
+            "desiredSize": {
+                "width": 461, 
+                "class": "go.Size", 
+                "height": 278
+            }, 
+            "inputLocalPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "5b3072d0-3497-429b-9f83-70da2e2f3612"
+                }, 
+                {
+                    "IdText": "data", 
+                    "Id": "b91bb9ab-d1d1-411d-bab6-8b903b894fd8"
+                }
+            ], 
+            "isGroup": true, 
+            "key": -16, 
+            "fields": [
+                {
+                    "text": "Number of copies", 
+                    "name": "num_of_copies", 
+                    "value": "4"
+                }, 
+                {
+                    "text": "Scatter axis", 
+                    "name": "scatter_axis", 
+                    "value": "time"
+                }
+            ], 
+            "categoryType": "GroupComponent", 
+            "inputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "f35c647c-2a3c-4f44-8e20-aaf2acb53e47"
+                }, 
+                {
+                    "IdText": "data", 
+                    "Id": "f0dead7a-d6b4-406d-8656-26cb7af499eb"
+                }
+            ], 
+            "appFields": [
+                {
+                    "text": "Execution time", 
+                    "name": "execution_time", 
+                    "value": "5"
+                }, 
+                {
+                    "text": "Num CPUs", 
+                    "name": "num_cpus", 
+                    "value": "1"
+                }, 
+                {
+                    "text": "Group start", 
+                    "name": "group_start", 
+                    "value": "0"
+                }, 
+                {
+                    "text": "Appclass", 
+                    "name": "appclass", 
+                    "value": "test.graphsRepository"
+                }, 
+                {
+                    "text": "Arg01", 
+                    "name": "Arg01", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg02", 
+                    "name": "Arg02", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg03", 
+                    "name": "Arg03", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg04", 
+                    "name": "Arg04", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg05", 
+                    "name": "Arg05", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg06", 
+                    "name": "Arg06", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg07", 
+                    "name": "Arg07", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg08", 
+                    "name": "Arg08", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg09", 
+                    "name": "Arg09", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg10", 
+                    "name": "Arg10", 
+                    "value": ""
+                }
+            ]
+        }, 
+        {
+            "category": "Component", 
+            "loc": "299.0500030517578 635", 
+            "type": "Python App", 
+            "isData": false, 
+            "outputPorts": [
+                {
+                    "IdText": "data", 
+                    "Id": "323150da-ad2c-4162-8499-75c1f2e26e9f"
+                }
+            ], 
+            "text": "Sleep", 
+            "colour": " #3498DB", 
+            "canHaveOutputs": true, 
+            "canHaveInputs": true, 
+            "isGroup": false, 
+            "key": -7, 
+            "fields": [
+                {
+                    "text": "Execution time", 
+                    "name": "execution_time", 
+                    "value": "5"
+                }, 
+                {
+                    "text": "Num CPUs", 
+                    "name": "num_cpus", 
+                    "value": "1"
+                }, 
+                {
+                    "text": "Group start", 
+                    "name": "group_start", 
+                    "value": "0"
+                }, 
+                {
+                    "text": "Appclass", 
+                    "name": "appclass", 
+                    "value": "dlg.apps.simple.SleepApp"
+                }, 
+                {
+                    "text": "Arg01", 
+                    "name": "Arg01", 
+                    "value": "sleepTime=5."
+                }, 
+                {
+                    "text": "Arg02", 
+                    "name": "Arg02", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg03", 
+                    "name": "Arg03", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg04", 
+                    "name": "Arg04", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg05", 
+                    "name": "Arg05", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg06", 
+                    "name": "Arg06", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg07", 
+                    "name": "Arg07", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg08", 
+                    "name": "Arg08", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg09", 
+                    "name": "Arg09", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg10", 
+                    "name": "Arg10", 
+                    "value": ""
+                }
+            ], 
+            "categoryType": "ApplicationDrop", 
+            "inputPorts": [
+                {
+                    "IdText": "data", 
+                    "Id": "d73e47fb-2bb2-48c5-8d9e-7711df0eb8ff"
+                }
+            ]
+        }, 
+        {
+            "category": "memory", 
+            "loc": "564.0500030517578 592", 
+            "outputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "3eb62752-41ee-4dd9-be5d-6a97ad8e084d"
+                }, 
+                {
+                    "IdText": "data", 
+                    "Id": "f00c4ab2-75ce-44fe-b9af-ee089439d86d"
+                }
+            ], 
+            "isData": true, 
+            "fields": [
+                {
+                    "text": "Data volume", 
+                    "name": "data_volume", 
+                    "value": "5"
+                }, 
+                {
+                    "text": "Group end", 
+                    "name": "group_end", 
+                    "value": "0"
+                }
+            ], 
+            "colour": " #394BB2", 
+            "canHaveOutputs": true, 
+            "canHaveInputs": true, 
+            "categoryType": "DataDrop", 
+            "shape": "Card", 
+            "isGroup": false, 
+            "key": -8, 
+            "text": "Enter label", 
+            "type": "Memory Drop", 
+            "inputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "9e14ffbe-9bb6-4a61-a552-c17b8e2d1414"
+                }, 
+                {
+                    "IdText": "data", 
+                    "Id": "206e6907-65f3-440b-ad06-0c24960220f1"
+                }
+            ]
+        }, 
+        {
+            "category": "Component", 
+            "loc": "1067.0500030517578 666", 
+            "group": -16, 
+            "outputPorts": [
+                {
+                    "IdText": "dlg_out", 
+                    "Id": "output_dlg_out"
+                }, 
+                {
+                    "IdText": "event", 
+                    "Id": "66508f63-17f0-4734-92fd-47a34105d94a"
+                }
+            ], 
+            "isData": false, 
+            "fields": [
+                {
+                    "text": "Execution time", 
+                    "name": "execution_time", 
+                    "value": "5"
+                }, 
+                {
+                    "text": "Num CPUs", 
+                    "name": "num_cpus", 
+                    "value": "1"
+                }, 
+                {
+                    "text": "Group start", 
+                    "name": "group_start", 
+                    "value": "0"
+                }, 
+                {
+                    "text": "Appclass", 
+                    "name": "appclass", 
+                    "value": "apps.archiving.NgasArchivingApp"
+                }, 
+                {
+                    "text": "Arg01", 
+                    "name": "Arg01", 
+                    "value": "dummy_in"
+                }, 
+                {
+                    "text": "Arg02", 
+                    "name": "Arg02", 
+                    "value": "dummy_out"
+                }, 
+                {
+                    "text": "Arg03", 
+                    "name": "Arg03", 
+                    "value": "ngasSrv=ngas.ddns.net"
+                }, 
+                {
+                    "text": "Arg04", 
+                    "name": "Arg04", 
+                    "value": "ngasPort=7777"
+                }, 
+                {
+                    "text": "Arg05", 
+                    "name": "Arg05", 
+                    "value": "ngasTimeout=2."
+                }, 
+                {
+                    "text": "Arg06", 
+                    "name": "Arg06", 
+                    "value": "ngasConnectTimeout=2."
+                }, 
+                {
+                    "text": "Arg07", 
+                    "name": "Arg07", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg08", 
+                    "name": "Arg08", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg09", 
+                    "name": "Arg09", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg10", 
+                    "name": "Arg10", 
+                    "value": ""
+                }
+            ], 
+            "colour": " #3498DB", 
+            "canHaveOutputs": true, 
+            "canHaveInputs": true, 
+            "categoryType": "ApplicationDrop", 
+            "isGroup": false, 
+            "key": -9, 
+            "text": "NGAS Archiving", 
+            "type": "Python App", 
+            "inputPorts": [
+                {
+                    "IdText": "dlg_in", 
+                    "Id": "input_dlg_in"
+                }, 
+                {
+                    "IdText": "file", 
+                    "Id": "input_file"
+                }, 
+                {
+                    "IdText": "event", 
+                    "Id": "6a8119ef-f323-471c-b406-9106d4de974d"
+                }
+            ]
+        }, 
+        {
+            "category": "Component", 
+            "loc": "1224.0500030517578 241", 
+            "outputPorts": [
+                {
+                    "IdText": "dlg_out", 
+                    "Id": "output_dlg_out"
+                }, 
+                {
+                    "IdText": "event", 
+                    "Id": "66508f63-17f0-4734-92fd-47a34105d94a"
+                }
+            ], 
+            "isData": false, 
+            "fields": [
+                {
+                    "text": "Execution time", 
+                    "name": "execution_time", 
+                    "value": "5"
+                }, 
+                {
+                    "text": "Num CPUs", 
+                    "name": "num_cpus", 
+                    "value": "1"
+                }, 
+                {
+                    "text": "Group start", 
+                    "name": "group_start", 
+                    "value": "0"
+                }, 
+                {
+                    "text": "Appclass", 
+                    "name": "appclass", 
+                    "value": "apps.archiving.NgasArchivingApp"
+                }, 
+                {
+                    "text": "Arg01", 
+                    "name": "Arg01", 
+                    "value": "dummy_in"
+                }, 
+                {
+                    "text": "Arg02", 
+                    "name": "Arg02", 
+                    "value": "dummy_out"
+                }, 
+                {
+                    "text": "Arg03", 
+                    "name": "Arg03", 
+                    "value": "ngasSrv=ngas.ddns.net"
+                }, 
+                {
+                    "text": "Arg04", 
+                    "name": "Arg04", 
+                    "value": "ngasPort=7777"
+                }, 
+                {
+                    "text": "Arg05", 
+                    "name": "Arg05", 
+                    "value": "ngasTimeout=2."
+                }, 
+                {
+                    "text": "Arg06", 
+                    "name": "Arg06", 
+                    "value": "ngasConnectTimeout=2."
+                }, 
+                {
+                    "text": "Arg07", 
+                    "name": "Arg07", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg08", 
+                    "name": "Arg08", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg09", 
+                    "name": "Arg09", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg10", 
+                    "name": "Arg10", 
+                    "value": ""
+                }
+            ], 
+            "colour": " #3498DB", 
+            "canHaveOutputs": true, 
+            "canHaveInputs": true, 
+            "categoryType": "ApplicationDrop", 
+            "isGroup": false, 
+            "key": -10, 
+            "text": "NGAS Archiving", 
+            "type": "Python App", 
+            "inputPorts": [
+                {
+                    "IdText": "dlg_in", 
+                    "Id": "input_dlg_in"
+                }, 
+                {
+                    "IdText": "file", 
+                    "Id": "input_file"
+                }, 
+                {
+                    "IdText": "event", 
+                    "Id": "6a8119ef-f323-471c-b406-9106d4de974d"
                 }
             ]
         }
