@@ -4,41 +4,6 @@
     "linkDataArray": [], 
     "nodeDataArray": [
         {
-            "category": "Start", 
-            "outputPorts": [], 
-            "isData": false, 
-            "fields": [], 
-            "colour": " #229954", 
-            "canHaveOutputs": true, 
-            "canHaveInputs": false, 
-            "categoryType": "ControlComponent", 
-            "isGroup": false, 
-            "key": -1, 
-            "text": "Enter label", 
-            "type": "Start", 
-            "inputPorts": []
-        }, 
-        {
-            "category": "End", 
-            "outputPorts": [], 
-            "isData": false, 
-            "fields": [], 
-            "colour": " #CB4335", 
-            "canHaveOutputs": false, 
-            "canHaveInputs": true, 
-            "categoryType": "ControlComponent", 
-            "isGroup": false, 
-            "key": -10, 
-            "text": "Enter label", 
-            "type": "End", 
-            "inputPorts": [
-                {
-                    "IdText": "event", 
-                    "Id": "308f6ebb-07e8-47eb-b30a-31ca91f54a69"
-                }
-            ]
-        }, 
-        {
             "category": "memory", 
             "outputPorts": [], 
             "isData": true, 
@@ -204,6 +169,10 @@
                 {
                     "IdText": "event", 
                     "Id": "64c1fc46-305b-45fd-945c-070038cf1e49"
+                }, 
+                {
+                    "IdText": "data", 
+                    "Id": "9da2dcd9-e63c-4697-aff2-ff894e148ef7"
                 }
             ], 
             "isData": false, 
@@ -226,12 +195,12 @@
                 {
                     "text": "Appclass", 
                     "name": "appclass", 
-                    "value": "apps.pyfunc.PyFuncApp"
+                    "value": "dlg.apps.simple.SleepApp"
                 }, 
                 {
                     "text": "Arg01", 
                     "name": "Arg01", 
-                    "value": ""
+                    "value": "sleepTime=5."
                 }, 
                 {
                     "text": "Arg02", 
@@ -285,12 +254,20 @@
             "categoryType": "ApplicationDrop", 
             "isGroup": false, 
             "key": -18, 
-            "text": "Python Function", 
+            "text": "Sleep", 
             "type": "Python App", 
             "inputPorts": [
                 {
                     "IdText": "event", 
                     "Id": "c7c75304-9e9b-411e-8ef8-6b453147fc88"
+                }, 
+                {
+                    "IdText": "data", 
+                    "Id": "9c948e6d-d1ff-4977-af1f-ceb995995d72"
+                }, 
+                {
+                    "IdText": "data", 
+                    "Id": "79e869b8-ba1b-4387-b178-a760d5a1f386"
                 }
             ]
         }, 
@@ -505,102 +482,6 @@
                 {
                     "IdText": "event", 
                     "Id": "6a8119ef-f323-471c-b406-9106d4de974d"
-                }
-            ]
-        }, 
-        {
-            "category": "Component", 
-            "type": "Python App", 
-            "isData": false, 
-            "outputPorts": [
-                {
-                    "IdText": "data", 
-                    "Id": "323150da-ad2c-4162-8499-75c1f2e26e9f"
-                }
-            ], 
-            "text": "Sleep", 
-            "colour": " #3498DB", 
-            "canHaveOutputs": true, 
-            "canHaveInputs": true, 
-            "isGroup": false, 
-            "key": -2, 
-            "fields": [
-                {
-                    "text": "Execution time", 
-                    "name": "execution_time", 
-                    "value": "5"
-                }, 
-                {
-                    "text": "Num CPUs", 
-                    "name": "num_cpus", 
-                    "value": "1"
-                }, 
-                {
-                    "text": "Group start", 
-                    "name": "group_start", 
-                    "value": "0"
-                }, 
-                {
-                    "text": "Appclass", 
-                    "name": "appclass", 
-                    "value": "dlg.apps.simple.SleepApp"
-                }, 
-                {
-                    "text": "Arg01", 
-                    "name": "Arg01", 
-                    "value": "sleepTime=5."
-                }, 
-                {
-                    "text": "Arg02", 
-                    "name": "Arg02", 
-                    "value": ""
-                }, 
-                {
-                    "text": "Arg03", 
-                    "name": "Arg03", 
-                    "value": ""
-                }, 
-                {
-                    "text": "Arg04", 
-                    "name": "Arg04", 
-                    "value": ""
-                }, 
-                {
-                    "text": "Arg05", 
-                    "name": "Arg05", 
-                    "value": ""
-                }, 
-                {
-                    "text": "Arg06", 
-                    "name": "Arg06", 
-                    "value": ""
-                }, 
-                {
-                    "text": "Arg07", 
-                    "name": "Arg07", 
-                    "value": ""
-                }, 
-                {
-                    "text": "Arg08", 
-                    "name": "Arg08", 
-                    "value": ""
-                }, 
-                {
-                    "text": "Arg09", 
-                    "name": "Arg09", 
-                    "value": ""
-                }, 
-                {
-                    "text": "Arg10", 
-                    "name": "Arg10", 
-                    "value": ""
-                }
-            ], 
-            "categoryType": "ApplicationDrop", 
-            "inputPorts": [
-                {
-                    "IdText": "data", 
-                    "Id": "d73e47fb-2bb2-48c5-8d9e-7711df0eb8ff"
                 }
             ]
         }, 
@@ -959,6 +840,10 @@
                 {
                     "IdText": "data", 
                     "Id": "c4791564-294c-49d1-adad-8715f2d3bc2a"
+                }, 
+                {
+                    "IdText": "test", 
+                    "Id": "0ca81c10-3fee-47ba-bdc0-62cb6af13287"
                 }
             ], 
             "text": "Test", 
@@ -999,6 +884,10 @@
                 {
                     "IdText": "data", 
                     "Id": "f0dead7a-d6b4-406d-8656-26cb7af499eb"
+                }, 
+                {
+                    "IdText": "test", 
+                    "Id": "d710e05e-b542-4e59-8931-ee96dbb8fe3a"
                 }
             ], 
             "appFields": [
@@ -1192,6 +1081,142 @@
                     "text": "Arg10", 
                     "name": "Arg10", 
                     "value": ""
+                }
+            ]
+        }, 
+        {
+            "category": "End", 
+            "outputPorts": [], 
+            "isData": false, 
+            "fields": [], 
+            "colour": " #CB4335", 
+            "canHaveOutputs": false, 
+            "canHaveInputs": true, 
+            "categoryType": "ControlComponent", 
+            "isGroup": false, 
+            "key": -10, 
+            "text": "Enter label", 
+            "type": "End", 
+            "inputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "a5f20e0c-b269-43cf-a584-203da48005a9"
+                }
+            ]
+        }, 
+        {
+            "category": "Start", 
+            "outputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "535f0ab9-2c99-40bf-8159-079bc788895e"
+                }
+            ], 
+            "isData": false, 
+            "fields": [], 
+            "colour": " #229954", 
+            "canHaveOutputs": true, 
+            "canHaveInputs": false, 
+            "categoryType": "ControlComponent", 
+            "isGroup": false, 
+            "key": -1, 
+            "text": "Enter label", 
+            "type": "Start", 
+            "inputPorts": []
+        }, 
+        {
+            "category": "Component", 
+            "isData": false, 
+            "outputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "6e419d3b-4c89-4fc5-a1f5-8ffa72da9a3f"
+                }
+            ], 
+            "text": "Enter label", 
+            "colour": " #3498DB", 
+            "canHaveOutputs": true, 
+            "canHaveInputs": true, 
+            "categoryType": "ApplicationDrop", 
+            "isGroup": false, 
+            "key": -22, 
+            "fields": [
+                {
+                    "text": "Execution time", 
+                    "name": "execution_time", 
+                    "value": "5"
+                }, 
+                {
+                    "text": "Num CPUs", 
+                    "name": "num_cpus", 
+                    "value": "1"
+                }, 
+                {
+                    "text": "Group start", 
+                    "name": "group_start", 
+                    "value": "0"
+                }, 
+                {
+                    "text": "Appclass", 
+                    "name": "appclass", 
+                    "value": "test.graphsRepository"
+                }, 
+                {
+                    "text": "Arg01", 
+                    "name": "Arg01", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg02", 
+                    "name": "Arg02", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg03", 
+                    "name": "Arg03", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg04", 
+                    "name": "Arg04", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg05", 
+                    "name": "Arg05", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg06", 
+                    "name": "Arg06", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg07", 
+                    "name": "Arg07", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg08", 
+                    "name": "Arg08", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg09", 
+                    "name": "Arg09", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg10", 
+                    "name": "Arg10", 
+                    "value": ""
+                }
+            ], 
+            "type": "Python App", 
+            "inputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "07c6b043-c9cc-4521-8f69-a6c542d2be23"
                 }
             ]
         }
