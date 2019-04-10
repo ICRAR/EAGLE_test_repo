@@ -1,0 +1,500 @@
+{
+    "copiesArrayObjects": true, 
+    "linkToPortIdProperty": "toPort", 
+    "linkFromPortIdProperty": "fromPort", 
+    "linkDataArray": [
+        {
+            "toPort": "aeb43b15-ade3-4965-a87a-f8e321fbae69", 
+            "to": -2, 
+            "points": [
+                959.66796875, 
+                421.8708984375, 
+                969.66796875, 
+                421.8708984375, 
+                969.66796875, 
+                421.8708984375, 
+                969.66796875, 
+                421.8708984375, 
+                1070.03125, 
+                421.8708984375, 
+                1080.03125, 
+                421.8708984375
+            ], 
+            "from": -5, 
+            "fromPort": "3720312e-5466-4066-a6c3-af285857d99b"
+        }, 
+        {
+            "toPort": "44f296a4-bd9c-48bc-88e2-789949a973f7", 
+            "to": -6, 
+            "points": [
+                1254.7109375, 
+                421.8708984375, 
+                1264.7109375, 
+                421.8708984375, 
+                1264.7109375, 
+                421.8708984375, 
+                1264.7109375, 
+                421.8708984375, 
+                1324.671875, 
+                421.8708984375, 
+                1334.671875, 
+                421.8708984375
+            ], 
+            "from": -2, 
+            "fromPort": "914b1ce4-1d5b-4ee8-9a75-016ae0433407"
+        }, 
+        {
+            "toPort": "ae22acd6-c889-47a2-bdac-d4e8889f7fb6", 
+            "to": -14, 
+            "points": [
+                545.02734375, 
+                270.8708984375, 
+                555.02734375, 
+                270.8708984375, 
+                556, 
+                270.8708984375, 
+                556, 
+                169, 
+                707.31640625, 
+                169, 
+                717.31640625, 
+                169
+            ], 
+            "from": -4, 
+            "fromPort": "096c5229-fa26-4dc8-97f6-843a6a2e9af0"
+        }
+    ], 
+    "nodeDataArray": [
+        {
+            "category": "Comment", 
+            "loc": "0 74.8708984375", 
+            "outputPorts": [], 
+            "isData": false, 
+            "fields": [], 
+            "colour": " #799938", 
+            "canHaveOutputs": false, 
+            "canHaveInputs": false, 
+            "categoryType": "Other", 
+            "shape": "File", 
+            "isGroup": false, 
+            "key": -12, 
+            "text": "Enter comment", 
+            "type": "Comment", 
+            "inputPorts": []
+        }, 
+        {
+            "category": "Description", 
+            "loc": "140 74.8708984375", 
+            "outputPorts": [], 
+            "isData": false, 
+            "fields": [
+                {
+                    "text": "Description", 
+                    "value": ""
+                }
+            ], 
+            "colour": " #9b3065", 
+            "canHaveOutputs": false, 
+            "canHaveInputs": false, 
+            "categoryType": "Other", 
+            "isGroup": false, 
+            "key": -21, 
+            "text": "Enter label", 
+            "type": "Graph Description", 
+            "inputPorts": []
+        }, 
+        {
+            "category": "SplitData", 
+            "loc": "743.671875 178", 
+            "type": "Scatter", 
+            "isData": false, 
+            "outputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "199cec1d-68c2-4718-bd11-67b704269903"
+                }
+            ], 
+            "outputLocalPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "4958b90a-8f21-42be-a40e-30d71ea4bfdd"
+                }, 
+                {
+                    "IdText": "data", 
+                    "Id": "43970b96-08e3-4f91-8430-02db038d0e11"
+                }
+            ], 
+            "text": "FauxSleep", 
+            "colour": " #DDAD00", 
+            "canHaveOutputs": true, 
+            "canHaveInputs": true, 
+            "application": "Component", 
+            "desiredSize": {
+                "width": 787, 
+                "class": "go.Size", 
+                "height": 566
+            }, 
+            "inputLocalPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "85d371d1-92da-40a8-b39b-a1c22c5f539b"
+                }
+            ], 
+            "isGroup": true, 
+            "key": -14, 
+            "fields": [
+                {
+                    "text": "Number of copies", 
+                    "name": "num_of_copies", 
+                    "value": "3"
+                }, 
+                {
+                    "text": "Scatter axis", 
+                    "name": "scatter_axis", 
+                    "value": "time"
+                }
+            ], 
+            "categoryType": "GroupComponent", 
+            "inputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "83ed30a6-cbc2-47e4-bf20-be0e053f6665"
+                }, 
+                {
+                    "IdText": "data", 
+                    "Id": "ae22acd6-c889-47a2-bdac-d4e8889f7fb6"
+                }
+            ], 
+            "appFields": [
+                {
+                    "text": "Execution time", 
+                    "name": "execution_time", 
+                    "value": "5"
+                }, 
+                {
+                    "text": "Num CPUs", 
+                    "name": "num_cpus", 
+                    "value": "1"
+                }, 
+                {
+                    "text": "Group start", 
+                    "name": "group_start", 
+                    "value": "0"
+                }, 
+                {
+                    "text": "Appclass", 
+                    "name": "appclass", 
+                    "value": "dlg.apps.simple.SleepApp"
+                }, 
+                {
+                    "text": "Arg01", 
+                    "name": "Arg01", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg02", 
+                    "name": "Arg02", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg03", 
+                    "name": "Arg03", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg04", 
+                    "name": "Arg04", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg05", 
+                    "name": "Arg05", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg06", 
+                    "name": "Arg06", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg07", 
+                    "name": "Arg07", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg08", 
+                    "name": "Arg08", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg09", 
+                    "name": "Arg09", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg10", 
+                    "name": "Arg10", 
+                    "value": ""
+                }
+            ]
+        }, 
+        {
+            "category": "Component", 
+            "loc": "1066.671875 375", 
+            "group": -14, 
+            "isData": false, 
+            "outputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "87f07ad0-d7d8-48ed-aa04-915a26794695"
+                }, 
+                {
+                    "IdText": "image", 
+                    "Id": "914b1ce4-1d5b-4ee8-9a75-016ae0433407"
+                }
+            ], 
+            "text": "CImager", 
+            "colour": " #3498DB", 
+            "canHaveOutputs": true, 
+            "canHaveInputs": true, 
+            "categoryType": "ApplicationDrop", 
+            "isGroup": false, 
+            "key": -2, 
+            "fields": [
+                {
+                    "text": "Execution time", 
+                    "name": "execution_time", 
+                    "value": "5"
+                }, 
+                {
+                    "text": "Num CPUs", 
+                    "name": "num_cpus", 
+                    "value": "1"
+                }, 
+                {
+                    "text": "Group start", 
+                    "name": "group_start", 
+                    "value": "0"
+                }, 
+                {
+                    "text": "Appclass", 
+                    "name": "appclass", 
+                    "value": "cimager_drop. CImagerDrop"
+                }, 
+                {
+                    "text": "Arg01", 
+                    "name": "Arg01", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg02", 
+                    "name": "Arg02", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg03", 
+                    "name": "Arg03", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg04", 
+                    "name": "Arg04", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg05", 
+                    "name": "Arg05", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg06", 
+                    "name": "Arg06", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg07", 
+                    "name": "Arg07", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg08", 
+                    "name": "Arg08", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg09", 
+                    "name": "Arg09", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Arg10", 
+                    "name": "Arg10", 
+                    "value": ""
+                }
+            ], 
+            "type": "Python App", 
+            "inputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "9b5d4ef6-6171-476e-9bd9-0a12e3ea63f7"
+                }, 
+                {
+                    "IdText": "ms", 
+                    "Id": "aeb43b15-ade3-4965-a87a-f8e321fbae69"
+                }
+            ]
+        }, 
+        {
+            "category": "file", 
+            "loc": "820.671875 375", 
+            "group": -14, 
+            "outputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "552088b4-64a4-4ece-8396-6a0cd6044abb"
+                }, 
+                {
+                    "IdText": "ms", 
+                    "Id": "3720312e-5466-4066-a6c3-af285857d99b"
+                }
+            ], 
+            "isData": true, 
+            "fields": [
+                {
+                    "text": "Data volume", 
+                    "name": "data_volume", 
+                    "value": "5"
+                }, 
+                {
+                    "text": "Group end", 
+                    "name": "group_end", 
+                    "value": "0"
+                }, 
+                {
+                    "text": "Check file path exists", 
+                    "name": "check_filepath_exists", 
+                    "value": "1"
+                }, 
+                {
+                    "text": "File path", 
+                    "name": "filepath", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Directory name", 
+                    "name": "dirname", 
+                    "value": ""
+                }
+            ], 
+            "colour": " #394BB2", 
+            "canHaveOutputs": true, 
+            "canHaveInputs": true, 
+            "categoryType": "DataDrop", 
+            "shape": "Card", 
+            "isGroup": false, 
+            "key": -5, 
+            "text": "MS", 
+            "type": "File Drop", 
+            "inputPorts": []
+        }, 
+        {
+            "category": "file", 
+            "loc": "1334.671875 375", 
+            "group": -14, 
+            "outputPorts": [], 
+            "isData": true, 
+            "fields": [
+                {
+                    "text": "Data volume", 
+                    "name": "data_volume", 
+                    "value": "5"
+                }, 
+                {
+                    "text": "Group end", 
+                    "name": "group_end", 
+                    "value": "0"
+                }, 
+                {
+                    "text": "Check file path exists", 
+                    "name": "check_filepath_exists", 
+                    "value": "1"
+                }, 
+                {
+                    "text": "File path", 
+                    "name": "filepath", 
+                    "value": ""
+                }, 
+                {
+                    "text": "Directory name", 
+                    "name": "dirname", 
+                    "value": ""
+                }
+            ], 
+            "colour": " #394BB2", 
+            "canHaveOutputs": true, 
+            "canHaveInputs": true, 
+            "categoryType": "DataDrop", 
+            "shape": "Card", 
+            "isGroup": false, 
+            "key": -6, 
+            "text": "Enter label", 
+            "type": "File Drop", 
+            "inputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "a061e21d-6769-41fb-b62a-454b175cc59a"
+                }, 
+                {
+                    "IdText": "image", 
+                    "Id": "44f296a4-bd9c-48bc-88e2-789949a973f7"
+                }
+            ]
+        }, 
+        {
+            "category": "memory", 
+            "loc": "398.671875 224", 
+            "outputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "1d1c6f79-59e0-40d9-bc99-469b16c55506"
+                }, 
+                {
+                    "IdText": "data", 
+                    "Id": "096c5229-fa26-4dc8-97f6-843a6a2e9af0"
+                }
+            ], 
+            "isData": true, 
+            "fields": [
+                {
+                    "text": "Data volume", 
+                    "name": "data_volume", 
+                    "value": "5"
+                }, 
+                {
+                    "text": "Group end", 
+                    "name": "group_end", 
+                    "value": "0"
+                }
+            ], 
+            "colour": " #394BB2", 
+            "canHaveOutputs": true, 
+            "canHaveInputs": true, 
+            "categoryType": "DataDrop", 
+            "shape": "Card", 
+            "isGroup": false, 
+            "key": -4, 
+            "text": "Enter label", 
+            "type": "Memory Drop", 
+            "inputPorts": []
+        }
+    ], 
+    "modelData": {
+        "repo": "ICRAR/dlg_repo", 
+        "sha": "", 
+        "fileType": "palette", 
+        "git_url": "", 
+        "filePath": "CImage.palette"
+    }, 
+    "class": "go.GraphLinksModel", 
+    "copiesArrays": true
+}
