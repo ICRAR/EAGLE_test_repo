@@ -1,0 +1,357 @@
+{
+    "modelData": {
+        "fileType": 0,
+        "repo": "ICRAR/EAGLE_test_repo",
+        "filePath": "wsclean/wsclean.graph",
+        "sha": "",
+        "git_url": ""
+    },
+    "nodeDataArray": [
+        {
+            "category": "file",
+            "categoryType": "DataDrop",
+            "type": "file",
+            "isData": true,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "colour": " #394BB2",
+            "key": -1,
+            "text": "Done",
+            "loc": "689 535",
+            "inputPorts": [
+                {
+                    "Id": "add668b4-f4f1-4ea9-91fc-80e3315d0f10",
+                    "IdText": "event",
+                    "multiplicity": 1
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "8102d2db-478d-41ad-ae16-fe22c805aed1",
+                    "IdText": "event",
+                    "multiplicity": 1
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "appFields": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "5"
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "0"
+                },
+                {
+                    "text": "Check file path exists",
+                    "name": "check_filepath_exists",
+                    "value": "1"
+                },
+                {
+                    "text": "File path",
+                    "name": "filepath",
+                    "value": ""
+                },
+                {
+                    "text": "Directory name",
+                    "name": "dirname",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "category": "SplitData",
+            "categoryType": "GroupComponent",
+            "type": "SplitData",
+            "isData": false,
+            "isGroup": true,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "colour": " #DDAD00",
+            "key": -2,
+            "text": "wsclean scatter by channel-range",
+            "loc": "414.00199999999995 254.002",
+            "inputPorts": [
+                {
+                    "Id": "94a41ddc-d86b-4100-a6e8-c40d2811f128",
+                    "IdText": "event",
+                    "multiplicity": 1
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "1b564b43-b3f0-4b92-97e1-fab12ea2aff3",
+                    "IdText": "event",
+                    "multiplicity": 1
+                }
+            ],
+            "inputLocalPorts": [
+                {
+                    "Id": "35b56fbb-3bc4-4496-9cc1-cfa823f6f988",
+                    "IdText": "event",
+                    "multiplicity": 1
+                }
+            ],
+            "outputLocalPorts": [
+                {
+                    "Id": "a4fd601e-8726-49c6-ba1b-da075385caf6",
+                    "IdText": "event",
+                    "multiplicity": 1
+                }
+            ],
+            "appFields": [
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": "5"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": "1"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "0"
+                },
+                {
+                    "text": "Appclass",
+                    "name": "appclass",
+                    "value": "dlg_integrate.wsclean.wscleandrop.Split"
+                },
+                {
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": "niter=5,pol=I"
+                },
+                {
+                    "text": "Arg02",
+                    "name": "Arg02",
+                    "value": "data_column=DATA"
+                },
+                {
+                    "text": "Arg03",
+                    "name": "Arg03",
+                    "value": "threshold=0.1"
+                },
+                {
+                    "text": "Arg04",
+                    "name": "Arg04",
+                    "value": "weight=briggs_0"
+                },
+                {
+                    "text": "Arg05",
+                    "name": "Arg05",
+                    "value": "gain=0.1"
+                },
+                {
+                    "text": "Arg06",
+                    "name": "Arg06",
+                    "value": "name=/temp/wsclean/result"
+                },
+                {
+                    "text": "Arg07",
+                    "name": "Arg07",
+                    "value": "scale=1arcmin"
+                },
+                {
+                    "text": "Arg08",
+                    "name": "Arg08",
+                    "value": "size=1024_1024"
+                },
+                {
+                    "text": "Arg09",
+                    "name": "Arg09",
+                    "value": "ms=/Users/wsl/Work/Cwork/ska/casa/arl_data/vis/ASKAP_example.ms"
+                },
+                {
+                    "text": "Arg10",
+                    "name": "Arg10",
+                    "value": "num_channel=192"
+                }
+            ],
+            "fields": [
+                {
+                    "text": "Number of copies",
+                    "name": "num_of_copies",
+                    "value": "4"
+                },
+                {
+                    "text": "Scatter axis",
+                    "name": "scatter_axis",
+                    "value": "time"
+                }
+            ]
+        },
+        {
+            "category": "Component",
+            "categoryType": "ApplicationDrop",
+            "type": "Component",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "colour": " #1C2833",
+            "key": -3,
+            "text": "Clean",
+            "loc": "475 466",
+            "inputPorts": [
+                {
+                    "Id": "input_string",
+                    "IdText": "event",
+                    "multiplicity": 1
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "output_string",
+                    "IdText": "event",
+                    "multiplicity": 1
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "appFields": [],
+            "fields": [
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": "5"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": "1"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "0"
+                },
+                {
+                    "text": "Appclass",
+                    "name": "appclass",
+                    "value": "dlg_integrate.wsclean.wscleandrop.WSClean"
+                },
+                {
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": ""
+                },
+                {
+                    "text": "Arg02",
+                    "name": "Arg02",
+                    "value": ""
+                },
+                {
+                    "text": "Arg03",
+                    "name": "Arg03",
+                    "value": ""
+                },
+                {
+                    "text": "Arg04",
+                    "name": "Arg04",
+                    "value": ""
+                },
+                {
+                    "text": "Arg05",
+                    "name": "Arg05",
+                    "value": ""
+                },
+                {
+                    "text": "Arg06",
+                    "name": "Arg06",
+                    "value": ""
+                },
+                {
+                    "text": "Arg07",
+                    "name": "Arg07",
+                    "value": ""
+                },
+                {
+                    "text": "Arg08",
+                    "name": "Arg08",
+                    "value": ""
+                },
+                {
+                    "text": "Arg09",
+                    "name": "Arg09",
+                    "value": ""
+                },
+                {
+                    "text": "Arg10",
+                    "name": "Arg10",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "category": "file",
+            "categoryType": "DataDrop",
+            "type": "file",
+            "isData": true,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "colour": " #394BB2",
+            "key": -4,
+            "text": "args splitted by channel",
+            "loc": "462 308",
+            "inputPorts": [
+                {
+                    "Id": "111b3131-57a7-4023-ab14-ca67f6eec728",
+                    "IdText": "event",
+                    "multiplicity": 1
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "0f4b9df1-ca4e-455c-adfd-d27f38fb0ab9",
+                    "IdText": "event",
+                    "multiplicity": 1
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "appFields": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "5"
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "0"
+                }
+            ]
+        }
+    ],
+    "linkDataArray": [
+        {
+            "from": -20,
+            "fromPort": "a4fd601e-8726-49c6-ba1b-da075385caf6",
+            "to": -4,
+            "toPort": "111b3131-57a7-4023-ab14-ca67f6eec728"
+        },
+        {
+            "from": -4,
+            "fromPort": "0f4b9df1-ca4e-455c-adfd-d27f38fb0ab9",
+            "to": -22,
+            "toPort": "input_string"
+        },
+        {
+            "from": -22,
+            "fromPort": "output_string",
+            "to": -7,
+            "toPort": "add668b4-f4f1-4ea9-91fc-80e3315d0f10"
+        }
+    ]
+}
