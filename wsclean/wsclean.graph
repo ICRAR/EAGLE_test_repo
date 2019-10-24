@@ -1,6 +1,6 @@
 {
     "modelData": {
-        "fileType": 0,
+        "fileType": "",
         "repo": "ICRAR/EAGLE_test_repo",
         "filePath": "wsclean/wsclean.graph",
         "sha": "",
@@ -18,8 +18,8 @@
             "colour": " #394BB2",
             "key": -1,
             "text": "Done",
-            "loc": "689 535",
-            "group": -20,
+            "loc": "1006.0059999999999 509.00599999999986",
+            "group": -2,
             "inputPorts": [
                 {
                     "Id": "add668b4-f4f1-4ea9-91fc-80e3315d0f10",
@@ -36,7 +36,8 @@
             ],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
-            "appFields": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
             "fields": [
                 {
                     "text": "Data volume",
@@ -76,8 +77,8 @@
             "colour": " #DDAD00",
             "key": -2,
             "text": "wsclean scatter by channel-range",
-            "loc": "414 254",
-            "application": "Component",
+            "loc": "536.0049999999999 286.005",
+            "inputApplication": "Component",
             "inputPorts": [
                 {
                     "Id": "94a41ddc-d86b-4100-a6e8-c40d2811f128",
@@ -106,7 +107,7 @@
                     "multiplicity": 1
                 }
             ],
-            "appFields": [
+            "inputAppFields": [
                 {
                     "text": "Execution time",
                     "name": "execution_time",
@@ -178,6 +179,7 @@
                     "value": "num_channel=192"
                 }
             ],
+            "outputAppFields": [],
             "fields": [
                 {
                     "text": "Number of copies",
@@ -192,8 +194,8 @@
             ],
             "desiredSize": {
                 "class": "go.Size",
-                "width": 491,
-                "height": 398
+                "width": 804,
+                "height": 511
             }
         },
         {
@@ -207,7 +209,7 @@
             "colour": " #1C2833",
             "key": -3,
             "text": "Clean",
-            "loc": "469.1892934570312 427.2562795410156",
+            "loc": "743.002 517.002",
             "group": -4,
             "inputPorts": [
                 {
@@ -225,7 +227,8 @@
             ],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
-            "appFields": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
             "fields": [
                 {
                     "text": "Execution time",
@@ -310,8 +313,8 @@
             "colour": " #394BB2",
             "key": -4,
             "text": "args splitted by channel",
-            "loc": "462 308",
-            "group": -20,
+            "loc": "702.002 347.00199999999995",
+            "group": -2,
             "inputPorts": [
                 {
                     "Id": "111b3131-57a7-4023-ab14-ca67f6eec728",
@@ -328,7 +331,8 @@
             ],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
-            "appFields": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
             "fields": [
                 {
                     "text": "Data volume",
@@ -345,22 +349,28 @@
     ],
     "linkDataArray": [
         {
-            "from": -20,
-            "fromPort": "a4fd601e-8726-49c6-ba1b-da075385caf6",
+            "from": -2,
+            "fromPort": "94a41ddc-d86b-4100-a6e8-c40d2811f128",
             "to": -4,
             "toPort": "111b3131-57a7-4023-ab14-ca67f6eec728"
         },
         {
             "from": -4,
             "fromPort": "0f4b9df1-ca4e-455c-adfd-d27f38fb0ab9",
-            "to": -22,
+            "to": -3,
             "toPort": "input_string"
         },
         {
-            "from": -22,
+            "from": -3,
             "fromPort": "output_string",
-            "to": -7,
+            "to": -1,
             "toPort": "add668b4-f4f1-4ea9-91fc-80e3315d0f10"
+        },
+        {
+            "from": -1,
+            "fromPort": "8102d2db-478d-41ad-ae16-fe22c805aed1",
+            "to": -2,
+            "toPort": "1b564b43-b3f0-4b92-97e1-fab12ea2aff3"
         }
     ]
 }
