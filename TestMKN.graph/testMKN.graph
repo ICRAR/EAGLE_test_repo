@@ -38,7 +38,7 @@
             "colour": " #394BB2",
             "key": -4,
             "text": "conf",
-            "loc": "355 92",
+            "loc": "304.001 176.001",
             "inputPorts": [],
             "outputPorts": [
                 {
@@ -90,7 +90,7 @@
             "colour": " #DDAD00",
             "key": -2,
             "text": "Producer of M",
-            "loc": "744.0059999999999 163.00600000000003",
+            "loc": "590.0079999999998 173.00800000000004",
             "group": -1,
             "inputApplication": "Component",
             "inputPorts": [
@@ -223,7 +223,7 @@
             "colour": " #394BB2",
             "key": -5,
             "text": "Freq split",
-            "loc": "804.0119999999997 212.01200000000006",
+            "loc": "650.0119999999997 222.01200000000006",
             "group": -2,
             "inputPorts": [
                 {
@@ -267,7 +267,7 @@
             "colour": "#799938",
             "key": -3,
             "text": "Comment",
-            "loc": "357.0129999999997 292.0129999999997",
+            "loc": "802.0139999999997 43.01399999999969",
             "inputPorts": [],
             "outputPorts": [],
             "inputLocalPorts": [],
@@ -275,6 +275,138 @@
             "inputAppFields": [],
             "outputAppFields": [],
             "fields": []
+        },
+        {
+            "category": "DataGather",
+            "categoryType": "GroupComponent",
+            "type": "DataGather",
+            "isData": false,
+            "isGroup": true,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "colour": " #D35400",
+            "key": -6,
+            "text": "Averager",
+            "loc": "1018.0059999999999 169.00600000000003",
+            "inputApplication": "Component",
+            "inputPorts": [
+                {
+                    "Id": "b7a119fa-c5ce-4cbb-a95a-93509f85ebbe",
+                    "IdText": "event",
+                    "multiplicity": 1
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "1c8700fb-e49e-461b-8458-8900dc1e3ba9",
+                    "IdText": "event",
+                    "multiplicity": 1
+                }
+            ],
+            "inputLocalPorts": [
+                {
+                    "Id": "8928c07a-7b35-451d-a0b1-000c7619ef41",
+                    "IdText": "event",
+                    "multiplicity": 1
+                }
+            ],
+            "outputLocalPorts": [
+                {
+                    "Id": "1523cfdd-5801-45fe-aeab-84df7d53107b",
+                    "IdText": "event",
+                    "multiplicity": 1
+                }
+            ],
+            "inputAppFields": [
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": "5"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": "1"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "0"
+                },
+                {
+                    "text": "Appclass",
+                    "name": "appclass",
+                    "value": "test.graphsRepository"
+                },
+                {
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": ""
+                },
+                {
+                    "text": "Arg02",
+                    "name": "Arg02",
+                    "value": ""
+                },
+                {
+                    "text": "Arg03",
+                    "name": "Arg03",
+                    "value": ""
+                },
+                {
+                    "text": "Arg04",
+                    "name": "Arg04",
+                    "value": ""
+                },
+                {
+                    "text": "Arg05",
+                    "name": "Arg05",
+                    "value": ""
+                },
+                {
+                    "text": "Arg06",
+                    "name": "Arg06",
+                    "value": ""
+                },
+                {
+                    "text": "Arg07",
+                    "name": "Arg07",
+                    "value": ""
+                },
+                {
+                    "text": "Arg08",
+                    "name": "Arg08",
+                    "value": ""
+                },
+                {
+                    "text": "Arg09",
+                    "name": "Arg09",
+                    "value": ""
+                },
+                {
+                    "text": "Arg10",
+                    "name": "Arg10",
+                    "value": ""
+                }
+            ],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Number of inputs",
+                    "name": "num_of_inputs",
+                    "value": "2"
+                },
+                {
+                    "text": "Gather axis",
+                    "name": "gather_axis",
+                    "value": "frequency"
+                }
+            ],
+            "desiredSize": {
+                "class": "go.Size",
+                "width": 200,
+                "height": 200
+            }
         }
     ],
     "linkDataArray": [
@@ -289,6 +421,12 @@
             "fromPort": "52893660-2afe-4091-ba9e-9d9e893a340f",
             "to": -5,
             "toPort": "0889ef80-5666-476e-8213-99aaadc87e3a"
+        },
+        {
+            "from": -5,
+            "fromPort": "1684ee13-f5fe-4e2a-90b8-cd6e3d66d57e",
+            "to": -6,
+            "toPort": "b7a119fa-c5ce-4cbb-a95a-93509f85ebbe"
         }
     ]
 }
