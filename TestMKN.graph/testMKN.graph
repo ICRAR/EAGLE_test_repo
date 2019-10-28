@@ -18,7 +18,7 @@
             "colour": "#9b3065",
             "key": -1,
             "text": "M > K, K > N",
-            "loc": "567.001 43.001",
+            "loc": "567 43",
             "inputPorts": [],
             "outputPorts": [],
             "inputLocalPorts": [],
@@ -38,7 +38,8 @@
             "colour": " #3498DB",
             "key": -2,
             "text": "read_conf",
-            "loc": "402.0089999999998 479.009",
+            "loc": "850.002 382.00199999999995",
+            "group": -3,
             "inputPorts": [
                 {
                     "Id": "b014254b-3933-48ab-a9e0-9cf75c0e2e08",
@@ -141,7 +142,7 @@
             "colour": " #DDAD00",
             "key": -3,
             "text": "Enter label",
-            "loc": "631.0039999999999 181.00400000000002",
+            "loc": "631 181",
             "group": -1,
             "inputPorts": [
                 {
@@ -187,8 +188,8 @@
             ],
             "desiredSize": {
                 "class": "go.Size",
-                "width": 316,
-                "height": 254
+                "width": 528,
+                "height": 473
             }
         },
         {
@@ -202,7 +203,7 @@
             "colour": " #394BB2",
             "key": -4,
             "text": "conf",
-            "loc": "280.0039999999999 100.00400000000002",
+            "loc": "280 100",
             "inputPorts": [],
             "outputPorts": [
                 {
@@ -242,6 +243,50 @@
                     "value": ""
                 }
             ]
+        },
+        {
+            "category": "memory",
+            "categoryType": "DataDrop",
+            "type": "memory",
+            "isData": true,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "colour": " #394BB2",
+            "key": -5,
+            "text": "event",
+            "loc": "740.502 281.50199999999995",
+            "group": -3,
+            "inputPorts": [
+                {
+                    "Id": "0f613093-c067-4ad9-822c-07cb796d46c9",
+                    "IdText": "event",
+                    "multiplicity": 1
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "d1d124e8-7e5a-45d8-9197-6957332277de",
+                    "IdText": "event",
+                    "multiplicity": 1
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "5"
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "0"
+                }
+            ]
         }
     ],
     "linkDataArray": [
@@ -250,6 +295,18 @@
             "fromPort": "69edfcd5-159b-4b6a-92a2-7f74808194c6",
             "to": -3,
             "toPort": "0f731231-bb9e-4a55-be0e-b182ad25c93b"
+        },
+        {
+            "from": -3,
+            "fromPort": "52893660-2afe-4091-ba9e-9d9e893a340f",
+            "to": -5,
+            "toPort": "0f613093-c067-4ad9-822c-07cb796d46c9"
+        },
+        {
+            "from": -5,
+            "fromPort": "d1d124e8-7e5a-45d8-9197-6957332277de",
+            "to": -2,
+            "toPort": "b014254b-3933-48ab-a9e0-9cf75c0e2e08"
         }
     ]
 }
