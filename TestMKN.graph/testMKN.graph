@@ -583,6 +583,58 @@
                     "value": "0"
                 }
             ]
+        },
+        {
+            "category": "file",
+            "categoryType": "DataDrop",
+            "type": "file",
+            "isData": true,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "colour": " #394BB2",
+            "key": -9,
+            "text": "ImageCube",
+            "loc": "1533.004 231.00399999999996",
+            "inputPorts": [
+                {
+                    "Id": "a1d719e8-1b62-4b23-a11f-b33e4c774dd1",
+                    "IdText": "event",
+                    "multiplicity": 1
+                }
+            ],
+            "outputPorts": [],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "5"
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "0"
+                },
+                {
+                    "text": "Check file path exists",
+                    "name": "check_filepath_exists",
+                    "value": "1"
+                },
+                {
+                    "text": "File path",
+                    "name": "filepath",
+                    "value": ""
+                },
+                {
+                    "text": "Directory name",
+                    "name": "dirname",
+                    "value": ""
+                }
+            ]
         }
     ],
     "linkDataArray": [
@@ -615,6 +667,12 @@
             "fromPort": "1684ee13-f5fe-4e2a-90b8-cd6e3d66d57e",
             "to": -7,
             "toPort": "b7a119fa-c5ce-4cbb-a95a-93509f85ebbe"
+        },
+        {
+            "from": -7,
+            "fromPort": "1c8700fb-e49e-461b-8458-8900dc1e3ba9",
+            "to": -9,
+            "toPort": "a1d719e8-1b62-4b23-a11f-b33e4c774dd1"
         }
     ]
 }
