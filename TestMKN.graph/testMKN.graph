@@ -38,7 +38,7 @@
             "colour": " #DDAD00",
             "key": -3,
             "text": "Scatter01",
-            "loc": "604.0149999999996 162.01500000000007",
+            "loc": "604.001 162.001",
             "group": -1,
             "inputApplication": "Component",
             "inputPorts": [
@@ -171,7 +171,7 @@
             "colour": " #394BB2",
             "key": -4,
             "text": "conf",
-            "loc": "280.00199999999995 100.00200000000001",
+            "loc": "280 100",
             "inputPorts": [],
             "outputPorts": [
                 {
@@ -223,7 +223,7 @@
             "colour": " #394BB2",
             "key": -5,
             "text": "conf_item",
-            "loc": "707.2611503906248 225.77134326171867",
+            "loc": "707.001 225.001",
             "group": -1,
             "inputPorts": [
                 {
@@ -255,6 +255,110 @@
                     "value": "0"
                 }
             ]
+        },
+        {
+            "category": "Component",
+            "categoryType": "ApplicationDrop",
+            "type": "Component",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "colour": " #3498DB",
+            "key": -2,
+            "text": "Enter label",
+            "loc": "862.001 313.001",
+            "group": -5,
+            "inputPorts": [
+                {
+                    "Id": "b014254b-3933-48ab-a9e0-9cf75c0e2e08",
+                    "IdText": "event",
+                    "multiplicity": 1
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "950a817e-fb2f-4a3f-bd66-ca169f578de8",
+                    "IdText": "event",
+                    "multiplicity": 1
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": "5"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": "1"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "0"
+                },
+                {
+                    "text": "Appclass",
+                    "name": "appclass",
+                    "value": "test.graphsRepository"
+                },
+                {
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": ""
+                },
+                {
+                    "text": "Arg02",
+                    "name": "Arg02",
+                    "value": ""
+                },
+                {
+                    "text": "Arg03",
+                    "name": "Arg03",
+                    "value": ""
+                },
+                {
+                    "text": "Arg04",
+                    "name": "Arg04",
+                    "value": ""
+                },
+                {
+                    "text": "Arg05",
+                    "name": "Arg05",
+                    "value": ""
+                },
+                {
+                    "text": "Arg06",
+                    "name": "Arg06",
+                    "value": ""
+                },
+                {
+                    "text": "Arg07",
+                    "name": "Arg07",
+                    "value": ""
+                },
+                {
+                    "text": "Arg08",
+                    "name": "Arg08",
+                    "value": ""
+                },
+                {
+                    "text": "Arg09",
+                    "name": "Arg09",
+                    "value": ""
+                },
+                {
+                    "text": "Arg10",
+                    "name": "Arg10",
+                    "value": ""
+                }
+            ]
         }
     ],
     "linkDataArray": [
@@ -269,6 +373,12 @@
             "fromPort": "52893660-2afe-4091-ba9e-9d9e893a340f",
             "to": -5,
             "toPort": "0f613093-c067-4ad9-822c-07cb796d46c9"
+        },
+        {
+            "from": -5,
+            "fromPort": "d1d124e8-7e5a-45d8-9197-6957332277de",
+            "to": -2,
+            "toPort": "b014254b-3933-48ab-a9e0-9cf75c0e2e08"
         }
     ]
 }
