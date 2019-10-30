@@ -37,8 +37,8 @@
             "canHaveOutputs": true,
             "colour": " #DDAD00",
             "key": -2,
-            "text": "Enter label",
-            "loc": "446.00699999999983 185.00700000000003",
+            "text": "Split",
+            "loc": "446.00999999999976 185.01000000000005",
             "inputApplication": "Component",
             "inputPorts": [
                 {
@@ -170,8 +170,7 @@
             "colour": " #394BB2",
             "key": -5,
             "text": "M",
-            "loc": "546 325",
-            "group": -2,
+            "loc": "303.00599999999986 45.006011444091676",
             "inputPorts": [],
             "outputPorts": [
                 {
@@ -208,7 +207,7 @@
             "colour": " #D35400",
             "key": -3,
             "text": "gather",
-            "loc": "945.0109999999997 205.024900756836",
+            "loc": "1045.0129999999997 175.026900756836",
             "inputPorts": [
                 {
                     "Id": "b7a119fa-c5ce-4cbb-a95a-93509f85ebbe",
@@ -253,8 +252,8 @@
             ],
             "desiredSize": {
                 "class": "go.Size",
-                "width": 200,
-                "height": 200
+                "width": 439,
+                "height": 315.00001525878906
             }
         },
         {
@@ -268,8 +267,52 @@
             "colour": " #394BB2",
             "key": -7,
             "text": "K",
-            "loc": "946.5119999999997 295.5154561157225",
+            "loc": "1188.5129999999997 295.51645611572246",
             "group": -3,
+            "inputPorts": [
+                {
+                    "Id": "a1ba0e9d-9ce6-4376-8a29-0ef7c3405b06",
+                    "IdText": "event",
+                    "multiplicity": 1
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "3b0f28a3-bb4e-4ecf-a474-a03f98178024",
+                    "IdText": "event",
+                    "multiplicity": 1
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "5"
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "0"
+                }
+            ]
+        },
+        {
+            "category": "memory",
+            "categoryType": "DataDrop",
+            "type": "memory",
+            "isData": true,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "colour": " #394BB2",
+            "key": -4,
+            "text": "event",
+            "loc": "592.5134999999997 336.0273931274414",
+            "group": -2,
             "inputPorts": [
                 {
                     "Id": "a1ba0e9d-9ce6-4376-8a29-0ef7c3405b06",
@@ -304,16 +347,28 @@
     ],
     "linkDataArray": [
         {
-            "from": -5,
-            "fromPort": "3b0f28a3-bb4e-4ecf-a474-a03f98178024",
-            "to": -3,
-            "toPort": "b7a119fa-c5ce-4cbb-a95a-93509f85ebbe"
-        },
-        {
             "from": -3,
             "fromPort": "1523cfdd-5801-45fe-aeab-84df7d53107b",
             "to": -7,
             "toPort": "a1ba0e9d-9ce6-4376-8a29-0ef7c3405b06"
+        },
+        {
+            "from": -5,
+            "fromPort": "3b0f28a3-bb4e-4ecf-a474-a03f98178024",
+            "to": -2,
+            "toPort": "0f731231-bb9e-4a55-be0e-b182ad25c93b"
+        },
+        {
+            "from": -2,
+            "fromPort": "52893660-2afe-4091-ba9e-9d9e893a340f",
+            "to": -4,
+            "toPort": "a1ba0e9d-9ce6-4376-8a29-0ef7c3405b06"
+        },
+        {
+            "from": -4,
+            "fromPort": "3b0f28a3-bb4e-4ecf-a474-a03f98178024",
+            "to": -3,
+            "toPort": "b7a119fa-c5ce-4cbb-a95a-93509f85ebbe"
         }
     ]
 }
