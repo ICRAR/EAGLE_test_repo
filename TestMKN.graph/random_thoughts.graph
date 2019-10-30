@@ -18,7 +18,7 @@
             "colour": "#9b3065",
             "key": -1,
             "text": "Description",
-            "loc": "705.001 98.001",
+            "loc": "705 98",
             "inputPorts": [],
             "outputPorts": [],
             "inputLocalPorts": [],
@@ -38,7 +38,7 @@
             "colour": " #DDAD00",
             "key": -2,
             "text": "Enter label",
-            "loc": "447.0049999999999 184.00500000000002",
+            "loc": "447.00299999999993 184.00300000000001",
             "inputApplication": "Component",
             "inputPorts": [
                 {
@@ -170,7 +170,7 @@
             "colour": " #DDAD00",
             "key": -3,
             "text": "InputApp",
-            "loc": "1304.0059999999999 236.01294274902347",
+            "loc": "1304 236",
             "inputApplication": "Component",
             "inputPorts": [
                 {
@@ -300,52 +300,9 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "colour": " #394BB2",
-            "key": -4,
-            "text": "event",
-            "loc": "937.5049999999999 214.00500000000002",
-            "inputPorts": [
-                {
-                    "Id": "a1ba0e9d-9ce6-4376-8a29-0ef7c3405b06",
-                    "IdText": "event",
-                    "multiplicity": 1
-                }
-            ],
-            "outputPorts": [
-                {
-                    "Id": "3b0f28a3-bb4e-4ecf-a474-a03f98178024",
-                    "IdText": "event",
-                    "multiplicity": 1
-                }
-            ],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "fields": [
-                {
-                    "text": "Data volume",
-                    "name": "data_volume",
-                    "value": "5"
-                },
-                {
-                    "text": "Group end",
-                    "name": "group_end",
-                    "value": "0"
-                }
-            ]
-        },
-        {
-            "category": "memory",
-            "categoryType": "DataDrop",
-            "type": "memory",
-            "isData": true,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
-            "colour": " #394BB2",
             "key": -5,
             "text": "M",
-            "loc": "547.0049999999999 324.0049847412108",
+            "loc": "547 324",
             "group": -2,
             "inputPorts": [],
             "outputPorts": [
@@ -383,7 +340,7 @@
             "colour": " #394BB2",
             "key": -6,
             "text": "K",
-            "loc": "1367.0049999999999 369.0049847412108",
+            "loc": "1367 369",
             "group": -3,
             "inputPorts": [
                 {
@@ -413,28 +370,16 @@
     ],
     "linkDataArray": [
         {
-            "from": -2,
-            "fromPort": "83f717c7-16ff-4309-8b73-90dbcecc7e64",
-            "to": -4,
-            "toPort": "a1ba0e9d-9ce6-4376-8a29-0ef7c3405b06"
-        },
-        {
-            "from": -4,
-            "fromPort": "3b0f28a3-bb4e-4ecf-a474-a03f98178024",
-            "to": -3,
-            "toPort": "0f731231-bb9e-4a55-be0e-b182ad25c93b"
-        },
-        {
-            "from": -5,
-            "fromPort": "3b0f28a3-bb4e-4ecf-a474-a03f98178024",
-            "to": -2,
-            "toPort": "07efb711-d9f0-4a6f-b2aa-f594265e3bfd"
-        },
-        {
             "from": -3,
             "fromPort": "52893660-2afe-4091-ba9e-9d9e893a340f",
             "to": -6,
             "toPort": "a1ba0e9d-9ce6-4376-8a29-0ef7c3405b06"
+        },
+        {
+            "from": -5,
+            "fromPort": "3b0f28a3-bb4e-4ecf-a474-a03f98178024",
+            "to": -3,
+            "toPort": "0f731231-bb9e-4a55-be0e-b182ad25c93b"
         }
     ]
 }
