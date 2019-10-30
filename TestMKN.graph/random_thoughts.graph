@@ -155,8 +155,8 @@
             ],
             "desiredSize": {
                 "class": "go.Size",
-                "width": 200,
-                "height": 200
+                "width": 442.00001525878906,
+                "height": 306.00001525878906
             }
         },
         {
@@ -170,7 +170,7 @@
             "colour": " #DDAD00",
             "key": -3,
             "text": "Enter label",
-            "loc": "1043.003 234.00994274902345",
+            "loc": "1304.004 236.01094274902346",
             "inputApplication": "Component",
             "inputPorts": [
                 {
@@ -287,8 +287,8 @@
             ],
             "desiredSize": {
                 "class": "go.Size",
-                "width": 200,
-                "height": 200
+                "width": 297.00001525878906,
+                "height": 264
             }
         },
         {
@@ -302,8 +302,7 @@
             "colour": " #394BB2",
             "key": -4,
             "text": "event",
-            "loc": "724.502 221.002",
-            "group": -1,
+            "loc": "937.5049999999999 214.00500000000002",
             "inputPorts": [
                 {
                     "Id": "a1ba0e9d-9ce6-4376-8a29-0ef7c3405b06",
@@ -334,6 +333,82 @@
                     "value": "0"
                 }
             ]
+        },
+        {
+            "category": "memory",
+            "categoryType": "DataDrop",
+            "type": "memory",
+            "isData": true,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "colour": " #394BB2",
+            "key": -5,
+            "text": "Enter label",
+            "loc": "545.0039999999999 325.00398474121084",
+            "group": -2,
+            "inputPorts": [],
+            "outputPorts": [
+                {
+                    "Id": "3b0f28a3-bb4e-4ecf-a474-a03f98178024",
+                    "IdText": "event",
+                    "multiplicity": 1
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "5"
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "0"
+                }
+            ]
+        },
+        {
+            "category": "memory",
+            "categoryType": "DataDrop",
+            "type": "memory",
+            "isData": true,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "colour": " #394BB2",
+            "key": -6,
+            "text": "Enter label",
+            "loc": "1367.004 369.00398474121084",
+            "group": -3,
+            "inputPorts": [
+                {
+                    "Id": "a1ba0e9d-9ce6-4376-8a29-0ef7c3405b06",
+                    "IdText": "event",
+                    "multiplicity": 1
+                }
+            ],
+            "outputPorts": [],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "5"
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "0"
+                }
+            ]
         }
     ],
     "linkDataArray": [
@@ -348,6 +423,18 @@
             "fromPort": "3b0f28a3-bb4e-4ecf-a474-a03f98178024",
             "to": -3,
             "toPort": "0f731231-bb9e-4a55-be0e-b182ad25c93b"
+        },
+        {
+            "from": -5,
+            "fromPort": "3b0f28a3-bb4e-4ecf-a474-a03f98178024",
+            "to": -2,
+            "toPort": "07efb711-d9f0-4a6f-b2aa-f594265e3bfd"
+        },
+        {
+            "from": -3,
+            "fromPort": "52893660-2afe-4091-ba9e-9d9e893a340f",
+            "to": -6,
+            "toPort": "a1ba0e9d-9ce6-4376-8a29-0ef7c3405b06"
         }
     ]
 }
