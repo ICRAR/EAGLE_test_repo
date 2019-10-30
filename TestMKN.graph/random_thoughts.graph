@@ -18,7 +18,7 @@
             "colour": " #394BB2",
             "key": -1,
             "text": "Enter label",
-            "loc": "310.001 102.001",
+            "loc": "277.00199999999995 73.00200000000001",
             "inputPorts": [],
             "outputPorts": [
                 {
@@ -55,7 +55,7 @@
             "colour": " #DDAD00",
             "key": -2,
             "text": "Split",
-            "loc": "626.0049999999999 98.0119389343262",
+            "loc": "485.00699999999983 70.0139389343262",
             "inputApplication": "Component",
             "inputPorts": [
                 {
@@ -187,7 +187,7 @@
             "colour": " #D35400",
             "key": -3,
             "text": "Gather",
-            "loc": "1011.0149999999996 210.02888549804695",
+            "loc": "844.0179999999996 72.03188549804696",
             "inputApplication": "Component",
             "inputPorts": [
                 {
@@ -304,8 +304,8 @@
             ],
             "desiredSize": {
                 "class": "go.Size",
-                "width": 826,
-                "height": 579.9999847412109
+                "width": 1025,
+                "height": 599.9999847412109
             }
         },
         {
@@ -319,7 +319,7 @@
             "colour": " #394BB2",
             "key": -4,
             "text": "M",
-            "loc": "686.5089999999998 194.5263664093018",
+            "loc": "545.5089999999998 166.5263664093018",
             "group": -2,
             "inputPorts": [
                 {
@@ -363,7 +363,7 @@
             "colour": " #DDAD00",
             "key": -5,
             "text": "Second Split",
-            "loc": "1110.0319999999992 316.04588549804646",
+            "loc": "943.0339999999992 178.04788549804647",
             "group": -3,
             "inputApplication": "Component",
             "inputPorts": [
@@ -481,8 +481,8 @@
             ],
             "desiredSize": {
                 "class": "go.Size",
-                "width": 695.0000305175781,
-                "height": 399
+                "width": 900.0000305175781,
+                "height": 409
             }
         },
         {
@@ -496,7 +496,7 @@
             "colour": " #394BB2",
             "key": -6,
             "text": "K",
-            "loc": "1199.0194999999997 376.5403435058591",
+            "loc": "1032.0194999999997 238.54034350585908",
             "group": -5,
             "inputPorts": [
                 {
@@ -540,8 +540,8 @@
             "colour": " #394BB2",
             "key": -8,
             "text": "N",
-            "loc": "1566.0219999999995 576.0219847412104",
-            "group": -5,
+            "loc": "1582.0289999999993 443.02898474121025",
+            "group": -7,
             "inputPorts": [
                 {
                     "Id": "a1ba0e9d-9ce6-4376-8a29-0ef7c3405b06",
@@ -566,6 +566,67 @@
                     "value": "0"
                 }
             ]
+        },
+        {
+            "category": "SplitData",
+            "categoryType": "GroupComponent",
+            "type": "SplitData",
+            "isData": false,
+            "isGroup": true,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "colour": " #DDAD00",
+            "key": -7,
+            "text": "Enter label",
+            "loc": "1534.0089999999998 341.0089847412107",
+            "group": -5,
+            "inputPorts": [
+                {
+                    "Id": "0f731231-bb9e-4a55-be0e-b182ad25c93b",
+                    "IdText": "event",
+                    "multiplicity": 1
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "83f717c7-16ff-4309-8b73-90dbcecc7e64",
+                    "IdText": "event",
+                    "multiplicity": 1
+                }
+            ],
+            "inputLocalPorts": [
+                {
+                    "Id": "07efb711-d9f0-4a6f-b2aa-f594265e3bfd",
+                    "IdText": "event",
+                    "multiplicity": 1
+                }
+            ],
+            "outputLocalPorts": [
+                {
+                    "Id": "52893660-2afe-4091-ba9e-9d9e893a340f",
+                    "IdText": "event",
+                    "multiplicity": 1
+                }
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Number of copies",
+                    "name": "num_of_copies",
+                    "value": "3"
+                },
+                {
+                    "text": "Scatter axis",
+                    "name": "scatter_axis",
+                    "value": "time"
+                }
+            ],
+            "desiredSize": {
+                "class": "go.Size",
+                "width": 300,
+                "height": 217
+            }
         }
     ],
     "linkDataArray": [
