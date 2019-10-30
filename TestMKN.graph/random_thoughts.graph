@@ -187,7 +187,7 @@
             "colour": " #D35400",
             "key": -3,
             "text": "Gather",
-            "loc": "1011.0119999999997 210.02588549804693",
+            "loc": "1011.0129999999997 210.02688549804694",
             "inputApplication": "Component",
             "inputPorts": [
                 {
@@ -304,8 +304,8 @@
             ],
             "desiredSize": {
                 "class": "go.Size",
-                "width": 621,
-                "height": 439.99998474121094
+                "width": 705,
+                "height": 579.9999847412109
             }
         },
         {
@@ -318,8 +318,8 @@
             "canHaveOutputs": true,
             "colour": " #394BB2",
             "key": -4,
-            "text": "event",
-            "loc": "681.5059999999999 190.5164084014893",
+            "text": "M",
+            "loc": "686.5089999999998 194.5263664093018",
             "group": -2,
             "inputPorts": [
                 {
@@ -363,7 +363,7 @@
             "colour": " #DDAD00",
             "key": -5,
             "text": "Second Split",
-            "loc": "1110.0189999999996 316.03288549804677",
+            "loc": "1110.0239999999994 316.03788549804665",
             "group": -3,
             "inputApplication": "Component",
             "inputPorts": [
@@ -481,8 +481,8 @@
             ],
             "desiredSize": {
                 "class": "go.Size",
-                "width": 449,
-                "height": 295
+                "width": 528,
+                "height": 399
             }
         },
         {
@@ -495,8 +495,8 @@
             "canHaveOutputs": true,
             "colour": " #394BB2",
             "key": -6,
-            "text": "event",
-            "loc": "1204.0075 429.52138549804687",
+            "text": "K",
+            "loc": "1199.0144999999998 376.5353435058592",
             "group": -5,
             "inputPorts": [
                 {
@@ -512,6 +512,105 @@
                     "multiplicity": 1
                 }
             ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "5"
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "0"
+                }
+            ]
+        },
+        {
+            "category": "SplitData",
+            "categoryType": "GroupComponent",
+            "type": "SplitData",
+            "isData": false,
+            "isGroup": true,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "colour": " #DDAD00",
+            "key": -7,
+            "text": "Third Split",
+            "loc": "1267.0149999999996 458.0149847412106",
+            "group": -6,
+            "inputPorts": [
+                {
+                    "Id": "0f731231-bb9e-4a55-be0e-b182ad25c93b",
+                    "IdText": "event",
+                    "multiplicity": 1
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "83f717c7-16ff-4309-8b73-90dbcecc7e64",
+                    "IdText": "event",
+                    "multiplicity": 1
+                }
+            ],
+            "inputLocalPorts": [
+                {
+                    "Id": "07efb711-d9f0-4a6f-b2aa-f594265e3bfd",
+                    "IdText": "event",
+                    "multiplicity": 1
+                }
+            ],
+            "outputLocalPorts": [
+                {
+                    "Id": "52893660-2afe-4091-ba9e-9d9e893a340f",
+                    "IdText": "event",
+                    "multiplicity": 1
+                }
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Number of copies",
+                    "name": "num_of_copies",
+                    "value": "3"
+                },
+                {
+                    "text": "Scatter axis",
+                    "name": "scatter_axis",
+                    "value": "time"
+                }
+            ],
+            "desiredSize": {
+                "class": "go.Size",
+                "width": 238,
+                "height": 187.00000762939453
+            }
+        },
+        {
+            "category": "memory",
+            "categoryType": "DataDrop",
+            "type": "memory",
+            "isData": true,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "colour": " #394BB2",
+            "key": -8,
+            "text": "N",
+            "loc": "1289.0079999999998 549.0079847412107",
+            "group": -6,
+            "inputPorts": [
+                {
+                    "Id": "a1ba0e9d-9ce6-4376-8a29-0ef7c3405b06",
+                    "IdText": "event",
+                    "multiplicity": 1
+                }
+            ],
+            "outputPorts": [],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
             "inputAppFields": [],
@@ -559,6 +658,12 @@
             "from": -3,
             "fromPort": "1523cfdd-5801-45fe-aeab-84df7d53107b",
             "to": -6,
+            "toPort": "a1ba0e9d-9ce6-4376-8a29-0ef7c3405b06"
+        },
+        {
+            "from": -5,
+            "fromPort": "83f717c7-16ff-4309-8b73-90dbcecc7e64",
+            "to": -8,
             "toPort": "a1ba0e9d-9ce6-4376-8a29-0ef7c3405b06"
         }
     ]
