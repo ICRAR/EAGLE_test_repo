@@ -187,7 +187,7 @@
             "colour": " #D35400",
             "key": -3,
             "text": "Gather",
-            "loc": "1168.002 110.00200000000001",
+            "loc": "1009.0039999999999 99.00400000000002",
             "inputApplication": "Component",
             "inputPorts": [
                 {
@@ -351,6 +351,110 @@
                     "value": "0"
                 }
             ]
+        },
+        {
+            "category": "SplitData",
+            "categoryType": "GroupComponent",
+            "type": "SplitData",
+            "isData": false,
+            "isGroup": true,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "colour": " #DDAD00",
+            "key": -5,
+            "text": "Second Split",
+            "loc": "1269.0049999999999 96.00500000000002",
+            "inputPorts": [
+                {
+                    "Id": "0f731231-bb9e-4a55-be0e-b182ad25c93b",
+                    "IdText": "event",
+                    "multiplicity": 1
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "83f717c7-16ff-4309-8b73-90dbcecc7e64",
+                    "IdText": "event",
+                    "multiplicity": 1
+                }
+            ],
+            "inputLocalPorts": [
+                {
+                    "Id": "07efb711-d9f0-4a6f-b2aa-f594265e3bfd",
+                    "IdText": "event",
+                    "multiplicity": 1
+                }
+            ],
+            "outputLocalPorts": [
+                {
+                    "Id": "52893660-2afe-4091-ba9e-9d9e893a340f",
+                    "IdText": "event",
+                    "multiplicity": 1
+                }
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Number of copies",
+                    "name": "num_of_copies",
+                    "value": "4"
+                },
+                {
+                    "text": "Scatter axis",
+                    "name": "scatter_axis",
+                    "value": "time"
+                }
+            ],
+            "desiredSize": {
+                "class": "go.Size",
+                "width": 346,
+                "height": 212
+            }
+        },
+        {
+            "category": "memory",
+            "categoryType": "DataDrop",
+            "type": "memory",
+            "isData": true,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "colour": " #394BB2",
+            "key": -6,
+            "text": "event",
+            "loc": "1296.0065 185.50650000000002",
+            "group": -5,
+            "inputPorts": [
+                {
+                    "Id": "a1ba0e9d-9ce6-4376-8a29-0ef7c3405b06",
+                    "IdText": "event",
+                    "multiplicity": 1
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "3b0f28a3-bb4e-4ecf-a474-a03f98178024",
+                    "IdText": "event",
+                    "multiplicity": 1
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "5"
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "0"
+                }
+            ]
         }
     ],
     "linkDataArray": [
@@ -371,6 +475,18 @@
             "fromPort": "3b0f28a3-bb4e-4ecf-a474-a03f98178024",
             "to": -3,
             "toPort": "b7a119fa-c5ce-4cbb-a95a-93509f85ebbe"
+        },
+        {
+            "from": -3,
+            "fromPort": "1c8700fb-e49e-461b-8458-8900dc1e3ba9",
+            "to": -6,
+            "toPort": "a1ba0e9d-9ce6-4376-8a29-0ef7c3405b06"
+        },
+        {
+            "from": -6,
+            "fromPort": "3b0f28a3-bb4e-4ecf-a474-a03f98178024",
+            "to": -5,
+            "toPort": "0f731231-bb9e-4a55-be0e-b182ad25c93b"
         }
     ]
 }
