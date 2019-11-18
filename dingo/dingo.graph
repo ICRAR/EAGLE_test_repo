@@ -58,7 +58,7 @@
             "colour": " #DDAD00",
             "key": -2,
             "text": "SplitData",
-            "loc": "587.001 157.001",
+            "loc": "516.002 212.002",
             "collapsed": false,
             "streaming": false,
             "inputAppName": "DingoFrequencySplit",
@@ -90,7 +90,7 @@
                 {
                     "text": "Execution time",
                     "name": "execution_time",
-                    "value": "20"
+                    "value": "5"
                 },
                 {
                     "text": "Num CPUs",
@@ -105,7 +105,7 @@
                 {
                     "text": "Appclass",
                     "name": "appclass",
-                    "value": "dingo_split_data.DingoFrequencySplit"
+                    "value": "test.graphsRepository"
                 },
                 {
                     "text": "Arg01",
@@ -188,7 +188,7 @@
             "colour": " #3470AA",
             "key": -3,
             "text": "Load Visibilities",
-            "loc": "810.001 347.001",
+            "loc": "739.001 402.001",
             "collapsed": false,
             "streaming": false,
             "group": -2,
@@ -302,7 +302,7 @@
             "colour": " #3470AA",
             "key": -4,
             "text": "SolveNE",
-            "loc": "1162.001 367.001",
+            "loc": "1091.001 422.001",
             "collapsed": false,
             "streaming": false,
             "group": -2,
@@ -416,7 +416,7 @@
             "colour": " #3470AA",
             "key": -5,
             "text": "Spectral Cube",
-            "loc": "1460.001 353.001",
+            "loc": "1389.001 408.001",
             "collapsed": false,
             "streaming": false,
             "group": -2,
@@ -530,7 +530,7 @@
             "colour": " #394BB2",
             "key": -6,
             "text": "Config",
-            "loc": "663 226",
+            "loc": "592 281",
             "collapsed": false,
             "streaming": false,
             "group": -2,
@@ -584,7 +584,7 @@
             "colour": " #394BB2",
             "key": -7,
             "text": "solveNE",
-            "loc": "990 526",
+            "loc": "919 581",
             "collapsed": false,
             "streaming": false,
             "group": -2,
@@ -638,7 +638,7 @@
             "colour": " #394BB2",
             "key": -8,
             "text": "image",
-            "loc": "1309 531",
+            "loc": "1238 586",
             "collapsed": false,
             "streaming": false,
             "group": -2,
@@ -692,7 +692,7 @@
             "colour": " #394BB2",
             "key": -9,
             "text": "End",
-            "loc": "1832 320",
+            "loc": "1760.001 496.001",
             "collapsed": false,
             "streaming": false,
             "inputAppName": "",
@@ -704,60 +704,6 @@
                 }
             ],
             "outputPorts": [],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "fields": [
-                {
-                    "text": "Data volume",
-                    "name": "data_volume",
-                    "value": "5"
-                },
-                {
-                    "text": "Group end",
-                    "name": "group_end",
-                    "value": "0"
-                }
-            ]
-        },
-        {
-            "category": "memory",
-            "categoryType": "DataDrop",
-            "type": "memory",
-            "isData": true,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
-            "colour": " #394BB2",
-            "key": -10,
-            "text": "done",
-            "loc": "1524 237",
-            "collapsed": false,
-            "streaming": false,
-            "group": -2,
-            "inputAppName": "",
-            "outputAppName": "",
-            "inputPorts": [
-                {
-                    "Id": "8e2bd3b7-3289-4b98-a412-ac6b99a29ed0",
-                    "IdText": "event"
-                },
-                {
-                    "Id": "ac1e1215-ee22-4153-9d2f-ed300ac510ad",
-                    "IdText": "done"
-                }
-            ],
-            "outputPorts": [
-                {
-                    "Id": "eb18ff30-9e38-48e7-be08-d2041b6641dd",
-                    "IdText": "event"
-                },
-                {
-                    "Id": "f9597491-d87b-4bbf-9c8a-272c41ccc488",
-                    "IdText": "done"
-                }
-            ],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
             "inputAppFields": [],
@@ -820,22 +766,10 @@
             "toPort": "03e4ec14-5e35-43e0-bea4-9d4f3a8e6d1b"
         },
         {
-            "from": -2,
-            "fromPort": "bb618501-1ac2-48a8-9faf-45463125bf9a",
+            "from": -5,
+            "fromPort": "56f6ca50-34a9-4cc0-9c46-210bb8c0dc30",
             "to": -9,
             "toPort": "8e2bd3b7-3289-4b98-a412-ac6b99a29ed0"
-        },
-        {
-            "from": -5,
-            "fromPort": "b614db05-ed1d-48a2-9345-ade0b702d034",
-            "to": -10,
-            "toPort": "ac1e1215-ee22-4153-9d2f-ed300ac510ad"
-        },
-        {
-            "from": -10,
-            "fromPort": "f9597491-d87b-4bbf-9c8a-272c41ccc488",
-            "to": -2,
-            "toPort": "fe001a35-cb22-48f0-bff0-b4c16ea07acf"
         }
     ]
 }
