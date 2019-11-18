@@ -19,6 +19,8 @@
             "key": -1,
             "text": "Start",
             "loc": "200 100",
+            "collapsed": false,
+            "streaming": false,
             "inputAppName": "",
             "outputAppName": "",
             "inputPorts": [],
@@ -41,6 +43,8 @@
             "key": -2,
             "text": "End",
             "loc": "200 100",
+            "collapsed": false,
+            "streaming": false,
             "inputAppName": "",
             "outputAppName": "",
             "inputPorts": [],
@@ -63,6 +67,8 @@
             "key": -3,
             "text": "Comment",
             "loc": "200 100",
+            "collapsed": false,
+            "streaming": false,
             "inputAppName": "",
             "outputAppName": "",
             "inputPorts": [],
@@ -85,6 +91,8 @@
             "key": -4,
             "text": "Description",
             "loc": "200 100",
+            "collapsed": false,
+            "streaming": false,
             "inputAppName": "",
             "outputAppName": "",
             "inputPorts": [],
@@ -107,18 +115,28 @@
             "key": -5,
             "text": "Load Visibilities",
             "loc": "200 100",
+            "collapsed": false,
+            "streaming": false,
             "inputAppName": "",
             "outputAppName": "",
             "inputPorts": [
                 {
                     "Id": "a2b14744-171b-46e2-b316-3852578b4c0a",
                     "IdText": "event"
+                },
+                {
+                    "Id": "489ca004-184c-42af-be72-1d2e1b3be578",
+                    "IdText": "config"
                 }
             ],
             "outputPorts": [
                 {
                     "Id": "56f6ca50-34a9-4cc0-9c46-210bb8c0dc30",
                     "IdText": "event"
+                },
+                {
+                    "Id": "35017d5c-61ce-4930-bd67-35a8dd7e8144",
+                    "IdText": "solveNE"
                 }
             ],
             "inputLocalPorts": [],
@@ -149,7 +167,7 @@
                 {
                     "text": "Arg01",
                     "name": "Arg01",
-                    "value": "LoadVis"
+                    "value": "name=LoadVis"
                 },
                 {
                     "text": "Arg02",
@@ -210,19 +228,28 @@
             "key": -6,
             "text": "SplitData",
             "loc": "200 100",
+            "collapsed": false,
+            "streaming": false,
             "inputAppName": "",
             "outputAppName": "",
-            "inputApplication": "",
             "inputPorts": [
                 {
                     "Id": "03e4ec14-5e35-43e0-bea4-9d4f3a8e6d1b",
                     "IdText": "event"
+                },
+                {
+                    "Id": "a43420a6-6fdb-4455-9af2-0bfd38d378d9",
+                    "IdText": "config"
                 }
             ],
             "outputPorts": [
                 {
                     "Id": "bb618501-1ac2-48a8-9faf-45463125bf9a",
                     "IdText": "event"
+                },
+                {
+                    "Id": "fe001a35-cb22-48f0-bff0-b4c16ea07acf",
+                    "IdText": "done"
                 }
             ],
             "inputLocalPorts": [],
@@ -259,18 +286,28 @@
             "key": -7,
             "text": "SolveNE",
             "loc": "200 100",
+            "collapsed": false,
+            "streaming": false,
             "inputAppName": "",
             "outputAppName": "",
             "inputPorts": [
                 {
                     "Id": "a2b14744-171b-46e2-b316-3852578b4c0a",
                     "IdText": "event"
+                },
+                {
+                    "Id": "04a5379b-7cec-40ec-9534-7027975ee817",
+                    "IdText": "solveNE"
                 }
             ],
             "outputPorts": [
                 {
                     "Id": "56f6ca50-34a9-4cc0-9c46-210bb8c0dc30",
                     "IdText": "event"
+                },
+                {
+                    "Id": "7c4eab56-b9ce-4698-aacd-460070de385d",
+                    "IdText": "image"
                 }
             ],
             "inputLocalPorts": [],
@@ -301,7 +338,7 @@
                 {
                     "text": "Arg01",
                     "name": "Arg01",
-                    "value": "SolveNE"
+                    "value": "name=SolveNE"
                 },
                 {
                     "text": "Arg02",
@@ -362,18 +399,28 @@
             "key": -8,
             "text": "Spectral Cube",
             "loc": "200 100",
+            "collapsed": false,
+            "streaming": false,
             "inputAppName": "",
             "outputAppName": "",
             "inputPorts": [
                 {
                     "Id": "a2b14744-171b-46e2-b316-3852578b4c0a",
                     "IdText": "event"
+                },
+                {
+                    "Id": "92b9c283-484b-48aa-9195-08203ffd3d86",
+                    "IdText": "image"
                 }
             ],
             "outputPorts": [
                 {
                     "Id": "56f6ca50-34a9-4cc0-9c46-210bb8c0dc30",
                     "IdText": "event"
+                },
+                {
+                    "Id": "b614db05-ed1d-48a2-9345-ade0b702d034",
+                    "IdText": "done"
                 }
             ],
             "inputLocalPorts": [],
@@ -404,7 +451,7 @@
                 {
                     "text": "Arg01",
                     "name": "Arg01",
-                    "value": "SpectralCube"
+                    "value": "name=SpectralCube"
                 },
                 {
                     "text": "Arg02",
