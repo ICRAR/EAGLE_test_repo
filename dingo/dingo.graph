@@ -18,11 +18,13 @@
             "colour": " #394BB2",
             "key": -1,
             "text": "Start",
-            "loc": "348 77",
+            "loc": "293.00299999999993 128.00300000000001",
             "collapsed": false,
             "streaming": false,
             "inputAppName": "",
             "outputAppName": "",
+            "inputApplication": "Unknown",
+            "outputApplication": "Unknown",
             "inputPorts": [],
             "outputPorts": [
                 {
@@ -48,136 +50,6 @@
             ]
         },
         {
-            "category": "SplitData",
-            "categoryType": "GroupComponent",
-            "type": "SplitData",
-            "isData": false,
-            "isGroup": true,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
-            "colour": " #DDAD00",
-            "key": -2,
-            "text": "SplitData",
-            "loc": "516.0029999999999 212.00300000000001",
-            "collapsed": false,
-            "streaming": false,
-            "inputAppName": "DingoFrequencySplit",
-            "outputAppName": "",
-            "inputApplication": "Component",
-            "inputPorts": [
-                {
-                    "Id": "03e4ec14-5e35-43e0-bea4-9d4f3a8e6d1b",
-                    "IdText": "event"
-                },
-                {
-                    "Id": "a43420a6-6fdb-4455-9af2-0bfd38d378d9",
-                    "IdText": "config"
-                }
-            ],
-            "outputPorts": [
-                {
-                    "Id": "bb618501-1ac2-48a8-9faf-45463125bf9a",
-                    "IdText": "event"
-                },
-                {
-                    "Id": "fe001a35-cb22-48f0-bff0-b4c16ea07acf",
-                    "IdText": "done"
-                }
-            ],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "inputAppFields": [
-                {
-                    "text": "Execution time",
-                    "name": "execution_time",
-                    "value": "5"
-                },
-                {
-                    "text": "Num CPUs",
-                    "name": "num_cpus",
-                    "value": "1"
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
-                    "value": "0"
-                },
-                {
-                    "text": "Appclass",
-                    "name": "appclass",
-                    "value": "dingo_split_data.DingoFrequencySplit"
-                },
-                {
-                    "text": "Arg01",
-                    "name": "Arg01",
-                    "value": ""
-                },
-                {
-                    "text": "Arg02",
-                    "name": "Arg02",
-                    "value": ""
-                },
-                {
-                    "text": "Arg03",
-                    "name": "Arg03",
-                    "value": ""
-                },
-                {
-                    "text": "Arg04",
-                    "name": "Arg04",
-                    "value": ""
-                },
-                {
-                    "text": "Arg05",
-                    "name": "Arg05",
-                    "value": ""
-                },
-                {
-                    "text": "Arg06",
-                    "name": "Arg06",
-                    "value": ""
-                },
-                {
-                    "text": "Arg07",
-                    "name": "Arg07",
-                    "value": ""
-                },
-                {
-                    "text": "Arg08",
-                    "name": "Arg08",
-                    "value": ""
-                },
-                {
-                    "text": "Arg09",
-                    "name": "Arg09",
-                    "value": ""
-                },
-                {
-                    "text": "Arg10",
-                    "name": "Arg10",
-                    "value": ""
-                }
-            ],
-            "outputAppFields": [],
-            "fields": [
-                {
-                    "text": "Number of copies",
-                    "name": "num_of_copies",
-                    "value": "6"
-                },
-                {
-                    "text": "Scatter axis",
-                    "name": "scatter_axis",
-                    "value": "frequency"
-                }
-            ],
-            "desiredSize": {
-                "class": "go.Size",
-                "width": 1174,
-                "height": 500
-            }
-        },
-        {
             "category": "DynlibApp",
             "categoryType": "ApplicationDrop",
             "type": "DynlibApp",
@@ -188,12 +60,14 @@
             "colour": " #3470AA",
             "key": -3,
             "text": "Load Visibilities",
-            "loc": "739.001 402.001",
+            "loc": "788.002 314.00199999999995",
             "collapsed": false,
             "streaming": false,
             "group": -2,
             "inputAppName": "",
             "outputAppName": "",
+            "inputApplication": "Unknown",
+            "outputApplication": "Unknown",
             "inputPorts": [
                 {
                     "Id": "a2b14744-171b-46e2-b316-3852578b4c0a",
@@ -302,12 +176,14 @@
             "colour": " #3470AA",
             "key": -4,
             "text": "SolveNE",
-            "loc": "1091.001 422.001",
+            "loc": "1247.002 305.00199999999995",
             "collapsed": false,
             "streaming": false,
             "group": -2,
             "inputAppName": "",
             "outputAppName": "",
+            "inputApplication": "Unknown",
+            "outputApplication": "Unknown",
             "inputPorts": [
                 {
                     "Id": "a2b14744-171b-46e2-b316-3852578b4c0a",
@@ -416,12 +292,14 @@
             "colour": " #3470AA",
             "key": -5,
             "text": "Spectral Cube",
-            "loc": "1390.002 407.00199999999995",
+            "loc": "1655.004 306.0039999999999",
             "collapsed": false,
             "streaming": false,
             "group": -2,
             "inputAppName": "",
             "outputAppName": "",
+            "inputApplication": "Unknown",
+            "outputApplication": "Unknown",
             "inputPorts": [
                 {
                     "Id": "a2b14744-171b-46e2-b316-3852578b4c0a",
@@ -528,68 +406,16 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "colour": " #394BB2",
-            "key": -6,
-            "text": "Config",
-            "loc": "592 281",
-            "collapsed": false,
-            "streaming": false,
-            "group": -2,
-            "inputAppName": "",
-            "outputAppName": "",
-            "inputPorts": [
-                {
-                    "Id": "8e2bd3b7-3289-4b98-a412-ac6b99a29ed0",
-                    "IdText": "event"
-                },
-                {
-                    "Id": "5e60f011-57c4-4d42-8ce4-4a7d37cfe4f0",
-                    "IdText": "config"
-                }
-            ],
-            "outputPorts": [
-                {
-                    "Id": "eb18ff30-9e38-48e7-be08-d2041b6641dd",
-                    "IdText": "event"
-                },
-                {
-                    "Id": "8f1f240b-4f89-4f86-983a-5ea1dd66c7e3",
-                    "IdText": "config"
-                }
-            ],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "fields": [
-                {
-                    "text": "Data volume",
-                    "name": "data_volume",
-                    "value": "5"
-                },
-                {
-                    "text": "Group end",
-                    "name": "group_end",
-                    "value": "0"
-                }
-            ]
-        },
-        {
-            "category": "memory",
-            "categoryType": "DataDrop",
-            "type": "memory",
-            "isData": true,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
-            "colour": " #394BB2",
             "key": -7,
             "text": "solveNE",
-            "loc": "919 581",
+            "loc": "1128.002 364.00199999999995",
             "collapsed": false,
             "streaming": false,
             "group": -2,
             "inputAppName": "",
             "outputAppName": "",
+            "inputApplication": "Unknown",
+            "outputApplication": "Unknown",
             "inputPorts": [
                 {
                     "Id": "8e2bd3b7-3289-4b98-a412-ac6b99a29ed0",
@@ -638,12 +464,14 @@
             "colour": " #394BB2",
             "key": -8,
             "text": "image",
-            "loc": "1238 586",
+            "loc": "1546.002 362.00199999999995",
             "collapsed": false,
             "streaming": false,
             "group": -2,
             "inputAppName": "",
             "outputAppName": "",
+            "inputApplication": "Unknown",
+            "outputApplication": "Unknown",
             "inputPorts": [
                 {
                     "Id": "8e2bd3b7-3289-4b98-a412-ac6b99a29ed0",
@@ -682,6 +510,223 @@
             ]
         },
         {
+            "category": "MKN",
+            "categoryType": "GroupComponent",
+            "type": "MKN",
+            "isData": false,
+            "isGroup": true,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "colour": " #D32000",
+            "key": -2,
+            "text": "Split",
+            "loc": "551.0079999999998 122.00800000000004",
+            "collapsed": false,
+            "streaming": false,
+            "inputAppName": "DingoSplitData",
+            "outputAppName": "DoNothing",
+            "inputApplication": "Component",
+            "outputApplication": "Component",
+            "inputPorts": [
+                {
+                    "Id": "48ba2c79-5e4d-42d8-9e79-0bc5d430737a",
+                    "IdText": "event"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "e06f9121-6ff7-4311-8117-a74a6f3ac0d8",
+                    "IdText": "event"
+                }
+            ],
+            "inputLocalPorts": [
+                {
+                    "Id": "2a697098-393d-4e5b-bd49-11214ae5a6ac",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "150b431e-26ec-497a-b4c1-6703623bfa11",
+                    "IdText": "done"
+                }
+            ],
+            "outputLocalPorts": [
+                {
+                    "Id": "5746e923-6a0d-4db9-83e4-8b20d3bc909d",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "a8308e0f-51c3-43d2-9c48-8eced3a010cd",
+                    "IdText": "config"
+                }
+            ],
+            "inputAppFields": [
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": "5"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": "1"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "0"
+                },
+                {
+                    "text": "Appclass",
+                    "name": "appclass",
+                    "value": "dingo_split_data.DingoFrequencySplit"
+                },
+                {
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": ""
+                },
+                {
+                    "text": "Arg02",
+                    "name": "Arg02",
+                    "value": ""
+                },
+                {
+                    "text": "Arg03",
+                    "name": "Arg03",
+                    "value": ""
+                },
+                {
+                    "text": "Arg04",
+                    "name": "Arg04",
+                    "value": ""
+                },
+                {
+                    "text": "Arg05",
+                    "name": "Arg05",
+                    "value": ""
+                },
+                {
+                    "text": "Arg06",
+                    "name": "Arg06",
+                    "value": ""
+                },
+                {
+                    "text": "Arg07",
+                    "name": "Arg07",
+                    "value": ""
+                },
+                {
+                    "text": "Arg08",
+                    "name": "Arg08",
+                    "value": ""
+                },
+                {
+                    "text": "Arg09",
+                    "name": "Arg09",
+                    "value": ""
+                },
+                {
+                    "text": "Arg10",
+                    "name": "Arg10",
+                    "value": ""
+                }
+            ],
+            "outputAppFields": [
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": "5"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": "1"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "0"
+                },
+                {
+                    "text": "Appclass",
+                    "name": "appclass",
+                    "value": "dingo_split_data.DoNothing"
+                },
+                {
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": ""
+                },
+                {
+                    "text": "Arg02",
+                    "name": "Arg02",
+                    "value": ""
+                },
+                {
+                    "text": "Arg03",
+                    "name": "Arg03",
+                    "value": ""
+                },
+                {
+                    "text": "Arg04",
+                    "name": "Arg04",
+                    "value": ""
+                },
+                {
+                    "text": "Arg05",
+                    "name": "Arg05",
+                    "value": ""
+                },
+                {
+                    "text": "Arg06",
+                    "name": "Arg06",
+                    "value": ""
+                },
+                {
+                    "text": "Arg07",
+                    "name": "Arg07",
+                    "value": ""
+                },
+                {
+                    "text": "Arg08",
+                    "name": "Arg08",
+                    "value": ""
+                },
+                {
+                    "text": "Arg09",
+                    "name": "Arg09",
+                    "value": ""
+                },
+                {
+                    "text": "Arg10",
+                    "name": "Arg10",
+                    "value": ""
+                }
+            ],
+            "fields": [
+                {
+                    "text": "M",
+                    "name": "m",
+                    "value": "1"
+                },
+                {
+                    "text": "K",
+                    "name": "k",
+                    "value": "6"
+                },
+                {
+                    "text": "N",
+                    "name": "n",
+                    "value": "1"
+                }
+            ],
+            "desiredSize": {
+                "class": "go.Size",
+                "width": 1584.0000610351562,
+                "height": 369.99998474121094
+            }
+        },
+        {
             "category": "memory",
             "categoryType": "DataDrop",
             "type": "memory",
@@ -690,16 +735,18 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "colour": " #394BB2",
-            "key": -9,
+            "key": -6,
             "text": "End",
-            "loc": "1760 496",
+            "loc": "2302.0020000000004 116.00200000000001",
             "collapsed": false,
             "streaming": false,
             "inputAppName": "",
             "outputAppName": "",
+            "inputApplication": "Unknown",
+            "outputApplication": "Unknown",
             "inputPorts": [
                 {
-                    "Id": "8e2bd3b7-3289-4b98-a412-ac6b99a29ed0",
+                    "Id": "8c7398fe-4105-4a84-aab8-c9915199afb3",
                     "IdText": "event"
                 }
             ],
@@ -720,21 +767,136 @@
                     "value": "0"
                 }
             ]
+        },
+        {
+            "category": "memory",
+            "categoryType": "DataDrop",
+            "type": "memory",
+            "isData": true,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "colour": " #394BB2",
+            "key": -9,
+            "text": "config",
+            "loc": "679.5044999999999 296.0045",
+            "collapsed": false,
+            "streaming": false,
+            "group": -2,
+            "inputAppName": "",
+            "outputAppName": "",
+            "inputApplication": "Unknown",
+            "outputApplication": "Unknown",
+            "inputPorts": [
+                {
+                    "Id": "8c7398fe-4105-4a84-aab8-c9915199afb3",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "67725e02-80e5-47b9-99b1-9a3abcd234cf",
+                    "IdText": "config"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "47014788-96dc-4a24-aa6a-7f7d76a3fcc7",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "1ff5679d-9e86-463a-9209-720b73a1e9b9",
+                    "IdText": "config"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "5"
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "0"
+                }
+            ]
+        },
+        {
+            "category": "file",
+            "categoryType": "DataDrop",
+            "type": "file",
+            "isData": true,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "colour": " #394BB2",
+            "key": -10,
+            "text": "done",
+            "loc": "1999.006030517578 292.006",
+            "collapsed": false,
+            "streaming": false,
+            "group": -2,
+            "inputAppName": "",
+            "outputAppName": "",
+            "inputApplication": "Unknown",
+            "outputApplication": "Unknown",
+            "inputPorts": [
+                {
+                    "Id": "8dc521ee-98cc-4a0b-825f-9d95ca661d34",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "efeed264-b401-47f8-85d3-d468b7146d6b",
+                    "IdText": "done"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "6b6e0433-529d-44d5-812d-52e7a1727cb7",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "3db8f9d8-5c7b-48f2-89f9-c5d568a10b38",
+                    "IdText": "done"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "5"
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "0"
+                },
+                {
+                    "text": "Check file path exists",
+                    "name": "check_filepath_exists",
+                    "value": "1"
+                },
+                {
+                    "text": "File path",
+                    "name": "filepath",
+                    "value": ""
+                },
+                {
+                    "text": "Directory name",
+                    "name": "dirname",
+                    "value": ""
+                }
+            ]
         }
     ],
     "linkDataArray": [
-        {
-            "from": -2,
-            "fromPort": "a43420a6-6fdb-4455-9af2-0bfd38d378d9",
-            "to": -6,
-            "toPort": "5e60f011-57c4-4d42-8ce4-4a7d37cfe4f0"
-        },
-        {
-            "from": -6,
-            "fromPort": "8f1f240b-4f89-4f86-983a-5ea1dd66c7e3",
-            "to": -3,
-            "toPort": "489ca004-184c-42af-be72-1d2e1b3be578"
-        },
         {
             "from": -3,
             "fromPort": "35017d5c-61ce-4930-bd67-35a8dd7e8144",
@@ -763,13 +925,37 @@
             "from": -1,
             "fromPort": "eb18ff30-9e38-48e7-be08-d2041b6641dd",
             "to": -2,
-            "toPort": "03e4ec14-5e35-43e0-bea4-9d4f3a8e6d1b"
+            "toPort": "48ba2c79-5e4d-42d8-9e79-0bc5d430737a"
+        },
+        {
+            "from": -2,
+            "fromPort": "e06f9121-6ff7-4311-8117-a74a6f3ac0d8",
+            "to": -6,
+            "toPort": "8c7398fe-4105-4a84-aab8-c9915199afb3"
+        },
+        {
+            "from": -2,
+            "fromPort": "a8308e0f-51c3-43d2-9c48-8eced3a010cd",
+            "to": -9,
+            "toPort": "67725e02-80e5-47b9-99b1-9a3abcd234cf"
+        },
+        {
+            "from": -9,
+            "fromPort": "1ff5679d-9e86-463a-9209-720b73a1e9b9",
+            "to": -3,
+            "toPort": "489ca004-184c-42af-be72-1d2e1b3be578"
         },
         {
             "from": -5,
-            "fromPort": "56f6ca50-34a9-4cc0-9c46-210bb8c0dc30",
-            "to": -9,
-            "toPort": "8e2bd3b7-3289-4b98-a412-ac6b99a29ed0"
+            "fromPort": "b614db05-ed1d-48a2-9345-ade0b702d034",
+            "to": -10,
+            "toPort": "efeed264-b401-47f8-85d3-d468b7146d6b"
+        },
+        {
+            "from": -10,
+            "fromPort": "3db8f9d8-5c7b-48f2-89f9-c5d568a10b38",
+            "to": -2,
+            "toPort": "150b431e-26ec-497a-b4c1-6703623bfa11"
         }
     ]
 }
