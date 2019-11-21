@@ -23,6 +23,8 @@
             "streaming": false,
             "inputAppName": "",
             "outputAppName": "",
+            "inputApplication": "Unknown",
+            "outputApplication": "Unknown",
             "inputPorts": [],
             "outputPorts": [],
             "inputLocalPorts": [],
@@ -47,6 +49,8 @@
             "streaming": false,
             "inputAppName": "",
             "outputAppName": "",
+            "inputApplication": "Unknown",
+            "outputApplication": "Unknown",
             "inputPorts": [],
             "outputPorts": [],
             "inputLocalPorts": [],
@@ -71,6 +75,8 @@
             "streaming": false,
             "inputAppName": "",
             "outputAppName": "",
+            "inputApplication": "Unknown",
+            "outputApplication": "Unknown",
             "inputPorts": [],
             "outputPorts": [],
             "inputLocalPorts": [],
@@ -95,6 +101,8 @@
             "streaming": false,
             "inputAppName": "",
             "outputAppName": "",
+            "inputApplication": "Unknown",
+            "outputApplication": "Unknown",
             "inputPorts": [],
             "outputPorts": [],
             "inputLocalPorts": [],
@@ -119,6 +127,8 @@
             "streaming": false,
             "inputAppName": "",
             "outputAppName": "",
+            "inputApplication": "Unknown",
+            "outputApplication": "Unknown",
             "inputPorts": [
                 {
                     "Id": "a2b14744-171b-46e2-b316-3852578b4c0a",
@@ -232,6 +242,8 @@
             "streaming": false,
             "inputAppName": "",
             "outputAppName": "",
+            "inputApplication": "Component",
+            "outputApplication": "Unknown",
             "inputPorts": [
                 {
                     "Id": "03e4ec14-5e35-43e0-bea4-9d4f3a8e6d1b",
@@ -254,13 +266,84 @@
             ],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
-            "inputAppFields": [],
+            "inputAppFields": [
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": "50"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": "1"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "0"
+                },
+                {
+                    "text": "Appclass",
+                    "name": "appclass",
+                    "value": "dingo_split_data.DingoSplitData"
+                },
+                {
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": ""
+                },
+                {
+                    "text": "Arg02",
+                    "name": "Arg02",
+                    "value": ""
+                },
+                {
+                    "text": "Arg03",
+                    "name": "Arg03",
+                    "value": ""
+                },
+                {
+                    "text": "Arg04",
+                    "name": "Arg04",
+                    "value": ""
+                },
+                {
+                    "text": "Arg05",
+                    "name": "Arg05",
+                    "value": ""
+                },
+                {
+                    "text": "Arg06",
+                    "name": "Arg06",
+                    "value": ""
+                },
+                {
+                    "text": "Arg07",
+                    "name": "Arg07",
+                    "value": ""
+                },
+                {
+                    "text": "Arg08",
+                    "name": "Arg08",
+                    "value": ""
+                },
+                {
+                    "text": "Arg09",
+                    "name": "Arg09",
+                    "value": ""
+                },
+                {
+                    "text": "Arg10",
+                    "name": "Arg10",
+                    "value": ""
+                }
+            ],
             "outputAppFields": [],
             "fields": [
                 {
                     "text": "Number of copies",
                     "name": "num_of_copies",
-                    "value": "4"
+                    "value": "6"
                 },
                 {
                     "text": "Scatter axis",
@@ -290,6 +373,8 @@
             "streaming": false,
             "inputAppName": "",
             "outputAppName": "",
+            "inputApplication": "Unknown",
+            "outputApplication": "Unknown",
             "inputPorts": [
                 {
                     "Id": "a2b14744-171b-46e2-b316-3852578b4c0a",
@@ -403,6 +488,8 @@
             "streaming": false,
             "inputAppName": "",
             "outputAppName": "",
+            "inputApplication": "Unknown",
+            "outputApplication": "Unknown",
             "inputPorts": [
                 {
                     "Id": "a2b14744-171b-46e2-b316-3852578b4c0a",
@@ -457,6 +544,327 @@
                     "text": "Arg02",
                     "name": "Arg02",
                     "value": ""
+                },
+                {
+                    "text": "Arg03",
+                    "name": "Arg03",
+                    "value": ""
+                },
+                {
+                    "text": "Arg04",
+                    "name": "Arg04",
+                    "value": ""
+                },
+                {
+                    "text": "Arg05",
+                    "name": "Arg05",
+                    "value": ""
+                },
+                {
+                    "text": "Arg06",
+                    "name": "Arg06",
+                    "value": ""
+                },
+                {
+                    "text": "Arg07",
+                    "name": "Arg07",
+                    "value": ""
+                },
+                {
+                    "text": "Arg08",
+                    "name": "Arg08",
+                    "value": ""
+                },
+                {
+                    "text": "Arg09",
+                    "name": "Arg09",
+                    "value": ""
+                },
+                {
+                    "text": "Arg10",
+                    "name": "Arg10",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "category": "Component",
+            "categoryType": "ApplicationDrop",
+            "type": "Component",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "colour": " #3498DB",
+            "key": -9,
+            "text": "Mock Load Visibilities",
+            "loc": "200 100",
+            "collapsed": false,
+            "streaming": false,
+            "inputAppName": "",
+            "outputAppName": "",
+            "inputApplication": "Unknown",
+            "outputApplication": "Unknown",
+            "inputPorts": [
+                {
+                    "Id": "4a79f035-6bc1-41f8-a3d6-7538e70bfc84",
+                    "IdText": "event"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "15b72d08-a4a4-4541-972c-a3fbcf734d9c",
+                    "IdText": "event"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": "35"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": "1"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "0"
+                },
+                {
+                    "text": "Appclass",
+                    "name": "appclass",
+                    "value": "mocks."
+                },
+                {
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": "library_path=/usr/local/lib/libaskapsoft_dlg.so"
+                },
+                {
+                    "text": "Arg02",
+                    "name": "Arg02",
+                    "value": "name=LoadVis"
+                },
+                {
+                    "text": "Arg03",
+                    "name": "Arg03",
+                    "value": ""
+                },
+                {
+                    "text": "Arg04",
+                    "name": "Arg04",
+                    "value": ""
+                },
+                {
+                    "text": "Arg05",
+                    "name": "Arg05",
+                    "value": ""
+                },
+                {
+                    "text": "Arg06",
+                    "name": "Arg06",
+                    "value": ""
+                },
+                {
+                    "text": "Arg07",
+                    "name": "Arg07",
+                    "value": ""
+                },
+                {
+                    "text": "Arg08",
+                    "name": "Arg08",
+                    "value": ""
+                },
+                {
+                    "text": "Arg09",
+                    "name": "Arg09",
+                    "value": ""
+                },
+                {
+                    "text": "Arg10",
+                    "name": "Arg10",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "category": "Component",
+            "categoryType": "ApplicationDrop",
+            "type": "Component",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "colour": " #3498DB",
+            "key": -10,
+            "text": "Mock SolveNE",
+            "loc": "200 100",
+            "collapsed": false,
+            "streaming": false,
+            "inputAppName": "",
+            "outputAppName": "",
+            "inputApplication": "Unknown",
+            "outputApplication": "Unknown",
+            "inputPorts": [
+                {
+                    "Id": "4a79f035-6bc1-41f8-a3d6-7538e70bfc84",
+                    "IdText": "event"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "15b72d08-a4a4-4541-972c-a3fbcf734d9c",
+                    "IdText": "event"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": "10"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": "1"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "0"
+                },
+                {
+                    "text": "Appclass",
+                    "name": "appclass",
+                    "value": "test.graphsRepository"
+                },
+                {
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": "library_path=/usr/local/lib/libaskapsoft_dlg.so"
+                },
+                {
+                    "text": "Arg02",
+                    "name": "Arg02",
+                    "value": "name=SolveNE"
+                },
+                {
+                    "text": "Arg03",
+                    "name": "Arg03",
+                    "value": ""
+                },
+                {
+                    "text": "Arg04",
+                    "name": "Arg04",
+                    "value": ""
+                },
+                {
+                    "text": "Arg05",
+                    "name": "Arg05",
+                    "value": ""
+                },
+                {
+                    "text": "Arg06",
+                    "name": "Arg06",
+                    "value": ""
+                },
+                {
+                    "text": "Arg07",
+                    "name": "Arg07",
+                    "value": ""
+                },
+                {
+                    "text": "Arg08",
+                    "name": "Arg08",
+                    "value": ""
+                },
+                {
+                    "text": "Arg09",
+                    "name": "Arg09",
+                    "value": ""
+                },
+                {
+                    "text": "Arg10",
+                    "name": "Arg10",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "category": "Component",
+            "categoryType": "ApplicationDrop",
+            "type": "Component",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "colour": " #3498DB",
+            "key": -11,
+            "text": "Mock Spectral Cube",
+            "loc": "200 100",
+            "collapsed": false,
+            "streaming": false,
+            "inputAppName": "",
+            "outputAppName": "",
+            "inputApplication": "Unknown",
+            "outputApplication": "Unknown",
+            "inputPorts": [
+                {
+                    "Id": "4a79f035-6bc1-41f8-a3d6-7538e70bfc84",
+                    "IdText": "event"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "15b72d08-a4a4-4541-972c-a3fbcf734d9c",
+                    "IdText": "event"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": "5"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": "1"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "0"
+                },
+                {
+                    "text": "Appclass",
+                    "name": "appclass",
+                    "value": "test.graphsRepository"
+                },
+                {
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": "library_path=/usr/local/lib/libaskapsoft_dlg.so"
+                },
+                {
+                    "text": "Arg02",
+                    "name": "Arg02",
+                    "value": "name=SpectralCube"
                 },
                 {
                     "text": "Arg03",
