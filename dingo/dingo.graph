@@ -60,7 +60,7 @@
             "colour": " #3470AA",
             "key": -3,
             "text": "Load Visibilities",
-            "loc": "762.0029999999999 139.00300000000001",
+            "loc": "789.002 140.002",
             "collapsed": false,
             "streaming": false,
             "group": -2,
@@ -76,6 +76,10 @@
                 {
                     "Id": "ce6ec91f-bcf9-4c34-8aa1-528724439c17",
                     "IdText": "Config"
+                },
+                {
+                    "Id": "86442059-b972-4c85-8855-c696cf24f1e5",
+                    "IdText": "File"
                 }
             ],
             "outputPorts": [
@@ -176,7 +180,7 @@
             "colour": " #D32000",
             "key": -2,
             "text": "Split",
-            "loc": "435.0049999999999 104.00500000000002",
+            "loc": "435 104",
             "collapsed": false,
             "streaming": false,
             "inputAppName": "DingoSplitData",
@@ -427,7 +431,7 @@
             "colour": " #394BB2",
             "key": -4,
             "text": "Config",
-            "loc": "504.00299999999993 190.00299999999996",
+            "loc": "504.0039999999999 190.00400000000002",
             "collapsed": false,
             "streaming": false,
             "group": -2,
@@ -483,7 +487,7 @@
             "colour": " #3470AA",
             "key": -7,
             "text": "SolveNE",
-            "loc": "1059.0079999999998 299.0079999999998",
+            "loc": "1059 299",
             "collapsed": false,
             "streaming": false,
             "group": -2,
@@ -603,7 +607,7 @@
             "colour": " #394BB2",
             "key": -5,
             "text": "Normal",
-            "loc": "1003.5029999999999 285.50299999999993",
+            "loc": "1003 285",
             "collapsed": false,
             "streaming": false,
             "group": -2,
@@ -659,7 +663,7 @@
             "colour": " #3470AA",
             "key": -8,
             "text": "Spectral Cube",
-            "loc": "1360.003 507.003",
+            "loc": "1360 507",
             "collapsed": false,
             "streaming": false,
             "group": -2,
@@ -779,7 +783,7 @@
             "colour": " #394BB2",
             "key": -9,
             "text": "Model",
-            "loc": "1291.5059999999999 459.50599999999986",
+            "loc": "1291 459",
             "collapsed": false,
             "streaming": false,
             "group": -2,
@@ -835,7 +839,7 @@
             "colour": " #394BB2",
             "key": -10,
             "text": "done",
-            "loc": "1633.504030517578 373.50399999999996",
+            "loc": "1633 373",
             "collapsed": false,
             "streaming": false,
             "group": -2,
@@ -877,6 +881,193 @@
                     "text": "Group end",
                     "name": "group_end",
                     "value": "0"
+                }
+            ]
+        },
+        {
+            "category": "DynlibApp",
+            "categoryType": "ApplicationDrop",
+            "type": "DynlibApp",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "colour": " #3470AA",
+            "key": -11,
+            "text": "InitSpectralCube",
+            "loc": "642.0059999999999 480.00599999999986",
+            "collapsed": false,
+            "streaming": false,
+            "group": -2,
+            "inputAppName": "",
+            "outputAppName": "",
+            "inputApplication": "Unknown",
+            "outputApplication": "Unknown",
+            "inputPorts": [
+                {
+                    "Id": "4550d592-ce20-4b71-8797-4ab91ba7d236",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "effff87c-2e4b-490c-8bca-cae9871a6d88",
+                    "IdText": "Config"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "a1e8760a-8206-4fce-b2d2-0ff4af7b21c9",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "8172abb2-b0da-40d4-a976-848aa889dfe6",
+                    "IdText": "File"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": "5"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": "1"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "0"
+                },
+                {
+                    "text": "Library path",
+                    "name": "libpath",
+                    "value": "/usr/local/lib/libaskapsoft_dlg.so"
+                },
+                {
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": "name=InitSpectralCube"
+                },
+                {
+                    "text": "Arg02",
+                    "name": "Arg02",
+                    "value": ""
+                },
+                {
+                    "text": "Arg03",
+                    "name": "Arg03",
+                    "value": ""
+                },
+                {
+                    "text": "Arg04",
+                    "name": "Arg04",
+                    "value": ""
+                },
+                {
+                    "text": "Arg05",
+                    "name": "Arg05",
+                    "value": ""
+                },
+                {
+                    "text": "Arg06",
+                    "name": "Arg06",
+                    "value": ""
+                },
+                {
+                    "text": "Arg07",
+                    "name": "Arg07",
+                    "value": ""
+                },
+                {
+                    "text": "Arg08",
+                    "name": "Arg08",
+                    "value": ""
+                },
+                {
+                    "text": "Arg09",
+                    "name": "Arg09",
+                    "value": ""
+                },
+                {
+                    "text": "Arg10",
+                    "name": "Arg10",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "category": "file",
+            "categoryType": "DataDrop",
+            "type": "file",
+            "isData": true,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "colour": " #394BB2",
+            "key": -12,
+            "text": "File",
+            "loc": "789.0054999999999 393.50549999999987",
+            "collapsed": false,
+            "streaming": false,
+            "group": -2,
+            "inputAppName": "",
+            "outputAppName": "",
+            "inputApplication": "Unknown",
+            "outputApplication": "Unknown",
+            "inputPorts": [
+                {
+                    "Id": "dfe49c55-586d-444e-af71-7fcd8f2efc98",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "3ffcf0b3-49e1-40b3-b586-034109f79abe",
+                    "IdText": "File"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "2214a9fa-ef3f-4902-b61f-df213c6fbd14",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "29b39ee7-f9f9-4de6-9d83-d0ad49a05015",
+                    "IdText": "File"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "5"
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "0"
+                },
+                {
+                    "text": "Check file path exists",
+                    "name": "check_filepath_exists",
+                    "value": "1"
+                },
+                {
+                    "text": "File path",
+                    "name": "filepath",
+                    "value": "image.fits"
+                },
+                {
+                    "text": "Directory name",
+                    "name": "dirname",
+                    "value": "/tmp"
                 }
             ]
         }
@@ -953,6 +1144,24 @@
             "fromPort": "f7bea4bf-f8eb-4a97-92c4-24c3f1da0d86",
             "to": -2,
             "toPort": "150b431e-26ec-497a-b4c1-6703623bfa11"
+        },
+        {
+            "from": -4,
+            "fromPort": "9156e9e6-96a4-4209-8e6d-a7374f1242da",
+            "to": -11,
+            "toPort": "effff87c-2e4b-490c-8bca-cae9871a6d88"
+        },
+        {
+            "from": -11,
+            "fromPort": "8172abb2-b0da-40d4-a976-848aa889dfe6",
+            "to": -12,
+            "toPort": "3ffcf0b3-49e1-40b3-b586-034109f79abe"
+        },
+        {
+            "from": -12,
+            "fromPort": "29b39ee7-f9f9-4de6-9d83-d0ad49a05015",
+            "to": -3,
+            "toPort": "86442059-b972-4c85-8855-c696cf24f1e5"
         }
     ]
 }
