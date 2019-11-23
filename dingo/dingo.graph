@@ -60,7 +60,7 @@
             "colour": " #3470AA",
             "key": -3,
             "text": "Load Visibilities",
-            "loc": "666 182",
+            "loc": "762.0029999999999 139.00300000000001",
             "collapsed": false,
             "streaming": false,
             "group": -2,
@@ -84,8 +84,8 @@
                     "IdText": "event"
                 },
                 {
-                    "Id": "d1cda656-7c2d-4b7b-a7ef-cbe609c403f8",
-                    "IdText": "done"
+                    "Id": "2d53aa99-4392-40ad-9e74-7ce561283ee8",
+                    "IdText": "Normal"
                 }
             ],
             "inputLocalPorts": [],
@@ -427,7 +427,7 @@
             "colour": " #394BB2",
             "key": -4,
             "text": "Config",
-            "loc": "560 211",
+            "loc": "504.00299999999993 190.00299999999996",
             "collapsed": false,
             "streaming": false,
             "group": -2,
@@ -473,17 +473,17 @@
             ]
         },
         {
-            "category": "memory",
-            "categoryType": "DataDrop",
-            "type": "memory",
-            "isData": true,
+            "category": "DynlibApp",
+            "categoryType": "ApplicationDrop",
+            "type": "DynlibApp",
+            "isData": false,
             "isGroup": false,
             "canHaveInputs": true,
             "canHaveOutputs": true,
-            "colour": " #394BB2",
-            "key": -5,
-            "text": "done",
-            "loc": "1159 211",
+            "colour": " #3470AA",
+            "key": -7,
+            "text": "SolveNE",
+            "loc": "1059.0059999999999 299.00599999999986",
             "collapsed": false,
             "streaming": false,
             "group": -2,
@@ -493,21 +493,197 @@
             "outputApplication": "Unknown",
             "inputPorts": [
                 {
-                    "Id": "3d949b9d-8e9a-4c18-a30c-df898bbaadfb",
+                    "Id": "a2b14744-171b-46e2-b316-3852578b4c0a",
                     "IdText": "event"
                 },
                 {
-                    "Id": "a703f11d-e67e-4c22-87dd-ad31cfebd7e6",
+                    "Id": "15c12d36-1f93-4c1c-bc87-ba49d9b62e55",
+                    "IdText": "Normal"
+                },
+                {
+                    "Id": "4d6cc362-4e6f-438e-831a-6c2207c0807b",
+                    "IdText": "Config"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "56f6ca50-34a9-4cc0-9c46-210bb8c0dc30",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "6420b4ab-3c7e-446f-9f62-2501eb05b6fb",
+                    "IdText": "done"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": "5"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": "1"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "0"
+                },
+                {
+                    "text": "Library path",
+                    "name": "libpath",
+                    "value": "/usr/local/lib/libaskapsoft_dlg.so"
+                },
+                {
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": "name=SolveNE"
+                },
+                {
+                    "text": "Arg02",
+                    "name": "Arg02",
+                    "value": ""
+                },
+                {
+                    "text": "Arg03",
+                    "name": "Arg03",
+                    "value": ""
+                },
+                {
+                    "text": "Arg04",
+                    "name": "Arg04",
+                    "value": ""
+                },
+                {
+                    "text": "Arg05",
+                    "name": "Arg05",
+                    "value": ""
+                },
+                {
+                    "text": "Arg06",
+                    "name": "Arg06",
+                    "value": ""
+                },
+                {
+                    "text": "Arg07",
+                    "name": "Arg07",
+                    "value": ""
+                },
+                {
+                    "text": "Arg08",
+                    "name": "Arg08",
+                    "value": ""
+                },
+                {
+                    "text": "Arg09",
+                    "name": "Arg09",
+                    "value": ""
+                },
+                {
+                    "text": "Arg10",
+                    "name": "Arg10",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "category": "memory",
+            "categoryType": "DataDrop",
+            "type": "memory",
+            "isData": true,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "colour": " #394BB2",
+            "key": -5,
+            "text": "Normal",
+            "loc": "1003.5029999999999 285.50299999999993",
+            "collapsed": false,
+            "streaming": false,
+            "group": -2,
+            "inputAppName": "",
+            "outputAppName": "",
+            "inputApplication": "Unknown",
+            "outputApplication": "Unknown",
+            "inputPorts": [
+                {
+                    "Id": "b9f291c5-db84-405b-bbfc-d58fd6840285",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "ad6509e8-1619-4c79-b4ea-ec99f76b690d",
+                    "IdText": "Normal"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "d442a6e1-d78f-4780-b376-929a77f56411",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "1dd66be1-a01b-4ad8-8d5c-47980b505b8e",
+                    "IdText": "Normal"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "5"
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "0"
+                }
+            ]
+        },
+        {
+            "category": "memory",
+            "categoryType": "DataDrop",
+            "type": "memory",
+            "isData": true,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "colour": " #394BB2",
+            "key": -8,
+            "text": "done",
+            "loc": "1355.505030517578 269.50499999999994",
+            "collapsed": false,
+            "streaming": false,
+            "group": -2,
+            "inputAppName": "",
+            "outputAppName": "",
+            "inputApplication": "Unknown",
+            "outputApplication": "Unknown",
+            "inputPorts": [
+                {
+                    "Id": "b9f291c5-db84-405b-bbfc-d58fd6840285",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "36b2a29a-b4a8-422f-a076-ad5e49df1d4f",
                     "IdText": "done"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "7b32ffa2-78a8-4a53-929b-799c8b642252",
+                    "Id": "d442a6e1-d78f-4780-b376-929a77f56411",
                     "IdText": "event"
                 },
                 {
-                    "Id": "3577baee-7f30-411a-be40-d6f9cadec602",
+                    "Id": "b29fcf6d-79cc-494c-bb75-9da0ecee5f23",
                     "IdText": "done"
                 }
             ],
@@ -556,13 +732,31 @@
         },
         {
             "from": -3,
-            "fromPort": "d1cda656-7c2d-4b7b-a7ef-cbe609c403f8",
+            "fromPort": "2d53aa99-4392-40ad-9e74-7ce561283ee8",
             "to": -5,
-            "toPort": "a703f11d-e67e-4c22-87dd-ad31cfebd7e6"
+            "toPort": "ad6509e8-1619-4c79-b4ea-ec99f76b690d"
         },
         {
             "from": -5,
-            "fromPort": "3577baee-7f30-411a-be40-d6f9cadec602",
+            "fromPort": "1dd66be1-a01b-4ad8-8d5c-47980b505b8e",
+            "to": -7,
+            "toPort": "15c12d36-1f93-4c1c-bc87-ba49d9b62e55"
+        },
+        {
+            "from": -4,
+            "fromPort": "9156e9e6-96a4-4209-8e6d-a7374f1242da",
+            "to": -7,
+            "toPort": "4d6cc362-4e6f-438e-831a-6c2207c0807b"
+        },
+        {
+            "from": -7,
+            "fromPort": "6420b4ab-3c7e-446f-9f62-2501eb05b6fb",
+            "to": -8,
+            "toPort": "36b2a29a-b4a8-422f-a076-ad5e49df1d4f"
+        },
+        {
+            "from": -8,
+            "fromPort": "b29fcf6d-79cc-494c-bb75-9da0ecee5f23",
             "to": -2,
             "toPort": "150b431e-26ec-497a-b4c1-6703623bfa11"
         }
