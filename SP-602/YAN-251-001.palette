@@ -1,0 +1,276 @@
+{
+    "modelData": {
+        "fileType": "palette",
+        "repoService": "GitHub",
+        "repo": "ICRAR/EAGLE_test_repo",
+        "filePath": "SP-602/YAN-251-001.palette",
+        "sha": "",
+        "git_url": ""
+    },
+    "nodeDataArray": [
+        {
+            "category": "Start",
+            "categoryType": "Control",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": false,
+            "canHaveOutputs": true,
+            "colour": "#229954",
+            "key": -1,
+            "text": "Start",
+            "description": "The starting point for workflow execution",
+            "loc": "300 100",
+            "collapsed": false,
+            "streaming": false,
+            "subject": null,
+            "inputAppName": "",
+            "outputAppName": "",
+            "exitAppName": "",
+            "inputApplication": "Unknown",
+            "outputApplication": "Unknown",
+            "inputPorts": [],
+            "outputPorts": [
+                {
+                    "Id": "29790cd7-4279-40fd-ad61-5ffe0ae69d4e",
+                    "IdText": "event"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": []
+        },
+        {
+            "category": "BashShellApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "colour": "#1C2833",
+            "key": -2,
+            "text": "Bash Shell App - echo",
+            "description": "An application component run within the Bash Shell",
+            "loc": "300 100",
+            "collapsed": false,
+            "streaming": false,
+            "subject": null,
+            "inputAppName": "",
+            "outputAppName": "",
+            "exitAppName": "",
+            "inputApplication": "Unknown",
+            "outputApplication": "Unknown",
+            "inputPorts": [
+                {
+                    "Id": "9db02940-b899-4d39-9c31-d1c779bc14eb",
+                    "IdText": "event"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "73ece153-69a3-4afa-ab63-0151c3568adb",
+                    "IdText": "event"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": "5"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": "1"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "0"
+                },
+                {
+                    "text": "Arg01",
+                    "name": "arg01",
+                    "value": "echo"
+                }
+            ]
+        },
+        {
+            "category": "BashShellApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "colour": "#1C2833",
+            "key": -3,
+            "text": "Bash Shell App - cat",
+            "description": "An application component run within the Bash Shell",
+            "loc": "300 100",
+            "collapsed": false,
+            "streaming": false,
+            "subject": null,
+            "inputAppName": "",
+            "outputAppName": "",
+            "exitAppName": "",
+            "inputApplication": "Unknown",
+            "outputApplication": "Unknown",
+            "inputPorts": [
+                {
+                    "Id": "9db02940-b899-4d39-9c31-d1c779bc14eb",
+                    "IdText": "event"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "73ece153-69a3-4afa-ab63-0151c3568adb",
+                    "IdText": "event"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": "5"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": "1"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "0"
+                },
+                {
+                    "text": "Arg01",
+                    "name": "arg01",
+                    "value": "cat"
+                }
+            ]
+        },
+        {
+            "category": "Gather",
+            "categoryType": "Group",
+            "isData": false,
+            "isGroup": true,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "colour": "#D35400",
+            "key": -4,
+            "text": "Gather",
+            "description": "Placeholder 'gather' description",
+            "loc": "300 100",
+            "collapsed": false,
+            "streaming": false,
+            "subject": null,
+            "inputAppName": "cat",
+            "outputAppName": "",
+            "exitAppName": "",
+            "inputApplication": "BashShellApp",
+            "outputApplication": "",
+            "inputPorts": [
+                {
+                    "Id": "a401217c-221b-4558-bee6-9d455fa6e918",
+                    "IdText": "event"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "38ceeb2f-1370-4e2b-b071-6221ec824c9c",
+                    "IdText": "event"
+                }
+            ],
+            "inputLocalPorts": [
+                {
+                    "Id": "dd4c195a-824a-46a8-b344-66d9b386f140",
+                    "IdText": "event"
+                }
+            ],
+            "outputLocalPorts": [
+                {
+                    "Id": "7fa487c4-fee2-498a-94c1-3b40861bb1dd",
+                    "IdText": "event"
+                }
+            ],
+            "inputAppFields": [
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": "5"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": "1"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "0"
+                }
+            ],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Number of inputs",
+                    "name": "num_of_inputs",
+                    "value": "2"
+                },
+                {
+                    "text": "Gather axis",
+                    "name": "gather_axis",
+                    "value": "stdin"
+                }
+            ],
+            "desiredSize": {
+                "width": 200,
+                "height": 200
+            }
+        },
+        {
+            "category": "End",
+            "categoryType": "Control",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": false,
+            "colour": "#CB4335",
+            "key": -5,
+            "text": "End",
+            "description": "The end of workflow execution",
+            "loc": "300 100",
+            "collapsed": false,
+            "streaming": false,
+            "subject": null,
+            "inputAppName": "",
+            "outputAppName": "",
+            "exitAppName": "",
+            "inputApplication": "Unknown",
+            "outputApplication": "Unknown",
+            "inputPorts": [
+                {
+                    "Id": "56321d8c-c47d-4384-9c6c-32f0263094f2",
+                    "IdText": "event"
+                }
+            ],
+            "outputPorts": [],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": []
+        }
+    ],
+    "linkDataArray": []
+}
