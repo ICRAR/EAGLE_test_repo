@@ -130,14 +130,14 @@
             ],
             "inputLocalPorts": [
                 {
-                    "Id": "9cc997ad-271c-4a80-b957-3b9cd1930a85",
-                    "IdText": "event"
+                    "Id": "e7152607-640e-471a-96d9-655816d82b2f",
+                    "IdText": "end"
                 }
             ],
             "outputLocalPorts": [
                 {
-                    "Id": "e793906c-2a96-497d-b282-304996998c7c",
-                    "IdText": "event"
+                    "Id": "c67cd47e-395b-451a-bca8-27da62f132f0",
+                    "IdText": "start"
                 }
             ],
             "inputAppFields": [
@@ -217,7 +217,7 @@
             "key": -7,
             "text": "Exclusive Force Node",
             "description": "A group that completely specifies the computation on a single node. All child components must be deployed to a single node, and no other components can be deployed to the same node.",
-            "loc": "625 355",
+            "loc": "625 353.13200498132005",
             "collapsed": false,
             "streaming": false,
             "subject": null,
@@ -250,7 +250,7 @@
             "key": -3,
             "text": "Python App",
             "description": "An application component in the form of a Python app",
-            "loc": "890 513",
+            "loc": "890 511.13200498132005",
             "collapsed": false,
             "streaming": false,
             "subject": null,
@@ -264,12 +264,20 @@
                 {
                     "Id": "3278a8d9-199e-4758-8a64-33c1ed01e0d9",
                     "IdText": "event"
+                },
+                {
+                    "Id": "49dc059c-33b4-4f07-889c-24a6be429b36",
+                    "IdText": "link"
                 }
             ],
             "outputPorts": [
                 {
                     "Id": "fc34b3c8-bd24-4706-a07c-569a61381615",
                     "IdText": "event"
+                },
+                {
+                    "Id": "06dfa79e-be7f-4908-8418-864884108864",
+                    "IdText": "end"
                 }
             ],
             "inputLocalPorts": [],
@@ -314,7 +322,7 @@
             "collapsed": false,
             "streaming": false,
             "subject": null,
-            "group": -7,
+            "group": -6,
             "inputAppName": "",
             "outputAppName": "",
             "exitAppName": "",
@@ -324,12 +332,20 @@
                 {
                     "Id": "3278a8d9-199e-4758-8a64-33c1ed01e0d9",
                     "IdText": "event"
+                },
+                {
+                    "Id": "01bd22b3-9018-48f6-948e-89428936a99b",
+                    "IdText": "start"
                 }
             ],
             "outputPorts": [
                 {
                     "Id": "fc34b3c8-bd24-4706-a07c-569a61381615",
                     "IdText": "event"
+                },
+                {
+                    "Id": "1442ac73-a7e6-4c4c-a9fd-9620ac52e3b1",
+                    "IdText": "link"
                 }
             ],
             "inputLocalPorts": [],
@@ -358,15 +374,182 @@
                     "value": "test.graphsRepository"
                 }
             ]
+        },
+        {
+            "category": "memory",
+            "categoryType": "Data",
+            "isData": true,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "colour": "#394BB2",
+            "key": -1,
+            "text": "end",
+            "description": "",
+            "loc": "1128.8120462898273 480.7179327521793",
+            "collapsed": false,
+            "streaming": false,
+            "subject": null,
+            "group": -7,
+            "inputAppName": "",
+            "outputAppName": "",
+            "exitAppName": "",
+            "inputApplication": "Unknown",
+            "outputApplication": "Unknown",
+            "inputPorts": [
+                {
+                    "Id": "ddd6dbe5-2f97-4e79-9aa0-d622c8fb1594",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "63b80621-02cb-43ad-b056-076a67128bd7",
+                    "IdText": "end"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "2e8ac895-e276-41ca-b43e-4d749d74d30e",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "34d34c51-d1d1-4f2f-98ec-2b38d53e459e",
+                    "IdText": "end"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "5"
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "0"
+                }
+            ]
+        },
+        {
+            "category": "memory",
+            "categoryType": "Data",
+            "isData": true,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "colour": "#394BB2",
+            "key": -8,
+            "text": "start",
+            "description": "",
+            "loc": "574.8001245330013 456.73785803237854",
+            "collapsed": false,
+            "streaming": false,
+            "subject": null,
+            "inputAppName": "",
+            "outputAppName": "",
+            "exitAppName": "",
+            "inputApplication": "Unknown",
+            "outputApplication": "Unknown",
+            "inputPorts": [
+                {
+                    "Id": "ddd6dbe5-2f97-4e79-9aa0-d622c8fb1594",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "4dd6e534-4efa-4558-8918-b4cd7be628fb",
+                    "IdText": "start"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "2e8ac895-e276-41ca-b43e-4d749d74d30e",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "4e58f527-45e2-4e3a-92f4-c3e6a9ebca0a",
+                    "IdText": "start"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "5"
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "0"
+                }
+            ]
+        },
+        {
+            "category": "memory",
+            "categoryType": "Data",
+            "isData": true,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "colour": "#394BB2",
+            "key": -9,
+            "text": "link",
+            "description": "",
+            "loc": "794.280199252802 560.7559153175591",
+            "collapsed": false,
+            "streaming": false,
+            "subject": null,
+            "group": -7,
+            "inputAppName": "",
+            "outputAppName": "",
+            "exitAppName": "",
+            "inputApplication": "Unknown",
+            "outputApplication": "Unknown",
+            "inputPorts": [
+                {
+                    "Id": "ddd6dbe5-2f97-4e79-9aa0-d622c8fb1594",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "8aa39378-fdbe-49a5-9cb5-5bc341c64146",
+                    "IdText": "link"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "2e8ac895-e276-41ca-b43e-4d749d74d30e",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "533322fa-54b7-4d55-8317-ec239ce92e6d",
+                    "IdText": "link"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "5"
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "0"
+                }
+            ]
         }
     ],
     "linkDataArray": [
-        {
-            "from": -2,
-            "fromPort": "fc34b3c8-bd24-4706-a07c-569a61381615",
-            "to": -3,
-            "toPort": "3278a8d9-199e-4758-8a64-33c1ed01e0d9"
-        },
         {
             "from": -4,
             "fromPort": "082a2c9e-e282-4658-8b10-64d4034a6813",
@@ -380,16 +563,40 @@
             "toPort": "65580ecc-b5fd-4c1c-8bda-b9543c67dde7"
         },
         {
+            "from": -3,
+            "fromPort": "06dfa79e-be7f-4908-8418-864884108864",
+            "to": -1,
+            "toPort": "63b80621-02cb-43ad-b056-076a67128bd7"
+        },
+        {
+            "from": -1,
+            "fromPort": "34d34c51-d1d1-4f2f-98ec-2b38d53e459e",
+            "to": -6,
+            "toPort": "e7152607-640e-471a-96d9-655816d82b2f"
+        },
+        {
             "from": -6,
-            "fromPort": "e793906c-2a96-497d-b282-304996998c7c",
+            "fromPort": "c67cd47e-395b-451a-bca8-27da62f132f0",
+            "to": -8,
+            "toPort": "4dd6e534-4efa-4558-8918-b4cd7be628fb"
+        },
+        {
+            "from": -8,
+            "fromPort": "4e58f527-45e2-4e3a-92f4-c3e6a9ebca0a",
             "to": -2,
-            "toPort": "3278a8d9-199e-4758-8a64-33c1ed01e0d9"
+            "toPort": "01bd22b3-9018-48f6-948e-89428936a99b"
         },
         {
             "from": -3,
-            "fromPort": "fc34b3c8-bd24-4706-a07c-569a61381615",
-            "to": -6,
-            "toPort": "9cc997ad-271c-4a80-b957-3b9cd1930a85"
+            "fromPort": "49dc059c-33b4-4f07-889c-24a6be429b36",
+            "to": -9,
+            "toPort": "8aa39378-fdbe-49a5-9cb5-5bc341c64146"
+        },
+        {
+            "from": -9,
+            "fromPort": "533322fa-54b7-4d55-8317-ec239ce92e6d",
+            "to": -2,
+            "toPort": "1442ac73-a7e6-4c4c-a9fd-9620ac52e3b1"
         }
     ]
 }
