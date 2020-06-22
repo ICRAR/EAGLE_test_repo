@@ -436,6 +436,7 @@
             "collapsed": false,
             "streaming": false,
             "subject": null,
+            "group": -14,
             "inputAppName": "",
             "outputAppName": "",
             "exitAppName": "",
@@ -974,6 +975,63 @@
                     "value": ""
                 }
             ]
+        },
+        {
+            "category": "memory",
+            "categoryType": "Data",
+            "isData": true,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "colour": "#394BB2",
+            "key": -6,
+            "text": "data",
+            "description": "",
+            "loc": "783.9152495707559 260.8495498636516",
+            "collapsed": false,
+            "streaming": false,
+            "subject": null,
+            "inputAppName": "",
+            "outputAppName": "",
+            "exitAppName": "",
+            "inputApplication": "Unknown",
+            "outputApplication": "Unknown",
+            "inputPorts": [
+                {
+                    "Id": "c1b0eefd-279b-4e48-8f4e-d98cb1f1fc53",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "7a4d4af1-c51b-4922-82d7-396ddc21797c",
+                    "IdText": "data"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "420ac3ee-5b3e-4c0a-8deb-3d97d39e247b",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "209a81de-c721-4557-8c36-3b3ed62ee4cf",
+                    "IdText": "data"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "5"
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "0"
+                }
+            ]
         }
     ],
     "linkDataArray": [
@@ -988,12 +1046,6 @@
             "fromPort": "64c1fc46-305b-45fd-945c-070038cf1e49",
             "to": -22,
             "toPort": "07c6b043-c9cc-4521-8f69-a6c542d2be23"
-        },
-        {
-            "from": -22,
-            "fromPort": "6e419d3b-4c89-4fc5-a1f5-8ffa72da9a3f",
-            "to": -10,
-            "toPort": "c7c75304-9e9b-411e-8ef8-6b453147fc88"
         },
         {
             "from": -4,
@@ -1030,6 +1082,18 @@
             "fromPort": "e68fc153-c7da-4931-86fe-8acff3d29600",
             "to": -1,
             "toPort": "38385fc8-3bac-43cd-97bd-9a45cc309a4b"
+        },
+        {
+            "from": -14,
+            "fromPort": "dec160fe-d25e-4af1-9469-913861004a9e",
+            "to": -6,
+            "toPort": "7a4d4af1-c51b-4922-82d7-396ddc21797c"
+        },
+        {
+            "from": -6,
+            "fromPort": "209a81de-c721-4557-8c36-3b3ed62ee4cf",
+            "to": -10,
+            "toPort": "9c948e6d-d1ff-4977-af1f-ceb995995d72"
         }
     ]
 }
