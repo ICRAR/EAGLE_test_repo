@@ -1,0 +1,313 @@
+{
+    "modelData": {
+        "fileType": "graph",
+        "repoService": "GitHub",
+        "repo": "ICRAR/dlg_repo",
+        "filePath": "ChilesSplitDeploy.graph",
+        "sha": "",
+        "git_url": ""
+    },
+    "nodeDataArray": [
+        {
+            "category": "Component",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "colour": "#3498DB",
+            "key": -2,
+            "text": "WorkToDoSplit",
+            "description": "",
+            "loc": "383 24",
+            "collapsed": false,
+            "streaming": false,
+            "subject": null,
+            "inputAppName": "",
+            "outputAppName": "",
+            "exitAppName": "",
+            "inputApplication": "Unknown",
+            "outputApplication": "Unknown",
+            "inputPorts": [
+                {
+                    "Id": "f860ac00-b1a2-4560-80e6-919ff640fa02",
+                    "IdText": "event"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "e5ca5ab7-c817-451a-923b-25fc0906bda4",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "496d99f8-f882-4503-a73b-20049c7924e8",
+                    "IdText": "list_work_to_do"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": "5"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": "1"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "0"
+                },
+                {
+                    "text": "Appclass",
+                    "name": "appclass",
+                    "value": "chiles_daliuge.WorkToDoSplit"
+                },
+                {
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": "frequency_width"
+                },
+                {
+                    "text": "Arg02",
+                    "name": "Arg02",
+                    "value": "bucket_name"
+                },
+                {
+                    "text": "Arg03",
+                    "name": "Arg03",
+                    "value": "split_directory"
+                },
+                {
+                    "text": "Arg04",
+                    "name": "Arg04",
+                    "value": "observation_phase"
+                },
+                {
+                    "text": "Arg05",
+                    "name": "Arg05",
+                    "value": ""
+                },
+                {
+                    "text": "Arg06",
+                    "name": "Arg06",
+                    "value": ""
+                },
+                {
+                    "text": "Arg07",
+                    "name": "Arg07",
+                    "value": ""
+                },
+                {
+                    "text": "Arg08",
+                    "name": "Arg08",
+                    "value": ""
+                },
+                {
+                    "text": "Arg09",
+                    "name": "Arg09",
+                    "value": ""
+                },
+                {
+                    "text": "Arg10",
+                    "name": "Arg10",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "category": "Component",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "colour": "#3498DB",
+            "key": -6,
+            "text": "NodesRequiredSplit",
+            "description": "",
+            "loc": "1105 23",
+            "collapsed": false,
+            "streaming": false,
+            "subject": null,
+            "inputAppName": "",
+            "outputAppName": "",
+            "exitAppName": "",
+            "inputApplication": "Unknown",
+            "outputApplication": "Unknown",
+            "inputPorts": [
+                {
+                    "Id": "f469aa52-f545-4c85-9a18-c3463c9caf11",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "0bae9359-d7c0-4003-8fc6-8ae4b3e29b16",
+                    "IdText": "list_work_to_do"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "d1b5d2c3-af8a-41e5-9bcd-584cfde328ab",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "6e306ccd-c47c-4784-a017-4b72fd0aca8a",
+                    "IdText": "dict_of_nodes"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": "5"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": "1"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "0"
+                },
+                {
+                    "text": "Appclass",
+                    "name": "appclass",
+                    "value": "chiles_daliuge.NodesRequiredSplit"
+                },
+                {
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": "days"
+                },
+                {
+                    "text": "Arg02",
+                    "name": "Arg02",
+                    "value": "days_per_node"
+                },
+                {
+                    "text": "Arg03",
+                    "name": "Arg03",
+                    "value": "spot_price_2xlarge"
+                },
+                {
+                    "text": "Arg04",
+                    "name": "Arg04",
+                    "value": "spot_price_4xlarge"
+                },
+                {
+                    "text": "Arg05",
+                    "name": "Arg05",
+                    "value": ""
+                },
+                {
+                    "text": "Arg06",
+                    "name": "Arg06",
+                    "value": ""
+                },
+                {
+                    "text": "Arg07",
+                    "name": "Arg07",
+                    "value": ""
+                },
+                {
+                    "text": "Arg08",
+                    "name": "Arg08",
+                    "value": ""
+                },
+                {
+                    "text": "Arg09",
+                    "name": "Arg09",
+                    "value": ""
+                },
+                {
+                    "text": "Arg10",
+                    "name": "Arg10",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "category": "Memory",
+            "categoryType": "Data",
+            "isData": true,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "colour": "#394BB2",
+            "key": -4,
+            "text": "WorkToDo",
+            "description": "",
+            "loc": "715 23",
+            "collapsed": false,
+            "streaming": false,
+            "subject": null,
+            "inputAppName": "",
+            "outputAppName": "",
+            "exitAppName": "",
+            "inputApplication": "Unknown",
+            "outputApplication": "Unknown",
+            "inputPorts": [
+                {
+                    "Id": "9ec44b1b-2fad-4045-8a4c-e720c599487c",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "e65d115e-e75e-473c-a5ef-ee26a37792a2",
+                    "IdText": "list_work_to_do"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "96483c11-d51b-4414-a41d-c46968401ff4",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "e8cb1727-0596-4a68-98b7-0407542811b5",
+                    "IdText": "list_work_to_do"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "5"
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "0"
+                }
+            ]
+        }
+    ],
+    "linkDataArray": [
+        {
+            "from": -2,
+            "fromPort": "496d99f8-f882-4503-a73b-20049c7924e8",
+            "to": -4,
+            "toPort": "e65d115e-e75e-473c-a5ef-ee26a37792a2"
+        },
+        {
+            "from": -4,
+            "fromPort": "e8cb1727-0596-4a68-98b7-0407542811b5",
+            "to": -6,
+            "toPort": "0bae9359-d7c0-4003-8fc6-8ae4b3e29b16"
+        }
+    ]
+}
