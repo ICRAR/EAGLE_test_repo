@@ -1,0 +1,380 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="namespaceaskap" kind="namespace">
+    <compoundname>askap</compoundname>
+    <innerclass refid="classaskap_1_1_daliuge_application" prot="public">askap::DaliugeApplication</innerclass>
+    <innerclass refid="classaskap_1_1_calc_n_e" prot="public">askap::CalcNE</innerclass>
+    <innerclass refid="classaskap_1_1_daliuge_application_factory" prot="public">askap::DaliugeApplicationFactory</innerclass>
+    <innerclass refid="classaskap_1_1_init_spectral_cube" prot="public">askap::InitSpectralCube</innerclass>
+    <innerclass refid="classaskap_1_1_jacal_b_p_calibrator" prot="public">askap::JacalBPCalibrator</innerclass>
+    <innerclass refid="classaskap_1_1_load_n_e" prot="public">askap::LoadNE</innerclass>
+    <innerclass refid="classaskap_1_1_load_parset" prot="public">askap::LoadParset</innerclass>
+    <innerclass refid="classaskap_1_1_load_vis" prot="public">askap::LoadVis</innerclass>
+    <innerclass refid="classaskap_1_1_major_cycle" prot="public">askap::MajorCycle</innerclass>
+    <innerclass refid="classaskap_1_1_n_e_spectral_cube" prot="public">askap::NESpectralCube</innerclass>
+    <innerclass refid="classaskap_1_1_n_e_utils" prot="public">askap::NEUtils</innerclass>
+    <innerclass refid="classaskap_1_1_output_params" prot="public">askap::OutputParams</innerclass>
+    <innerclass refid="classaskap_1_1_restore_solver" prot="public">askap::RestoreSolver</innerclass>
+    <innerclass refid="classaskap_1_1_solve_n_e" prot="public">askap::SolveNE</innerclass>
+    <innerclass refid="classaskap_1_1_spectral_cube" prot="public">askap::SpectralCube</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceaskap_1a3d5e1bc911e510c4cd69bbddf18ada5b" prot="public" static="yes" mutable="no">
+        <type>std::once_flag</type>
+        <definition>std::once_flag askap::initial_population_called</definition>
+        <argsstring></argsstring>
+        <name>initial_population_called</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/llwang/jacal/jacal/factory/DaliugeApplicationFactory.cc" line="129" column="1" bodyfile="/home/llwang/jacal/jacal/factory/DaliugeApplicationFactory.cc" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceaskap_1a56fdb99602e33eed96df205afd3fc6a2" prot="public" static="yes" mutable="no">
+        <type>std::once_flag</type>
+        <definition>std::once_flag askap::init_logging_flag</definition>
+        <argsstring></argsstring>
+        <name>init_logging_flag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/llwang/jacal/jacal/factory/DaliugeApplicationFactory.cc" line="156" column="1" bodyfile="/home/llwang/jacal/jacal/factory/DaliugeApplicationFactory.cc" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceaskap_1ac8cc0c23f67c2d5b0f77a74d0a7ecfe8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string askap::getAskapPackageVersion_CalcNE</definition>
+        <argsstring>()</argsstring>
+        <name>getAskapPackageVersion_CalcNE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>version of the package </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/llwang/jacal/jacal/factory/CalcNE.cc" line="15" column="1" bodyfile="/home/llwang/jacal/jacal/factory/CalcNE.cc" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceaskap_1a7a41f9bfeed39e4794d6ba748025c715" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string askap::getAskapPackageVersion_DaliugeApplicationFactory</definition>
+        <argsstring>()</argsstring>
+        <name>getAskapPackageVersion_DaliugeApplicationFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>version of the package </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/llwang/jacal/jacal/factory/DaliugeApplicationFactory.cc" line="16" column="1" bodyfile="/home/llwang/jacal/jacal/factory/DaliugeApplicationFactory.cc" bodystart="16" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceaskap_1a683cff244e714861fe1bdaaf7466e28c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void askap::init_logging</definition>
+        <argsstring>()</argsstring>
+        <name>init_logging</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/llwang/jacal/jacal/factory/DaliugeApplicationFactory.cc" line="157" column="1" bodyfile="/home/llwang/jacal/jacal/factory/DaliugeApplicationFactory.cc" bodystart="157" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceaskap_1a85533202ef62bb198919692d6cef7807" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string askap::getAskapPackageVersion_InitSpectralCube</definition>
+        <argsstring>()</argsstring>
+        <name>getAskapPackageVersion_InitSpectralCube</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>version of the package </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/llwang/jacal/jacal/factory/InitSpectralCube.cc" line="15" column="1" bodyfile="/home/llwang/jacal/jacal/factory/InitSpectralCube.cc" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceaskap_1a392ef14bd11a2eaf8f6638d269681933" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string askap::getAskapPackageVersion_LoadNE</definition>
+        <argsstring>()</argsstring>
+        <name>getAskapPackageVersion_LoadNE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>version of the package </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/llwang/jacal/jacal/factory/LoadNE.cc" line="15" column="1" bodyfile="/home/llwang/jacal/jacal/factory/LoadNE.cc" bodystart="15" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceaskap_1ac8c1996be4146d9fb17e38a42571456d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string askap::getAskapPackageVersion_LoadVis</definition>
+        <argsstring>()</argsstring>
+        <name>getAskapPackageVersion_LoadVis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>version of the package </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/llwang/jacal/jacal/factory/LoadVis.cc" line="14" column="1" bodyfile="/home/llwang/jacal/jacal/factory/LoadVis.cc" bodystart="14" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceaskap_1a8687bad6dc09af6ccb8447cc92f234d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string askap::getAskapPackageVersion_MajorCycle</definition>
+        <argsstring>()</argsstring>
+        <name>getAskapPackageVersion_MajorCycle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>version of the package </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/llwang/jacal/jacal/factory/MajorCycle.cc" line="14" column="1" bodyfile="/home/llwang/jacal/jacal/factory/MajorCycle.cc" bodystart="14" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceaskap_1a67157b7f485b4c84c1966a853fed27fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string askap::getAskapPackageVersion_NESpectralCube</definition>
+        <argsstring>()</argsstring>
+        <name>getAskapPackageVersion_NESpectralCube</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>version of the package </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/llwang/jacal/jacal/factory/NESpectralCube.cc" line="13" column="1" bodyfile="/home/llwang/jacal/jacal/factory/NESpectralCube.cc" bodystart="13" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceaskap_1a18d154e8541ff37cbb7fa5efcba802a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string askap::getAskapPackageVersion_NEUtils</definition>
+        <argsstring>()</argsstring>
+        <name>getAskapPackageVersion_NEUtils</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>version of the package </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/llwang/jacal/jacal/factory/NEUtils.cc" line="15" column="1" bodyfile="/home/llwang/jacal/jacal/factory/NEUtils.cc" bodystart="15" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceaskap_1a7324ea6cdfc085c48eff8ea8fd12c862" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned long</type>
+        <definition>static unsigned long askap::usecs</definition>
+        <argsstring>(struct timeval *start, struct timeval *end)</argsstring>
+        <name>usecs</name>
+        <param>
+          <type>struct timeval *</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>struct timeval *</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/llwang/jacal/jacal/factory/NEUtils.h" line="37" column="1" bodyfile="/home/llwang/jacal/jacal/factory/NEUtils.h" bodystart="37" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceaskap_1a1e583517dcb94f2be1d688a7257665b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string askap::getAskapPackageVersion_OutputParams</definition>
+        <argsstring>()</argsstring>
+        <name>getAskapPackageVersion_OutputParams</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>version of the package </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/llwang/jacal/jacal/factory/OutputParams.cc" line="15" column="1" bodyfile="/home/llwang/jacal/jacal/factory/OutputParams.cc" bodystart="15" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceaskap_1a9abd73a87917e50146fe865166881e93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string askap::getAskapPackageVersion_RestoreSolver</definition>
+        <argsstring>()</argsstring>
+        <name>getAskapPackageVersion_RestoreSolver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>version of the package </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/llwang/jacal/jacal/factory/RestoreSolver.cc" line="15" column="1" bodyfile="/home/llwang/jacal/jacal/factory/RestoreSolver.cc" bodystart="15" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceaskap_1acfbaa8fdb6811361155c3ff22f2afcaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string askap::getAskapPackageVersion_SolveNE</definition>
+        <argsstring>()</argsstring>
+        <name>getAskapPackageVersion_SolveNE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>version of the package </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/llwang/jacal/jacal/factory/SolveNE.cc" line="15" column="1" bodyfile="/home/llwang/jacal/jacal/factory/SolveNE.cc" bodystart="15" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceaskap_1a8c23a7a12cd321af6dec82bf1b9125b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string askap::getAskapPackageVersion_SpectralCube</definition>
+        <argsstring>()</argsstring>
+        <name>getAskapPackageVersion_SpectralCube</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>version of the package </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/llwang/jacal/jacal/factory/SpectralCube.cc" line="15" column="1" bodyfile="/home/llwang/jacal/jacal/factory/SpectralCube.cc" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceaskap_1a6df8a7b77732affeca69fdb2444d0561" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>dlg_app_info *</type>
+        <definition>dlg_app_info * askap::dummy_dlg_app</definition>
+        <argsstring>(const std::string &amp;input_file)</argsstring>
+        <name>dummy_dlg_app</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>input_file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/llwang/jacal/jacal/test/standalone.cpp" line="36" column="1" bodyfile="/home/llwang/jacal/jacal/test/standalone.cpp" bodystart="36" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceaskap_1a6b67bb416ad25f6f54982325b368c0c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int askap::run_calibrate</definition>
+        <argsstring>(const std::string &amp;input_file)</argsstring>
+        <name>run_calibrate</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>input_file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/llwang/jacal/jacal/test/standalone.cpp" line="79" column="1" bodyfile="/home/llwang/jacal/jacal/test/standalone.cpp" bodystart="79" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceaskap_1a67ca1dccf49a9f6cd18f15fa91260c79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int askap::run</definition>
+        <argsstring>(int argc, std::string input1)</argsstring>
+        <name>run</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>input1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/llwang/jacal/jacal/test/standalone.cpp" line="87" column="1" bodyfile="/home/llwang/jacal/jacal/test/standalone.cpp" bodystart="87" bodyend="89"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>askap namespace </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>This is for EAGLE.</title><para></para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">param/description</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>this is a init function<linebreak/>
+ </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">param/start_frequency</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the start frequency to read from<linebreak/>
+ </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">param/end_frequency</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the end frequency to read from<linebreak/>
+ </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">param/channels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>how many channels to load<linebreak/>
+ </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">port/config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the configuration of the input_port<linebreak/>
+ </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">port/event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the event of the input_port<linebreak/>
+ </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">local-port/event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the event of the input_port<linebreak/>
+ </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">port/File</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the file of the output_port <linebreak/>
+ </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="par"><title>End of EAGLE comments.</title><para></para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/llwang/jacal/jacal/daliuge/DaliugeApplication.h" line="44" column="1"/>
+  </compounddef>
+</doxygen>
