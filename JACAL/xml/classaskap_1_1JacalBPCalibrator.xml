@@ -1,0 +1,1001 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classaskap_1_1JacalBPCalibrator" kind="class" language="C++" prot="public">
+    <compoundname>askap::JacalBPCalibrator</compoundname>
+    <basecompoundref refid="classaskap_1_1DaliugeApplication" prot="public" virt="non-virtual">askap::DaliugeApplication</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classaskap_1_1JacalBPCalibrator_1ae8d3ef8a66ee94fba65acae085c32f4f" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classaskap_1_1JacalBPCalibrator" kindref="compound">JacalBPCalibrator</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;JacalBPCalibrator&gt; askap::JacalBPCalibrator::ShPtr</definition>
+        <argsstring></argsstring>
+        <name>ShPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="52" column="1" bodyfile="jacal/factory/JacalBPCalibrator.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classaskap_1_1JacalBPCalibrator_1a36ae46f38b997b8f1b9537f96db2113e" prot="private" static="no" mutable="no">
+        <type>askap::scimath::Params::ShPtr</type>
+        <definition>askap::scimath::Params::ShPtr askap::JacalBPCalibrator::itsPerfectModel</definition>
+        <argsstring></argsstring>
+        <name>itsPerfectModel</name>
+        <briefdescription>
+<para>uncorrupted model </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="206" column="1" bodyfile="jacal/factory/JacalBPCalibrator.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1JacalBPCalibrator_1a2b17d4f5dce07f1b0f0da0fffacd9099" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int askap::JacalBPCalibrator::itsRefAntenna</definition>
+        <argsstring></argsstring>
+        <name>itsRefAntenna</name>
+        <briefdescription>
+<para>reference antenna (index) </para>        </briefdescription>
+        <detaileddescription>
+<para>Negative number means no referencing required </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="210" column="1" bodyfile="jacal/factory/JacalBPCalibrator.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1JacalBPCalibrator_1aefc35a02ae17bbdf1ae77e32cdc5ee55" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string askap::JacalBPCalibrator::itsRefGainXX</definition>
+        <argsstring></argsstring>
+        <name>itsRefGainXX</name>
+        <briefdescription>
+<para>name of the parameter taken as a reference </para>        </briefdescription>
+        <detaileddescription>
+<para>empty string means no referencing is required </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="218" column="1" bodyfile="jacal/factory/JacalBPCalibrator.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1JacalBPCalibrator_1adebb6ffc3676eeaf5f101e63a5161a40" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string askap::JacalBPCalibrator::itsRefGainYY</definition>
+        <argsstring></argsstring>
+        <name>itsRefGainYY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="219" column="1" bodyfile="jacal/factory/JacalBPCalibrator.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1JacalBPCalibrator_1a145b4f325f525c4b9dac0b128de5a07c" prot="private" static="no" mutable="no">
+        <type>boost::shared_ptr&lt; accessors::ICalSolutionSource &gt;</type>
+        <definition>boost::shared_ptr&lt;accessors::ICalSolutionSource&gt; askap::JacalBPCalibrator::itsSolutionSource</definition>
+        <argsstring></argsstring>
+        <name>itsSolutionSource</name>
+        <briefdescription>
+<para>solution source to store the result </para>        </briefdescription>
+        <detaileddescription>
+<para>This object is initialised by the master. It stores the solution in parset file, casa table or a database. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="224" column="1" bodyfile="jacal/factory/JacalBPCalibrator.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1JacalBPCalibrator_1afc3a7da6267807bb62187bff3fedec4c" prot="private" static="no" mutable="no">
+        <type>boost::shared_ptr&lt; synthesis::IMeasurementEquation const  &gt;</type>
+        <definition>boost::shared_ptr&lt;synthesis::IMeasurementEquation const&gt; askap::JacalBPCalibrator::itsPerfectME</definition>
+        <argsstring></argsstring>
+        <name>itsPerfectME</name>
+        <briefdescription>
+<para>shared pointer to measurement equation correspondent to the perfect model </para>        </briefdescription>
+        <detaileddescription>
+<para>It is handy to store the perfect measurement equation, so it is not recreated every time for each solution interval. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="231" column="1" bodyfile="jacal/factory/JacalBPCalibrator.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1JacalBPCalibrator_1ab873570b334426a277406d4c3c3d51b9" prot="private" static="no" mutable="no">
+        <type>scimath::MultiDimPosIter</type>
+        <definition>scimath::MultiDimPosIter askap::JacalBPCalibrator::itsWorkUnitIterator</definition>
+        <argsstring></argsstring>
+        <name>itsWorkUnitIterator</name>
+        <briefdescription>
+<para>iterator over channels and beams </para>        </briefdescription>
+        <detaileddescription>
+<para>This class allows us to split work domain between a number of workers (=iteration chunks) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="235" column="1" bodyfile="jacal/factory/JacalBPCalibrator.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1JacalBPCalibrator_1a193acadbd53186d39ca871d72a73c6d1" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long askap::JacalBPCalibrator::itsSolutionID</definition>
+        <argsstring></argsstring>
+        <name>itsSolutionID</name>
+        <briefdescription>
+<para>solution ID to work with </para>        </briefdescription>
+        <detaileddescription>
+<para>This field should only be used if itsSolutionIDValid is true </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="239" column="1" bodyfile="jacal/factory/JacalBPCalibrator.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1JacalBPCalibrator_1a06358d2680ae0cd408b4d1225f824185" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool askap::JacalBPCalibrator::itsSolutionIDValid</definition>
+        <argsstring></argsstring>
+        <name>itsSolutionIDValid</name>
+        <briefdescription>
+<para>solution ID validity flag </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="242" column="1" bodyfile="jacal/factory/JacalBPCalibrator.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1JacalBPCalibrator_1aaefbbd75273d35c6ba0b05bb7c62460f" prot="private" static="no" mutable="no">
+        <type>LOFAR::ParameterSet</type>
+        <definition>LOFAR::ParameterSet askap::JacalBPCalibrator::itsParset</definition>
+        <argsstring></argsstring>
+        <name>itsParset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="245" column="1" bodyfile="jacal/factory/JacalBPCalibrator.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1JacalBPCalibrator_1a43d6d27a1d3d9fe9945d48ee01376554" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int askap::JacalBPCalibrator::itsChan</definition>
+        <argsstring></argsstring>
+        <name>itsChan</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="248" column="1" bodyfile="jacal/factory/JacalBPCalibrator.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1JacalBPCalibrator_1ad0cfc1b90c9eeb38ed0f6cbe68e2d491" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int askap::JacalBPCalibrator::itsBeam</definition>
+        <argsstring></argsstring>
+        <name>itsBeam</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="251" column="1" bodyfile="jacal/factory/JacalBPCalibrator.h" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1JacalBPCalibrator_1ac4122bc9fa2826ca6cd0d43ae0e4a027" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool askap::JacalBPCalibrator::isMaster</definition>
+        <argsstring></argsstring>
+        <name>isMaster</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="255" column="1" bodyfile="jacal/factory/JacalBPCalibrator.h" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1JacalBPCalibrator_1af0eef5a5223a22887d8ff5ede25298b6" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool askap::JacalBPCalibrator::isWorker</definition>
+        <argsstring></argsstring>
+        <name>isWorker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="256" column="1" bodyfile="jacal/factory/JacalBPCalibrator.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1JacalBPCalibrator_1ab4fcdc600445782de23f65f2fe7b2fdf" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool askap::JacalBPCalibrator::isParallel</definition>
+        <argsstring></argsstring>
+        <name>isParallel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="257" column="1" bodyfile="jacal/factory/JacalBPCalibrator.h" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1JacalBPCalibrator_1a51eb8cace34862417293462ac82eb157" prot="private" static="no" mutable="no">
+        <type>casacore::IPosition</type>
+        <definition>casacore::IPosition askap::JacalBPCalibrator::freqInterval</definition>
+        <argsstring></argsstring>
+        <name>freqInterval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="260" column="1" bodyfile="jacal/factory/JacalBPCalibrator.h" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1JacalBPCalibrator_1a534e7215cf52bd3645afeecd84ab1762" prot="private" static="no" mutable="no">
+        <type>casacore::IPosition</type>
+        <definition>casacore::IPosition askap::JacalBPCalibrator::timeInterval</definition>
+        <argsstring></argsstring>
+        <name>timeInterval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="261" column="1" bodyfile="jacal/factory/JacalBPCalibrator.h" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1JacalBPCalibrator_1ac6e701a1f38ea29eba43ae399100b9c1" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; askap::JacalBPCalibrator::itsMs</definition>
+        <argsstring></argsstring>
+        <name>itsMs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="265" column="1" bodyfile="jacal/factory/JacalBPCalibrator.h" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1JacalBPCalibrator_1abc88f85ba06c8ce8db7accdca494258f" prot="private" static="no" mutable="no">
+        <type>askap::scimath::Solver::ShPtr</type>
+        <definition>askap::scimath::Solver::ShPtr askap::JacalBPCalibrator::itsSolver</definition>
+        <argsstring></argsstring>
+        <name>itsSolver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="268" column="1" bodyfile="jacal/factory/JacalBPCalibrator.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1JacalBPCalibrator_1a29006140dae4dcdcdad4dc22252c5ce7" prot="private" static="no" mutable="no">
+        <type>askap::scimath::Equation::ShPtr</type>
+        <definition>askap::scimath::Equation::ShPtr askap::JacalBPCalibrator::itsEquation</definition>
+        <argsstring></argsstring>
+        <name>itsEquation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="270" column="1" bodyfile="jacal/factory/JacalBPCalibrator.h" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1JacalBPCalibrator_1a2a12369ca88e49870d5f070d769ec219" prot="private" static="no" mutable="no">
+        <type>askap::scimath::Params::ShPtr</type>
+        <definition>askap::scimath::Params::ShPtr askap::JacalBPCalibrator::itsModel</definition>
+        <argsstring></argsstring>
+        <name>itsModel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="272" column="1" bodyfile="jacal/factory/JacalBPCalibrator.h" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1JacalBPCalibrator_1ad3318588d06e2997984d0e0be4a10025" prot="private" static="no" mutable="no">
+        <type>askap::scimath::INormalEquations::ShPtr</type>
+        <definition>askap::scimath::INormalEquations::ShPtr askap::JacalBPCalibrator::itsNe</definition>
+        <argsstring></argsstring>
+        <name>itsNe</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="274" column="1" bodyfile="jacal/factory/JacalBPCalibrator.h" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1JacalBPCalibrator_1acfd455da0960ea3ec63f7448de9ee8c9" prot="private" static="no" mutable="no">
+        <type>askap::synthesis::IVisGridder::ShPtr</type>
+        <definition>askap::synthesis::IVisGridder::ShPtr askap::JacalBPCalibrator::itsGridder</definition>
+        <argsstring></argsstring>
+        <name>itsGridder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="276" column="1" bodyfile="jacal/factory/JacalBPCalibrator.h" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1JacalBPCalibrator_1ad02b10b8747139d11b18cdf76695871c" prot="private" static="no" mutable="no">
+        <type>vector&lt; int &gt;</type>
+        <definition>vector&lt;int&gt; askap::JacalBPCalibrator::itsModelInputs</definition>
+        <argsstring></argsstring>
+        <name>itsModelInputs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="278" column="1" bodyfile="jacal/factory/JacalBPCalibrator.h" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classaskap_1_1JacalBPCalibrator_1a117c1878d3d684910ec9b8732d8fa706" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>askap::JacalBPCalibrator::JacalBPCalibrator</definition>
+        <argsstring>(dlg_app_info *raw_app)</argsstring>
+        <name>JacalBPCalibrator</name>
+        <param>
+          <type>dlg_app_info *</type>
+          <declname>raw_app</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for Jacal application. </para>        </briefdescription>
+        <detaileddescription>
+<para>The parset is used to construct the internal state. We could also support construction from a python dictionary (for example). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">raw_app</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Daliuge communication object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="54" column="1" bodyfile="jacal/factory/JacalBPCalibrator.cc" bodystart="95" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1JacalBPCalibrator_1a4013f9a29cac8dfd1a41fb1c896b443c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int askap::JacalBPCalibrator::init</definition>
+        <argsstring>(const char ***arguments)</argsstring>
+        <name>init</name>
+        <reimplements refid="classaskap_1_1DaliugeApplication_1acb7c465b5a2a1ae55beabeac87d2a899">init</reimplements>
+        <param>
+          <type>const char ***</type>
+          <declname>arguments</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is implemented by sub-classes. i.e. The users of this class. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="60" column="1" bodyfile="jacal/factory/JacalBPCalibrator.cc" bodystart="128" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1JacalBPCalibrator_1a83eb45b3ee4a0507bc94f6e128e43a9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int askap::JacalBPCalibrator::run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <reimplements refid="classaskap_1_1DaliugeApplication_1abb089035c6c71206554cf1c916689635">run</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Create solver in workers</para><para>initialise to iterate over given range</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">shape</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>shape of the volume to iterate </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position of the origin </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>end position</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+FIXME: I could break this into two pieces as I have for the imaging - instead the BP calibrator does all it needs to do in a single drop. </para>        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="62" column="1" bodyfile="jacal/factory/JacalBPCalibrator.cc" bodystart="170" bodyend="394"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1JacalBPCalibrator_1a6c7518da6c2313394269fec16e4eee47" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void askap::JacalBPCalibrator::data_written</definition>
+        <argsstring>(const char *uid, const char *data, size_t n)</argsstring>
+        <name>data_written</name>
+        <reimplements refid="classaskap_1_1DaliugeApplication_1a9fbaf01766eb1fb1d36c187df57c340c">data_written</reimplements>
+        <param>
+          <type>const char *</type>
+          <declname>uid</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="64" column="1" bodyfile="jacal/factory/JacalBPCalibrator.cc" bodystart="826" bodyend="828"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1JacalBPCalibrator_1a120c9a709422e7c9f98700877ab1c571" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void askap::JacalBPCalibrator::drop_completed</definition>
+        <argsstring>(const char *uid, drop_status status)</argsstring>
+        <name>drop_completed</name>
+        <reimplements refid="classaskap_1_1DaliugeApplication_1a03cf905a020fc3897e1637810fc7d4fa">drop_completed</reimplements>
+        <param>
+          <type>const char *</type>
+          <declname>uid</declname>
+        </param>
+        <param>
+          <type>drop_status</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="66" column="1" bodyfile="jacal/factory/JacalBPCalibrator.cc" bodystart="830" bodyend="833"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1JacalBPCalibrator_1af117bb0add1a7e3da71b9227d0d00407" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const LOFAR::ParameterSet &amp;</type>
+        <definition>const LOFAR::ParameterSet&amp; askap::JacalBPCalibrator::parset</definition>
+        <argsstring>() const</argsstring>
+        <name>parset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="69" column="1" bodyfile="jacal/factory/JacalBPCalibrator.h" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1JacalBPCalibrator_1a14b32ddf976ad4b1f76ffcd410459dae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void askap::JacalBPCalibrator::setMeasurementSets</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;ms)</argsstring>
+        <name>setMeasurementSets</name>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>ms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="73" column="1" bodyfile="jacal/factory/JacalBPCalibrator.h" bodystart="73" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1JacalBPCalibrator_1a3bdce0ba6bfedd0be2e2cc56788d5e4c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::vector&lt; std::string &gt; &amp;</type>
+        <definition>const std::vector&lt;std::string&gt;&amp; askap::JacalBPCalibrator::measurementSets</definition>
+        <argsstring>() const</argsstring>
+        <name>measurementSets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="75" column="1" bodyfile="jacal/factory/JacalBPCalibrator.h" bodystart="75" bodyend="75"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classaskap_1_1JacalBPCalibrator_1af930df657c00c479dc7f03c81b150c3e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string askap::JacalBPCalibrator::ApplicationName</definition>
+        <argsstring>()</argsstring>
+        <name>ApplicationName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="56" column="1" bodyfile="jacal/factory/JacalBPCalibrator.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1JacalBPCalibrator_1a36725dc71bf966866371c380944b3cf5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classaskap_1_1DaliugeApplication_1a7a6d2810d428144756d8b66468a360bc" kindref="member">DaliugeApplication::ShPtr</ref></type>
+        <definition>DaliugeApplication::ShPtr askap::JacalBPCalibrator::createDaliugeApplication</definition>
+        <argsstring>(dlg_app_info *raw_app)</argsstring>
+        <name>createDaliugeApplication</name>
+        <param>
+          <type>dlg_app_info *</type>
+          <declname>raw_app</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="58" column="1" bodyfile="jacal/factory/JacalBPCalibrator.cc" bodystart="123" bodyend="126"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classaskap_1_1JacalBPCalibrator_1ae82ef4391be535bdce8cae8a71dc686d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void askap::JacalBPCalibrator::calcNE</definition>
+        <argsstring>()</argsstring>
+        <name>calcNE</name>
+        <briefdescription>
+<para>Calculate the normal equations (runs in workers) </para>        </briefdescription>
+        <detaileddescription>
+<para>Model, either image-based or component-based, is used in conjunction with CalibrationME to calculate the generic normal equations. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="87" column="1" bodyfile="jacal/factory/JacalBPCalibrator.cc" bodystart="532" bodyend="561"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1JacalBPCalibrator_1adaf500fef2e24498a3ec41349463b8a4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void askap::JacalBPCalibrator::solveNE</definition>
+        <argsstring>()</argsstring>
+        <name>solveNE</name>
+        <briefdescription>
+<para>Solve the normal equations (runs in workers) </para>        </briefdescription>
+        <detaileddescription>
+<para>Parameters of the calibration problem are solved for here </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="91" column="1" bodyfile="jacal/factory/JacalBPCalibrator.cc" bodystart="573" bodyend="620"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1JacalBPCalibrator_1a740de3dd4fbc08140a22df036c1b9309" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void askap::JacalBPCalibrator::writeModel</definition>
+        <argsstring>(const std::string &amp;postfix=std::string())</argsstring>
+        <name>writeModel</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>postfix</declname>
+          <defval>std::string()</defval>
+        </param>
+        <briefdescription>
+<para>Write the results (runs in master) </para>        </briefdescription>
+        <detaileddescription>
+<para>The solution (calibration parameters) is reported via solution accessor <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">postfix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a string to be added to the file name (unused in this class)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+The solution (calibration parameters) is reported via solution accessor </para>        </detaileddescription>
+        <inbodydescription>
+<para>solution accessor used to stage the results in memory</para><para>This object is initialised by the master. It provides a way to store the solutions in memory, until we write out at the end. </para>        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="96" column="1" bodyfile="jacal/factory/JacalBPCalibrator.cc" bodystart="624" bodyend="654"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1JacalBPCalibrator_1a43f3df335173c7e71f2ebb953636a502" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void askap::JacalBPCalibrator::createCalibrationME</definition>
+        <argsstring>(const accessors::IDataSharedIter &amp;dsi, const boost::shared_ptr&lt; synthesis::IMeasurementEquation const &gt; &amp;perfectME)</argsstring>
+        <name>createCalibrationME</name>
+        <param>
+          <type>const accessors::IDataSharedIter &amp;</type>
+          <declname>dsi</declname>
+        </param>
+        <param>
+          <type>const boost::shared_ptr&lt; synthesis::IMeasurementEquation const &gt; &amp;</type>
+          <declname>perfectME</declname>
+        </param>
+        <briefdescription>
+<para>create measurement equation </para>        </briefdescription>
+        <detaileddescription>
+<para>This method initialises itsEquation with shared pointer to a proper type. It uses internal flags to create a correct type (i.e. polarisation calibration or just antenna-based gains). Parameters are passed directly to the constructor of CalibrationME template. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dsi</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data shared iterator </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">perfectME</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>uncorrupted measurement equation </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="105" column="1" bodyfile="jacal/factory/JacalBPCalibrator.cc" bodystart="663" bodyend="686"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1JacalBPCalibrator_1aa309613c3b85900a1a5a1f2057feb0dd" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void askap::JacalBPCalibrator::rotatePhases</definition>
+        <argsstring>()</argsstring>
+        <name>rotatePhases</name>
+        <briefdescription>
+<para>helper method to rotate all phases </para>        </briefdescription>
+        <detaileddescription>
+<para>This method rotates the phases of all gains in itsModel to have the phase of itsRefGain exactly 0. This operation does not seem to be necessary for SVD solvers, however it simplifies &quot;human eye&quot; analysis of the results (otherwise the phase degeneracy would make the solution different from the simulated gains). <simplesect kind="note"><para>The method throws exception if itsRefGain is not among the parameters of itsModel </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="116" column="1" bodyfile="jacal/factory/JacalBPCalibrator.cc" bodystart="696" bodyend="727"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1JacalBPCalibrator_1a551d04ab7b78bfc2cff01e232c2c43a4" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double askap::JacalBPCalibrator::solutionTime</definition>
+        <argsstring>() const</argsstring>
+        <name>solutionTime</name>
+        <briefdescription>
+<para>helper method to extract solution time from NE. </para>        </briefdescription>
+        <detaileddescription>
+<para>To be able to time tag the calibration solutions we add start and stop times extracted from the dataset as metadata to normal equations. It allows us to send these times to the master, which ultimately writes the calibration solution. Otherwise, these times could only be obtained in workers who deal with the actual data. <simplesect kind="return"><para>solution time (seconds since 0 MJD) </para></simplesect>
+<simplesect kind="note"><para>if no start/stop time metadata are present in the normal equations this method returns 0. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="127" column="1" bodyfile="jacal/factory/JacalBPCalibrator.cc" bodystart="738" bodyend="753"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classaskap_1_1JacalBPCalibrator_1a36e12b1c4730c677bc9f142e5e466699" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LOFAR::ParameterSet</type>
+        <definition>LOFAR::ParameterSet askap::JacalBPCalibrator::emptyDatasetKeyword</definition>
+        <argsstring>(const LOFAR::ParameterSet &amp;parset)</argsstring>
+        <name>emptyDatasetKeyword</name>
+        <param>
+          <type>const LOFAR::ParameterSet &amp;</type>
+          <declname>parset</declname>
+        </param>
+        <briefdescription>
+<para>helper method to remove the dataset name from a parset </para>        </briefdescription>
+        <detaileddescription>
+<para>We deal with multiple measurement sets in a dit different way from the other synthesis applications (they are not per worker here). This method allows to remove the string with measurement sets in the parset passed to base classes and replace it by empty string <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">parset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input parset </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a copy without the dataset keyword </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="137" column="1" bodyfile="jacal/factory/JacalBPCalibrator.cc" bodystart="403" bodyend="408"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classaskap_1_1JacalBPCalibrator_1ad42cc7789710c86e726ee2a08e1d5753" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void askap::JacalBPCalibrator::readModels</definition>
+        <argsstring>() const</argsstring>
+        <name>readModels</name>
+        <briefdescription>
+<para>read the model from parset file and populate itsPerfectModel </para>        </briefdescription>
+        <detaileddescription>
+<para>This method is common between several classes and probably should be pushed up in the class hierarchy </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="143" column="1" bodyfile="jacal/factory/JacalBPCalibrator.h" bodystart="143" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1JacalBPCalibrator_1a1db8ae6741a1429e57e93fe8f5b563fc" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>casacore::uInt</type>
+        <definition>casacore::uInt askap::JacalBPCalibrator::nAnt</definition>
+        <argsstring>() const</argsstring>
+        <name>nAnt</name>
+        <briefdescription>
+<para>number of antennas to solve for </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>number of antennas to solve for </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="147" column="1" bodyfile="jacal/factory/JacalBPCalibrator.h" bodystart="147" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1JacalBPCalibrator_1a9769b69827173e01ca0ff7b0735a6ec9" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>casacore::uInt</type>
+        <definition>casacore::uInt askap::JacalBPCalibrator::nBeam</definition>
+        <argsstring>() const</argsstring>
+        <name>nBeam</name>
+        <briefdescription>
+<para>number of beams to solve for </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>number of beams to solve for </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="151" column="1" bodyfile="jacal/factory/JacalBPCalibrator.h" bodystart="151" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1JacalBPCalibrator_1a6e2e6645c1d3eb2ff3aa74843993d4ac" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>casacore::uInt</type>
+        <definition>casacore::uInt askap::JacalBPCalibrator::nChan</definition>
+        <argsstring>() const</argsstring>
+        <name>nChan</name>
+        <briefdescription>
+<para>number of channels to solve for </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>number of channels to solve for </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="155" column="1" bodyfile="jacal/factory/JacalBPCalibrator.h" bodystart="155" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1JacalBPCalibrator_1a4ffae6163bc7f8939185fe2fcc478ee5" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>casacore::uInt</type>
+        <definition>casacore::uInt askap::JacalBPCalibrator::nChanPerRank</definition>
+        <argsstring>() const</argsstring>
+        <name>nChanPerRank</name>
+        <briefdescription>
+<para>number of channels to solve for </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>number of channels per rank </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="160" column="1" bodyfile="jacal/factory/JacalBPCalibrator.h" bodystart="160" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1JacalBPCalibrator_1ad76aa53804a09cba6f969efb9c7c8aaf" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string</type>
+        <definition>const std::string askap::JacalBPCalibrator::dataColumn</definition>
+        <argsstring>() const</argsstring>
+        <name>dataColumn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="162" column="1" bodyfile="jacal/factory/JacalBPCalibrator.h" bodystart="162" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1JacalBPCalibrator_1a3f9200936b17e20b6f6a8089b3a38605" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::pair&lt; casacore::uInt, casacore::uInt &gt;</type>
+        <definition>std::pair&lt; casacore::uInt, casacore::uInt &gt; askap::JacalBPCalibrator::currentBeamAndChannel</definition>
+        <argsstring>() const</argsstring>
+        <name>currentBeamAndChannel</name>
+        <briefdescription>
+<para>extract current beam/channel pair from the iterator </para>        </briefdescription>
+        <detaileddescription>
+<para>This method encapsulates interpretation of the output of itsWorkUnitIterator.cursor() for workers and in the serial mode. However, it extracts the current beam and channel info out of the model for the master in the parallel case. This is done because calibration data are sent to the master asynchronously and there is no way of knowing what iteration in the worker they correspond to without looking at the data. <simplesect kind="return"><para>pair of beam (first) and channel (second) indices </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="170" column="1" bodyfile="jacal/factory/JacalBPCalibrator.cc" bodystart="431" bodyend="452"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1JacalBPCalibrator_1a889b951e59fe9eb6e098ccac11ea1942" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void askap::JacalBPCalibrator::invalidateSolution</definition>
+        <argsstring>()</argsstring>
+        <name>invalidateSolution</name>
+        <briefdescription>
+<para>helper method to invalidate current solution </para>        </briefdescription>
+        <detaileddescription>
+<para>helper method to invalidate curremt solution </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="173" column="1" bodyfile="jacal/factory/JacalBPCalibrator.cc" bodystart="564" bodyend="568"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1JacalBPCalibrator_1ac044d4f95c807aae67186b411112ed89" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool askap::JacalBPCalibrator::validSolution</definition>
+        <argsstring>() const</argsstring>
+        <name>validSolution</name>
+        <briefdescription>
+<para>verify that the current solution is valid </para>        </briefdescription>
+        <detaileddescription>
+<para>We use a special keywork &apos;invalid&apos; in the model to signal that a particular solution failed. for whatever reason. This flag is checked to avoid writing the solution (which would automatically set validity flag <simplesect kind="return"><para>true, if the current solution is valid </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="181" column="1" bodyfile="jacal/factory/JacalBPCalibrator.cc" bodystart="417" bodyend="423"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1JacalBPCalibrator_1a30447c19ee4121f668640f0861c1ba9f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void askap::JacalBPCalibrator::calcOne</definition>
+        <argsstring>(const std::string &amp;ms, const casacore::uInt chan, const casacore::uInt beam)</argsstring>
+        <name>calcOne</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>ms</declname>
+        </param>
+        <param>
+          <type>const casacore::uInt</type>
+          <declname>chan</declname>
+        </param>
+        <param>
+          <type>const casacore::uInt</type>
+          <declname>beam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate normal equations for one data set, channel and beam <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of data set </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">chan</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>channel to work with </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">beam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>beam to work with </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>FIXME: Not sure I need this ds.configureUVWMachineCache(uvwMachineCacheSize(),uvwMachineCacheTolerance()); </para>        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="187" column="1" bodyfile="jacal/factory/JacalBPCalibrator.cc" bodystart="759" bodyend="825"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1JacalBPCalibrator_1ac38b3f6114015d39bee9f5411c5f69ad" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void askap::JacalBPCalibrator::sendModelToMaster</definition>
+        <argsstring>()</argsstring>
+        <name>sendModelToMaster</name>
+        <briefdescription>
+<para>send current model to the master </para>        </briefdescription>
+        <detaileddescription>
+<para>This method is supposed to be called from workers in the parallel mode and sends the current results to the master rank </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="192" column="1" bodyfile="jacal/factory/JacalBPCalibrator.cc" bodystart="459" bodyend="479"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1JacalBPCalibrator_1a680a38caa951bcc56fad343767734c27" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void askap::JacalBPCalibrator::receiveModelFromWorker</definition>
+        <argsstring>()</argsstring>
+        <name>receiveModelFromWorker</name>
+        <briefdescription>
+<para>asynchronously receive model from one of the workers </para>        </briefdescription>
+        <detaileddescription>
+<para>This method is supposed to be used in the master rank in the parallel mode. It waits until the result becomes available from any of the workers and then stores it in itsModel. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="198" column="1" bodyfile="jacal/factory/JacalBPCalibrator.cc" bodystart="485" bodyend="505"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1JacalBPCalibrator_1ad144f2f16c4a0d7bd8b1e1b4e5485ca7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void askap::JacalBPCalibrator::receiveModelFromWorker</definition>
+        <argsstring>(int input)</argsstring>
+        <name>receiveModelFromWorker</name>
+        <param>
+          <type>int</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+<para>asynchronously receive model from one of the workers </para>        </briefdescription>
+        <detaileddescription>
+<para>This method is supposed to be used in the master rank in the parallel mode. It waits until the result becomes available from a particular input and then stores it in itsModel. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/JacalBPCalibrator.h" line="203" column="1" bodyfile="jacal/factory/JacalBPCalibrator.cc" bodystart="507" bodyend="527"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="27">
+        <label>askap::DaliugeApplication</label>
+        <link refid="classaskap_1_1DaliugeApplication"/>
+      </node>
+      <node id="26">
+        <label>askap::JacalBPCalibrator</label>
+        <link refid="classaskap_1_1JacalBPCalibrator"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="29">
+        <label>askap::DaliugeApplication</label>
+        <link refid="classaskap_1_1DaliugeApplication"/>
+      </node>
+      <node id="28">
+        <label>askap::JacalBPCalibrator</label>
+        <link refid="classaskap_1_1JacalBPCalibrator"/>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="jacal/factory/JacalBPCalibrator.h" line="49" column="1" bodyfile="jacal/factory/JacalBPCalibrator.h" bodystart="48" bodyend="283"/>
+    <listofallmembers>
+      <member refid="classaskap_1_1JacalBPCalibrator_1af930df657c00c479dc7f03c81b150c3e" prot="public" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>ApplicationName</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1ae82ef4391be535bdce8cae8a71dc686d" prot="protected" virt="virtual"><scope>askap::JacalBPCalibrator</scope><name>calcNE</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1a30447c19ee4121f668640f0861c1ba9f" prot="private" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>calcOne</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1a43f3df335173c7e71f2ebb953636a502" prot="protected" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>createCalibrationME</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1a36725dc71bf966866371c380944b3cf5" prot="public" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>createDaliugeApplication</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1a3f9200936b17e20b6f6a8089b3a38605" prot="private" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>currentBeamAndChannel</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a7cb25addc65c3ad68544a3579780175f" prot="public" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>DaliugeApplication</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1a6c7518da6c2313394269fec16e4eee47" prot="public" virt="virtual"><scope>askap::JacalBPCalibrator</scope><name>data_written</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1ad76aa53804a09cba6f969efb9c7c8aaf" prot="private" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>dataColumn</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a811e7c64967397300a3a90fbedc09c80" prot="protected" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>dlg_app_done</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1aed11eebe39122468e08b3f2a5fde7429" prot="protected" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>dlg_app_running</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1a120c9a709422e7c9f98700877ab1c571" prot="public" virt="virtual"><scope>askap::JacalBPCalibrator</scope><name>drop_completed</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1a36e12b1c4730c677bc9f142e5e466699" prot="private" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>emptyDatasetKeyword</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1a51eb8cace34862417293462ac82eb157" prot="private" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>freqInterval</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a7ac7d7d6b72249f078d907fff7ca51ca" prot="protected" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>get_inputs</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a77284ec0fe098d6afdbbd913b2205825" prot="protected" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>has_input</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a29896527d85a4f614d01431a76480da5" prot="protected" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>has_output</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1a4013f9a29cac8dfd1a41fb1c896b443c" prot="public" virt="virtual"><scope>askap::JacalBPCalibrator</scope><name>init</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1aea6c449c2d21cc939264c9ccb4331c87" prot="protected" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>input</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a1ce29733db412017c720a2b845a327d7" prot="protected" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>input</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1a889b951e59fe9eb6e098ccac11ea1942" prot="private" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>invalidateSolution</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1ac4122bc9fa2826ca6cd0d43ae0e4a027" prot="private" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>isMaster</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1ab4fcdc600445782de23f65f2fe7b2fdf" prot="private" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>isParallel</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1af0eef5a5223a22887d8ff5ede25298b6" prot="private" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>isWorker</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1ad0cfc1b90c9eeb38ed0f6cbe68e2d491" prot="private" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>itsBeam</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1a43d6d27a1d3d9fe9945d48ee01376554" prot="private" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>itsChan</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1a29006140dae4dcdcdad4dc22252c5ce7" prot="private" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>itsEquation</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1acfd455da0960ea3ec63f7448de9ee8c9" prot="private" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>itsGridder</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1a2a12369ca88e49870d5f070d769ec219" prot="private" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>itsModel</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1ad02b10b8747139d11b18cdf76695871c" prot="private" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>itsModelInputs</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1ac6e701a1f38ea29eba43ae399100b9c1" prot="private" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>itsMs</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1ad3318588d06e2997984d0e0be4a10025" prot="private" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>itsNe</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1aaefbbd75273d35c6ba0b05bb7c62460f" prot="private" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>itsParset</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1afc3a7da6267807bb62187bff3fedec4c" prot="private" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>itsPerfectME</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1a36ae46f38b997b8f1b9537f96db2113e" prot="private" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>itsPerfectModel</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1a2b17d4f5dce07f1b0f0da0fffacd9099" prot="private" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>itsRefAntenna</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1aefc35a02ae17bbdf1ae77e32cdc5ee55" prot="private" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>itsRefGainXX</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1adebb6ffc3676eeaf5f101e63a5161a40" prot="private" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>itsRefGainYY</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1a193acadbd53186d39ca871d72a73c6d1" prot="private" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>itsSolutionID</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1a06358d2680ae0cd408b4d1225f824185" prot="private" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>itsSolutionIDValid</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1a145b4f325f525c4b9dac0b128de5a07c" prot="private" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>itsSolutionSource</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1abc88f85ba06c8ce8db7accdca494258f" prot="private" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>itsSolver</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1ab873570b334426a277406d4c3c3d51b9" prot="private" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>itsWorkUnitIterator</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1a117c1878d3d684910ec9b8732d8fa706" prot="public" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>JacalBPCalibrator</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1a3bdce0ba6bfedd0be2e2cc56788d5e4c" prot="public" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>measurementSets</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a0268ee2b73d67b7ed57be274f0354d75" prot="protected" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>n_inputs</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1abb0c4a545270ec98434aefffb70ab726" prot="protected" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>n_outputs</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1a1db8ae6741a1429e57e93fe8f5b563fc" prot="private" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>nAnt</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1a9769b69827173e01ca0ff7b0735a6ec9" prot="private" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>nBeam</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1a6e2e6645c1d3eb2ff3aa74843993d4ac" prot="private" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>nChan</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1a4ffae6163bc7f8939185fe2fcc478ee5" prot="private" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>nChanPerRank</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a4c220de254cd6ba4e2cfd7821e4204a3" prot="protected" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>output</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a13c0deb208e41d3ccce925876ec642a8" prot="protected" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>output</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1af117bb0add1a7e3da71b9227d0d00407" prot="public" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>parset</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1ad42cc7789710c86e726ee2a08e1d5753" prot="private" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>readModels</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1a680a38caa951bcc56fad343767734c27" prot="private" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>receiveModelFromWorker</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1ad144f2f16c4a0d7bd8b1e1b4e5485ca7" prot="private" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>receiveModelFromWorker</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1aa309613c3b85900a1a5a1f2057feb0dd" prot="protected" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>rotatePhases</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1a83eb45b3ee4a0507bc94f6e128e43a9b" prot="public" virt="virtual"><scope>askap::JacalBPCalibrator</scope><name>run</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1ac38b3f6114015d39bee9f5411c5f69ad" prot="private" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>sendModelToMaster</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1a14b32ddf976ad4b1f76ffcd410459dae" prot="public" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>setMeasurementSets</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1ae8d3ef8a66ee94fba65acae085c32f4f" prot="public" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>ShPtr</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1a551d04ab7b78bfc2cff01e232c2c43a4" prot="protected" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>solutionTime</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1adaf500fef2e24498a3ec41349463b8a4" prot="protected" virt="virtual"><scope>askap::JacalBPCalibrator</scope><name>solveNE</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1a534e7215cf52bd3645afeecd84ab1762" prot="private" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>timeInterval</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1ac044d4f95c807aae67186b411112ed89" prot="private" virt="non-virtual"><scope>askap::JacalBPCalibrator</scope><name>validSolution</name></member>
+      <member refid="classaskap_1_1JacalBPCalibrator_1a740de3dd4fbc08140a22df036c1b9309" prot="protected" virt="virtual"><scope>askap::JacalBPCalibrator</scope><name>writeModel</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a6cb79ab32eed29d50766a7e51118d611" prot="public" virt="virtual"><scope>askap::JacalBPCalibrator</scope><name>~DaliugeApplication</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

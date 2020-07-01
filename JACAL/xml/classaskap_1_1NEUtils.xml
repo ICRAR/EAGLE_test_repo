@@ -1,0 +1,298 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classaskap_1_1NEUtils" kind="class" language="C++" prot="public">
+    <compoundname>askap::NEUtils</compoundname>
+    <includes refid="NEUtils_8h" local="no">NEUtils.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classaskap_1_1NEUtils_1af37076515f041a4434a62703d57ca004" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>askap::NEUtils::NEUtils</definition>
+        <argsstring>()=delete</argsstring>
+        <name>NEUtils</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/NEUtils.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1NEUtils_1a26fa04612049d842195a2b6f11ed16d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>askap::NEUtils::~NEUtils</definition>
+        <argsstring>()=delete</argsstring>
+        <name>~NEUtils</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/NEUtils.h" line="53" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classaskap_1_1NEUtils_1a29d64cdf9d20d809240d889bfdbf65aa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void askap::NEUtils::receiveNE</definition>
+        <argsstring>(askap::scimath::ImagingNormalEquations::ShPtr, dlg_input_info &amp;input)</argsstring>
+        <name>receiveNE</name>
+        <param>
+          <type>askap::scimath::ImagingNormalEquations::ShPtr</type>
+          <defname>itsNE</defname>
+        </param>
+        <param>
+          <type>dlg_input_info &amp;</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/NEUtils.h" line="56" column="1" bodyfile="jacal/factory/NEUtils.cc" bodystart="190" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1NEUtils_1adce71ae442f3ad70988f9cc3c9c9591a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void askap::NEUtils::receiveParams</definition>
+        <argsstring>(askap::scimath::Params::ShPtr, dlg_input_info &amp;input)</argsstring>
+        <name>receiveParams</name>
+        <param>
+          <type>askap::scimath::Params::ShPtr</type>
+          <defname>Params</defname>
+        </param>
+        <param>
+          <type>dlg_input_info &amp;</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/NEUtils.h" line="58" column="1" bodyfile="jacal/factory/NEUtils.cc" bodystart="236" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1NEUtils_1ae85ac73dc0afa9294ac0edd36454d436" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void askap::NEUtils::sendNE</definition>
+        <argsstring>(askap::scimath::ImagingNormalEquations::ShPtr itsNe, dlg_output_info &amp;output)</argsstring>
+        <name>sendNE</name>
+        <param>
+          <type>askap::scimath::ImagingNormalEquations::ShPtr</type>
+          <declname>itsNe</declname>
+        </param>
+        <param>
+          <type>dlg_output_info &amp;</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/NEUtils.h" line="61" column="1" bodyfile="jacal/factory/NEUtils.cc" bodystart="205" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1NEUtils_1ad60f0ec046fc30d8649e7f9066608b93" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void askap::NEUtils::sendParams</definition>
+        <argsstring>(askap::scimath::Params::ShPtr params, dlg_output_info &amp;output)</argsstring>
+        <name>sendParams</name>
+        <param>
+          <type>askap::scimath::Params::ShPtr</type>
+          <declname>params</declname>
+        </param>
+        <param>
+          <type>dlg_output_info &amp;</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/NEUtils.h" line="63" column="1" bodyfile="jacal/factory/NEUtils.cc" bodystart="220" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1NEUtils_1a4bfcb363f43552599d5d8fb5f6203304" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LOFAR::ParameterSet</type>
+        <definition>LOFAR::ParameterSet askap::NEUtils::addMissingParameters</definition>
+        <argsstring>(LOFAR::ParameterSet &amp;parset, const int chan=0)</argsstring>
+        <name>addMissingParameters</name>
+        <param>
+          <type>LOFAR::ParameterSet &amp;</type>
+          <declname>parset</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>chan</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/NEUtils.h" line="66" column="1" bodyfile="jacal/factory/NEUtils.cc" bodystart="254" bodyend="411"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1NEUtils_1a439319d18fe0a823209130b580781243" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; askap::NEUtils::getDatasets</definition>
+        <argsstring>(const LOFAR::ParameterSet &amp;parset)</argsstring>
+        <name>getDatasets</name>
+        <param>
+          <type>const LOFAR::ParameterSet &amp;</type>
+          <declname>parset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/NEUtils.h" line="68" column="1" bodyfile="jacal/factory/NEUtils.cc" bodystart="412" bodyend="438"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1NEUtils_1ad4ede5052cae471934cae80ae349fb5a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int askap::NEUtils::getChan</definition>
+        <argsstring>(char *uid)</argsstring>
+        <name>getChan</name>
+        <param>
+          <type>char *</type>
+          <declname>uid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/NEUtils.h" line="70" column="1" bodyfile="jacal/factory/NEUtils.cc" bodystart="161" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1NEUtils_1acb457ba0fd258dbc5e40a909e09aebdc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int askap::NEUtils::getNChan</definition>
+        <argsstring>(LOFAR::ParameterSet &amp;parset)</argsstring>
+        <name>getNChan</name>
+        <param>
+          <type>LOFAR::ParameterSet &amp;</type>
+          <declname>parset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/NEUtils.h" line="72" column="1" bodyfile="jacal/factory/NEUtils.cc" bodystart="81" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1NEUtils_1ad36eb141da76654623aa7fdd0f190ce7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double askap::NEUtils::getChanWidth</definition>
+        <argsstring>(LOFAR::ParameterSet &amp;parset, int chan)</argsstring>
+        <name>getChanWidth</name>
+        <param>
+          <type>LOFAR::ParameterSet &amp;</type>
+          <declname>parset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>chan</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/NEUtils.h" line="74" column="1" bodyfile="jacal/factory/NEUtils.cc" bodystart="91" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1NEUtils_1a013ee04d5e2cc2de9f2362a1b670506c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double askap::NEUtils::getFrequency</definition>
+        <argsstring>(LOFAR::ParameterSet &amp;parset, int chan=0, bool barycentre=false)</argsstring>
+        <name>getFrequency</name>
+        <param>
+          <type>LOFAR::ParameterSet &amp;</type>
+          <declname>parset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>chan</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>barycentre</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/NEUtils.h" line="76" column="1" bodyfile="jacal/factory/NEUtils.cc" bodystart="101" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1NEUtils_1ab8a3a4fd387a08fbbf2fba61d220da77" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void askap::NEUtils::readModels</definition>
+        <argsstring>(const LOFAR::ParameterSet &amp;parset, const scimath::Params::ShPtr &amp;pModel)</argsstring>
+        <name>readModels</name>
+        <param>
+          <type>const LOFAR::ParameterSet &amp;</type>
+          <declname>parset</declname>
+        </param>
+        <param>
+          <type>const scimath::Params::ShPtr &amp;</type>
+          <declname>pModel</declname>
+        </param>
+        <briefdescription>
+<para>read the models a parset file to the given params object </para>        </briefdescription>
+        <detaileddescription>
+<para>The model can be composed from both images and components. This method populates Params object by adding model data read from the parset file. The model is given by shared pointer because the same method can be used for both simulations and calibration (the former populates itsModel, the latter populates itsPerfectModel) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">parset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference to a LOFAR parameter set </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pModel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>shared pointer to the params object (must exist) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/NEUtils.h" line="89" column="1" bodyfile="jacal/factory/NEUtils.cc" bodystart="440" bodyend="508"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A set of static utilities. </para>    </briefdescription>
+    <detaileddescription>
+<para>These are just a set of static functions I use more than once </para>    </detaileddescription>
+    <location file="jacal/factory/NEUtils.h" line="46" column="1" bodyfile="jacal/factory/NEUtils.h" bodystart="44" bodyend="97"/>
+    <listofallmembers>
+      <member refid="classaskap_1_1NEUtils_1a4bfcb363f43552599d5d8fb5f6203304" prot="public" virt="non-virtual"><scope>askap::NEUtils</scope><name>addMissingParameters</name></member>
+      <member refid="classaskap_1_1NEUtils_1ad4ede5052cae471934cae80ae349fb5a" prot="public" virt="non-virtual"><scope>askap::NEUtils</scope><name>getChan</name></member>
+      <member refid="classaskap_1_1NEUtils_1ad36eb141da76654623aa7fdd0f190ce7" prot="public" virt="non-virtual"><scope>askap::NEUtils</scope><name>getChanWidth</name></member>
+      <member refid="classaskap_1_1NEUtils_1a439319d18fe0a823209130b580781243" prot="public" virt="non-virtual"><scope>askap::NEUtils</scope><name>getDatasets</name></member>
+      <member refid="classaskap_1_1NEUtils_1a013ee04d5e2cc2de9f2362a1b670506c" prot="public" virt="non-virtual"><scope>askap::NEUtils</scope><name>getFrequency</name></member>
+      <member refid="classaskap_1_1NEUtils_1acb457ba0fd258dbc5e40a909e09aebdc" prot="public" virt="non-virtual"><scope>askap::NEUtils</scope><name>getNChan</name></member>
+      <member refid="classaskap_1_1NEUtils_1af37076515f041a4434a62703d57ca004" prot="public" virt="non-virtual"><scope>askap::NEUtils</scope><name>NEUtils</name></member>
+      <member refid="classaskap_1_1NEUtils_1ab8a3a4fd387a08fbbf2fba61d220da77" prot="public" virt="non-virtual"><scope>askap::NEUtils</scope><name>readModels</name></member>
+      <member refid="classaskap_1_1NEUtils_1a29d64cdf9d20d809240d889bfdbf65aa" prot="public" virt="non-virtual"><scope>askap::NEUtils</scope><name>receiveNE</name></member>
+      <member refid="classaskap_1_1NEUtils_1adce71ae442f3ad70988f9cc3c9c9591a" prot="public" virt="non-virtual"><scope>askap::NEUtils</scope><name>receiveParams</name></member>
+      <member refid="classaskap_1_1NEUtils_1ae85ac73dc0afa9294ac0edd36454d436" prot="public" virt="non-virtual"><scope>askap::NEUtils</scope><name>sendNE</name></member>
+      <member refid="classaskap_1_1NEUtils_1ad60f0ec046fc30d8649e7f9066608b93" prot="public" virt="non-virtual"><scope>askap::NEUtils</scope><name>sendParams</name></member>
+      <member refid="classaskap_1_1NEUtils_1a26fa04612049d842195a2b6f11ed16d5" prot="public" virt="non-virtual"><scope>askap::NEUtils</scope><name>~NEUtils</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

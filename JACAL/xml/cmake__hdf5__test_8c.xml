@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="cmake__hdf5__test_8c" kind="file" language="C++">
+    <compoundname>cmake_hdf5_test.c</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="cmake__hdf5__test_8c_1aaf140765879e334e402b6f7c4faabf07" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* info_ver</definition>
+        <argsstring></argsstring>
+        <name>info_ver</name>
+        <initializer>= &quot;INFO&quot; &quot;:&quot; H5_VERSION</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/CMakeFiles/hdf5/cmake_hdf5_test.c" line="3" column="1" bodyfile="build/CMakeFiles/hdf5/cmake_hdf5_test.c" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="cmake__hdf5__test_8c_1aec24390925def98693cfd2964e7a0801" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* info_parallel</definition>
+        <argsstring></argsstring>
+        <name>info_parallel</name>
+        <initializer>= &quot;INFO&quot; &quot;:&quot; &quot;PARALLEL&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/CMakeFiles/hdf5/cmake_hdf5_test.c" line="5" column="1" bodyfile="build/CMakeFiles/hdf5/cmake_hdf5_test.c" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="cmake__hdf5__test_8c_1a3c04138a5bfe5d72780bb7e82a18e627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char **argv)</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="build/CMakeFiles/hdf5/cmake_hdf5_test.c" line="7" column="1" bodyfile="build/CMakeFiles/hdf5/cmake_hdf5_test.c" bodystart="7" bodyend="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;hdf5.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;hdf5_hl.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>info_ver<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;INFO&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;:&quot;</highlight><highlight class="normal"><sp/>H5_VERSION;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>H5_HAVE_PARALLEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>info_parallel<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;INFO&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;:&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;PARALLEL&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv)<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>require<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/>require<sp/>+=<sp/>info_ver[argc];</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>H5_HAVE_PARALLEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/>require<sp/>+=<sp/>info_parallel[argc];</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/>hid_t<sp/>fid;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/>fid<sp/>=<sp/>H5Fcreate(</highlight><highlight class="stringliteral">&quot;foo.h5&quot;</highlight><highlight class="normal">,H5F_ACC_TRUNC,H5P_DEFAULT,H5P_DEFAULT);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="build/CMakeFiles/hdf5/cmake_hdf5_test.c"/>
+  </compounddef>
+</doxygen>

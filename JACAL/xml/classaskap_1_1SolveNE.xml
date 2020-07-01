@@ -1,0 +1,278 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classaskap_1_1SolveNE" kind="class" language="C++" prot="public">
+    <compoundname>askap::SolveNE</compoundname>
+    <basecompoundref refid="classaskap_1_1DaliugeApplication" prot="public" virt="non-virtual">askap::DaliugeApplication</basecompoundref>
+    <includes refid="SolveNE_8h" local="no">SolveNE.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classaskap_1_1SolveNE_1a688b29326934b50a6198253802e6dbbf" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classaskap_1_1SolveNE" kindref="compound">SolveNE</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;SolveNE&gt; askap::SolveNE::ShPtr</definition>
+        <argsstring></argsstring>
+        <name>ShPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/SolveNE.h" line="40" column="1" bodyfile="jacal/factory/SolveNE.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classaskap_1_1SolveNE_1aef2c32165ecc2689e6e6d12ea3d9f72d" prot="private" static="no" mutable="no">
+        <type>scimath::Params::ShPtr</type>
+        <definition>scimath::Params::ShPtr askap::SolveNE::itsModel</definition>
+        <argsstring></argsstring>
+        <name>itsModel</name>
+        <briefdescription>
+<para>The model. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/SolveNE.h" line="63" column="1" bodyfile="jacal/factory/SolveNE.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1SolveNE_1a7c023331714ccc1d8fa432f19e12d5a0" prot="private" static="no" mutable="no">
+        <type>LOFAR::ParameterSet</type>
+        <definition>LOFAR::ParameterSet askap::SolveNE::itsParset</definition>
+        <argsstring></argsstring>
+        <name>itsParset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/SolveNE.h" line="66" column="1" bodyfile="jacal/factory/SolveNE.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1SolveNE_1a96c2121db1fa74c616b7e9bb97c41aec" prot="private" static="no" mutable="no">
+        <type>scimath::ImagingNormalEquations::ShPtr</type>
+        <definition>scimath::ImagingNormalEquations::ShPtr askap::SolveNE::itsNe</definition>
+        <argsstring></argsstring>
+        <name>itsNe</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/SolveNE.h" line="70" column="1" bodyfile="jacal/factory/SolveNE.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1SolveNE_1a96ebcafb85be6e403adcde4b321e53ea" prot="private" static="no" mutable="no">
+        <type>scimath::Solver::ShPtr</type>
+        <definition>scimath::Solver::ShPtr askap::SolveNE::itsSolver</definition>
+        <argsstring></argsstring>
+        <name>itsSolver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/SolveNE.h" line="74" column="1" bodyfile="jacal/factory/SolveNE.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classaskap_1_1SolveNE_1af6a1c3c603f0131e66a25712369443c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>askap::SolveNE::SolveNE</definition>
+        <argsstring>(dlg_app_info *raw_app)</argsstring>
+        <name>SolveNE</name>
+        <param>
+          <type>dlg_app_info *</type>
+          <declname>raw_app</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/SolveNE.h" line="42" column="1" bodyfile="jacal/factory/SolveNE.cc" bodystart="84" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1SolveNE_1a335f4141011a7650b93658aa1fd50bb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>askap::SolveNE::~SolveNE</definition>
+        <argsstring>()</argsstring>
+        <name>~SolveNE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/SolveNE.h" line="46" column="1" bodyfile="jacal/factory/SolveNE.cc" bodystart="90" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1SolveNE_1a95cda66dc215fd0668e6aa4a687afc68" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int askap::SolveNE::init</definition>
+        <argsstring>(const char ***arguments)</argsstring>
+        <name>init</name>
+        <reimplements refid="classaskap_1_1DaliugeApplication_1acb7c465b5a2a1ae55beabeac87d2a899">init</reimplements>
+        <param>
+          <type>const char ***</type>
+          <declname>arguments</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is implemented by sub-classes. i.e. The users of this class. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/SolveNE.h" line="50" column="1" bodyfile="jacal/factory/SolveNE.cc" bodystart="98" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1SolveNE_1a4793bf90f5790b7c53308898f93aa212" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int askap::SolveNE::run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <reimplements refid="classaskap_1_1DaliugeApplication_1abb089035c6c71206554cf1c916689635">run</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/SolveNE.h" line="52" column="1" bodyfile="jacal/factory/SolveNE.cc" bodystart="115" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1SolveNE_1a56e89329cb7a3f170a5bc1961f77b0e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void askap::SolveNE::data_written</definition>
+        <argsstring>(const char *uid, const char *data, size_t n)</argsstring>
+        <name>data_written</name>
+        <reimplements refid="classaskap_1_1DaliugeApplication_1a9fbaf01766eb1fb1d36c187df57c340c">data_written</reimplements>
+        <param>
+          <type>const char *</type>
+          <declname>uid</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/SolveNE.h" line="54" column="1" bodyfile="jacal/factory/SolveNE.cc" bodystart="206" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1SolveNE_1a3bba48ff44a9ba6d4e726d70a52f4f3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void askap::SolveNE::drop_completed</definition>
+        <argsstring>(const char *uid, drop_status status)</argsstring>
+        <name>drop_completed</name>
+        <reimplements refid="classaskap_1_1DaliugeApplication_1a03cf905a020fc3897e1637810fc7d4fa">drop_completed</reimplements>
+        <param>
+          <type>const char *</type>
+          <declname>uid</declname>
+        </param>
+        <param>
+          <type>drop_status</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/SolveNE.h" line="56" column="1" bodyfile="jacal/factory/SolveNE.cc" bodystart="210" bodyend="212"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classaskap_1_1SolveNE_1a9969346a1751f43b3565e108ce9a42df" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string askap::SolveNE::ApplicationName</definition>
+        <argsstring>()</argsstring>
+        <name>ApplicationName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/SolveNE.h" line="44" column="1" bodyfile="jacal/factory/SolveNE.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1SolveNE_1a14d0b2fccb927d3c9c809ba29c42d96c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classaskap_1_1DaliugeApplication_1a7a6d2810d428144756d8b66468a360bc" kindref="member">DaliugeApplication::ShPtr</ref></type>
+        <definition>DaliugeApplication::ShPtr askap::SolveNE::createDaliugeApplication</definition>
+        <argsstring>(dlg_app_info *raw_app)</argsstring>
+        <name>createDaliugeApplication</name>
+        <param>
+          <type>dlg_app_info *</type>
+          <declname>raw_app</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/SolveNE.h" line="48" column="1" bodyfile="jacal/factory/SolveNE.cc" bodystart="93" bodyend="96"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Implements an ASKAP Solver. </para>    </briefdescription>
+    <detaileddescription>
+<para>This takes a configuration and a set of normal equations and uses the Solver requested in in the ParameterSet to produce an ouput model. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="60">
+        <label>askap::SolveNE</label>
+        <link refid="classaskap_1_1SolveNE"/>
+        <childnode refid="61" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>askap::DaliugeApplication</label>
+        <link refid="classaskap_1_1DaliugeApplication"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="62">
+        <label>askap::SolveNE</label>
+        <link refid="classaskap_1_1SolveNE"/>
+        <childnode refid="63" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>askap::DaliugeApplication</label>
+        <link refid="classaskap_1_1DaliugeApplication"/>
+      </node>
+    </collaborationgraph>
+    <location file="jacal/factory/SolveNE.h" line="36" column="1" bodyfile="jacal/factory/SolveNE.h" bodystart="34" bodyend="84"/>
+    <listofallmembers>
+      <member refid="classaskap_1_1SolveNE_1a9969346a1751f43b3565e108ce9a42df" prot="public" virt="non-virtual"><scope>askap::SolveNE</scope><name>ApplicationName</name></member>
+      <member refid="classaskap_1_1SolveNE_1a14d0b2fccb927d3c9c809ba29c42d96c" prot="public" virt="non-virtual"><scope>askap::SolveNE</scope><name>createDaliugeApplication</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a7cb25addc65c3ad68544a3579780175f" prot="public" virt="non-virtual"><scope>askap::SolveNE</scope><name>DaliugeApplication</name></member>
+      <member refid="classaskap_1_1SolveNE_1a56e89329cb7a3f170a5bc1961f77b0e9" prot="public" virt="virtual"><scope>askap::SolveNE</scope><name>data_written</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a811e7c64967397300a3a90fbedc09c80" prot="protected" virt="non-virtual"><scope>askap::SolveNE</scope><name>dlg_app_done</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1aed11eebe39122468e08b3f2a5fde7429" prot="protected" virt="non-virtual"><scope>askap::SolveNE</scope><name>dlg_app_running</name></member>
+      <member refid="classaskap_1_1SolveNE_1a3bba48ff44a9ba6d4e726d70a52f4f3b" prot="public" virt="virtual"><scope>askap::SolveNE</scope><name>drop_completed</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a7ac7d7d6b72249f078d907fff7ca51ca" prot="protected" virt="non-virtual"><scope>askap::SolveNE</scope><name>get_inputs</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a77284ec0fe098d6afdbbd913b2205825" prot="protected" virt="non-virtual"><scope>askap::SolveNE</scope><name>has_input</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a29896527d85a4f614d01431a76480da5" prot="protected" virt="non-virtual"><scope>askap::SolveNE</scope><name>has_output</name></member>
+      <member refid="classaskap_1_1SolveNE_1a95cda66dc215fd0668e6aa4a687afc68" prot="public" virt="virtual"><scope>askap::SolveNE</scope><name>init</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1aea6c449c2d21cc939264c9ccb4331c87" prot="protected" virt="non-virtual"><scope>askap::SolveNE</scope><name>input</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a1ce29733db412017c720a2b845a327d7" prot="protected" virt="non-virtual"><scope>askap::SolveNE</scope><name>input</name></member>
+      <member refid="classaskap_1_1SolveNE_1aef2c32165ecc2689e6e6d12ea3d9f72d" prot="private" virt="non-virtual"><scope>askap::SolveNE</scope><name>itsModel</name></member>
+      <member refid="classaskap_1_1SolveNE_1a96c2121db1fa74c616b7e9bb97c41aec" prot="private" virt="non-virtual"><scope>askap::SolveNE</scope><name>itsNe</name></member>
+      <member refid="classaskap_1_1SolveNE_1a7c023331714ccc1d8fa432f19e12d5a0" prot="private" virt="non-virtual"><scope>askap::SolveNE</scope><name>itsParset</name></member>
+      <member refid="classaskap_1_1SolveNE_1a96ebcafb85be6e403adcde4b321e53ea" prot="private" virt="non-virtual"><scope>askap::SolveNE</scope><name>itsSolver</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a0268ee2b73d67b7ed57be274f0354d75" prot="protected" virt="non-virtual"><scope>askap::SolveNE</scope><name>n_inputs</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1abb0c4a545270ec98434aefffb70ab726" prot="protected" virt="non-virtual"><scope>askap::SolveNE</scope><name>n_outputs</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a4c220de254cd6ba4e2cfd7821e4204a3" prot="protected" virt="non-virtual"><scope>askap::SolveNE</scope><name>output</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a13c0deb208e41d3ccce925876ec642a8" prot="protected" virt="non-virtual"><scope>askap::SolveNE</scope><name>output</name></member>
+      <member refid="classaskap_1_1SolveNE_1a4793bf90f5790b7c53308898f93aa212" prot="public" virt="virtual"><scope>askap::SolveNE</scope><name>run</name></member>
+      <member refid="classaskap_1_1SolveNE_1a688b29326934b50a6198253802e6dbbf" prot="public" virt="non-virtual"><scope>askap::SolveNE</scope><name>ShPtr</name></member>
+      <member refid="classaskap_1_1SolveNE_1af6a1c3c603f0131e66a25712369443c2" prot="public" virt="non-virtual"><scope>askap::SolveNE</scope><name>SolveNE</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a6cb79ab32eed29d50766a7e51118d611" prot="public" virt="virtual"><scope>askap::SolveNE</scope><name>~DaliugeApplication</name></member>
+      <member refid="classaskap_1_1SolveNE_1a335f4141011a7650b93658aa1fd50bb0" prot="public" virt="virtual"><scope>askap::SolveNE</scope><name>~SolveNE</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

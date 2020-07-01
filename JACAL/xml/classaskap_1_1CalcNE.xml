@@ -1,0 +1,292 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classaskap_1_1CalcNE" kind="class" language="C++" prot="public">
+    <compoundname>askap::CalcNE</compoundname>
+    <basecompoundref refid="classaskap_1_1DaliugeApplication" prot="public" virt="non-virtual">askap::DaliugeApplication</basecompoundref>
+    <includes refid="CalcNE_8h" local="no">CalcNE.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classaskap_1_1CalcNE_1aadbd389b09623b8c5abc4bd9b3052bf7" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classaskap_1_1CalcNE" kindref="compound">CalcNE</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;CalcNE&gt; askap::CalcNE::ShPtr</definition>
+        <argsstring></argsstring>
+        <name>ShPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/CalcNE.h" line="40" column="1" bodyfile="jacal/factory/CalcNE.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classaskap_1_1CalcNE_1ab94c4e4c143f1355bb6b23d1c5e3d89f" prot="private" static="no" mutable="no">
+        <type>askap::scimath::Params::ShPtr</type>
+        <definition>askap::scimath::Params::ShPtr askap::CalcNE::itsModel</definition>
+        <argsstring></argsstring>
+        <name>itsModel</name>
+        <briefdescription>
+<para>The model. </para>        </briefdescription>
+        <detaileddescription>
+<para>contains a set of parameters - essentially the solution of the NE </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/CalcNE.h" line="66" column="1" bodyfile="jacal/factory/CalcNE.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1CalcNE_1af38a91d0dc884de25fe95a1b10f1f995" prot="private" static="no" mutable="no">
+        <type>LOFAR::ParameterSet</type>
+        <definition>LOFAR::ParameterSet askap::CalcNE::itsParset</definition>
+        <argsstring></argsstring>
+        <name>itsParset</name>
+        <briefdescription>
+<para>Parameter set. </para>        </briefdescription>
+        <detaileddescription>
+<para>key value list of configuration options </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/CalcNE.h" line="70" column="1" bodyfile="jacal/factory/CalcNE.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1CalcNE_1a45e6ac2824af575561f1ebeefed1ae7f" prot="private" static="no" mutable="no">
+        <type>casacore::IPosition</type>
+        <definition>casacore::IPosition askap::CalcNE::freqInterval</definition>
+        <argsstring></argsstring>
+        <name>freqInterval</name>
+        <briefdescription>
+<para>which channel range of the measurement set we are interested in </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/CalcNE.h" line="74" column="1" bodyfile="jacal/factory/CalcNE.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1CalcNE_1ac7e740fc6655a8e193c3ab1a6cef522e" prot="private" static="no" mutable="no">
+        <type>casacore::IPosition</type>
+        <definition>casacore::IPosition askap::CalcNE::timeInterval</definition>
+        <argsstring></argsstring>
+        <name>timeInterval</name>
+        <briefdescription>
+<para>the time range we are interested in </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/CalcNE.h" line="77" column="1" bodyfile="jacal/factory/CalcNE.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1CalcNE_1af09741e552c97bcba703d98efdee6e54" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; casacore::MVDirection &gt;</type>
+        <definition>std::vector&lt;casacore::MVDirection&gt; askap::CalcNE::itsTangent</definition>
+        <argsstring></argsstring>
+        <name>itsTangent</name>
+        <briefdescription>
+<para>the tangent point of the current grid </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/CalcNE.h" line="80" column="1" bodyfile="jacal/factory/CalcNE.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classaskap_1_1CalcNE_1a3fd55eb5b138dce39ca15d9b1d64ff6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>askap::CalcNE::CalcNE</definition>
+        <argsstring>(dlg_app_info *raw_app)</argsstring>
+        <name>CalcNE</name>
+        <param>
+          <type>dlg_app_info *</type>
+          <declname>raw_app</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/CalcNE.h" line="42" column="1" bodyfile="jacal/factory/CalcNE.cc" bodystart="75" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1CalcNE_1adfbc0959206c7343d39c630d693f795e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>askap::CalcNE::~CalcNE</definition>
+        <argsstring>()</argsstring>
+        <name>~CalcNE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/CalcNE.h" line="46" column="1" bodyfile="jacal/factory/CalcNE.cc" bodystart="82" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1CalcNE_1a7cae1e13b97795fcd99e55c52b037298" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int askap::CalcNE::init</definition>
+        <argsstring>(const char ***arguments)</argsstring>
+        <name>init</name>
+        <reimplements refid="classaskap_1_1DaliugeApplication_1acb7c465b5a2a1ae55beabeac87d2a899">init</reimplements>
+        <param>
+          <type>const char ***</type>
+          <declname>arguments</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is implemented by sub-classes. i.e. The users of this class. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/CalcNE.h" line="50" column="1" bodyfile="jacal/factory/CalcNE.cc" bodystart="90" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1CalcNE_1a617bf8e5eac4dbfc4818384c3b5b454f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int askap::CalcNE::run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <reimplements refid="classaskap_1_1DaliugeApplication_1abb089035c6c71206554cf1c916689635">run</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/CalcNE.h" line="52" column="1" bodyfile="jacal/factory/CalcNE.cc" bodystart="129" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1CalcNE_1a16fbe3340ce58366b80b9637bee43b96" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void askap::CalcNE::data_written</definition>
+        <argsstring>(const char *uid, const char *data, size_t n)</argsstring>
+        <name>data_written</name>
+        <reimplements refid="classaskap_1_1DaliugeApplication_1a9fbaf01766eb1fb1d36c187df57c340c">data_written</reimplements>
+        <param>
+          <type>const char *</type>
+          <declname>uid</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/CalcNE.h" line="54" column="1" bodyfile="jacal/factory/CalcNE.cc" bodystart="259" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1CalcNE_1a19ed03a466a91634ad52b929913e57a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void askap::CalcNE::drop_completed</definition>
+        <argsstring>(const char *uid, drop_status status)</argsstring>
+        <name>drop_completed</name>
+        <reimplements refid="classaskap_1_1DaliugeApplication_1a03cf905a020fc3897e1637810fc7d4fa">drop_completed</reimplements>
+        <param>
+          <type>const char *</type>
+          <declname>uid</declname>
+        </param>
+        <param>
+          <type>drop_status</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/CalcNE.h" line="56" column="1" bodyfile="jacal/factory/CalcNE.cc" bodystart="263" bodyend="265"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classaskap_1_1CalcNE_1a215c24e60e34baa90714872c50060982" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string askap::CalcNE::ApplicationName</definition>
+        <argsstring>()</argsstring>
+        <name>ApplicationName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/CalcNE.h" line="44" column="1" bodyfile="jacal/factory/CalcNE.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1CalcNE_1a55f1cf474ea3e43a188d4b30959d3f90" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classaskap_1_1DaliugeApplication_1a7a6d2810d428144756d8b66468a360bc" kindref="member">DaliugeApplication::ShPtr</ref></type>
+        <definition>DaliugeApplication::ShPtr askap::CalcNE::createDaliugeApplication</definition>
+        <argsstring>(dlg_app_info *raw_app)</argsstring>
+        <name>createDaliugeApplication</name>
+        <param>
+          <type>dlg_app_info *</type>
+          <declname>raw_app</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/CalcNE.h" line="48" column="1" bodyfile="jacal/factory/CalcNE.cc" bodystart="85" bodyend="88"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Calculates the Normal Equations. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class encorporates all the tasks to read from a measurement set; subtract a model; grid residual visibilities and FFT the grid </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="0">
+        <label>askap::CalcNE</label>
+        <link refid="classaskap_1_1CalcNE"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>askap::DaliugeApplication</label>
+        <link refid="classaskap_1_1DaliugeApplication"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>askap::CalcNE</label>
+        <link refid="classaskap_1_1CalcNE"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>askap::DaliugeApplication</label>
+        <link refid="classaskap_1_1DaliugeApplication"/>
+      </node>
+    </collaborationgraph>
+    <location file="jacal/factory/CalcNE.h" line="36" column="1" bodyfile="jacal/factory/CalcNE.h" bodystart="34" bodyend="91"/>
+    <listofallmembers>
+      <member refid="classaskap_1_1CalcNE_1a215c24e60e34baa90714872c50060982" prot="public" virt="non-virtual"><scope>askap::CalcNE</scope><name>ApplicationName</name></member>
+      <member refid="classaskap_1_1CalcNE_1a3fd55eb5b138dce39ca15d9b1d64ff6c" prot="public" virt="non-virtual"><scope>askap::CalcNE</scope><name>CalcNE</name></member>
+      <member refid="classaskap_1_1CalcNE_1a55f1cf474ea3e43a188d4b30959d3f90" prot="public" virt="non-virtual"><scope>askap::CalcNE</scope><name>createDaliugeApplication</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a7cb25addc65c3ad68544a3579780175f" prot="public" virt="non-virtual"><scope>askap::CalcNE</scope><name>DaliugeApplication</name></member>
+      <member refid="classaskap_1_1CalcNE_1a16fbe3340ce58366b80b9637bee43b96" prot="public" virt="virtual"><scope>askap::CalcNE</scope><name>data_written</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a811e7c64967397300a3a90fbedc09c80" prot="protected" virt="non-virtual"><scope>askap::CalcNE</scope><name>dlg_app_done</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1aed11eebe39122468e08b3f2a5fde7429" prot="protected" virt="non-virtual"><scope>askap::CalcNE</scope><name>dlg_app_running</name></member>
+      <member refid="classaskap_1_1CalcNE_1a19ed03a466a91634ad52b929913e57a9" prot="public" virt="virtual"><scope>askap::CalcNE</scope><name>drop_completed</name></member>
+      <member refid="classaskap_1_1CalcNE_1a45e6ac2824af575561f1ebeefed1ae7f" prot="private" virt="non-virtual"><scope>askap::CalcNE</scope><name>freqInterval</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a7ac7d7d6b72249f078d907fff7ca51ca" prot="protected" virt="non-virtual"><scope>askap::CalcNE</scope><name>get_inputs</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a77284ec0fe098d6afdbbd913b2205825" prot="protected" virt="non-virtual"><scope>askap::CalcNE</scope><name>has_input</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a29896527d85a4f614d01431a76480da5" prot="protected" virt="non-virtual"><scope>askap::CalcNE</scope><name>has_output</name></member>
+      <member refid="classaskap_1_1CalcNE_1a7cae1e13b97795fcd99e55c52b037298" prot="public" virt="virtual"><scope>askap::CalcNE</scope><name>init</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1aea6c449c2d21cc939264c9ccb4331c87" prot="protected" virt="non-virtual"><scope>askap::CalcNE</scope><name>input</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a1ce29733db412017c720a2b845a327d7" prot="protected" virt="non-virtual"><scope>askap::CalcNE</scope><name>input</name></member>
+      <member refid="classaskap_1_1CalcNE_1ab94c4e4c143f1355bb6b23d1c5e3d89f" prot="private" virt="non-virtual"><scope>askap::CalcNE</scope><name>itsModel</name></member>
+      <member refid="classaskap_1_1CalcNE_1af38a91d0dc884de25fe95a1b10f1f995" prot="private" virt="non-virtual"><scope>askap::CalcNE</scope><name>itsParset</name></member>
+      <member refid="classaskap_1_1CalcNE_1af09741e552c97bcba703d98efdee6e54" prot="private" virt="non-virtual"><scope>askap::CalcNE</scope><name>itsTangent</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a0268ee2b73d67b7ed57be274f0354d75" prot="protected" virt="non-virtual"><scope>askap::CalcNE</scope><name>n_inputs</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1abb0c4a545270ec98434aefffb70ab726" prot="protected" virt="non-virtual"><scope>askap::CalcNE</scope><name>n_outputs</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a4c220de254cd6ba4e2cfd7821e4204a3" prot="protected" virt="non-virtual"><scope>askap::CalcNE</scope><name>output</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a13c0deb208e41d3ccce925876ec642a8" prot="protected" virt="non-virtual"><scope>askap::CalcNE</scope><name>output</name></member>
+      <member refid="classaskap_1_1CalcNE_1a617bf8e5eac4dbfc4818384c3b5b454f" prot="public" virt="virtual"><scope>askap::CalcNE</scope><name>run</name></member>
+      <member refid="classaskap_1_1CalcNE_1aadbd389b09623b8c5abc4bd9b3052bf7" prot="public" virt="non-virtual"><scope>askap::CalcNE</scope><name>ShPtr</name></member>
+      <member refid="classaskap_1_1CalcNE_1ac7e740fc6655a8e193c3ab1a6cef522e" prot="private" virt="non-virtual"><scope>askap::CalcNE</scope><name>timeInterval</name></member>
+      <member refid="classaskap_1_1CalcNE_1adfbc0959206c7343d39c630d693f795e" prot="public" virt="virtual"><scope>askap::CalcNE</scope><name>~CalcNE</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a6cb79ab32eed29d50766a7e51118d611" prot="public" virt="virtual"><scope>askap::CalcNE</scope><name>~DaliugeApplication</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

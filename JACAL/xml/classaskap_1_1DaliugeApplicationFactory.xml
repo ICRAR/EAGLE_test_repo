@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classaskap_1_1DaliugeApplicationFactory" kind="class" language="C++" prot="public">
+    <compoundname>askap::DaliugeApplicationFactory</compoundname>
+    <includes refid="DaliugeApplicationFactory_8h" local="no">DaliugeApplicationFactory.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classaskap_1_1DaliugeApplicationFactory_1a2437234a2d4b97ed7a5bb9a04b9ba128" prot="public" static="no">
+        <type><ref refid="classaskap_1_1DaliugeApplication_1a7a6d2810d428144756d8b66468a360bc" kindref="member">DaliugeApplication::ShPtr</ref></type>
+        <definition>typedef DaliugeApplication::ShPtr askap::DaliugeApplicationFactory::DaliugeApplicationCreator(dlg_app_info *dlg_app)</definition>
+        <argsstring>(dlg_app_info *dlg_app)</argsstring>
+        <name>DaliugeApplicationCreator</name>
+        <briefdescription>
+<para>A function pointer to a DaliugeApplication you can have as many of these as you want as long as they obey this structure. i.e. they return a shared_pointer to a DaliugeApplication and they take an Application Name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/DaliugeApplicationFactory.h" line="39" column="1" bodyfile="jacal/factory/DaliugeApplicationFactory.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classaskap_1_1DaliugeApplicationFactory_1a0f36178664e974c077121fc7fd80adf7" prot="private" static="yes" mutable="no">
+        <type>std::recursive_mutex</type>
+        <definition>std::recursive_mutex askap::DaliugeApplicationFactory::registry_lock</definition>
+        <argsstring></argsstring>
+        <name>registry_lock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/DaliugeApplicationFactory.h" line="72" column="1" bodyfile="jacal/factory/DaliugeApplicationFactory.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1DaliugeApplicationFactory_1a8f249fe3709ebe9fa1354a6fda6b480c" prot="private" static="yes" mutable="no">
+        <type>std::map&lt; std::string, <ref refid="classaskap_1_1DaliugeApplicationFactory_1a2437234a2d4b97ed7a5bb9a04b9ba128" kindref="member">DaliugeApplicationCreator</ref> * &gt;</type>
+        <definition>std::map&lt; std::string, DaliugeApplicationFactory::DaliugeApplicationCreator * &gt; askap::DaliugeApplicationFactory::theirRegistry</definition>
+        <argsstring></argsstring>
+        <name>theirRegistry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/DaliugeApplicationFactory.h" line="73" column="1" bodyfile="jacal/factory/DaliugeApplicationFactory.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classaskap_1_1DaliugeApplicationFactory_1a115fdd8c06704bdb16d15912215d6077" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void askap::DaliugeApplicationFactory::registerDaliugeApplication</definition>
+        <argsstring>(const std::string &amp;name, DaliugeApplicationCreator *creatorFunc)</argsstring>
+        <name>registerDaliugeApplication</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="classaskap_1_1DaliugeApplicationFactory_1a2437234a2d4b97ed7a5bb9a04b9ba128" kindref="member">DaliugeApplicationCreator</ref> *</type>
+          <declname>creatorFunc</declname>
+        </param>
+        <briefdescription>
+<para>Register a function creating a DaliugeApplication object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the DaliugeApplication. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>creatorFunc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to creator function. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/DaliugeApplicationFactory.h" line="44" column="1" bodyfile="jacal/factory/DaliugeApplicationFactory.cc" bodystart="76" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1DaliugeApplicationFactory_1ac572613b4bbb84b2dbd0fb68f6b0d0b8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classaskap_1_1DaliugeApplication_1a7a6d2810d428144756d8b66468a360bc" kindref="member">DaliugeApplication::ShPtr</ref></type>
+        <definition>DaliugeApplication::ShPtr askap::DaliugeApplicationFactory::createDaliugeApplication</definition>
+        <argsstring>(dlg_app_info *dlg_app)</argsstring>
+        <name>createDaliugeApplication</name>
+        <param>
+          <type>dlg_app_info *</type>
+          <declname>dlg_app</declname>
+        </param>
+        <briefdescription>
+<para>Try to create a non-standard DaliugeApplication. Its name is looked up in the creator function registry. If the drop name is unknown, a shared library with that name (in lowercase) is loaded and it executes its register&lt;name&gt; function which must register its creator function in the registry using function registerDaliugeApplication. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name function </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/DaliugeApplicationFactory.h" line="56" column="1" bodyfile="jacal/factory/DaliugeApplicationFactory.cc" bodystart="87" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1DaliugeApplicationFactory_1a77f6849aa85f78baf2584b4d5bc60cc2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classaskap_1_1DaliugeApplication_1a7a6d2810d428144756d8b66468a360bc" kindref="member">DaliugeApplication::ShPtr</ref></type>
+        <definition>DaliugeApplication::ShPtr askap::DaliugeApplicationFactory::make</definition>
+        <argsstring>(dlg_app_info *dlg_app)</argsstring>
+        <name>make</name>
+        <param>
+          <type>dlg_app_info *</type>
+          <declname>dlg_app</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/DaliugeApplicationFactory.h" line="58" column="1" bodyfile="jacal/factory/DaliugeApplicationFactory.cc" bodystart="161" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1DaliugeApplicationFactory_1a569c5415aaa81348aacbaa001452821b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void askap::DaliugeApplicationFactory::initial_population</definition>
+        <argsstring>()</argsstring>
+        <name>initial_population</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/DaliugeApplicationFactory.h" line="60" column="1" bodyfile="jacal/factory/DaliugeApplicationFactory.cc" bodystart="130" bodyend="154"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classaskap_1_1DaliugeApplicationFactory_1a0071d2c01960b137fde2ca37a22a594c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>askap::DaliugeApplicationFactory::DaliugeApplicationFactory</definition>
+        <argsstring>()</argsstring>
+        <name>DaliugeApplicationFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/DaliugeApplicationFactory.h" line="62" column="1" bodyfile="jacal/factory/DaliugeApplicationFactory.cc" bodystart="73" bodyend="74"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="classaskap_1_1DaliugeApplicationFactory_1adfc86fe0444aa38d97670d2b1a9b60f0" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename DaliugeApplicationType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void askap::DaliugeApplicationFactory::addPreDefinedDaliugeApplication</definition>
+        <argsstring>()</argsstring>
+        <name>addPreDefinedDaliugeApplication</name>
+        <briefdescription>
+<para>helper template method to add pre-defined Applications </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/DaliugeApplicationFactory.h" line="66" column="1" bodyfile="jacal/factory/DaliugeApplicationFactory.h" bodystart="66" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Factory class for Daliuge Applications. </para>    </briefdescription>
+    <detaileddescription>
+<para>Contains a list of all applications and creates/instantiates the correct one based upon the &quot;name&quot; of the Daliuge DynLib drop </para>    </detaileddescription>
+    <location file="jacal/factory/DaliugeApplicationFactory.h" line="31" column="1" bodyfile="jacal/factory/DaliugeApplicationFactory.h" bodystart="30" bodyend="74"/>
+    <listofallmembers>
+      <member refid="classaskap_1_1DaliugeApplicationFactory_1adfc86fe0444aa38d97670d2b1a9b60f0" prot="protected" virt="non-virtual"><scope>askap::DaliugeApplicationFactory</scope><name>addPreDefinedDaliugeApplication</name></member>
+      <member refid="classaskap_1_1DaliugeApplicationFactory_1ac572613b4bbb84b2dbd0fb68f6b0d0b8" prot="public" virt="non-virtual"><scope>askap::DaliugeApplicationFactory</scope><name>createDaliugeApplication</name></member>
+      <member refid="classaskap_1_1DaliugeApplicationFactory_1a2437234a2d4b97ed7a5bb9a04b9ba128" prot="public" virt="non-virtual"><scope>askap::DaliugeApplicationFactory</scope><name>DaliugeApplicationCreator</name></member>
+      <member refid="classaskap_1_1DaliugeApplicationFactory_1a0071d2c01960b137fde2ca37a22a594c" prot="public" virt="non-virtual"><scope>askap::DaliugeApplicationFactory</scope><name>DaliugeApplicationFactory</name></member>
+      <member refid="classaskap_1_1DaliugeApplicationFactory_1a569c5415aaa81348aacbaa001452821b" prot="public" virt="non-virtual"><scope>askap::DaliugeApplicationFactory</scope><name>initial_population</name></member>
+      <member refid="classaskap_1_1DaliugeApplicationFactory_1a77f6849aa85f78baf2584b4d5bc60cc2" prot="public" virt="non-virtual"><scope>askap::DaliugeApplicationFactory</scope><name>make</name></member>
+      <member refid="classaskap_1_1DaliugeApplicationFactory_1a115fdd8c06704bdb16d15912215d6077" prot="public" virt="non-virtual"><scope>askap::DaliugeApplicationFactory</scope><name>registerDaliugeApplication</name></member>
+      <member refid="classaskap_1_1DaliugeApplicationFactory_1a0f36178664e974c077121fc7fd80adf7" prot="private" virt="non-virtual"><scope>askap::DaliugeApplicationFactory</scope><name>registry_lock</name></member>
+      <member refid="classaskap_1_1DaliugeApplicationFactory_1a8f249fe3709ebe9fa1354a6fda6b480c" prot="private" virt="non-virtual"><scope>askap::DaliugeApplicationFactory</scope><name>theirRegistry</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

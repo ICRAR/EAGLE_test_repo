@@ -1,0 +1,220 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classaskap_1_1LoadParset" kind="class" language="C++" prot="public">
+    <compoundname>askap::LoadParset</compoundname>
+    <basecompoundref refid="classaskap_1_1DaliugeApplication" prot="public" virt="non-virtual">askap::DaliugeApplication</basecompoundref>
+    <includes refid="LoadParset_8h" local="no">LoadParset.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classaskap_1_1LoadParset_1af34804df7b413e7e23b41fcad71f3365" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classaskap_1_1LoadParset" kindref="compound">LoadParset</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;LoadParset&gt; askap::LoadParset::ShPtr</definition>
+        <argsstring></argsstring>
+        <name>ShPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/LoadParset.h" line="28" column="1" bodyfile="jacal/factory/LoadParset.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classaskap_1_1LoadParset_1ab658378b381e0b3399642634e5ef3436" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>askap::LoadParset::LoadParset</definition>
+        <argsstring>(dlg_app_info *raw_app)</argsstring>
+        <name>LoadParset</name>
+        <param>
+          <type>dlg_app_info *</type>
+          <declname>raw_app</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/LoadParset.h" line="30" column="1" bodyfile="jacal/factory/LoadParset.cc" bodystart="25" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1LoadParset_1a5e1535f2cd0717f8ad755c011ec171b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>askap::LoadParset::~LoadParset</definition>
+        <argsstring>()</argsstring>
+        <name>~LoadParset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/LoadParset.h" line="34" column="1" bodyfile="jacal/factory/LoadParset.cc" bodystart="31" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1LoadParset_1a5c6e6c83bd5251c36b4b820412b170ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int askap::LoadParset::init</definition>
+        <argsstring>(const char ***arguments)</argsstring>
+        <name>init</name>
+        <reimplements refid="classaskap_1_1DaliugeApplication_1acb7c465b5a2a1ae55beabeac87d2a899">init</reimplements>
+        <param>
+          <type>const char ***</type>
+          <declname>arguments</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is implemented by sub-classes. i.e. The users of this class. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/LoadParset.h" line="38" column="1" bodyfile="jacal/factory/LoadParset.cc" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1LoadParset_1a96426e090fbccdb47b3b807ee932825a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int askap::LoadParset::run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <reimplements refid="classaskap_1_1DaliugeApplication_1abb089035c6c71206554cf1c916689635">run</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/LoadParset.h" line="40" column="1" bodyfile="jacal/factory/LoadParset.cc" bodystart="44" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1LoadParset_1acc371f47eee2a6d7722aa5fc941447ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void askap::LoadParset::data_written</definition>
+        <argsstring>(const char *uid, const char *data, size_t n)</argsstring>
+        <name>data_written</name>
+        <reimplements refid="classaskap_1_1DaliugeApplication_1a9fbaf01766eb1fb1d36c187df57c340c">data_written</reimplements>
+        <param>
+          <type>const char *</type>
+          <declname>uid</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/LoadParset.h" line="42" column="1" bodyfile="jacal/factory/LoadParset.cc" bodystart="62" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1LoadParset_1a6cfeec6e1dbcde0cba14dbb5fdcd41c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void askap::LoadParset::drop_completed</definition>
+        <argsstring>(const char *uid, drop_status status)</argsstring>
+        <name>drop_completed</name>
+        <reimplements refid="classaskap_1_1DaliugeApplication_1a03cf905a020fc3897e1637810fc7d4fa">drop_completed</reimplements>
+        <param>
+          <type>const char *</type>
+          <declname>uid</declname>
+        </param>
+        <param>
+          <type>drop_status</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/LoadParset.h" line="44" column="1" bodyfile="jacal/factory/LoadParset.cc" bodystart="66" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classaskap_1_1LoadParset_1a1f8ff0f1cc500ebb4e6837e72411f05e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string askap::LoadParset::ApplicationName</definition>
+        <argsstring>()</argsstring>
+        <name>ApplicationName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/LoadParset.h" line="32" column="1" bodyfile="jacal/factory/LoadParset.h" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1LoadParset_1a7725e97b2efbe793b23308d7f9cb11ee" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classaskap_1_1DaliugeApplication_1a7a6d2810d428144756d8b66468a360bc" kindref="member">DaliugeApplication::ShPtr</ref></type>
+        <definition>DaliugeApplication::ShPtr askap::LoadParset::createDaliugeApplication</definition>
+        <argsstring>(dlg_app_info *raw_app)</argsstring>
+        <name>createDaliugeApplication</name>
+        <param>
+          <type>dlg_app_info *</type>
+          <declname>raw_app</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/LoadParset.h" line="36" column="1" bodyfile="jacal/factory/LoadParset.cc" bodystart="34" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Loads a configuration. </para>    </briefdescription>
+    <detaileddescription>
+<para>Loads a configuration from a file drop and generates a LOFAR::ParameterSet </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="34">
+        <label>askap::LoadParset</label>
+        <link refid="classaskap_1_1LoadParset"/>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>askap::DaliugeApplication</label>
+        <link refid="classaskap_1_1DaliugeApplication"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="36">
+        <label>askap::LoadParset</label>
+        <link refid="classaskap_1_1LoadParset"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>askap::DaliugeApplication</label>
+        <link refid="classaskap_1_1DaliugeApplication"/>
+      </node>
+    </collaborationgraph>
+    <location file="jacal/factory/LoadParset.h" line="24" column="1" bodyfile="jacal/factory/LoadParset.h" bodystart="22" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classaskap_1_1LoadParset_1a1f8ff0f1cc500ebb4e6837e72411f05e" prot="public" virt="non-virtual"><scope>askap::LoadParset</scope><name>ApplicationName</name></member>
+      <member refid="classaskap_1_1LoadParset_1a7725e97b2efbe793b23308d7f9cb11ee" prot="public" virt="non-virtual"><scope>askap::LoadParset</scope><name>createDaliugeApplication</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a7cb25addc65c3ad68544a3579780175f" prot="public" virt="non-virtual"><scope>askap::LoadParset</scope><name>DaliugeApplication</name></member>
+      <member refid="classaskap_1_1LoadParset_1acc371f47eee2a6d7722aa5fc941447ef" prot="public" virt="virtual"><scope>askap::LoadParset</scope><name>data_written</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a811e7c64967397300a3a90fbedc09c80" prot="protected" virt="non-virtual"><scope>askap::LoadParset</scope><name>dlg_app_done</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1aed11eebe39122468e08b3f2a5fde7429" prot="protected" virt="non-virtual"><scope>askap::LoadParset</scope><name>dlg_app_running</name></member>
+      <member refid="classaskap_1_1LoadParset_1a6cfeec6e1dbcde0cba14dbb5fdcd41c7" prot="public" virt="virtual"><scope>askap::LoadParset</scope><name>drop_completed</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a7ac7d7d6b72249f078d907fff7ca51ca" prot="protected" virt="non-virtual"><scope>askap::LoadParset</scope><name>get_inputs</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a77284ec0fe098d6afdbbd913b2205825" prot="protected" virt="non-virtual"><scope>askap::LoadParset</scope><name>has_input</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a29896527d85a4f614d01431a76480da5" prot="protected" virt="non-virtual"><scope>askap::LoadParset</scope><name>has_output</name></member>
+      <member refid="classaskap_1_1LoadParset_1a5c6e6c83bd5251c36b4b820412b170ca" prot="public" virt="virtual"><scope>askap::LoadParset</scope><name>init</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1aea6c449c2d21cc939264c9ccb4331c87" prot="protected" virt="non-virtual"><scope>askap::LoadParset</scope><name>input</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a1ce29733db412017c720a2b845a327d7" prot="protected" virt="non-virtual"><scope>askap::LoadParset</scope><name>input</name></member>
+      <member refid="classaskap_1_1LoadParset_1ab658378b381e0b3399642634e5ef3436" prot="public" virt="non-virtual"><scope>askap::LoadParset</scope><name>LoadParset</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a0268ee2b73d67b7ed57be274f0354d75" prot="protected" virt="non-virtual"><scope>askap::LoadParset</scope><name>n_inputs</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1abb0c4a545270ec98434aefffb70ab726" prot="protected" virt="non-virtual"><scope>askap::LoadParset</scope><name>n_outputs</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a4c220de254cd6ba4e2cfd7821e4204a3" prot="protected" virt="non-virtual"><scope>askap::LoadParset</scope><name>output</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a13c0deb208e41d3ccce925876ec642a8" prot="protected" virt="non-virtual"><scope>askap::LoadParset</scope><name>output</name></member>
+      <member refid="classaskap_1_1LoadParset_1a96426e090fbccdb47b3b807ee932825a" prot="public" virt="virtual"><scope>askap::LoadParset</scope><name>run</name></member>
+      <member refid="classaskap_1_1LoadParset_1af34804df7b413e7e23b41fcad71f3365" prot="public" virt="non-virtual"><scope>askap::LoadParset</scope><name>ShPtr</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a6cb79ab32eed29d50766a7e51118d611" prot="public" virt="virtual"><scope>askap::LoadParset</scope><name>~DaliugeApplication</name></member>
+      <member refid="classaskap_1_1LoadParset_1a5e1535f2cd0717f8ad755c011ec171b7" prot="public" virt="virtual"><scope>askap::LoadParset</scope><name>~LoadParset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

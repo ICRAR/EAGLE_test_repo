@@ -1,0 +1,324 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classaskap_1_1LoadVis" kind="class" language="C++" prot="public">
+    <compoundname>askap::LoadVis</compoundname>
+    <basecompoundref refid="classaskap_1_1DaliugeApplication" prot="public" virt="non-virtual">askap::DaliugeApplication</basecompoundref>
+    <includes refid="LoadVis_8h" local="no">LoadVis.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classaskap_1_1LoadVis_1a15bc14663e3a660f88b14e2599c02a5b" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classaskap_1_1LoadVis" kindref="compound">LoadVis</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;LoadVis&gt; askap::LoadVis::ShPtr</definition>
+        <argsstring></argsstring>
+        <name>ShPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/LoadVis.h" line="38" column="1" bodyfile="jacal/factory/LoadVis.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classaskap_1_1LoadVis_1a7991e4e517b16d6b8e2a887ff587bd3c" prot="private" static="no" mutable="no">
+        <type>askap::scimath::Params::ShPtr</type>
+        <definition>askap::scimath::Params::ShPtr askap::LoadVis::itsModel</definition>
+        <argsstring></argsstring>
+        <name>itsModel</name>
+        <briefdescription>
+<para>The model. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/LoadVis.h" line="62" column="1" bodyfile="jacal/factory/LoadVis.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1LoadVis_1a8fa55cb72a0cf299cd5e3d1069fd7a41" prot="private" static="no" mutable="no">
+        <type>LOFAR::ParameterSet</type>
+        <definition>LOFAR::ParameterSet askap::LoadVis::itsParset</definition>
+        <argsstring></argsstring>
+        <name>itsParset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/LoadVis.h" line="65" column="1" bodyfile="jacal/factory/LoadVis.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1LoadVis_1a2ed60a0298db71c5135fbbcf86db1b49" prot="private" static="no" mutable="no">
+        <type>casacore::IPosition</type>
+        <definition>casacore::IPosition askap::LoadVis::freqInterval</definition>
+        <argsstring></argsstring>
+        <name>freqInterval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/LoadVis.h" line="69" column="1" bodyfile="jacal/factory/LoadVis.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1LoadVis_1a2b119fa41c8c889bcb724d29cc2779ad" prot="private" static="no" mutable="no">
+        <type>casacore::IPosition</type>
+        <definition>casacore::IPosition askap::LoadVis::timeInterval</definition>
+        <argsstring></argsstring>
+        <name>timeInterval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/LoadVis.h" line="72" column="1" bodyfile="jacal/factory/LoadVis.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1LoadVis_1afb3e257c8eebc43a1ca537ec703421c2" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; casacore::MVDirection &gt;</type>
+        <definition>std::vector&lt;casacore::MVDirection&gt; askap::LoadVis::itsTangent</definition>
+        <argsstring></argsstring>
+        <name>itsTangent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/LoadVis.h" line="75" column="1" bodyfile="jacal/factory/LoadVis.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1LoadVis_1ae2faf09d7117f5b351427005dc6a90d1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int askap::LoadVis::itsChan</definition>
+        <argsstring></argsstring>
+        <name>itsChan</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/LoadVis.h" line="77" column="1" bodyfile="jacal/factory/LoadVis.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classaskap_1_1LoadVis_1a1c9c888233c09b2b37f7ee7e23c9e93f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>askap::LoadVis::LoadVis</definition>
+        <argsstring>(dlg_app_info *raw_app)</argsstring>
+        <name>LoadVis</name>
+        <param>
+          <type>dlg_app_info *</type>
+          <declname>raw_app</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/LoadVis.h" line="40" column="1" bodyfile="jacal/factory/LoadVis.cc" bodystart="76" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1LoadVis_1ac81ecf0dcf73dba06b34a2a743b04607" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>askap::LoadVis::~LoadVis</definition>
+        <argsstring>()</argsstring>
+        <name>~LoadVis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/LoadVis.h" line="44" column="1" bodyfile="jacal/factory/LoadVis.cc" bodystart="86" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1LoadVis_1a457b6e83405798b5266ae3dd0dd76f2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int askap::LoadVis::init</definition>
+        <argsstring>(const char ***arguments)</argsstring>
+        <name>init</name>
+        <reimplements refid="classaskap_1_1DaliugeApplication_1acb7c465b5a2a1ae55beabeac87d2a899">init</reimplements>
+        <param>
+          <type>const char ***</type>
+          <declname>arguments</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is implemented by sub-classes. i.e. The users of this class. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/LoadVis.h" line="48" column="1" bodyfile="jacal/factory/LoadVis.cc" bodystart="94" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1LoadVis_1a702b9675ad4047c1b76cb6794e772841" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int askap::LoadVis::run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <reimplements refid="classaskap_1_1DaliugeApplication_1abb089035c6c71206554cf1c916689635">run</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Create the specified images from the definition in the parameter set. We can solve for any number of images at once (but you may/will run out of memory!) </para>        </inbodydescription>
+        <location file="jacal/factory/LoadVis.h" line="50" column="1" bodyfile="jacal/factory/LoadVis.cc" bodystart="135" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1LoadVis_1a0c3f7a021e270289529a7d9120c160e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void askap::LoadVis::data_written</definition>
+        <argsstring>(const char *uid, const char *data, size_t n)</argsstring>
+        <name>data_written</name>
+        <reimplements refid="classaskap_1_1DaliugeApplication_1a9fbaf01766eb1fb1d36c187df57c340c">data_written</reimplements>
+        <param>
+          <type>const char *</type>
+          <declname>uid</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/LoadVis.h" line="52" column="1" bodyfile="jacal/factory/LoadVis.cc" bodystart="263" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1LoadVis_1a38952e2030fe754ae576df6bd419500a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void askap::LoadVis::drop_completed</definition>
+        <argsstring>(const char *uid, drop_status status)</argsstring>
+        <name>drop_completed</name>
+        <reimplements refid="classaskap_1_1DaliugeApplication_1a03cf905a020fc3897e1637810fc7d4fa">drop_completed</reimplements>
+        <param>
+          <type>const char *</type>
+          <declname>uid</declname>
+        </param>
+        <param>
+          <type>drop_status</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/LoadVis.h" line="54" column="1" bodyfile="jacal/factory/LoadVis.cc" bodystart="267" bodyend="270"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classaskap_1_1LoadVis_1aa74dba30ea69d8900528b30210cd82fd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string askap::LoadVis::ApplicationName</definition>
+        <argsstring>()</argsstring>
+        <name>ApplicationName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/LoadVis.h" line="42" column="1" bodyfile="jacal/factory/LoadVis.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1LoadVis_1a800d563188fa2470b1da5b2e2e66e73b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classaskap_1_1DaliugeApplication_1a7a6d2810d428144756d8b66468a360bc" kindref="member">DaliugeApplication::ShPtr</ref></type>
+        <definition>DaliugeApplication::ShPtr askap::LoadVis::createDaliugeApplication</definition>
+        <argsstring>(dlg_app_info *raw_app)</argsstring>
+        <name>createDaliugeApplication</name>
+        <param>
+          <type>dlg_app_info *</type>
+          <declname>raw_app</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/LoadVis.h" line="46" column="1" bodyfile="jacal/factory/LoadVis.cc" bodystart="89" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1LoadVis_1a3dae9d5cef4cb14ed9b39ead654cbc9c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; askap::LoadVis::getDatasets</definition>
+        <argsstring>(const LOFAR::ParameterSet &amp;parset)</argsstring>
+        <name>getDatasets</name>
+        <param>
+          <type>const LOFAR::ParameterSet &amp;</type>
+          <declname>parset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/LoadVis.h" line="56" column="1" bodyfile="jacal/factory/LoadVis.cc" bodystart="272" bodyend="298"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Loads visibility set. </para>    </briefdescription>
+    <detaileddescription>
+<para>Loads a configuration from a file drop and a visibility set from a casacore::Measurement Set </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="38">
+        <label>askap::LoadVis</label>
+        <link refid="classaskap_1_1LoadVis"/>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>askap::DaliugeApplication</label>
+        <link refid="classaskap_1_1DaliugeApplication"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="40">
+        <label>askap::LoadVis</label>
+        <link refid="classaskap_1_1LoadVis"/>
+        <childnode refid="41" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>askap::DaliugeApplication</label>
+        <link refid="classaskap_1_1DaliugeApplication"/>
+      </node>
+    </collaborationgraph>
+    <location file="jacal/factory/LoadVis.h" line="34" column="1" bodyfile="jacal/factory/LoadVis.h" bodystart="32" bodyend="88"/>
+    <listofallmembers>
+      <member refid="classaskap_1_1LoadVis_1aa74dba30ea69d8900528b30210cd82fd" prot="public" virt="non-virtual"><scope>askap::LoadVis</scope><name>ApplicationName</name></member>
+      <member refid="classaskap_1_1LoadVis_1a800d563188fa2470b1da5b2e2e66e73b" prot="public" virt="non-virtual"><scope>askap::LoadVis</scope><name>createDaliugeApplication</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a7cb25addc65c3ad68544a3579780175f" prot="public" virt="non-virtual"><scope>askap::LoadVis</scope><name>DaliugeApplication</name></member>
+      <member refid="classaskap_1_1LoadVis_1a0c3f7a021e270289529a7d9120c160e8" prot="public" virt="virtual"><scope>askap::LoadVis</scope><name>data_written</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a811e7c64967397300a3a90fbedc09c80" prot="protected" virt="non-virtual"><scope>askap::LoadVis</scope><name>dlg_app_done</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1aed11eebe39122468e08b3f2a5fde7429" prot="protected" virt="non-virtual"><scope>askap::LoadVis</scope><name>dlg_app_running</name></member>
+      <member refid="classaskap_1_1LoadVis_1a38952e2030fe754ae576df6bd419500a" prot="public" virt="virtual"><scope>askap::LoadVis</scope><name>drop_completed</name></member>
+      <member refid="classaskap_1_1LoadVis_1a2ed60a0298db71c5135fbbcf86db1b49" prot="private" virt="non-virtual"><scope>askap::LoadVis</scope><name>freqInterval</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a7ac7d7d6b72249f078d907fff7ca51ca" prot="protected" virt="non-virtual"><scope>askap::LoadVis</scope><name>get_inputs</name></member>
+      <member refid="classaskap_1_1LoadVis_1a3dae9d5cef4cb14ed9b39ead654cbc9c" prot="public" virt="non-virtual"><scope>askap::LoadVis</scope><name>getDatasets</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a77284ec0fe098d6afdbbd913b2205825" prot="protected" virt="non-virtual"><scope>askap::LoadVis</scope><name>has_input</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a29896527d85a4f614d01431a76480da5" prot="protected" virt="non-virtual"><scope>askap::LoadVis</scope><name>has_output</name></member>
+      <member refid="classaskap_1_1LoadVis_1a457b6e83405798b5266ae3dd0dd76f2b" prot="public" virt="virtual"><scope>askap::LoadVis</scope><name>init</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1aea6c449c2d21cc939264c9ccb4331c87" prot="protected" virt="non-virtual"><scope>askap::LoadVis</scope><name>input</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a1ce29733db412017c720a2b845a327d7" prot="protected" virt="non-virtual"><scope>askap::LoadVis</scope><name>input</name></member>
+      <member refid="classaskap_1_1LoadVis_1ae2faf09d7117f5b351427005dc6a90d1" prot="private" virt="non-virtual"><scope>askap::LoadVis</scope><name>itsChan</name></member>
+      <member refid="classaskap_1_1LoadVis_1a7991e4e517b16d6b8e2a887ff587bd3c" prot="private" virt="non-virtual"><scope>askap::LoadVis</scope><name>itsModel</name></member>
+      <member refid="classaskap_1_1LoadVis_1a8fa55cb72a0cf299cd5e3d1069fd7a41" prot="private" virt="non-virtual"><scope>askap::LoadVis</scope><name>itsParset</name></member>
+      <member refid="classaskap_1_1LoadVis_1afb3e257c8eebc43a1ca537ec703421c2" prot="private" virt="non-virtual"><scope>askap::LoadVis</scope><name>itsTangent</name></member>
+      <member refid="classaskap_1_1LoadVis_1a1c9c888233c09b2b37f7ee7e23c9e93f" prot="public" virt="non-virtual"><scope>askap::LoadVis</scope><name>LoadVis</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a0268ee2b73d67b7ed57be274f0354d75" prot="protected" virt="non-virtual"><scope>askap::LoadVis</scope><name>n_inputs</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1abb0c4a545270ec98434aefffb70ab726" prot="protected" virt="non-virtual"><scope>askap::LoadVis</scope><name>n_outputs</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a4c220de254cd6ba4e2cfd7821e4204a3" prot="protected" virt="non-virtual"><scope>askap::LoadVis</scope><name>output</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a13c0deb208e41d3ccce925876ec642a8" prot="protected" virt="non-virtual"><scope>askap::LoadVis</scope><name>output</name></member>
+      <member refid="classaskap_1_1LoadVis_1a702b9675ad4047c1b76cb6794e772841" prot="public" virt="virtual"><scope>askap::LoadVis</scope><name>run</name></member>
+      <member refid="classaskap_1_1LoadVis_1a15bc14663e3a660f88b14e2599c02a5b" prot="public" virt="non-virtual"><scope>askap::LoadVis</scope><name>ShPtr</name></member>
+      <member refid="classaskap_1_1LoadVis_1a2b119fa41c8c889bcb724d29cc2779ad" prot="private" virt="non-virtual"><scope>askap::LoadVis</scope><name>timeInterval</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a6cb79ab32eed29d50766a7e51118d611" prot="public" virt="virtual"><scope>askap::LoadVis</scope><name>~DaliugeApplication</name></member>
+      <member refid="classaskap_1_1LoadVis_1ac81ecf0dcf73dba06b34a2a743b04607" prot="public" virt="virtual"><scope>askap::LoadVis</scope><name>~LoadVis</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

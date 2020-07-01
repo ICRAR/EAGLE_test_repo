@@ -1,0 +1,278 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classaskap_1_1OutputParams" kind="class" language="C++" prot="public">
+    <compoundname>askap::OutputParams</compoundname>
+    <basecompoundref refid="classaskap_1_1DaliugeApplication" prot="public" virt="non-virtual">askap::DaliugeApplication</basecompoundref>
+    <includes refid="OutputParams_8h" local="no">OutputParams.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classaskap_1_1OutputParams_1ab2b3866f1bac31873d3925bebb19239f" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classaskap_1_1OutputParams" kindref="compound">OutputParams</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;OutputParams&gt; askap::OutputParams::ShPtr</definition>
+        <argsstring></argsstring>
+        <name>ShPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/OutputParams.h" line="38" column="1" bodyfile="jacal/factory/OutputParams.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classaskap_1_1OutputParams_1afaf09936a3db3c81a3e3bc381b5babb6" prot="private" static="no" mutable="no">
+        <type>scimath::Params::ShPtr</type>
+        <definition>scimath::Params::ShPtr askap::OutputParams::itsModel</definition>
+        <argsstring></argsstring>
+        <name>itsModel</name>
+        <briefdescription>
+<para>The model. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/OutputParams.h" line="61" column="1" bodyfile="jacal/factory/OutputParams.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1OutputParams_1aefdca7bd94932ac6420d968515889ec2" prot="private" static="no" mutable="no">
+        <type>LOFAR::ParameterSet</type>
+        <definition>LOFAR::ParameterSet askap::OutputParams::itsParset</definition>
+        <argsstring></argsstring>
+        <name>itsParset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/OutputParams.h" line="64" column="1" bodyfile="jacal/factory/OutputParams.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1OutputParams_1aae98ea008506f2c35a130d1fb3ac0956" prot="private" static="no" mutable="no">
+        <type>scimath::ImagingNormalEquations::ShPtr</type>
+        <definition>scimath::ImagingNormalEquations::ShPtr askap::OutputParams::itsNe</definition>
+        <argsstring></argsstring>
+        <name>itsNe</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/OutputParams.h" line="68" column="1" bodyfile="jacal/factory/OutputParams.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1OutputParams_1abf7dc32840a9c1e6379fe4c1f349ab8f" prot="private" static="no" mutable="no">
+        <type>scimath::Solver::ShPtr</type>
+        <definition>scimath::Solver::ShPtr askap::OutputParams::itsSolver</definition>
+        <argsstring></argsstring>
+        <name>itsSolver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/OutputParams.h" line="72" column="1" bodyfile="jacal/factory/OutputParams.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classaskap_1_1OutputParams_1ae27fbc54dbd99cad253941a904643563" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>askap::OutputParams::OutputParams</definition>
+        <argsstring>(dlg_app_info *raw_app)</argsstring>
+        <name>OutputParams</name>
+        <param>
+          <type>dlg_app_info *</type>
+          <declname>raw_app</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/OutputParams.h" line="40" column="1" bodyfile="jacal/factory/OutputParams.cc" bodystart="84" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1OutputParams_1a8389ea3753c3fa19f26dc1d587c1aa22" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>askap::OutputParams::~OutputParams</definition>
+        <argsstring>()</argsstring>
+        <name>~OutputParams</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/OutputParams.h" line="44" column="1" bodyfile="jacal/factory/OutputParams.cc" bodystart="90" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1OutputParams_1a3a09d2b22cc2c97515b86fedf1e969b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int askap::OutputParams::init</definition>
+        <argsstring>(const char ***arguments)</argsstring>
+        <name>init</name>
+        <reimplements refid="classaskap_1_1DaliugeApplication_1acb7c465b5a2a1ae55beabeac87d2a899">init</reimplements>
+        <param>
+          <type>const char ***</type>
+          <declname>arguments</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is implemented by sub-classes. i.e. The users of this class. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/OutputParams.h" line="48" column="1" bodyfile="jacal/factory/OutputParams.cc" bodystart="98" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1OutputParams_1a1e8bded42c6a9f7bc72365e7d5efdc15" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int askap::OutputParams::run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <reimplements refid="classaskap_1_1DaliugeApplication_1abb089035c6c71206554cf1c916689635">run</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/OutputParams.h" line="50" column="1" bodyfile="jacal/factory/OutputParams.cc" bodystart="119" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1OutputParams_1a332d522a326085430161c072f4050a2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void askap::OutputParams::data_written</definition>
+        <argsstring>(const char *uid, const char *data, size_t n)</argsstring>
+        <name>data_written</name>
+        <reimplements refid="classaskap_1_1DaliugeApplication_1a9fbaf01766eb1fb1d36c187df57c340c">data_written</reimplements>
+        <param>
+          <type>const char *</type>
+          <declname>uid</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/OutputParams.h" line="52" column="1" bodyfile="jacal/factory/OutputParams.cc" bodystart="176" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1OutputParams_1a5cf5639194d82f6efee5bbf787473022" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void askap::OutputParams::drop_completed</definition>
+        <argsstring>(const char *uid, drop_status status)</argsstring>
+        <name>drop_completed</name>
+        <reimplements refid="classaskap_1_1DaliugeApplication_1a03cf905a020fc3897e1637810fc7d4fa">drop_completed</reimplements>
+        <param>
+          <type>const char *</type>
+          <declname>uid</declname>
+        </param>
+        <param>
+          <type>drop_status</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/OutputParams.h" line="54" column="1" bodyfile="jacal/factory/OutputParams.cc" bodystart="180" bodyend="182"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classaskap_1_1OutputParams_1abddd41afa458649cd722f7f487dc2296" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string askap::OutputParams::ApplicationName</definition>
+        <argsstring>()</argsstring>
+        <name>ApplicationName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/OutputParams.h" line="42" column="1" bodyfile="jacal/factory/OutputParams.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1OutputParams_1a5b0eb8e1b25ca7774f79770fa9f498cb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classaskap_1_1DaliugeApplication_1a7a6d2810d428144756d8b66468a360bc" kindref="member">DaliugeApplication::ShPtr</ref></type>
+        <definition>DaliugeApplication::ShPtr askap::OutputParams::createDaliugeApplication</definition>
+        <argsstring>(dlg_app_info *raw_app)</argsstring>
+        <name>createDaliugeApplication</name>
+        <param>
+          <type>dlg_app_info *</type>
+          <declname>raw_app</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/OutputParams.h" line="46" column="1" bodyfile="jacal/factory/OutputParams.cc" bodystart="93" bodyend="96"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Outputs the Params class as images. </para>    </briefdescription>
+    <detaileddescription>
+<para>This drop actually generates the output images based upon the contents of the Params object </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="52">
+        <label>askap::OutputParams</label>
+        <link refid="classaskap_1_1OutputParams"/>
+        <childnode refid="53" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>askap::DaliugeApplication</label>
+        <link refid="classaskap_1_1DaliugeApplication"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="54">
+        <label>askap::OutputParams</label>
+        <link refid="classaskap_1_1OutputParams"/>
+        <childnode refid="55" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>askap::DaliugeApplication</label>
+        <link refid="classaskap_1_1DaliugeApplication"/>
+      </node>
+    </collaborationgraph>
+    <location file="jacal/factory/OutputParams.h" line="34" column="1" bodyfile="jacal/factory/OutputParams.h" bodystart="32" bodyend="82"/>
+    <listofallmembers>
+      <member refid="classaskap_1_1OutputParams_1abddd41afa458649cd722f7f487dc2296" prot="public" virt="non-virtual"><scope>askap::OutputParams</scope><name>ApplicationName</name></member>
+      <member refid="classaskap_1_1OutputParams_1a5b0eb8e1b25ca7774f79770fa9f498cb" prot="public" virt="non-virtual"><scope>askap::OutputParams</scope><name>createDaliugeApplication</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a7cb25addc65c3ad68544a3579780175f" prot="public" virt="non-virtual"><scope>askap::OutputParams</scope><name>DaliugeApplication</name></member>
+      <member refid="classaskap_1_1OutputParams_1a332d522a326085430161c072f4050a2e" prot="public" virt="virtual"><scope>askap::OutputParams</scope><name>data_written</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a811e7c64967397300a3a90fbedc09c80" prot="protected" virt="non-virtual"><scope>askap::OutputParams</scope><name>dlg_app_done</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1aed11eebe39122468e08b3f2a5fde7429" prot="protected" virt="non-virtual"><scope>askap::OutputParams</scope><name>dlg_app_running</name></member>
+      <member refid="classaskap_1_1OutputParams_1a5cf5639194d82f6efee5bbf787473022" prot="public" virt="virtual"><scope>askap::OutputParams</scope><name>drop_completed</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a7ac7d7d6b72249f078d907fff7ca51ca" prot="protected" virt="non-virtual"><scope>askap::OutputParams</scope><name>get_inputs</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a77284ec0fe098d6afdbbd913b2205825" prot="protected" virt="non-virtual"><scope>askap::OutputParams</scope><name>has_input</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a29896527d85a4f614d01431a76480da5" prot="protected" virt="non-virtual"><scope>askap::OutputParams</scope><name>has_output</name></member>
+      <member refid="classaskap_1_1OutputParams_1a3a09d2b22cc2c97515b86fedf1e969b2" prot="public" virt="virtual"><scope>askap::OutputParams</scope><name>init</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1aea6c449c2d21cc939264c9ccb4331c87" prot="protected" virt="non-virtual"><scope>askap::OutputParams</scope><name>input</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a1ce29733db412017c720a2b845a327d7" prot="protected" virt="non-virtual"><scope>askap::OutputParams</scope><name>input</name></member>
+      <member refid="classaskap_1_1OutputParams_1afaf09936a3db3c81a3e3bc381b5babb6" prot="private" virt="non-virtual"><scope>askap::OutputParams</scope><name>itsModel</name></member>
+      <member refid="classaskap_1_1OutputParams_1aae98ea008506f2c35a130d1fb3ac0956" prot="private" virt="non-virtual"><scope>askap::OutputParams</scope><name>itsNe</name></member>
+      <member refid="classaskap_1_1OutputParams_1aefdca7bd94932ac6420d968515889ec2" prot="private" virt="non-virtual"><scope>askap::OutputParams</scope><name>itsParset</name></member>
+      <member refid="classaskap_1_1OutputParams_1abf7dc32840a9c1e6379fe4c1f349ab8f" prot="private" virt="non-virtual"><scope>askap::OutputParams</scope><name>itsSolver</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a0268ee2b73d67b7ed57be274f0354d75" prot="protected" virt="non-virtual"><scope>askap::OutputParams</scope><name>n_inputs</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1abb0c4a545270ec98434aefffb70ab726" prot="protected" virt="non-virtual"><scope>askap::OutputParams</scope><name>n_outputs</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a4c220de254cd6ba4e2cfd7821e4204a3" prot="protected" virt="non-virtual"><scope>askap::OutputParams</scope><name>output</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a13c0deb208e41d3ccce925876ec642a8" prot="protected" virt="non-virtual"><scope>askap::OutputParams</scope><name>output</name></member>
+      <member refid="classaskap_1_1OutputParams_1ae27fbc54dbd99cad253941a904643563" prot="public" virt="non-virtual"><scope>askap::OutputParams</scope><name>OutputParams</name></member>
+      <member refid="classaskap_1_1OutputParams_1a1e8bded42c6a9f7bc72365e7d5efdc15" prot="public" virt="virtual"><scope>askap::OutputParams</scope><name>run</name></member>
+      <member refid="classaskap_1_1OutputParams_1ab2b3866f1bac31873d3925bebb19239f" prot="public" virt="non-virtual"><scope>askap::OutputParams</scope><name>ShPtr</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a6cb79ab32eed29d50766a7e51118d611" prot="public" virt="virtual"><scope>askap::OutputParams</scope><name>~DaliugeApplication</name></member>
+      <member refid="classaskap_1_1OutputParams_1a8389ea3753c3fa19f26dc1d587c1aa22" prot="public" virt="virtual"><scope>askap::OutputParams</scope><name>~OutputParams</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

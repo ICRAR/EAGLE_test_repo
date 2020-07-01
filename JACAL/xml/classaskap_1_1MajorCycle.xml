@@ -1,0 +1,306 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classaskap_1_1MajorCycle" kind="class" language="C++" prot="public">
+    <compoundname>askap::MajorCycle</compoundname>
+    <basecompoundref refid="classaskap_1_1DaliugeApplication" prot="public" virt="non-virtual">askap::DaliugeApplication</basecompoundref>
+    <includes refid="MajorCycle_8h" local="no">MajorCycle.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classaskap_1_1MajorCycle_1a665d14d829de15ca686212a57d5de2ea" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classaskap_1_1MajorCycle" kindref="compound">MajorCycle</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;MajorCycle&gt; askap::MajorCycle::ShPtr</definition>
+        <argsstring></argsstring>
+        <name>ShPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/MajorCycle.h" line="37" column="1" bodyfile="jacal/factory/MajorCycle.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classaskap_1_1MajorCycle_1a28f6a0cee116f7ac3323bc9b55cb1acc" prot="private" static="no" mutable="no">
+        <type>askap::scimath::Params::ShPtr</type>
+        <definition>askap::scimath::Params::ShPtr askap::MajorCycle::itsModel</definition>
+        <argsstring></argsstring>
+        <name>itsModel</name>
+        <briefdescription>
+<para>The model. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/MajorCycle.h" line="61" column="1" bodyfile="jacal/factory/MajorCycle.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1MajorCycle_1a6a11d9555e69cc250ca7137788e159bb" prot="private" static="no" mutable="no">
+        <type>LOFAR::ParameterSet</type>
+        <definition>LOFAR::ParameterSet askap::MajorCycle::itsParset</definition>
+        <argsstring></argsstring>
+        <name>itsParset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/MajorCycle.h" line="64" column="1" bodyfile="jacal/factory/MajorCycle.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1MajorCycle_1a1b561941d388c9674970c3ab0266f161" prot="private" static="no" mutable="no">
+        <type>casacore::IPosition</type>
+        <definition>casacore::IPosition askap::MajorCycle::freqInterval</definition>
+        <argsstring></argsstring>
+        <name>freqInterval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/MajorCycle.h" line="68" column="1" bodyfile="jacal/factory/MajorCycle.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1MajorCycle_1a7a587741dcfcb6289af5bcb5b9d2f7fb" prot="private" static="no" mutable="no">
+        <type>casacore::IPosition</type>
+        <definition>casacore::IPosition askap::MajorCycle::timeInterval</definition>
+        <argsstring></argsstring>
+        <name>timeInterval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/MajorCycle.h" line="71" column="1" bodyfile="jacal/factory/MajorCycle.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1MajorCycle_1a2d754d8c232ccdcf2f7fe5475fbe9bdb" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; casacore::MVDirection &gt;</type>
+        <definition>std::vector&lt;casacore::MVDirection&gt; askap::MajorCycle::itsTangent</definition>
+        <argsstring></argsstring>
+        <name>itsTangent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/MajorCycle.h" line="74" column="1" bodyfile="jacal/factory/MajorCycle.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaskap_1_1MajorCycle_1a3447fe4841d78e5469b875c32efe8da2" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int askap::MajorCycle::itsChan</definition>
+        <argsstring></argsstring>
+        <name>itsChan</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/MajorCycle.h" line="76" column="1" bodyfile="jacal/factory/MajorCycle.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classaskap_1_1MajorCycle_1ac43a82a8d9c601417503dae8b3a03079" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>askap::MajorCycle::MajorCycle</definition>
+        <argsstring>(dlg_app_info *raw_app)</argsstring>
+        <name>MajorCycle</name>
+        <param>
+          <type>dlg_app_info *</type>
+          <declname>raw_app</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/MajorCycle.h" line="39" column="1" bodyfile="jacal/factory/MajorCycle.cc" bodystart="76" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1MajorCycle_1a2631bdcc52520cda920144d62d8de3f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>askap::MajorCycle::~MajorCycle</definition>
+        <argsstring>()</argsstring>
+        <name>~MajorCycle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/MajorCycle.h" line="43" column="1" bodyfile="jacal/factory/MajorCycle.cc" bodystart="86" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1MajorCycle_1a65db2521a701c58c64e63ea46e849fa2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int askap::MajorCycle::init</definition>
+        <argsstring>(const char ***arguments)</argsstring>
+        <name>init</name>
+        <reimplements refid="classaskap_1_1DaliugeApplication_1acb7c465b5a2a1ae55beabeac87d2a899">init</reimplements>
+        <param>
+          <type>const char ***</type>
+          <declname>arguments</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is implemented by sub-classes. i.e. The users of this class. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/MajorCycle.h" line="47" column="1" bodyfile="jacal/factory/MajorCycle.cc" bodystart="94" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1MajorCycle_1ae618bdf8100d7fc83907d42fb49f332b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int askap::MajorCycle::run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <reimplements refid="classaskap_1_1DaliugeApplication_1abb089035c6c71206554cf1c916689635">run</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Create the specified images from the definition in the parameter set. We can solve for any number of images at once (but you may/will run out of memory!) </para>        </inbodydescription>
+        <location file="jacal/factory/MajorCycle.h" line="49" column="1" bodyfile="jacal/factory/MajorCycle.cc" bodystart="135" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1MajorCycle_1a414710a04f94eba9bc700d0c753fd10d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void askap::MajorCycle::data_written</definition>
+        <argsstring>(const char *uid, const char *data, size_t n)</argsstring>
+        <name>data_written</name>
+        <reimplements refid="classaskap_1_1DaliugeApplication_1a9fbaf01766eb1fb1d36c187df57c340c">data_written</reimplements>
+        <param>
+          <type>const char *</type>
+          <declname>uid</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/MajorCycle.h" line="51" column="1" bodyfile="jacal/factory/MajorCycle.cc" bodystart="263" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1MajorCycle_1afdff1c7c6b4f9c3e04047435495d8a4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void askap::MajorCycle::drop_completed</definition>
+        <argsstring>(const char *uid, drop_status status)</argsstring>
+        <name>drop_completed</name>
+        <reimplements refid="classaskap_1_1DaliugeApplication_1a03cf905a020fc3897e1637810fc7d4fa">drop_completed</reimplements>
+        <param>
+          <type>const char *</type>
+          <declname>uid</declname>
+        </param>
+        <param>
+          <type>drop_status</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/MajorCycle.h" line="53" column="1" bodyfile="jacal/factory/MajorCycle.cc" bodystart="267" bodyend="270"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classaskap_1_1MajorCycle_1af74b6381c8ff866755c141df22e4fa1b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string askap::MajorCycle::ApplicationName</definition>
+        <argsstring>()</argsstring>
+        <name>ApplicationName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/MajorCycle.h" line="41" column="1" bodyfile="jacal/factory/MajorCycle.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classaskap_1_1MajorCycle_1a9b44d7720d009123018a1d161f93ffd5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classaskap_1_1DaliugeApplication_1a7a6d2810d428144756d8b66468a360bc" kindref="member">DaliugeApplication::ShPtr</ref></type>
+        <definition>DaliugeApplication::ShPtr askap::MajorCycle::createDaliugeApplication</definition>
+        <argsstring>(dlg_app_info *raw_app)</argsstring>
+        <name>createDaliugeApplication</name>
+        <param>
+          <type>dlg_app_info *</type>
+          <declname>raw_app</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="jacal/factory/MajorCycle.h" line="45" column="1" bodyfile="jacal/factory/MajorCycle.cc" bodystart="89" bodyend="92"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Loads visibility set. </para>    </briefdescription>
+    <detaileddescription>
+<para>Loads a configuration from a file drop and a visibility set from a casacore::Measurement Set </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="42">
+        <label>askap::MajorCycle</label>
+        <link refid="classaskap_1_1MajorCycle"/>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>askap::DaliugeApplication</label>
+        <link refid="classaskap_1_1DaliugeApplication"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="44">
+        <label>askap::MajorCycle</label>
+        <link refid="classaskap_1_1MajorCycle"/>
+        <childnode refid="45" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>askap::DaliugeApplication</label>
+        <link refid="classaskap_1_1DaliugeApplication"/>
+      </node>
+    </collaborationgraph>
+    <location file="jacal/factory/MajorCycle.h" line="33" column="1" bodyfile="jacal/factory/MajorCycle.h" bodystart="31" bodyend="87"/>
+    <listofallmembers>
+      <member refid="classaskap_1_1MajorCycle_1af74b6381c8ff866755c141df22e4fa1b" prot="public" virt="non-virtual"><scope>askap::MajorCycle</scope><name>ApplicationName</name></member>
+      <member refid="classaskap_1_1MajorCycle_1a9b44d7720d009123018a1d161f93ffd5" prot="public" virt="non-virtual"><scope>askap::MajorCycle</scope><name>createDaliugeApplication</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a7cb25addc65c3ad68544a3579780175f" prot="public" virt="non-virtual"><scope>askap::MajorCycle</scope><name>DaliugeApplication</name></member>
+      <member refid="classaskap_1_1MajorCycle_1a414710a04f94eba9bc700d0c753fd10d" prot="public" virt="virtual"><scope>askap::MajorCycle</scope><name>data_written</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a811e7c64967397300a3a90fbedc09c80" prot="protected" virt="non-virtual"><scope>askap::MajorCycle</scope><name>dlg_app_done</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1aed11eebe39122468e08b3f2a5fde7429" prot="protected" virt="non-virtual"><scope>askap::MajorCycle</scope><name>dlg_app_running</name></member>
+      <member refid="classaskap_1_1MajorCycle_1afdff1c7c6b4f9c3e04047435495d8a4a" prot="public" virt="virtual"><scope>askap::MajorCycle</scope><name>drop_completed</name></member>
+      <member refid="classaskap_1_1MajorCycle_1a1b561941d388c9674970c3ab0266f161" prot="private" virt="non-virtual"><scope>askap::MajorCycle</scope><name>freqInterval</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a7ac7d7d6b72249f078d907fff7ca51ca" prot="protected" virt="non-virtual"><scope>askap::MajorCycle</scope><name>get_inputs</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a77284ec0fe098d6afdbbd913b2205825" prot="protected" virt="non-virtual"><scope>askap::MajorCycle</scope><name>has_input</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a29896527d85a4f614d01431a76480da5" prot="protected" virt="non-virtual"><scope>askap::MajorCycle</scope><name>has_output</name></member>
+      <member refid="classaskap_1_1MajorCycle_1a65db2521a701c58c64e63ea46e849fa2" prot="public" virt="virtual"><scope>askap::MajorCycle</scope><name>init</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1aea6c449c2d21cc939264c9ccb4331c87" prot="protected" virt="non-virtual"><scope>askap::MajorCycle</scope><name>input</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a1ce29733db412017c720a2b845a327d7" prot="protected" virt="non-virtual"><scope>askap::MajorCycle</scope><name>input</name></member>
+      <member refid="classaskap_1_1MajorCycle_1a3447fe4841d78e5469b875c32efe8da2" prot="private" virt="non-virtual"><scope>askap::MajorCycle</scope><name>itsChan</name></member>
+      <member refid="classaskap_1_1MajorCycle_1a28f6a0cee116f7ac3323bc9b55cb1acc" prot="private" virt="non-virtual"><scope>askap::MajorCycle</scope><name>itsModel</name></member>
+      <member refid="classaskap_1_1MajorCycle_1a6a11d9555e69cc250ca7137788e159bb" prot="private" virt="non-virtual"><scope>askap::MajorCycle</scope><name>itsParset</name></member>
+      <member refid="classaskap_1_1MajorCycle_1a2d754d8c232ccdcf2f7fe5475fbe9bdb" prot="private" virt="non-virtual"><scope>askap::MajorCycle</scope><name>itsTangent</name></member>
+      <member refid="classaskap_1_1MajorCycle_1ac43a82a8d9c601417503dae8b3a03079" prot="public" virt="non-virtual"><scope>askap::MajorCycle</scope><name>MajorCycle</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a0268ee2b73d67b7ed57be274f0354d75" prot="protected" virt="non-virtual"><scope>askap::MajorCycle</scope><name>n_inputs</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1abb0c4a545270ec98434aefffb70ab726" prot="protected" virt="non-virtual"><scope>askap::MajorCycle</scope><name>n_outputs</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a4c220de254cd6ba4e2cfd7821e4204a3" prot="protected" virt="non-virtual"><scope>askap::MajorCycle</scope><name>output</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a13c0deb208e41d3ccce925876ec642a8" prot="protected" virt="non-virtual"><scope>askap::MajorCycle</scope><name>output</name></member>
+      <member refid="classaskap_1_1MajorCycle_1ae618bdf8100d7fc83907d42fb49f332b" prot="public" virt="virtual"><scope>askap::MajorCycle</scope><name>run</name></member>
+      <member refid="classaskap_1_1MajorCycle_1a665d14d829de15ca686212a57d5de2ea" prot="public" virt="non-virtual"><scope>askap::MajorCycle</scope><name>ShPtr</name></member>
+      <member refid="classaskap_1_1MajorCycle_1a7a587741dcfcb6289af5bcb5b9d2f7fb" prot="private" virt="non-virtual"><scope>askap::MajorCycle</scope><name>timeInterval</name></member>
+      <member refid="classaskap_1_1DaliugeApplication_1a6cb79ab32eed29d50766a7e51118d611" prot="public" virt="virtual"><scope>askap::MajorCycle</scope><name>~DaliugeApplication</name></member>
+      <member refid="classaskap_1_1MajorCycle_1a2631bdcc52520cda920144d62d8de3f3" prot="public" virt="virtual"><scope>askap::MajorCycle</scope><name>~MajorCycle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
