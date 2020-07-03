@@ -1,0 +1,543 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="headers_2dlg__app_8h" kind="file" language="C++">
+    <compoundname>dlg_app.h</compoundname>
+    <innerclass refid="struct__dlg__input__info" prot="public">_dlg_input_info</innerclass>
+    <innerclass refid="struct__dlg__streaming__input__info" prot="public">_dlg_streaming_input_info</innerclass>
+    <innerclass refid="struct__dlg__output__info" prot="public">_dlg_output_info</innerclass>
+    <innerclass refid="struct__dlg__app__info" prot="public">_dlg_app_info</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="headers_2dlg__app_8h_1a53dc994aa3a5cb07b8da80a29ae60169" prot="public" static="no">
+        <name>_drop_status</name>
+        <enumvalue id="dlg_2apps_2dlg__app_8h_1a53dc994aa3a5cb07b8da80a29ae60169a6958050f6c8f06f98fbf1d69e0f9d794" prot="public">
+          <name>DROP_INITIALIZED</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>DROP_INITIALIZED. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dlg_2apps_2dlg__app_8h_1a53dc994aa3a5cb07b8da80a29ae60169aa9f6fd8caf62e2f40e73c2d209873b10" prot="public">
+          <name>DROP_WRITING</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>DROP_WRITING. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dlg_2apps_2dlg__app_8h_1a53dc994aa3a5cb07b8da80a29ae60169af63d90ea3879e0611e2b3aaf20b3883f" prot="public">
+          <name>DROP_COMPLETED</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>DROP_COMPLETED. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dlg_2apps_2dlg__app_8h_1a53dc994aa3a5cb07b8da80a29ae60169a5362a346782e4ee005a3c7031dde4917" prot="public">
+          <name>DROP_ERROR</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>DROP_ERROR. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dlg_2apps_2dlg__app_8h_1a53dc994aa3a5cb07b8da80a29ae60169acd69d293fe957624842a0afb4e4a95c9" prot="public">
+          <name>DROP_EXPIRED</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+<para>DROP_EXPIRED. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dlg_2apps_2dlg__app_8h_1a53dc994aa3a5cb07b8da80a29ae60169acee707671e8066d1548de817abf4653f" prot="public">
+          <name>DROP_DELETED</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+<para>DROP_DELETED. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="headers_2dlg__app_8h_1a53dc994aa3a5cb07b8da80a29ae60169a6958050f6c8f06f98fbf1d69e0f9d794" prot="public">
+          <name>DROP_INITIALIZED</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>DROP_INITIALIZED. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="headers_2dlg__app_8h_1a53dc994aa3a5cb07b8da80a29ae60169aa9f6fd8caf62e2f40e73c2d209873b10" prot="public">
+          <name>DROP_WRITING</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>DROP_WRITING. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="headers_2dlg__app_8h_1a53dc994aa3a5cb07b8da80a29ae60169af63d90ea3879e0611e2b3aaf20b3883f" prot="public">
+          <name>DROP_COMPLETED</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>DROP_COMPLETED. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="headers_2dlg__app_8h_1a53dc994aa3a5cb07b8da80a29ae60169a5362a346782e4ee005a3c7031dde4917" prot="public">
+          <name>DROP_ERROR</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>DROP_ERROR. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="headers_2dlg__app_8h_1a53dc994aa3a5cb07b8da80a29ae60169acd69d293fe957624842a0afb4e4a95c9" prot="public">
+          <name>DROP_EXPIRED</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+<para>DROP_EXPIRED. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="headers_2dlg__app_8h_1a53dc994aa3a5cb07b8da80a29ae60169acee707671e8066d1548de817abf4653f" prot="public">
+          <name>DROP_DELETED</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+<para>DROP_DELETED. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The different status a data drop can be found at. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/headers/dlg_app.h" line="33" column="1" bodyfile="daliuge-runtime/headers/dlg_app.h" bodystart="33" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="enum" id="headers_2dlg__app_8h_1ad064ab4188f8e448d85a250822fad74e" prot="public" static="no">
+        <name>_app_status</name>
+        <enumvalue id="dlg_2apps_2dlg__app_8h_1ad064ab4188f8e448d85a250822fad74eac21c6f12b1386cef68e80d4d19446870" prot="public">
+          <name>APP_NOT_RUN</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>APP_NOT_RUN. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dlg_2apps_2dlg__app_8h_1ad064ab4188f8e448d85a250822fad74ea71b026b3a2b676e4176ee9f8dae22f1d" prot="public">
+          <name>APP_RUNNING</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>APP_RUNNING. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dlg_2apps_2dlg__app_8h_1ad064ab4188f8e448d85a250822fad74ea57560f6121925f120ea488fefc88a534" prot="public">
+          <name>APP_FINISHED</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>APP_FINISHED. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="dlg_2apps_2dlg__app_8h_1ad064ab4188f8e448d85a250822fad74ea0a53212262724ecd8005236640d22c96" prot="public">
+          <name>APP_ERROR</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>APP_ERROR. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="headers_2dlg__app_8h_1ad064ab4188f8e448d85a250822fad74eac21c6f12b1386cef68e80d4d19446870" prot="public">
+          <name>APP_NOT_RUN</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>APP_NOT_RUN. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="headers_2dlg__app_8h_1ad064ab4188f8e448d85a250822fad74ea71b026b3a2b676e4176ee9f8dae22f1d" prot="public">
+          <name>APP_RUNNING</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+<para>APP_RUNNING. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="headers_2dlg__app_8h_1ad064ab4188f8e448d85a250822fad74ea57560f6121925f120ea488fefc88a534" prot="public">
+          <name>APP_FINISHED</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para>APP_FINISHED. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="headers_2dlg__app_8h_1ad064ab4188f8e448d85a250822fad74ea0a53212262724ecd8005236640d22c96" prot="public">
+          <name>APP_ERROR</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+<para>APP_ERROR. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The different status an application drop can be found at. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/headers/dlg_app.h" line="45" column="1" bodyfile="daliuge-runtime/headers/dlg_app.h" bodystart="45" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="headers_2dlg__app_8h_1a67c73ba1db62a8e8a58b3c7177a67ae7" prot="public" static="no">
+        <type>enum _drop_status</type>
+        <definition>typedef enum _drop_status  drop_status</definition>
+        <argsstring></argsstring>
+        <name>drop_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The different status a data drop can be found at. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/headers/dlg_app.h" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="headers_2dlg__app_8h_1a955b3f90586c158dc506b62aa10abcf1" prot="public" static="no">
+        <type>enum _app_status</type>
+        <definition>typedef enum _app_status  app_status</definition>
+        <argsstring></argsstring>
+        <name>app_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The different status an application drop can be found at. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/headers/dlg_app.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="headers_2dlg__app_8h_1aea7113d34b8b8fd4ea80c4c3db7c4731" prot="public" static="no">
+        <type>struct <ref refid="struct__dlg__input__info" kindref="compound">_dlg_input_info</ref></type>
+        <definition>typedef struct _dlg_input_info  dlg_input_info</definition>
+        <argsstring></argsstring>
+        <name>dlg_input_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Information about a batch-style input. It contains the UID and OID of the drop, its finishing status, plus a read method callback that can be used to consume its contents. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/headers/dlg_app.h" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="headers_2dlg__app_8h_1a5a08476822361310ee2f3d1313ff2fc2" prot="public" static="no">
+        <type>struct <ref refid="struct__dlg__streaming__input__info" kindref="compound">_dlg_streaming_input_info</ref></type>
+        <definition>typedef struct _dlg_streaming_input_info  dlg_streaming_input_info</definition>
+        <argsstring></argsstring>
+        <name>dlg_streaming_input_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Information about a batch-style input. It contains the UID and OID of the drop. Unlike the dlg_input_info structure, there is no need for a read callback since data coming from a streaming input is fed via the data_written function made available by the library author. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/headers/dlg_app.h" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="headers_2dlg__app_8h_1a073aaf884ce3990477ccab6dc1567fb3" prot="public" static="no">
+        <type>struct <ref refid="struct__dlg__output__info" kindref="compound">_dlg_output_info</ref></type>
+        <definition>typedef struct _dlg_output_info  dlg_output_info</definition>
+        <argsstring></argsstring>
+        <name>dlg_output_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Information about an application&apos;s output. It contains the UID and OID of the drop, plus a write method callback that can be used to fill it with contents. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/headers/dlg_app.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="headers_2dlg__app_8h_1ae45f8e9858e61818d83ad9a85578d42c" prot="public" static="no">
+        <type>struct <ref refid="struct__dlg__app__info" kindref="compound">_dlg_app_info</ref></type>
+        <definition>typedef struct _dlg_app_info  dlg_app_info</definition>
+        <argsstring></argsstring>
+        <name>dlg_app_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The representation of an application instance. Apart from its UID and OID, an application has an array of inputs (with n_inputs elements), streaming_inputs (with n_streaming_inputs) elements, and outputs (with n_outputs elements). If the application works in a streaming mode, then it is also given the running and done callbacks to signal the framwork that it started working, and that it is done with its work, respectively. Finally, a data pointer holds application-specific data. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/headers/dlg_app.h" line="112" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="headers_2dlg__app_8h_1af322b487951fdd1bb8cccd8d7ca36607" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int init</definition>
+        <argsstring>(dlg_app_info *app, const char ***params)</argsstring>
+        <name>init</name>
+        <param>
+          <type><ref refid="struct__dlg__app__info" kindref="compound">dlg_app_info</ref> *</type>
+          <declname>app</declname>
+        </param>
+        <param>
+          <type>const char ***</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes a new application. Must be provided by both batch- and streaming- oriented applications.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>app</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new application instance </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array of 2-element string arrays containing initialization parameters. The last item of the array is a NULL sentinel. The rest of the items contains a parameter name in the first position and its corresponding value in the second. Both the name and the value are NULL terminated. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Whether the initialization was successful (0) or not (any other value). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/headers/dlg_app.h" line="126" column="1" bodyfile="daliuge-runtime/test/apps/dynlib_example.c" bodystart="71" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="headers_2dlg__app_8h_1a977938f73be7ab3303c4cc358e125012" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int run</definition>
+        <argsstring>(dlg_app_info *app)</argsstring>
+        <name>run</name>
+        <param>
+          <type><ref refid="struct__dlg__app__info" kindref="compound">dlg_app_info</ref> *</type>
+          <declname>app</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Provides a simple entry point to execute batch-oriented applications.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>app</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application instance </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Whether the execution was successful (0) or not (any other value) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/headers/dlg_app.h" line="134" column="1" bodyfile="daliuge-runtime/test/apps/dynlib_example.c" bodystart="151" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="headers_2dlg__app_8h_1a04ba3c58cf6108ab2f11ec70cd5610a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void data_written</definition>
+        <argsstring>(dlg_app_info *app, const char *uid, const char *data, size_t n)</argsstring>
+        <name>data_written</name>
+        <param>
+          <type><ref refid="struct__dlg__app__info" kindref="compound">dlg_app_info</ref> *</type>
+          <declname>app</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>uid</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Receives data written into one of the streaming inputs of the application. This method should be implemented only by streaming-oriented applications.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>app</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application instance </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>uid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The UID of the streaming input the newly arrived data belongs to. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The newly arrived data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the newly arrived data </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/headers/dlg_app.h" line="145" column="1" bodyfile="daliuge-runtime/test/apps/dynlib_example.c" bodystart="121" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="headers_2dlg__app_8h_1ab7a154484ea99e21aa7189cf3e93a791" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drop_completed</definition>
+        <argsstring>(dlg_app_info *app, const char *uid, drop_status status)</argsstring>
+        <name>drop_completed</name>
+        <param>
+          <type><ref refid="struct__dlg__app__info" kindref="compound">dlg_app_info</ref> *</type>
+          <declname>app</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>uid</declname>
+        </param>
+        <param>
+          <type>drop_status</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Signals an application that no more data is to be expected from one of its streaming inputs. This method should be implemented only by streaming-oriented applications.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>app</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The application instance </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>uid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The UID of the streaming input that has finished. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The final status in which the streaming input was found. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/headers/dlg_app.h" line="156" column="1" bodyfile="daliuge-runtime/test/apps/dynlib_example.c" bodystart="137" bodyend="149"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Data<sp/>structures<sp/>and<sp/>functions<sp/>definitions<sp/>for<sp/>DALiuGE<sp/>dynamic<sp/>libraries</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>implementing<sp/>a<sp/>DropApp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ICRAR<sp/>-<sp/>International<sp/>Centre<sp/>for<sp/>Radio<sp/>Astronomy<sp/>Research</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(c)<sp/>UWA<sp/>-<sp/>The<sp/>University<sp/>of<sp/>Western<sp/>Australia,<sp/>2017</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>by<sp/>UWA<sp/>(in<sp/>the<sp/>framework<sp/>of<sp/>the<sp/>ICRAR)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>All<sp/>rights<sp/>reserved</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>library<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>library<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>License<sp/>along<sp/>with<sp/>this<sp/>library;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Foundation,<sp/>Inc.,<sp/>59<sp/>Temple<sp/>Place,<sp/>Suite<sp/>330,<sp/>Boston,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MA<sp/>02111-1307<sp/><sp/>USA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>_drop_status<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>DROP_INITIALIZED<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>DROP_WRITING<sp/>=<sp/>1,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>DROP_COMPLETED<sp/>=<sp/>2,<sp/><sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>DROP_ERROR<sp/>=<sp/>3,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>DROP_EXPIRED<sp/>=<sp/>4,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>DROP_DELETED<sp/>=<sp/>5<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}<sp/>drop_status;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>_app_status<sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>APP_NOT_RUN<sp/>=<sp/>0,<sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>APP_RUNNING<sp/>=<sp/>1,<sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>APP_FINISHED<sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>APP_ERROR<sp/>=<sp/>3<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}<sp/>app_status;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__dlg__input__info" kindref="compound">_dlg_input_info</ref><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*uid;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*oid;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>drop_status<sp/>status;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>size_t<sp/>(*read)(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}<sp/><ref refid="struct__dlg__input__info" kindref="compound">dlg_input_info</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__dlg__streaming__input__info" kindref="compound">_dlg_streaming_input_info</ref><sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*uid;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*oid;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}<sp/><ref refid="struct__dlg__streaming__input__info" kindref="compound">dlg_streaming_input_info</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__dlg__output__info" kindref="compound">_dlg_output_info</ref><sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*uid;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*oid;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>size_t<sp/>(*write)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}<sp/><ref refid="struct__dlg__output__info" kindref="compound">dlg_output_info</ref>;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__dlg__app__info" kindref="compound">_dlg_app_info</ref><sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*appname;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*uid;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*oid;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*ranks;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_ranks;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__dlg__input__info" kindref="compound">dlg_input_info</ref><sp/>*inputs;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_inputs;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__dlg__input__info" kindref="compound">dlg_input_info</ref><sp/>*streaming_inputs;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_streaming_inputs;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__dlg__output__info" kindref="compound">dlg_output_info</ref><sp/>*outputs;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_outputs;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*running)();</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*done)(app_status<sp/>status);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">}<sp/><ref refid="struct__dlg__app__info" kindref="compound">dlg_app_info</ref>;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>init(<ref refid="struct__dlg__app__info" kindref="compound">dlg_app_info</ref><sp/>*app,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>***params);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>run(<ref refid="struct__dlg__app__info" kindref="compound">dlg_app_info</ref><sp/>*app);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>data_written(<ref refid="struct__dlg__app__info" kindref="compound">dlg_app_info</ref><sp/>*app,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*uid,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*data,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>drop_completed(<ref refid="struct__dlg__app__info" kindref="compound">dlg_app_info</ref><sp/>*app,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*uid,<sp/>drop_status<sp/>status);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="daliuge-runtime/headers/dlg_app.h"/>
+  </compounddef>
+</doxygen>

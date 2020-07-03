@@ -1,0 +1,789 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classdlg_1_1manager_1_1session_1_1Session" kind="class" language="Python" prot="public">
+    <compoundname>dlg::manager::session::Session</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classdlg_1_1manager_1_1session_1_1Session_1ac6a2847dd2090043e467da2e97992113" prot="private" static="yes" mutable="no">
+        <type></type>
+        <definition>dlg.manager.session.Session::__del__</definition>
+        <argsstring></argsstring>
+        <name>__del__</name>
+        <initializer>= destroy</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/session.py" line="394" column="1" bodyfile="daliuge-runtime/dlg/manager/session.py" bodystart="394" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdlg_1_1manager_1_1session_1_1Session_1a0e1f03e0bb624f929bf8a20f31b5b61b" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.manager.session.Session::_sessionId</definition>
+        <argsstring></argsstring>
+        <name>_sessionId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/session.py" line="88" column="1" bodyfile="daliuge-runtime/dlg/manager/session.py" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1manager_1_1session_1_1Session_1a6bbdfd2f1b0419dd6f7cf6954b3ceb8a" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.manager.session.Session::_graph</definition>
+        <argsstring></argsstring>
+        <name>_graph</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/session.py" line="89" column="1" bodyfile="daliuge-runtime/dlg/manager/session.py" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1manager_1_1session_1_1Session_1a0b8eda70437c3741b095069734054193" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.manager.session.Session::_drops</definition>
+        <argsstring></argsstring>
+        <name>_drops</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/session.py" line="90" column="1" bodyfile="daliuge-runtime/dlg/manager/session.py" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1manager_1_1session_1_1Session_1ad846ef0ea7f7615a1184761aee36083d" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.manager.session.Session::_statusLock</definition>
+        <argsstring></argsstring>
+        <name>_statusLock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/session.py" line="91" column="1" bodyfile="daliuge-runtime/dlg/manager/session.py" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1manager_1_1session_1_1Session_1a4497a402cfebb7944e099d32ff6924d9" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.manager.session.Session::_roots</definition>
+        <argsstring></argsstring>
+        <name>_roots</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/session.py" line="92" column="1" bodyfile="daliuge-runtime/dlg/manager/session.py" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1manager_1_1session_1_1Session_1a652826193c23dc16231be4baa06f5d15" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.manager.session.Session::_proxyinfo</definition>
+        <argsstring></argsstring>
+        <name>_proxyinfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/session.py" line="93" column="1" bodyfile="daliuge-runtime/dlg/manager/session.py" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1manager_1_1session_1_1Session_1a10e90c4ad8dbc77494c02051c6ef4321" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.manager.session.Session::_worker</definition>
+        <argsstring></argsstring>
+        <name>_worker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/session.py" line="94" column="1" bodyfile="daliuge-runtime/dlg/manager/session.py" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1manager_1_1session_1_1Session_1a153de7affb3b642b7a34c8fb5565bab5" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.manager.session.Session::_status</definition>
+        <argsstring></argsstring>
+        <name>_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/session.py" line="95" column="1" bodyfile="daliuge-runtime/dlg/manager/session.py" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1manager_1_1session_1_1Session_1a63c3e186a181029049616ff93892deeb" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.manager.session.Session::_error_status_listener</definition>
+        <argsstring></argsstring>
+        <name>_error_status_listener</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/session.py" line="96" column="1" bodyfile="daliuge-runtime/dlg/manager/session.py" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1manager_1_1session_1_1Session_1a80e030391afc0ae50bd30409c559d897" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.manager.session.Session::_nm</definition>
+        <argsstring></argsstring>
+        <name>_nm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/session.py" line="97" column="1" bodyfile="daliuge-runtime/dlg/manager/session.py" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1manager_1_1session_1_1Session_1a264fdccddb83f2b9ccfa6d9033fd9a4d" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.manager.session.Session::_dropsubs</definition>
+        <argsstring></argsstring>
+        <name>_dropsubs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/session.py" line="98" column="1" bodyfile="daliuge-runtime/dlg/manager/session.py" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdlg_1_1manager_1_1session_1_1Session_1afd296168fdb47dc715cff3cb5acfff62" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.manager.session.Session::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/session.py" line="146" column="1" bodyfile="daliuge-runtime/dlg/manager/session.py" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdlg_1_1manager_1_1session_1_1Session_1a4f112be3d0f47e78e7e5cc228757655b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.session.Session.__init__</definition>
+        <argsstring>(self, sessionId, nm=None)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>sessionId</type>
+          <defname>sessionId</defname>
+        </param>
+        <param>
+          <type>nm</type>
+          <defname>nm</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/session.py" line="87" column="1" bodyfile="daliuge-runtime/dlg/manager/session.py" bodystart="87" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1session_1_1Session_1a9646ba74107236e75a131a34c3ddd92b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.session.Session.sessionId</definition>
+        <argsstring>(self)</argsstring>
+        <name>sessionId</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/session.py" line="101" column="1" bodyfile="daliuge-runtime/dlg/manager/session.py" bodystart="101" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1session_1_1Session_1a5b3c0814f066f7ebccc68f2d6fbde68e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.session.Session.status</definition>
+        <argsstring>(self)</argsstring>
+        <name>status</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/session.py" line="105" column="1" bodyfile="daliuge-runtime/dlg/manager/session.py" bodystart="105" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1session_1_1Session_1a88be5d154129c66999b2ddf2016ba336" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.session.Session.status</definition>
+        <argsstring>(self, status)</argsstring>
+        <name>status</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>status</type>
+          <defname>status</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/session.py" line="110" column="1" bodyfile="daliuge-runtime/dlg/manager/session.py" bodystart="110" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1session_1_1Session_1a0a74ab95e426254390abe09a8ae23e81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.session.Session.roots</definition>
+        <argsstring>(self)</argsstring>
+        <name>roots</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/session.py" line="115" column="1" bodyfile="daliuge-runtime/dlg/manager/session.py" bodystart="115" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1session_1_1Session_1a8c89bb9e661cebe958d7ddbfac47bc5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.session.Session.drops</definition>
+        <argsstring>(self)</argsstring>
+        <name>drops</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/session.py" line="119" column="1" bodyfile="daliuge-runtime/dlg/manager/session.py" bodystart="119" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1session_1_1Session_1a1d7b52344beffbd778a768cf3ad69dba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.session.Session.addGraphSpec</definition>
+        <argsstring>(self, graphSpec)</argsstring>
+        <name>addGraphSpec</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>graphSpec</type>
+          <defname>graphSpec</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Adds the graph specification given in `graphSpec` to the
+graph specification currently held by this session. A graphSpec is a
+list of dictionaries, each of which contains the information of one
+DROP. Each DROP specification is checked to see it contains
+all the necessary details to construct a proper DROP. If one
+DROP specification is found to be inconsistent the whole operation
+fill wail.
+
+Adding graph specs to the session is only allowed while the session is
+in the PRISTINE or BUILDING status; otherwise an exception will be
+raised.
+
+If the `graphSpec` being added contains DROPs that have already
+been added to the session an exception will be raised. DROPs are
+uniquely identified by their OID at this point.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/session.py" line="123" column="1" bodyfile="daliuge-runtime/dlg/manager/session.py" bodystart="123" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1session_1_1Session_1a91c10d512170d3a5b60ce2367e88a4cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.session.Session.linkGraphParts</definition>
+        <argsstring>(self, lhOID, rhOID, linkType, force=False)</argsstring>
+        <name>linkGraphParts</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>lhOID</type>
+          <defname>lhOID</defname>
+        </param>
+        <param>
+          <type>rhOID</type>
+          <defname>rhOID</defname>
+        </param>
+        <param>
+          <type>linkType</type>
+          <defname>linkType</defname>
+        </param>
+        <param>
+          <type>force</type>
+          <defname>force</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Links together two DROP specifications (i.e., those pointed by
+`lhOID` and `rhOID`) using `linkType`. The DROP specifications
+must both already be part of one of the graph specs contained in this
+session; otherwise an exception will be raised.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/session.py" line="161" column="1" bodyfile="daliuge-runtime/dlg/manager/session.py" bodystart="161" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1session_1_1Session_1a4467948b5c97c93ec8d0cada9bd83094" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.session.Session.deploy</definition>
+        <argsstring>(self, completedDrops=[], event_listeners=[], foreach=None)</argsstring>
+        <name>deploy</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>completedDrops</type>
+          <defname>completedDrops</defname>
+          <defval>[]</defval>
+        </param>
+        <param>
+          <type>event_listeners</type>
+          <defname>event_listeners</defname>
+          <defval>[]</defval>
+        </param>
+        <param>
+          <type>foreach</type>
+          <defname>foreach</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Creates the DROPs represented by all the graph specs contained in
+this session, effectively deploying them.
+
+When this method has finished executing a Pyro Daemon will also be
+up and running, servicing requests to access to all the DROPs
+belonging to this session
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/session.py" line="185" column="1" bodyfile="daliuge-runtime/dlg/manager/session.py" bodystart="185" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1session_1_1Session_1a1037a76d75637d43244c5d706b949348" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.session.Session.trigger_drops</definition>
+        <argsstring>(self, uids)</argsstring>
+        <name>trigger_drops</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>uids</type>
+          <defname>uids</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/session.py" line="281" column="1" bodyfile="daliuge-runtime/dlg/manager/session.py" bodystart="281" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1session_1_1Session_1a25256ffc40b1381a7177d40fd1a4e5e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.session.Session.deliver_event</definition>
+        <argsstring>(self, evt)</argsstring>
+        <name>deliver_event</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>evt</type>
+          <defname>evt</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Called when an event has been fired by a remote drop.
+The event is then delivered to the interested drops of this session.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/session.py" line="291" column="1" bodyfile="daliuge-runtime/dlg/manager/session.py" bodystart="291" bodyend="303"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1session_1_1Session_1a187f5bc7e1f96b4c63e3429da96203a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.session.Session.add_node_subscriptions</definition>
+        <argsstring>(self, relationships)</argsstring>
+        <name>add_node_subscriptions</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>relationships</type>
+          <defname>relationships</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/session.py" line="304" column="1" bodyfile="daliuge-runtime/dlg/manager/session.py" bodystart="304" bodyend="351"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1session_1_1Session_1a2ded79f6a99ab02c82dd2f980e95e33f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.session.Session.finish</definition>
+        <argsstring>(self)</argsstring>
+        <name>finish</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/session.py" line="353" column="1" bodyfile="daliuge-runtime/dlg/manager/session.py" bodystart="353" bodyend="356"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1session_1_1Session_1abb9ccdcca22a5a89f925be7e706bceb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.session.Session.getGraphStatus</definition>
+        <argsstring>(self)</argsstring>
+        <name>getGraphStatus</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/session.py" line="357" column="1" bodyfile="daliuge-runtime/dlg/manager/session.py" bodystart="357" bodyend="375"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1session_1_1Session_1a3cb9c2e62ae4fdb49988e0d103613abc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.session.Session.cancel</definition>
+        <argsstring>(self)</argsstring>
+        <name>cancel</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/session.py" line="377" column="1" bodyfile="daliuge-runtime/dlg/manager/session.py" bodystart="377" bodyend="387"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1session_1_1Session_1a5cbf61a2c1c762c74e20f861886cdc82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.session.Session.getGraph</definition>
+        <argsstring>(self)</argsstring>
+        <name>getGraph</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/session.py" line="388" column="1" bodyfile="daliuge-runtime/dlg/manager/session.py" bodystart="388" bodyend="390"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1session_1_1Session_1a96d09cff6aed2acdd26fcd8c2b62be00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.session.Session.destroy</definition>
+        <argsstring>(self)</argsstring>
+        <name>destroy</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/session.py" line="391" column="1" bodyfile="daliuge-runtime/dlg/manager/session.py" bodystart="391" bodyend="393"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1session_1_1Session_1ab5429a98a51ff78c8877984f983c86dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.session.Session.has_method</definition>
+        <argsstring>(self, uid, mname)</argsstring>
+        <name>has_method</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>uid</type>
+          <defname>uid</defname>
+        </param>
+        <param>
+          <type>mname</type>
+          <defname>mname</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/session.py" line="396" column="1" bodyfile="daliuge-runtime/dlg/manager/session.py" bodystart="396" bodyend="404"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1session_1_1Session_1a9f1fdc6919ec838dbab3b2c93391c136" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.session.Session.get_drop_property</definition>
+        <argsstring>(self, uid, prop_name)</argsstring>
+        <name>get_drop_property</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>uid</type>
+          <defname>uid</defname>
+        </param>
+        <param>
+          <type>prop_name</type>
+          <defname>prop_name</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/session.py" line="405" column="1" bodyfile="daliuge-runtime/dlg/manager/session.py" bodystart="405" bodyend="413"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1session_1_1Session_1af734ce57994edfa58fae80f0b6670df9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.session.Session.call_drop</definition>
+        <argsstring>(self, uid, method, args)</argsstring>
+        <name>call_drop</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>uid</type>
+          <defname>uid</defname>
+        </param>
+        <param>
+          <type>method</type>
+          <defname>method</defname>
+        </param>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/session.py" line="414" column="1" bodyfile="daliuge-runtime/dlg/manager/session.py" bodystart="414" bodyend="423"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1session_1_1Session_1ad4a91947889f58262dbfded062d9bc9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.session.Session.__enter__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__enter__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/session.py" line="425" column="1" bodyfile="daliuge-runtime/dlg/manager/session.py" bodystart="425" bodyend="427"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1session_1_1Session_1a3468d14ec66531e097db3cfe3d16c1d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.session.Session.__exit__</definition>
+        <argsstring>(self, typ, value, traceback)</argsstring>
+        <name>__exit__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>typ</type>
+          <defname>typ</defname>
+        </param>
+        <param>
+          <type>value</type>
+          <defname>value</defname>
+        </param>
+        <param>
+          <type>traceback</type>
+          <defname>traceback</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/session.py" line="428" column="1" bodyfile="daliuge-runtime/dlg/manager/session.py" bodystart="428" bodyend="430"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdlg_1_1manager_1_1session_1_1Session_1a90a85833ca334fb2d585f32af843a746" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.session.Session._run</definition>
+        <argsstring>(self, worker)</argsstring>
+        <name>_run</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>worker</type>
+          <defname>worker</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/session.py" line="276" column="1" bodyfile="daliuge-runtime/dlg/manager/session.py" bodystart="276" bodyend="280"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>A DROP graph execution.
+
+A session is the runtime incarnation of a given DROP graph that gets
+executed in our framework. Thus, different executions of the same graph
+parts or specifications lead to different sessions.
+
+In order to be flexible enough, a session starts in a PRISTINE status. While
+in PRISTINE status &quot;graph parts&quot; can be added to it in separate calls, which
+can be connected later. The first time a &quot;graph part&quot; is added to the
+session its status is changed to BUILDING. Once all the parts have been
+submitted, users can finally deploy the session, which will move the session
+to the DEPLOYING status first, create the actual DROPs, and then move
+the session to the RUNNING status later. Once the execution of the
+graph has finished the session is moved to FINISHED.
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="2835">
+        <label>object</label>
+      </node>
+      <node id="2834">
+        <label>dlg.manager.session.Session</label>
+        <link refid="classdlg_1_1manager_1_1session_1_1Session"/>
+        <childnode refid="2835" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2837">
+        <label>object</label>
+      </node>
+      <node id="2836">
+        <label>dlg.manager.session.Session</label>
+        <link refid="classdlg_1_1manager_1_1session_1_1Session"/>
+        <childnode refid="2837" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="daliuge-runtime/dlg/manager/session.py" line="69" column="1" bodyfile="daliuge-runtime/dlg/manager/session.py" bodystart="69" bodyend="430"/>
+    <listofallmembers>
+      <member refid="classdlg_1_1manager_1_1session_1_1Session_1ac6a2847dd2090043e467da2e97992113" prot="private" virt="non-virtual"><scope>dlg::manager::session::Session</scope><name>__del__</name></member>
+      <member refid="classdlg_1_1manager_1_1session_1_1Session_1ad4a91947889f58262dbfded062d9bc9f" prot="public" virt="non-virtual"><scope>dlg::manager::session::Session</scope><name>__enter__</name></member>
+      <member refid="classdlg_1_1manager_1_1session_1_1Session_1a3468d14ec66531e097db3cfe3d16c1d0" prot="public" virt="non-virtual"><scope>dlg::manager::session::Session</scope><name>__exit__</name></member>
+      <member refid="classdlg_1_1manager_1_1session_1_1Session_1a4f112be3d0f47e78e7e5cc228757655b" prot="public" virt="non-virtual"><scope>dlg::manager::session::Session</scope><name>__init__</name></member>
+      <member refid="classdlg_1_1manager_1_1session_1_1Session_1a0b8eda70437c3741b095069734054193" prot="private" virt="non-virtual"><scope>dlg::manager::session::Session</scope><name>_drops</name></member>
+      <member refid="classdlg_1_1manager_1_1session_1_1Session_1a264fdccddb83f2b9ccfa6d9033fd9a4d" prot="private" virt="non-virtual"><scope>dlg::manager::session::Session</scope><name>_dropsubs</name></member>
+      <member refid="classdlg_1_1manager_1_1session_1_1Session_1a63c3e186a181029049616ff93892deeb" prot="private" virt="non-virtual"><scope>dlg::manager::session::Session</scope><name>_error_status_listener</name></member>
+      <member refid="classdlg_1_1manager_1_1session_1_1Session_1a6bbdfd2f1b0419dd6f7cf6954b3ceb8a" prot="private" virt="non-virtual"><scope>dlg::manager::session::Session</scope><name>_graph</name></member>
+      <member refid="classdlg_1_1manager_1_1session_1_1Session_1a80e030391afc0ae50bd30409c559d897" prot="private" virt="non-virtual"><scope>dlg::manager::session::Session</scope><name>_nm</name></member>
+      <member refid="classdlg_1_1manager_1_1session_1_1Session_1a652826193c23dc16231be4baa06f5d15" prot="private" virt="non-virtual"><scope>dlg::manager::session::Session</scope><name>_proxyinfo</name></member>
+      <member refid="classdlg_1_1manager_1_1session_1_1Session_1a4497a402cfebb7944e099d32ff6924d9" prot="private" virt="non-virtual"><scope>dlg::manager::session::Session</scope><name>_roots</name></member>
+      <member refid="classdlg_1_1manager_1_1session_1_1Session_1a90a85833ca334fb2d585f32af843a746" prot="private" virt="non-virtual"><scope>dlg::manager::session::Session</scope><name>_run</name></member>
+      <member refid="classdlg_1_1manager_1_1session_1_1Session_1a0e1f03e0bb624f929bf8a20f31b5b61b" prot="private" virt="non-virtual"><scope>dlg::manager::session::Session</scope><name>_sessionId</name></member>
+      <member refid="classdlg_1_1manager_1_1session_1_1Session_1a153de7affb3b642b7a34c8fb5565bab5" prot="private" virt="non-virtual"><scope>dlg::manager::session::Session</scope><name>_status</name></member>
+      <member refid="classdlg_1_1manager_1_1session_1_1Session_1ad846ef0ea7f7615a1184761aee36083d" prot="private" virt="non-virtual"><scope>dlg::manager::session::Session</scope><name>_statusLock</name></member>
+      <member refid="classdlg_1_1manager_1_1session_1_1Session_1a10e90c4ad8dbc77494c02051c6ef4321" prot="private" virt="non-virtual"><scope>dlg::manager::session::Session</scope><name>_worker</name></member>
+      <member refid="classdlg_1_1manager_1_1session_1_1Session_1a187f5bc7e1f96b4c63e3429da96203a2" prot="public" virt="non-virtual"><scope>dlg::manager::session::Session</scope><name>add_node_subscriptions</name></member>
+      <member refid="classdlg_1_1manager_1_1session_1_1Session_1a1d7b52344beffbd778a768cf3ad69dba" prot="public" virt="non-virtual"><scope>dlg::manager::session::Session</scope><name>addGraphSpec</name></member>
+      <member refid="classdlg_1_1manager_1_1session_1_1Session_1af734ce57994edfa58fae80f0b6670df9" prot="public" virt="non-virtual"><scope>dlg::manager::session::Session</scope><name>call_drop</name></member>
+      <member refid="classdlg_1_1manager_1_1session_1_1Session_1a3cb9c2e62ae4fdb49988e0d103613abc" prot="public" virt="non-virtual"><scope>dlg::manager::session::Session</scope><name>cancel</name></member>
+      <member refid="classdlg_1_1manager_1_1session_1_1Session_1a25256ffc40b1381a7177d40fd1a4e5e4" prot="public" virt="non-virtual"><scope>dlg::manager::session::Session</scope><name>deliver_event</name></member>
+      <member refid="classdlg_1_1manager_1_1session_1_1Session_1a4467948b5c97c93ec8d0cada9bd83094" prot="public" virt="non-virtual"><scope>dlg::manager::session::Session</scope><name>deploy</name></member>
+      <member refid="classdlg_1_1manager_1_1session_1_1Session_1a96d09cff6aed2acdd26fcd8c2b62be00" prot="public" virt="non-virtual"><scope>dlg::manager::session::Session</scope><name>destroy</name></member>
+      <member refid="classdlg_1_1manager_1_1session_1_1Session_1a8c89bb9e661cebe958d7ddbfac47bc5f" prot="public" virt="non-virtual"><scope>dlg::manager::session::Session</scope><name>drops</name></member>
+      <member refid="classdlg_1_1manager_1_1session_1_1Session_1a2ded79f6a99ab02c82dd2f980e95e33f" prot="public" virt="non-virtual"><scope>dlg::manager::session::Session</scope><name>finish</name></member>
+      <member refid="classdlg_1_1manager_1_1session_1_1Session_1a9f1fdc6919ec838dbab3b2c93391c136" prot="public" virt="non-virtual"><scope>dlg::manager::session::Session</scope><name>get_drop_property</name></member>
+      <member refid="classdlg_1_1manager_1_1session_1_1Session_1a5cbf61a2c1c762c74e20f861886cdc82" prot="public" virt="non-virtual"><scope>dlg::manager::session::Session</scope><name>getGraph</name></member>
+      <member refid="classdlg_1_1manager_1_1session_1_1Session_1abb9ccdcca22a5a89f925be7e706bceb8" prot="public" virt="non-virtual"><scope>dlg::manager::session::Session</scope><name>getGraphStatus</name></member>
+      <member refid="classdlg_1_1manager_1_1session_1_1Session_1ab5429a98a51ff78c8877984f983c86dc" prot="public" virt="non-virtual"><scope>dlg::manager::session::Session</scope><name>has_method</name></member>
+      <member refid="classdlg_1_1manager_1_1session_1_1Session_1a91c10d512170d3a5b60ce2367e88a4cc" prot="public" virt="non-virtual"><scope>dlg::manager::session::Session</scope><name>linkGraphParts</name></member>
+      <member refid="classdlg_1_1manager_1_1session_1_1Session_1a0a74ab95e426254390abe09a8ae23e81" prot="public" virt="non-virtual"><scope>dlg::manager::session::Session</scope><name>roots</name></member>
+      <member refid="classdlg_1_1manager_1_1session_1_1Session_1a9646ba74107236e75a131a34c3ddd92b" prot="public" virt="non-virtual"><scope>dlg::manager::session::Session</scope><name>sessionId</name></member>
+      <member refid="classdlg_1_1manager_1_1session_1_1Session_1afd296168fdb47dc715cff3cb5acfff62" prot="public" virt="non-virtual"><scope>dlg::manager::session::Session</scope><name>status</name></member>
+      <member refid="classdlg_1_1manager_1_1session_1_1Session_1a5b3c0814f066f7ebccc68f2d6fbde68e" prot="public" virt="non-virtual"><scope>dlg::manager::session::Session</scope><name>status</name></member>
+      <member refid="classdlg_1_1manager_1_1session_1_1Session_1a88be5d154129c66999b2ddf2016ba336" prot="public" virt="non-virtual"><scope>dlg::manager::session::Session</scope><name>status</name></member>
+      <member refid="classdlg_1_1manager_1_1session_1_1Session_1a1037a76d75637d43244c5d706b949348" prot="public" virt="non-virtual"><scope>dlg::manager::session::Session</scope><name>trigger_drops</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

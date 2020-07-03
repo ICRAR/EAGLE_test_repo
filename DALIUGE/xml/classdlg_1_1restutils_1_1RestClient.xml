@@ -1,0 +1,426 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classdlg_1_1restutils_1_1RestClient" kind="class" language="Python" prot="public">
+    <compoundname>dlg::restutils::RestClient</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classdlg_1_1restutils_1_1RestClient_1a753de9b0b56ca831e96fb3ca0a024ac1" prot="private" static="yes" mutable="no">
+        <type></type>
+        <definition>dlg.restutils.RestClient::__del__</definition>
+        <argsstring></argsstring>
+        <name>__del__</name>
+        <initializer>= _close</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-common/dlg/restutils.py" line="114" column="1" bodyfile="daliuge-common/dlg/restutils.py" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdlg_1_1restutils_1_1RestClient_1ac85246ad1db2c8de419a0a8fdeef7da0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.restutils.RestClient::host</definition>
+        <argsstring></argsstring>
+        <name>host</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-common/dlg/restutils.py" line="102" column="1" bodyfile="daliuge-common/dlg/restutils.py" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1restutils_1_1RestClient_1a350a42f998b0fb6ce95f6088fa73e750" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.restutils.RestClient::port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-common/dlg/restutils.py" line="103" column="1" bodyfile="daliuge-common/dlg/restutils.py" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1restutils_1_1RestClient_1ae0f7310ba236613796e802d1e25e1176" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.restutils.RestClient::timeout</definition>
+        <argsstring></argsstring>
+        <name>timeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-common/dlg/restutils.py" line="104" column="1" bodyfile="daliuge-common/dlg/restutils.py" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdlg_1_1restutils_1_1RestClient_1a7b2cf61337d2a73c126573be07fec8c6" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.restutils.RestClient::_conn</definition>
+        <argsstring></argsstring>
+        <name>_conn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-common/dlg/restutils.py" line="105" column="1" bodyfile="daliuge-common/dlg/restutils.py" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1restutils_1_1RestClient_1a517682d36c45b1accbf945a18fe0c1fd" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.restutils.RestClient::_resp</definition>
+        <argsstring></argsstring>
+        <name>_resp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-common/dlg/restutils.py" line="106" column="1" bodyfile="daliuge-common/dlg/restutils.py" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdlg_1_1restutils_1_1RestClient_1ae31955e44f3ba55c2a7529634c4fc648" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.restutils.RestClient.__init__</definition>
+        <argsstring>(self, host, port, timeout=None)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>host</type>
+          <defname>host</defname>
+        </param>
+        <param>
+          <type>port</type>
+          <defname>port</defname>
+        </param>
+        <param>
+          <type>timeout</type>
+          <defname>timeout</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-common/dlg/restutils.py" line="101" column="1" bodyfile="daliuge-common/dlg/restutils.py" bodystart="101" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1restutils_1_1RestClient_1a9875ce6f64f41e0205d2ff28f62b0909" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.restutils.RestClient.__enter__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__enter__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-common/dlg/restutils.py" line="115" column="1" bodyfile="daliuge-common/dlg/restutils.py" bodystart="115" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1restutils_1_1RestClient_1a1cafd3088e1f3cb107b7db2a7f5aae60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.restutils.RestClient.__exit__</definition>
+        <argsstring>(self, typ, value, traceback)</argsstring>
+        <name>__exit__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>typ</type>
+          <defname>typ</defname>
+        </param>
+        <param>
+          <type>value</type>
+          <defname>value</defname>
+        </param>
+        <param>
+          <type>traceback</type>
+          <defname>traceback</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-common/dlg/restutils.py" line="117" column="1" bodyfile="daliuge-common/dlg/restutils.py" bodystart="117" bodyend="122"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdlg_1_1restutils_1_1RestClient_1a31c59c1f45c6c65d91828043a00e92c2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.restutils.RestClient._close</definition>
+        <argsstring>(self)</argsstring>
+        <name>_close</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-common/dlg/restutils.py" line="108" column="1" bodyfile="daliuge-common/dlg/restutils.py" bodystart="108" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1restutils_1_1RestClient_1a7c6b0258691bb775a08b3b3c50a98816" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.restutils.RestClient._get_json</definition>
+        <argsstring>(self, url)</argsstring>
+        <name>_get_json</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>url</type>
+          <defname>url</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-common/dlg/restutils.py" line="123" column="1" bodyfile="daliuge-common/dlg/restutils.py" bodystart="123" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1restutils_1_1RestClient_1a5f753daf33624afeefa1cce8dca6f699" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.restutils.RestClient._post_form</definition>
+        <argsstring>(self, url, content=None)</argsstring>
+        <name>_post_form</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>url</type>
+          <defname>url</defname>
+        </param>
+        <param>
+          <type>content</type>
+          <defname>content</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-common/dlg/restutils.py" line="127" column="1" bodyfile="daliuge-common/dlg/restutils.py" bodystart="127" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1restutils_1_1RestClient_1a4d5bb4d09545e31b67e7ff8c5122bd8f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.restutils.RestClient._post_json</definition>
+        <argsstring>(self, url, content, compress=False)</argsstring>
+        <name>_post_json</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>url</type>
+          <defname>url</defname>
+        </param>
+        <param>
+          <type>content</type>
+          <defname>content</defname>
+        </param>
+        <param>
+          <type>compress</type>
+          <defname>compress</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-common/dlg/restutils.py" line="133" column="1" bodyfile="daliuge-common/dlg/restutils.py" bodystart="133" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1restutils_1_1RestClient_1ae1b7b415f0a3700e4fb971897a6680fd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.restutils.RestClient._GET</definition>
+        <argsstring>(self, url)</argsstring>
+        <name>_GET</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>url</type>
+          <defname>url</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-common/dlg/restutils.py" line="139" column="1" bodyfile="daliuge-common/dlg/restutils.py" bodystart="139" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1restutils_1_1RestClient_1aecd1337195a186d9c17a986be7df86d1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.restutils.RestClient._POST</definition>
+        <argsstring>(self, url, content=None, content_type=None, compress=False)</argsstring>
+        <name>_POST</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>url</type>
+          <defname>url</defname>
+        </param>
+        <param>
+          <type>content</type>
+          <defname>content</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>content_type</type>
+          <defname>content_type</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>compress</type>
+          <defname>compress</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-common/dlg/restutils.py" line="142" column="1" bodyfile="daliuge-common/dlg/restutils.py" bodystart="142" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1restutils_1_1RestClient_1a9feecdec302cefc33c8fab9ce83a020f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.restutils.RestClient._DELETE</definition>
+        <argsstring>(self, url)</argsstring>
+        <name>_DELETE</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>url</type>
+          <defname>url</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-common/dlg/restutils.py" line="155" column="1" bodyfile="daliuge-common/dlg/restutils.py" bodystart="155" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1restutils_1_1RestClient_1ae30a96d580bac4623c1c5ccb50d7df5e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.restutils.RestClient._request</definition>
+        <argsstring>(self, url, method, content=None, headers={})</argsstring>
+        <name>_request</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>url</type>
+          <defname>url</defname>
+        </param>
+        <param>
+          <type>method</type>
+          <defname>method</defname>
+        </param>
+        <param>
+          <type>content</type>
+          <defname>content</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>headers</type>
+          <defname>headers</defname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-common/dlg/restutils.py" line="158" column="1" bodyfile="daliuge-common/dlg/restutils.py" bodystart="158" bodyend="202"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>The base class for our REST clients
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="2732">
+        <label>dlg.restutils.RestClient</label>
+        <link refid="classdlg_1_1restutils_1_1RestClient"/>
+        <childnode refid="2733" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2733">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2734">
+        <label>dlg.restutils.RestClient</label>
+        <link refid="classdlg_1_1restutils_1_1RestClient"/>
+        <childnode refid="2735" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2735">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="daliuge-common/dlg/restutils.py" line="96" column="1" bodyfile="daliuge-common/dlg/restutils.py" bodystart="96" bodyend="202"/>
+    <listofallmembers>
+      <member refid="classdlg_1_1restutils_1_1RestClient_1a753de9b0b56ca831e96fb3ca0a024ac1" prot="private" virt="non-virtual"><scope>dlg::restutils::RestClient</scope><name>__del__</name></member>
+      <member refid="classdlg_1_1restutils_1_1RestClient_1a9875ce6f64f41e0205d2ff28f62b0909" prot="public" virt="non-virtual"><scope>dlg::restutils::RestClient</scope><name>__enter__</name></member>
+      <member refid="classdlg_1_1restutils_1_1RestClient_1a1cafd3088e1f3cb107b7db2a7f5aae60" prot="public" virt="non-virtual"><scope>dlg::restutils::RestClient</scope><name>__exit__</name></member>
+      <member refid="classdlg_1_1restutils_1_1RestClient_1ae31955e44f3ba55c2a7529634c4fc648" prot="public" virt="non-virtual"><scope>dlg::restutils::RestClient</scope><name>__init__</name></member>
+      <member refid="classdlg_1_1restutils_1_1RestClient_1a31c59c1f45c6c65d91828043a00e92c2" prot="private" virt="non-virtual"><scope>dlg::restutils::RestClient</scope><name>_close</name></member>
+      <member refid="classdlg_1_1restutils_1_1RestClient_1a7b2cf61337d2a73c126573be07fec8c6" prot="private" virt="non-virtual"><scope>dlg::restutils::RestClient</scope><name>_conn</name></member>
+      <member refid="classdlg_1_1restutils_1_1RestClient_1a9feecdec302cefc33c8fab9ce83a020f" prot="private" virt="non-virtual"><scope>dlg::restutils::RestClient</scope><name>_DELETE</name></member>
+      <member refid="classdlg_1_1restutils_1_1RestClient_1ae1b7b415f0a3700e4fb971897a6680fd" prot="private" virt="non-virtual"><scope>dlg::restutils::RestClient</scope><name>_GET</name></member>
+      <member refid="classdlg_1_1restutils_1_1RestClient_1a7c6b0258691bb775a08b3b3c50a98816" prot="private" virt="non-virtual"><scope>dlg::restutils::RestClient</scope><name>_get_json</name></member>
+      <member refid="classdlg_1_1restutils_1_1RestClient_1aecd1337195a186d9c17a986be7df86d1" prot="private" virt="non-virtual"><scope>dlg::restutils::RestClient</scope><name>_POST</name></member>
+      <member refid="classdlg_1_1restutils_1_1RestClient_1a5f753daf33624afeefa1cce8dca6f699" prot="private" virt="non-virtual"><scope>dlg::restutils::RestClient</scope><name>_post_form</name></member>
+      <member refid="classdlg_1_1restutils_1_1RestClient_1a4d5bb4d09545e31b67e7ff8c5122bd8f" prot="private" virt="non-virtual"><scope>dlg::restutils::RestClient</scope><name>_post_json</name></member>
+      <member refid="classdlg_1_1restutils_1_1RestClient_1ae30a96d580bac4623c1c5ccb50d7df5e" prot="private" virt="non-virtual"><scope>dlg::restutils::RestClient</scope><name>_request</name></member>
+      <member refid="classdlg_1_1restutils_1_1RestClient_1a517682d36c45b1accbf945a18fe0c1fd" prot="private" virt="non-virtual"><scope>dlg::restutils::RestClient</scope><name>_resp</name></member>
+      <member refid="classdlg_1_1restutils_1_1RestClient_1ac85246ad1db2c8de419a0a8fdeef7da0" prot="public" virt="non-virtual"><scope>dlg::restutils::RestClient</scope><name>host</name></member>
+      <member refid="classdlg_1_1restutils_1_1RestClient_1a350a42f998b0fb6ce95f6088fa73e750" prot="public" virt="non-virtual"><scope>dlg::restutils::RestClient</scope><name>port</name></member>
+      <member refid="classdlg_1_1restutils_1_1RestClient_1ae0f7310ba236613796e802d1e25e1176" prot="public" virt="non-virtual"><scope>dlg::restutils::RestClient</scope><name>timeout</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

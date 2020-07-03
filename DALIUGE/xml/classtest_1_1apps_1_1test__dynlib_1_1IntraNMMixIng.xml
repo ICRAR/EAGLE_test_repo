@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtest_1_1apps_1_1test__dynlib_1_1IntraNMMixIng" kind="class" language="Python" prot="public">
+    <compoundname>test::apps::test_dynlib::IntraNMMixIng</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">NMTestsMixIn</basecompoundref>
+    <derivedcompoundref refid="classtest_1_1apps_1_1test__dynlib_1_1IntraNMDynlibAppTest" prot="public" virt="non-virtual">test.apps.test_dynlib.IntraNMDynlibAppTest</derivedcompoundref>
+    <derivedcompoundref refid="classtest_1_1apps_1_1test__dynlib_1_1IntraNMDynlibProcAppTest" prot="public" virt="non-virtual">test.apps.test_dynlib.IntraNMDynlibProcAppTest</derivedcompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtest_1_1apps_1_1test__dynlib_1_1IntraNMMixIng_1afa01b0cc1bc0857a80e0165f21818fba" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>test.apps.test_dynlib.IntraNMMixIng::app</definition>
+        <argsstring></argsstring>
+        <name>app</name>
+        <initializer>= None</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/test/apps/test_dynlib.py" line="120" column="1" bodyfile="daliuge-runtime/test/apps/test_dynlib.py" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtest_1_1apps_1_1test__dynlib_1_1IntraNMMixIng_1a95f5454e3f749fcf089e298b81de2536" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def test.apps.test_dynlib.IntraNMMixIng.test_input_in_remote_nm</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_input_in_remote_nm</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>A test similar in spirit to TestDM.test_runGraphOneDOPerDom, but where
+application B is a DynlibApp. This makes sure that DynlibApps work fine
+across Node Managers.
+
+NM #1      NM #2
+=======    =============
+| A --|----|-&gt; B --&gt; C |
+=======    =============
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/test/apps/test_dynlib.py" line="122" column="1" bodyfile="daliuge-runtime/test/apps/test_dynlib.py" bodystart="122" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1apps_1_1test__dynlib_1_1IntraNMMixIng_1a8ff35d7b321576c5f7e3138bff714dd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def test.apps.test_dynlib.IntraNMMixIng.test_output_in_remote_nm</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_output_in_remote_nm</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Like the above, but with this graph. In this case the output (instead of
+the input) is in a remote Node Manager.
+
+NM #1            NM #2
+=============    =======
+| A --&gt; B --|----|-&gt; C |
+=============    =======
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/test/apps/test_dynlib.py" line="149" column="1" bodyfile="daliuge-runtime/test/apps/test_dynlib.py" bodystart="149" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1apps_1_1test__dynlib_1_1IntraNMMixIng_1aff8194afecaf93471c8e17074c75beb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def test.apps.test_dynlib.IntraNMMixIng.test_multiple_inputs_in_remote_nm</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_multiple_inputs_in_remote_nm</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Like the above, but with this graph. In this case two inputs are
+located in a remote Node Manager.
+
+NM #1      NM #2
+=======    ===============
+| A --|----|-|           |
+|     |    | |-&gt; C --&gt; D |
+| B --|----|-|           |
+=======    ===============
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/test/apps/test_dynlib.py" line="175" column="1" bodyfile="daliuge-runtime/test/apps/test_dynlib.py" bodystart="175" bodyend="211"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2293">
+        <label>test.apps.test_dynlib.IntraNMDynlibAppTest</label>
+        <link refid="classtest_1_1apps_1_1test__dynlib_1_1IntraNMDynlibAppTest"/>
+        <childnode refid="2291" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2294">
+        <label>test.apps.test_dynlib.IntraNMDynlibProcAppTest</label>
+        <link refid="classtest_1_1apps_1_1test__dynlib_1_1IntraNMDynlibProcAppTest"/>
+        <childnode refid="2291" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2292">
+        <label>NMTestsMixIn</label>
+      </node>
+      <node id="2291">
+        <label>test.apps.test_dynlib.IntraNMMixIng</label>
+        <link refid="classtest_1_1apps_1_1test__dynlib_1_1IntraNMMixIng"/>
+        <childnode refid="2292" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2296">
+        <label>NMTestsMixIn</label>
+      </node>
+      <node id="2295">
+        <label>test.apps.test_dynlib.IntraNMMixIng</label>
+        <link refid="classtest_1_1apps_1_1test__dynlib_1_1IntraNMMixIng"/>
+        <childnode refid="2296" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="daliuge-runtime/test/apps/test_dynlib.py" line="117" column="1" bodyfile="daliuge-runtime/test/apps/test_dynlib.py" bodystart="117" bodyend="212"/>
+    <listofallmembers>
+      <member refid="classtest_1_1apps_1_1test__dynlib_1_1IntraNMMixIng_1afa01b0cc1bc0857a80e0165f21818fba" prot="public" virt="non-virtual"><scope>test::apps::test_dynlib::IntraNMMixIng</scope><name>app</name></member>
+      <member refid="classtest_1_1apps_1_1test__dynlib_1_1IntraNMMixIng_1a95f5454e3f749fcf089e298b81de2536" prot="public" virt="non-virtual"><scope>test::apps::test_dynlib::IntraNMMixIng</scope><name>test_input_in_remote_nm</name></member>
+      <member refid="classtest_1_1apps_1_1test__dynlib_1_1IntraNMMixIng_1aff8194afecaf93471c8e17074c75beb4" prot="public" virt="non-virtual"><scope>test::apps::test_dynlib::IntraNMMixIng</scope><name>test_multiple_inputs_in_remote_nm</name></member>
+      <member refid="classtest_1_1apps_1_1test__dynlib_1_1IntraNMMixIng_1a8ff35d7b321576c5f7e3138bff714dd7" prot="public" virt="non-virtual"><scope>test::apps::test_dynlib::IntraNMMixIng</scope><name>test_output_in_remote_nm</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

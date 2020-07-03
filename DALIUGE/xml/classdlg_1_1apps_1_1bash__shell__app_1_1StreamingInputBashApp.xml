@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classdlg_1_1apps_1_1bash__shell__app_1_1StreamingInputBashApp" kind="class" language="Python" prot="public">
+    <compoundname>dlg::apps::bash_shell_app::StreamingInputBashApp</compoundname>
+    <basecompoundref refid="classdlg_1_1apps_1_1bash__shell__app_1_1StreamingInputBashAppBase" prot="public" virt="non-virtual">dlg.apps.bash_shell_app.StreamingInputBashAppBase</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdlg_1_1apps_1_1bash__shell__app_1_1StreamingInputBashApp_1a63062e31fd1870b787cb1301a3a59aef" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dlg.apps.bash_shell_app.StreamingInputBashApp::compontent_meta</definition>
+        <argsstring></argsstring>
+        <name>compontent_meta</name>
+        <initializer>= dlg_component(&apos;<ref refid="classdlg_1_1apps_1_1bash__shell__app_1_1StreamingInputBashApp" kindref="compound">StreamingInputBashApp</ref>&apos;, &apos;An app that runs a bash command that consumes data from stdin.&apos;,
+                                    [dlg_batch_input(&apos;text/*&apos;, [])],
+                                    [dlg_batch_output(&apos;text/*&apos;, [])],
+                                    [dlg_streaming_input(&apos;text/*&apos;)])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/apps/bash_shell_app.py" line="323" column="1" bodyfile="daliuge-runtime/dlg/apps/bash_shell_app.py" bodystart="323" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdlg_1_1apps_1_1bash__shell__app_1_1StreamingInputBashApp_1a0d3a78123d703506b5f4f3dc22adcdde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.apps.bash_shell_app.StreamingInputBashApp.run</definition>
+        <argsstring>(self, data)</argsstring>
+        <name>run</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>data</type>
+          <defname>data</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/apps/bash_shell_app.py" line="328" column="1" bodyfile="daliuge-runtime/dlg/apps/bash_shell_app.py" bodystart="328" bodyend="332"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>An app that runs a bash command that consumes data from stdin.
+
+The streaming of data that appears on stdin takes place outside the
+framework; what is streamed through the framework is the information needed
+to establish the streaming channel. This information is also used to kick
+this application off.
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="2907">
+        <label>AppDROP</label>
+      </node>
+      <node id="2904">
+        <label>dlg.apps.bash_shell_app.StreamingInputBashAppBase</label>
+        <link refid="classdlg_1_1apps_1_1bash__shell__app_1_1StreamingInputBashAppBase"/>
+        <childnode refid="2905" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2907" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2905">
+        <label>dlg.apps.bash_shell_app.BashShellBase</label>
+        <link refid="classdlg_1_1apps_1_1bash__shell__app_1_1BashShellBase"/>
+        <childnode refid="2906" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2906">
+        <label>object</label>
+      </node>
+      <node id="2903">
+        <label>dlg.apps.bash_shell_app.StreamingInputBashApp</label>
+        <link refid="classdlg_1_1apps_1_1bash__shell__app_1_1StreamingInputBashApp"/>
+        <childnode refid="2904" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2912">
+        <label>AppDROP</label>
+      </node>
+      <node id="2909">
+        <label>dlg.apps.bash_shell_app.StreamingInputBashAppBase</label>
+        <link refid="classdlg_1_1apps_1_1bash__shell__app_1_1StreamingInputBashAppBase"/>
+        <childnode refid="2910" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2912" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2910">
+        <label>dlg.apps.bash_shell_app.BashShellBase</label>
+        <link refid="classdlg_1_1apps_1_1bash__shell__app_1_1BashShellBase"/>
+        <childnode refid="2911" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2911">
+        <label>object</label>
+      </node>
+      <node id="2908">
+        <label>dlg.apps.bash_shell_app.StreamingInputBashApp</label>
+        <link refid="classdlg_1_1apps_1_1bash__shell__app_1_1StreamingInputBashApp"/>
+        <childnode refid="2909" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="daliuge-runtime/dlg/apps/bash_shell_app.py" line="314" column="1" bodyfile="daliuge-runtime/dlg/apps/bash_shell_app.py" bodystart="314" bodyend="333"/>
+    <listofallmembers>
+      <member refid="classdlg_1_1apps_1_1bash__shell__app_1_1BashShellBase_1a9d557859451bf779fc61b2c5c8529df3" prot="public" virt="non-virtual"><scope>dlg::apps::bash_shell_app::StreamingInputBashApp</scope><name>cancel</name></member>
+      <member refid="classdlg_1_1apps_1_1bash__shell__app_1_1BashShellBase_1ab63891fc3aa6c03b321478b08989ba0a" prot="public" virt="non-virtual"><scope>dlg::apps::bash_shell_app::StreamingInputBashApp</scope><name>command</name></member>
+      <member refid="classdlg_1_1apps_1_1bash__shell__app_1_1StreamingInputBashApp_1a63062e31fd1870b787cb1301a3a59aef" prot="public" virt="non-virtual"><scope>dlg::apps::bash_shell_app::StreamingInputBashApp</scope><name>compontent_meta</name></member>
+      <member refid="classdlg_1_1apps_1_1bash__shell__app_1_1BashShellBase_1a8c62669066762367db1958528e7ffef8" prot="public" virt="non-virtual"><scope>dlg::apps::bash_shell_app::StreamingInputBashApp</scope><name>dataURL</name></member>
+      <member refid="classdlg_1_1apps_1_1bash__shell__app_1_1StreamingInputBashAppBase_1a3683b007ce4f7e99175acdfa3a00074f" prot="public" virt="non-virtual"><scope>dlg::apps::bash_shell_app::StreamingInputBashApp</scope><name>dataWritten</name></member>
+      <member refid="classdlg_1_1apps_1_1bash__shell__app_1_1StreamingInputBashAppBase_1a8a0232ce9a050de2317327acdb10eb13" prot="public" virt="non-virtual"><scope>dlg::apps::bash_shell_app::StreamingInputBashApp</scope><name>dropCompleted</name></member>
+      <member refid="classdlg_1_1apps_1_1bash__shell__app_1_1StreamingInputBashAppBase_1af66411c129b79bfe36920106b7598297" prot="public" virt="non-virtual"><scope>dlg::apps::bash_shell_app::StreamingInputBashApp</scope><name>execStatus</name></member>
+      <member refid="classdlg_1_1apps_1_1bash__shell__app_1_1StreamingInputBashAppBase_1aebab4fcc13d7b18656ec358fa29c5c5d" prot="public" virt="non-virtual"><scope>dlg::apps::bash_shell_app::StreamingInputBashApp</scope><name>execute</name></member>
+      <member refid="classdlg_1_1apps_1_1bash__shell__app_1_1StreamingInputBashAppBase_1af66fd6faedaf0e04ac0630c7d0b40cd7" prot="public" virt="non-virtual"><scope>dlg::apps::bash_shell_app::StreamingInputBashApp</scope><name>initialize</name></member>
+      <member refid="classdlg_1_1apps_1_1bash__shell__app_1_1StreamingInputBashAppBase_1a3b558c0ca24d94d979ac37b44a1cb2ef" prot="public" virt="non-virtual"><scope>dlg::apps::bash_shell_app::StreamingInputBashApp</scope><name>notify_if_finished</name></member>
+      <member refid="classdlg_1_1apps_1_1bash__shell__app_1_1BashShellBase_1a2dbc7b102dfa6263023c664051aed055" prot="public" virt="non-virtual"><scope>dlg::apps::bash_shell_app::StreamingInputBashApp</scope><name>proc</name></member>
+      <member refid="classdlg_1_1apps_1_1bash__shell__app_1_1StreamingInputBashApp_1a0d3a78123d703506b5f4f3dc22adcdde" prot="public" virt="non-virtual"><scope>dlg::apps::bash_shell_app::StreamingInputBashApp</scope><name>run</name></member>
+      <member refid="classdlg_1_1apps_1_1bash__shell__app_1_1StreamingInputBashAppBase_1a535bbfaf7a406b0ceee8b62d298ad09c" prot="public" virt="non-virtual"><scope>dlg::apps::bash_shell_app::StreamingInputBashApp</scope><name>status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

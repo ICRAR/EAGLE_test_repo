@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classdlg_1_1lifecycle_1_1dlm_1_1DataLifecycleManagerBackgroundTask" kind="class" language="Python" prot="public">
+    <compoundname>dlg::lifecycle::dlm::DataLifecycleManagerBackgroundTask</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Thread</basecompoundref>
+    <derivedcompoundref refid="classdlg_1_1lifecycle_1_1dlm_1_1DROPChecker" prot="public" virt="non-virtual">dlg.lifecycle.dlm.DROPChecker</derivedcompoundref>
+    <derivedcompoundref refid="classdlg_1_1lifecycle_1_1dlm_1_1DROPGarbageCollector" prot="public" virt="non-virtual">dlg.lifecycle.dlm.DROPGarbageCollector</derivedcompoundref>
+    <derivedcompoundref refid="classdlg_1_1lifecycle_1_1dlm_1_1DROPMover" prot="public" virt="non-virtual">dlg.lifecycle.dlm.DROPMover</derivedcompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdlg_1_1lifecycle_1_1dlm_1_1DataLifecycleManagerBackgroundTask_1a69d651346ae867adda0a17991366820f" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.lifecycle.dlm.DataLifecycleManagerBackgroundTask::_dlm</definition>
+        <argsstring></argsstring>
+        <name>_dlm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/lifecycle/dlm.py" line="143" column="1" bodyfile="daliuge-runtime/dlg/lifecycle/dlm.py" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1lifecycle_1_1dlm_1_1DataLifecycleManagerBackgroundTask_1afedc765bb7575892190826e57d980332" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.lifecycle.dlm.DataLifecycleManagerBackgroundTask::_period</definition>
+        <argsstring></argsstring>
+        <name>_period</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/lifecycle/dlm.py" line="144" column="1" bodyfile="daliuge-runtime/dlg/lifecycle/dlm.py" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1lifecycle_1_1dlm_1_1DataLifecycleManagerBackgroundTask_1a2113cdbc45c434219a9f24c671d70748" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.lifecycle.dlm.DataLifecycleManagerBackgroundTask::_finishedEvent</definition>
+        <argsstring></argsstring>
+        <name>_finishedEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/lifecycle/dlm.py" line="145" column="1" bodyfile="daliuge-runtime/dlg/lifecycle/dlm.py" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdlg_1_1lifecycle_1_1dlm_1_1DataLifecycleManagerBackgroundTask_1a0d3c2352aa7e4590ebc5bf1188baa0f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.lifecycle.dlm.DataLifecycleManagerBackgroundTask.__init__</definition>
+        <argsstring>(self, dlm, period, finishedEvent)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dlm</type>
+          <defname>dlm</defname>
+        </param>
+        <param>
+          <type>period</type>
+          <defname>period</defname>
+        </param>
+        <param>
+          <type>finishedEvent</type>
+          <defname>finishedEvent</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/lifecycle/dlm.py" line="141" column="1" bodyfile="daliuge-runtime/dlg/lifecycle/dlm.py" bodystart="141" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1lifecycle_1_1dlm_1_1DataLifecycleManagerBackgroundTask_1a49fc79c7439f70fdeee2a32430d1fbab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.lifecycle.dlm.DataLifecycleManagerBackgroundTask.run</definition>
+        <argsstring>(self)</argsstring>
+        <name>run</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/lifecycle/dlm.py" line="147" column="1" bodyfile="daliuge-runtime/dlg/lifecycle/dlm.py" bodystart="147" bodyend="155"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>A thread that periodically runs some of the methods on the given DLM until
+signaled to stop
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1932">
+        <label>threading::Thread</label>
+      </node>
+      <node id="1931">
+        <label>dlg.lifecycle.dlm.DataLifecycleManagerBackgroundTask</label>
+        <link refid="classdlg_1_1lifecycle_1_1dlm_1_1DataLifecycleManagerBackgroundTask"/>
+        <childnode refid="1932" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1934">
+        <label>dlg.lifecycle.dlm.DROPGarbageCollector</label>
+        <link refid="classdlg_1_1lifecycle_1_1dlm_1_1DROPGarbageCollector"/>
+        <childnode refid="1931" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1933">
+        <label>dlg.lifecycle.dlm.DROPChecker</label>
+        <link refid="classdlg_1_1lifecycle_1_1dlm_1_1DROPChecker"/>
+        <childnode refid="1931" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1935">
+        <label>dlg.lifecycle.dlm.DROPMover</label>
+        <link refid="classdlg_1_1lifecycle_1_1dlm_1_1DROPMover"/>
+        <childnode refid="1931" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1937">
+        <label>threading::Thread</label>
+      </node>
+      <node id="1936">
+        <label>dlg.lifecycle.dlm.DataLifecycleManagerBackgroundTask</label>
+        <link refid="classdlg_1_1lifecycle_1_1dlm_1_1DataLifecycleManagerBackgroundTask"/>
+        <childnode refid="1937" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="daliuge-runtime/dlg/lifecycle/dlm.py" line="136" column="1" bodyfile="daliuge-runtime/dlg/lifecycle/dlm.py" bodystart="136" bodyend="156"/>
+    <listofallmembers>
+      <member refid="classdlg_1_1lifecycle_1_1dlm_1_1DataLifecycleManagerBackgroundTask_1a0d3c2352aa7e4590ebc5bf1188baa0f9" prot="public" virt="non-virtual"><scope>dlg::lifecycle::dlm::DataLifecycleManagerBackgroundTask</scope><name>__init__</name></member>
+      <member refid="classdlg_1_1lifecycle_1_1dlm_1_1DataLifecycleManagerBackgroundTask_1a69d651346ae867adda0a17991366820f" prot="private" virt="non-virtual"><scope>dlg::lifecycle::dlm::DataLifecycleManagerBackgroundTask</scope><name>_dlm</name></member>
+      <member refid="classdlg_1_1lifecycle_1_1dlm_1_1DataLifecycleManagerBackgroundTask_1a2113cdbc45c434219a9f24c671d70748" prot="private" virt="non-virtual"><scope>dlg::lifecycle::dlm::DataLifecycleManagerBackgroundTask</scope><name>_finishedEvent</name></member>
+      <member refid="classdlg_1_1lifecycle_1_1dlm_1_1DataLifecycleManagerBackgroundTask_1afedc765bb7575892190826e57d980332" prot="private" virt="non-virtual"><scope>dlg::lifecycle::dlm::DataLifecycleManagerBackgroundTask</scope><name>_period</name></member>
+      <member refid="classdlg_1_1lifecycle_1_1dlm_1_1DataLifecycleManagerBackgroundTask_1a49fc79c7439f70fdeee2a32430d1fbab" prot="public" virt="non-virtual"><scope>dlg::lifecycle::dlm::DataLifecycleManagerBackgroundTask</scope><name>run</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classdlg_1_1dropmake_1_1scheduler_1_1MinNumPartsScheduler" kind="class" language="Python" prot="public">
+    <compoundname>dlg::dropmake::scheduler::MinNumPartsScheduler</compoundname>
+    <basecompoundref refid="classdlg_1_1dropmake_1_1scheduler_1_1MySarkarScheduler" prot="public" virt="non-virtual">dlg.dropmake.scheduler.MySarkarScheduler</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdlg_1_1dropmake_1_1scheduler_1_1MinNumPartsScheduler_1a976d638e91dd50f7c44b85b148baa2e6" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.dropmake.scheduler.MinNumPartsScheduler::_deadline</definition>
+        <argsstring></argsstring>
+        <name>_deadline</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-translator/dlg/dropmake/scheduler.py" line="741" column="1" bodyfile="daliuge-translator/dlg/dropmake/scheduler.py" bodystart="741" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1dropmake_1_1scheduler_1_1MinNumPartsScheduler_1ab741f9c2f83da550d480800511d95990" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.dropmake.scheduler.MinNumPartsScheduler::_optimistic_factor</definition>
+        <argsstring></argsstring>
+        <name>_optimistic_factor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-translator/dlg/dropmake/scheduler.py" line="742" column="1" bodyfile="daliuge-translator/dlg/dropmake/scheduler.py" bodystart="742" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdlg_1_1dropmake_1_1scheduler_1_1MinNumPartsScheduler_1a139d62eb88a3fdf14d6a6984ed038155" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.dropmake.scheduler.MinNumPartsScheduler.__init__</definition>
+        <argsstring>(self, drop_list, deadline, max_dop=8, dag=None, optimistic_factor=0.5)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>drop_list</type>
+          <defname>drop_list</defname>
+        </param>
+        <param>
+          <type>deadline</type>
+          <defname>deadline</defname>
+        </param>
+        <param>
+          <type>max_dop</type>
+          <defname>max_dop</defname>
+          <defval>8</defval>
+        </param>
+        <param>
+          <type>dag</type>
+          <defname>dag</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>optimistic_factor</type>
+          <defname>optimistic_factor</defname>
+          <defval>0.5</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-translator/dlg/dropmake/scheduler.py" line="739" column="1" bodyfile="daliuge-translator/dlg/dropmake/scheduler.py" bodystart="739" bodyend="743"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1dropmake_1_1scheduler_1_1MinNumPartsScheduler_1ad46bdeae4c65fcb158787cbe4e810dc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.dropmake.scheduler.MinNumPartsScheduler.override_cannot_add</definition>
+        <argsstring>(self)</argsstring>
+        <name>override_cannot_add</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-translator/dlg/dropmake/scheduler.py" line="744" column="1" bodyfile="daliuge-translator/dlg/dropmake/scheduler.py" bodystart="744" bodyend="746"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1dropmake_1_1scheduler_1_1MinNumPartsScheduler_1af7046479baf7b2d1ed7c3e4136891671" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.dropmake.scheduler.MinNumPartsScheduler.is_time_critical</definition>
+        <argsstring>(self, u, uw, unew, v, vw, vnew, curr_lpl, ow, rem_el)</argsstring>
+        <name>is_time_critical</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>u</type>
+          <defname>u</defname>
+        </param>
+        <param>
+          <type>uw</type>
+          <defname>uw</defname>
+        </param>
+        <param>
+          <type>unew</type>
+          <defname>unew</defname>
+        </param>
+        <param>
+          <type>v</type>
+          <defname>v</defname>
+        </param>
+        <param>
+          <type>vw</type>
+          <defname>vw</defname>
+        </param>
+        <param>
+          <type>vnew</type>
+          <defname>vnew</defname>
+        </param>
+        <param>
+          <type>curr_lpl</type>
+          <defname>curr_lpl</defname>
+        </param>
+        <param>
+          <type>ow</type>
+          <defname>ow</defname>
+        </param>
+        <param>
+          <type>rem_el</type>
+          <defname>rem_el</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>This is called ONLY IF either can_add on partition has returned &quot;False&quot;
+or the new critical path is longer than the old one at each iteration
+
+Parameters:
+    u - node u, v - node v, uw - weight of node u, vw - weight of node v
+    curr_lpl - current longest path length, ow - current edge weight
+    rem_el - remainig edges to be zeroed
+    ow - original edge length
+Returns:
+    Boolean
+
+It looks ahead to compute the probability of time being critical
+and compares that with the _optimistic_factor
+probility = (num of edges need to be zeroed to meet the deadline) /
+(num of remaining unzeroed edges)
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-translator/dlg/dropmake/scheduler.py" line="747" column="1" bodyfile="daliuge-translator/dlg/dropmake/scheduler.py" bodystart="747" bodyend="793"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>A special type of partition that aims to schedule the DAG on time but at minimum cost.
+In this particular case, the cost is the number of partitions that will be generated.
+The assumption is # of partitions (with certain DoP) more or less represents resource footprint.
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="2475">
+        <label>dlg.dropmake.scheduler.Scheduler</label>
+        <link refid="classdlg_1_1dropmake_1_1scheduler_1_1Scheduler"/>
+        <childnode refid="2476" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2473">
+        <label>dlg.dropmake.scheduler.MinNumPartsScheduler</label>
+        <link refid="classdlg_1_1dropmake_1_1scheduler_1_1MinNumPartsScheduler"/>
+        <childnode refid="2474" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2476">
+        <label>object</label>
+      </node>
+      <node id="2474">
+        <label>dlg.dropmake.scheduler.MySarkarScheduler</label>
+        <link refid="classdlg_1_1dropmake_1_1scheduler_1_1MySarkarScheduler"/>
+        <childnode refid="2475" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2479">
+        <label>dlg.dropmake.scheduler.Scheduler</label>
+        <link refid="classdlg_1_1dropmake_1_1scheduler_1_1Scheduler"/>
+        <childnode refid="2480" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2477">
+        <label>dlg.dropmake.scheduler.MinNumPartsScheduler</label>
+        <link refid="classdlg_1_1dropmake_1_1scheduler_1_1MinNumPartsScheduler"/>
+        <childnode refid="2478" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2480">
+        <label>object</label>
+      </node>
+      <node id="2478">
+        <label>dlg.dropmake.scheduler.MySarkarScheduler</label>
+        <link refid="classdlg_1_1dropmake_1_1scheduler_1_1MySarkarScheduler"/>
+        <childnode refid="2479" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="daliuge-translator/dlg/dropmake/scheduler.py" line="733" column="1" bodyfile="daliuge-translator/dlg/dropmake/scheduler.py" bodystart="733" bodyend="794"/>
+    <listofallmembers>
+      <member refid="classdlg_1_1dropmake_1_1scheduler_1_1MinNumPartsScheduler_1a139d62eb88a3fdf14d6a6984ed038155" prot="public" virt="non-virtual"><scope>dlg::dropmake::scheduler::MinNumPartsScheduler</scope><name>__init__</name></member>
+      <member refid="classdlg_1_1dropmake_1_1scheduler_1_1MySarkarScheduler_1abf97188f2843684c3d4ff6e0370001f8" prot="public" virt="non-virtual" ambiguityscope="dlg::dropmake::scheduler::MySarkarScheduler."><scope>dlg::dropmake::scheduler::MinNumPartsScheduler</scope><name>__init__</name></member>
+      <member refid="classdlg_1_1dropmake_1_1scheduler_1_1Scheduler_1ac5f20f593062405b63c600180c776074" prot="public" virt="non-virtual" ambiguityscope="dlg::dropmake::scheduler::Scheduler."><scope>dlg::dropmake::scheduler::MinNumPartsScheduler</scope><name>__init__</name></member>
+      <member refid="classdlg_1_1dropmake_1_1scheduler_1_1MinNumPartsScheduler_1a976d638e91dd50f7c44b85b148baa2e6" prot="private" virt="non-virtual"><scope>dlg::dropmake::scheduler::MinNumPartsScheduler</scope><name>_deadline</name></member>
+      <member refid="classdlg_1_1dropmake_1_1scheduler_1_1MinNumPartsScheduler_1ab741f9c2f83da550d480800511d95990" prot="private" virt="non-virtual"><scope>dlg::dropmake::scheduler::MinNumPartsScheduler</scope><name>_optimistic_factor</name></member>
+      <member refid="classdlg_1_1dropmake_1_1scheduler_1_1MinNumPartsScheduler_1af7046479baf7b2d1ed7c3e4136891671" prot="public" virt="non-virtual"><scope>dlg::dropmake::scheduler::MinNumPartsScheduler</scope><name>is_time_critical</name></member>
+      <member refid="classdlg_1_1dropmake_1_1scheduler_1_1Scheduler_1a11b9878c8f3d0f145a7cd6993a744680" prot="public" virt="non-virtual"><scope>dlg::dropmake::scheduler::MinNumPartsScheduler</scope><name>map_partitions</name></member>
+      <member refid="classdlg_1_1dropmake_1_1scheduler_1_1Scheduler_1ad4958e7b77892e013aedc4c376bf1489" prot="public" virt="non-virtual"><scope>dlg::dropmake::scheduler::MinNumPartsScheduler</scope><name>merge_partitions</name></member>
+      <member refid="classdlg_1_1dropmake_1_1scheduler_1_1MinNumPartsScheduler_1ad46bdeae4c65fcb158787cbe4e810dc2" prot="public" virt="non-virtual"><scope>dlg::dropmake::scheduler::MinNumPartsScheduler</scope><name>override_cannot_add</name></member>
+      <member refid="classdlg_1_1dropmake_1_1scheduler_1_1MySarkarScheduler_1a6c55a10f29d04e55e18f1c4162bf827b" prot="public" virt="non-virtual"><scope>dlg::dropmake::scheduler::MinNumPartsScheduler</scope><name>partition_dag</name></member>
+      <member refid="classdlg_1_1dropmake_1_1scheduler_1_1MySarkarScheduler_1a7b01d6a6cb2f64039ae3c46bc28f308b" prot="public" virt="non-virtual"><scope>dlg::dropmake::scheduler::MinNumPartsScheduler</scope><name>reduce_partitions</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

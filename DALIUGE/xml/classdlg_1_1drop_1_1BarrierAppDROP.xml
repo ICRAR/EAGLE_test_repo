@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classdlg_1_1drop_1_1BarrierAppDROP" kind="class" language="Python" prot="public">
+    <compoundname>dlg::drop::BarrierAppDROP</compoundname>
+    <basecompoundref refid="classdlg_1_1drop_1_1InputFiredAppDROP" prot="public" virt="non-virtual">dlg.drop.InputFiredAppDROP</basecompoundref>
+    <derivedcompoundref refid="classtest_1_1integrate_1_1chiles_1_1chilesdo_1_1Clean" prot="public" virt="non-virtual">test.integrate.chiles.chilesdo.Clean</derivedcompoundref>
+    <derivedcompoundref refid="classtest_1_1integrate_1_1chiles_1_1chilesdo_1_1SourceFlux" prot="public" virt="non-virtual">test.integrate.chiles.chilesdo.SourceFlux</derivedcompoundref>
+    <derivedcompoundref refid="classtest_1_1integrate_1_1chiles_1_1chilesdo_1_1Split" prot="public" virt="non-virtual">test.integrate.chiles.chilesdo.Split</derivedcompoundref>
+    <derivedcompoundref refid="classtest_1_1manager_1_1test__dm_1_1ErroneousApp" prot="public" virt="non-virtual">test.manager.test_dm.ErroneousApp</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdlg_1_1drop_1_1BarrierAppDROP_1afbb36fef247be0fbf6e7f902933dbc14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.drop.BarrierAppDROP.initialize</definition>
+        <argsstring>(self, kwargs)</argsstring>
+        <name>initialize</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/drop.py" line="1686" column="1" bodyfile="daliuge-runtime/dlg/drop.py" bodystart="1686" bodyend="1695"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>A BarrierAppDROP is an InputFireAppDROP that waits for all its inputs to
+complete, effectively blocking the flow of the graph execution.
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1719">
+        <label>dlg.drop.ContainerDROP</label>
+        <link refid="classdlg_1_1drop_1_1ContainerDROP"/>
+        <childnode refid="1720" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1720">
+        <label>dlg.drop.AbstractDROP</label>
+        <link refid="classdlg_1_1drop_1_1AbstractDROP"/>
+        <childnode refid="1721" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1723">
+        <label>test.integrate.chiles.chilesdo.SourceFlux</label>
+        <link refid="classtest_1_1integrate_1_1chiles_1_1chilesdo_1_1SourceFlux"/>
+        <childnode refid="1716" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1722">
+        <label>test.integrate.chiles.chilesdo.Clean</label>
+        <link refid="classtest_1_1integrate_1_1chiles_1_1chilesdo_1_1Clean"/>
+        <childnode refid="1716" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1725">
+        <label>test.manager.test_dm.ErroneousApp</label>
+        <link refid="classtest_1_1manager_1_1test__dm_1_1ErroneousApp"/>
+        <childnode refid="1716" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1717">
+        <label>dlg.drop.InputFiredAppDROP</label>
+        <link refid="classdlg_1_1drop_1_1InputFiredAppDROP"/>
+        <childnode refid="1718" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1724">
+        <label>test.integrate.chiles.chilesdo.Split</label>
+        <link refid="classtest_1_1integrate_1_1chiles_1_1chilesdo_1_1Split"/>
+        <childnode refid="1716" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1718">
+        <label>dlg.drop.AppDROP</label>
+        <link refid="classdlg_1_1drop_1_1AppDROP"/>
+        <childnode refid="1719" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1716">
+        <label>dlg.drop.BarrierAppDROP</label>
+        <link refid="classdlg_1_1drop_1_1BarrierAppDROP"/>
+        <childnode refid="1717" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1721">
+        <label>EventFirer</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1729">
+        <label>dlg.drop.ContainerDROP</label>
+        <link refid="classdlg_1_1drop_1_1ContainerDROP"/>
+        <childnode refid="1730" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1730">
+        <label>dlg.drop.AbstractDROP</label>
+        <link refid="classdlg_1_1drop_1_1AbstractDROP"/>
+        <childnode refid="1731" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1727">
+        <label>dlg.drop.InputFiredAppDROP</label>
+        <link refid="classdlg_1_1drop_1_1InputFiredAppDROP"/>
+        <childnode refid="1728" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1728">
+        <label>dlg.drop.AppDROP</label>
+        <link refid="classdlg_1_1drop_1_1AppDROP"/>
+        <childnode refid="1729" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1726">
+        <label>dlg.drop.BarrierAppDROP</label>
+        <link refid="classdlg_1_1drop_1_1BarrierAppDROP"/>
+        <childnode refid="1727" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1731">
+        <label>EventFirer</label>
+      </node>
+    </collaborationgraph>
+    <location file="daliuge-runtime/dlg/drop.py" line="1681" column="1" bodyfile="daliuge-runtime/dlg/drop.py" bodystart="1681" bodyend="1696"/>
+    <listofallmembers>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1ac2fddd5605897c23a53286c241bdea52" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>__hash__</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a2c5c04e9015451140f980cea9966018b" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>__init__</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1ae5b978d64d05b08ac23279b17c1abe82" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>__repr__</name></member>
+      <member refid="classdlg_1_1drop_1_1ContainerDROP_1a620402ada1ee510c89e344e36fa4fb8e" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>addChild</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a336a527084db32aa25df94d6bcc4b887" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>addConsumer</name></member>
+      <member refid="classdlg_1_1drop_1_1AppDROP_1ae88bf557c61f4724fcb82827d6a0b68d" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>addInput</name></member>
+      <member refid="classdlg_1_1drop_1_1AppDROP_1a642afbb97eacebdd99e529657876f307" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>addOutput</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a7a56e877b44230134691f95a3721e07c" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>addProducer</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a88102924c2c5a1da2ccbaa80b322f57a" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>addStreamingConsumer</name></member>
+      <member refid="classdlg_1_1drop_1_1InputFiredAppDROP_1a53e961bb96cf9452f192414f6ab7a05f" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>addStreamingInput</name></member>
+      <member refid="classdlg_1_1drop_1_1InputFiredAppDROP_1a8ae76ed08f5402e76d7fc89cc0c2229f" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>async_execute</name></member>
+      <member refid="classdlg_1_1drop_1_1AppDROP_1ae5c3e718686b5a01802b1278f23dfd77" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>cancel</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1ae042549a6196547aae18ffcaa614c4bc" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>checksum</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a32af7f03cf8384274b19838680beab97" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>checksum</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a98da5f14a2f7771d720d3e3ada76301b" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>checksumType</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a4522448d4e5ce0f96fe753bac282a2b5" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>checksumType</name></member>
+      <member refid="classdlg_1_1drop_1_1ContainerDROP_1aab694f9fb01f3b812aaa3fe8317b9aea" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>children</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a494ab1ae0b6d8346d869c9b93bb7a225" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>close</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1af33a4f83e7e131397f87dd883b02ef81" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>consumers</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a06ac084ce77d7a7a22d8a2b5e5aa875b" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>dataIsland</name></member>
+      <member refid="classdlg_1_1drop_1_1ContainerDROP_1a08e9454cbc4276d478fe5791d56e38d3" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>dataURL</name></member>
+      <member refid="classdlg_1_1drop_1_1AppDROP_1a341cc63d89d78c2ab0d82187e73f4e25" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>dataWritten</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1af586122ecbe9f5ee3861adfb5d4bb949" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>decrRefCount</name></member>
+      <member refid="classdlg_1_1drop_1_1ContainerDROP_1a975e437fbd040fc3fd9ad97e48375e07" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>delete</name></member>
+      <member refid="classdlg_1_1drop_1_1InputFiredAppDROP_1acddebe45415782a5c71a3b528ca11763" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>dropCompleted</name></member>
+      <member refid="classdlg_1_1drop_1_1InputFiredAppDROP_1a2399d9af2a8d2b944b9b7aea360f6dee" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>execStatus</name></member>
+      <member refid="classdlg_1_1drop_1_1AppDROP_1a32a1d44bf30537d1372732c0f3ac1eae" prot="public" virt="non-virtual" ambiguityscope="dlg::drop::AppDROP."><scope>dlg::drop::BarrierAppDROP</scope><name>execStatus</name></member>
+      <member refid="classdlg_1_1drop_1_1AppDROP_1acdb24e39168303fb25fda41f56e17b4b" prot="public" virt="non-virtual" ambiguityscope="dlg::drop::AppDROP."><scope>dlg::drop::BarrierAppDROP</scope><name>execStatus</name></member>
+      <member refid="classdlg_1_1drop_1_1InputFiredAppDROP_1adcadfc68e8f270c3b81e9a474951030f" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>execute</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a16a3127f829fcce5f1ded0c37c867b8b" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>executionMode</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a81b305863dcf2e5e5591a00ed8fce869" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>executionMode</name></member>
+      <member refid="classdlg_1_1drop_1_1InputFiredAppDROP_1a63413b224272b459177db63a47eff255" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>exists</name></member>
+      <member refid="classdlg_1_1drop_1_1ContainerDROP_1a3d32def5ef99e86dea368b7869882c38" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>expirationDate</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a157c04dd0c22f17daaa9bc729c1dd298" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>expireAfterUse</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1adff042449732940420c84ddecb3f6476" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>get_consumers_nodes</name></member>
+      <member refid="classdlg_1_1drop_1_1ContainerDROP_1aff70ed6161110e5b4707699ca4abc42e" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>getIO</name></member>
+      <member refid="classdlg_1_1drop_1_1AppDROP_1aaa241d180524794218992367971b8ceb" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>handleEvent</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1aac36c5636a45018179efda69ccf79d2f" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>handleInterest</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a16df3fee6a86cf4f43c9aa0dc9c72d01" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>incrRefCount</name></member>
+      <member refid="classdlg_1_1drop_1_1BarrierAppDROP_1afbb36fef247be0fbf6e7f902933dbc14" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>initialize</name></member>
+      <member refid="classdlg_1_1drop_1_1InputFiredAppDROP_1afa8f97fddc7b3b069386754dcd7c8551" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>input_error_threshold</name></member>
+      <member refid="classdlg_1_1drop_1_1AppDROP_1a4649d8e985d9bf54636d06b44237d1eb" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>inputs</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a5550127a42944b64cd691f87c4dc3abe" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>isBeingRead</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a7f63bfd98bd257ffe506d6f1baec5db5" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>isCompleted</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a60b7a1acfce6a9495fd4e248bfc0d128" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>lg_key</name></member>
+      <member refid="classdlg_1_1drop_1_1InputFiredAppDROP_1acbdbd1d2de0704928913f13905bea9fe" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>n_effective_inputs</name></member>
+      <member refid="classdlg_1_1drop_1_1InputFiredAppDROP_1a2268b127171df3bfd51f7d4c38aff552" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>n_tries</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a81f53a83ca94210f4b41613ab15f9ba7" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>name</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1abbba7acc298a361b2f9510bba9a508a7" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>node</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a634670a85a0b978d3327edca73590c92" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>oid</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1acdcf1ab8f9f681cf6b92124b12de5cfd" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>open</name></member>
+      <member refid="classdlg_1_1drop_1_1AppDROP_1a8c9786098dd9e31e83f8aff5598fe90a" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>outputs</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1ad9d0bc15a81c68c012814e9f3ed2c72f" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>parent</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a5ba50659e4d38c5207c688151a65bbf1" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>parent</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1afd126d88466822cfcb91491957f97a94" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>phase</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1afb31853bd25d56ba61b4bf5bd6fc94c7" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>phase</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1aea745d71a1ec688ebd66594163b38f4a" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>precious</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a06960c31442c07efd862382078f8ac96" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>producerFinished</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a655348df5e0535ae636cd4a09ac8d106" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>producers</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a3319962613a02690f67a92c911bc695f" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>read</name></member>
+      <member refid="classdlg_1_1drop_1_1InputFiredAppDROP_1a630a21af124700bb32c7f75d15329aa3" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>run</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a03a21460c5a31316ae08aa9a860b6713" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>setCompleted</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a88a0294e80eed790697008c1d2698cdb" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>setError</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a73ca5367803a078c6bd188b12a807e30" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>size</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1aa15208b503ea93b7533a54632b50d0a1" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>size</name></member>
+      <member refid="classdlg_1_1drop_1_1InputFiredAppDROP_1a03dfffda9cd38c7e9703056aa7cea6a9" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>status</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a17f8a917549ed3eb312fcfc35ef6e544" prot="public" virt="non-virtual" ambiguityscope="dlg::drop::ContainerDROP."><scope>dlg::drop::BarrierAppDROP</scope><name>status</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a4d9508f4a4f680466b8a09393e42e0de" prot="public" virt="non-virtual" ambiguityscope="dlg::drop::ContainerDROP."><scope>dlg::drop::BarrierAppDROP</scope><name>status</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a7da445287b1a0180d7f5e736087cfe4e" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>streamingConsumers</name></member>
+      <member refid="classdlg_1_1drop_1_1AppDROP_1a6d1706a7d03709c1a5eda8a6d6e29b7b" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>streamingInputs</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1addd825fc304c6ccad3d9795c865b4d89" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>targetPhase</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a52f23b12db48660c44e6c052b9367d67" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>uid</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a876b9794001307e140c95f133372efce" prot="public" virt="non-virtual"><scope>dlg::drop::BarrierAppDROP</scope><name>write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,248 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtest_1_1test__dask__emulation_1_1__TestDelayed" kind="class" language="Python" prot="public">
+    <compoundname>test::test_dask_emulation::_TestDelayed</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+    <derivedcompoundref refid="classtest_1_1test__dask__emulation_1_1TestDaskDelayed" prot="public" virt="non-virtual">test.test_dask_emulation.TestDaskDelayed</derivedcompoundref>
+    <derivedcompoundref refid="classtest_1_1test__dask__emulation_1_1TestDlgDelayed" prot="public" virt="non-virtual">test.test_dask_emulation.TestDlgDelayed</derivedcompoundref>
+    <derivedcompoundref refid="classtest_1_1test__dask__emulation_1_1TestNoDelayed" prot="public" virt="non-virtual">test.test_dask_emulation.TestNoDelayed</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtest_1_1test__dask__emulation_1_1__TestDelayed_1ab7098eb1678a9cff2ae1c6f7c0144fac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def test.test_dask_emulation._TestDelayed.test_simple</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_simple</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>This creates the following graph
+
+1 --|
+    |-- add --&gt; the_sum --------|
+2 --|                           |                                       |--&gt; part1 --|
+                        |--&gt; divide --&gt; division --&gt;partition --|            |--&gt; add -&gt; final
+4 --|                           |                                       |--&gt; part2 --|
+    |-- substract --&gt; the_sub --|
+3 --|
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/test/test_dask_emulation.py" line="93" column="1" bodyfile="daliuge-runtime/test/test_dask_emulation.py" bodystart="93" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1test__dask__emulation_1_1__TestDelayed_1a579004d9a1b5c0e605b3ac32f84e0891" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def test.test_dask_emulation._TestDelayed.test_args_as_lists</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_args_as_lists</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Like test_simple, but some arguments are passed down as lists</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/test/test_dask_emulation.py" line="114" column="1" bodyfile="daliuge-runtime/test/test_dask_emulation.py" bodystart="114" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1test__dask__emulation_1_1__TestDelayed_1ae726018a57e20665dcebdaad10ca7e68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def test.test_dask_emulation._TestDelayed.test_compute_with_lists</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_compute_with_lists</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Make sure we can call compute() directly on the list objects</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/test/test_dask_emulation.py" line="127" column="1" bodyfile="daliuge-runtime/test/test_dask_emulation.py" bodystart="127" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1test__dask__emulation_1_1__TestDelayed_1a18b7c2d29ad1837dc3cfb66b0cae1815" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def test.test_dask_emulation._TestDelayed.test_none_arg</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_none_arg</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Test that calling delayed(f)(None) works</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/test/test_dask_emulation.py" line="137" column="1" bodyfile="daliuge-runtime/test/test_dask_emulation.py" bodystart="137" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1test__dask__emulation_1_1__TestDelayed_1adf86f7eda0aa3ff34c6ce8b2819d5c1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def test.test_dask_emulation._TestDelayed.test_with_args</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_with_args</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests that delayed() works correctly with kwargs</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/test/test_dask_emulation.py" line="143" column="1" bodyfile="daliuge-runtime/test/test_dask_emulation.py" bodystart="143" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1test__dask__emulation_1_1__TestDelayed_1a1a86fc57c44f9934b551ecc397c84d72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def test.test_dask_emulation._TestDelayed.test_with_kwargs</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_with_kwargs</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests that delayed() works correctly with args and kwargs</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/test/test_dask_emulation.py" line="152" column="1" bodyfile="daliuge-runtime/test/test_dask_emulation.py" bodystart="152" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1test__dask__emulation_1_1__TestDelayed_1a9b2b6aefcddfb26d5a0a08ab74bc45a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def test.test_dask_emulation._TestDelayed.test_with_args_and_kwargs</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_with_args_and_kwargs</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests that delayed() works correctly with kwargs</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/test/test_dask_emulation.py" line="161" column="1" bodyfile="daliuge-runtime/test/test_dask_emulation.py" bodystart="161" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1test__dask__emulation_1_1__TestDelayed_1a77ec03ede5c3c4f4b2d4cebcccb2d90d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def test.test_dask_emulation._TestDelayed.test_with_user_defined_default</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_with_user_defined_default</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests that delayed() works with default values that are not json-dumpable</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/test/test_dask_emulation.py" line="170" column="1" bodyfile="daliuge-runtime/test/test_dask_emulation.py" bodystart="170" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1test__dask__emulation_1_1__TestDelayed_1a9267f3100248c07879d0cff0d07e1435" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def test.test_dask_emulation._TestDelayed.test_with_noniterable_nout_1</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_with_noniterable_nout_1</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests that using nout=1 works as expected with non-iterable objects</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/test/test_dask_emulation.py" line="178" column="1" bodyfile="daliuge-runtime/test/test_dask_emulation.py" bodystart="178" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1test__dask__emulation_1_1__TestDelayed_1a8be26784282e2b3f89d04b79a0339246" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def test.test_dask_emulation._TestDelayed.test_with_iterable_nout_1</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_with_iterable_nout_1</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests that using nout=1 works as expected with iterable objects</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/test/test_dask_emulation.py" line="193" column="1" bodyfile="daliuge-runtime/test/test_dask_emulation.py" bodystart="193" bodyend="204"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Test definitions run under non-delayed, dlg_delayed and possibly dask_delayed contexts</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1661">
+        <label>test.test_dask_emulation._TestDelayed</label>
+        <link refid="classtest_1_1test__dask__emulation_1_1__TestDelayed"/>
+        <childnode refid="1662" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1662">
+        <label>object</label>
+      </node>
+      <node id="1665">
+        <label>test.test_dask_emulation.TestNoDelayed</label>
+        <link refid="classtest_1_1test__dask__emulation_1_1TestNoDelayed"/>
+        <childnode refid="1661" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1663">
+        <label>test.test_dask_emulation.TestDaskDelayed</label>
+        <link refid="classtest_1_1test__dask__emulation_1_1TestDaskDelayed"/>
+        <childnode refid="1661" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1664">
+        <label>test.test_dask_emulation.TestDlgDelayed</label>
+        <link refid="classtest_1_1test__dask__emulation_1_1TestDlgDelayed"/>
+        <childnode refid="1661" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1666">
+        <label>test.test_dask_emulation._TestDelayed</label>
+        <link refid="classtest_1_1test__dask__emulation_1_1__TestDelayed"/>
+        <childnode refid="1667" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1667">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="daliuge-runtime/test/test_dask_emulation.py" line="90" column="1" bodyfile="daliuge-runtime/test/test_dask_emulation.py" bodystart="90" bodyend="205"/>
+    <listofallmembers>
+      <member refid="classtest_1_1test__dask__emulation_1_1__TestDelayed_1a579004d9a1b5c0e605b3ac32f84e0891" prot="public" virt="non-virtual"><scope>test::test_dask_emulation::_TestDelayed</scope><name>test_args_as_lists</name></member>
+      <member refid="classtest_1_1test__dask__emulation_1_1__TestDelayed_1ae726018a57e20665dcebdaad10ca7e68" prot="public" virt="non-virtual"><scope>test::test_dask_emulation::_TestDelayed</scope><name>test_compute_with_lists</name></member>
+      <member refid="classtest_1_1test__dask__emulation_1_1__TestDelayed_1a18b7c2d29ad1837dc3cfb66b0cae1815" prot="public" virt="non-virtual"><scope>test::test_dask_emulation::_TestDelayed</scope><name>test_none_arg</name></member>
+      <member refid="classtest_1_1test__dask__emulation_1_1__TestDelayed_1ab7098eb1678a9cff2ae1c6f7c0144fac" prot="public" virt="non-virtual"><scope>test::test_dask_emulation::_TestDelayed</scope><name>test_simple</name></member>
+      <member refid="classtest_1_1test__dask__emulation_1_1__TestDelayed_1adf86f7eda0aa3ff34c6ce8b2819d5c1a" prot="public" virt="non-virtual"><scope>test::test_dask_emulation::_TestDelayed</scope><name>test_with_args</name></member>
+      <member refid="classtest_1_1test__dask__emulation_1_1__TestDelayed_1a9b2b6aefcddfb26d5a0a08ab74bc45a5" prot="public" virt="non-virtual"><scope>test::test_dask_emulation::_TestDelayed</scope><name>test_with_args_and_kwargs</name></member>
+      <member refid="classtest_1_1test__dask__emulation_1_1__TestDelayed_1a8be26784282e2b3f89d04b79a0339246" prot="public" virt="non-virtual"><scope>test::test_dask_emulation::_TestDelayed</scope><name>test_with_iterable_nout_1</name></member>
+      <member refid="classtest_1_1test__dask__emulation_1_1__TestDelayed_1a1a86fc57c44f9934b551ecc397c84d72" prot="public" virt="non-virtual"><scope>test::test_dask_emulation::_TestDelayed</scope><name>test_with_kwargs</name></member>
+      <member refid="classtest_1_1test__dask__emulation_1_1__TestDelayed_1a9267f3100248c07879d0cff0d07e1435" prot="public" virt="non-virtual"><scope>test::test_dask_emulation::_TestDelayed</scope><name>test_with_noniterable_nout_1</name></member>
+      <member refid="classtest_1_1test__dask__emulation_1_1__TestDelayed_1a77ec03ede5c3c4f4b2d4cebcccb2d90d" prot="public" virt="non-virtual"><scope>test::test_dask_emulation::_TestDelayed</scope><name>test_with_user_defined_default</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacedlg_1_1common_1_1network" kind="namespace" language="Python">
+    <compoundname>dlg::common::network</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="network_8py_1aa51309ebe0538b26ec8177527a022319" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dlg::common::network.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <initializer>= logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-common/dlg/common/network.py" line="29" column="1" bodyfile="daliuge-common/dlg/common/network.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="network_8py_1a4f34d789c39a4a0b797df41bdcd99d01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.common.network.check_port</definition>
+        <argsstring>(host, port, timeout=0, checking_open=True, return_socket=False)</argsstring>
+        <name>check_port</name>
+        <param>
+          <type>host</type>
+          <defname>host</defname>
+        </param>
+        <param>
+          <type>port</type>
+          <defname>port</defname>
+        </param>
+        <param>
+          <type>timeout</type>
+          <defname>timeout</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>checking_open</type>
+          <defname>checking_open</defname>
+          <defval>True</defval>
+        </param>
+        <param>
+          <type>return_socket</type>
+          <defname>return_socket</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Checks that the port specified by ``host``:``port`` is either open or
+closed (depending on the value of ``checking_open``) within a given
+``timeout``.
+When checking for an open port, this method will keep trying to connect to
+it either until the given ``timeout`` has expired or until the socket is
+found open. When checking for a closed port this method will keep trying to
+connect to it until the connection is unsuccessful, or until the ``timeout``
+expires.
+Additionally, if some ``data`` is passed and the method is ``checking_open``
+then ``data`` will be written to the socket if it connects successfully.
+
+This method returns ``True`` if the port was found on the expected state
+within the time limit, and ``False`` otherwise.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-common/dlg/common/network.py" line="31" column="1" bodyfile="daliuge-common/dlg/common/network.py" bodystart="31" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="network_8py_1a98f9dada291d8354f757d73b01a5bf63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.common.network.portIsClosed</definition>
+        <argsstring>(host, port, timeout)</argsstring>
+        <name>portIsClosed</name>
+        <param>
+          <type>host</type>
+          <defname>host</defname>
+        </param>
+        <param>
+          <type>port</type>
+          <defname>port</defname>
+        </param>
+        <param>
+          <type>timeout</type>
+          <defname>timeout</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Checks if a given ``host``/``port`` is closed, with a given ``timeout``.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-common/dlg/common/network.py" line="124" column="1" bodyfile="daliuge-common/dlg/common/network.py" bodystart="124" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="network_8py_1a5aefbabc57bc652f06c2d0567749d5e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.common.network.portIsOpen</definition>
+        <argsstring>(host, port, timeout=0)</argsstring>
+        <name>portIsOpen</name>
+        <param>
+          <type>host</type>
+          <defname>host</defname>
+        </param>
+        <param>
+          <type>port</type>
+          <defname>port</defname>
+        </param>
+        <param>
+          <type>timeout</type>
+          <defname>timeout</defname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Checks if a given ``host``/``port`` is open, with a given ``timeout``.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-common/dlg/common/network.py" line="130" column="1" bodyfile="daliuge-common/dlg/common/network.py" bodystart="130" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="network_8py_1a722b4722a6d34fc380f402b3a69b67e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.common.network.connect_to</definition>
+        <argsstring>(host, port, timeout=None)</argsstring>
+        <name>connect_to</name>
+        <param>
+          <type>host</type>
+          <defname>host</defname>
+        </param>
+        <param>
+          <type>port</type>
+          <defname>port</defname>
+        </param>
+        <param>
+          <type>timeout</type>
+          <defname>timeout</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Connects to ``host``:``port`` within the given timeout and return the
+connected socket. If no connection could be established a socket.timeout
+error is raised
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-common/dlg/common/network.py" line="136" column="1" bodyfile="daliuge-common/dlg/common/network.py" bodystart="136" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="network_8py_1a9b56b2ac99224d7dd0191e891feb5c32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.common.network.write_to</definition>
+        <argsstring>(host, port, data, timeout=None)</argsstring>
+        <name>write_to</name>
+        <param>
+          <type>host</type>
+          <defname>host</defname>
+        </param>
+        <param>
+          <type>port</type>
+          <defname>port</defname>
+        </param>
+        <param>
+          <type>data</type>
+          <defname>data</defname>
+        </param>
+        <param>
+          <type>timeout</type>
+          <defname>timeout</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Connects to ``host``:``port`` within the given timeout and write the given
+piece of ``data`` into the connected socket.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-common/dlg/common/network.py" line="147" column="1" bodyfile="daliuge-common/dlg/common/network.py" bodystart="147" bodyend="154"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="daliuge-common/dlg/common/network.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

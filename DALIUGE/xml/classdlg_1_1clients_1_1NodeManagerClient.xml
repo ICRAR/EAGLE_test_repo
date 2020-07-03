@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classdlg_1_1clients_1_1NodeManagerClient" kind="class" language="Python" prot="public">
+    <compoundname>dlg::clients::NodeManagerClient</compoundname>
+    <basecompoundref refid="classdlg_1_1clients_1_1BaseDROPManagerClient" prot="public" virt="non-virtual">dlg.clients.BaseDROPManagerClient</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdlg_1_1clients_1_1NodeManagerClient_1aaac6f048ab52d345a33e0e1e4297e512" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.clients.NodeManagerClient.__init__</definition>
+        <argsstring>(self, host=&apos;localhost&apos;, port=constants.NODE_DEFAULT_REST_PORT, timeout=10)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>host</type>
+          <defname>host</defname>
+          <defval>&apos;localhost&apos;</defval>
+        </param>
+        <param>
+          <type>port</type>
+          <defname>port</defname>
+          <defval>constants.NODE_DEFAULT_REST_PORT</defval>
+        </param>
+        <param>
+          <type>timeout</type>
+          <defname>timeout</defname>
+          <defval>10</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-common/dlg/clients.py" line="149" column="1" bodyfile="daliuge-common/dlg/clients.py" bodystart="149" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1clients_1_1NodeManagerClient_1a52ac3e2c2b43c38f8d240f243e7e27da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.clients.NodeManagerClient.add_node_subscriptions</definition>
+        <argsstring>(self, sessionId, node_subscriptions)</argsstring>
+        <name>add_node_subscriptions</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>sessionId</type>
+          <defname>sessionId</defname>
+        </param>
+        <param>
+          <type>node_subscriptions</type>
+          <defname>node_subscriptions</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-common/dlg/clients.py" line="152" column="1" bodyfile="daliuge-common/dlg/clients.py" bodystart="152" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1clients_1_1NodeManagerClient_1ac026ad1ae246a8d24acde7adf823eeb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.clients.NodeManagerClient.trigger_drops</definition>
+        <argsstring>(self, sessionId, drop_uids)</argsstring>
+        <name>trigger_drops</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>sessionId</type>
+          <defname>sessionId</defname>
+        </param>
+        <param>
+          <type>drop_uids</type>
+          <defname>drop_uids</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-common/dlg/clients.py" line="155" column="1" bodyfile="daliuge-common/dlg/clients.py" bodystart="155" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1clients_1_1NodeManagerClient_1ab41c3cb5db568cbd5c9e01e280b36014" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.clients.NodeManagerClient.shutdown_node_manager</definition>
+        <argsstring>(self)</argsstring>
+        <name>shutdown_node_manager</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-common/dlg/clients.py" line="158" column="1" bodyfile="daliuge-common/dlg/clients.py" bodystart="158" bodyend="160"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>A NodeManager REST client
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="2591">
+        <label>dlg.clients.BaseDROPManagerClient</label>
+        <link refid="classdlg_1_1clients_1_1BaseDROPManagerClient"/>
+        <childnode refid="2592" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2592">
+        <label>RestClient</label>
+      </node>
+      <node id="2590">
+        <label>dlg.clients.NodeManagerClient</label>
+        <link refid="classdlg_1_1clients_1_1NodeManagerClient"/>
+        <childnode refid="2591" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2594">
+        <label>dlg.clients.BaseDROPManagerClient</label>
+        <link refid="classdlg_1_1clients_1_1BaseDROPManagerClient"/>
+        <childnode refid="2595" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2595">
+        <label>RestClient</label>
+      </node>
+      <node id="2593">
+        <label>dlg.clients.NodeManagerClient</label>
+        <link refid="classdlg_1_1clients_1_1NodeManagerClient"/>
+        <childnode refid="2594" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="daliuge-common/dlg/clients.py" line="145" column="1" bodyfile="daliuge-common/dlg/clients.py" bodystart="145" bodyend="161"/>
+    <listofallmembers>
+      <member refid="classdlg_1_1clients_1_1NodeManagerClient_1aaac6f048ab52d345a33e0e1e4297e512" prot="public" virt="non-virtual"><scope>dlg::clients::NodeManagerClient</scope><name>__init__</name></member>
+      <member refid="classdlg_1_1clients_1_1NodeManagerClient_1a52ac3e2c2b43c38f8d240f243e7e27da" prot="public" virt="non-virtual"><scope>dlg::clients::NodeManagerClient</scope><name>add_node_subscriptions</name></member>
+      <member refid="classdlg_1_1clients_1_1BaseDROPManagerClient_1af5356232498d1730befe8d3e19073410" prot="public" virt="non-virtual"><scope>dlg::clients::NodeManagerClient</scope><name>addGraphSpec</name></member>
+      <member refid="classdlg_1_1clients_1_1BaseDROPManagerClient_1aa4fd7f1c62a15feb1aaa9d009e414c14" prot="public" virt="non-virtual"><scope>dlg::clients::NodeManagerClient</scope><name>append_graph</name></member>
+      <member refid="classdlg_1_1clients_1_1BaseDROPManagerClient_1aab0d50a3d6e37df9b141f618703599fa" prot="public" virt="non-virtual"><scope>dlg::clients::NodeManagerClient</scope><name>cancelSession</name></member>
+      <member refid="classdlg_1_1clients_1_1BaseDROPManagerClient_1a2651d91eb4896cc778cac42773d0f2e5" prot="public" virt="non-virtual"><scope>dlg::clients::NodeManagerClient</scope><name>create_session</name></member>
+      <member refid="classdlg_1_1clients_1_1BaseDROPManagerClient_1ac1787259a69ca35a5e4c7a1fed9ffd69" prot="public" virt="non-virtual"><scope>dlg::clients::NodeManagerClient</scope><name>createSession</name></member>
+      <member refid="classdlg_1_1clients_1_1BaseDROPManagerClient_1ab25a86d7df501d0902d0e71591edc60a" prot="public" virt="non-virtual"><scope>dlg::clients::NodeManagerClient</scope><name>deploy_session</name></member>
+      <member refid="classdlg_1_1clients_1_1BaseDROPManagerClient_1a8c07a9ed81f83ce458520cb5e47fbef0" prot="public" virt="non-virtual"><scope>dlg::clients::NodeManagerClient</scope><name>deploySession</name></member>
+      <member refid="classdlg_1_1clients_1_1BaseDROPManagerClient_1a5e5da7c0226bc032d24cbe5fcd45fa33" prot="public" virt="non-virtual"><scope>dlg::clients::NodeManagerClient</scope><name>destroy_session</name></member>
+      <member refid="classdlg_1_1clients_1_1BaseDROPManagerClient_1a6fc7fbce20611e8581a8e90cb78b2097" prot="public" virt="non-virtual"><scope>dlg::clients::NodeManagerClient</scope><name>destroySession</name></member>
+      <member refid="classdlg_1_1clients_1_1BaseDROPManagerClient_1a274548047ad57ff1fcc91d628f725ba5" prot="public" virt="non-virtual"><scope>dlg::clients::NodeManagerClient</scope><name>getGraph</name></member>
+      <member refid="classdlg_1_1clients_1_1BaseDROPManagerClient_1a180b57b793a2d63f5f52bf0c5be604eb" prot="public" virt="non-virtual"><scope>dlg::clients::NodeManagerClient</scope><name>getGraphSize</name></member>
+      <member refid="classdlg_1_1clients_1_1BaseDROPManagerClient_1a9e07db578ddb1cc332927bccc671236e" prot="public" virt="non-virtual"><scope>dlg::clients::NodeManagerClient</scope><name>getGraphStatus</name></member>
+      <member refid="classdlg_1_1clients_1_1BaseDROPManagerClient_1a8dc3aa172825484e459c30bdd663cc9e" prot="public" virt="non-virtual"><scope>dlg::clients::NodeManagerClient</scope><name>getSessionStatus</name></member>
+      <member refid="classdlg_1_1clients_1_1BaseDROPManagerClient_1ae7489a0382b54e4c28431881a5fe3fb9" prot="public" virt="non-virtual"><scope>dlg::clients::NodeManagerClient</scope><name>graph</name></member>
+      <member refid="classdlg_1_1clients_1_1BaseDROPManagerClient_1a8e3a07d43836bdb0d17151eae82d1490" prot="public" virt="non-virtual"><scope>dlg::clients::NodeManagerClient</scope><name>graph_size</name></member>
+      <member refid="classdlg_1_1clients_1_1BaseDROPManagerClient_1ad7b449d62ec87980b4717a94869c7ec7" prot="public" virt="non-virtual"><scope>dlg::clients::NodeManagerClient</scope><name>graph_status</name></member>
+      <member refid="classdlg_1_1clients_1_1BaseDROPManagerClient_1a46e08a77e893e77b3229bf75de94e9f9" prot="public" virt="non-virtual"><scope>dlg::clients::NodeManagerClient</scope><name>session</name></member>
+      <member refid="classdlg_1_1clients_1_1BaseDROPManagerClient_1a5d43c0f801b7be7b15aa7bc6017c1c7c" prot="public" virt="non-virtual"><scope>dlg::clients::NodeManagerClient</scope><name>session_status</name></member>
+      <member refid="classdlg_1_1clients_1_1BaseDROPManagerClient_1a7fa616270fc2ad5abe36300533d553f5" prot="public" virt="non-virtual"><scope>dlg::clients::NodeManagerClient</scope><name>sessions</name></member>
+      <member refid="classdlg_1_1clients_1_1NodeManagerClient_1ab41c3cb5db568cbd5c9e01e280b36014" prot="public" virt="non-virtual"><scope>dlg::clients::NodeManagerClient</scope><name>shutdown_node_manager</name></member>
+      <member refid="classdlg_1_1clients_1_1BaseDROPManagerClient_1a19240a8e33ad748c683ab19d4d477714" prot="public" virt="non-virtual"><scope>dlg::clients::NodeManagerClient</scope><name>stop</name></member>
+      <member refid="classdlg_1_1clients_1_1NodeManagerClient_1ac026ad1ae246a8d24acde7adf823eeb2" prot="public" virt="non-virtual"><scope>dlg::clients::NodeManagerClient</scope><name>trigger_drops</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

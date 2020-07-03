@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classdlg_1_1apps_1_1archiving_1_1ExternalStoreApp" kind="class" language="Python" prot="public">
+    <compoundname>dlg::apps::archiving::ExternalStoreApp</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">BarrierAppDROP</basecompoundref>
+    <derivedcompoundref refid="classdlg_1_1apps_1_1archiving_1_1NgasArchivingApp" prot="public" virt="non-virtual">dlg.apps.archiving.NgasArchivingApp</derivedcompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdlg_1_1apps_1_1archiving_1_1ExternalStoreApp_1ae526984e031db40f72af2dd9af3950f0" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dlg.apps.archiving.ExternalStoreApp::compontent_meta</definition>
+        <argsstring></argsstring>
+        <name>compontent_meta</name>
+        <initializer>= dlg_component(&apos;<ref refid="classdlg_1_1apps_1_1archiving_1_1ExternalStoreApp" kindref="compound">ExternalStoreApp</ref>&apos;, &apos;An application that takes its input DROP (which must be one, and only one) &apos;
+                                    &apos;and creates a copy of it in a completely external <ref refid="classdlg_1_1apps_1_1archiving_1_1ExternalStoreApp_1a6a41c4de0c0a291d8d7924563a592a64" kindref="member">store</ref>, from the point &apos;
+                                    &apos;of view of the DALiuGE framework.&apos;,
+                                    [dlg_batch_input(&apos;binary/*&apos;, [])],
+                                    [dlg_batch_output(&apos;binary/*&apos;, [])],
+                                    [dlg_streaming_input(&apos;binary/*&apos;)])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/apps/archiving.py" line="39" column="1" bodyfile="daliuge-runtime/dlg/apps/archiving.py" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdlg_1_1apps_1_1archiving_1_1ExternalStoreApp_1afdbd2bcc0d65f5605d88db611cae2c7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.apps.archiving.ExternalStoreApp.run</definition>
+        <argsstring>(self)</argsstring>
+        <name>run</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/apps/archiving.py" line="46" column="1" bodyfile="daliuge-runtime/dlg/apps/archiving.py" bodystart="46" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1apps_1_1archiving_1_1ExternalStoreApp_1a6a41c4de0c0a291d8d7924563a592a64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.apps.archiving.ExternalStoreApp.store</definition>
+        <argsstring>(self, inputDrop)</argsstring>
+        <name>store</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>inputDrop</type>
+          <defname>inputDrop</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Method implemented by subclasses. It should stores the contents of
+`inputDrop` into an external store.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/apps/archiving.py" line="58" column="1" bodyfile="daliuge-runtime/dlg/apps/archiving.py" bodystart="58" bodyend="63"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>An application that takes its input DROP (which must be one, and only
+one) and creates a copy of it in a completely external store, from the point
+of view of the DALiuGE framework.
+
+Because this application copies the data to an external location, it also
+shouldn&apos;t contain any output, making it a leaf node of the physical graph
+where it resides.
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="2138">
+        <label>dlg.apps.archiving.NgasArchivingApp</label>
+        <link refid="classdlg_1_1apps_1_1archiving_1_1NgasArchivingApp"/>
+        <childnode refid="2136" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2136">
+        <label>dlg.apps.archiving.ExternalStoreApp</label>
+        <link refid="classdlg_1_1apps_1_1archiving_1_1ExternalStoreApp"/>
+        <childnode refid="2137" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2137">
+        <label>BarrierAppDROP</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2139">
+        <label>dlg.apps.archiving.ExternalStoreApp</label>
+        <link refid="classdlg_1_1apps_1_1archiving_1_1ExternalStoreApp"/>
+        <childnode refid="2140" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2140">
+        <label>BarrierAppDROP</label>
+      </node>
+    </collaborationgraph>
+    <location file="daliuge-runtime/dlg/apps/archiving.py" line="29" column="1" bodyfile="daliuge-runtime/dlg/apps/archiving.py" bodystart="29" bodyend="64"/>
+    <listofallmembers>
+      <member refid="classdlg_1_1apps_1_1archiving_1_1ExternalStoreApp_1ae526984e031db40f72af2dd9af3950f0" prot="public" virt="non-virtual"><scope>dlg::apps::archiving::ExternalStoreApp</scope><name>compontent_meta</name></member>
+      <member refid="classdlg_1_1apps_1_1archiving_1_1ExternalStoreApp_1afdbd2bcc0d65f5605d88db611cae2c7b" prot="public" virt="non-virtual"><scope>dlg::apps::archiving::ExternalStoreApp</scope><name>run</name></member>
+      <member refid="classdlg_1_1apps_1_1archiving_1_1ExternalStoreApp_1a6a41c4de0c0a291d8d7924563a592a64" prot="public" virt="non-virtual"><scope>dlg::apps::archiving::ExternalStoreApp</scope><name>store</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

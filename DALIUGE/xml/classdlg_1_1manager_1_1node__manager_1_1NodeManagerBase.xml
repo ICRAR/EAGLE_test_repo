@@ -1,0 +1,770 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase" kind="class" language="Python" prot="public">
+    <compoundname>dlg::manager::node_manager::NodeManagerBase</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">DROPManager</basecompoundref>
+    <derivedcompoundref refid="classdlg_1_1manager_1_1node__manager_1_1NodeManager" prot="public" virt="non-virtual">dlg.manager.node_manager.NodeManager</derivedcompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1a11656ce04004b88ccaf90453183f1596" prot="private" static="yes" mutable="no">
+        <type></type>
+        <definition>dlg.manager.node_manager.NodeManagerBase::__metaclass__</definition>
+        <argsstring></argsstring>
+        <name>__metaclass__</name>
+        <initializer>= abc.ABCMeta</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/node_manager.py" line="107" column="1" bodyfile="daliuge-runtime/dlg/manager/node_manager.py" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1a902782ced342eabdbf299059f7757cf9" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.manager.node_manager.NodeManagerBase::_dlm</definition>
+        <argsstring></argsstring>
+        <name>_dlm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/node_manager.py" line="116" column="1" bodyfile="daliuge-runtime/dlg/manager/node_manager.py" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1ae6a189e27cf8e912b6cdc204adbb966d" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.manager.node_manager.NodeManagerBase::_sessions</definition>
+        <argsstring></argsstring>
+        <name>_sessions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/node_manager.py" line="117" column="1" bodyfile="daliuge-runtime/dlg/manager/node_manager.py" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1a4255db309a377ce76e22300564abf5c7" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.manager.node_manager.NodeManagerBase::_error_listener</definition>
+        <argsstring></argsstring>
+        <name>_error_listener</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/node_manager.py" line="131" column="1" bodyfile="daliuge-runtime/dlg/manager/node_manager.py" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1abc7127aa6d4fc5b7a35ef4f5d009efca" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.manager.node_manager.NodeManagerBase::_event_listeners</definition>
+        <argsstring></argsstring>
+        <name>_event_listeners</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/node_manager.py" line="132" column="1" bodyfile="daliuge-runtime/dlg/manager/node_manager.py" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1a4972acbf307cdc07cddb583066e6c74f" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.manager.node_manager.NodeManagerBase::_threadpool</definition>
+        <argsstring></argsstring>
+        <name>_threadpool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/node_manager.py" line="136" column="1" bodyfile="daliuge-runtime/dlg/manager/node_manager.py" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1ad8bb13652ff63223b84bdfb360c8407f" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.manager.node_manager.NodeManagerBase::_logging_event_listener</definition>
+        <argsstring></argsstring>
+        <name>_logging_event_listener</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/node_manager.py" line="144" column="1" bodyfile="daliuge-runtime/dlg/manager/node_manager.py" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1aafdebe4de020994ff1cdfe22530f9b78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.node_manager.NodeManagerBase.__init__</definition>
+        <argsstring>(self, useDLM=True, dlgPath=None, error_listener=None, event_listeners=[], max_threads=0)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>useDLM</type>
+          <defname>useDLM</defname>
+          <defval>True</defval>
+        </param>
+        <param>
+          <type>dlgPath</type>
+          <defname>dlgPath</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>error_listener</type>
+          <defname>error_listener</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>event_listeners</type>
+          <defname>event_listeners</defname>
+          <defval>[]</defval>
+        </param>
+        <param>
+          <type>max_threads</type>
+          <defname>max_threads</defname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/node_manager.py" line="109" column="1" bodyfile="daliuge-runtime/dlg/manager/node_manager.py" bodystart="114" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1abe9fa29431db13be64a0656d8b71272f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.node_manager.NodeManagerBase.start</definition>
+        <argsstring>(self)</argsstring>
+        <name>start</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Starts any background task required by this Node Manager
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/node_manager.py" line="150" column="1" bodyfile="daliuge-runtime/dlg/manager/node_manager.py" bodystart="150" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1a0957ff5d4dc1f3d0183be66c031074bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.node_manager.NodeManagerBase.shutdown</definition>
+        <argsstring>(self)</argsstring>
+        <name>shutdown</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Stops any pending background task run by this Node Manager
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/node_manager.py" line="156" column="1" bodyfile="daliuge-runtime/dlg/manager/node_manager.py" bodystart="156" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1a290ffe59962cd096cb53d6185e8887b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.node_manager.NodeManagerBase.subscribe</definition>
+        <argsstring>(self, host, port)</argsstring>
+        <name>subscribe</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>host</type>
+          <defname>host</defname>
+        </param>
+        <param>
+          <type>port</type>
+          <defname>port</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Subscribes this Node Manager to events published in from ``host``:``port``
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/node_manager.py" line="162" column="1" bodyfile="daliuge-runtime/dlg/manager/node_manager.py" bodystart="162" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1a89c4ff1dc45b85bc4c87738c08082dbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.node_manager.NodeManagerBase.publish_event</definition>
+        <argsstring>(self, evt)</argsstring>
+        <name>publish_event</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>evt</type>
+          <defname>evt</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Publishes the event ``evt`` for other Node Managers to receive it
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/node_manager.py" line="168" column="1" bodyfile="daliuge-runtime/dlg/manager/node_manager.py" bodystart="168" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1a5ae5e02d1731b7ebf1aa35dce3e0c2be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.node_manager.NodeManagerBase.get_rpc_client</definition>
+        <argsstring>(self, hostname, port)</argsstring>
+        <name>get_rpc_client</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>hostname</type>
+          <defname>hostname</defname>
+        </param>
+        <param>
+          <type>port</type>
+          <defname>port</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Creates an RPC client connected to the node manager running in
+``host``:``port``, and its closing method, as a 2-tuple.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/node_manager.py" line="174" column="1" bodyfile="daliuge-runtime/dlg/manager/node_manager.py" bodystart="174" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1aa41056d4624c1c93f98f90e481a01a5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.node_manager.NodeManagerBase.deliver_event</definition>
+        <argsstring>(self, evt)</argsstring>
+        <name>deliver_event</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>evt</type>
+          <defname>evt</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Method called by subclasses when a new event has arrived through the
+subscription mechanism.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/node_manager.py" line="180" column="1" bodyfile="daliuge-runtime/dlg/manager/node_manager.py" bodystart="180" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1ad80d87b79afed48a3cf34ec728a88a37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.node_manager.NodeManagerBase.createSession</definition>
+        <argsstring>(self, sessionId)</argsstring>
+        <name>createSession</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>sessionId</type>
+          <defname>sessionId</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/node_manager.py" line="194" column="1" bodyfile="daliuge-runtime/dlg/manager/node_manager.py" bodystart="194" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1a615ed4ca57304ab7fe6c31366daac0d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.node_manager.NodeManagerBase.getSessionStatus</definition>
+        <argsstring>(self, sessionId)</argsstring>
+        <name>getSessionStatus</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>sessionId</type>
+          <defname>sessionId</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/node_manager.py" line="200" column="1" bodyfile="daliuge-runtime/dlg/manager/node_manager.py" bodystart="200" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1a246db4dd6a5645867f109391b8c8b23c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.node_manager.NodeManagerBase.linkGraphParts</definition>
+        <argsstring>(self, sessionId, lhOID, rhOID, linkType)</argsstring>
+        <name>linkGraphParts</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>sessionId</type>
+          <defname>sessionId</defname>
+        </param>
+        <param>
+          <type>lhOID</type>
+          <defname>lhOID</defname>
+        </param>
+        <param>
+          <type>rhOID</type>
+          <defname>rhOID</defname>
+        </param>
+        <param>
+          <type>linkType</type>
+          <defname>linkType</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/node_manager.py" line="204" column="1" bodyfile="daliuge-runtime/dlg/manager/node_manager.py" bodystart="204" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1ac17b875d70bdab7312e48c9226ffc455" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.node_manager.NodeManagerBase.addGraphSpec</definition>
+        <argsstring>(self, sessionId, graphSpec)</argsstring>
+        <name>addGraphSpec</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>sessionId</type>
+          <defname>sessionId</defname>
+        </param>
+        <param>
+          <type>graphSpec</type>
+          <defname>graphSpec</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/node_manager.py" line="208" column="1" bodyfile="daliuge-runtime/dlg/manager/node_manager.py" bodystart="208" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1adcaa0fea7b46b34c93ed098f503961d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.node_manager.NodeManagerBase.getGraphStatus</definition>
+        <argsstring>(self, sessionId)</argsstring>
+        <name>getGraphStatus</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>sessionId</type>
+          <defname>sessionId</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/node_manager.py" line="212" column="1" bodyfile="daliuge-runtime/dlg/manager/node_manager.py" bodystart="212" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1ad79e0bf0bb86e54a8277b306ecd5576b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.node_manager.NodeManagerBase.getGraph</definition>
+        <argsstring>(self, sessionId)</argsstring>
+        <name>getGraph</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>sessionId</type>
+          <defname>sessionId</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/node_manager.py" line="216" column="1" bodyfile="daliuge-runtime/dlg/manager/node_manager.py" bodystart="216" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1aa3c550a450823cef4a2252503610480f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.node_manager.NodeManagerBase.deploySession</definition>
+        <argsstring>(self, sessionId, completedDrops=[])</argsstring>
+        <name>deploySession</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>sessionId</type>
+          <defname>sessionId</defname>
+        </param>
+        <param>
+          <type>completedDrops</type>
+          <defname>completedDrops</defname>
+          <defval>[]</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/node_manager.py" line="220" column="1" bodyfile="daliuge-runtime/dlg/manager/node_manager.py" bodystart="220" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1ae3c72b00fc52e6ffc726b3fda2536573" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.node_manager.NodeManagerBase.cancelSession</definition>
+        <argsstring>(self, sessionId)</argsstring>
+        <name>cancelSession</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>sessionId</type>
+          <defname>sessionId</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/node_manager.py" line="251" column="1" bodyfile="daliuge-runtime/dlg/manager/node_manager.py" bodystart="251" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1a35da4843a1c10dca9bd91473e5bd7273" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.node_manager.NodeManagerBase.destroySession</definition>
+        <argsstring>(self, sessionId)</argsstring>
+        <name>destroySession</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>sessionId</type>
+          <defname>sessionId</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/node_manager.py" line="255" column="1" bodyfile="daliuge-runtime/dlg/manager/node_manager.py" bodystart="255" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1a4c1d5283a14e2cef4a77145fd4e731dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.node_manager.NodeManagerBase.getSessionIds</definition>
+        <argsstring>(self)</argsstring>
+        <name>getSessionIds</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/node_manager.py" line="260" column="1" bodyfile="daliuge-runtime/dlg/manager/node_manager.py" bodystart="260" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1ae05ad6bfe8f55f969d9ed43dbc17284d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.node_manager.NodeManagerBase.getGraphSize</definition>
+        <argsstring>(self, sessionId)</argsstring>
+        <name>getGraphSize</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>sessionId</type>
+          <defname>sessionId</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/node_manager.py" line="263" column="1" bodyfile="daliuge-runtime/dlg/manager/node_manager.py" bodystart="263" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1aafbc4525264125d33f77fb98339ab91a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.node_manager.NodeManagerBase.trigger_drops</definition>
+        <argsstring>(self, sessionId, uids)</argsstring>
+        <name>trigger_drops</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>sessionId</type>
+          <defname>sessionId</defname>
+        </param>
+        <param>
+          <type>uids</type>
+          <defname>uids</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/node_manager.py" line="268" column="1" bodyfile="daliuge-runtime/dlg/manager/node_manager.py" bodystart="268" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1af96b7af09f276a98a3ff1b7c2869a9e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.node_manager.NodeManagerBase.add_node_subscriptions</definition>
+        <argsstring>(self, sessionId, relationships)</argsstring>
+        <name>add_node_subscriptions</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>sessionId</type>
+          <defname>sessionId</defname>
+        </param>
+        <param>
+          <type>relationships</type>
+          <defname>relationships</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/node_manager.py" line="275" column="1" bodyfile="daliuge-runtime/dlg/manager/node_manager.py" bodystart="275" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1ace19382a8d1f8183638d319c2bb1cd97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.node_manager.NodeManagerBase.has_method</definition>
+        <argsstring>(self, sessionId, uid, mname)</argsstring>
+        <name>has_method</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>sessionId</type>
+          <defname>sessionId</defname>
+        </param>
+        <param>
+          <type>uid</type>
+          <defname>uid</defname>
+        </param>
+        <param>
+          <type>mname</type>
+          <defname>mname</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/node_manager.py" line="292" column="1" bodyfile="daliuge-runtime/dlg/manager/node_manager.py" bodystart="292" bodyend="295"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1a3e8c988c34f3da7651f82ab91f6bc215" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.node_manager.NodeManagerBase.get_drop_property</definition>
+        <argsstring>(self, sessionId, uuid, prop_name)</argsstring>
+        <name>get_drop_property</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>sessionId</type>
+          <defname>sessionId</defname>
+        </param>
+        <param>
+          <type>uuid</type>
+          <defname>uuid</defname>
+        </param>
+        <param>
+          <type>prop_name</type>
+          <defname>prop_name</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/node_manager.py" line="296" column="1" bodyfile="daliuge-runtime/dlg/manager/node_manager.py" bodystart="296" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1a5fe84205f0943c38e9d287e610849704" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.node_manager.NodeManagerBase.call_drop</definition>
+        <argsstring>(self, sessionId, uid, method, args)</argsstring>
+        <name>call_drop</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>sessionId</type>
+          <defname>sessionId</defname>
+        </param>
+        <param>
+          <type>uid</type>
+          <defname>uid</defname>
+        </param>
+        <param>
+          <type>method</type>
+          <defname>method</defname>
+        </param>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/node_manager.py" line="300" column="1" bodyfile="daliuge-runtime/dlg/manager/node_manager.py" bodystart="300" bodyend="304"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1a21218b55b65da91b77da455710c40017" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.node_manager.NodeManagerBase._check_session_id</definition>
+        <argsstring>(self, session_id)</argsstring>
+        <name>_check_session_id</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>session_id</type>
+          <defname>session_id</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/node_manager.py" line="190" column="1" bodyfile="daliuge-runtime/dlg/manager/node_manager.py" bodystart="190" bodyend="193"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Base class for a DROPManager that creates and holds references to DROPs.
+
+A NodeManagerBase is the ultimate responsible of handling DROPs. It does so not
+directly, but via Sessions, which represent and encapsulate separate,
+independent DROP graph executions. All DROPs created by the
+different Sessions are also given to a common DataLifecycleManager, which
+takes care of expiring them when needed and replicating them.
+
+Since a NodeManagerBase can handle more than one session, in principle only one
+NodeManagerBase is needed for each computing node, thus its name.
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="2585">
+        <label>dlg.manager.node_manager.NodeManagerBase</label>
+        <link refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase"/>
+        <childnode refid="2586" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2586">
+        <label>DROPManager</label>
+      </node>
+      <node id="2587">
+        <label>dlg.manager.node_manager.NodeManager</label>
+        <link refid="classdlg_1_1manager_1_1node__manager_1_1NodeManager"/>
+        <childnode refid="2585" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2588">
+        <label>dlg.manager.node_manager.NodeManagerBase</label>
+        <link refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase"/>
+        <childnode refid="2589" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2589">
+        <label>DROPManager</label>
+      </node>
+    </collaborationgraph>
+    <location file="daliuge-runtime/dlg/manager/node_manager.py" line="93" column="1" bodyfile="daliuge-runtime/dlg/manager/node_manager.py" bodystart="93" bodyend="305"/>
+    <listofallmembers>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1aafdebe4de020994ff1cdfe22530f9b78" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManagerBase</scope><name>__init__</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1a11656ce04004b88ccaf90453183f1596" prot="private" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManagerBase</scope><name>__metaclass__</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1a21218b55b65da91b77da455710c40017" prot="private" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManagerBase</scope><name>_check_session_id</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1a902782ced342eabdbf299059f7757cf9" prot="private" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManagerBase</scope><name>_dlm</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1a4255db309a377ce76e22300564abf5c7" prot="private" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManagerBase</scope><name>_error_listener</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1abc7127aa6d4fc5b7a35ef4f5d009efca" prot="private" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManagerBase</scope><name>_event_listeners</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1ad8bb13652ff63223b84bdfb360c8407f" prot="private" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManagerBase</scope><name>_logging_event_listener</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1ae6a189e27cf8e912b6cdc204adbb966d" prot="private" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManagerBase</scope><name>_sessions</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1a4972acbf307cdc07cddb583066e6c74f" prot="private" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManagerBase</scope><name>_threadpool</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1af96b7af09f276a98a3ff1b7c2869a9e1" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManagerBase</scope><name>add_node_subscriptions</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1ac17b875d70bdab7312e48c9226ffc455" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManagerBase</scope><name>addGraphSpec</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1a5fe84205f0943c38e9d287e610849704" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManagerBase</scope><name>call_drop</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1ae3c72b00fc52e6ffc726b3fda2536573" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManagerBase</scope><name>cancelSession</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1ad80d87b79afed48a3cf34ec728a88a37" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManagerBase</scope><name>createSession</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1aa41056d4624c1c93f98f90e481a01a5a" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManagerBase</scope><name>deliver_event</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1aa3c550a450823cef4a2252503610480f" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManagerBase</scope><name>deploySession</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1a35da4843a1c10dca9bd91473e5bd7273" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManagerBase</scope><name>destroySession</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1a3e8c988c34f3da7651f82ab91f6bc215" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManagerBase</scope><name>get_drop_property</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1a5ae5e02d1731b7ebf1aa35dce3e0c2be" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManagerBase</scope><name>get_rpc_client</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1ad79e0bf0bb86e54a8277b306ecd5576b" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManagerBase</scope><name>getGraph</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1ae05ad6bfe8f55f969d9ed43dbc17284d" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManagerBase</scope><name>getGraphSize</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1adcaa0fea7b46b34c93ed098f503961d6" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManagerBase</scope><name>getGraphStatus</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1a4c1d5283a14e2cef4a77145fd4e731dc" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManagerBase</scope><name>getSessionIds</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1a615ed4ca57304ab7fe6c31366daac0d5" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManagerBase</scope><name>getSessionStatus</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1ace19382a8d1f8183638d319c2bb1cd97" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManagerBase</scope><name>has_method</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1a246db4dd6a5645867f109391b8c8b23c" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManagerBase</scope><name>linkGraphParts</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1a89c4ff1dc45b85bc4c87738c08082dbb" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManagerBase</scope><name>publish_event</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1a0957ff5d4dc1f3d0183be66c031074bb" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManagerBase</scope><name>shutdown</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1abe9fa29431db13be64a0656d8b71272f" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManagerBase</scope><name>start</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1a290ffe59962cd096cb53d6185e8887b3" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManagerBase</scope><name>subscribe</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1aafbc4525264125d33f77fb98339ab91a" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManagerBase</scope><name>trigger_drops</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

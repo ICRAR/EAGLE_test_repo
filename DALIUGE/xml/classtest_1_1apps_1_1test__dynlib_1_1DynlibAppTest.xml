@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtest_1_1apps_1_1test__dynlib_1_1DynlibAppTest" kind="class" language="Python" prot="public">
+    <compoundname>test::apps::test_dynlib::DynlibAppTest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtest_1_1apps_1_1test__dynlib_1_1DynlibAppTest_1a315c38b33877d8aa88f7e048997767c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def test.apps.test_dynlib.DynlibAppTest.test_simple_batch_copy</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_simple_batch_copy</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/test/apps/test_dynlib.py" line="45" column="1" bodyfile="daliuge-runtime/test/apps/test_dynlib.py" bodystart="45" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1apps_1_1test__dynlib_1_1DynlibAppTest_1aefa0f34c6608745148e89efbc51265ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def test.apps.test_dynlib.DynlibAppTest.test_simple_stream_copy</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_simple_stream_copy</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/test/apps/test_dynlib.py" line="48" column="1" bodyfile="daliuge-runtime/test/apps/test_dynlib.py" bodystart="48" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1apps_1_1test__dynlib_1_1DynlibAppTest_1aae83558242e864c54d6806a67b3bd186" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def test.apps.test_dynlib.DynlibAppTest.test_cancel_dynlibprocapp</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_cancel_dynlibprocapp</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Checks that we can cancel a long-running dynlib proc app</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/test/apps/test_dynlib.py" line="101" column="1" bodyfile="daliuge-runtime/test/apps/test_dynlib.py" bodystart="101" bodyend="116"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtest_1_1apps_1_1test__dynlib_1_1DynlibAppTest_1a80a629449d0ede71bd35f14d12d56d0a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def test.apps.test_dynlib.DynlibAppTest._test_simple_copy</definition>
+        <argsstring>(self, streaming)</argsstring>
+        <name>_test_simple_copy</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>streaming</type>
+          <defname>streaming</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Checks that the following graph works, both in streaming and batch mode:
+
+A ----&gt; B ----&gt; C
+   |       +--&gt; D
+   |
+   +--&gt; E ----&gt; F
+   +--&gt; G
+
+Both B and E use the same dynamically loaded library and work with their
+input A to copy the inputs into their outputs.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/test/apps/test_dynlib.py" line="51" column="1" bodyfile="daliuge-runtime/test/apps/test_dynlib.py" bodystart="51" bodyend="100"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2078">
+        <label>test.apps.test_dynlib.DynlibAppTest</label>
+        <link refid="classtest_1_1apps_1_1test__dynlib_1_1DynlibAppTest"/>
+        <childnode refid="2079" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2079">
+        <label>TestCase</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2080">
+        <label>test.apps.test_dynlib.DynlibAppTest</label>
+        <link refid="classtest_1_1apps_1_1test__dynlib_1_1DynlibAppTest"/>
+        <childnode refid="2081" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2081">
+        <label>TestCase</label>
+      </node>
+    </collaborationgraph>
+    <location file="daliuge-runtime/test/apps/test_dynlib.py" line="44" column="1" bodyfile="daliuge-runtime/test/apps/test_dynlib.py" bodystart="44" bodyend="117"/>
+    <listofallmembers>
+      <member refid="classtest_1_1apps_1_1test__dynlib_1_1DynlibAppTest_1a80a629449d0ede71bd35f14d12d56d0a" prot="private" virt="non-virtual"><scope>test::apps::test_dynlib::DynlibAppTest</scope><name>_test_simple_copy</name></member>
+      <member refid="classtest_1_1apps_1_1test__dynlib_1_1DynlibAppTest_1aae83558242e864c54d6806a67b3bd186" prot="public" virt="non-virtual"><scope>test::apps::test_dynlib::DynlibAppTest</scope><name>test_cancel_dynlibprocapp</name></member>
+      <member refid="classtest_1_1apps_1_1test__dynlib_1_1DynlibAppTest_1a315c38b33877d8aa88f7e048997767c3" prot="public" virt="non-virtual"><scope>test::apps::test_dynlib::DynlibAppTest</scope><name>test_simple_batch_copy</name></member>
+      <member refid="classtest_1_1apps_1_1test__dynlib_1_1DynlibAppTest_1aefa0f34c6608745148e89efbc51265ef" prot="public" virt="non-virtual"><scope>test::apps::test_dynlib::DynlibAppTest</scope><name>test_simple_stream_copy</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

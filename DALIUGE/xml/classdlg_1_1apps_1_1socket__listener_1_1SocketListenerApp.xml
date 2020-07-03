@@ -1,0 +1,237 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classdlg_1_1apps_1_1socket__listener_1_1SocketListenerApp" kind="class" language="Python" prot="public">
+    <compoundname>dlg::apps::socket_listener::SocketListenerApp</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">BarrierAppDROP</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classdlg_1_1apps_1_1socket__listener_1_1SocketListenerApp_1aa6e9dbe6d1070efff62a18ee9102d1db" prot="private" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool dlg.apps.socket_listener.SocketListenerApp::_dryRun</definition>
+        <argsstring></argsstring>
+        <name>_dryRun</name>
+        <initializer>= False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/apps/socket_listener.py" line="53" column="1" bodyfile="daliuge-runtime/dlg/apps/socket_listener.py" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdlg_1_1apps_1_1socket__listener_1_1SocketListenerApp_1a7c40d8bbcf94ca6336a789185b4ea189" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dlg.apps.socket_listener.SocketListenerApp::compontent_meta</definition>
+        <argsstring></argsstring>
+        <name>compontent_meta</name>
+        <initializer>= dlg_component(&apos;<ref refid="classdlg_1_1apps_1_1socket__listener_1_1SocketListenerApp" kindref="compound">SocketListenerApp</ref>&apos;, &apos;A BarrierAppDROP that listens on a socket for data&apos;,
+                                    [dlg_batch_input(&apos;binary/*&apos;, [])],
+                                    [dlg_batch_output(&apos;binary/*&apos;, [])],
+                                    [dlg_streaming_input(&apos;binary/*&apos;)])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/apps/socket_listener.py" line="55" column="1" bodyfile="daliuge-runtime/dlg/apps/socket_listener.py" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1apps_1_1socket__listener_1_1SocketListenerApp_1aaee39e73277620a59dbdd6ccb979eecc" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dlg.apps.socket_listener.SocketListenerApp::host</definition>
+        <argsstring></argsstring>
+        <name>host</name>
+        <initializer>= dlg_string_param(&apos;host&apos;, &apos;127.0.0.1&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/apps/socket_listener.py" line="60" column="1" bodyfile="daliuge-runtime/dlg/apps/socket_listener.py" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1apps_1_1socket__listener_1_1SocketListenerApp_1abf15f46b9937dece468af52e0eb91b84" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dlg.apps.socket_listener.SocketListenerApp::port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <initializer>= dlg_int_param(&apos;port&apos;, 1111)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/apps/socket_listener.py" line="61" column="1" bodyfile="daliuge-runtime/dlg/apps/socket_listener.py" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1apps_1_1socket__listener_1_1SocketListenerApp_1a85902b816fdc51aa4cd1b4aeac34e743" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dlg.apps.socket_listener.SocketListenerApp::bufsize</definition>
+        <argsstring></argsstring>
+        <name>bufsize</name>
+        <initializer>= dlg_int_param(&apos;bufsize&apos;, 4096)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/apps/socket_listener.py" line="62" column="1" bodyfile="daliuge-runtime/dlg/apps/socket_listener.py" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1apps_1_1socket__listener_1_1SocketListenerApp_1a5bd4497bc91bb133407572a86fecd7f0" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dlg.apps.socket_listener.SocketListenerApp::reuseAddr</definition>
+        <argsstring></argsstring>
+        <name>reuseAddr</name>
+        <initializer>= dlg_bool_param(&apos;reuseAddr&apos;, False)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/apps/socket_listener.py" line="63" column="1" bodyfile="daliuge-runtime/dlg/apps/socket_listener.py" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdlg_1_1apps_1_1socket__listener_1_1SocketListenerApp_1ad0f9556126d066733099b908aee77ad9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.apps.socket_listener.SocketListenerApp.initialize</definition>
+        <argsstring>(self, kwargs)</argsstring>
+        <name>initialize</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/apps/socket_listener.py" line="65" column="1" bodyfile="daliuge-runtime/dlg/apps/socket_listener.py" bodystart="65" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1apps_1_1socket__listener_1_1SocketListenerApp_1a20a9985907fa77599274f446e6f7503b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.apps.socket_listener.SocketListenerApp.run</definition>
+        <argsstring>(self)</argsstring>
+        <name>run</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/apps/socket_listener.py" line="68" column="1" bodyfile="daliuge-runtime/dlg/apps/socket_listener.py" bodystart="68" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1apps_1_1socket__listener_1_1SocketListenerApp_1ade9f89f8bf21b5b01896a0a706277903" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.apps.socket_listener.SocketListenerApp.addInput</definition>
+        <argsstring>(self, inputDrop, back=True)</argsstring>
+        <name>addInput</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>inputDrop</type>
+          <defname>inputDrop</defname>
+        </param>
+        <param>
+          <type>back</type>
+          <defname>back</defname>
+          <defval>True</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/apps/socket_listener.py" line="102" column="1" bodyfile="daliuge-runtime/dlg/apps/socket_listener.py" bodystart="102" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1apps_1_1socket__listener_1_1SocketListenerApp_1a3fc0b151126c96501f45aa27237a8a91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.apps.socket_listener.SocketListenerApp.addStreamingInput</definition>
+        <argsstring>(self, streamingInputDrop, back=True)</argsstring>
+        <name>addStreamingInput</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>streamingInputDrop</type>
+          <defname>streamingInputDrop</defname>
+        </param>
+        <param>
+          <type>back</type>
+          <defname>back</defname>
+          <defval>True</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/apps/socket_listener.py" line="106" column="1" bodyfile="daliuge-runtime/dlg/apps/socket_listener.py" bodystart="106" bodyend="108"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>A BarrierAppDROP that listens on a socket for data. The server-side
+socket expects only one client, and assumes that the client will close the
+connection after all its data has been sent.
+
+This application expects no input DROPs, and therefore raises an
+exception whenever one is added. On the output side, one or more outputs
+can be specified with the restriction that they are not ContainerDROPs
+so data can be written into them through the framework.
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="2868">
+        <label>BarrierAppDROP</label>
+      </node>
+      <node id="2867">
+        <label>dlg.apps.socket_listener.SocketListenerApp</label>
+        <link refid="classdlg_1_1apps_1_1socket__listener_1_1SocketListenerApp"/>
+        <childnode refid="2868" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2870">
+        <label>BarrierAppDROP</label>
+      </node>
+      <node id="2869">
+        <label>dlg.apps.socket_listener.SocketListenerApp</label>
+        <link refid="classdlg_1_1apps_1_1socket__listener_1_1SocketListenerApp"/>
+        <childnode refid="2870" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="daliuge-runtime/dlg/apps/socket_listener.py" line="41" column="1" bodyfile="daliuge-runtime/dlg/apps/socket_listener.py" bodystart="41" bodyend="108"/>
+    <listofallmembers>
+      <member refid="classdlg_1_1apps_1_1socket__listener_1_1SocketListenerApp_1aa6e9dbe6d1070efff62a18ee9102d1db" prot="private" virt="non-virtual"><scope>dlg::apps::socket_listener::SocketListenerApp</scope><name>_dryRun</name></member>
+      <member refid="classdlg_1_1apps_1_1socket__listener_1_1SocketListenerApp_1ade9f89f8bf21b5b01896a0a706277903" prot="public" virt="non-virtual"><scope>dlg::apps::socket_listener::SocketListenerApp</scope><name>addInput</name></member>
+      <member refid="classdlg_1_1apps_1_1socket__listener_1_1SocketListenerApp_1a3fc0b151126c96501f45aa27237a8a91" prot="public" virt="non-virtual"><scope>dlg::apps::socket_listener::SocketListenerApp</scope><name>addStreamingInput</name></member>
+      <member refid="classdlg_1_1apps_1_1socket__listener_1_1SocketListenerApp_1a85902b816fdc51aa4cd1b4aeac34e743" prot="public" virt="non-virtual"><scope>dlg::apps::socket_listener::SocketListenerApp</scope><name>bufsize</name></member>
+      <member refid="classdlg_1_1apps_1_1socket__listener_1_1SocketListenerApp_1a7c40d8bbcf94ca6336a789185b4ea189" prot="public" virt="non-virtual"><scope>dlg::apps::socket_listener::SocketListenerApp</scope><name>compontent_meta</name></member>
+      <member refid="classdlg_1_1apps_1_1socket__listener_1_1SocketListenerApp_1aaee39e73277620a59dbdd6ccb979eecc" prot="public" virt="non-virtual"><scope>dlg::apps::socket_listener::SocketListenerApp</scope><name>host</name></member>
+      <member refid="classdlg_1_1apps_1_1socket__listener_1_1SocketListenerApp_1ad0f9556126d066733099b908aee77ad9" prot="public" virt="non-virtual"><scope>dlg::apps::socket_listener::SocketListenerApp</scope><name>initialize</name></member>
+      <member refid="classdlg_1_1apps_1_1socket__listener_1_1SocketListenerApp_1abf15f46b9937dece468af52e0eb91b84" prot="public" virt="non-virtual"><scope>dlg::apps::socket_listener::SocketListenerApp</scope><name>port</name></member>
+      <member refid="classdlg_1_1apps_1_1socket__listener_1_1SocketListenerApp_1a5bd4497bc91bb133407572a86fecd7f0" prot="public" virt="non-virtual"><scope>dlg::apps::socket_listener::SocketListenerApp</scope><name>reuseAddr</name></member>
+      <member refid="classdlg_1_1apps_1_1socket__listener_1_1SocketListenerApp_1a20a9985907fa77599274f446e6f7503b" prot="public" virt="non-virtual"><scope>dlg::apps::socket_listener::SocketListenerApp</scope><name>run</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

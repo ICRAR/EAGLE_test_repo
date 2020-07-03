@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classdlg_1_1rpc_1_1RPCObject" kind="class" language="Python" prot="public">
+    <compoundname>dlg::rpc::RPCObject</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+    <derivedcompoundref refid="classdlg_1_1rpc_1_1RPCClientBase" prot="public" virt="non-virtual">dlg.rpc.RPCClientBase</derivedcompoundref>
+    <derivedcompoundref refid="classdlg_1_1rpc_1_1RPCServerBase" prot="public" virt="non-virtual">dlg.rpc.RPCServerBase</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdlg_1_1rpc_1_1RPCObject_1a0870a5b57238779da46f374f9dac48f4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.rpc.RPCObject::rpc_running</definition>
+        <argsstring></argsstring>
+        <name>rpc_running</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/rpc.py" line="47" column="1" bodyfile="daliuge-runtime/dlg/rpc.py" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdlg_1_1rpc_1_1RPCObject_1a843046cd6f6c29b0f3808535d958b81f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.rpc.RPCObject.start</definition>
+        <argsstring>(self)</argsstring>
+        <name>start</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/rpc.py" line="46" column="1" bodyfile="daliuge-runtime/dlg/rpc.py" bodystart="46" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1rpc_1_1RPCObject_1a596a501afb0f81ab96d68193271c5402" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.rpc.RPCObject.shutdown</definition>
+        <argsstring>(self)</argsstring>
+        <name>shutdown</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/rpc.py" line="48" column="1" bodyfile="daliuge-runtime/dlg/rpc.py" bodystart="48" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Base class for all RCP clients and server</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="2766">
+        <label>dlg.rpc.RPCObject</label>
+        <link refid="classdlg_1_1rpc_1_1RPCObject"/>
+        <childnode refid="2767" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2770">
+        <label>dlg.rpc.RPyCClient</label>
+        <link refid="classdlg_1_1rpc_1_1RPyCClient"/>
+        <childnode refid="2768" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2768">
+        <label>dlg.rpc.RPCClientBase</label>
+        <link refid="classdlg_1_1rpc_1_1RPCClientBase"/>
+        <childnode refid="2766" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2776">
+        <label>dlg.rpc.RPyCServer</label>
+        <link refid="classdlg_1_1rpc_1_1RPyCServer"/>
+        <childnode refid="2772" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2771">
+        <label>dlg.rpc.ZeroRPCClient</label>
+        <link refid="classdlg_1_1rpc_1_1ZeroRPCClient"/>
+        <childnode refid="2768" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2773">
+        <label>dlg.rpc.PyroRPCServer</label>
+        <link refid="classdlg_1_1rpc_1_1PyroRPCServer"/>
+        <childnode refid="2772" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2777">
+        <label>dlg.rpc.ZeroRPCServer</label>
+        <link refid="classdlg_1_1rpc_1_1ZeroRPCServer"/>
+        <childnode refid="2772" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2767">
+        <label>object</label>
+      </node>
+      <node id="2769">
+        <label>dlg.rpc.PyroRPCClient</label>
+        <link refid="classdlg_1_1rpc_1_1PyroRPCClient"/>
+        <childnode refid="2768" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2775">
+        <label>dlg.rpc.ThreadedPyroRPCServer</label>
+        <link refid="classdlg_1_1rpc_1_1ThreadedPyroRPCServer"/>
+        <childnode refid="2773" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2774">
+        <label>dlg.rpc.MultiplexPyroRPCServer</label>
+        <link refid="classdlg_1_1rpc_1_1MultiplexPyroRPCServer"/>
+        <childnode refid="2773" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2772">
+        <label>dlg.rpc.RPCServerBase</label>
+        <link refid="classdlg_1_1rpc_1_1RPCServerBase"/>
+        <childnode refid="2766" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2778">
+        <label>dlg.rpc.RPCObject</label>
+        <link refid="classdlg_1_1rpc_1_1RPCObject"/>
+        <childnode refid="2779" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2779">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="daliuge-runtime/dlg/rpc.py" line="44" column="1" bodyfile="daliuge-runtime/dlg/rpc.py" bodystart="44" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classdlg_1_1rpc_1_1RPCObject_1a0870a5b57238779da46f374f9dac48f4" prot="public" virt="non-virtual"><scope>dlg::rpc::RPCObject</scope><name>rpc_running</name></member>
+      <member refid="classdlg_1_1rpc_1_1RPCObject_1a596a501afb0f81ab96d68193271c5402" prot="public" virt="non-virtual"><scope>dlg::rpc::RPCObject</scope><name>shutdown</name></member>
+      <member refid="classdlg_1_1rpc_1_1RPCObject_1a843046cd6f6c29b0f3808535d958b81f" prot="public" virt="non-virtual"><scope>dlg::rpc::RPCObject</scope><name>start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

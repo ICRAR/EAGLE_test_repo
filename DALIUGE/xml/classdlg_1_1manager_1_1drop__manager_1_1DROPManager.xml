@@ -1,0 +1,321 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classdlg_1_1manager_1_1drop__manager_1_1DROPManager" kind="class" language="Python" prot="public">
+    <compoundname>dlg::manager::drop_manager::DROPManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classdlg_1_1manager_1_1drop__manager_1_1DROPManager_1a64cbfcc0e1007dccf31c417c5835885a" prot="private" static="yes" mutable="no">
+        <type></type>
+        <definition>dlg.manager.drop_manager.DROPManager::__metaclass__</definition>
+        <argsstring></argsstring>
+        <name>__metaclass__</name>
+        <initializer>= abc.ABCMeta</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/drop_manager.py" line="56" column="1" bodyfile="daliuge-runtime/dlg/manager/drop_manager.py" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdlg_1_1manager_1_1drop__manager_1_1DROPManager_1abaf4baefeabd666ce10673dea8031e77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.drop_manager.DROPManager.createSession</definition>
+        <argsstring>(self, sessionId)</argsstring>
+        <name>createSession</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>sessionId</type>
+          <defname>sessionId</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Creates a session on this DROPManager with id `sessionId`. A session
+represents an isolated DROP graph execution.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/drop_manager.py" line="59" column="1" bodyfile="daliuge-runtime/dlg/manager/drop_manager.py" bodystart="59" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1drop__manager_1_1DROPManager_1a6869eff2c64091d52dd96ad4e077078d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.drop_manager.DROPManager.getSessionStatus</definition>
+        <argsstring>(self, sessionId)</argsstring>
+        <name>getSessionStatus</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>sessionId</type>
+          <defname>sessionId</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns the status of the session `sessionId`.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/drop_manager.py" line="66" column="1" bodyfile="daliuge-runtime/dlg/manager/drop_manager.py" bodystart="66" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1drop__manager_1_1DROPManager_1ac3155fecc781785b0d463669513eed95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.drop_manager.DROPManager.addGraphSpec</definition>
+        <argsstring>(self, sessionId, graphSpec)</argsstring>
+        <name>addGraphSpec</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>sessionId</type>
+          <defname>sessionId</defname>
+        </param>
+        <param>
+          <type>graphSpec</type>
+          <defname>graphSpec</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Adds a graph specification `graphSpec` (i.e., a description of the DROPs
+that should be created) to the current graph specification held by
+session `sessionId`.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/drop_manager.py" line="72" column="1" bodyfile="daliuge-runtime/dlg/manager/drop_manager.py" bodystart="72" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1drop__manager_1_1DROPManager_1a464e412b4061534106264ba50275e943" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.drop_manager.DROPManager.getGraphStatus</definition>
+        <argsstring>(self, sessionId)</argsstring>
+        <name>getGraphStatus</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>sessionId</type>
+          <defname>sessionId</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns the status of the graph being executed in session `sessionId`.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/drop_manager.py" line="80" column="1" bodyfile="daliuge-runtime/dlg/manager/drop_manager.py" bodystart="80" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1drop__manager_1_1DROPManager_1a32dda0d6e21518842caefb6d1c0b29d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.drop_manager.DROPManager.getGraph</definition>
+        <argsstring>(self, sessionId)</argsstring>
+        <name>getGraph</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>sessionId</type>
+          <defname>sessionId</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns a specification of the graph currently held by session
+`sessionId`.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/drop_manager.py" line="86" column="1" bodyfile="daliuge-runtime/dlg/manager/drop_manager.py" bodystart="86" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1drop__manager_1_1DROPManager_1ad0dd8ec36ea4492004f2e588b26fe5a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.drop_manager.DROPManager.deploySession</definition>
+        <argsstring>(self, sessionId, completedDrops=[])</argsstring>
+        <name>deploySession</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>sessionId</type>
+          <defname>sessionId</defname>
+        </param>
+        <param>
+          <type>completedDrops</type>
+          <defname>completedDrops</defname>
+          <defval>[]</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Deploys the graph specification held by session `sessionId`, effectively
+creating all DROPs, linking them together, and moving those whose UID
+is in `completedDrops` to the COMPLETED state.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/drop_manager.py" line="93" column="1" bodyfile="daliuge-runtime/dlg/manager/drop_manager.py" bodystart="93" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1drop__manager_1_1DROPManager_1a682710f3311b028e8c08ce42275e1688" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.drop_manager.DROPManager.cancelSession</definition>
+        <argsstring>(self, sessionId)</argsstring>
+        <name>cancelSession</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>sessionId</type>
+          <defname>sessionId</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Cancels the session `sessionId`
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/drop_manager.py" line="101" column="1" bodyfile="daliuge-runtime/dlg/manager/drop_manager.py" bodystart="101" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1drop__manager_1_1DROPManager_1af53ef1616f4867340b7f9b3f1a1d18dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.drop_manager.DROPManager.destroySession</definition>
+        <argsstring>(self, sessionId)</argsstring>
+        <name>destroySession</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>sessionId</type>
+          <defname>sessionId</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Destroys the session `sessionId`
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/drop_manager.py" line="107" column="1" bodyfile="daliuge-runtime/dlg/manager/drop_manager.py" bodystart="107" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1drop__manager_1_1DROPManager_1a218fcefba5112ca97359633fb01a214c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.drop_manager.DROPManager.getSessionIds</definition>
+        <argsstring>(self)</argsstring>
+        <name>getSessionIds</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns the IDs of the sessions currently held by this DROPManager.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/drop_manager.py" line="113" column="1" bodyfile="daliuge-runtime/dlg/manager/drop_manager.py" bodystart="113" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1manager_1_1drop__manager_1_1DROPManager_1a2e0d69fc7a7c258609349e307b9fabeb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.drop_manager.DROPManager.getGraphSize</definition>
+        <argsstring>(self, sessionId)</argsstring>
+        <name>getGraphSize</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>sessionId</type>
+          <defname>sessionId</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns the number of drops contained in the physical graph attached
+to ``sessionId``.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/drop_manager.py" line="119" column="1" bodyfile="daliuge-runtime/dlg/manager/drop_manager.py" bodystart="119" bodyend="123"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Base class for all DROPManagers.
+
+A DROPManager, as the name states, manages the creation and execution of
+DROPs. In order to support parallel DROP graphs execution, a DROPManager
+separates them into &quot;sessions&quot;.
+
+Sessions follow a simple lifecycle:
+ * They are created in the PRISTINE status
+ * One or more graph specifications are appended to them, which can also
+   be linked together, building up the final graph specification. While
+   building the graph the session is in the BUILDING status.
+ * Once all graph specifications have been appended and linked together,
+   the graph is deployed, meaning that the DROPs are effectively created.
+   During this process the session transitions between the DEPLOYING and
+   RUNNING states.
+ * One all DROPs contained in a session have transitioned to COMPLETED (or
+   ERROR, if there has been an error during the execution) the session moves
+   to FINISHED.
+
+Graph specifications are currently accepted in the form of a list of
+dictionaries, where each dictionary is a DROP specification. A DROP
+specification in turn consists on key/value pairs in the dictionary which
+state the type of DROP, some key parameters, and instance-specific
+parameters as well used to create the DROP.
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="2034">
+        <label>dlg.manager.drop_manager.DROPManager</label>
+        <link refid="classdlg_1_1manager_1_1drop__manager_1_1DROPManager"/>
+        <childnode refid="2035" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2035">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2036">
+        <label>dlg.manager.drop_manager.DROPManager</label>
+        <link refid="classdlg_1_1manager_1_1drop__manager_1_1DROPManager"/>
+        <childnode refid="2037" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2037">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="daliuge-runtime/dlg/manager/drop_manager.py" line="28" column="1" bodyfile="daliuge-runtime/dlg/manager/drop_manager.py" bodystart="28" bodyend="123"/>
+    <listofallmembers>
+      <member refid="classdlg_1_1manager_1_1drop__manager_1_1DROPManager_1a64cbfcc0e1007dccf31c417c5835885a" prot="private" virt="non-virtual"><scope>dlg::manager::drop_manager::DROPManager</scope><name>__metaclass__</name></member>
+      <member refid="classdlg_1_1manager_1_1drop__manager_1_1DROPManager_1ac3155fecc781785b0d463669513eed95" prot="public" virt="non-virtual"><scope>dlg::manager::drop_manager::DROPManager</scope><name>addGraphSpec</name></member>
+      <member refid="classdlg_1_1manager_1_1drop__manager_1_1DROPManager_1a682710f3311b028e8c08ce42275e1688" prot="public" virt="non-virtual"><scope>dlg::manager::drop_manager::DROPManager</scope><name>cancelSession</name></member>
+      <member refid="classdlg_1_1manager_1_1drop__manager_1_1DROPManager_1abaf4baefeabd666ce10673dea8031e77" prot="public" virt="non-virtual"><scope>dlg::manager::drop_manager::DROPManager</scope><name>createSession</name></member>
+      <member refid="classdlg_1_1manager_1_1drop__manager_1_1DROPManager_1ad0dd8ec36ea4492004f2e588b26fe5a0" prot="public" virt="non-virtual"><scope>dlg::manager::drop_manager::DROPManager</scope><name>deploySession</name></member>
+      <member refid="classdlg_1_1manager_1_1drop__manager_1_1DROPManager_1af53ef1616f4867340b7f9b3f1a1d18dc" prot="public" virt="non-virtual"><scope>dlg::manager::drop_manager::DROPManager</scope><name>destroySession</name></member>
+      <member refid="classdlg_1_1manager_1_1drop__manager_1_1DROPManager_1a32dda0d6e21518842caefb6d1c0b29d3" prot="public" virt="non-virtual"><scope>dlg::manager::drop_manager::DROPManager</scope><name>getGraph</name></member>
+      <member refid="classdlg_1_1manager_1_1drop__manager_1_1DROPManager_1a2e0d69fc7a7c258609349e307b9fabeb" prot="public" virt="non-virtual"><scope>dlg::manager::drop_manager::DROPManager</scope><name>getGraphSize</name></member>
+      <member refid="classdlg_1_1manager_1_1drop__manager_1_1DROPManager_1a464e412b4061534106264ba50275e943" prot="public" virt="non-virtual"><scope>dlg::manager::drop_manager::DROPManager</scope><name>getGraphStatus</name></member>
+      <member refid="classdlg_1_1manager_1_1drop__manager_1_1DROPManager_1a218fcefba5112ca97359633fb01a214c" prot="public" virt="non-virtual"><scope>dlg::manager::drop_manager::DROPManager</scope><name>getSessionIds</name></member>
+      <member refid="classdlg_1_1manager_1_1drop__manager_1_1DROPManager_1a6869eff2c64091d52dd96ad4e077078d" prot="public" virt="non-virtual"><scope>dlg::manager::drop_manager::DROPManager</scope><name>getSessionStatus</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

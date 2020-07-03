@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classdlg_1_1dropmake_1_1pg__generator_1_1MinNumPartsPGTP" kind="class" language="Python" prot="public">
+    <compoundname>dlg::dropmake::pg_generator::MinNumPartsPGTP</compoundname>
+    <basecompoundref refid="classdlg_1_1dropmake_1_1pg__generator_1_1MySarkarPGTP" prot="public" virt="non-virtual">dlg.dropmake.pg_generator.MySarkarPGTP</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdlg_1_1dropmake_1_1pg__generator_1_1MinNumPartsPGTP_1aecd100bca2313f4a3cbdf5576a0b0ec9" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.dropmake.pg_generator.MinNumPartsPGTP::_deadline</definition>
+        <argsstring></argsstring>
+        <name>_deadline</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-translator/dlg/dropmake/pg_generator.py" line="1803" column="1" bodyfile="daliuge-translator/dlg/dropmake/pg_generator.py" bodystart="1803" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1dropmake_1_1pg__generator_1_1MinNumPartsPGTP_1ae70e9a99b8bc14515910293f94ff27d5" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.dropmake.pg_generator.MinNumPartsPGTP::_opf</definition>
+        <argsstring></argsstring>
+        <name>_opf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-translator/dlg/dropmake/pg_generator.py" line="1804" column="1" bodyfile="daliuge-translator/dlg/dropmake/pg_generator.py" bodystart="1804" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1dropmake_1_1pg__generator_1_1MinNumPartsPGTP_1ae765a960f27f30c44f3b379da45faae1" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.dropmake.pg_generator.MinNumPartsPGTP::_extra_drops</definition>
+        <argsstring></argsstring>
+        <name>_extra_drops</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-translator/dlg/dropmake/pg_generator.py" line="1810" column="1" bodyfile="daliuge-translator/dlg/dropmake/pg_generator.py" bodystart="1810" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1dropmake_1_1pg__generator_1_1MinNumPartsPGTP_1aae1c0a080622d1ec84049c0e6f57d7f2" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.dropmake.pg_generator.MinNumPartsPGTP::_scheduler</definition>
+        <argsstring></argsstring>
+        <name>_scheduler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-translator/dlg/dropmake/pg_generator.py" line="1816" column="1" bodyfile="daliuge-translator/dlg/dropmake/pg_generator.py" bodystart="1816" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdlg_1_1dropmake_1_1pg__generator_1_1MinNumPartsPGTP_1adf7404bf85cbbc59e5ba69512d31c83b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.dropmake.pg_generator.MinNumPartsPGTP.__init__</definition>
+        <argsstring>(self, drop_list, deadline, num_partitions=0, par_label=&quot;Partition&quot;, max_dop=8, merge_parts=False, optimistic_factor=0.5)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>drop_list</type>
+          <defname>drop_list</defname>
+        </param>
+        <param>
+          <type>deadline</type>
+          <defname>deadline</defname>
+        </param>
+        <param>
+          <type>num_partitions</type>
+          <defname>num_partitions</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>par_label</type>
+          <defname>par_label</defname>
+          <defval>&quot;Partition&quot;</defval>
+        </param>
+        <param>
+          <type>max_dop</type>
+          <defname>max_dop</defname>
+          <defval>8</defval>
+        </param>
+        <param>
+          <type>merge_parts</type>
+          <defname>merge_parts</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>optimistic_factor</type>
+          <defname>optimistic_factor</defname>
+          <defval>0.5</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>num_partitions: 0 - only do the initial logical partition
+        &gt;1 - does logical partition, partition mergeing and
+        physical mapping
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-translator/dlg/dropmake/pg_generator.py" line="1788" column="1" bodyfile="daliuge-translator/dlg/dropmake/pg_generator.py" bodystart="1797" bodyend="1811"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1dropmake_1_1pg__generator_1_1MinNumPartsPGTP_1a921de483f6dded2f7ed3b2503765bb03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.dropmake.pg_generator.MinNumPartsPGTP.get_partition_info</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_partition_info</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-translator/dlg/dropmake/pg_generator.py" line="1812" column="1" bodyfile="daliuge-translator/dlg/dropmake/pg_generator.py" bodystart="1812" bodyend="1814"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1dropmake_1_1pg__generator_1_1MinNumPartsPGTP_1a322c19fe23693a07a8bbad93653da0bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.dropmake.pg_generator.MinNumPartsPGTP.init_scheduler</definition>
+        <argsstring>(self)</argsstring>
+        <name>init_scheduler</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-translator/dlg/dropmake/pg_generator.py" line="1815" column="1" bodyfile="daliuge-translator/dlg/dropmake/pg_generator.py" bodystart="1815" bodyend="1824"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2465">
+        <label>dlg.dropmake.pg_generator.MinNumPartsPGTP</label>
+        <link refid="classdlg_1_1dropmake_1_1pg__generator_1_1MinNumPartsPGTP"/>
+        <childnode refid="2466" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2466">
+        <label>dlg.dropmake.pg_generator.MySarkarPGTP</label>
+        <link refid="classdlg_1_1dropmake_1_1pg__generator_1_1MySarkarPGTP"/>
+        <childnode refid="2467" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2468">
+        <label>object</label>
+      </node>
+      <node id="2467">
+        <label>dlg.dropmake.pg_generator.PGT</label>
+        <link refid="classdlg_1_1dropmake_1_1pg__generator_1_1PGT"/>
+        <childnode refid="2468" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2469">
+        <label>dlg.dropmake.pg_generator.MinNumPartsPGTP</label>
+        <link refid="classdlg_1_1dropmake_1_1pg__generator_1_1MinNumPartsPGTP"/>
+        <childnode refid="2470" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2470">
+        <label>dlg.dropmake.pg_generator.MySarkarPGTP</label>
+        <link refid="classdlg_1_1dropmake_1_1pg__generator_1_1MySarkarPGTP"/>
+        <childnode refid="2471" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2472">
+        <label>object</label>
+      </node>
+      <node id="2471">
+        <label>dlg.dropmake.pg_generator.PGT</label>
+        <link refid="classdlg_1_1dropmake_1_1pg__generator_1_1PGT"/>
+        <childnode refid="2472" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="daliuge-translator/dlg/dropmake/pg_generator.py" line="1787" column="1" bodyfile="daliuge-translator/dlg/dropmake/pg_generator.py" bodystart="1787" bodyend="1825"/>
+    <listofallmembers>
+      <member refid="classdlg_1_1dropmake_1_1pg__generator_1_1MinNumPartsPGTP_1adf7404bf85cbbc59e5ba69512d31c83b" prot="public" virt="non-virtual"><scope>dlg::dropmake::pg_generator::MinNumPartsPGTP</scope><name>__init__</name></member>
+      <member refid="classdlg_1_1dropmake_1_1pg__generator_1_1MySarkarPGTP_1a7f69f021176cc139bb7b861710596631" prot="public" virt="non-virtual" ambiguityscope="dlg::dropmake::pg_generator::MySarkarPGTP."><scope>dlg::dropmake::pg_generator::MinNumPartsPGTP</scope><name>__init__</name></member>
+      <member refid="classdlg_1_1dropmake_1_1pg__generator_1_1PGT_1a7bd2ff2efb993ed15c781dc9e1ff1ded" prot="public" virt="non-virtual" ambiguityscope="dlg::dropmake::pg_generator::PGT."><scope>dlg::dropmake::pg_generator::MinNumPartsPGTP</scope><name>__init__</name></member>
+      <member refid="classdlg_1_1dropmake_1_1pg__generator_1_1MinNumPartsPGTP_1aecd100bca2313f4a3cbdf5576a0b0ec9" prot="private" virt="non-virtual"><scope>dlg::dropmake::pg_generator::MinNumPartsPGTP</scope><name>_deadline</name></member>
+      <member refid="classdlg_1_1dropmake_1_1pg__generator_1_1MinNumPartsPGTP_1ae765a960f27f30c44f3b379da45faae1" prot="private" virt="non-virtual"><scope>dlg::dropmake::pg_generator::MinNumPartsPGTP</scope><name>_extra_drops</name></member>
+      <member refid="classdlg_1_1dropmake_1_1pg__generator_1_1MinNumPartsPGTP_1ae70e9a99b8bc14515910293f94ff27d5" prot="private" virt="non-virtual"><scope>dlg::dropmake::pg_generator::MinNumPartsPGTP</scope><name>_opf</name></member>
+      <member refid="classdlg_1_1dropmake_1_1pg__generator_1_1MinNumPartsPGTP_1aae1c0a080622d1ec84049c0e6f57d7f2" prot="private" virt="non-virtual"><scope>dlg::dropmake::pg_generator::MinNumPartsPGTP</scope><name>_scheduler</name></member>
+      <member refid="classdlg_1_1dropmake_1_1pg__generator_1_1PGT_1a26455674be63756cee21f046ede30e5a" prot="public" virt="non-virtual"><scope>dlg::dropmake::pg_generator::MinNumPartsPGTP</scope><name>dag</name></member>
+      <member refid="classdlg_1_1dropmake_1_1pg__generator_1_1PGT_1af2f52ecf7b0a43bc4faad53bf100e270" prot="public" virt="non-virtual"><scope>dlg::dropmake::pg_generator::MinNumPartsPGTP</scope><name>data_movement</name></member>
+      <member refid="classdlg_1_1dropmake_1_1pg__generator_1_1PGT_1accea4a2655d7b858ff1b162e78e065ba" prot="public" virt="non-virtual"><scope>dlg::dropmake::pg_generator::MinNumPartsPGTP</scope><name>drops</name></member>
+      <member refid="classdlg_1_1dropmake_1_1pg__generator_1_1PGT_1abb50e92380c26f2c2989397240283f0c" prot="public" virt="non-virtual"><scope>dlg::dropmake::pg_generator::MinNumPartsPGTP</scope><name>get_opt_num_parts</name></member>
+      <member refid="classdlg_1_1dropmake_1_1pg__generator_1_1MinNumPartsPGTP_1a921de483f6dded2f7ed3b2503765bb03" prot="public" virt="non-virtual"><scope>dlg::dropmake::pg_generator::MinNumPartsPGTP</scope><name>get_partition_info</name></member>
+      <member refid="classdlg_1_1dropmake_1_1pg__generator_1_1MinNumPartsPGTP_1a322c19fe23693a07a8bbad93653da0bb" prot="public" virt="non-virtual"><scope>dlg::dropmake::pg_generator::MinNumPartsPGTP</scope><name>init_scheduler</name></member>
+      <member refid="classdlg_1_1dropmake_1_1pg__generator_1_1PGT_1a4400e8964126236f77f6c78ecadd8498" prot="public" virt="non-virtual"><scope>dlg::dropmake::pg_generator::MinNumPartsPGTP</scope><name>json</name></member>
+      <member refid="classdlg_1_1dropmake_1_1pg__generator_1_1MySarkarPGTP_1a6842a0a6113a957ce44f920244370241" prot="public" virt="non-virtual"><scope>dlg::dropmake::pg_generator::MinNumPartsPGTP</scope><name>merge_partitions</name></member>
+      <member refid="classdlg_1_1dropmake_1_1pg__generator_1_1PGT_1a12c48ce9b9224e38e2d1f6c25806f6d9" prot="public" virt="non-virtual"><scope>dlg::dropmake::pg_generator::MinNumPartsPGTP</scope><name>pred_exec_time</name></member>
+      <member refid="classdlg_1_1dropmake_1_1pg__generator_1_1PGT_1a45dee88af9675db9e1e77f4cce2d82d0" prot="public" virt="non-virtual"><scope>dlg::dropmake::pg_generator::MinNumPartsPGTP</scope><name>result</name></member>
+      <member refid="classdlg_1_1dropmake_1_1pg__generator_1_1MySarkarPGTP_1ab14c170f3e80c6378bf5c03ed28f327b" prot="public" virt="non-virtual"><scope>dlg::dropmake::pg_generator::MinNumPartsPGTP</scope><name>to_gojs_json</name></member>
+      <member refid="classdlg_1_1dropmake_1_1pg__generator_1_1MySarkarPGTP_1a3805e049f05b88fe3196f08fa441ae74" prot="public" virt="non-virtual"><scope>dlg::dropmake::pg_generator::MinNumPartsPGTP</scope><name>to_partition_input</name></member>
+      <member refid="classdlg_1_1dropmake_1_1pg__generator_1_1PGT_1a9f296aebdf7d3ff78763c54f23bb0b45" prot="public" virt="non-virtual"><scope>dlg::dropmake::pg_generator::MinNumPartsPGTP</scope><name>to_pg_spec</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

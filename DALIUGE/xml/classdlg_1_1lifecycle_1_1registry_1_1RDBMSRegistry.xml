@@ -1,0 +1,334 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classdlg_1_1lifecycle_1_1registry_1_1RDBMSRegistry" kind="class" language="Python" prot="public">
+    <compoundname>dlg::lifecycle::registry::RDBMSRegistry</compoundname>
+    <basecompoundref refid="classdlg_1_1lifecycle_1_1registry_1_1Registry" prot="public" virt="non-virtual">dlg.lifecycle.registry.Registry</basecompoundref>
+    <innerclass refid="classdlg_1_1lifecycle_1_1registry_1_1RDBMSRegistry_1_1transactional" prot="public">dlg::lifecycle::registry::RDBMSRegistry::transactional</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdlg_1_1lifecycle_1_1registry_1_1RDBMSRegistry_1a26080861671fba57db1acbec3859a939" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.lifecycle.registry.RDBMSRegistry::_dbmod</definition>
+        <argsstring></argsstring>
+        <name>_dbmod</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/lifecycle/registry.py" line="157" column="1" bodyfile="daliuge-runtime/dlg/lifecycle/registry.py" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1lifecycle_1_1registry_1_1RDBMSRegistry_1a333ca6f1438cb61d3fbdaa4a85a0ef0c" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.lifecycle.registry.RDBMSRegistry::_paramstyle</definition>
+        <argsstring></argsstring>
+        <name>_paramstyle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/lifecycle/registry.py" line="158" column="1" bodyfile="daliuge-runtime/dlg/lifecycle/registry.py" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1lifecycle_1_1registry_1_1RDBMSRegistry_1a47e60262dde442f245e2f7d686339453" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.lifecycle.registry.RDBMSRegistry::_connArgs</definition>
+        <argsstring></argsstring>
+        <name>_connArgs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/lifecycle/registry.py" line="159" column="1" bodyfile="daliuge-runtime/dlg/lifecycle/registry.py" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdlg_1_1lifecycle_1_1registry_1_1RDBMSRegistry_1aeecbb329fff249ad6a3c2a40d91d1924" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.lifecycle.registry.RDBMSRegistry.__init__</definition>
+        <argsstring>(self, dbModuleName, connArgs)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dbModuleName</type>
+          <defname>dbModuleName</defname>
+        </param>
+        <param>
+          <type>connArgs</type>
+          <defname>connArgs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/lifecycle/registry.py" line="155" column="1" bodyfile="daliuge-runtime/dlg/lifecycle/registry.py" bodystart="155" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1lifecycle_1_1registry_1_1RDBMSRegistry_1a37e89caa21f9ba293284bba2979ac858" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.lifecycle.registry.RDBMSRegistry.execute</definition>
+        <argsstring>(self, cursor, sql, values=())</argsstring>
+        <name>execute</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>cursor</type>
+          <defname>cursor</defname>
+        </param>
+        <param>
+          <type>sql</type>
+          <defname>sql</defname>
+        </param>
+        <param>
+          <type>values</type>
+          <defname>values</defname>
+          <defval>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/lifecycle/registry.py" line="208" column="1" bodyfile="daliuge-runtime/dlg/lifecycle/registry.py" bodystart="208" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1lifecycle_1_1registry_1_1RDBMSRegistry_1a0fd820fba15a0aea24b8062ed2ec91fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.lifecycle.registry.RDBMSRegistry.addDrop</definition>
+        <argsstring>(self, drop, conn=None)</argsstring>
+        <name>addDrop</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>drop</type>
+          <defname>drop</defname>
+        </param>
+        <param>
+          <type>conn</type>
+          <defname>conn</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/lifecycle/registry.py" line="212" column="1" bodyfile="daliuge-runtime/dlg/lifecycle/registry.py" bodystart="212" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1lifecycle_1_1registry_1_1RDBMSRegistry_1a2d28f8121b5c00925f06244a992b380b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.lifecycle.registry.RDBMSRegistry.addDropInstance</definition>
+        <argsstring>(self, drop, conn=None)</argsstring>
+        <name>addDropInstance</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>drop</type>
+          <defname>drop</defname>
+        </param>
+        <param>
+          <type>conn</type>
+          <defname>conn</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/lifecycle/registry.py" line="219" column="1" bodyfile="daliuge-runtime/dlg/lifecycle/registry.py" bodystart="219" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1lifecycle_1_1registry_1_1RDBMSRegistry_1a75d16163c4434988a35b8ae941e2715a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.lifecycle.registry.RDBMSRegistry.getDropUids</definition>
+        <argsstring>(self, drop, conn=None)</argsstring>
+        <name>getDropUids</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>drop</type>
+          <defname>drop</defname>
+        </param>
+        <param>
+          <type>conn</type>
+          <defname>conn</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/lifecycle/registry.py" line="225" column="1" bodyfile="daliuge-runtime/dlg/lifecycle/registry.py" bodystart="225" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1lifecycle_1_1registry_1_1RDBMSRegistry_1a1bc75788163de564f67c765f94ea00c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.lifecycle.registry.RDBMSRegistry.setDropPhase</definition>
+        <argsstring>(self, drop, phase, conn=None)</argsstring>
+        <name>setDropPhase</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>drop</type>
+          <defname>drop</defname>
+        </param>
+        <param>
+          <type>phase</type>
+          <defname>phase</defname>
+        </param>
+        <param>
+          <type>conn</type>
+          <defname>conn</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/lifecycle/registry.py" line="233" column="1" bodyfile="daliuge-runtime/dlg/lifecycle/registry.py" bodystart="233" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1lifecycle_1_1registry_1_1RDBMSRegistry_1a7c50e9c742ed2906268e3a1d50205975" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.lifecycle.registry.RDBMSRegistry.recordNewAccess</definition>
+        <argsstring>(self, oid, conn=None)</argsstring>
+        <name>recordNewAccess</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>oid</type>
+          <defname>oid</defname>
+        </param>
+        <param>
+          <type>conn</type>
+          <defname>conn</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/lifecycle/registry.py" line="239" column="1" bodyfile="daliuge-runtime/dlg/lifecycle/registry.py" bodystart="239" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1lifecycle_1_1registry_1_1RDBMSRegistry_1a9864e4524aa856299bf5a364ac7dd5b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.lifecycle.registry.RDBMSRegistry.getLastAccess</definition>
+        <argsstring>(self, oid, conn=None)</argsstring>
+        <name>getLastAccess</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>oid</type>
+          <defname>oid</defname>
+        </param>
+        <param>
+          <type>conn</type>
+          <defname>conn</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/lifecycle/registry.py" line="245" column="1" bodyfile="daliuge-runtime/dlg/lifecycle/registry.py" bodystart="245" bodyend="253"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdlg_1_1lifecycle_1_1registry_1_1RDBMSRegistry_1a390868ae9e983050268849aaeb9672f8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.lifecycle.registry.RDBMSRegistry._connect</definition>
+        <argsstring>(self)</argsstring>
+        <name>_connect</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/lifecycle/registry.py" line="164" column="1" bodyfile="daliuge-runtime/dlg/lifecycle/registry.py" bodystart="164" bodyend="166"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2708">
+        <label>dlg.lifecycle.registry.Registry</label>
+        <link refid="classdlg_1_1lifecycle_1_1registry_1_1Registry"/>
+      </node>
+      <node id="2707">
+        <label>dlg.lifecycle.registry.RDBMSRegistry</label>
+        <link refid="classdlg_1_1lifecycle_1_1registry_1_1RDBMSRegistry"/>
+        <childnode refid="2708" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2710">
+        <label>dlg.lifecycle.registry.Registry</label>
+        <link refid="classdlg_1_1lifecycle_1_1registry_1_1Registry"/>
+      </node>
+      <node id="2709">
+        <label>dlg.lifecycle.registry.RDBMSRegistry</label>
+        <link refid="classdlg_1_1lifecycle_1_1registry_1_1RDBMSRegistry"/>
+        <childnode refid="2710" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="daliuge-runtime/dlg/lifecycle/registry.py" line="153" column="1" bodyfile="daliuge-runtime/dlg/lifecycle/registry.py" bodystart="153" bodyend="253"/>
+    <listofallmembers>
+      <member refid="classdlg_1_1lifecycle_1_1registry_1_1RDBMSRegistry_1aeecbb329fff249ad6a3c2a40d91d1924" prot="public" virt="non-virtual"><scope>dlg::lifecycle::registry::RDBMSRegistry</scope><name>__init__</name></member>
+      <member refid="classdlg_1_1lifecycle_1_1registry_1_1RDBMSRegistry_1a47e60262dde442f245e2f7d686339453" prot="private" virt="non-virtual"><scope>dlg::lifecycle::registry::RDBMSRegistry</scope><name>_connArgs</name></member>
+      <member refid="classdlg_1_1lifecycle_1_1registry_1_1RDBMSRegistry_1a390868ae9e983050268849aaeb9672f8" prot="private" virt="non-virtual"><scope>dlg::lifecycle::registry::RDBMSRegistry</scope><name>_connect</name></member>
+      <member refid="classdlg_1_1lifecycle_1_1registry_1_1RDBMSRegistry_1a26080861671fba57db1acbec3859a939" prot="private" virt="non-virtual"><scope>dlg::lifecycle::registry::RDBMSRegistry</scope><name>_dbmod</name></member>
+      <member refid="classdlg_1_1lifecycle_1_1registry_1_1RDBMSRegistry_1a333ca6f1438cb61d3fbdaa4a85a0ef0c" prot="private" virt="non-virtual"><scope>dlg::lifecycle::registry::RDBMSRegistry</scope><name>_paramstyle</name></member>
+      <member refid="classdlg_1_1lifecycle_1_1registry_1_1RDBMSRegistry_1a0fd820fba15a0aea24b8062ed2ec91fc" prot="public" virt="non-virtual"><scope>dlg::lifecycle::registry::RDBMSRegistry</scope><name>addDrop</name></member>
+      <member refid="classdlg_1_1lifecycle_1_1registry_1_1Registry_1af0d0970131f6aa831d5f28df6d38f474" prot="public" virt="non-virtual" ambiguityscope="dlg::lifecycle::registry::Registry."><scope>dlg::lifecycle::registry::RDBMSRegistry</scope><name>addDrop</name></member>
+      <member refid="classdlg_1_1lifecycle_1_1registry_1_1RDBMSRegistry_1a2d28f8121b5c00925f06244a992b380b" prot="public" virt="non-virtual"><scope>dlg::lifecycle::registry::RDBMSRegistry</scope><name>addDropInstance</name></member>
+      <member refid="classdlg_1_1lifecycle_1_1registry_1_1Registry_1a8c15d10e4b45abdf6da647c98379626d" prot="public" virt="non-virtual" ambiguityscope="dlg::lifecycle::registry::Registry."><scope>dlg::lifecycle::registry::RDBMSRegistry</scope><name>addDropInstance</name></member>
+      <member refid="classdlg_1_1lifecycle_1_1registry_1_1RDBMSRegistry_1a37e89caa21f9ba293284bba2979ac858" prot="public" virt="non-virtual"><scope>dlg::lifecycle::registry::RDBMSRegistry</scope><name>execute</name></member>
+      <member refid="classdlg_1_1lifecycle_1_1registry_1_1RDBMSRegistry_1a75d16163c4434988a35b8ae941e2715a" prot="public" virt="non-virtual"><scope>dlg::lifecycle::registry::RDBMSRegistry</scope><name>getDropUids</name></member>
+      <member refid="classdlg_1_1lifecycle_1_1registry_1_1Registry_1a75a3f553627d4193e11b7c53a6b934df" prot="public" virt="non-virtual" ambiguityscope="dlg::lifecycle::registry::Registry."><scope>dlg::lifecycle::registry::RDBMSRegistry</scope><name>getDropUids</name></member>
+      <member refid="classdlg_1_1lifecycle_1_1registry_1_1RDBMSRegistry_1a9864e4524aa856299bf5a364ac7dd5b1" prot="public" virt="non-virtual"><scope>dlg::lifecycle::registry::RDBMSRegistry</scope><name>getLastAccess</name></member>
+      <member refid="classdlg_1_1lifecycle_1_1registry_1_1Registry_1a5fd6156be45b6c19eb22861d07c75b72" prot="public" virt="non-virtual" ambiguityscope="dlg::lifecycle::registry::Registry."><scope>dlg::lifecycle::registry::RDBMSRegistry</scope><name>getLastAccess</name></member>
+      <member refid="classdlg_1_1lifecycle_1_1registry_1_1RDBMSRegistry_1a7c50e9c742ed2906268e3a1d50205975" prot="public" virt="non-virtual"><scope>dlg::lifecycle::registry::RDBMSRegistry</scope><name>recordNewAccess</name></member>
+      <member refid="classdlg_1_1lifecycle_1_1registry_1_1Registry_1af15d843e6e3f0f7d5fd9dbff1522663f" prot="public" virt="non-virtual" ambiguityscope="dlg::lifecycle::registry::Registry."><scope>dlg::lifecycle::registry::RDBMSRegistry</scope><name>recordNewAccess</name></member>
+      <member refid="classdlg_1_1lifecycle_1_1registry_1_1RDBMSRegistry_1a1bc75788163de564f67c765f94ea00c1" prot="public" virt="non-virtual"><scope>dlg::lifecycle::registry::RDBMSRegistry</scope><name>setDropPhase</name></member>
+      <member refid="classdlg_1_1lifecycle_1_1registry_1_1Registry_1af167481c0f84673e3e5f3bf92c20f178" prot="public" virt="non-virtual" ambiguityscope="dlg::lifecycle::registry::Registry."><scope>dlg::lifecycle::registry::RDBMSRegistry</scope><name>setDropPhase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

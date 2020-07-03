@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classdlg_1_1apps_1_1crc_1_1CRCStreamApp" kind="class" language="Python" prot="public">
+    <compoundname>dlg::apps::crc::CRCStreamApp</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">AppDROP</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdlg_1_1apps_1_1crc_1_1CRCStreamApp_1af3e0e17ff72f9906d5c3104f5319fe9b" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dlg.apps.crc.CRCStreamApp::compontent_meta</definition>
+        <argsstring></argsstring>
+        <name>compontent_meta</name>
+        <initializer>= dlg_component(&apos;<ref refid="classdlg_1_1apps_1_1crc_1_1CRCStreamApp" kindref="compound">CRCStreamApp</ref>&apos;, &apos;Calculate CRC in the streaming mode.&apos;,
+                                    [dlg_batch_input(&apos;binary/*&apos;, [])],
+                                    [dlg_batch_output(&apos;binary/*&apos;, [])],
+                                    [dlg_streaming_input(&apos;binary/*&apos;)])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/apps/crc.py" line="79" column="1" bodyfile="daliuge-runtime/dlg/apps/crc.py" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdlg_1_1apps_1_1crc_1_1CRCStreamApp_1a61ffe949cc8d69cc43256bb16613c2ce" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.apps.crc.CRCStreamApp::_crc</definition>
+        <argsstring></argsstring>
+        <name>_crc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/apps/crc.py" line="86" column="1" bodyfile="daliuge-runtime/dlg/apps/crc.py" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdlg_1_1apps_1_1crc_1_1CRCStreamApp_1a6fcefee4d6a1ddbd89b692ccf1a35e04" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.apps.crc.CRCStreamApp::execStatus</definition>
+        <argsstring></argsstring>
+        <name>execStatus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/apps/crc.py" line="89" column="1" bodyfile="daliuge-runtime/dlg/apps/crc.py" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdlg_1_1apps_1_1crc_1_1CRCStreamApp_1aa5ef66097be28e983db5158296829c9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.apps.crc.CRCStreamApp.initialize</definition>
+        <argsstring>(self, kwargs)</argsstring>
+        <name>initialize</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/apps/crc.py" line="84" column="1" bodyfile="daliuge-runtime/dlg/apps/crc.py" bodystart="84" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1apps_1_1crc_1_1CRCStreamApp_1add98f293abf9a9cab6f2381d7d51ffdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.apps.crc.CRCStreamApp.dataWritten</definition>
+        <argsstring>(self, uid, data)</argsstring>
+        <name>dataWritten</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>uid</type>
+          <defname>uid</defname>
+        </param>
+        <param>
+          <type>data</type>
+          <defname>data</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/apps/crc.py" line="88" column="1" bodyfile="daliuge-runtime/dlg/apps/crc.py" bodystart="88" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1apps_1_1crc_1_1CRCStreamApp_1a95dc1b0d119e5549ff9085236f7135d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.apps.crc.CRCStreamApp.dropCompleted</definition>
+        <argsstring>(self, uid, status)</argsstring>
+        <name>dropCompleted</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>uid</type>
+          <defname>uid</defname>
+        </param>
+        <param>
+          <type>status</type>
+          <defname>status</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/apps/crc.py" line="92" column="1" bodyfile="daliuge-runtime/dlg/apps/crc.py" bodystart="92" bodyend="97"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Calculate CRC in the streaming mode
+i.e. A &quot;streamingConsumer&quot; of its predecessor in the graph
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1864">
+        <label>dlg.apps.crc.CRCStreamApp</label>
+        <link refid="classdlg_1_1apps_1_1crc_1_1CRCStreamApp"/>
+        <childnode refid="1865" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1865">
+        <label>AppDROP</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1866">
+        <label>dlg.apps.crc.CRCStreamApp</label>
+        <link refid="classdlg_1_1apps_1_1crc_1_1CRCStreamApp"/>
+        <childnode refid="1867" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1867">
+        <label>AppDROP</label>
+      </node>
+    </collaborationgraph>
+    <location file="daliuge-runtime/dlg/apps/crc.py" line="74" column="1" bodyfile="daliuge-runtime/dlg/apps/crc.py" bodystart="74" bodyend="97"/>
+    <listofallmembers>
+      <member refid="classdlg_1_1apps_1_1crc_1_1CRCStreamApp_1a61ffe949cc8d69cc43256bb16613c2ce" prot="private" virt="non-virtual"><scope>dlg::apps::crc::CRCStreamApp</scope><name>_crc</name></member>
+      <member refid="classdlg_1_1apps_1_1crc_1_1CRCStreamApp_1af3e0e17ff72f9906d5c3104f5319fe9b" prot="public" virt="non-virtual"><scope>dlg::apps::crc::CRCStreamApp</scope><name>compontent_meta</name></member>
+      <member refid="classdlg_1_1apps_1_1crc_1_1CRCStreamApp_1add98f293abf9a9cab6f2381d7d51ffdf" prot="public" virt="non-virtual"><scope>dlg::apps::crc::CRCStreamApp</scope><name>dataWritten</name></member>
+      <member refid="classdlg_1_1apps_1_1crc_1_1CRCStreamApp_1a95dc1b0d119e5549ff9085236f7135d7" prot="public" virt="non-virtual"><scope>dlg::apps::crc::CRCStreamApp</scope><name>dropCompleted</name></member>
+      <member refid="classdlg_1_1apps_1_1crc_1_1CRCStreamApp_1a6fcefee4d6a1ddbd89b692ccf1a35e04" prot="public" virt="non-virtual"><scope>dlg::apps::crc::CRCStreamApp</scope><name>execStatus</name></member>
+      <member refid="classdlg_1_1apps_1_1crc_1_1CRCStreamApp_1aa5ef66097be28e983db5158296829c9d" prot="public" virt="non-virtual"><scope>dlg::apps::crc::CRCStreamApp</scope><name>initialize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

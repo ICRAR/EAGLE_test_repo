@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacedlg_1_1apps_1_1bash__shell__app" kind="namespace" language="Python">
+    <compoundname>dlg::apps::bash_shell_app</compoundname>
+    <innerclass refid="classdlg_1_1apps_1_1bash__shell__app_1_1BashShellApp" prot="public">dlg::apps::bash_shell_app::BashShellApp</innerclass>
+    <innerclass refid="classdlg_1_1apps_1_1bash__shell__app_1_1BashShellBase" prot="public">dlg::apps::bash_shell_app::BashShellBase</innerclass>
+    <innerclass refid="classdlg_1_1apps_1_1bash__shell__app_1_1StreamingInputBashApp" prot="public">dlg::apps::bash_shell_app::StreamingInputBashApp</innerclass>
+    <innerclass refid="classdlg_1_1apps_1_1bash__shell__app_1_1StreamingInputBashAppBase" prot="public">dlg::apps::bash_shell_app::StreamingInputBashAppBase</innerclass>
+    <innerclass refid="classdlg_1_1apps_1_1bash__shell__app_1_1StreamingInputOutputBashApp" prot="public">dlg::apps::bash_shell_app::StreamingInputOutputBashApp</innerclass>
+    <innerclass refid="classdlg_1_1apps_1_1bash__shell__app_1_1StreamingOutputBashApp" prot="public">dlg::apps::bash_shell_app::StreamingOutputBashApp</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="bash__shell__app_8py_1a724deec0069fd6f28f347a64e52f1b9b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dlg::apps::bash_shell_app.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <initializer>= logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/apps/bash_shell_app.py" line="51" column="1" bodyfile="daliuge-runtime/dlg/apps/bash_shell_app.py" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="bash__shell__app_8py_1ac3a7299c0386d39fc403b942db6451fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.apps.bash_shell_app.mesage_stdouts</definition>
+        <argsstring>(prefix, stdout, stderr, enc=&apos;utf8&apos;)</argsstring>
+        <name>mesage_stdouts</name>
+        <param>
+          <type>prefix</type>
+          <defname>prefix</defname>
+        </param>
+        <param>
+          <type>stdout</type>
+          <defname>stdout</defname>
+        </param>
+        <param>
+          <type>stderr</type>
+          <defname>stderr</defname>
+        </param>
+        <param>
+          <type>enc</type>
+          <defname>enc</defname>
+          <defval>&apos;utf8&apos;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/apps/bash_shell_app.py" line="53" column="1" bodyfile="daliuge-runtime/dlg/apps/bash_shell_app.py" bodystart="53" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="bash__shell__app_8py_1aba1a0c13ec8662da6933482f73a3ce32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.apps.bash_shell_app.close_and_remove</definition>
+        <argsstring>(fo, fname)</argsstring>
+        <name>close_and_remove</name>
+        <param>
+          <type>fo</type>
+          <defname>fo</defname>
+        </param>
+        <param>
+          <type>fname</type>
+          <defname>fname</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/apps/bash_shell_app.py" line="64" column="1" bodyfile="daliuge-runtime/dlg/apps/bash_shell_app.py" bodystart="64" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="bash__shell__app_8py_1aa5bebe916d050c5d2d534e57f2d045c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.apps.bash_shell_app.prepare_output_channel</definition>
+        <argsstring>(this_node, out_drop)</argsstring>
+        <name>prepare_output_channel</name>
+        <param>
+          <type>this_node</type>
+          <defname>this_node</defname>
+        </param>
+        <param>
+          <type>out_drop</type>
+          <defname>out_drop</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Prepares an output channel that will serve as the stdout of a bash command.
+Depending on the values of ``this_node`` and ``out_drop`` the channel will
+be a named pipe or a socket.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/apps/bash_shell_app.py" line="72" column="1" bodyfile="daliuge-runtime/dlg/apps/bash_shell_app.py" bodystart="72" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="bash__shell__app_8py_1a036d55e02dcf411e8e7db484c720bc67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.apps.bash_shell_app.prepare_input_channel</definition>
+        <argsstring>(data)</argsstring>
+        <name>prepare_input_channel</name>
+        <param>
+          <type>data</type>
+          <defname>data</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Prepares an input channel that will serve as the stdin of a bash command.
+Depending on the contents of ``data`` the channel will be a named pipe or a
+socket.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/apps/bash_shell_app.py" line="112" column="1" bodyfile="daliuge-runtime/dlg/apps/bash_shell_app.py" bodystart="112" bodyend="144"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="daliuge-runtime/dlg/apps/bash_shell_app.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

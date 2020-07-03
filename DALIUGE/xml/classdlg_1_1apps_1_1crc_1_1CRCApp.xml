@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classdlg_1_1apps_1_1crc_1_1CRCApp" kind="class" language="Python" prot="public">
+    <compoundname>dlg::apps::crc::CRCApp</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">BarrierAppDROP</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdlg_1_1apps_1_1crc_1_1CRCApp_1aea11d376e2bb96b7706cc7f32d196b63" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dlg.apps.crc.CRCApp::compontent_meta</definition>
+        <argsstring></argsstring>
+        <name>compontent_meta</name>
+        <initializer>= dlg_component(&apos;<ref refid="classdlg_1_1apps_1_1crc_1_1CRCApp" kindref="compound">CRCApp</ref>&apos;, &apos;A BarrierAppDROP that calculates the &apos;
+                                    &apos;CRC of the single DROP it consumes&apos;,
+                                    [dlg_batch_input(&apos;binary/*&apos;, [])],
+                                    [dlg_batch_output(&apos;binary/*&apos;, [])],
+                                    [dlg_streaming_input(&apos;binary/*&apos;)])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/apps/crc.py" line="45" column="1" bodyfile="daliuge-runtime/dlg/apps/crc.py" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdlg_1_1apps_1_1crc_1_1CRCApp_1abc26eb2b9ae9dd27b69c41a07a0f08e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.apps.crc.CRCApp.run</definition>
+        <argsstring>(self)</argsstring>
+        <name>run</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/apps/crc.py" line="51" column="1" bodyfile="daliuge-runtime/dlg/apps/crc.py" bodystart="51" bodyend="73"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>An BarrierAppDROP that calculates the CRC of the single DROP it
+consumes. It assumes the DROP being consumed is not a container.
+This is a simple example of an BarrierAppDROP being implemented, and
+not something really intended to be used in a production system
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1856">
+        <label>dlg.apps.crc.CRCApp</label>
+        <link refid="classdlg_1_1apps_1_1crc_1_1CRCApp"/>
+        <childnode refid="1857" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1857">
+        <label>BarrierAppDROP</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1858">
+        <label>dlg.apps.crc.CRCApp</label>
+        <link refid="classdlg_1_1apps_1_1crc_1_1CRCApp"/>
+        <childnode refid="1859" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1859">
+        <label>BarrierAppDROP</label>
+      </node>
+    </collaborationgraph>
+    <location file="daliuge-runtime/dlg/apps/crc.py" line="38" column="1" bodyfile="daliuge-runtime/dlg/apps/crc.py" bodystart="38" bodyend="74"/>
+    <listofallmembers>
+      <member refid="classdlg_1_1apps_1_1crc_1_1CRCApp_1aea11d376e2bb96b7706cc7f32d196b63" prot="public" virt="non-virtual"><scope>dlg::apps::crc::CRCApp</scope><name>compontent_meta</name></member>
+      <member refid="classdlg_1_1apps_1_1crc_1_1CRCApp_1abc26eb2b9ae9dd27b69c41a07a0f08e8" prot="public" virt="non-virtual"><scope>dlg::apps::crc::CRCApp</scope><name>run</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

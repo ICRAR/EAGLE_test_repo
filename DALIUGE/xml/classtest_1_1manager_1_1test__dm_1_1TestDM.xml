@@ -1,0 +1,344 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtest_1_1manager_1_1test__dm_1_1TestDM" kind="class" language="Python" prot="public">
+    <compoundname>test::manager::test_dm::TestDM</compoundname>
+    <basecompoundref refid="classtest_1_1manager_1_1test__dm_1_1NMTestsMixIn" prot="public" virt="non-virtual">test.manager.test_dm.NMTestsMixIn</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">TestCase</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtest_1_1manager_1_1test__dm_1_1TestDM_1a412aa77d203432cb76317680b03b194d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>test.manager.test_dm.TestDM::recv</definition>
+        <argsstring></argsstring>
+        <name>recv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/test/manager/test_dm.py" line="188" column="1" bodyfile="daliuge-runtime/test/manager/test_dm.py" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtest_1_1manager_1_1test__dm_1_1TestDM_1af834a7a141be19b13c8c4b28b1015939" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def test.manager.test_dm.TestDM._deploy_error_graph</definition>
+        <argsstring>(self, kwargs)</argsstring>
+        <name>_deploy_error_graph</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/test/manager/test_dm.py" line="150" column="1" bodyfile="daliuge-runtime/test/manager/test_dm.py" bodystart="150" bodyend="166"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtest_1_1manager_1_1test__dm_1_1TestDM_1a6c7d454b2c7fdf5bb330c6c9c4479afe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def test.manager.test_dm.TestDM.test_error_listener</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_error_listener</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/test/manager/test_dm.py" line="167" column="1" bodyfile="daliuge-runtime/test/manager/test_dm.py" bodystart="167" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1manager_1_1test__dm_1_1TestDM_1ab4e0ee01216b619b71296635b66dbfde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def test.manager.test_dm.TestDM.test_event_listener</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_event_listener</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tests that user-provided event listeners work</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/test/manager/test_dm.py" line="181" column="1" bodyfile="daliuge-runtime/test/manager/test_dm.py" bodystart="181" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1manager_1_1test__dm_1_1TestDM_1ac0fd242502000b0741e2259fbe0cd77b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def test.manager.test_dm.TestDM.test_runGraphOneDOPerDOM</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_runGraphOneDOPerDOM</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>A test that creates three DROPs in two different DMs and runs the graph.
+For this the graphs that are fed into the DMs must *not* express the
+inter-DM relationships, although they are still passed down
+separately. The graph looks like:
+
+DM #1      DM #2
+=======    =============
+| A --|----|-&gt; B --&gt; C |
+=======    =============
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/test/manager/test_dm.py" line="198" column="1" bodyfile="daliuge-runtime/test/manager/test_dm.py" bodystart="198" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1manager_1_1test__dm_1_1TestDM_1ada0a921f8b83ea07ad9b0f1c41820fbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def test.manager.test_dm.TestDM.test_runGraphSeveralDropsPerDM</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_runGraphSeveralDropsPerDM</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>A test that creates several DROPs in two different DMs and  runs
+the graph. The graph looks like this
+
+DM #1                  DM #2
+===================    ================
+| A --&gt; C --&gt; D --|----|-|            |
+|                 |    | |--&gt; E --&gt; F |
+| B --------------|----|-|            |
+===================    ================
+
+:see: `self.test_runGraphSingleDOPerDOM`
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/test/manager/test_dm.py" line="221" column="1" bodyfile="daliuge-runtime/test/manager/test_dm.py" bodystart="221" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1manager_1_1test__dm_1_1TestDM_1afcd86a7a477419f2e575d485b03eb55e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def test.manager.test_dm.TestDM.test_runWithFourDMs</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_runWithFourDMs</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>A test that creates several DROPs in two different DMs and  runs
+the graph. The graph looks like this
+
+      DM #2
+     +--------------------------+
+     |        |--&gt; C --|        |
+ +---|--&gt; B --|--&gt; D --|--&gt; F --|--|
+ |   |        |--&gt; E --|        |  |
+DM #1    |   +--------------------------+  |   DM #4
++-----+  |                                 |  +---------------------+
+|     |  |                                 |--|--&gt; L --|            |
+| A --|--+                                    |        |--&gt; N --&gt; O |
+|     |  |                                 |--|--&gt; M --|            |
++-----+  |    DM #3                        |  +---------------------+
+ |   +--------------------------+  |
+ |   |        |--&gt; H --|        |  |
+ +---|--&gt; G --|--&gt; I --|--&gt; K --|--|
+     |        |--&gt; J --|        |
+     +--------------------------+
+
+B, F, G, K and N are AppDOs; the rest are plain in-memory DROPs
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/test/manager/test_dm.py" line="282" column="1" bodyfile="daliuge-runtime/test/manager/test_dm.py" bodystart="282" bodyend="373"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1manager_1_1test__dm_1_1TestDM_1a36a07a6929361090bc4d97091a7d4e25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def test.manager.test_dm.TestDM.test_many_relationships</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_many_relationships</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>A test in which a drop is related to many other drops that live in a
+separate DM.
+
+Drop A is accessed by many applications (B1, B2, .., BN), which should
+not exhaust resources on DM #1. We collapse all into C so we can monitor
+only its status to know that the execution is over.
+
+DM #1                     DM #2
+=======    ====================
+|     |    | |--&gt; B1 --|      |
+|     |    | |--&gt; B2 --|      |
+| A --|----|-|--&gt; B3 --|--&gt; C |
+|     |    | |.........|      |
+|     |    | |--&gt; BN --|      |
+=======    ====================
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/test/manager/test_dm.py" line="374" column="1" bodyfile="daliuge-runtime/test/manager/test_dm.py" bodystart="374" bodyend="432"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1manager_1_1test__dm_1_1TestDM_1aa07f7c854fb8c4f3752a300bbcccca5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def test.manager.test_dm.TestDM.test_runGraphSeveralDropsPerDM_with_get_consumer_nodes</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_runGraphSeveralDropsPerDM_with_get_consumer_nodes</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>A test that creates several DROPs in two different DMs and runs
+the graph. Checks the node address(s) of the consumers in the second DM.
+The graph looks like this
+
+DM #1                  DM #2
+===================    ================
+| A --&gt; C --&gt; D --|----|-| --&gt; E      |
+|                 |    | |
+|                 |    | | --&gt; F      |
+===================    ================
+
+:see: `self.test_runGraphSeveralDropsPerDM_with_get_consumer_nodes`
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/test/manager/test_dm.py" line="433" column="1" bodyfile="daliuge-runtime/test/manager/test_dm.py" bodystart="433" bodyend="496"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1manager_1_1test__dm_1_1TestDM_1acc2471a3310a01ff21f2704f9ee4ee31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def test.manager.test_dm.TestDM.test_run_streaming_consumer_remotely</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_run_streaming_consumer_remotely</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>A test that checks that a streaming consumer works correctly across
+node managers when its input is in a different node, like this:
+
+DM #1                 DM #2
+==================    ==============
+| A --&gt; B --&gt; C -|----|--&gt; D --&gt; E |
+==================    ==============
+
+Here B is anormal application and D is a streaming consumer of C.
+We use A and E to compare that all data flows correctly.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/test/manager/test_dm.py" line="497" column="1" bodyfile="daliuge-runtime/test/manager/test_dm.py" bodystart="497" bodyend="535"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1manager_1_1test__dm_1_1TestDM_1abd4eec5ce004da57ac39eed3b6db35b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def test.manager.test_dm.TestDM.test_run_streaming_consumer_remotely2</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_run_streaming_consumer_remotely2</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Like above, but C is hostd by DM #2.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/test/manager/test_dm.py" line="536" column="1" bodyfile="daliuge-runtime/test/manager/test_dm.py" bodystart="536" bodyend="565"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3035">
+        <label>TestCase</label>
+      </node>
+      <node id="3034">
+        <label>object</label>
+      </node>
+      <node id="3033">
+        <label>test.manager.test_dm.NMTestsMixIn</label>
+        <link refid="classtest_1_1manager_1_1test__dm_1_1NMTestsMixIn"/>
+        <childnode refid="3034" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3032">
+        <label>test.manager.test_dm.TestDM</label>
+        <link refid="classtest_1_1manager_1_1test__dm_1_1TestDM"/>
+        <childnode refid="3033" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3035" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3039">
+        <label>TestCase</label>
+      </node>
+      <node id="3038">
+        <label>object</label>
+      </node>
+      <node id="3037">
+        <label>test.manager.test_dm.NMTestsMixIn</label>
+        <link refid="classtest_1_1manager_1_1test__dm_1_1NMTestsMixIn"/>
+        <childnode refid="3038" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3036">
+        <label>test.manager.test_dm.TestDM</label>
+        <link refid="classtest_1_1manager_1_1test__dm_1_1TestDM"/>
+        <childnode refid="3037" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3039" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="daliuge-runtime/test/manager/test_dm.py" line="149" column="1" bodyfile="daliuge-runtime/test/manager/test_dm.py" bodystart="149" bodyend="565"/>
+    <listofallmembers>
+      <member refid="classtest_1_1manager_1_1test__dm_1_1NMTestsMixIn_1a11ecd6dd16c73e33274a56e3ecfe763b" prot="public" virt="non-virtual"><scope>test::manager::test_dm::TestDM</scope><name>__init__</name></member>
+      <member refid="classtest_1_1manager_1_1test__dm_1_1TestDM_1af834a7a141be19b13c8c4b28b1015939" prot="private" virt="non-virtual"><scope>test::manager::test_dm::TestDM</scope><name>_deploy_error_graph</name></member>
+      <member refid="classtest_1_1manager_1_1test__dm_1_1TestDM_1a412aa77d203432cb76317680b03b194d" prot="public" virt="non-virtual"><scope>test::manager::test_dm::TestDM</scope><name>recv</name></member>
+      <member refid="classtest_1_1manager_1_1test__dm_1_1NMTestsMixIn_1a7a41d2567c73ea6f59805ed6ddf5a39b" prot="public" virt="non-virtual"><scope>test::manager::test_dm::TestDM</scope><name>tearDown</name></member>
+      <member refid="classtest_1_1manager_1_1test__dm_1_1TestDM_1a6c7d454b2c7fdf5bb330c6c9c4479afe" prot="public" virt="non-virtual"><scope>test::manager::test_dm::TestDM</scope><name>test_error_listener</name></member>
+      <member refid="classtest_1_1manager_1_1test__dm_1_1TestDM_1ab4e0ee01216b619b71296635b66dbfde" prot="public" virt="non-virtual"><scope>test::manager::test_dm::TestDM</scope><name>test_event_listener</name></member>
+      <member refid="classtest_1_1manager_1_1test__dm_1_1TestDM_1a36a07a6929361090bc4d97091a7d4e25" prot="public" virt="non-virtual"><scope>test::manager::test_dm::TestDM</scope><name>test_many_relationships</name></member>
+      <member refid="classtest_1_1manager_1_1test__dm_1_1TestDM_1acc2471a3310a01ff21f2704f9ee4ee31" prot="public" virt="non-virtual"><scope>test::manager::test_dm::TestDM</scope><name>test_run_streaming_consumer_remotely</name></member>
+      <member refid="classtest_1_1manager_1_1test__dm_1_1TestDM_1abd4eec5ce004da57ac39eed3b6db35b2" prot="public" virt="non-virtual"><scope>test::manager::test_dm::TestDM</scope><name>test_run_streaming_consumer_remotely2</name></member>
+      <member refid="classtest_1_1manager_1_1test__dm_1_1TestDM_1ac0fd242502000b0741e2259fbe0cd77b" prot="public" virt="non-virtual"><scope>test::manager::test_dm::TestDM</scope><name>test_runGraphOneDOPerDOM</name></member>
+      <member refid="classtest_1_1manager_1_1test__dm_1_1TestDM_1ada0a921f8b83ea07ad9b0f1c41820fbd" prot="public" virt="non-virtual"><scope>test::manager::test_dm::TestDM</scope><name>test_runGraphSeveralDropsPerDM</name></member>
+      <member refid="classtest_1_1manager_1_1test__dm_1_1TestDM_1aa07f7c854fb8c4f3752a300bbcccca5a" prot="public" virt="non-virtual"><scope>test::manager::test_dm::TestDM</scope><name>test_runGraphSeveralDropsPerDM_with_get_consumer_nodes</name></member>
+      <member refid="classtest_1_1manager_1_1test__dm_1_1TestDM_1afcd86a7a477419f2e575d485b03eb55e" prot="public" virt="non-virtual"><scope>test::manager::test_dm::TestDM</scope><name>test_runWithFourDMs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

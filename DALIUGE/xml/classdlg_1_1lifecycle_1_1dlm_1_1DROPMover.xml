@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classdlg_1_1lifecycle_1_1dlm_1_1DROPMover" kind="class" language="Python" prot="public">
+    <compoundname>dlg::lifecycle::dlm::DROPMover</compoundname>
+    <basecompoundref refid="classdlg_1_1lifecycle_1_1dlm_1_1DataLifecycleManagerBackgroundTask" prot="public" virt="non-virtual">dlg.lifecycle.dlm.DataLifecycleManagerBackgroundTask</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdlg_1_1lifecycle_1_1dlm_1_1DROPMover_1ae44a2b5760f4c50919a05ba2e974c0e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.lifecycle.dlm.DROPMover.doTask</definition>
+        <argsstring>(self, dlm)</argsstring>
+        <name>doTask</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dlm</type>
+          <defname>dlm</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/lifecycle/dlm.py" line="187" column="1" bodyfile="daliuge-runtime/dlg/lifecycle/dlm.py" bodystart="187" bodyend="189"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>A thread that automatically moves DROPs between layers of the HSM.
+This is supposed to be based on rules and configuration parameters which we
+still don&apos;t consider here. The driving rule we currently use is how
+frequently is the DROP accessed.
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="2040">
+        <label>threading::Thread</label>
+      </node>
+      <node id="2039">
+        <label>dlg.lifecycle.dlm.DataLifecycleManagerBackgroundTask</label>
+        <link refid="classdlg_1_1lifecycle_1_1dlm_1_1DataLifecycleManagerBackgroundTask"/>
+        <childnode refid="2040" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2038">
+        <label>dlg.lifecycle.dlm.DROPMover</label>
+        <link refid="classdlg_1_1lifecycle_1_1dlm_1_1DROPMover"/>
+        <childnode refid="2039" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2043">
+        <label>threading::Thread</label>
+      </node>
+      <node id="2042">
+        <label>dlg.lifecycle.dlm.DataLifecycleManagerBackgroundTask</label>
+        <link refid="classdlg_1_1lifecycle_1_1dlm_1_1DataLifecycleManagerBackgroundTask"/>
+        <childnode refid="2043" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2041">
+        <label>dlg.lifecycle.dlm.DROPMover</label>
+        <link refid="classdlg_1_1lifecycle_1_1dlm_1_1DROPMover"/>
+        <childnode refid="2042" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="daliuge-runtime/dlg/lifecycle/dlm.py" line="179" column="1" bodyfile="daliuge-runtime/dlg/lifecycle/dlm.py" bodystart="179" bodyend="190"/>
+    <listofallmembers>
+      <member refid="classdlg_1_1lifecycle_1_1dlm_1_1DataLifecycleManagerBackgroundTask_1a0d3c2352aa7e4590ebc5bf1188baa0f9" prot="public" virt="non-virtual"><scope>dlg::lifecycle::dlm::DROPMover</scope><name>__init__</name></member>
+      <member refid="classdlg_1_1lifecycle_1_1dlm_1_1DROPMover_1ae44a2b5760f4c50919a05ba2e974c0e0" prot="public" virt="non-virtual"><scope>dlg::lifecycle::dlm::DROPMover</scope><name>doTask</name></member>
+      <member refid="classdlg_1_1lifecycle_1_1dlm_1_1DataLifecycleManagerBackgroundTask_1a49fc79c7439f70fdeee2a32430d1fbab" prot="public" virt="non-virtual"><scope>dlg::lifecycle::dlm::DROPMover</scope><name>run</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

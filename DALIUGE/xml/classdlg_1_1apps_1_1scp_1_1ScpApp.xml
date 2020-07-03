@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classdlg_1_1apps_1_1scp_1_1ScpApp" kind="class" language="Python" prot="public">
+    <compoundname>dlg::apps::scp::ScpApp</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">BarrierAppDROP</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdlg_1_1apps_1_1scp_1_1ScpApp_1a92459ac0fe6ec7b89b4d92e96463917a" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dlg.apps.scp.ScpApp::compontent_meta</definition>
+        <argsstring></argsstring>
+        <name>compontent_meta</name>
+        <initializer>= dlg_component(&apos;<ref refid="classdlg_1_1apps_1_1scp_1_1ScpApp" kindref="compound">ScpApp</ref>&apos;, &apos;A BarrierAppDROP that copies the content of its single &apos;
+                                    &apos;input onto its single output via SSHs scp protocol.&apos;,
+                                    [dlg_batch_input(&apos;binary/*&apos;, [ShoreDROP, NgasDROP, InMemoryDROP,
+                                                                  NullDROP, RDBMSDrop, ContainerDROP])],
+                                    [dlg_batch_output(&apos;binary/*&apos;, [ShoreDROP, NgasDROP, InMemoryDROP,
+                                                                   NullDROP, RDBMSDrop, ContainerDROP])],
+                                    [dlg_streaming_input(&apos;binary/*&apos;)])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/apps/scp.py" line="43" column="1" bodyfile="daliuge-runtime/dlg/apps/scp.py" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1apps_1_1scp_1_1ScpApp_1accb5a84a4d9c133cdf73d0373a061efb" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dlg.apps.scp.ScpApp::remoteUser</definition>
+        <argsstring></argsstring>
+        <name>remoteUser</name>
+        <initializer>= dlg_string_param(&apos;remoteUser&apos;, None)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/apps/scp.py" line="51" column="1" bodyfile="daliuge-runtime/dlg/apps/scp.py" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1apps_1_1scp_1_1ScpApp_1a3eb8b7a01b4d112673c7059a6b61d707" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dlg.apps.scp.ScpApp::pkeyPath</definition>
+        <argsstring></argsstring>
+        <name>pkeyPath</name>
+        <initializer>= dlg_string_param(&apos;pkeyPath&apos;, None)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/apps/scp.py" line="52" column="1" bodyfile="daliuge-runtime/dlg/apps/scp.py" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1apps_1_1scp_1_1ScpApp_1acda7ccdf3a0f0927eb5fe1293c1feb57" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dlg.apps.scp.ScpApp::timeout</definition>
+        <argsstring></argsstring>
+        <name>timeout</name>
+        <initializer>= dlg_string_param(&apos;timeout&apos;, None)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/apps/scp.py" line="53" column="1" bodyfile="daliuge-runtime/dlg/apps/scp.py" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdlg_1_1apps_1_1scp_1_1ScpApp_1abd5de750a84ac2c43ef685e97c1155a5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.apps.scp.ScpApp::node</definition>
+        <argsstring></argsstring>
+        <name>node</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/apps/scp.py" line="94" column="1" bodyfile="daliuge-runtime/dlg/apps/scp.py" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdlg_1_1apps_1_1scp_1_1ScpApp_1aad365ff4a251bf49d5152e6b3779155c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.apps.scp.ScpApp.initialize</definition>
+        <argsstring>(self, kwargs)</argsstring>
+        <name>initialize</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/apps/scp.py" line="55" column="1" bodyfile="daliuge-runtime/dlg/apps/scp.py" bodystart="55" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1apps_1_1scp_1_1ScpApp_1a572dbf6846869e13bc2cbefc48b73b45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.apps.scp.ScpApp.run</definition>
+        <argsstring>(self)</argsstring>
+        <name>run</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/apps/scp.py" line="58" column="1" bodyfile="daliuge-runtime/dlg/apps/scp.py" bodystart="58" bodyend="99"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>A BarrierAppDROP that copies the content of its single input onto its
+single output via SSH&apos;s scp protocol.
+
+Because of the nature of the scp protocol, the input and output DROPs
+of this application must both be filesystem-based; i.e., they must be an
+instance of FileDROP or of DirectoryContainer.
+
+Depending on the physical location of each DROP (this application, and
+its input and outputs) this application will copy data FROM another host or
+TO other host. This application&apos;s node must thus coincide with one of the
+two I/O DROPs.
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="2826">
+        <label>dlg.apps.scp.ScpApp</label>
+        <link refid="classdlg_1_1apps_1_1scp_1_1ScpApp"/>
+        <childnode refid="2827" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2827">
+        <label>BarrierAppDROP</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2828">
+        <label>dlg.apps.scp.ScpApp</label>
+        <link refid="classdlg_1_1apps_1_1scp_1_1ScpApp"/>
+        <childnode refid="2829" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2829">
+        <label>BarrierAppDROP</label>
+      </node>
+    </collaborationgraph>
+    <location file="daliuge-runtime/dlg/apps/scp.py" line="29" column="1" bodyfile="daliuge-runtime/dlg/apps/scp.py" bodystart="29" bodyend="99"/>
+    <listofallmembers>
+      <member refid="classdlg_1_1apps_1_1scp_1_1ScpApp_1a92459ac0fe6ec7b89b4d92e96463917a" prot="public" virt="non-virtual"><scope>dlg::apps::scp::ScpApp</scope><name>compontent_meta</name></member>
+      <member refid="classdlg_1_1apps_1_1scp_1_1ScpApp_1aad365ff4a251bf49d5152e6b3779155c" prot="public" virt="non-virtual"><scope>dlg::apps::scp::ScpApp</scope><name>initialize</name></member>
+      <member refid="classdlg_1_1apps_1_1scp_1_1ScpApp_1abd5de750a84ac2c43ef685e97c1155a5" prot="public" virt="non-virtual"><scope>dlg::apps::scp::ScpApp</scope><name>node</name></member>
+      <member refid="classdlg_1_1apps_1_1scp_1_1ScpApp_1a3eb8b7a01b4d112673c7059a6b61d707" prot="public" virt="non-virtual"><scope>dlg::apps::scp::ScpApp</scope><name>pkeyPath</name></member>
+      <member refid="classdlg_1_1apps_1_1scp_1_1ScpApp_1accb5a84a4d9c133cdf73d0373a061efb" prot="public" virt="non-virtual"><scope>dlg::apps::scp::ScpApp</scope><name>remoteUser</name></member>
+      <member refid="classdlg_1_1apps_1_1scp_1_1ScpApp_1a572dbf6846869e13bc2cbefc48b73b45" prot="public" virt="non-virtual"><scope>dlg::apps::scp::ScpApp</scope><name>run</name></member>
+      <member refid="classdlg_1_1apps_1_1scp_1_1ScpApp_1acda7ccdf3a0f0927eb5fe1293c1feb57" prot="public" virt="non-virtual"><scope>dlg::apps::scp::ScpApp</scope><name>timeout</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

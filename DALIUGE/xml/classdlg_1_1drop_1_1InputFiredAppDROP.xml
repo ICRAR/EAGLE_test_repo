@@ -1,0 +1,448 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classdlg_1_1drop_1_1InputFiredAppDROP" kind="class" language="Python" prot="public">
+    <compoundname>dlg::drop::InputFiredAppDROP</compoundname>
+    <basecompoundref refid="classdlg_1_1drop_1_1AppDROP" prot="public" virt="non-virtual">dlg.drop.AppDROP</basecompoundref>
+    <derivedcompoundref refid="classdlg_1_1drop_1_1BarrierAppDROP" prot="public" virt="non-virtual">dlg.drop.BarrierAppDROP</derivedcompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdlg_1_1drop_1_1InputFiredAppDROP_1afa8f97fddc7b3b069386754dcd7c8551" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dlg.drop.InputFiredAppDROP::input_error_threshold</definition>
+        <argsstring></argsstring>
+        <name>input_error_threshold</name>
+        <initializer>= dlg_int_param(&apos;Input error threshold (0 and 100)&apos;, 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/drop.py" line="1552" column="1" bodyfile="daliuge-runtime/dlg/drop.py" bodystart="1552" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1drop_1_1InputFiredAppDROP_1acbdbd1d2de0704928913f13905bea9fe" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dlg.drop.InputFiredAppDROP::n_effective_inputs</definition>
+        <argsstring></argsstring>
+        <name>n_effective_inputs</name>
+        <initializer>= dlg_int_param(&apos;Number of effective <ref refid="classdlg_1_1drop_1_1AppDROP_1a4649d8e985d9bf54636d06b44237d1eb" kindref="member">inputs</ref>&apos;, -1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/drop.py" line="1553" column="1" bodyfile="daliuge-runtime/dlg/drop.py" bodystart="1553" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1drop_1_1InputFiredAppDROP_1a2268b127171df3bfd51f7d4c38aff552" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dlg.drop.InputFiredAppDROP::n_tries</definition>
+        <argsstring></argsstring>
+        <name>n_tries</name>
+        <initializer>= dlg_int_param(&apos;Number of tries&apos;, 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/drop.py" line="1554" column="1" bodyfile="daliuge-runtime/dlg/drop.py" bodystart="1554" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdlg_1_1drop_1_1InputFiredAppDROP_1a9dcfc7d1279718501522a5e282fb993a" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.drop.InputFiredAppDROP::_completedInputs</definition>
+        <argsstring></argsstring>
+        <name>_completedInputs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/drop.py" line="1558" column="1" bodyfile="daliuge-runtime/dlg/drop.py" bodystart="1558" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1drop_1_1InputFiredAppDROP_1a3b3432b6a0f60876ea59008c68eefa80" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.drop.InputFiredAppDROP::_errorInputs</definition>
+        <argsstring></argsstring>
+        <name>_errorInputs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/drop.py" line="1559" column="1" bodyfile="daliuge-runtime/dlg/drop.py" bodystart="1559" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdlg_1_1drop_1_1InputFiredAppDROP_1a2399d9af2a8d2b944b9b7aea360f6dee" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.drop.InputFiredAppDROP::execStatus</definition>
+        <argsstring></argsstring>
+        <name>execStatus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/drop.py" line="1617" column="1" bodyfile="daliuge-runtime/dlg/drop.py" bodystart="1617" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1drop_1_1InputFiredAppDROP_1a03dfffda9cd38c7e9703056aa7cea6a9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.drop.InputFiredAppDROP::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/drop.py" line="1618" column="1" bodyfile="daliuge-runtime/dlg/drop.py" bodystart="1618" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdlg_1_1drop_1_1InputFiredAppDROP_1a83c3065722c990295cde8e6d57fa1483" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.drop.InputFiredAppDROP.initialize</definition>
+        <argsstring>(self, kwargs)</argsstring>
+        <name>initialize</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/drop.py" line="1556" column="1" bodyfile="daliuge-runtime/dlg/drop.py" bodystart="1556" bodyend="1575"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1drop_1_1InputFiredAppDROP_1a53e961bb96cf9452f192414f6ab7a05f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.drop.InputFiredAppDROP.addStreamingInput</definition>
+        <argsstring>(self, streamingInputDrop, back=True)</argsstring>
+        <name>addStreamingInput</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>streamingInputDrop</type>
+          <defname>streamingInputDrop</defname>
+        </param>
+        <param>
+          <type>back</type>
+          <defname>back</defname>
+          <defval>True</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/drop.py" line="1576" column="1" bodyfile="daliuge-runtime/dlg/drop.py" bodystart="1576" bodyend="1579"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1drop_1_1InputFiredAppDROP_1acddebe45415782a5c71a3b528ca11763" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.drop.InputFiredAppDROP.dropCompleted</definition>
+        <argsstring>(self, uid, drop_state)</argsstring>
+        <name>dropCompleted</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classdlg_1_1drop_1_1AbstractDROP_1a52f23b12db48660c44e6c052b9367d67" kindref="member">uid</ref></type>
+          <defname>uid</defname>
+        </param>
+        <param>
+          <type>drop_state</type>
+          <defname>drop_state</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/drop.py" line="1580" column="1" bodyfile="daliuge-runtime/dlg/drop.py" bodystart="1580" bodyend="1622"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1drop_1_1InputFiredAppDROP_1a8ae76ed08f5402e76d7fc89cc0c2229f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.drop.InputFiredAppDROP.async_execute</definition>
+        <argsstring>(self)</argsstring>
+        <name>async_execute</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/drop.py" line="1623" column="1" bodyfile="daliuge-runtime/dlg/drop.py" bodystart="1623" bodyend="1632"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1drop_1_1InputFiredAppDROP_1adcadfc68e8f270c3b81e9a474951030f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.drop.InputFiredAppDROP.execute</definition>
+        <argsstring>(self)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Manually trigger the execution of this application.
+
+This method is normally invoked internally when the application detects
+all its inputs are COMPLETED.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/drop.py" line="1634" column="1" bodyfile="daliuge-runtime/dlg/drop.py" bodystart="1634" bodyend="1670"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1drop_1_1InputFiredAppDROP_1a630a21af124700bb32c7f75d15329aa3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.drop.InputFiredAppDROP.run</definition>
+        <argsstring>(self)</argsstring>
+        <name>run</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Run this application. It can be safely assumed that at this point all
+the required inputs are COMPLETED.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/drop.py" line="1671" column="1" bodyfile="daliuge-runtime/dlg/drop.py" bodystart="1671" bodyend="1676"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1drop_1_1InputFiredAppDROP_1a63413b224272b459177db63a47eff255" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.drop.InputFiredAppDROP.exists</definition>
+        <argsstring>(self)</argsstring>
+        <name>exists</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/drop.py" line="1678" column="1" bodyfile="daliuge-runtime/dlg/drop.py" bodystart="1678" bodyend="1680"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>An InputFiredAppDROP accepts no streaming inputs and waits until a given
+amount of inputs (called *effective inputs*) have moved to COMPLETED to
+execute its &apos;run&apos; method, which must be overwritten by subclasses. This way,
+this application allows to continue the execution of the graph given a
+minimum amount of inputs being ready. The transitions of subsequent inputs
+to the COMPLETED state have no effect.
+
+Normally only one call to the `run` method will happen per application.
+However users can override this by specifying a different number of tries
+before finally giving up.
+
+The amount of effective inputs must be less or equal to the amount of inputs
+added to this application once the graph is being executed. The special
+value of -1 means that all inputs are considered as effective, in which case
+this class acts as a BarrierAppDROP, effectively blocking until all its
+inputs have moved to the COMPLETED state.
+
+An input error threshold controls the behavior of the application given an
+error in one or more of its inputs (i.e., a DROP moving to the ERROR state).
+The threshold is a value within 0 and 100 that indicates the tolerance
+to erroneous effective inputs, and after which the application will not be
+run but moved to the ERROR state itself instead.
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="2244">
+        <label>dlg.drop.ContainerDROP</label>
+        <link refid="classdlg_1_1drop_1_1ContainerDROP"/>
+        <childnode refid="2245" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2245">
+        <label>dlg.drop.AbstractDROP</label>
+        <link refid="classdlg_1_1drop_1_1AbstractDROP"/>
+        <childnode refid="2246" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2249">
+        <label>test.integrate.chiles.chilesdo.SourceFlux</label>
+        <link refid="classtest_1_1integrate_1_1chiles_1_1chilesdo_1_1SourceFlux"/>
+        <childnode refid="2247" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2248">
+        <label>test.integrate.chiles.chilesdo.Clean</label>
+        <link refid="classtest_1_1integrate_1_1chiles_1_1chilesdo_1_1Clean"/>
+        <childnode refid="2247" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2251">
+        <label>test.manager.test_dm.ErroneousApp</label>
+        <link refid="classtest_1_1manager_1_1test__dm_1_1ErroneousApp"/>
+        <childnode refid="2247" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2242">
+        <label>dlg.drop.InputFiredAppDROP</label>
+        <link refid="classdlg_1_1drop_1_1InputFiredAppDROP"/>
+        <childnode refid="2243" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2250">
+        <label>test.integrate.chiles.chilesdo.Split</label>
+        <link refid="classtest_1_1integrate_1_1chiles_1_1chilesdo_1_1Split"/>
+        <childnode refid="2247" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2243">
+        <label>dlg.drop.AppDROP</label>
+        <link refid="classdlg_1_1drop_1_1AppDROP"/>
+        <childnode refid="2244" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2247">
+        <label>dlg.drop.BarrierAppDROP</label>
+        <link refid="classdlg_1_1drop_1_1BarrierAppDROP"/>
+        <childnode refid="2242" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2246">
+        <label>EventFirer</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2254">
+        <label>dlg.drop.ContainerDROP</label>
+        <link refid="classdlg_1_1drop_1_1ContainerDROP"/>
+        <childnode refid="2255" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2255">
+        <label>dlg.drop.AbstractDROP</label>
+        <link refid="classdlg_1_1drop_1_1AbstractDROP"/>
+        <childnode refid="2256" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2252">
+        <label>dlg.drop.InputFiredAppDROP</label>
+        <link refid="classdlg_1_1drop_1_1InputFiredAppDROP"/>
+        <childnode refid="2253" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2253">
+        <label>dlg.drop.AppDROP</label>
+        <link refid="classdlg_1_1drop_1_1AppDROP"/>
+        <childnode refid="2254" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2256">
+        <label>EventFirer</label>
+      </node>
+    </collaborationgraph>
+    <location file="daliuge-runtime/dlg/drop.py" line="1527" column="1" bodyfile="daliuge-runtime/dlg/drop.py" bodystart="1527" bodyend="1681"/>
+    <listofallmembers>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1ac2fddd5605897c23a53286c241bdea52" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>__hash__</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a2c5c04e9015451140f980cea9966018b" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>__init__</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1ae5b978d64d05b08ac23279b17c1abe82" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>__repr__</name></member>
+      <member refid="classdlg_1_1drop_1_1InputFiredAppDROP_1a9dcfc7d1279718501522a5e282fb993a" prot="private" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>_completedInputs</name></member>
+      <member refid="classdlg_1_1drop_1_1InputFiredAppDROP_1a3b3432b6a0f60876ea59008c68eefa80" prot="private" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>_errorInputs</name></member>
+      <member refid="classdlg_1_1drop_1_1ContainerDROP_1a620402ada1ee510c89e344e36fa4fb8e" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>addChild</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a336a527084db32aa25df94d6bcc4b887" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>addConsumer</name></member>
+      <member refid="classdlg_1_1drop_1_1AppDROP_1ae88bf557c61f4724fcb82827d6a0b68d" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>addInput</name></member>
+      <member refid="classdlg_1_1drop_1_1AppDROP_1a642afbb97eacebdd99e529657876f307" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>addOutput</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a7a56e877b44230134691f95a3721e07c" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>addProducer</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a88102924c2c5a1da2ccbaa80b322f57a" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>addStreamingConsumer</name></member>
+      <member refid="classdlg_1_1drop_1_1InputFiredAppDROP_1a53e961bb96cf9452f192414f6ab7a05f" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>addStreamingInput</name></member>
+      <member refid="classdlg_1_1drop_1_1InputFiredAppDROP_1a8ae76ed08f5402e76d7fc89cc0c2229f" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>async_execute</name></member>
+      <member refid="classdlg_1_1drop_1_1AppDROP_1ae5c3e718686b5a01802b1278f23dfd77" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>cancel</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1ae042549a6196547aae18ffcaa614c4bc" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>checksum</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a32af7f03cf8384274b19838680beab97" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>checksum</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a98da5f14a2f7771d720d3e3ada76301b" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>checksumType</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a4522448d4e5ce0f96fe753bac282a2b5" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>checksumType</name></member>
+      <member refid="classdlg_1_1drop_1_1ContainerDROP_1aab694f9fb01f3b812aaa3fe8317b9aea" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>children</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a494ab1ae0b6d8346d869c9b93bb7a225" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>close</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1af33a4f83e7e131397f87dd883b02ef81" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>consumers</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a06ac084ce77d7a7a22d8a2b5e5aa875b" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>dataIsland</name></member>
+      <member refid="classdlg_1_1drop_1_1ContainerDROP_1a08e9454cbc4276d478fe5791d56e38d3" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>dataURL</name></member>
+      <member refid="classdlg_1_1drop_1_1AppDROP_1a341cc63d89d78c2ab0d82187e73f4e25" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>dataWritten</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1af586122ecbe9f5ee3861adfb5d4bb949" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>decrRefCount</name></member>
+      <member refid="classdlg_1_1drop_1_1ContainerDROP_1a975e437fbd040fc3fd9ad97e48375e07" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>delete</name></member>
+      <member refid="classdlg_1_1drop_1_1InputFiredAppDROP_1acddebe45415782a5c71a3b528ca11763" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>dropCompleted</name></member>
+      <member refid="classdlg_1_1drop_1_1InputFiredAppDROP_1a2399d9af2a8d2b944b9b7aea360f6dee" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>execStatus</name></member>
+      <member refid="classdlg_1_1drop_1_1AppDROP_1a32a1d44bf30537d1372732c0f3ac1eae" prot="public" virt="non-virtual" ambiguityscope="dlg::drop::AppDROP."><scope>dlg::drop::InputFiredAppDROP</scope><name>execStatus</name></member>
+      <member refid="classdlg_1_1drop_1_1AppDROP_1acdb24e39168303fb25fda41f56e17b4b" prot="public" virt="non-virtual" ambiguityscope="dlg::drop::AppDROP."><scope>dlg::drop::InputFiredAppDROP</scope><name>execStatus</name></member>
+      <member refid="classdlg_1_1drop_1_1InputFiredAppDROP_1adcadfc68e8f270c3b81e9a474951030f" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>execute</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a16a3127f829fcce5f1ded0c37c867b8b" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>executionMode</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a81b305863dcf2e5e5591a00ed8fce869" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>executionMode</name></member>
+      <member refid="classdlg_1_1drop_1_1InputFiredAppDROP_1a63413b224272b459177db63a47eff255" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>exists</name></member>
+      <member refid="classdlg_1_1drop_1_1ContainerDROP_1a3d32def5ef99e86dea368b7869882c38" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>expirationDate</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a157c04dd0c22f17daaa9bc729c1dd298" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>expireAfterUse</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1adff042449732940420c84ddecb3f6476" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>get_consumers_nodes</name></member>
+      <member refid="classdlg_1_1drop_1_1ContainerDROP_1aff70ed6161110e5b4707699ca4abc42e" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>getIO</name></member>
+      <member refid="classdlg_1_1drop_1_1AppDROP_1aaa241d180524794218992367971b8ceb" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>handleEvent</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1aac36c5636a45018179efda69ccf79d2f" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>handleInterest</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a16df3fee6a86cf4f43c9aa0dc9c72d01" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>incrRefCount</name></member>
+      <member refid="classdlg_1_1drop_1_1InputFiredAppDROP_1a83c3065722c990295cde8e6d57fa1483" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>initialize</name></member>
+      <member refid="classdlg_1_1drop_1_1InputFiredAppDROP_1afa8f97fddc7b3b069386754dcd7c8551" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>input_error_threshold</name></member>
+      <member refid="classdlg_1_1drop_1_1AppDROP_1a4649d8e985d9bf54636d06b44237d1eb" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>inputs</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a5550127a42944b64cd691f87c4dc3abe" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>isBeingRead</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a7f63bfd98bd257ffe506d6f1baec5db5" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>isCompleted</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a60b7a1acfce6a9495fd4e248bfc0d128" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>lg_key</name></member>
+      <member refid="classdlg_1_1drop_1_1InputFiredAppDROP_1acbdbd1d2de0704928913f13905bea9fe" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>n_effective_inputs</name></member>
+      <member refid="classdlg_1_1drop_1_1InputFiredAppDROP_1a2268b127171df3bfd51f7d4c38aff552" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>n_tries</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a81f53a83ca94210f4b41613ab15f9ba7" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>name</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1abbba7acc298a361b2f9510bba9a508a7" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>node</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a634670a85a0b978d3327edca73590c92" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>oid</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1acdcf1ab8f9f681cf6b92124b12de5cfd" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>open</name></member>
+      <member refid="classdlg_1_1drop_1_1AppDROP_1a8c9786098dd9e31e83f8aff5598fe90a" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>outputs</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1ad9d0bc15a81c68c012814e9f3ed2c72f" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>parent</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a5ba50659e4d38c5207c688151a65bbf1" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>parent</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1afd126d88466822cfcb91491957f97a94" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>phase</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1afb31853bd25d56ba61b4bf5bd6fc94c7" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>phase</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1aea745d71a1ec688ebd66594163b38f4a" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>precious</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a06960c31442c07efd862382078f8ac96" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>producerFinished</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a655348df5e0535ae636cd4a09ac8d106" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>producers</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a3319962613a02690f67a92c911bc695f" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>read</name></member>
+      <member refid="classdlg_1_1drop_1_1InputFiredAppDROP_1a630a21af124700bb32c7f75d15329aa3" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>run</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a03a21460c5a31316ae08aa9a860b6713" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>setCompleted</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a88a0294e80eed790697008c1d2698cdb" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>setError</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a73ca5367803a078c6bd188b12a807e30" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>size</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1aa15208b503ea93b7533a54632b50d0a1" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>size</name></member>
+      <member refid="classdlg_1_1drop_1_1InputFiredAppDROP_1a03dfffda9cd38c7e9703056aa7cea6a9" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>status</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a17f8a917549ed3eb312fcfc35ef6e544" prot="public" virt="non-virtual" ambiguityscope="dlg::drop::ContainerDROP."><scope>dlg::drop::InputFiredAppDROP</scope><name>status</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a4d9508f4a4f680466b8a09393e42e0de" prot="public" virt="non-virtual" ambiguityscope="dlg::drop::ContainerDROP."><scope>dlg::drop::InputFiredAppDROP</scope><name>status</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a7da445287b1a0180d7f5e736087cfe4e" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>streamingConsumers</name></member>
+      <member refid="classdlg_1_1drop_1_1AppDROP_1a6d1706a7d03709c1a5eda8a6d6e29b7b" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>streamingInputs</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1addd825fc304c6ccad3d9795c865b4d89" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>targetPhase</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a52f23b12db48660c44e6c052b9367d67" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>uid</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a876b9794001307e140c95f133372efce" prot="public" virt="non-virtual"><scope>dlg::drop::InputFiredAppDROP</scope><name>write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

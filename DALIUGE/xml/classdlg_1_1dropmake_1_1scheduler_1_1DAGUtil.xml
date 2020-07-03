@@ -1,0 +1,312 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classdlg_1_1dropmake_1_1scheduler_1_1DAGUtil" kind="class" language="Python" prot="public">
+    <compoundname>dlg::dropmake::scheduler::DAGUtil</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classdlg_1_1dropmake_1_1scheduler_1_1DAGUtil_1a79139d44ff592cec8d70243062a16bff" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.dropmake.scheduler.DAGUtil.get_longest_path</definition>
+        <argsstring>(G, weight=&apos;weight&apos;, default_weight=1, show_path=True, topo_sort=None)</argsstring>
+        <name>get_longest_path</name>
+        <param>
+          <type>G</type>
+          <defname>G</defname>
+        </param>
+        <param>
+          <type>weight</type>
+          <defname>weight</defname>
+          <defval>&apos;weight&apos;</defval>
+        </param>
+        <param>
+          <type>default_weight</type>
+          <defname>default_weight</defname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>show_path</type>
+          <defname>show_path</defname>
+          <defval>True</defval>
+        </param>
+        <param>
+          <type>topo_sort</type>
+          <defname>topo_sort</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Ported from:
+https://github.com/networkx/networkx/blob/master/networkx/algorithms/dag.py
+Added node weight
+
+Returns the longest path in a DAG
+If G has edges with &apos;weight&apos; attribute the edge data are used as weight values.
+Parameters
+----------
+G : NetworkX DiGraph
+    Graph
+weight : string (default &apos;weight&apos;)
+    Edge data key to use for weight
+default_weight : integer (default 1)
+    The weight of edges that do not have a weight attribute
+Returns a tuple with two elements
+-------
+path : list
+    Longest path
+path_length : float
+    The length of the longest path</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-translator/dlg/dropmake/scheduler.py" line="985" column="1" bodyfile="daliuge-translator/dlg/dropmake/scheduler.py" bodystart="985" bodyend="1036"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1dropmake_1_1scheduler_1_1DAGUtil_1ae8607514227a608968f3af16de05d38a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.dropmake.scheduler.DAGUtil.get_max_width</definition>
+        <argsstring>(G, weight=&apos;weight&apos;, default_weight=1)</argsstring>
+        <name>get_max_width</name>
+        <param>
+          <type>G</type>
+          <defname>G</defname>
+        </param>
+        <param>
+          <type>weight</type>
+          <defname>weight</defname>
+          <defval>&apos;weight&apos;</defval>
+        </param>
+        <param>
+          <type>default_weight</type>
+          <defname>default_weight</defname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Get the antichain with the maximum &quot;weighted&quot; width of this DAG
+weight: float (for example, it could be RAM consumption in GB)
+Return : float
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-translator/dlg/dropmake/scheduler.py" line="1038" column="1" bodyfile="daliuge-translator/dlg/dropmake/scheduler.py" bodystart="1038" bodyend="1052"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1dropmake_1_1scheduler_1_1DAGUtil_1a57dd1ef21256a014316e3eaf2d1c5099" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.dropmake.scheduler.DAGUtil.get_max_dop</definition>
+        <argsstring>(G)</argsstring>
+        <name>get_max_dop</name>
+        <param>
+          <type>G</type>
+          <defname>G</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Get the maximum degree of parallelism of this DAG
+return : int
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-translator/dlg/dropmake/scheduler.py" line="1054" column="1" bodyfile="daliuge-translator/dlg/dropmake/scheduler.py" bodystart="1054" bodyend="1068"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1dropmake_1_1scheduler_1_1DAGUtil_1a285da11c8d81a513be3cf98c6d7da9eb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.dropmake.scheduler.DAGUtil.get_max_antichains</definition>
+        <argsstring>(G)</argsstring>
+        <name>get_max_antichains</name>
+        <param>
+          <type>G</type>
+          <defname>G</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>return a list of antichains with Top-2 lengths
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-translator/dlg/dropmake/scheduler.py" line="1070" column="1" bodyfile="daliuge-translator/dlg/dropmake/scheduler.py" bodystart="1070" bodyend="1075"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1dropmake_1_1scheduler_1_1DAGUtil_1a6d4b99f2acdcbd7bc7f0d51256b4148c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.dropmake.scheduler.DAGUtil.prune_antichains</definition>
+        <argsstring>(antichains)</argsstring>
+        <name>prune_antichains</name>
+        <param>
+          <type>antichains</type>
+          <defname>antichains</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Prune a list of antichains to keep those with Top-2 lengths
+antichains is a Generator (not a list!)
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-translator/dlg/dropmake/scheduler.py" line="1077" column="1" bodyfile="daliuge-translator/dlg/dropmake/scheduler.py" bodystart="1077" bodyend="1087"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1dropmake_1_1scheduler_1_1DAGUtil_1a13fac882d087dff56064af30edbb8213" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.dropmake.scheduler.DAGUtil.label_schedule</definition>
+        <argsstring>(G, weight=&apos;weight&apos;, topo_sort=None)</argsstring>
+        <name>label_schedule</name>
+        <param>
+          <type>G</type>
+          <defname>G</defname>
+        </param>
+        <param>
+          <type>weight</type>
+          <defname>weight</defname>
+          <defval>&apos;weight&apos;</defval>
+        </param>
+        <param>
+          <type>topo_sort</type>
+          <defname>topo_sort</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>for each node, label its start and end time
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-translator/dlg/dropmake/scheduler.py" line="1089" column="1" bodyfile="daliuge-translator/dlg/dropmake/scheduler.py" bodystart="1089" bodyend="1109"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1dropmake_1_1scheduler_1_1DAGUtil_1a184f2a84c3550ae3936dde1cf319efd0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.dropmake.scheduler.DAGUtil.ganttchart_matrix</definition>
+        <argsstring>(G, topo_sort=None)</argsstring>
+        <name>ganttchart_matrix</name>
+        <param>
+          <type>G</type>
+          <defname>G</defname>
+        </param>
+        <param>
+          <type>topo_sort</type>
+          <defname>topo_sort</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return a M (# of DROPs) by N (longest path length) matrix
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-translator/dlg/dropmake/scheduler.py" line="1111" column="1" bodyfile="daliuge-translator/dlg/dropmake/scheduler.py" bodystart="1111" bodyend="1142"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1dropmake_1_1scheduler_1_1DAGUtil_1a02cdca73a190aa6b8c6c94cd107d9207" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.dropmake.scheduler.DAGUtil.import_metis</definition>
+        <argsstring>()</argsstring>
+        <name>import_metis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-translator/dlg/dropmake/scheduler.py" line="1144" column="1" bodyfile="daliuge-translator/dlg/dropmake/scheduler.py" bodystart="1144" bodyend="1166"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1dropmake_1_1scheduler_1_1DAGUtil_1aed02c158e25f7680a452dd4a16e1089a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.dropmake.scheduler.DAGUtil.build_dag_from_drops</definition>
+        <argsstring>(drop_list, embed_drop=True, fake_super_root=False)</argsstring>
+        <name>build_dag_from_drops</name>
+        <param>
+          <type>drop_list</type>
+          <defname>drop_list</defname>
+        </param>
+        <param>
+          <type>embed_drop</type>
+          <defname>embed_drop</defname>
+          <defval>True</defval>
+        </param>
+        <param>
+          <type>fake_super_root</type>
+          <defname>fake_super_root</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>return a networkx Digraph (DAG)
+fake_super_root:    whether to create a fake super root node in the DAG
+            If set to True, it enables edge zero-based
+            scheduling agorithms to make more aggressive merging
+
+tw - task weight
+dw - data weight / volume
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-translator/dlg/dropmake/scheduler.py" line="1168" column="1" bodyfile="daliuge-translator/dlg/dropmake/scheduler.py" bodystart="1168" bodyend="1229"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1dropmake_1_1scheduler_1_1DAGUtil_1a5b22252508014954d0b067751fe33a0d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.dropmake.scheduler.DAGUtil.metis_part</definition>
+        <argsstring>(G, num_partitions)</argsstring>
+        <name>metis_part</name>
+        <param>
+          <type>G</type>
+          <defname>G</defname>
+        </param>
+        <param>
+          <type>num_partitions</type>
+          <defname>num_partitions</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Use metis binary executable (instead of library)
+This is used only for testing when libmetis halts unexpectedly
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-translator/dlg/dropmake/scheduler.py" line="1231" column="1" bodyfile="daliuge-translator/dlg/dropmake/scheduler.py" bodystart="1231" bodyend="1261"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Helper functions dealing with DAG
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1868">
+        <label>dlg.dropmake.scheduler.DAGUtil</label>
+        <link refid="classdlg_1_1dropmake_1_1scheduler_1_1DAGUtil"/>
+        <childnode refid="1869" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1869">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1870">
+        <label>dlg.dropmake.scheduler.DAGUtil</label>
+        <link refid="classdlg_1_1dropmake_1_1scheduler_1_1DAGUtil"/>
+        <childnode refid="1871" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1871">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="daliuge-translator/dlg/dropmake/scheduler.py" line="980" column="1" bodyfile="daliuge-translator/dlg/dropmake/scheduler.py" bodystart="980" bodyend="1262"/>
+    <listofallmembers>
+      <member refid="classdlg_1_1dropmake_1_1scheduler_1_1DAGUtil_1aed02c158e25f7680a452dd4a16e1089a" prot="public" virt="non-virtual"><scope>dlg::dropmake::scheduler::DAGUtil</scope><name>build_dag_from_drops</name></member>
+      <member refid="classdlg_1_1dropmake_1_1scheduler_1_1DAGUtil_1a184f2a84c3550ae3936dde1cf319efd0" prot="public" virt="non-virtual"><scope>dlg::dropmake::scheduler::DAGUtil</scope><name>ganttchart_matrix</name></member>
+      <member refid="classdlg_1_1dropmake_1_1scheduler_1_1DAGUtil_1a79139d44ff592cec8d70243062a16bff" prot="public" virt="non-virtual"><scope>dlg::dropmake::scheduler::DAGUtil</scope><name>get_longest_path</name></member>
+      <member refid="classdlg_1_1dropmake_1_1scheduler_1_1DAGUtil_1a285da11c8d81a513be3cf98c6d7da9eb" prot="public" virt="non-virtual"><scope>dlg::dropmake::scheduler::DAGUtil</scope><name>get_max_antichains</name></member>
+      <member refid="classdlg_1_1dropmake_1_1scheduler_1_1DAGUtil_1a57dd1ef21256a014316e3eaf2d1c5099" prot="public" virt="non-virtual"><scope>dlg::dropmake::scheduler::DAGUtil</scope><name>get_max_dop</name></member>
+      <member refid="classdlg_1_1dropmake_1_1scheduler_1_1DAGUtil_1ae8607514227a608968f3af16de05d38a" prot="public" virt="non-virtual"><scope>dlg::dropmake::scheduler::DAGUtil</scope><name>get_max_width</name></member>
+      <member refid="classdlg_1_1dropmake_1_1scheduler_1_1DAGUtil_1a02cdca73a190aa6b8c6c94cd107d9207" prot="public" virt="non-virtual"><scope>dlg::dropmake::scheduler::DAGUtil</scope><name>import_metis</name></member>
+      <member refid="classdlg_1_1dropmake_1_1scheduler_1_1DAGUtil_1a13fac882d087dff56064af30edbb8213" prot="public" virt="non-virtual"><scope>dlg::dropmake::scheduler::DAGUtil</scope><name>label_schedule</name></member>
+      <member refid="classdlg_1_1dropmake_1_1scheduler_1_1DAGUtil_1a5b22252508014954d0b067751fe33a0d" prot="public" virt="non-virtual"><scope>dlg::dropmake::scheduler::DAGUtil</scope><name>metis_part</name></member>
+      <member refid="classdlg_1_1dropmake_1_1scheduler_1_1DAGUtil_1a6d4b99f2acdcbd7bc7f0d51256b4148c" prot="public" virt="non-virtual"><scope>dlg::dropmake::scheduler::DAGUtil</scope><name>prune_antichains</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

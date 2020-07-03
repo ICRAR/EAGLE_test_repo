@@ -1,0 +1,362 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacedlg_1_1graph__loader" kind="namespace" language="Python">
+    <compoundname>dlg::graph_loader</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="graph__loader_8py_1aba9f3e8752ccd633cfa7aa35efcb8ac4" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary dlg::graph_loader.STORAGE_TYPES</definition>
+        <argsstring></argsstring>
+        <name>STORAGE_TYPES</name>
+        <initializer>= {
+    &apos;memory&apos;: InMemoryDROP,
+    &apos;file&apos;  : FileDROP,
+    &apos;ngas&apos;  : NgasDROP,
+    &apos;null&apos;  : NullDROP,
+    &apos;json&apos;  : JsonDROP,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/graph_loader.py" line="41" column="1" bodyfile="daliuge-runtime/dlg/graph_loader.py" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="graph__loader_8py_1af8e453de9472b3175ddc866bae9c1163" prot="private" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary dlg::graph_loader.__TOMANY</definition>
+        <argsstring></argsstring>
+        <name>__TOMANY</name>
+        <initializer>= {
+    DROPLinkType.CONSUMER:           &apos;consumers&apos;,
+    DROPLinkType.STREAMING_CONSUMER: &apos;streamingConsumers&apos;,
+    DROPLinkType.INPUT:              &apos;inputs&apos;,
+    DROPLinkType.STREAMING_INPUT:    &apos;streamingInputs&apos;,
+    DROPLinkType.OUTPUT:             &apos;outputs&apos;,
+    DROPLinkType.CHILD:              &apos;children&apos;,
+    DROPLinkType.PRODUCER:           &apos;producers&apos;,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/graph_loader.py" line="57" column="1" bodyfile="daliuge-runtime/dlg/graph_loader.py" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="graph__loader_8py_1ab4d6bfee897d7877adf707fa92977032" prot="private" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary dlg::graph_loader.__TOONE</definition>
+        <argsstring></argsstring>
+        <name>__TOONE</name>
+        <initializer>= {
+    DROPLinkType.PARENT: &apos;parent&apos;
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/graph_loader.py" line="68" column="1" bodyfile="daliuge-runtime/dlg/graph_loader.py" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="graph__loader_8py_1a1fdf25717f1c89d8d4dc91c917c60624" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dlg::graph_loader.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <initializer>= logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/graph_loader.py" line="76" column="1" bodyfile="daliuge-runtime/dlg/graph_loader.py" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="graph__loader_8py_1aa1d2bae29b70c75bc4b7d46e395067ae" prot="private" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary dlg::graph_loader.__CREATION_FUNCTIONS</definition>
+        <argsstring></argsstring>
+        <name>__CREATION_FUNCTIONS</name>
+        <initializer>= {
+    &apos;plain&apos;: _createPlain,
+    &apos;container&apos;: _createContainer,
+    &apos;app&apos;: _createApp,
+    &apos;socket&apos;: _createSocket
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/graph_loader.py" line="343" column="1" bodyfile="daliuge-runtime/dlg/graph_loader.py" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="graph__loader_8py_1a5ca7e1864fe7a67723e1d24fd8185ba6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.graph_loader.addLink</definition>
+        <argsstring>(linkType, lhDropSpec, rhOID, force=False)</argsstring>
+        <name>addLink</name>
+        <param>
+          <type>linkType</type>
+          <defname>linkType</defname>
+        </param>
+        <param>
+          <type>lhDropSpec</type>
+          <defname>lhDropSpec</defname>
+        </param>
+        <param>
+          <type>rhOID</type>
+          <defname>rhOID</defname>
+        </param>
+        <param>
+          <type>force</type>
+          <defname>force</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Adds a link from `lhDropSpec` to point to `rhOID`. The link type (e.g., a
+consumer) is signaled by `linkType`.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/graph_loader.py" line="78" column="1" bodyfile="daliuge-runtime/dlg/graph_loader.py" bodystart="78" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="graph__loader_8py_1ae74f4998896b884aa0393dcc06e15785" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.graph_loader.removeUnmetRelationships</definition>
+        <argsstring>(dropSpecList)</argsstring>
+        <name>removeUnmetRelationships</name>
+        <param>
+          <type>dropSpecList</type>
+          <defname>dropSpecList</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/graph_loader.py" line="110" column="1" bodyfile="daliuge-runtime/dlg/graph_loader.py" bodystart="110" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="graph__loader_8py_1a577bd553c147049a6580ba24a3158854" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.graph_loader.check_dropspec</definition>
+        <argsstring>(n, dropSpec)</argsstring>
+        <name>check_dropspec</name>
+        <param>
+          <type>n</type>
+          <defname>n</defname>
+        </param>
+        <param>
+          <type>dropSpec</type>
+          <defname>dropSpec</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/graph_loader.py" line="162" column="1" bodyfile="daliuge-runtime/dlg/graph_loader.py" bodystart="162" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="graph__loader_8py_1a2e63e644ec8c24b78e2117390fa5bb6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.graph_loader.loadDropSpecs</definition>
+        <argsstring>(dropSpecList)</argsstring>
+        <name>loadDropSpecs</name>
+        <param>
+          <type>dropSpecList</type>
+          <defname>dropSpecList</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Loads the DROP definitions from `dropSpectList`, checks that
+the DROPs are correctly specified, and return a dictionary containing
+all DROP specifications (i.e., a dictionary of dictionaries) keyed on
+the OID of each DROP. Unlike `readObjectGraph` and `readObjectGraphS`,
+this method doesn&apos;t actually create the DROPs themselves.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/graph_loader.py" line="168" column="1" bodyfile="daliuge-runtime/dlg/graph_loader.py" bodystart="168" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="graph__loader_8py_1a1a332f97117d120e4a515f393fe23d8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.graph_loader.createGraphFromDropSpecList</definition>
+        <argsstring>(dropSpecList, session=None)</argsstring>
+        <name>createGraphFromDropSpecList</name>
+        <param>
+          <type>dropSpecList</type>
+          <defname>dropSpecList</defname>
+        </param>
+        <param>
+          <type>session</type>
+          <defname>session</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/graph_loader.py" line="210" column="1" bodyfile="daliuge-runtime/dlg/graph_loader.py" bodystart="210" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="graph__loader_8py_1a1af9ee4ff783cd7f856c656f41cc5628" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.graph_loader._createPlain</definition>
+        <argsstring>(dropSpec, dryRun=False, session=None)</argsstring>
+        <name>_createPlain</name>
+        <param>
+          <type>dropSpec</type>
+          <defname>dropSpec</defname>
+        </param>
+        <param>
+          <type>dryRun</type>
+          <defname>dryRun</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>session</type>
+          <defname>session</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/graph_loader.py" line="265" column="1" bodyfile="daliuge-runtime/dlg/graph_loader.py" bodystart="265" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="graph__loader_8py_1aa4f078c449729b5a73e82c677e7f119a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.graph_loader._createContainer</definition>
+        <argsstring>(dropSpec, dryRun=False, session=None)</argsstring>
+        <name>_createContainer</name>
+        <param>
+          <type>dropSpec</type>
+          <defname>dropSpec</defname>
+        </param>
+        <param>
+          <type>dryRun</type>
+          <defname>dryRun</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>session</type>
+          <defname>session</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/graph_loader.py" line="275" column="1" bodyfile="daliuge-runtime/dlg/graph_loader.py" bodystart="275" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="graph__loader_8py_1af39236fd1aede898f2995237b805f949" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.graph_loader._createSocket</definition>
+        <argsstring>(dropSpec, dryRun=False, session=None)</argsstring>
+        <name>_createSocket</name>
+        <param>
+          <type>dropSpec</type>
+          <defname>dropSpec</defname>
+        </param>
+        <param>
+          <type>dryRun</type>
+          <defname>dryRun</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>session</type>
+          <defname>session</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/graph_loader.py" line="298" column="1" bodyfile="daliuge-runtime/dlg/graph_loader.py" bodystart="298" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="graph__loader_8py_1a5ed6e31b213ce206ec3865e3b788fd47" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.graph_loader._createApp</definition>
+        <argsstring>(dropSpec, dryRun=False, session=None)</argsstring>
+        <name>_createApp</name>
+        <param>
+          <type>dropSpec</type>
+          <defname>dropSpec</defname>
+        </param>
+        <param>
+          <type>dryRun</type>
+          <defname>dryRun</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>session</type>
+          <defname>session</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/graph_loader.py" line="306" column="1" bodyfile="daliuge-runtime/dlg/graph_loader.py" bodystart="306" bodyend="327"/>
+      </memberdef>
+      <memberdef kind="function" id="graph__loader_8py_1a60643280bbe5bca6cc66fe747e8b2d20" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.graph_loader._getIds</definition>
+        <argsstring>(dropSpec)</argsstring>
+        <name>_getIds</name>
+        <param>
+          <type>dropSpec</type>
+          <defname>dropSpec</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/graph_loader.py" line="328" column="1" bodyfile="daliuge-runtime/dlg/graph_loader.py" bodystart="328" bodyend="335"/>
+      </memberdef>
+      <memberdef kind="function" id="graph__loader_8py_1a7bf1f5781be4bf1e036d45152ba70bf8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.graph_loader._getKwargs</definition>
+        <argsstring>(dropSpec)</argsstring>
+        <name>_getKwargs</name>
+        <param>
+          <type>dropSpec</type>
+          <defname>dropSpec</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/graph_loader.py" line="336" column="1" bodyfile="daliuge-runtime/dlg/graph_loader.py" bodystart="336" bodyend="342"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="daliuge-runtime/dlg/graph_loader.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

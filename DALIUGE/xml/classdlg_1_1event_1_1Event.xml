@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classdlg_1_1event_1_1Event" kind="class" language="Python" prot="public">
+    <compoundname>dlg::event::Event</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdlg_1_1event_1_1Event_1a05807a3b4a12c6ead4c9447d6af84628" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.event.Event::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/event.py" line="40" column="1" bodyfile="daliuge-runtime/dlg/event.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdlg_1_1event_1_1Event_1a9dc71eed87364891c8dd7dc302479d9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.event.Event.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/event.py" line="39" column="1" bodyfile="daliuge-runtime/dlg/event.py" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1event_1_1Event_1a532f07a82b676adc3e92c62c455a2f3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.event.Event.__repr__</definition>
+        <argsstring>(self, args, kwargs)</argsstring>
+        <name>__repr__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/event.py" line="42" column="1" bodyfile="daliuge-runtime/dlg/event.py" bodystart="42" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>An event sent through the DALiuGE framework.
+
+Events have at least a field describing the type of event they are (instead
+of having subclasses of the `Event` class), and therefore this class makes
+sure that at least that field exists. Any other piece of information can be
+attached to individual instances of this class, depending on the event type.
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="2123">
+        <label>object</label>
+      </node>
+      <node id="2122">
+        <label>dlg.event.Event</label>
+        <link refid="classdlg_1_1event_1_1Event"/>
+        <childnode refid="2123" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2125">
+        <label>object</label>
+      </node>
+      <node id="2124">
+        <label>dlg.event.Event</label>
+        <link refid="classdlg_1_1event_1_1Event"/>
+        <childnode refid="2125" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="daliuge-runtime/dlg/event.py" line="29" column="1" bodyfile="daliuge-runtime/dlg/event.py" bodystart="29" bodyend="45"/>
+    <listofallmembers>
+      <member refid="classdlg_1_1event_1_1Event_1a9dc71eed87364891c8dd7dc302479d9c" prot="public" virt="non-virtual"><scope>dlg::event::Event</scope><name>__init__</name></member>
+      <member refid="classdlg_1_1event_1_1Event_1a532f07a82b676adc3e92c62c455a2f3f" prot="public" virt="non-virtual"><scope>dlg::event::Event</scope><name>__repr__</name></member>
+      <member refid="classdlg_1_1event_1_1Event_1a05807a3b4a12c6ead4c9447d6af84628" prot="public" virt="non-virtual"><scope>dlg::event::Event</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

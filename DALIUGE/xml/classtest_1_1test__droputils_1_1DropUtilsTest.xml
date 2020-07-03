@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtest_1_1test__droputils_1_1DropUtilsTest" kind="class" language="Python" prot="public">
+    <compoundname>test::test_droputils::DropUtilsTest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TestCase</basecompoundref>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtest_1_1test__droputils_1_1DropUtilsTest_1ac45210521a1094d91e92c3d61122ab86" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def test.test_droputils.DropUtilsTest._createGraph</definition>
+        <argsstring>(self)</argsstring>
+        <name>_createGraph</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Creates the following graph of DROPs:
+
+A |--&gt; B ----&gt; D --&gt; G --&gt; I --|
+  |--&gt; C -|--&gt; E --------------|-&gt; H --&gt; J
+  |--&gt; F
+
+B, C, G and H are AppDOs. The names have been given in breadth-first
+order (although H has a dependency on I)
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/test/test_droputils.py" line="40" column="1" bodyfile="daliuge-runtime/test/test_droputils.py" bodystart="40" bodyend="74"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtest_1_1test__droputils_1_1DropUtilsTest_1a7e17eb88366c647eda12aaeb5f867621" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def test.test_droputils.DropUtilsTest.testDownstreamObjects</definition>
+        <argsstring>(self)</argsstring>
+        <name>testDownstreamObjects</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/test/test_droputils.py" line="75" column="1" bodyfile="daliuge-runtime/test/test_droputils.py" bodystart="75" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1test__droputils_1_1DropUtilsTest_1aebd1fa39cf1af1e7e06ba8ff9f75c79f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def test.test_droputils.DropUtilsTest.testUpstreamObjects</definition>
+        <argsstring>(self)</argsstring>
+        <name>testUpstreamObjects</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/test/test_droputils.py" line="88" column="1" bodyfile="daliuge-runtime/test/test_droputils.py" bodystart="88" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1test__droputils_1_1DropUtilsTest_1ad0fa1f641edf2eb6a1c47f5468a8286f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def test.test_droputils.DropUtilsTest.assertDownstream</definition>
+        <argsstring>(self, node, downstreamNodes)</argsstring>
+        <name>assertDownstream</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>node</type>
+          <defname>node</defname>
+        </param>
+        <param>
+          <type>downstreamNodes</type>
+          <defname>downstreamNodes</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/test/test_droputils.py" line="101" column="1" bodyfile="daliuge-runtime/test/test_droputils.py" bodystart="101" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1test__droputils_1_1DropUtilsTest_1aeaab10176b64d60f19f5749cc6dbd3a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def test.test_droputils.DropUtilsTest.assertUpstream</definition>
+        <argsstring>(self, node, upstreamNodes)</argsstring>
+        <name>assertUpstream</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>node</type>
+          <defname>node</defname>
+        </param>
+        <param>
+          <type>upstreamNodes</type>
+          <defname>upstreamNodes</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/test/test_droputils.py" line="111" column="1" bodyfile="daliuge-runtime/test/test_droputils.py" bodystart="111" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1test__droputils_1_1DropUtilsTest_1aeb77e7a8fea9ed95ca65aa15617bfb06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def test.test_droputils.DropUtilsTest.testDepthFirstSearch</definition>
+        <argsstring>(self)</argsstring>
+        <name>testDepthFirstSearch</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Checks that our DFS method is correct
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/test/test_droputils.py" line="121" column="1" bodyfile="daliuge-runtime/test/test_droputils.py" bodystart="121" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1test__droputils_1_1DropUtilsTest_1af96b36bf68a92501d104192a190d2b5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def test.test_droputils.DropUtilsTest.testBreadthFirstSearch</definition>
+        <argsstring>(self)</argsstring>
+        <name>testBreadthFirstSearch</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Checks that our BFS method is correct
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/test/test_droputils.py" line="129" column="1" bodyfile="daliuge-runtime/test/test_droputils.py" bodystart="129" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1test__droputils_1_1DropUtilsTest_1a469b3db564de5a56d1dd2bd21c095c4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def test.test_droputils.DropUtilsTest.testGetEndNodes</definition>
+        <argsstring>(self)</argsstring>
+        <name>testGetEndNodes</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Checks that the getLeafNodes works correctly
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/test/test_droputils.py" line="137" column="1" bodyfile="daliuge-runtime/test/test_droputils.py" bodystart="137" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1test__droputils_1_1DropUtilsTest_1a371754dbe9c17b24dc7dcd9bca8e89ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def test.test_droputils.DropUtilsTest.test_DROPFile</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_DROPFile</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>This test exercises the DROPFile mechanism to read the data represented by
+a given DROP. The DROPFile class will decide whether the data should be read
+directly or through the DROP
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/test/test_droputils.py" line="145" column="1" bodyfile="daliuge-runtime/test/test_droputils.py" bodystart="145" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1test__droputils_1_1DropUtilsTest_1a0f732b036d7f31fa7f9cd8a7b9de040a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def test.test_droputils.DropUtilsTest.test_BFSWithFiltering</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_BFSWithFiltering</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Checks that the BFS works if the given function does filtering on the
+downstream DROPs.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/test/test_droputils.py" line="159" column="1" bodyfile="daliuge-runtime/test/test_droputils.py" bodystart="159" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classtest_1_1test__droputils_1_1DropUtilsTest_1ab36ea2fbe2c26a6bf7844dec0ed7985c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def test.test_droputils.DropUtilsTest.test_get_roots</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_get_roots</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Check that the get_roots method from the droputils module works as intended
+</verbatim><verbatim>A --&gt; B
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/test/test_droputils.py" line="174" column="1" bodyfile="daliuge-runtime/test/test_droputils.py" bodystart="174" bodyend="217"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2052">
+        <label>test.test_droputils.DropUtilsTest</label>
+        <link refid="classtest_1_1test__droputils_1_1DropUtilsTest"/>
+        <childnode refid="2053" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2053">
+        <label>TestCase</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2054">
+        <label>test.test_droputils.DropUtilsTest</label>
+        <link refid="classtest_1_1test__droputils_1_1DropUtilsTest"/>
+        <childnode refid="2055" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2055">
+        <label>TestCase</label>
+      </node>
+    </collaborationgraph>
+    <location file="daliuge-runtime/test/test_droputils.py" line="38" column="1" bodyfile="daliuge-runtime/test/test_droputils.py" bodystart="38" bodyend="217"/>
+    <listofallmembers>
+      <member refid="classtest_1_1test__droputils_1_1DropUtilsTest_1ac45210521a1094d91e92c3d61122ab86" prot="private" virt="non-virtual"><scope>test::test_droputils::DropUtilsTest</scope><name>_createGraph</name></member>
+      <member refid="classtest_1_1test__droputils_1_1DropUtilsTest_1ad0fa1f641edf2eb6a1c47f5468a8286f" prot="public" virt="non-virtual"><scope>test::test_droputils::DropUtilsTest</scope><name>assertDownstream</name></member>
+      <member refid="classtest_1_1test__droputils_1_1DropUtilsTest_1aeaab10176b64d60f19f5749cc6dbd3a9" prot="public" virt="non-virtual"><scope>test::test_droputils::DropUtilsTest</scope><name>assertUpstream</name></member>
+      <member refid="classtest_1_1test__droputils_1_1DropUtilsTest_1a0f732b036d7f31fa7f9cd8a7b9de040a" prot="public" virt="non-virtual"><scope>test::test_droputils::DropUtilsTest</scope><name>test_BFSWithFiltering</name></member>
+      <member refid="classtest_1_1test__droputils_1_1DropUtilsTest_1a371754dbe9c17b24dc7dcd9bca8e89ca" prot="public" virt="non-virtual"><scope>test::test_droputils::DropUtilsTest</scope><name>test_DROPFile</name></member>
+      <member refid="classtest_1_1test__droputils_1_1DropUtilsTest_1ab36ea2fbe2c26a6bf7844dec0ed7985c" prot="public" virt="non-virtual"><scope>test::test_droputils::DropUtilsTest</scope><name>test_get_roots</name></member>
+      <member refid="classtest_1_1test__droputils_1_1DropUtilsTest_1af96b36bf68a92501d104192a190d2b5e" prot="public" virt="non-virtual"><scope>test::test_droputils::DropUtilsTest</scope><name>testBreadthFirstSearch</name></member>
+      <member refid="classtest_1_1test__droputils_1_1DropUtilsTest_1aeb77e7a8fea9ed95ca65aa15617bfb06" prot="public" virt="non-virtual"><scope>test::test_droputils::DropUtilsTest</scope><name>testDepthFirstSearch</name></member>
+      <member refid="classtest_1_1test__droputils_1_1DropUtilsTest_1a7e17eb88366c647eda12aaeb5f867621" prot="public" virt="non-virtual"><scope>test::test_droputils::DropUtilsTest</scope><name>testDownstreamObjects</name></member>
+      <member refid="classtest_1_1test__droputils_1_1DropUtilsTest_1a469b3db564de5a56d1dd2bd21c095c4c" prot="public" virt="non-virtual"><scope>test::test_droputils::DropUtilsTest</scope><name>testGetEndNodes</name></member>
+      <member refid="classtest_1_1test__droputils_1_1DropUtilsTest_1aebd1fa39cf1af1e7e06ba8ff9f75c79f" prot="public" virt="non-virtual"><scope>test::test_droputils::DropUtilsTest</scope><name>testUpstreamObjects</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

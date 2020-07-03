@@ -1,0 +1,542 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacedlg_1_1deploy_1_1pawsey_1_1start__dfms__cluster" kind="namespace" language="Python">
+    <compoundname>dlg::deploy::pawsey::start_dfms_cluster</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="start__dfms__cluster_8py_1add05bbffbe914caa3138cb1ca635688b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dlg::deploy::pawsey::start_dfms_cluster.DIM_WAIT_TIME</definition>
+        <argsstring></argsstring>
+        <name>DIM_WAIT_TIME</name>
+        <initializer>= 60</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" line="55" column="1" bodyfile="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="start__dfms__cluster_8py_1abdbc5339f653871dbaa30c04efc37dc1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dlg::deploy::pawsey::start_dfms_cluster.MM_WAIT_TIME</definition>
+        <argsstring></argsstring>
+        <name>MM_WAIT_TIME</name>
+        <initializer>= DIM_WAIT_TIME</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" line="56" column="1" bodyfile="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="start__dfms__cluster_8py_1ad5267b08981da38b6142917b75124182" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dlg::deploy::pawsey::start_dfms_cluster.GRAPH_SUBMIT_WAIT_TIME</definition>
+        <argsstring></argsstring>
+        <name>GRAPH_SUBMIT_WAIT_TIME</name>
+        <initializer>= 10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" line="57" column="1" bodyfile="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="start__dfms__cluster_8py_1a506be5161d76536c9b9609329d34add1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dlg::deploy::pawsey::start_dfms_cluster.GRAPH_MONITOR_INTERVAL</definition>
+        <argsstring></argsstring>
+        <name>GRAPH_MONITOR_INTERVAL</name>
+        <initializer>= 5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" line="58" column="1" bodyfile="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="start__dfms__cluster_8py_1a6a364ad863fdd58ee10bf9fe2c59db0d" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string dlg::deploy::pawsey::start_dfms_cluster.VERBOSITY</definition>
+        <argsstring></argsstring>
+        <name>VERBOSITY</name>
+        <initializer>= &apos;5&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" line="59" column="1" bodyfile="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="start__dfms__cluster_8py_1a187342e5a334b3cb567f83b320165982" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dlg::deploy::pawsey::start_dfms_cluster.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <initializer>= logging.getLogger(&apos;deploy.pawsey.cluster&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" line="60" column="1" bodyfile="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="start__dfms__cluster_8py_1a06529b6e1456a4001149dec4e10474df" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple dlg::deploy::pawsey::start_dfms_cluster.apps</definition>
+        <argsstring></argsstring>
+        <name>apps</name>
+        <initializer>= (
+    None,
+    &quot;test.graphsRepository.SleepApp&quot;,
+    &quot;test.graphsRepository.SleepAndCopyApp&quot;,
+)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" line="61" column="1" bodyfile="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="start__dfms__cluster_8py_1a573d83aa20110e1e6a2b6a2513b55255" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.deploy.pawsey.start_dfms_cluster.check_host</definition>
+        <argsstring>(host, port, timeout=5, check_with_session=False)</argsstring>
+        <name>check_host</name>
+        <param>
+          <type>host</type>
+          <defname>host</defname>
+        </param>
+        <param>
+          <type>port</type>
+          <defname>port</defname>
+        </param>
+        <param>
+          <type>timeout</type>
+          <defname>timeout</defname>
+          <defval>5</defval>
+        </param>
+        <param>
+          <type>check_with_session</type>
+          <defname>check_with_session</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Checks if a given host/port is up and running (i.e., it is open).
+If ``check_with_session`` is ``True`` then it is assumed that the
+host/port combination corresponds to a Node Manager and the check is
+performed by attempting to create and delete a session.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" line="67" column="1" bodyfile="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" bodystart="67" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="start__dfms__cluster_8py_1adf3f857f1a2fc577887eafe3b1bf9387" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.deploy.pawsey.start_dfms_cluster.check_hosts</definition>
+        <argsstring>(ips, port, timeout=None, check_with_session=False, retry=1)</argsstring>
+        <name>check_hosts</name>
+        <param>
+          <type>ips</type>
+          <defname>ips</defname>
+        </param>
+        <param>
+          <type>port</type>
+          <defname>port</defname>
+        </param>
+        <param>
+          <type>timeout</type>
+          <defname>timeout</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>check_with_session</type>
+          <defname>check_with_session</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>retry</type>
+          <defname>retry</defname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Check that the given list of IPs are all up in the given port within the
+given timeout, and returns the list of IPs that were found to be up.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" line="86" column="1" bodyfile="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" bodystart="86" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="start__dfms__cluster_8py_1a16ebc16e7880c0aadfec3958f3322dc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.deploy.pawsey.start_dfms_cluster.get_ip_via_ifconfig</definition>
+        <argsstring>(iface_index)</argsstring>
+        <name>get_ip_via_ifconfig</name>
+        <param>
+          <type>iface_index</type>
+          <defname>iface_index</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" line="110" column="1" bodyfile="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" bodystart="110" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="start__dfms__cluster_8py_1a02e4c3c1f467c3878cb697a0606ca081" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.deploy.pawsey.start_dfms_cluster.get_ip_via_netifaces</definition>
+        <argsstring>(iface_index)</argsstring>
+        <name>get_ip_via_netifaces</name>
+        <param>
+          <type>iface_index</type>
+          <defname>iface_index</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" line="120" column="1" bodyfile="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" bodystart="120" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="start__dfms__cluster_8py_1a06e92d557694242e3f08fc6d44f0a73c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.deploy.pawsey.start_dfms_cluster.start_node_mgr</definition>
+        <argsstring>(log_dir, my_ip, logv=1, max_threads=0, host=None, event_listeners=&apos;&apos;)</argsstring>
+        <name>start_node_mgr</name>
+        <param>
+          <type>log_dir</type>
+          <defname>log_dir</defname>
+        </param>
+        <param>
+          <type>my_ip</type>
+          <defname>my_ip</defname>
+        </param>
+        <param>
+          <type>logv</type>
+          <defname>logv</defname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>max_threads</type>
+          <defname>max_threads</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>host</type>
+          <defname>host</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>event_listeners</type>
+          <defname>event_listeners</defname>
+          <defval>&apos;&apos;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Start node manager
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" line="123" column="1" bodyfile="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" bodystart="123" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="start__dfms__cluster_8py_1ae156c95fc0812dc446c0ab556b69af35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.deploy.pawsey.start_dfms_cluster.start_dim</definition>
+        <argsstring>(node_list, log_dir, origin_ip, logv=1)</argsstring>
+        <name>start_dim</name>
+        <param>
+          <type>node_list</type>
+          <defname>node_list</defname>
+        </param>
+        <param>
+          <type>log_dir</type>
+          <defname>log_dir</defname>
+        </param>
+        <param>
+          <type>origin_ip</type>
+          <defname>origin_ip</defname>
+        </param>
+        <param>
+          <type>logv</type>
+          <defname>logv</defname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Start data island manager
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" line="135" column="1" bodyfile="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" bodystart="135" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="start__dfms__cluster_8py_1a1f9e2bf79b89dff3c537ffeb10a3a17b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.deploy.pawsey.start_dfms_cluster.start_mm</definition>
+        <argsstring>(node_list, log_dir, logv=1)</argsstring>
+        <name>start_mm</name>
+        <param>
+          <type>node_list</type>
+          <defname>node_list</defname>
+        </param>
+        <param>
+          <type>log_dir</type>
+          <defname>log_dir</defname>
+        </param>
+        <param>
+          <type>logv</type>
+          <defname>logv</defname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Start master manager
+
+node_list:  a list of node address that host DIMs
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" line="147" column="1" bodyfile="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" bodystart="147" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="start__dfms__cluster_8py_1a646aba8c65a8b46d5840891357f3f78d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.deploy.pawsey.start_dfms_cluster._stop</definition>
+        <argsstring>(endpoints)</argsstring>
+        <name>_stop</name>
+        <param>
+          <type>endpoints</type>
+          <defname>endpoints</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" line="160" column="1" bodyfile="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" bodystart="160" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="start__dfms__cluster_8py_1a0464a65e263f8528badfd0c98ab89c6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.deploy.pawsey.start_dfms_cluster.stop_nms</definition>
+        <argsstring>(ips)</argsstring>
+        <name>stop_nms</name>
+        <param>
+          <type>ips</type>
+          <defname>ips</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" line="168" column="1" bodyfile="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" bodystart="168" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="start__dfms__cluster_8py_1aabbf01460506a3912bc6bce636c9b7be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.deploy.pawsey.start_dfms_cluster.stop_dims</definition>
+        <argsstring>(ips)</argsstring>
+        <name>stop_dims</name>
+        <param>
+          <type>ips</type>
+          <defname>ips</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" line="171" column="1" bodyfile="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" bodystart="171" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="start__dfms__cluster_8py_1a8f26a409c0eccdcd34cb690d9bc47cb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.deploy.pawsey.start_dfms_cluster.stop_mm</definition>
+        <argsstring>(ip)</argsstring>
+        <name>stop_mm</name>
+        <param>
+          <type>ip</type>
+          <defname>ip</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" line="174" column="1" bodyfile="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" bodystart="174" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="start__dfms__cluster_8py_1aafe5f1d4c1b04bcf1dbc2f08e8414f47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.deploy.pawsey.start_dfms_cluster.submit_and_monitor</definition>
+        <argsstring>(pg, opts, port)</argsstring>
+        <name>submit_and_monitor</name>
+        <param>
+          <type>pg</type>
+          <defname>pg</defname>
+        </param>
+        <param>
+          <type>opts</type>
+          <defname>opts</defname>
+        </param>
+        <param>
+          <type>port</type>
+          <defname>port</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" line="177" column="1" bodyfile="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" bodystart="177" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="start__dfms__cluster_8py_1aceffc80af0e89e538f16bec5faf84b2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.deploy.pawsey.start_dfms_cluster.start_proxy</definition>
+        <argsstring>(dlg_host, dlg_port, monitor_host, monitor_port)</argsstring>
+        <name>start_proxy</name>
+        <param>
+          <type>dlg_host</type>
+          <defname>dlg_host</defname>
+        </param>
+        <param>
+          <type>dlg_port</type>
+          <defname>dlg_port</defname>
+        </param>
+        <param>
+          <type>monitor_host</type>
+          <defname>monitor_host</defname>
+        </param>
+        <param>
+          <type>monitor_port</type>
+          <defname>monitor_port</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Start the DALiuGE proxy server
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" line="195" column="1" bodyfile="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" bodystart="195" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="start__dfms__cluster_8py_1adc88ed9b9b9c9607e332431dfd853201" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.deploy.pawsey.start_dfms_cluster.modify_pg</definition>
+        <argsstring>(pgt, modifier)</argsstring>
+        <name>modify_pg</name>
+        <param>
+          <type>pgt</type>
+          <defname>pgt</defname>
+        </param>
+        <param>
+          <type>modifier</type>
+          <defname>modifier</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" line="210" column="1" bodyfile="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" bodystart="210" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="start__dfms__cluster_8py_1a8fc8c937a7570f1037e80fc2d192e784" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.deploy.pawsey.start_dfms_cluster.get_pg</definition>
+        <argsstring>(opts, nms, dims)</argsstring>
+        <name>get_pg</name>
+        <param>
+          <type>opts</type>
+          <defname>opts</defname>
+        </param>
+        <param>
+          <type>nms</type>
+          <defname>nms</defname>
+        </param>
+        <param>
+          <type>dims</type>
+          <defname>dims</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Gets the Physical Graph that is eventually submitted to the cluster, if any</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" line="217" column="1" bodyfile="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" bodystart="217" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="start__dfms__cluster_8py_1a36c93b2a267b7e46ba5a9618ea24dc9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.deploy.pawsey.start_dfms_cluster.get_ip</definition>
+        <argsstring>(opts)</argsstring>
+        <name>get_ip</name>
+        <param>
+          <type>opts</type>
+          <defname>opts</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" line="250" column="1" bodyfile="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" bodystart="250" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="start__dfms__cluster_8py_1aa3f5f2f49fb9f7906cbc52c02517bc8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.deploy.pawsey.start_dfms_cluster.get_remote</definition>
+        <argsstring>(opts)</argsstring>
+        <name>get_remote</name>
+        <param>
+          <type>opts</type>
+          <defname>opts</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" line="254" column="1" bodyfile="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" bodystart="254" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="start__dfms__cluster_8py_1a8393bbde373750c87aa8f25ba01f4c56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.deploy.pawsey.start_dfms_cluster.main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" line="265" column="1" bodyfile="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" bodystart="265" bodyend="439"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="daliuge-runtime/dlg/deploy/pawsey/start_dfms_cluster.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

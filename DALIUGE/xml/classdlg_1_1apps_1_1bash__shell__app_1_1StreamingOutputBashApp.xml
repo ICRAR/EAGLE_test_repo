@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classdlg_1_1apps_1_1bash__shell__app_1_1StreamingOutputBashApp" kind="class" language="Python" prot="public">
+    <compoundname>dlg::apps::bash_shell_app::StreamingOutputBashApp</compoundname>
+    <basecompoundref refid="classdlg_1_1apps_1_1bash__shell__app_1_1BashShellBase" prot="public" virt="non-virtual">dlg.apps.bash_shell_app.BashShellBase</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">BarrierAppDROP</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdlg_1_1apps_1_1bash__shell__app_1_1StreamingOutputBashApp_1aea98562063e7443b95cb739345d30cbe" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dlg.apps.bash_shell_app.StreamingOutputBashApp::compontent_meta</definition>
+        <argsstring></argsstring>
+        <name>compontent_meta</name>
+        <initializer>= dlg_component(&apos;<ref refid="classdlg_1_1apps_1_1bash__shell__app_1_1StreamingOutputBashApp" kindref="compound">StreamingOutputBashApp</ref>&apos;, &apos;Like <ref refid="classdlg_1_1apps_1_1bash__shell__app_1_1BashShellApp" kindref="compound">BashShellApp</ref>, but its stdout is a stream &apos;
+                                    &apos;of data that is fed into the next application.&apos;,
+                                    [dlg_batch_input(&apos;text/*&apos;, [])],
+                                    [dlg_batch_output(&apos;text/*&apos;, [])],
+                                    [dlg_streaming_input(&apos;text/*&apos;)])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/apps/bash_shell_app.py" line="304" column="1" bodyfile="daliuge-runtime/dlg/apps/bash_shell_app.py" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdlg_1_1apps_1_1bash__shell__app_1_1StreamingOutputBashApp_1a483933caf98aa8e8056067919e9b7850" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.apps.bash_shell_app.StreamingOutputBashApp.run</definition>
+        <argsstring>(self)</argsstring>
+        <name>run</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/apps/bash_shell_app.py" line="309" column="1" bodyfile="daliuge-runtime/dlg/apps/bash_shell_app.py" bodystart="309" bodyend="313"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Like BashShellApp, but its stdout is a stream of data that is fed into the
+next application.
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="2933">
+        <label>dlg.apps.bash_shell_app.StreamingOutputBashApp</label>
+        <link refid="classdlg_1_1apps_1_1bash__shell__app_1_1StreamingOutputBashApp"/>
+        <childnode refid="2934" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2936" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2934">
+        <label>dlg.apps.bash_shell_app.BashShellBase</label>
+        <link refid="classdlg_1_1apps_1_1bash__shell__app_1_1BashShellBase"/>
+        <childnode refid="2935" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2935">
+        <label>object</label>
+      </node>
+      <node id="2936">
+        <label>BarrierAppDROP</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2937">
+        <label>dlg.apps.bash_shell_app.StreamingOutputBashApp</label>
+        <link refid="classdlg_1_1apps_1_1bash__shell__app_1_1StreamingOutputBashApp"/>
+        <childnode refid="2938" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2940" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2938">
+        <label>dlg.apps.bash_shell_app.BashShellBase</label>
+        <link refid="classdlg_1_1apps_1_1bash__shell__app_1_1BashShellBase"/>
+        <childnode refid="2939" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2939">
+        <label>object</label>
+      </node>
+      <node id="2940">
+        <label>BarrierAppDROP</label>
+      </node>
+    </collaborationgraph>
+    <location file="daliuge-runtime/dlg/apps/bash_shell_app.py" line="299" column="1" bodyfile="daliuge-runtime/dlg/apps/bash_shell_app.py" bodystart="299" bodyend="314"/>
+    <listofallmembers>
+      <member refid="classdlg_1_1apps_1_1bash__shell__app_1_1BashShellBase_1a9d557859451bf779fc61b2c5c8529df3" prot="public" virt="non-virtual"><scope>dlg::apps::bash_shell_app::StreamingOutputBashApp</scope><name>cancel</name></member>
+      <member refid="classdlg_1_1apps_1_1bash__shell__app_1_1BashShellBase_1ab63891fc3aa6c03b321478b08989ba0a" prot="public" virt="non-virtual"><scope>dlg::apps::bash_shell_app::StreamingOutputBashApp</scope><name>command</name></member>
+      <member refid="classdlg_1_1apps_1_1bash__shell__app_1_1StreamingOutputBashApp_1aea98562063e7443b95cb739345d30cbe" prot="public" virt="non-virtual"><scope>dlg::apps::bash_shell_app::StreamingOutputBashApp</scope><name>compontent_meta</name></member>
+      <member refid="classdlg_1_1apps_1_1bash__shell__app_1_1BashShellBase_1a8c62669066762367db1958528e7ffef8" prot="public" virt="non-virtual"><scope>dlg::apps::bash_shell_app::StreamingOutputBashApp</scope><name>dataURL</name></member>
+      <member refid="classdlg_1_1apps_1_1bash__shell__app_1_1BashShellBase_1a51717006c00f0ab78985d63d0a594c00" prot="public" virt="non-virtual"><scope>dlg::apps::bash_shell_app::StreamingOutputBashApp</scope><name>initialize</name></member>
+      <member refid="classdlg_1_1apps_1_1bash__shell__app_1_1BashShellBase_1a2dbc7b102dfa6263023c664051aed055" prot="public" virt="non-virtual"><scope>dlg::apps::bash_shell_app::StreamingOutputBashApp</scope><name>proc</name></member>
+      <member refid="classdlg_1_1apps_1_1bash__shell__app_1_1StreamingOutputBashApp_1a483933caf98aa8e8056067919e9b7850" prot="public" virt="non-virtual"><scope>dlg::apps::bash_shell_app::StreamingOutputBashApp</scope><name>run</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

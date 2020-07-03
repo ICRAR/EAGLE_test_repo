@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacedlg_1_1ngaslite" kind="namespace" language="Python">
+    <compoundname>dlg::ngaslite</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="ngaslite_8py_1af276e69fb43e9c380bd97121df37890d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.ngaslite.retrieve</definition>
+        <argsstring>(host, fileId, port=7777, timeout=None)</argsstring>
+        <name>retrieve</name>
+        <param>
+          <type>host</type>
+          <defname>host</defname>
+        </param>
+        <param>
+          <type>fileId</type>
+          <defname>fileId</defname>
+        </param>
+        <param>
+          <type>port</type>
+          <defname>port</defname>
+          <defval>7777</defval>
+        </param>
+        <param>
+          <type>timeout</type>
+          <defname>timeout</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Retrieve the given fileId from the NGAS server located at `host`:`port`
+
+This method returns a file-like object that supports the `read` operation,
+and over which `close` must be invoked once no more data is read from it.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/ngaslite.py" line="34" column="1" bodyfile="daliuge-runtime/dlg/ngaslite.py" bodystart="34" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="ngaslite_8py_1adb88f3551a9f95d310f16c5585fdf70b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.ngaslite.beingArchive</definition>
+        <argsstring>(host, fileId, port=7777, timeout=0, length=-1)</argsstring>
+        <name>beingArchive</name>
+        <param>
+          <type>host</type>
+          <defname>host</defname>
+        </param>
+        <param>
+          <type>fileId</type>
+          <defname>fileId</defname>
+        </param>
+        <param>
+          <type>port</type>
+          <defname>port</defname>
+          <defval>7777</defval>
+        </param>
+        <param>
+          <type>timeout</type>
+          <defname>timeout</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>length</type>
+          <defname>length</defname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Opens a connecting to the NGAS server located at `host`:`port` and sends out
+the request for archiving the given `fileId`.
+
+This method returns the HTTP connection object, over which subsequential
+calls to `send` must be made with the chunks of data that need to be stored.
+Once all the data has been sent, the `finishArchive` method of this module
+should be invoked to check that all went well with the archiving.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/ngaslite.py" line="48" column="1" bodyfile="daliuge-runtime/dlg/ngaslite.py" bodystart="48" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="ngaslite_8py_1ad9ddc13cc7310071b9928be82cf9fb3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.ngaslite.finishArchive</definition>
+        <argsstring>(conn, fileId)</argsstring>
+        <name>finishArchive</name>
+        <param>
+          <type>conn</type>
+          <defname>conn</defname>
+        </param>
+        <param>
+          <type>fileId</type>
+          <defname>fileId</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Checks that an archiving started by `beginArchive` went on successfully.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/ngaslite.py" line="66" column="1" bodyfile="daliuge-runtime/dlg/ngaslite.py" bodystart="66" bodyend="72"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="daliuge-runtime/dlg/ngaslite.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

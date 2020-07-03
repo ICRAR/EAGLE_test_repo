@@ -1,0 +1,360 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1AbstractStore" kind="class" language="Python" prot="public">
+    <compoundname>dlg::lifecycle::hsm::store::AbstractStore</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+    <derivedcompoundref refid="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1DirectoryStore" prot="public" virt="non-virtual">dlg.lifecycle.hsm.store.DirectoryStore</derivedcompoundref>
+    <derivedcompoundref refid="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1FileSystemStore" prot="public" virt="non-virtual">dlg.lifecycle.hsm.store.FileSystemStore</derivedcompoundref>
+    <derivedcompoundref refid="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1MemoryStore" prot="public" virt="non-virtual">dlg.lifecycle.hsm.store.MemoryStore</derivedcompoundref>
+    <derivedcompoundref refid="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1NgasStore" prot="public" virt="non-virtual">dlg.lifecycle.hsm.store.NgasStore</derivedcompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1AbstractStore_1adcf7b4a5c1df838e3a1fe0ad72987b74" prot="private" static="yes" mutable="no">
+        <type></type>
+        <definition>dlg.lifecycle.hsm.store.AbstractStore::__metaclass__</definition>
+        <argsstring></argsstring>
+        <name>__metaclass__</name>
+        <initializer>= ABCMeta</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/lifecycle/hsm/store.py" line="47" column="1" bodyfile="daliuge-runtime/dlg/lifecycle/hsm/store.py" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1AbstractStore_1a24027ec83c857eb2a7f804f6edc7e473" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.lifecycle.hsm.store.AbstractStore::_totalSpace</definition>
+        <argsstring></argsstring>
+        <name>_totalSpace</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/lifecycle/hsm/store.py" line="66" column="1" bodyfile="daliuge-runtime/dlg/lifecycle/hsm/store.py" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1AbstractStore_1ac9dadef9a8e927919bcd27dd8539cdf9" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.lifecycle.hsm.store.AbstractStore::_availableSpace</definition>
+        <argsstring></argsstring>
+        <name>_availableSpace</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/lifecycle/hsm/store.py" line="69" column="1" bodyfile="daliuge-runtime/dlg/lifecycle/hsm/store.py" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1AbstractStore_1ad4ce158a22ffca0a6600e5868d459849" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.lifecycle.hsm.store.AbstractStore::_writingSpeed</definition>
+        <argsstring></argsstring>
+        <name>_writingSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/lifecycle/hsm/store.py" line="72" column="1" bodyfile="daliuge-runtime/dlg/lifecycle/hsm/store.py" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1AbstractStore_1a20d7821d3d67c2470d2d1188ee81b55d" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.lifecycle.hsm.store.AbstractStore::_readingSpeed</definition>
+        <argsstring></argsstring>
+        <name>_readingSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/lifecycle/hsm/store.py" line="75" column="1" bodyfile="daliuge-runtime/dlg/lifecycle/hsm/store.py" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1AbstractStore_1a645ba891c0abf6e601174a3ae0e743af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.lifecycle.hsm.store.AbstractStore.__init__</definition>
+        <argsstring>(self, args, kwargs)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/lifecycle/hsm/store.py" line="49" column="1" bodyfile="daliuge-runtime/dlg/lifecycle/hsm/store.py" bodystart="49" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1AbstractStore_1a7748bbc68504c3dddb86a2b14af705df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.lifecycle.hsm.store.AbstractStore.updateSpaces</definition>
+        <argsstring>(self)</argsstring>
+        <name>updateSpaces</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/lifecycle/hsm/store.py" line="56" column="1" bodyfile="daliuge-runtime/dlg/lifecycle/hsm/store.py" bodystart="56" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1AbstractStore_1a3ccef26d065101d208333b8e9d5e205d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.lifecycle.hsm.store.AbstractStore.getAvailableSpace</definition>
+        <argsstring>(self)</argsstring>
+        <name>getAvailableSpace</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/lifecycle/hsm/store.py" line="77" column="1" bodyfile="daliuge-runtime/dlg/lifecycle/hsm/store.py" bodystart="77" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1AbstractStore_1a66383da87d5adda9e9bffd905f42c6de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.lifecycle.hsm.store.AbstractStore.getTotalSpace</definition>
+        <argsstring>(self)</argsstring>
+        <name>getTotalSpace</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/lifecycle/hsm/store.py" line="80" column="1" bodyfile="daliuge-runtime/dlg/lifecycle/hsm/store.py" bodystart="80" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1AbstractStore_1a5df1933fccdbd7c2003e4aadba762446" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.lifecycle.hsm.store.AbstractStore.createDrop</definition>
+        <argsstring>(self, oid, uid, kwargs)</argsstring>
+        <name>createDrop</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>oid</type>
+          <defname>oid</defname>
+        </param>
+        <param>
+          <type>uid</type>
+          <defname>uid</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/lifecycle/hsm/store.py" line="84" column="1" bodyfile="daliuge-runtime/dlg/lifecycle/hsm/store.py" bodystart="84" bodyend="86"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1AbstractStore_1ab7a0356f4c056ad42f4635f5f6a69a9f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.lifecycle.hsm.store.AbstractStore._setTotalSpace</definition>
+        <argsstring>(self, totalSpace)</argsstring>
+        <name>_setTotalSpace</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>totalSpace</type>
+          <defname>totalSpace</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/lifecycle/hsm/store.py" line="65" column="1" bodyfile="daliuge-runtime/dlg/lifecycle/hsm/store.py" bodystart="65" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1AbstractStore_1af9a6201b1b274b3fbfaea17a9d1d0f12" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.lifecycle.hsm.store.AbstractStore._setAvailableSpace</definition>
+        <argsstring>(self, availableSpace)</argsstring>
+        <name>_setAvailableSpace</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>availableSpace</type>
+          <defname>availableSpace</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/lifecycle/hsm/store.py" line="68" column="1" bodyfile="daliuge-runtime/dlg/lifecycle/hsm/store.py" bodystart="68" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1AbstractStore_1a03270dfa678065c5b6888e5dfaf47c0a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.lifecycle.hsm.store.AbstractStore._setWritingSpeed</definition>
+        <argsstring>(self, writingSpeed)</argsstring>
+        <name>_setWritingSpeed</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>writingSpeed</type>
+          <defname>writingSpeed</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/lifecycle/hsm/store.py" line="71" column="1" bodyfile="daliuge-runtime/dlg/lifecycle/hsm/store.py" bodystart="71" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1AbstractStore_1af395b11e571bdac8e6dff79d6c90698f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.lifecycle.hsm.store.AbstractStore._setReadingSpeed</definition>
+        <argsstring>(self, readingSpeed)</argsstring>
+        <name>_setReadingSpeed</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>readingSpeed</type>
+          <defname>readingSpeed</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/lifecycle/hsm/store.py" line="74" column="1" bodyfile="daliuge-runtime/dlg/lifecycle/hsm/store.py" bodystart="74" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1AbstractStore_1a398b9cdd8463684351666a34c256ae69" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.lifecycle.hsm.store.AbstractStore._updateSpaces</definition>
+        <argsstring>(self)</argsstring>
+        <name>_updateSpaces</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/lifecycle/hsm/store.py" line="88" column="1" bodyfile="daliuge-runtime/dlg/lifecycle/hsm/store.py" bodystart="88" bodyend="90"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>The abstract store implementation, see the subclasses for details
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1688">
+        <label>dlg.lifecycle.hsm.store.DirectoryStore</label>
+        <link refid="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1DirectoryStore"/>
+        <childnode refid="1686" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1690">
+        <label>dlg.lifecycle.hsm.store.MemoryStore</label>
+        <link refid="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1MemoryStore"/>
+        <childnode refid="1686" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1689">
+        <label>dlg.lifecycle.hsm.store.FileSystemStore</label>
+        <link refid="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1FileSystemStore"/>
+        <childnode refid="1686" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1691">
+        <label>dlg.lifecycle.hsm.store.NgasStore</label>
+        <link refid="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1NgasStore"/>
+        <childnode refid="1686" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1687">
+        <label>object</label>
+      </node>
+      <node id="1686">
+        <label>dlg.lifecycle.hsm.store.AbstractStore</label>
+        <link refid="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1AbstractStore"/>
+        <childnode refid="1687" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1693">
+        <label>object</label>
+      </node>
+      <node id="1692">
+        <label>dlg.lifecycle.hsm.store.AbstractStore</label>
+        <link refid="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1AbstractStore"/>
+        <childnode refid="1693" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="daliuge-runtime/dlg/lifecycle/hsm/store.py" line="42" column="1" bodyfile="daliuge-runtime/dlg/lifecycle/hsm/store.py" bodystart="42" bodyend="91"/>
+    <listofallmembers>
+      <member refid="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1AbstractStore_1a645ba891c0abf6e601174a3ae0e743af" prot="public" virt="non-virtual"><scope>dlg::lifecycle::hsm::store::AbstractStore</scope><name>__init__</name></member>
+      <member refid="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1AbstractStore_1adcf7b4a5c1df838e3a1fe0ad72987b74" prot="private" virt="non-virtual"><scope>dlg::lifecycle::hsm::store::AbstractStore</scope><name>__metaclass__</name></member>
+      <member refid="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1AbstractStore_1ac9dadef9a8e927919bcd27dd8539cdf9" prot="private" virt="non-virtual"><scope>dlg::lifecycle::hsm::store::AbstractStore</scope><name>_availableSpace</name></member>
+      <member refid="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1AbstractStore_1a20d7821d3d67c2470d2d1188ee81b55d" prot="private" virt="non-virtual"><scope>dlg::lifecycle::hsm::store::AbstractStore</scope><name>_readingSpeed</name></member>
+      <member refid="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1AbstractStore_1af9a6201b1b274b3fbfaea17a9d1d0f12" prot="private" virt="non-virtual"><scope>dlg::lifecycle::hsm::store::AbstractStore</scope><name>_setAvailableSpace</name></member>
+      <member refid="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1AbstractStore_1af395b11e571bdac8e6dff79d6c90698f" prot="private" virt="non-virtual"><scope>dlg::lifecycle::hsm::store::AbstractStore</scope><name>_setReadingSpeed</name></member>
+      <member refid="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1AbstractStore_1ab7a0356f4c056ad42f4635f5f6a69a9f" prot="private" virt="non-virtual"><scope>dlg::lifecycle::hsm::store::AbstractStore</scope><name>_setTotalSpace</name></member>
+      <member refid="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1AbstractStore_1a03270dfa678065c5b6888e5dfaf47c0a" prot="private" virt="non-virtual"><scope>dlg::lifecycle::hsm::store::AbstractStore</scope><name>_setWritingSpeed</name></member>
+      <member refid="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1AbstractStore_1a24027ec83c857eb2a7f804f6edc7e473" prot="private" virt="non-virtual"><scope>dlg::lifecycle::hsm::store::AbstractStore</scope><name>_totalSpace</name></member>
+      <member refid="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1AbstractStore_1a398b9cdd8463684351666a34c256ae69" prot="private" virt="non-virtual"><scope>dlg::lifecycle::hsm::store::AbstractStore</scope><name>_updateSpaces</name></member>
+      <member refid="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1AbstractStore_1ad4ce158a22ffca0a6600e5868d459849" prot="private" virt="non-virtual"><scope>dlg::lifecycle::hsm::store::AbstractStore</scope><name>_writingSpeed</name></member>
+      <member refid="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1AbstractStore_1a5df1933fccdbd7c2003e4aadba762446" prot="public" virt="non-virtual"><scope>dlg::lifecycle::hsm::store::AbstractStore</scope><name>createDrop</name></member>
+      <member refid="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1AbstractStore_1a3ccef26d065101d208333b8e9d5e205d" prot="public" virt="non-virtual"><scope>dlg::lifecycle::hsm::store::AbstractStore</scope><name>getAvailableSpace</name></member>
+      <member refid="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1AbstractStore_1a66383da87d5adda9e9bffd905f42c6de" prot="public" virt="non-virtual"><scope>dlg::lifecycle::hsm::store::AbstractStore</scope><name>getTotalSpace</name></member>
+      <member refid="classdlg_1_1lifecycle_1_1hsm_1_1store_1_1AbstractStore_1a7748bbc68504c3dddb86a2b14af705df" prot="public" virt="non-virtual"><scope>dlg::lifecycle::hsm::store::AbstractStore</scope><name>updateSpaces</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

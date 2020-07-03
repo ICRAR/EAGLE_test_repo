@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classdlg_1_1clients_1_1DataIslandManagerClient" kind="class" language="Python" prot="public">
+    <compoundname>dlg::clients::DataIslandManagerClient</compoundname>
+    <basecompoundref refid="classdlg_1_1clients_1_1CompositeManagerClient" prot="public" virt="non-virtual">dlg.clients.CompositeManagerClient</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdlg_1_1clients_1_1DataIslandManagerClient_1aaab1f6d722d33905def9d48decfa47b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.clients.DataIslandManagerClient.__init__</definition>
+        <argsstring>(self, host=&apos;localhost&apos;, port=constants.ISLAND_DEFAULT_REST_PORT, timeout=10)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>host</type>
+          <defname>host</defname>
+          <defval>&apos;localhost&apos;</defval>
+        </param>
+        <param>
+          <type>port</type>
+          <defname>port</defname>
+          <defval>constants.ISLAND_DEFAULT_REST_PORT</defval>
+        </param>
+        <param>
+          <type>timeout</type>
+          <defname>timeout</defname>
+          <defval>10</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-common/dlg/clients.py" line="176" column="1" bodyfile="daliuge-common/dlg/clients.py" bodystart="176" bodyend="178"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>A DataIslandManager REST client
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1921">
+        <label>dlg.clients.BaseDROPManagerClient</label>
+        <link refid="classdlg_1_1clients_1_1BaseDROPManagerClient"/>
+        <childnode refid="1922" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1922">
+        <label>RestClient</label>
+      </node>
+      <node id="1920">
+        <label>dlg.clients.CompositeManagerClient</label>
+        <link refid="classdlg_1_1clients_1_1CompositeManagerClient"/>
+        <childnode refid="1921" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1919">
+        <label>dlg.clients.DataIslandManagerClient</label>
+        <link refid="classdlg_1_1clients_1_1DataIslandManagerClient"/>
+        <childnode refid="1920" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1925">
+        <label>dlg.clients.BaseDROPManagerClient</label>
+        <link refid="classdlg_1_1clients_1_1BaseDROPManagerClient"/>
+        <childnode refid="1926" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1926">
+        <label>RestClient</label>
+      </node>
+      <node id="1924">
+        <label>dlg.clients.CompositeManagerClient</label>
+        <link refid="classdlg_1_1clients_1_1CompositeManagerClient"/>
+        <childnode refid="1925" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1923">
+        <label>dlg.clients.DataIslandManagerClient</label>
+        <link refid="classdlg_1_1clients_1_1DataIslandManagerClient"/>
+        <childnode refid="1924" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="daliuge-common/dlg/clients.py" line="172" column="1" bodyfile="daliuge-common/dlg/clients.py" bodystart="172" bodyend="179"/>
+    <listofallmembers>
+      <member refid="classdlg_1_1clients_1_1DataIslandManagerClient_1aaab1f6d722d33905def9d48decfa47b7" prot="public" virt="non-virtual"><scope>dlg::clients::DataIslandManagerClient</scope><name>__init__</name></member>
+      <member refid="classdlg_1_1clients_1_1CompositeManagerClient_1a387c520699d4676e0d9bdc5273609a7e" prot="public" virt="non-virtual"><scope>dlg::clients::DataIslandManagerClient</scope><name>add_node</name></member>
+      <member refid="classdlg_1_1clients_1_1BaseDROPManagerClient_1af5356232498d1730befe8d3e19073410" prot="public" virt="non-virtual"><scope>dlg::clients::DataIslandManagerClient</scope><name>addGraphSpec</name></member>
+      <member refid="classdlg_1_1clients_1_1BaseDROPManagerClient_1aa4fd7f1c62a15feb1aaa9d009e414c14" prot="public" virt="non-virtual"><scope>dlg::clients::DataIslandManagerClient</scope><name>append_graph</name></member>
+      <member refid="classdlg_1_1clients_1_1BaseDROPManagerClient_1aab0d50a3d6e37df9b141f618703599fa" prot="public" virt="non-virtual"><scope>dlg::clients::DataIslandManagerClient</scope><name>cancelSession</name></member>
+      <member refid="classdlg_1_1clients_1_1BaseDROPManagerClient_1a2651d91eb4896cc778cac42773d0f2e5" prot="public" virt="non-virtual"><scope>dlg::clients::DataIslandManagerClient</scope><name>create_session</name></member>
+      <member refid="classdlg_1_1clients_1_1BaseDROPManagerClient_1ac1787259a69ca35a5e4c7a1fed9ffd69" prot="public" virt="non-virtual"><scope>dlg::clients::DataIslandManagerClient</scope><name>createSession</name></member>
+      <member refid="classdlg_1_1clients_1_1BaseDROPManagerClient_1ab25a86d7df501d0902d0e71591edc60a" prot="public" virt="non-virtual"><scope>dlg::clients::DataIslandManagerClient</scope><name>deploy_session</name></member>
+      <member refid="classdlg_1_1clients_1_1BaseDROPManagerClient_1a8c07a9ed81f83ce458520cb5e47fbef0" prot="public" virt="non-virtual"><scope>dlg::clients::DataIslandManagerClient</scope><name>deploySession</name></member>
+      <member refid="classdlg_1_1clients_1_1BaseDROPManagerClient_1a5e5da7c0226bc032d24cbe5fcd45fa33" prot="public" virt="non-virtual"><scope>dlg::clients::DataIslandManagerClient</scope><name>destroy_session</name></member>
+      <member refid="classdlg_1_1clients_1_1BaseDROPManagerClient_1a6fc7fbce20611e8581a8e90cb78b2097" prot="public" virt="non-virtual"><scope>dlg::clients::DataIslandManagerClient</scope><name>destroySession</name></member>
+      <member refid="classdlg_1_1clients_1_1BaseDROPManagerClient_1a274548047ad57ff1fcc91d628f725ba5" prot="public" virt="non-virtual"><scope>dlg::clients::DataIslandManagerClient</scope><name>getGraph</name></member>
+      <member refid="classdlg_1_1clients_1_1BaseDROPManagerClient_1a180b57b793a2d63f5f52bf0c5be604eb" prot="public" virt="non-virtual"><scope>dlg::clients::DataIslandManagerClient</scope><name>getGraphSize</name></member>
+      <member refid="classdlg_1_1clients_1_1BaseDROPManagerClient_1a9e07db578ddb1cc332927bccc671236e" prot="public" virt="non-virtual"><scope>dlg::clients::DataIslandManagerClient</scope><name>getGraphStatus</name></member>
+      <member refid="classdlg_1_1clients_1_1BaseDROPManagerClient_1a8dc3aa172825484e459c30bdd663cc9e" prot="public" virt="non-virtual"><scope>dlg::clients::DataIslandManagerClient</scope><name>getSessionStatus</name></member>
+      <member refid="classdlg_1_1clients_1_1BaseDROPManagerClient_1ae7489a0382b54e4c28431881a5fe3fb9" prot="public" virt="non-virtual"><scope>dlg::clients::DataIslandManagerClient</scope><name>graph</name></member>
+      <member refid="classdlg_1_1clients_1_1BaseDROPManagerClient_1a8e3a07d43836bdb0d17151eae82d1490" prot="public" virt="non-virtual"><scope>dlg::clients::DataIslandManagerClient</scope><name>graph_size</name></member>
+      <member refid="classdlg_1_1clients_1_1BaseDROPManagerClient_1ad7b449d62ec87980b4717a94869c7ec7" prot="public" virt="non-virtual"><scope>dlg::clients::DataIslandManagerClient</scope><name>graph_status</name></member>
+      <member refid="classdlg_1_1clients_1_1CompositeManagerClient_1a2a41b4e7032d1c1370b457306b53463b" prot="public" virt="non-virtual"><scope>dlg::clients::DataIslandManagerClient</scope><name>nodes</name></member>
+      <member refid="classdlg_1_1clients_1_1CompositeManagerClient_1a765705d99dddbf404fb655cd98619698" prot="public" virt="non-virtual"><scope>dlg::clients::DataIslandManagerClient</scope><name>remove_node</name></member>
+      <member refid="classdlg_1_1clients_1_1BaseDROPManagerClient_1a46e08a77e893e77b3229bf75de94e9f9" prot="public" virt="non-virtual"><scope>dlg::clients::DataIslandManagerClient</scope><name>session</name></member>
+      <member refid="classdlg_1_1clients_1_1BaseDROPManagerClient_1a5d43c0f801b7be7b15aa7bc6017c1c7c" prot="public" virt="non-virtual"><scope>dlg::clients::DataIslandManagerClient</scope><name>session_status</name></member>
+      <member refid="classdlg_1_1clients_1_1BaseDROPManagerClient_1a7fa616270fc2ad5abe36300533d553f5" prot="public" virt="non-virtual"><scope>dlg::clients::DataIslandManagerClient</scope><name>sessions</name></member>
+      <member refid="classdlg_1_1clients_1_1BaseDROPManagerClient_1a19240a8e33ad748c683ab19d4d477714" prot="public" virt="non-virtual"><scope>dlg::clients::DataIslandManagerClient</scope><name>stop</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classdlg_1_1dropmake_1_1utils_1_1bash__parameter_1_1BashCommand" kind="class" language="Python" prot="public">
+    <compoundname>dlg::dropmake::utils::bash_parameter::BashCommand</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdlg_1_1dropmake_1_1utils_1_1bash__parameter_1_1BashCommand_1ae55ff3b04d82b326fb9ee0a9db79e6b2" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.dropmake.utils.bash_parameter.BashCommand::_input_map</definition>
+        <argsstring></argsstring>
+        <name>_input_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-translator/dlg/dropmake/utils/bash_parameter.py" line="37" column="1" bodyfile="daliuge-translator/dlg/dropmake/utils/bash_parameter.py" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1dropmake_1_1utils_1_1bash__parameter_1_1BashCommand_1ac78d14e39d147d20727527580427297f" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.dropmake.utils.bash_parameter.BashCommand::_output_map</definition>
+        <argsstring></argsstring>
+        <name>_output_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-translator/dlg/dropmake/utils/bash_parameter.py" line="38" column="1" bodyfile="daliuge-translator/dlg/dropmake/utils/bash_parameter.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1dropmake_1_1utils_1_1bash__parameter_1_1BashCommand_1a7043c83d6f371cc6c6127dd9c59a2da4" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.dropmake.utils.bash_parameter.BashCommand::_cmds</definition>
+        <argsstring></argsstring>
+        <name>_cmds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-translator/dlg/dropmake/utils/bash_parameter.py" line="40" column="1" bodyfile="daliuge-translator/dlg/dropmake/utils/bash_parameter.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdlg_1_1dropmake_1_1utils_1_1bash__parameter_1_1BashCommand_1a2286cf0f43116ad5651097fb8fa1a5ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.dropmake.utils.bash_parameter.BashCommand.__init__</definition>
+        <argsstring>(self, cmds)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>cmds</type>
+          <defname>cmds</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>create the logical form of the bash command line
+
+cmds: a list such that &apos; &apos;.join(cmds) looks something like:
+ &apos;python /home/dfms/myclean.py -d %i[-21] -f %i[-3] %o[-2] -v&apos;
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-translator/dlg/dropmake/utils/bash_parameter.py" line="30" column="1" bodyfile="daliuge-translator/dlg/dropmake/utils/bash_parameter.py" bodystart="30" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1dropmake_1_1utils_1_1bash__parameter_1_1BashCommand_1a78e35e033265ed2f745dc3914eac6a09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.dropmake.utils.bash_parameter.BashCommand.add_input_param</definition>
+        <argsstring>(self, lgn_id, oid)</argsstring>
+        <name>add_input_param</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>lgn_id</type>
+          <defname>lgn_id</defname>
+        </param>
+        <param>
+          <type>oid</type>
+          <defname>oid</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-translator/dlg/dropmake/utils/bash_parameter.py" line="48" column="1" bodyfile="daliuge-translator/dlg/dropmake/utils/bash_parameter.py" bodystart="48" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1dropmake_1_1utils_1_1bash__parameter_1_1BashCommand_1a5cea8e9ba123eaca580b0debb5198ea4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.dropmake.utils.bash_parameter.BashCommand.add_output_param</definition>
+        <argsstring>(self, lgn_id, oid)</argsstring>
+        <name>add_output_param</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>lgn_id</type>
+          <defname>lgn_id</defname>
+        </param>
+        <param>
+          <type>oid</type>
+          <defname>oid</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-translator/dlg/dropmake/utils/bash_parameter.py" line="53" column="1" bodyfile="daliuge-translator/dlg/dropmake/utils/bash_parameter.py" bodystart="53" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1dropmake_1_1utils_1_1bash__parameter_1_1BashCommand_1ae1e21a96e4dce9012998b8570b4d0e0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.dropmake.utils.bash_parameter.BashCommand.to_real_command</definition>
+        <argsstring>(self)</argsstring>
+        <name>to_real_command</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-translator/dlg/dropmake/utils/bash_parameter.py" line="58" column="1" bodyfile="daliuge-translator/dlg/dropmake/utils/bash_parameter.py" bodystart="58" bodyend="80"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>An efficient implementation of the bash command with parameters
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1744">
+        <label>dlg.dropmake.utils.bash_parameter.BashCommand</label>
+        <link refid="classdlg_1_1dropmake_1_1utils_1_1bash__parameter_1_1BashCommand"/>
+        <childnode refid="1745" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1745">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1746">
+        <label>dlg.dropmake.utils.bash_parameter.BashCommand</label>
+        <link refid="classdlg_1_1dropmake_1_1utils_1_1bash__parameter_1_1BashCommand"/>
+        <childnode refid="1747" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1747">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="daliuge-translator/dlg/dropmake/utils/bash_parameter.py" line="26" column="1" bodyfile="daliuge-translator/dlg/dropmake/utils/bash_parameter.py" bodystart="26" bodyend="80"/>
+    <listofallmembers>
+      <member refid="classdlg_1_1dropmake_1_1utils_1_1bash__parameter_1_1BashCommand_1a2286cf0f43116ad5651097fb8fa1a5ba" prot="public" virt="non-virtual"><scope>dlg::dropmake::utils::bash_parameter::BashCommand</scope><name>__init__</name></member>
+      <member refid="classdlg_1_1dropmake_1_1utils_1_1bash__parameter_1_1BashCommand_1a7043c83d6f371cc6c6127dd9c59a2da4" prot="private" virt="non-virtual"><scope>dlg::dropmake::utils::bash_parameter::BashCommand</scope><name>_cmds</name></member>
+      <member refid="classdlg_1_1dropmake_1_1utils_1_1bash__parameter_1_1BashCommand_1ae55ff3b04d82b326fb9ee0a9db79e6b2" prot="private" virt="non-virtual"><scope>dlg::dropmake::utils::bash_parameter::BashCommand</scope><name>_input_map</name></member>
+      <member refid="classdlg_1_1dropmake_1_1utils_1_1bash__parameter_1_1BashCommand_1ac78d14e39d147d20727527580427297f" prot="private" virt="non-virtual"><scope>dlg::dropmake::utils::bash_parameter::BashCommand</scope><name>_output_map</name></member>
+      <member refid="classdlg_1_1dropmake_1_1utils_1_1bash__parameter_1_1BashCommand_1a78e35e033265ed2f745dc3914eac6a09" prot="public" virt="non-virtual"><scope>dlg::dropmake::utils::bash_parameter::BashCommand</scope><name>add_input_param</name></member>
+      <member refid="classdlg_1_1dropmake_1_1utils_1_1bash__parameter_1_1BashCommand_1a5cea8e9ba123eaca580b0debb5198ea4" prot="public" virt="non-virtual"><scope>dlg::dropmake::utils::bash_parameter::BashCommand</scope><name>add_output_param</name></member>
+      <member refid="classdlg_1_1dropmake_1_1utils_1_1bash__parameter_1_1BashCommand_1ae1e21a96e4dce9012998b8570b4d0e0f" prot="public" virt="non-virtual"><scope>dlg::dropmake::utils::bash_parameter::BashCommand</scope><name>to_real_command</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

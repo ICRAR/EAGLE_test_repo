@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classdlg_1_1ddap__protocol_1_1DROPStates" kind="class" language="Python" prot="public">
+    <compoundname>dlg::ddap_protocol::DROPStates</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdlg_1_1ddap__protocol_1_1DROPStates_1a81835c1fad0040bb588244a59f53bc53" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dlg.ddap_protocol.DROPStates::INITIALIZED</definition>
+        <argsstring></argsstring>
+        <name>INITIALIZED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/ddap_protocol.py" line="47" column="1" bodyfile="daliuge-runtime/dlg/ddap_protocol.py" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1ddap__protocol_1_1DROPStates_1a399844c2afcbbebf9fc89eb4620cf8ed" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dlg.ddap_protocol.DROPStates::WRITING</definition>
+        <argsstring></argsstring>
+        <name>WRITING</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/ddap_protocol.py" line="47" column="1" bodyfile="daliuge-runtime/dlg/ddap_protocol.py" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1ddap__protocol_1_1DROPStates_1abb45be9e3549b6d3aa23f2e515b8b59d" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dlg.ddap_protocol.DROPStates::COMPLETED</definition>
+        <argsstring></argsstring>
+        <name>COMPLETED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/ddap_protocol.py" line="47" column="1" bodyfile="daliuge-runtime/dlg/ddap_protocol.py" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1ddap__protocol_1_1DROPStates_1a12c862450c31f7462ca87c0b56bbf866" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dlg.ddap_protocol.DROPStates::ERROR</definition>
+        <argsstring></argsstring>
+        <name>ERROR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/ddap_protocol.py" line="47" column="1" bodyfile="daliuge-runtime/dlg/ddap_protocol.py" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1ddap__protocol_1_1DROPStates_1a2760408f15a71ca51450abedf642b793" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dlg.ddap_protocol.DROPStates::EXPIRED</definition>
+        <argsstring></argsstring>
+        <name>EXPIRED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/ddap_protocol.py" line="47" column="1" bodyfile="daliuge-runtime/dlg/ddap_protocol.py" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1ddap__protocol_1_1DROPStates_1a80d33d0f971626cfc74da6fb21d2f088" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dlg.ddap_protocol.DROPStates::DELETED</definition>
+        <argsstring></argsstring>
+        <name>DELETED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/ddap_protocol.py" line="47" column="1" bodyfile="daliuge-runtime/dlg/ddap_protocol.py" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1ddap__protocol_1_1DROPStates_1a8123f3567d298ed3a26e96a21e925b6a" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dlg.ddap_protocol.DROPStates::CANCELLED</definition>
+        <argsstring></argsstring>
+        <name>CANCELLED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/ddap_protocol.py" line="47" column="1" bodyfile="daliuge-runtime/dlg/ddap_protocol.py" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>An enumeration of the different states a DROP can be found in. DROPs start
+in the INITIALIZED state, go optionally through WRITING and arrive to
+COMPLETED. Later, they transition through EXPIRED, eventually arriving to
+DELETED.
+</verbatim> </para>    </detaileddescription>
+    <location file="daliuge-runtime/dlg/ddap_protocol.py" line="40" column="1" bodyfile="daliuge-runtime/dlg/ddap_protocol.py" bodystart="40" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classdlg_1_1ddap__protocol_1_1DROPStates_1a8123f3567d298ed3a26e96a21e925b6a" prot="public" virt="non-virtual"><scope>dlg::ddap_protocol::DROPStates</scope><name>CANCELLED</name></member>
+      <member refid="classdlg_1_1ddap__protocol_1_1DROPStates_1abb45be9e3549b6d3aa23f2e515b8b59d" prot="public" virt="non-virtual"><scope>dlg::ddap_protocol::DROPStates</scope><name>COMPLETED</name></member>
+      <member refid="classdlg_1_1ddap__protocol_1_1DROPStates_1a80d33d0f971626cfc74da6fb21d2f088" prot="public" virt="non-virtual"><scope>dlg::ddap_protocol::DROPStates</scope><name>DELETED</name></member>
+      <member refid="classdlg_1_1ddap__protocol_1_1DROPStates_1a12c862450c31f7462ca87c0b56bbf866" prot="public" virt="non-virtual"><scope>dlg::ddap_protocol::DROPStates</scope><name>ERROR</name></member>
+      <member refid="classdlg_1_1ddap__protocol_1_1DROPStates_1a2760408f15a71ca51450abedf642b793" prot="public" virt="non-virtual"><scope>dlg::ddap_protocol::DROPStates</scope><name>EXPIRED</name></member>
+      <member refid="classdlg_1_1ddap__protocol_1_1DROPStates_1a81835c1fad0040bb588244a59f53bc53" prot="public" virt="non-virtual"><scope>dlg::ddap_protocol::DROPStates</scope><name>INITIALIZED</name></member>
+      <member refid="classdlg_1_1ddap__protocol_1_1DROPStates_1a399844c2afcbbebf9fc89eb4620cf8ed" prot="public" virt="non-virtual"><scope>dlg::ddap_protocol::DROPStates</scope><name>WRITING</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

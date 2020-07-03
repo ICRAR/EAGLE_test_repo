@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classdlg_1_1manager_1_1node__manager_1_1NodeManager" kind="class" language="Python" prot="public">
+    <compoundname>dlg::manager::node_manager::NodeManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">EventMixIn</basecompoundref>
+    <basecompoundref refid="classdlg_1_1manager_1_1node__manager_1_1RpcMixIn" prot="public" virt="non-virtual">dlg.manager.node_manager.RpcMixIn</basecompoundref>
+    <basecompoundref refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase" prot="public" virt="non-virtual">dlg.manager.node_manager.NodeManagerBase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdlg_1_1manager_1_1node__manager_1_1NodeManager_1a4cfbca08acaa11965717636b4a5b8639" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.manager.node_manager.NodeManager.__init__</definition>
+        <argsstring>(self, useDLM=True, dlgPath=None, error_listener=None, event_listeners=[], max_threads=0, host=None, rpc_port=constants.NODE_DEFAULT_RPC_PORT, events_port=constants.NODE_DEFAULT_EVENTS_PORT)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>useDLM</type>
+          <defname>useDLM</defname>
+          <defval>True</defval>
+        </param>
+        <param>
+          <type>dlgPath</type>
+          <defname>dlgPath</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>error_listener</type>
+          <defname>error_listener</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>event_listeners</type>
+          <defname>event_listeners</defname>
+          <defval>[]</defval>
+        </param>
+        <param>
+          <type>max_threads</type>
+          <defname>max_threads</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>host</type>
+          <defname>host</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>rpc_port</type>
+          <defname>rpc_port</defname>
+          <defval>constants.NODE_DEFAULT_RPC_PORT</defval>
+        </param>
+        <param>
+          <type>events_port</type>
+          <defname>events_port</defname>
+          <defval>constants.NODE_DEFAULT_EVENTS_PORT</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/manager/node_manager.py" line="440" column="1" bodyfile="daliuge-runtime/dlg/manager/node_manager.py" bodystart="442" bodyend="446"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2576">
+        <label>dlg.manager.node_manager.NodeManagerBase</label>
+        <link refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase"/>
+        <childnode refid="2577" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2572">
+        <label>EventMixIn</label>
+      </node>
+      <node id="2577">
+        <label>DROPManager</label>
+      </node>
+      <node id="2574">
+        <label>rpc::RPCClient</label>
+      </node>
+      <node id="2575">
+        <label>rpc::RPCServer</label>
+      </node>
+      <node id="2573">
+        <label>dlg.manager.node_manager.RpcMixIn</label>
+        <link refid="classdlg_1_1manager_1_1node__manager_1_1RpcMixIn"/>
+        <childnode refid="2574" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2575" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2571">
+        <label>dlg.manager.node_manager.NodeManager</label>
+        <link refid="classdlg_1_1manager_1_1node__manager_1_1NodeManager"/>
+        <childnode refid="2572" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2573" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2576" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2583">
+        <label>dlg.manager.node_manager.NodeManagerBase</label>
+        <link refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase"/>
+        <childnode refid="2584" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2579">
+        <label>EventMixIn</label>
+      </node>
+      <node id="2584">
+        <label>DROPManager</label>
+      </node>
+      <node id="2581">
+        <label>rpc::RPCClient</label>
+      </node>
+      <node id="2582">
+        <label>rpc::RPCServer</label>
+      </node>
+      <node id="2580">
+        <label>dlg.manager.node_manager.RpcMixIn</label>
+        <link refid="classdlg_1_1manager_1_1node__manager_1_1RpcMixIn"/>
+        <childnode refid="2581" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2582" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2578">
+        <label>dlg.manager.node_manager.NodeManager</label>
+        <link refid="classdlg_1_1manager_1_1node__manager_1_1NodeManager"/>
+        <childnode refid="2579" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2580" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2583" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="daliuge-runtime/dlg/manager/node_manager.py" line="438" column="1" bodyfile="daliuge-runtime/dlg/manager/node_manager.py" bodystart="438" bodyend="446"/>
+    <listofallmembers>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManager_1a4cfbca08acaa11965717636b4a5b8639" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManager</scope><name>__init__</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1aafdebe4de020994ff1cdfe22530f9b78" prot="public" virt="non-virtual" ambiguityscope="dlg::manager::node_manager::NodeManagerBase."><scope>dlg::manager::node_manager::NodeManager</scope><name>__init__</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1af96b7af09f276a98a3ff1b7c2869a9e1" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManager</scope><name>add_node_subscriptions</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1ac17b875d70bdab7312e48c9226ffc455" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManager</scope><name>addGraphSpec</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1a5fe84205f0943c38e9d287e610849704" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManager</scope><name>call_drop</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1ae3c72b00fc52e6ffc726b3fda2536573" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManager</scope><name>cancelSession</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1ad80d87b79afed48a3cf34ec728a88a37" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManager</scope><name>createSession</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1aa41056d4624c1c93f98f90e481a01a5a" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManager</scope><name>deliver_event</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1aa3c550a450823cef4a2252503610480f" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManager</scope><name>deploySession</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1a35da4843a1c10dca9bd91473e5bd7273" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManager</scope><name>destroySession</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1a3e8c988c34f3da7651f82ab91f6bc215" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManager</scope><name>get_drop_property</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1a5ae5e02d1731b7ebf1aa35dce3e0c2be" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManager</scope><name>get_rpc_client</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1ad79e0bf0bb86e54a8277b306ecd5576b" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManager</scope><name>getGraph</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1ae05ad6bfe8f55f969d9ed43dbc17284d" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManager</scope><name>getGraphSize</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1adcaa0fea7b46b34c93ed098f503961d6" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManager</scope><name>getGraphStatus</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1a4c1d5283a14e2cef4a77145fd4e731dc" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManager</scope><name>getSessionIds</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1a615ed4ca57304ab7fe6c31366daac0d5" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManager</scope><name>getSessionStatus</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1ace19382a8d1f8183638d319c2bb1cd97" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManager</scope><name>has_method</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1a246db4dd6a5645867f109391b8c8b23c" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManager</scope><name>linkGraphParts</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1a89c4ff1dc45b85bc4c87738c08082dbb" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManager</scope><name>publish_event</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1a0957ff5d4dc1f3d0183be66c031074bb" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManager</scope><name>shutdown</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1abe9fa29431db13be64a0656d8b71272f" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManager</scope><name>start</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1a290ffe59962cd096cb53d6185e8887b3" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManager</scope><name>subscribe</name></member>
+      <member refid="classdlg_1_1manager_1_1node__manager_1_1NodeManagerBase_1aafbc4525264125d33f77fb98339ab91a" prot="public" virt="non-virtual"><scope>dlg::manager::node_manager::NodeManager</scope><name>trigger_drops</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

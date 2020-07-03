@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classdlg_1_1event_1_1EventFirer" kind="class" language="Python" prot="public">
+    <compoundname>dlg::event::EventFirer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classdlg_1_1event_1_1EventFirer_1ae13354ade3661d5fb14315c8911119f6" prot="private" static="yes" mutable="no">
+        <type></type>
+        <definition>dlg.event.EventFirer::__ALL_EVENTS</definition>
+        <argsstring></argsstring>
+        <name>__ALL_EVENTS</name>
+        <initializer>= object()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/event.py" line="59" column="1" bodyfile="daliuge-runtime/dlg/event.py" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdlg_1_1event_1_1EventFirer_1aae886f2f1272e5969cbf35b3cbd942d9" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.event.EventFirer::_listeners</definition>
+        <argsstring></argsstring>
+        <name>_listeners</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/event.py" line="62" column="1" bodyfile="daliuge-runtime/dlg/event.py" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdlg_1_1event_1_1EventFirer_1afd2e47dca86f0dbccbfcab3bcd1ad7d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.event.EventFirer.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/event.py" line="61" column="1" bodyfile="daliuge-runtime/dlg/event.py" bodystart="61" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1event_1_1EventFirer_1a73a8ad69bb0940a1e2b2cc529446e922" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.event.EventFirer.subscribe</definition>
+        <argsstring>(self, listener, eventType=None)</argsstring>
+        <name>subscribe</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>listener</type>
+          <defname>listener</defname>
+        </param>
+        <param>
+          <type>eventType</type>
+          <defname>eventType</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Subscribes `listener` to events fired by this object. If `eventType` is
+not `None` then `listener` will only receive events of `eventType` that
+originate from this object, otherwise it will receive all events.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/event.py" line="64" column="1" bodyfile="daliuge-runtime/dlg/event.py" bodystart="64" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1event_1_1EventFirer_1a4ef19eb869c056e7bb63ddec65bba546" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.event.EventFirer.unsubscribe</definition>
+        <argsstring>(self, listener, eventType=None)</argsstring>
+        <name>unsubscribe</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>listener</type>
+          <defname>listener</defname>
+        </param>
+        <param>
+          <type>eventType</type>
+          <defname>eventType</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Unsubscribes `listener` from events fired by this object.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/event.py" line="74" column="1" bodyfile="daliuge-runtime/dlg/event.py" bodystart="74" bodyend="83"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdlg_1_1event_1_1EventFirer_1a187463ae2f222def54c0fd00ca616694" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.event.EventFirer._fireEvent</definition>
+        <argsstring>(self, eventType, attrs)</argsstring>
+        <name>_fireEvent</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>eventType</type>
+          <defname>eventType</defname>
+        </param>
+        <param>
+          <type>attrs</type>
+          <defname>attrs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Delivers an event of `eventType` to all interested listeners.
+
+All the key-value pairs contained in `attrs` are set as attributes of
+the event being sent.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/event.py" line="84" column="1" bodyfile="daliuge-runtime/dlg/event.py" bodystart="84" bodyend="110"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>An object that fires events.
+
+Objects that have an interest on receiving events from this object subscribe
+to it via the `subscribe` method; likewise they can unsubscribe from it via
+the `unsubscribe` method. Events are handled to the listeners by calling
+their `handleEvent` method with the event as its sole argument.
+
+Listeners can specify the type of event they listen to at subscription time,
+or can also prefer to receive all events fired by this object if they wish
+so.
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="2126">
+        <label>dlg.event.EventFirer</label>
+        <link refid="classdlg_1_1event_1_1EventFirer"/>
+        <childnode refid="2127" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2127">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2128">
+        <label>dlg.event.EventFirer</label>
+        <link refid="classdlg_1_1event_1_1EventFirer"/>
+        <childnode refid="2129" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2129">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="daliuge-runtime/dlg/event.py" line="45" column="1" bodyfile="daliuge-runtime/dlg/event.py" bodystart="45" bodyend="110"/>
+    <listofallmembers>
+      <member refid="classdlg_1_1event_1_1EventFirer_1ae13354ade3661d5fb14315c8911119f6" prot="private" virt="non-virtual"><scope>dlg::event::EventFirer</scope><name>__ALL_EVENTS</name></member>
+      <member refid="classdlg_1_1event_1_1EventFirer_1afd2e47dca86f0dbccbfcab3bcd1ad7d3" prot="public" virt="non-virtual"><scope>dlg::event::EventFirer</scope><name>__init__</name></member>
+      <member refid="classdlg_1_1event_1_1EventFirer_1a187463ae2f222def54c0fd00ca616694" prot="private" virt="non-virtual"><scope>dlg::event::EventFirer</scope><name>_fireEvent</name></member>
+      <member refid="classdlg_1_1event_1_1EventFirer_1aae886f2f1272e5969cbf35b3cbd942d9" prot="private" virt="non-virtual"><scope>dlg::event::EventFirer</scope><name>_listeners</name></member>
+      <member refid="classdlg_1_1event_1_1EventFirer_1a73a8ad69bb0940a1e2b2cc529446e922" prot="public" virt="non-virtual"><scope>dlg::event::EventFirer</scope><name>subscribe</name></member>
+      <member refid="classdlg_1_1event_1_1EventFirer_1a4ef19eb869c056e7bb63ddec65bba546" prot="public" virt="non-virtual"><scope>dlg::event::EventFirer</scope><name>unsubscribe</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

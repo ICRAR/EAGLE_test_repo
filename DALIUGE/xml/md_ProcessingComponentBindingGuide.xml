@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="md_ProcessingComponentBindingGuide" kind="page">
+    <compoundname>md_ProcessingComponentBindingGuide</compoundname>
+    <title>Install Doxygen</title>
+    <detaileddescription>
+<para><ulink url="http://www.doxygen.nl/">http://www.doxygen.nl/</ulink></para><para><heading level="1">Configure the configuration file (Doxyfile as default)</heading>
+</para><para><programlisting><codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Project<sp/>related<sp/>configuration<sp/>options</highlight></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>PROJECT_NUMBER<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>enter<sp/>a<sp/>project<sp/>or<sp/>revision<sp/>number.<sp/>This</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>could<sp/>be<sp/>handy<sp/>for<sp/>archiving<sp/>the<sp/>generated<sp/>documentation<sp/>or<sp/>if<sp/>some<sp/>version</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>control<sp/>system<sp/>is<sp/>used.</highlight></codeline>
+<codeline><highlight class="normal">PROJECT_NUMBER        <sp/>=<sp/>$(PROJECT_VERSION)</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>INPUT<sp/>tag<sp/>is<sp/>used<sp/>to<sp/>specify<sp/>the<sp/>files<sp/>and/or<sp/>directories<sp/>that<sp/>contain</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>documented<sp/>source<sp/>files.<sp/>You<sp/>may<sp/>enter<sp/>file<sp/>names<sp/>like<sp/>myfile.cpp<sp/>or</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>directories<sp/>like<sp/>/usr/src/myproject.<sp/>Separate<sp/>the<sp/>files<sp/>or<sp/>directories<sp/>with</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>spaces.<sp/>See<sp/>also<sp/>FILE_PATTERNS<sp/>and<sp/>EXTENSION_MAPPING</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Note:<sp/>If<sp/>this<sp/>tag<sp/>is<sp/>empty<sp/>the<sp/>current<sp/>directory<sp/>is<sp/>searched.</highlight></codeline>
+<codeline><highlight class="normal">INPUT                 <sp/>=<sp/></highlight></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>OUTPUT_DIRECTORY<sp/>tag<sp/>is<sp/>used<sp/>to<sp/>specify<sp/>the<sp/>(relative<sp/>or<sp/>absolute)<sp/>path</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>into<sp/>which<sp/>the<sp/>generated<sp/>documentation<sp/>will<sp/>be<sp/>written.<sp/>If<sp/>a<sp/>relative<sp/>path<sp/>is</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>entered,<sp/>it<sp/>will<sp/>be<sp/>relative<sp/>to<sp/>the<sp/>location<sp/>where<sp/>doxygen<sp/>was<sp/>started.<sp/>If</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>left<sp/>blank<sp/>the<sp/>current<sp/>directory<sp/>will<sp/>be<sp/>used.</highlight></codeline>
+<codeline><highlight class="normal">OUTPUT_DIRECTORY      <sp/>=<sp/></highlight></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>OUTPUT_LANGUAGE<sp/>tag<sp/>is<sp/>used<sp/>to<sp/>specify<sp/>the<sp/>language<sp/>in<sp/>which<sp/>all</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>documentation<sp/>generated<sp/>by<sp/>doxygen<sp/>is<sp/>written.<sp/>Doxygen<sp/>will<sp/>use<sp/>this</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>information<sp/>to<sp/>generate<sp/>all<sp/>constant<sp/>output<sp/>in<sp/>the<sp/>proper<sp/>language.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Possible<sp/>values<sp/>are:<sp/>Afrikaans,<sp/>Arabic,<sp/>Armenian,<sp/>Brazilian,<sp/>Catalan,<sp/>Chinese,</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Chinese-Traditional,<sp/>Croatian,<sp/>Czech,<sp/>Danish,<sp/>Dutch,<sp/>English<sp/>(United<sp/>States),</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Esperanto,<sp/>Farsi<sp/>(Persian),<sp/>Finnish,<sp/>French,<sp/>German,<sp/>Greek,<sp/>Hungarian,</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Indonesian,<sp/>Italian,<sp/>Japanese,<sp/>Japanese-en<sp/>(Japanese<sp/>with<sp/>English<sp/>messages),</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Korean,<sp/>Korean-en<sp/>(Korean<sp/>with<sp/>English<sp/>messages),<sp/>Latvian,<sp/>Lithuanian,</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Macedonian,<sp/>Norwegian,<sp/>Persian<sp/>(Farsi),<sp/>Polish,<sp/>Portuguese,<sp/>Romanian,<sp/>Russian,</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Serbian,<sp/>Serbian-Cyrillic,<sp/>Slovak,<sp/>Slovene,<sp/>Spanish,<sp/>Swedish,<sp/>Turkish,</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Ukrainian<sp/>and<sp/>Vietnamese.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>default<sp/>value<sp/>is:<sp/>English.</highlight></codeline>
+<codeline><highlight class="normal">OUTPUT_LANGUAGE       <sp/>=<sp/>English</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>When<sp/>enabled<sp/>doxygen<sp/>tries<sp/>to<sp/>link<sp/>words<sp/>that<sp/>correspond<sp/>to<sp/>documented</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>classes,<sp/>or<sp/>namespaces<sp/>to<sp/>their<sp/>corresponding<sp/>documentation.<sp/>Such<sp/>a<sp/>link<sp/>can</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>be<sp/>prevented<sp/>in<sp/>individual<sp/>cases<sp/>by<sp/>putting<sp/>a<sp/>%<sp/>sign<sp/>in<sp/>front<sp/>of<sp/>the<sp/>word<sp/>or</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>globally<sp/>by<sp/>setting<sp/>AUTOLINK_SUPPORT<sp/>to<sp/>NO.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>default<sp/>value<sp/>is:<sp/>YES.</highlight></codeline>
+<codeline><highlight class="normal">AUTOLINK_SUPPORT      <sp/>=<sp/>NO</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>For<sp/>Microsoft&apos;s<sp/>IDL<sp/>there<sp/>are<sp/>propget<sp/>and<sp/>propput<sp/>attributes<sp/>to<sp/>indicate</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>getter<sp/>and<sp/>setter<sp/>methods<sp/>for<sp/>a<sp/>property.<sp/>Setting<sp/>this<sp/>option<sp/>to<sp/>YES<sp/>will<sp/>make</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>doxygen<sp/>to<sp/>replace<sp/>the<sp/>get<sp/>and<sp/>set<sp/>methods<sp/>by<sp/>a<sp/>property<sp/>in<sp/>the<sp/>documentation.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>This<sp/>will<sp/>only<sp/>work<sp/>if<sp/>the<sp/>methods<sp/>are<sp/>indeed<sp/>getting<sp/>or<sp/>setting<sp/>a<sp/>simple</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>type.<sp/>If<sp/>this<sp/>is<sp/>not<sp/>the<sp/>case,<sp/>or<sp/>you<sp/>want<sp/>to<sp/>show<sp/>the<sp/>methods<sp/>anyway,<sp/>you</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>should<sp/>set<sp/>this<sp/>option<sp/>to<sp/>NO.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>default<sp/>value<sp/>is:<sp/>YES.</highlight></codeline>
+<codeline><highlight class="normal">IDL_PROPERTY_SUPPORT  <sp/>=<sp/>NO</highlight></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Configuration<sp/>options<sp/>related<sp/>to<sp/>the<sp/>input<sp/>files</highlight></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>RECURSIVE<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>specify<sp/>whether<sp/>or<sp/>not<sp/>subdirectories<sp/>should</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>be<sp/>searched<sp/>for<sp/>input<sp/>files<sp/>as<sp/>well.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>default<sp/>value<sp/>is:<sp/>NO.</highlight></codeline>
+<codeline><highlight class="normal">RECURSIVE             <sp/>=<sp/>YES</highlight></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Configuration<sp/>options<sp/>related<sp/>to<sp/>the<sp/>HTML<sp/>output</highlight></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>GENERATE_HTML<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>doxygen<sp/>will<sp/>generate<sp/>HTML<sp/>output</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>default<sp/>value<sp/>is:<sp/>YES.</highlight></codeline>
+<codeline><highlight class="normal">GENERATE_HTML         <sp/>=<sp/>NO</highlight></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Configuration<sp/>options<sp/>related<sp/>to<sp/>the<sp/>LaTeX<sp/>output</highlight></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>GENERATE_LATEX<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>doxygen<sp/>will<sp/>generate<sp/>LaTeX<sp/>output.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>default<sp/>value<sp/>is:<sp/>YES.</highlight></codeline>
+<codeline><highlight class="normal">GENERATE_LATEX        <sp/>=<sp/>NO</highlight></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Configuration<sp/>options<sp/>related<sp/>to<sp/>the<sp/>XML<sp/>output</highlight></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>GENERATE_XML<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>doxygen<sp/>will<sp/>generate<sp/>an<sp/>XML<sp/>file<sp/>that</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>captures<sp/>the<sp/>structure<sp/>of<sp/>the<sp/>code<sp/>including<sp/>all<sp/>documentation.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>default<sp/>value<sp/>is:<sp/>NO.</highlight></codeline>
+<codeline><highlight class="normal">GENERATE_XML          <sp/>=<sp/>YES</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>XML_PROGRAMLISTING<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>doxygen<sp/>will<sp/>dump<sp/>the<sp/>program</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>listings<sp/>(including<sp/>syntax<sp/>highlighting<sp/>and<sp/>cross-referencing<sp/>information)<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>the<sp/>XML<sp/>output.<sp/>Note<sp/>that<sp/>enabling<sp/>this<sp/>will<sp/>significantly<sp/>increase<sp/>the<sp/>size</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>of<sp/>the<sp/>XML<sp/>output.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>default<sp/>value<sp/>is:<sp/>YES.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>This<sp/>tag<sp/>requires<sp/>that<sp/>the<sp/>tag<sp/>GENERATE_XML<sp/>is<sp/>set<sp/>to<sp/>YES.</highlight></codeline>
+<codeline><highlight class="normal">XML_PROGRAMLISTING    <sp/>=<sp/>YES</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>XML_NS_MEMB_FILE_SCOPE<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>doxygen<sp/>will<sp/>include</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>namespace<sp/>members<sp/>in<sp/>file<sp/>scope<sp/>as<sp/>well,<sp/>matching<sp/>the<sp/>HTML<sp/>output.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>default<sp/>value<sp/>is:<sp/>NO.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>This<sp/>tag<sp/>requires<sp/>that<sp/>the<sp/>tag<sp/>GENERATE_XML<sp/>is<sp/>set<sp/>to<sp/>YES.</highlight></codeline>
+<codeline><highlight class="normal">XML_NS_MEMB_FILE_SCOPE<sp/>=<sp/>YES</highlight></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Configuration<sp/>options<sp/>related<sp/>to<sp/>the<sp/>preprocessor</highlight></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>ENABLE_PREPROCESSING<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>doxygen<sp/>will<sp/>evaluate<sp/>all</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>C-preprocessor<sp/>directives<sp/>found<sp/>in<sp/>the<sp/>sources<sp/>and<sp/>include<sp/>files.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>default<sp/>value<sp/>is:<sp/>YES.</highlight></codeline>
+<codeline><highlight class="normal">ENABLE_PREPROCESSING  <sp/>=<sp/>NO</highlight></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Configuration<sp/>options<sp/>related<sp/>to<sp/>the<sp/>dot<sp/>tool</highlight></codeline>
+<codeline><highlight class="normal">#---------------------------------------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>CLASS_DIAGRAMS<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>doxygen<sp/>will<sp/>generate<sp/>a<sp/>class<sp/>diagram</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>(in<sp/>HTML<sp/>and<sp/>LaTeX)<sp/>for<sp/>classes<sp/>with<sp/>base<sp/>or<sp/>super<sp/>classes.<sp/>Setting<sp/>the<sp/>tag<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>NO<sp/>turns<sp/>the<sp/>diagrams<sp/>off.<sp/>Note<sp/>that<sp/>this<sp/>option<sp/>also<sp/>works<sp/>with<sp/>HAVE_DOT</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>disabled,<sp/>but<sp/>it<sp/>is<sp/>recommended<sp/>to<sp/>install<sp/>and<sp/>use<sp/>dot,<sp/>since<sp/>it<sp/>yields<sp/>more</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>powerful<sp/>graphs.</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>default<sp/>value<sp/>is:<sp/>YES.</highlight></codeline>
+<codeline><highlight class="normal">CLASS_DIAGRAMS        <sp/>=<sp/>NO</highlight></codeline>
+</programlisting> <heading level="1">Add comments in the source code files</heading>
+</para><para><heading level="2">Source Files</heading>
+</para><para><heading level="3">**Filename**</heading>
+</para><para>The name of the source file</para><para>```c++ /*! *  </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

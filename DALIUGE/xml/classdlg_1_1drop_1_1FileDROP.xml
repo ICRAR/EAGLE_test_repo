@@ -1,0 +1,382 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classdlg_1_1drop_1_1FileDROP" kind="class" language="Python" prot="public">
+    <compoundname>dlg::drop::FileDROP</compoundname>
+    <basecompoundref refid="classdlg_1_1drop_1_1AbstractDROP" prot="public" virt="non-virtual">dlg.drop.AbstractDROP</basecompoundref>
+    <basecompoundref refid="classdlg_1_1drop_1_1PathBasedDrop" prot="public" virt="non-virtual">dlg.drop.PathBasedDrop</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdlg_1_1drop_1_1FileDROP_1a63e707a8cf08a3a9fe87c9ee69d72f33" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dlg.drop.FileDROP::filepath</definition>
+        <argsstring></argsstring>
+        <name>filepath</name>
+        <initializer>= dlg_string_param(&apos;filepath&apos;, None)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/drop.py" line="1047" column="1" bodyfile="daliuge-runtime/dlg/drop.py" bodystart="1047" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1drop_1_1FileDROP_1a6ff3ff0525af496c244e033e33112d98" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dlg.drop.FileDROP::dirname</definition>
+        <argsstring></argsstring>
+        <name>dirname</name>
+        <initializer>= dlg_string_param(&apos;dirname&apos;, None)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/drop.py" line="1048" column="1" bodyfile="daliuge-runtime/dlg/drop.py" bodystart="1048" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1drop_1_1FileDROP_1ab0f2ebd9c781e32ff3b778ed11bf0c7b" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dlg.drop.FileDROP::delete_parent_directory</definition>
+        <argsstring></argsstring>
+        <name>delete_parent_directory</name>
+        <initializer>= dlg_bool_param(&apos;delete_parent_directory&apos;, False)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/drop.py" line="1049" column="1" bodyfile="daliuge-runtime/dlg/drop.py" bodystart="1049" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1drop_1_1FileDROP_1a9e4ac6c3a9253729d4d361a542948ecb" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dlg.drop.FileDROP::check_filepath_exists</definition>
+        <argsstring></argsstring>
+        <name>check_filepath_exists</name>
+        <initializer>= dlg_bool_param(&apos;check_filepath_exists&apos;, False)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/drop.py" line="1050" column="1" bodyfile="daliuge-runtime/dlg/drop.py" bodystart="1050" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1drop_1_1FileDROP_1aa4f4d230cf31f03c6d35348f71b118da" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dlg.drop.FileDROP::non_fname_chars</definition>
+        <argsstring></argsstring>
+        <name>non_fname_chars</name>
+        <initializer>= re.compile(r&apos;:|%s&apos; % os.sep)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/drop.py" line="1069" column="1" bodyfile="daliuge-runtime/dlg/drop.py" bodystart="1069" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdlg_1_1drop_1_1FileDROP_1a8807dc587354ef6a4b4c31641caf7ba7" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.drop.FileDROP::_root</definition>
+        <argsstring></argsstring>
+        <name>_root</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/drop.py" line="1099" column="1" bodyfile="daliuge-runtime/dlg/drop.py" bodystart="1099" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1drop_1_1FileDROP_1ad8f1c617ca9e746d7d4cb0879eb1be16" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.drop.FileDROP::_path</definition>
+        <argsstring></argsstring>
+        <name>_path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/drop.py" line="1100" column="1" bodyfile="daliuge-runtime/dlg/drop.py" bodystart="1100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdlg_1_1drop_1_1FileDROP_1a2ce88bb2aa3f3dd6abb8d4100824c5c7" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dlg.drop.FileDROP::_wio</definition>
+        <argsstring></argsstring>
+        <name>_wio</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/drop.py" line="1104" column="1" bodyfile="daliuge-runtime/dlg/drop.py" bodystart="1104" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdlg_1_1drop_1_1FileDROP_1ae03a8441b8a3d525236d8cf51c1aad1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.drop.FileDROP.sanitize_paths</definition>
+        <argsstring>(self, filepath, dirname)</argsstring>
+        <name>sanitize_paths</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>filepath</type>
+          <defname>filepath</defname>
+        </param>
+        <param>
+          <type>dirname</type>
+          <defname>dirname</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/drop.py" line="1052" column="1" bodyfile="daliuge-runtime/dlg/drop.py" bodystart="1052" bodyend="1068"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1drop_1_1FileDROP_1a1a756007df271f58bd356d574a8043fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.drop.FileDROP.initialize</definition>
+        <argsstring>(self, kwargs)</argsstring>
+        <name>initialize</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>FileDROP-specific initialization.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/drop.py" line="1071" column="1" bodyfile="daliuge-runtime/dlg/drop.py" bodystart="1071" bodyend="1105"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1drop_1_1FileDROP_1a76ddef39e436f103974bc2fa390e577a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.drop.FileDROP.getIO</definition>
+        <argsstring>(self)</argsstring>
+        <name>getIO</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/drop.py" line="1106" column="1" bodyfile="daliuge-runtime/dlg/drop.py" bodystart="1106" bodyend="1108"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1drop_1_1FileDROP_1a9d817ab982679d7e68bd50f43610273c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.drop.FileDROP.delete</definition>
+        <argsstring>(self)</argsstring>
+        <name>delete</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/drop.py" line="1109" column="1" bodyfile="daliuge-runtime/dlg/drop.py" bodystart="1109" bodyend="1118"/>
+      </memberdef>
+      <memberdef kind="function" id="classdlg_1_1drop_1_1FileDROP_1a4170386192acd92d01798c489e880eb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def dlg.drop.FileDROP.dataURL</definition>
+        <argsstring>(self)</argsstring>
+        <name>dataURL</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="daliuge-runtime/dlg/drop.py" line="1120" column="1" bodyfile="daliuge-runtime/dlg/drop.py" bodystart="1120" bodyend="1124"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>A DROP that points to data stored in a mounted filesystem.
+
+Users can (but usually don&apos;t need to) specify both a `filepath` and a
+`dirname` parameter for each FileDrop. The combination of these two parameters
+will determine the final location of the file backed up by this drop on the
+underlying filesystem. When no ``filepath`` is provided, the drop&apos;s UID will be
+used as a filename. When a relative filepath is provided, it is relative to
+``dirname``. When an absolute ``filepath`` is given, it is used as-is.
+When a relative ``dirname`` is provided, it is relative to the base directory
+of the currently running session (i.e., a directory with the session ID as a
+name, placed within the currently working directory of the Node Manager
+hosting that session). If ``dirname`` is absolute, it is used as-is.
+
+In some cases drops are created **outside** the context of a session, most
+notably during unit tests. In these cases the base directory is a fixed
+location under ``/tmp``.
+
+The following table summarizes the calculation of the final path used by
+the ``FileDrop`` class depending on its parameters:
+
+============ ===================== ===================== ==========
+     .                               filepath
+------------ ------------------------------------------------------
+dirname      empty                 relative              absolute
+============ ===================== ===================== ==========
+**empty**    /``$B``/``$u``        /``$B``/``$f``        /``$f``
+**relative** /``$B``/``$d``/``$u`` /``$B``/``$d``/``$f`` **ERROR**
+**absolute** /``$d``/``$u``        /``$d``/``$f``        **ERROR**
+============ ===================== ===================== ==========
+
+In the table, ``$f`` is the value of ``filepath``, ``$d`` is the value of
+``dirname``, ``$u`` is the drop&apos;s UID and ``$B`` is the base directory for
+this drop&apos;s session, namelly ``/the/cwd/$session_id``.
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="2141">
+        <label>dlg.drop.FileDROP</label>
+        <link refid="classdlg_1_1drop_1_1FileDROP"/>
+        <childnode refid="2142" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2144" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2142">
+        <label>dlg.drop.AbstractDROP</label>
+        <link refid="classdlg_1_1drop_1_1AbstractDROP"/>
+        <childnode refid="2143" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2145">
+        <label>object</label>
+      </node>
+      <node id="2144">
+        <label>dlg.drop.PathBasedDrop</label>
+        <link refid="classdlg_1_1drop_1_1PathBasedDrop"/>
+        <childnode refid="2145" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2143">
+        <label>EventFirer</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2146">
+        <label>dlg.drop.FileDROP</label>
+        <link refid="classdlg_1_1drop_1_1FileDROP"/>
+        <childnode refid="2147" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2149" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2147">
+        <label>dlg.drop.AbstractDROP</label>
+        <link refid="classdlg_1_1drop_1_1AbstractDROP"/>
+        <childnode refid="2148" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2150">
+        <label>object</label>
+      </node>
+      <node id="2149">
+        <label>dlg.drop.PathBasedDrop</label>
+        <link refid="classdlg_1_1drop_1_1PathBasedDrop"/>
+        <childnode refid="2150" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2148">
+        <label>EventFirer</label>
+      </node>
+    </collaborationgraph>
+    <location file="daliuge-runtime/dlg/drop.py" line="1010" column="1" bodyfile="daliuge-runtime/dlg/drop.py" bodystart="1010" bodyend="1125"/>
+    <listofallmembers>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1ac2fddd5605897c23a53286c241bdea52" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>__hash__</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a2c5c04e9015451140f980cea9966018b" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>__init__</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1ae5b978d64d05b08ac23279b17c1abe82" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>__repr__</name></member>
+      <member refid="classdlg_1_1drop_1_1FileDROP_1ad8f1c617ca9e746d7d4cb0879eb1be16" prot="private" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>_path</name></member>
+      <member refid="classdlg_1_1drop_1_1FileDROP_1a8807dc587354ef6a4b4c31641caf7ba7" prot="private" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>_root</name></member>
+      <member refid="classdlg_1_1drop_1_1FileDROP_1a2ce88bb2aa3f3dd6abb8d4100824c5c7" prot="private" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>_wio</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a336a527084db32aa25df94d6bcc4b887" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>addConsumer</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a7a56e877b44230134691f95a3721e07c" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>addProducer</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a88102924c2c5a1da2ccbaa80b322f57a" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>addStreamingConsumer</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1ab00c209f2107d23020fe73e7842e957c" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>cancel</name></member>
+      <member refid="classdlg_1_1drop_1_1FileDROP_1a9e4ac6c3a9253729d4d361a542948ecb" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>check_filepath_exists</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1ae042549a6196547aae18ffcaa614c4bc" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>checksum</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a32af7f03cf8384274b19838680beab97" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>checksum</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a98da5f14a2f7771d720d3e3ada76301b" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>checksumType</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a4522448d4e5ce0f96fe753bac282a2b5" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>checksumType</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a494ab1ae0b6d8346d869c9b93bb7a225" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>close</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1af33a4f83e7e131397f87dd883b02ef81" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>consumers</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a06ac084ce77d7a7a22d8a2b5e5aa875b" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>dataIsland</name></member>
+      <member refid="classdlg_1_1drop_1_1FileDROP_1a4170386192acd92d01798c489e880eb8" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>dataURL</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1af586122ecbe9f5ee3861adfb5d4bb949" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>decrRefCount</name></member>
+      <member refid="classdlg_1_1drop_1_1FileDROP_1a9d817ab982679d7e68bd50f43610273c" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>delete</name></member>
+      <member refid="classdlg_1_1drop_1_1FileDROP_1ab0f2ebd9c781e32ff3b778ed11bf0c7b" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>delete_parent_directory</name></member>
+      <member refid="classdlg_1_1drop_1_1FileDROP_1a6ff3ff0525af496c244e033e33112d98" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>dirname</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a16a3127f829fcce5f1ded0c37c867b8b" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>executionMode</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a81b305863dcf2e5e5591a00ed8fce869" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>executionMode</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1ad945395440af71a3da4edc5827ddea81" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>exists</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1abce83273b3b34fc03dbe1b214b3f9276" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>expirationDate</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a157c04dd0c22f17daaa9bc729c1dd298" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>expireAfterUse</name></member>
+      <member refid="classdlg_1_1drop_1_1FileDROP_1a63e707a8cf08a3a9fe87c9ee69d72f33" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>filepath</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1adff042449732940420c84ddecb3f6476" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>get_consumers_nodes</name></member>
+      <member refid="classdlg_1_1drop_1_1PathBasedDrop_1af288584fab37b04a738576fc85f17d05" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>get_dir</name></member>
+      <member refid="classdlg_1_1drop_1_1FileDROP_1a76ddef39e436f103974bc2fa390e577a" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>getIO</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1ac051ffbbfc5a031337a50addb9d62be5" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>handleEvent</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1aac36c5636a45018179efda69ccf79d2f" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>handleInterest</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a16df3fee6a86cf4f43c9aa0dc9c72d01" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>incrRefCount</name></member>
+      <member refid="classdlg_1_1drop_1_1FileDROP_1a1a756007df271f58bd356d574a8043fa" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>initialize</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a5550127a42944b64cd691f87c4dc3abe" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>isBeingRead</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a7f63bfd98bd257ffe506d6f1baec5db5" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>isCompleted</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a60b7a1acfce6a9495fd4e248bfc0d128" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>lg_key</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a81f53a83ca94210f4b41613ab15f9ba7" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>name</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1abbba7acc298a361b2f9510bba9a508a7" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>node</name></member>
+      <member refid="classdlg_1_1drop_1_1FileDROP_1aa4f4d230cf31f03c6d35348f71b118da" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>non_fname_chars</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a634670a85a0b978d3327edca73590c92" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>oid</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1acdcf1ab8f9f681cf6b92124b12de5cfd" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>open</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1ad9d0bc15a81c68c012814e9f3ed2c72f" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>parent</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a5ba50659e4d38c5207c688151a65bbf1" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>parent</name></member>
+      <member refid="classdlg_1_1drop_1_1PathBasedDrop_1a7b13817eedf16551663b420eac31bf58" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>path</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1afd126d88466822cfcb91491957f97a94" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>phase</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1afb31853bd25d56ba61b4bf5bd6fc94c7" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>phase</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1aea745d71a1ec688ebd66594163b38f4a" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>precious</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a06960c31442c07efd862382078f8ac96" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>producerFinished</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a655348df5e0535ae636cd4a09ac8d106" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>producers</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a3319962613a02690f67a92c911bc695f" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>read</name></member>
+      <member refid="classdlg_1_1drop_1_1FileDROP_1ae03a8441b8a3d525236d8cf51c1aad1e" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>sanitize_paths</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a03a21460c5a31316ae08aa9a860b6713" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>setCompleted</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a88a0294e80eed790697008c1d2698cdb" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>setError</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a73ca5367803a078c6bd188b12a807e30" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>size</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1aa15208b503ea93b7533a54632b50d0a1" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>size</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a35ed3e99ca6611b9c06b6d84019d5c1b" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>status</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a17f8a917549ed3eb312fcfc35ef6e544" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>status</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a4d9508f4a4f680466b8a09393e42e0de" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>status</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a7da445287b1a0180d7f5e736087cfe4e" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>streamingConsumers</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1addd825fc304c6ccad3d9795c865b4d89" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>targetPhase</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a52f23b12db48660c44e6c052b9367d67" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>uid</name></member>
+      <member refid="classdlg_1_1drop_1_1AbstractDROP_1a876b9794001307e140c95f133372efce" prot="public" virt="non-virtual"><scope>dlg::drop::FileDROP</scope><name>write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
