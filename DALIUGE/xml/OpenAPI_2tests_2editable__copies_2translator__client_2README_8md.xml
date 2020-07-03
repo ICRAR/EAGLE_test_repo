@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="OpenAPI_2tests_2editable__copies_2translator__client_2README_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>translator-client</highlight></codeline>
+<codeline><highlight class="normal">REST<sp/>API<sp/>description<sp/>of<sp/>the<sp/>DALiuGE<sp/>translator</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>Python<sp/>package<sp/>is<sp/>automatically<sp/>generated<sp/>by<sp/>the<sp/>[OpenAPI<sp/>Generator](https://openapi-generator.tech)<sp/>project:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>API<sp/>version:<sp/>1.0</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Package<sp/>version:<sp/>1.0.0</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Build<sp/>package:<sp/>org.openapitools.codegen.languages.PythonClientCodegen</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Requirements.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Python<sp/>2.7<sp/>and<sp/>3.4+</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Installation<sp/>&amp;<sp/>Usage</highlight></codeline>
+<codeline><highlight class="normal">###<sp/>pip<sp/>install</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>the<sp/>python<sp/>package<sp/>is<sp/>hosted<sp/>on<sp/>a<sp/>repository,<sp/>you<sp/>can<sp/>install<sp/>directly<sp/>using:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```sh</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">(you<sp/>may<sp/>need<sp/>to<sp/>run<sp/>`pip`<sp/>with<sp/>root<sp/>permission:<sp/>`sudo<sp/>pip<sp/>install<sp/>git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git`)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Then<sp/>import<sp/>the<sp/>package:</highlight></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>translator_client</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Setuptools</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Install<sp/>via<sp/>[Setuptools](http://pypi.python.org/pypi/setuptools).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```sh</highlight></codeline>
+<codeline><highlight class="normal">python<sp/>setup.py<sp/>install<sp/>--user</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">(or<sp/>`sudo<sp/>python<sp/>setup.py<sp/>install`<sp/>to<sp/>install<sp/>the<sp/>package<sp/>for<sp/>all<sp/>users)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Then<sp/>import<sp/>the<sp/>package:</highlight></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>translator_client</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Getting<sp/>Started</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Please<sp/>follow<sp/>the<sp/>[installation<sp/>procedure](#installation--usage)<sp/>and<sp/>then<sp/>run<sp/>the<sp/>following:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>__future__<sp/>import<sp/>print_function</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">import<sp/>time</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>translator_client</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>translator_client.rest<sp/>import<sp/>ApiException</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>pprint<sp/>import<sp/>pprint</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Defining<sp/>the<sp/>host<sp/>is<sp/>optional<sp/>and<sp/>defaults<sp/>to<sp/>http://localhost:8084</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>See<sp/>configuration.py<sp/>for<sp/>a<sp/>list<sp/>of<sp/>all<sp/>supported<sp/>configuration<sp/>parameters.</highlight></codeline>
+<codeline><highlight class="normal">configuration<sp/>=<sp/>translator_client.Configuration(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>host<sp/>=<sp/>&quot;http://localhost:8084&quot;</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Enter<sp/>a<sp/>context<sp/>with<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>client</highlight></codeline>
+<codeline><highlight class="normal">with<sp/>translator_client.ApiClient(configuration)<sp/>as<sp/>api_client:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Create<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>class</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>api_instance<sp/>=<sp/>translator_client.DefaultApi(api_client)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>pgt_id<sp/>=<sp/>&apos;pgt_id_example&apos;<sp/>#<sp/>str<sp/>|<sp/><sp/>(optional)</highlight></codeline>
+<codeline><highlight class="normal">dlg_mgr_host<sp/>=<sp/>&apos;dlg_mgr_host_example&apos;<sp/>#<sp/>str<sp/>|<sp/><sp/>(optional)</highlight></codeline>
+<codeline><highlight class="normal">dlg_mgr_port<sp/>=<sp/>56<sp/>#<sp/>int<sp/>|<sp/><sp/>(optional)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>try:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>Your<sp/>GET<sp/>endpoint</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>api_instance.gen_pg(pgt_id=pgt_id,<sp/>dlg_mgr_host=dlg_mgr_host,<sp/>dlg_mgr_port=dlg_mgr_port)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>except<sp/>ApiException<sp/>as<sp/>e:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(&quot;Exception<sp/>when<sp/>calling<sp/>DefaultApi-&gt;gen_pg:<sp/>%s\n&quot;<sp/>%<sp/>e)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Documentation<sp/>for<sp/>API<sp/>Endpoints</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">All<sp/>URIs<sp/>are<sp/>relative<sp/>to<sp/>*http://localhost:8084*</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Class<sp/>|<sp/>Method<sp/>|<sp/>HTTP<sp/>request<sp/>|<sp/>Description</highlight></codeline>
+<codeline><highlight class="normal">------------<sp/>|<sp/>-------------<sp/>|<sp/>-------------<sp/>|<sp/>-------------</highlight></codeline>
+<codeline><highlight class="normal">*DefaultApi*<sp/>|<sp/>[**gen_pg**](docs/DefaultApi.md#gen_pg)<sp/>|<sp/>**GET**<sp/>/gen_pg<sp/>|<sp/>Your<sp/>GET<sp/>endpoint</highlight></codeline>
+<codeline><highlight class="normal">*DefaultApi*<sp/>|<sp/>[**gen_pgt**](docs/DefaultApi.md#gen_pgt)<sp/>|<sp/>**POST**<sp/>/gen_pgt<sp/>|<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Documentation<sp/>For<sp/>Models</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>[InlineObject](docs/InlineObject.md)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Documentation<sp/>For<sp/>Authorization</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>All<sp/>endpoints<sp/>do<sp/>not<sp/>require<sp/>authorization.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Author</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="OpenAPI/tests/editable_copies/translator_client/README.md"/>
+  </compounddef>
+</doxygen>
