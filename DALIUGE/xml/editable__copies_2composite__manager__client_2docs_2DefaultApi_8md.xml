@@ -1,0 +1,1329 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="editable__copies_2composite__manager__client_2docs_2DefaultApi_8md" kind="file" language="Markdown">
+    <compoundname>DefaultApi.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>composite_manager_client.DefaultApi</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">All<sp/>URIs<sp/>are<sp/>relative<sp/>to<sp/>*http://localhost*</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Method<sp/>|<sp/>HTTP<sp/>request<sp/>|<sp/>Description</highlight></codeline>
+<codeline><highlight class="normal">-------------<sp/>|<sp/>-------------<sp/>|<sp/>-------------</highlight></codeline>
+<codeline><highlight class="normal">[**add_cm_node**](DefaultApi.md#add_cm_node)<sp/>|<sp/>**POST**<sp/>/api/nodes/{node}<sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">[**add_graph_parts**](DefaultApi.md#add_graph_parts)<sp/>|<sp/>**POST**<sp/>/api/sessions/{sessionId}/graph/append<sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">[**cancel_session**](DefaultApi.md#cancel_session)<sp/>|<sp/>**POST**<sp/>/api/sessions/{sessionId}/cancel<sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">[**create_session**](DefaultApi.md#create_session)<sp/>|<sp/>**POST**<sp/>/api/sessions<sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">[**deploy_session**](DefaultApi.md#deploy_session)<sp/>|<sp/>**POST**<sp/>/api/sessions/{sessionId}/deploy<sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">[**destroy_session**](DefaultApi.md#destroy_session)<sp/>|<sp/>**DELETE**<sp/>/api/sessions/{sessionId}<sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">[**get_cm_nodes**](DefaultApi.md#get_cm_nodes)<sp/>|<sp/>**GET**<sp/>/api/nodes<sp/>|<sp/>Your<sp/>GET<sp/>endpoint</highlight></codeline>
+<codeline><highlight class="normal">[**get_cm_status**](DefaultApi.md#get_cm_status)<sp/>|<sp/>**GET**<sp/>/api<sp/>|<sp/>Your<sp/>GET<sp/>endpoint</highlight></codeline>
+<codeline><highlight class="normal">[**get_graph**](DefaultApi.md#get_graph)<sp/>|<sp/>**GET**<sp/>/api/sessions/{sessionId}/graph<sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">[**get_graph_size**](DefaultApi.md#get_graph_size)<sp/>|<sp/>**GET**<sp/>/api/sessions/{sessionId}/graph/size<sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">[**get_graph_status**](DefaultApi.md#get_graph_status)<sp/>|<sp/>**GET**<sp/>/api/sessions/{sessionId}/graph/status<sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">[**get_node_graph**](DefaultApi.md#get_node_graph)<sp/>|<sp/>**GET**<sp/>/api/nodes/{node}/sessions/{sessionId}/graph<sp/>|<sp/>Your<sp/>GET<sp/>endpoint</highlight></codeline>
+<codeline><highlight class="normal">[**get_node_graph_status**](DefaultApi.md#get_node_graph_status)<sp/>|<sp/>**GET**<sp/>/api/nodes/{node}/sessions/{sessionId}/graph/status<sp/>|<sp/>Your<sp/>GET<sp/>endpoint</highlight></codeline>
+<codeline><highlight class="normal">[**get_node_session_information**](DefaultApi.md#get_node_session_information)<sp/>|<sp/>**GET**<sp/>/api/nodes/{node}/sessions/{sessionId}<sp/>|<sp/>Your<sp/>GET<sp/>endpoint</highlight></codeline>
+<codeline><highlight class="normal">[**get_node_session_status**](DefaultApi.md#get_node_session_status)<sp/>|<sp/>**GET**<sp/>/api/nodes/{node}/sessions/{sessionId}/status<sp/>|<sp/>Your<sp/>GET<sp/>endpoint</highlight></codeline>
+<codeline><highlight class="normal">[**get_node_sessions**](DefaultApi.md#get_node_sessions)<sp/>|<sp/>**GET**<sp/>/api/nodes/{node}/sessions<sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">[**get_session_information**](DefaultApi.md#get_session_information)<sp/>|<sp/>**GET**<sp/>/api/sessions/{sessionId}<sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">[**get_session_status**](DefaultApi.md#get_session_status)<sp/>|<sp/>**GET**<sp/>/api/sessions/{sessionId}/status<sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">[**get_sessions**](DefaultApi.md#get_sessions)<sp/>|<sp/>**GET**<sp/>/api/sessions<sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">[**remove_cm_node**](DefaultApi.md#remove_cm_node)<sp/>|<sp/>**DELETE**<sp/>/api/nodes/{node}<sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">[**stop_manager**](DefaultApi.md#stop_manager)<sp/>|<sp/>**POST**<sp/>/api/stop<sp/>|<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>**add_cm_node**</highlight></codeline>
+<codeline><highlight class="normal">&gt;<sp/>add_cm_node(node)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Add<sp/>`node`<sp/>to<sp/>this<sp/>Composite<sp/>Manager&apos;s<sp/>nodes<sp/>list</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Example</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>__future__<sp/>import<sp/>print_function</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>time</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>composite_manager_client</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>composite_manager_client.rest<sp/>import<sp/>ApiException</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>pprint<sp/>import<sp/>pprint</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Defining<sp/>the<sp/>host<sp/>is<sp/>optional<sp/>and<sp/>defaults<sp/>to<sp/>http://localhost</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>See<sp/>configuration.py<sp/>for<sp/>a<sp/>list<sp/>of<sp/>all<sp/>supported<sp/>configuration<sp/>parameters.</highlight></codeline>
+<codeline><highlight class="normal">configuration<sp/>=<sp/>composite_manager_client.Configuration(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>host<sp/>=<sp/>&quot;http://localhost&quot;</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Enter<sp/>a<sp/>context<sp/>with<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>client</highlight></codeline>
+<codeline><highlight class="normal">with<sp/>composite_manager_client.ApiClient()<sp/>as<sp/>api_client:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Create<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>class</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>api_instance<sp/>=<sp/>composite_manager_client.DefaultApi(api_client)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>node<sp/>=<sp/>&apos;node_example&apos;<sp/>#<sp/>str<sp/>|<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>try:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>api_instance.add_cm_node(node)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>except<sp/>ApiException<sp/>as<sp/>e:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(&quot;Exception<sp/>when<sp/>calling<sp/>DefaultApi-&gt;add_cm_node:<sp/>%s\n&quot;<sp/>%<sp/>e)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Parameters</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Name<sp/>|<sp/>Type<sp/>|<sp/>Description<sp/><sp/>|<sp/>Notes</highlight></codeline>
+<codeline><highlight class="normal">-------------<sp/>|<sp/>-------------<sp/>|<sp/>-------------<sp/>|<sp/>-------------</highlight></codeline>
+<codeline><highlight class="normal"><sp/>**node**<sp/>|<sp/>**str**|<sp/><sp/>|<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Return<sp/>type</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">void<sp/>(empty<sp/>response<sp/>body)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Authorization</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">No<sp/>authorization<sp/>required</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>request<sp/>headers</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Content-Type**:<sp/>Not<sp/>defined</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Accept**:<sp/>Not<sp/>defined</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>response<sp/>details</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Status<sp/>code<sp/>|<sp/>Description<sp/>|<sp/>Response<sp/>headers<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|-------------|-------------|------------------|</highlight></codeline>
+<codeline><highlight class="normal">**200**<sp/>|<sp/>OK<sp/>|<sp/><sp/>-<sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[[Back<sp/>to<sp/>top]](#)<sp/>[[Back<sp/>to<sp/>API<sp/>list]](../README.md#documentation-for-api-endpoints)<sp/>[[Back<sp/>to<sp/>Model<sp/>list]](../README.md#documentation-for-models)<sp/>[[Back<sp/>to<sp/>README]](../README.md)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>**add_graph_parts**</highlight></codeline>
+<codeline><highlight class="normal">&gt;<sp/>add_graph_parts(session_id,<sp/>body=body)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Appends<sp/>a<sp/>physical<sp/>graph<sp/>to<sp/>session<sp/>`sessionId`</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Example</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>__future__<sp/>import<sp/>print_function</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>time</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>composite_manager_client</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>composite_manager_client.rest<sp/>import<sp/>ApiException</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>pprint<sp/>import<sp/>pprint</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Defining<sp/>the<sp/>host<sp/>is<sp/>optional<sp/>and<sp/>defaults<sp/>to<sp/>http://localhost</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>See<sp/>configuration.py<sp/>for<sp/>a<sp/>list<sp/>of<sp/>all<sp/>supported<sp/>configuration<sp/>parameters.</highlight></codeline>
+<codeline><highlight class="normal">configuration<sp/>=<sp/>composite_manager_client.Configuration(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>host<sp/>=<sp/>&quot;http://localhost&quot;</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Enter<sp/>a<sp/>context<sp/>with<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>client</highlight></codeline>
+<codeline><highlight class="normal">with<sp/>composite_manager_client.ApiClient()<sp/>as<sp/>api_client:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Create<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>class</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>api_instance<sp/>=<sp/>composite_manager_client.DefaultApi(api_client)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>session_id<sp/>=<sp/>&apos;session_id_example&apos;<sp/>#<sp/>str<sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">body<sp/>=<sp/>None<sp/>#<sp/>object<sp/>|<sp/>The<sp/>graph<sp/>content<sp/>to<sp/>append<sp/>(optional)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>try:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>api_instance.add_graph_parts(session_id,<sp/>body=body)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>except<sp/>ApiException<sp/>as<sp/>e:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(&quot;Exception<sp/>when<sp/>calling<sp/>DefaultApi-&gt;add_graph_parts:<sp/>%s\n&quot;<sp/>%<sp/>e)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Parameters</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Name<sp/>|<sp/>Type<sp/>|<sp/>Description<sp/><sp/>|<sp/>Notes</highlight></codeline>
+<codeline><highlight class="normal">-------------<sp/>|<sp/>-------------<sp/>|<sp/>-------------<sp/>|<sp/>-------------</highlight></codeline>
+<codeline><highlight class="normal"><sp/>**session_id**<sp/>|<sp/>**str**|<sp/><sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>**body**<sp/>|<sp/>**object**|<sp/>The<sp/>graph<sp/>content<sp/>to<sp/>append<sp/>|<sp/>[optional]<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Return<sp/>type</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">void<sp/>(empty<sp/>response<sp/>body)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Authorization</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">No<sp/>authorization<sp/>required</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>request<sp/>headers</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Content-Type**:<sp/>application/json</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Accept**:<sp/>application/json</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>response<sp/>details</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Status<sp/>code<sp/>|<sp/>Description<sp/>|<sp/>Response<sp/>headers<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|-------------|-------------|------------------|</highlight></codeline>
+<codeline><highlight class="normal">**200**<sp/>|<sp/>OK<sp/>|<sp/><sp/>-<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">**0**<sp/>|<sp/>unexpected<sp/>error<sp/>|<sp/><sp/>-<sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[[Back<sp/>to<sp/>top]](#)<sp/>[[Back<sp/>to<sp/>API<sp/>list]](../README.md#documentation-for-api-endpoints)<sp/>[[Back<sp/>to<sp/>Model<sp/>list]](../README.md#documentation-for-models)<sp/>[[Back<sp/>to<sp/>README]](../README.md)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>**cancel_session**</highlight></codeline>
+<codeline><highlight class="normal">&gt;<sp/>cancel_session(session_id)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Cancels<sp/>session<sp/>`sessionId`</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Example</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>__future__<sp/>import<sp/>print_function</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>time</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>composite_manager_client</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>composite_manager_client.rest<sp/>import<sp/>ApiException</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>pprint<sp/>import<sp/>pprint</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Defining<sp/>the<sp/>host<sp/>is<sp/>optional<sp/>and<sp/>defaults<sp/>to<sp/>http://localhost</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>See<sp/>configuration.py<sp/>for<sp/>a<sp/>list<sp/>of<sp/>all<sp/>supported<sp/>configuration<sp/>parameters.</highlight></codeline>
+<codeline><highlight class="normal">configuration<sp/>=<sp/>composite_manager_client.Configuration(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>host<sp/>=<sp/>&quot;http://localhost&quot;</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Enter<sp/>a<sp/>context<sp/>with<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>client</highlight></codeline>
+<codeline><highlight class="normal">with<sp/>composite_manager_client.ApiClient()<sp/>as<sp/>api_client:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Create<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>class</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>api_instance<sp/>=<sp/>composite_manager_client.DefaultApi(api_client)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>session_id<sp/>=<sp/>&apos;session_id_example&apos;<sp/>#<sp/>str<sp/>|<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>try:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>api_instance.cancel_session(session_id)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>except<sp/>ApiException<sp/>as<sp/>e:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(&quot;Exception<sp/>when<sp/>calling<sp/>DefaultApi-&gt;cancel_session:<sp/>%s\n&quot;<sp/>%<sp/>e)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Parameters</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Name<sp/>|<sp/>Type<sp/>|<sp/>Description<sp/><sp/>|<sp/>Notes</highlight></codeline>
+<codeline><highlight class="normal">-------------<sp/>|<sp/>-------------<sp/>|<sp/>-------------<sp/>|<sp/>-------------</highlight></codeline>
+<codeline><highlight class="normal"><sp/>**session_id**<sp/>|<sp/>**str**|<sp/><sp/>|<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Return<sp/>type</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">void<sp/>(empty<sp/>response<sp/>body)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Authorization</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">No<sp/>authorization<sp/>required</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>request<sp/>headers</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Content-Type**:<sp/>Not<sp/>defined</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Accept**:<sp/>application/json</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>response<sp/>details</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Status<sp/>code<sp/>|<sp/>Description<sp/>|<sp/>Response<sp/>headers<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|-------------|-------------|------------------|</highlight></codeline>
+<codeline><highlight class="normal">**200**<sp/>|<sp/>OK<sp/>|<sp/><sp/>-<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">**0**<sp/>|<sp/>unexpected<sp/>error<sp/>|<sp/><sp/>-<sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[[Back<sp/>to<sp/>top]](#)<sp/>[[Back<sp/>to<sp/>API<sp/>list]](../README.md#documentation-for-api-endpoints)<sp/>[[Back<sp/>to<sp/>Model<sp/>list]](../README.md#documentation-for-models)<sp/>[[Back<sp/>to<sp/>README]](../README.md)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>**create_session**</highlight></codeline>
+<codeline><highlight class="normal">&gt;<sp/>create_session(inline_object=inline_object)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Create<sp/>a<sp/>new<sp/>session</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Example</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>__future__<sp/>import<sp/>print_function</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>time</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>composite_manager_client</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>composite_manager_client.rest<sp/>import<sp/>ApiException</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>pprint<sp/>import<sp/>pprint</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Defining<sp/>the<sp/>host<sp/>is<sp/>optional<sp/>and<sp/>defaults<sp/>to<sp/>http://localhost</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>See<sp/>configuration.py<sp/>for<sp/>a<sp/>list<sp/>of<sp/>all<sp/>supported<sp/>configuration<sp/>parameters.</highlight></codeline>
+<codeline><highlight class="normal">configuration<sp/>=<sp/>composite_manager_client.Configuration(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>host<sp/>=<sp/>&quot;http://localhost&quot;</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Enter<sp/>a<sp/>context<sp/>with<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>client</highlight></codeline>
+<codeline><highlight class="normal">with<sp/>composite_manager_client.ApiClient()<sp/>as<sp/>api_client:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Create<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>class</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>api_instance<sp/>=<sp/>composite_manager_client.DefaultApi(api_client)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>inline_object<sp/>=<sp/>composite_manager_client.InlineObject()<sp/>#<sp/>InlineObject<sp/>|<sp/><sp/>(optional)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>try:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>api_instance.create_session(inline_object=inline_object)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>except<sp/>ApiException<sp/>as<sp/>e:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(&quot;Exception<sp/>when<sp/>calling<sp/>DefaultApi-&gt;create_session:<sp/>%s\n&quot;<sp/>%<sp/>e)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Parameters</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Name<sp/>|<sp/>Type<sp/>|<sp/>Description<sp/><sp/>|<sp/>Notes</highlight></codeline>
+<codeline><highlight class="normal">-------------<sp/>|<sp/>-------------<sp/>|<sp/>-------------<sp/>|<sp/>-------------</highlight></codeline>
+<codeline><highlight class="normal"><sp/>**inline_object**<sp/>|<sp/>[**InlineObject**](InlineObject.md)|<sp/><sp/>|<sp/>[optional]<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Return<sp/>type</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">void<sp/>(empty<sp/>response<sp/>body)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Authorization</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">No<sp/>authorization<sp/>required</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>request<sp/>headers</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Content-Type**:<sp/>application/json</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Accept**:<sp/>application/json</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>response<sp/>details</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Status<sp/>code<sp/>|<sp/>Description<sp/>|<sp/>Response<sp/>headers<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|-------------|-------------|------------------|</highlight></codeline>
+<codeline><highlight class="normal">**200**<sp/>|<sp/>Expected<sp/>response<sp/>to<sp/>a<sp/>valid<sp/>request<sp/>|<sp/><sp/>-<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">**0**<sp/>|<sp/>unexpected<sp/>error<sp/>|<sp/><sp/>-<sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[[Back<sp/>to<sp/>top]](#)<sp/>[[Back<sp/>to<sp/>API<sp/>list]](../README.md#documentation-for-api-endpoints)<sp/>[[Back<sp/>to<sp/>Model<sp/>list]](../README.md#documentation-for-models)<sp/>[[Back<sp/>to<sp/>README]](../README.md)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>**deploy_session**</highlight></codeline>
+<codeline><highlight class="normal">&gt;<sp/>deploy_session(session_id,<sp/>completed=completed)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Deploys<sp/>session<sp/>`sessionId`</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Example</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>__future__<sp/>import<sp/>print_function</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>time</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>composite_manager_client</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>composite_manager_client.rest<sp/>import<sp/>ApiException</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>pprint<sp/>import<sp/>pprint</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Defining<sp/>the<sp/>host<sp/>is<sp/>optional<sp/>and<sp/>defaults<sp/>to<sp/>http://localhost</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>See<sp/>configuration.py<sp/>for<sp/>a<sp/>list<sp/>of<sp/>all<sp/>supported<sp/>configuration<sp/>parameters.</highlight></codeline>
+<codeline><highlight class="normal">configuration<sp/>=<sp/>composite_manager_client.Configuration(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>host<sp/>=<sp/>&quot;http://localhost&quot;</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Enter<sp/>a<sp/>context<sp/>with<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>client</highlight></codeline>
+<codeline><highlight class="normal">with<sp/>composite_manager_client.ApiClient()<sp/>as<sp/>api_client:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Create<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>class</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>api_instance<sp/>=<sp/>composite_manager_client.DefaultApi(api_client)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>session_id<sp/>=<sp/>&apos;session_id_example&apos;<sp/>#<sp/>str<sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">completed<sp/>=<sp/>&apos;completed_example&apos;<sp/>#<sp/>str<sp/>|<sp/><sp/>(optional)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>try:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>api_instance.deploy_session(session_id,<sp/>completed=completed)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>except<sp/>ApiException<sp/>as<sp/>e:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(&quot;Exception<sp/>when<sp/>calling<sp/>DefaultApi-&gt;deploy_session:<sp/>%s\n&quot;<sp/>%<sp/>e)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Parameters</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Name<sp/>|<sp/>Type<sp/>|<sp/>Description<sp/><sp/>|<sp/>Notes</highlight></codeline>
+<codeline><highlight class="normal">-------------<sp/>|<sp/>-------------<sp/>|<sp/>-------------<sp/>|<sp/>-------------</highlight></codeline>
+<codeline><highlight class="normal"><sp/>**session_id**<sp/>|<sp/>**str**|<sp/><sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>**completed**<sp/>|<sp/>**str**|<sp/><sp/>|<sp/>[optional]<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Return<sp/>type</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">void<sp/>(empty<sp/>response<sp/>body)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Authorization</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">No<sp/>authorization<sp/>required</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>request<sp/>headers</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Content-Type**:<sp/>Not<sp/>defined</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Accept**:<sp/>application/json</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>response<sp/>details</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Status<sp/>code<sp/>|<sp/>Description<sp/>|<sp/>Response<sp/>headers<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|-------------|-------------|------------------|</highlight></codeline>
+<codeline><highlight class="normal">**200**<sp/>|<sp/>OK<sp/>|<sp/><sp/>-<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">**0**<sp/>|<sp/>unexpected<sp/>error<sp/>|<sp/><sp/>-<sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[[Back<sp/>to<sp/>top]](#)<sp/>[[Back<sp/>to<sp/>API<sp/>list]](../README.md#documentation-for-api-endpoints)<sp/>[[Back<sp/>to<sp/>Model<sp/>list]](../README.md#documentation-for-models)<sp/>[[Back<sp/>to<sp/>README]](../README.md)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>**destroy_session**</highlight></codeline>
+<codeline><highlight class="normal">&gt;<sp/>destroy_session(session_id)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Removes<sp/>session<sp/>`sessionId`</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Example</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>__future__<sp/>import<sp/>print_function</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>time</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>composite_manager_client</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>composite_manager_client.rest<sp/>import<sp/>ApiException</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>pprint<sp/>import<sp/>pprint</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Defining<sp/>the<sp/>host<sp/>is<sp/>optional<sp/>and<sp/>defaults<sp/>to<sp/>http://localhost</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>See<sp/>configuration.py<sp/>for<sp/>a<sp/>list<sp/>of<sp/>all<sp/>supported<sp/>configuration<sp/>parameters.</highlight></codeline>
+<codeline><highlight class="normal">configuration<sp/>=<sp/>composite_manager_client.Configuration(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>host<sp/>=<sp/>&quot;http://localhost&quot;</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Enter<sp/>a<sp/>context<sp/>with<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>client</highlight></codeline>
+<codeline><highlight class="normal">with<sp/>composite_manager_client.ApiClient()<sp/>as<sp/>api_client:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Create<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>class</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>api_instance<sp/>=<sp/>composite_manager_client.DefaultApi(api_client)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>session_id<sp/>=<sp/>&apos;session_id_example&apos;<sp/>#<sp/>str<sp/>|<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>try:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>api_instance.destroy_session(session_id)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>except<sp/>ApiException<sp/>as<sp/>e:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(&quot;Exception<sp/>when<sp/>calling<sp/>DefaultApi-&gt;destroy_session:<sp/>%s\n&quot;<sp/>%<sp/>e)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Parameters</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Name<sp/>|<sp/>Type<sp/>|<sp/>Description<sp/><sp/>|<sp/>Notes</highlight></codeline>
+<codeline><highlight class="normal">-------------<sp/>|<sp/>-------------<sp/>|<sp/>-------------<sp/>|<sp/>-------------</highlight></codeline>
+<codeline><highlight class="normal"><sp/>**session_id**<sp/>|<sp/>**str**|<sp/><sp/>|<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Return<sp/>type</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">void<sp/>(empty<sp/>response<sp/>body)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Authorization</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">No<sp/>authorization<sp/>required</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>request<sp/>headers</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Content-Type**:<sp/>Not<sp/>defined</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Accept**:<sp/>application/json</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>response<sp/>details</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Status<sp/>code<sp/>|<sp/>Description<sp/>|<sp/>Response<sp/>headers<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|-------------|-------------|------------------|</highlight></codeline>
+<codeline><highlight class="normal">**200**<sp/>|<sp/>Expected<sp/>response<sp/>to<sp/>a<sp/>valid<sp/>request<sp/>|<sp/><sp/>-<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">**0**<sp/>|<sp/>unexpected<sp/>error<sp/>|<sp/><sp/>-<sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[[Back<sp/>to<sp/>top]](#)<sp/>[[Back<sp/>to<sp/>API<sp/>list]](../README.md#documentation-for-api-endpoints)<sp/>[[Back<sp/>to<sp/>Model<sp/>list]](../README.md#documentation-for-models)<sp/>[[Back<sp/>to<sp/>README]](../README.md)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>**get_cm_nodes**</highlight></codeline>
+<codeline><highlight class="normal">&gt;<sp/>list[str]<sp/>get_cm_nodes()</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Your<sp/>GET<sp/>endpoint</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Returns<sp/>the<sp/>list<sp/>of<sp/>nodes<sp/>covered<sp/>by<sp/>this<sp/>Composite<sp/>Manager</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Example</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>__future__<sp/>import<sp/>print_function</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>time</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>composite_manager_client</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>composite_manager_client.rest<sp/>import<sp/>ApiException</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>pprint<sp/>import<sp/>pprint</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Defining<sp/>the<sp/>host<sp/>is<sp/>optional<sp/>and<sp/>defaults<sp/>to<sp/>http://localhost</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>See<sp/>configuration.py<sp/>for<sp/>a<sp/>list<sp/>of<sp/>all<sp/>supported<sp/>configuration<sp/>parameters.</highlight></codeline>
+<codeline><highlight class="normal">configuration<sp/>=<sp/>composite_manager_client.Configuration(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>host<sp/>=<sp/>&quot;http://localhost&quot;</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Enter<sp/>a<sp/>context<sp/>with<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>client</highlight></codeline>
+<codeline><highlight class="normal">with<sp/>composite_manager_client.ApiClient()<sp/>as<sp/>api_client:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Create<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>class</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>api_instance<sp/>=<sp/>composite_manager_client.DefaultApi(api_client)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>try:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>Your<sp/>GET<sp/>endpoint</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>api_response<sp/>=<sp/>api_instance.get_cm_nodes()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pprint(api_response)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>except<sp/>ApiException<sp/>as<sp/>e:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(&quot;Exception<sp/>when<sp/>calling<sp/>DefaultApi-&gt;get_cm_nodes:<sp/>%s\n&quot;<sp/>%<sp/>e)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Parameters</highlight></codeline>
+<codeline><highlight class="normal">This<sp/>endpoint<sp/>does<sp/>not<sp/>need<sp/>any<sp/>parameter.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Return<sp/>type</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**list[str]**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Authorization</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">No<sp/>authorization<sp/>required</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>request<sp/>headers</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Content-Type**:<sp/>Not<sp/>defined</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Accept**:<sp/>application/json</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>response<sp/>details</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Status<sp/>code<sp/>|<sp/>Description<sp/>|<sp/>Response<sp/>headers<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|-------------|-------------|------------------|</highlight></codeline>
+<codeline><highlight class="normal">**200**<sp/>|<sp/>The<sp/>list<sp/>of<sp/>nodes<sp/>covered<sp/>by<sp/>this<sp/>Composite<sp/>Manager<sp/>|<sp/><sp/>-<sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[[Back<sp/>to<sp/>top]](#)<sp/>[[Back<sp/>to<sp/>API<sp/>list]](../README.md#documentation-for-api-endpoints)<sp/>[[Back<sp/>to<sp/>Model<sp/>list]](../README.md#documentation-for-models)<sp/>[[Back<sp/>to<sp/>README]](../README.md)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>**get_cm_status**</highlight></codeline>
+<codeline><highlight class="normal">&gt;<sp/>CompositeManagerStatus<sp/>get_cm_status()</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Your<sp/>GET<sp/>endpoint</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Return<sp/>the<sp/>status<sp/>of<sp/>the<sp/>Composite<sp/>Manager</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Example</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>__future__<sp/>import<sp/>print_function</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>time</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>composite_manager_client</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>composite_manager_client.rest<sp/>import<sp/>ApiException</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>pprint<sp/>import<sp/>pprint</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Defining<sp/>the<sp/>host<sp/>is<sp/>optional<sp/>and<sp/>defaults<sp/>to<sp/>http://localhost</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>See<sp/>configuration.py<sp/>for<sp/>a<sp/>list<sp/>of<sp/>all<sp/>supported<sp/>configuration<sp/>parameters.</highlight></codeline>
+<codeline><highlight class="normal">configuration<sp/>=<sp/>composite_manager_client.Configuration(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>host<sp/>=<sp/>&quot;http://localhost&quot;</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Enter<sp/>a<sp/>context<sp/>with<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>client</highlight></codeline>
+<codeline><highlight class="normal">with<sp/>composite_manager_client.ApiClient()<sp/>as<sp/>api_client:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Create<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>class</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>api_instance<sp/>=<sp/>composite_manager_client.DefaultApi(api_client)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>try:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>Your<sp/>GET<sp/>endpoint</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>api_response<sp/>=<sp/>api_instance.get_cm_status()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pprint(api_response)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>except<sp/>ApiException<sp/>as<sp/>e:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(&quot;Exception<sp/>when<sp/>calling<sp/>DefaultApi-&gt;get_cm_status:<sp/>%s\n&quot;<sp/>%<sp/>e)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Parameters</highlight></codeline>
+<codeline><highlight class="normal">This<sp/>endpoint<sp/>does<sp/>not<sp/>need<sp/>any<sp/>parameter.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Return<sp/>type</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[**CompositeManagerStatus**](CompositeManagerStatus.md)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Authorization</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">No<sp/>authorization<sp/>required</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>request<sp/>headers</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Content-Type**:<sp/>Not<sp/>defined</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Accept**:<sp/>application/json</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>response<sp/>details</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Status<sp/>code<sp/>|<sp/>Description<sp/>|<sp/>Response<sp/>headers<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|-------------|-------------|------------------|</highlight></codeline>
+<codeline><highlight class="normal">**200**<sp/>|<sp/>The<sp/>status<sp/>of<sp/>the<sp/>Composite<sp/>Manager<sp/>|<sp/><sp/>-<sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[[Back<sp/>to<sp/>top]](#)<sp/>[[Back<sp/>to<sp/>API<sp/>list]](../README.md#documentation-for-api-endpoints)<sp/>[[Back<sp/>to<sp/>Model<sp/>list]](../README.md#documentation-for-models)<sp/>[[Back<sp/>to<sp/>README]](../README.md)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>**get_graph**</highlight></codeline>
+<codeline><highlight class="normal">&gt;<sp/>object<sp/>get_graph(session_id)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Returns<sp/>the<sp/>physical<sp/>graph<sp/>of<sp/>session<sp/>`sessionId`</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Example</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>__future__<sp/>import<sp/>print_function</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>time</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>composite_manager_client</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>composite_manager_client.rest<sp/>import<sp/>ApiException</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>pprint<sp/>import<sp/>pprint</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Defining<sp/>the<sp/>host<sp/>is<sp/>optional<sp/>and<sp/>defaults<sp/>to<sp/>http://localhost</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>See<sp/>configuration.py<sp/>for<sp/>a<sp/>list<sp/>of<sp/>all<sp/>supported<sp/>configuration<sp/>parameters.</highlight></codeline>
+<codeline><highlight class="normal">configuration<sp/>=<sp/>composite_manager_client.Configuration(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>host<sp/>=<sp/>&quot;http://localhost&quot;</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Enter<sp/>a<sp/>context<sp/>with<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>client</highlight></codeline>
+<codeline><highlight class="normal">with<sp/>composite_manager_client.ApiClient()<sp/>as<sp/>api_client:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Create<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>class</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>api_instance<sp/>=<sp/>composite_manager_client.DefaultApi(api_client)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>session_id<sp/>=<sp/>&apos;session_id_example&apos;<sp/>#<sp/>str<sp/>|<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>try:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>api_response<sp/>=<sp/>api_instance.get_graph(session_id)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pprint(api_response)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>except<sp/>ApiException<sp/>as<sp/>e:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(&quot;Exception<sp/>when<sp/>calling<sp/>DefaultApi-&gt;get_graph:<sp/>%s\n&quot;<sp/>%<sp/>e)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Parameters</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Name<sp/>|<sp/>Type<sp/>|<sp/>Description<sp/><sp/>|<sp/>Notes</highlight></codeline>
+<codeline><highlight class="normal">-------------<sp/>|<sp/>-------------<sp/>|<sp/>-------------<sp/>|<sp/>-------------</highlight></codeline>
+<codeline><highlight class="normal"><sp/>**session_id**<sp/>|<sp/>**str**|<sp/><sp/>|<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Return<sp/>type</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**object**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Authorization</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">No<sp/>authorization<sp/>required</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>request<sp/>headers</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Content-Type**:<sp/>Not<sp/>defined</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Accept**:<sp/>application/json</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>response<sp/>details</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Status<sp/>code<sp/>|<sp/>Description<sp/>|<sp/>Response<sp/>headers<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|-------------|-------------|------------------|</highlight></codeline>
+<codeline><highlight class="normal">**200**<sp/>|<sp/>The<sp/>physical<sp/>graph<sp/>of<sp/>session<sp/>&amp;#x60;sessionId&amp;#x60;<sp/>|<sp/><sp/>-<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">**0**<sp/>|<sp/>unexpected<sp/>error<sp/>|<sp/><sp/>-<sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[[Back<sp/>to<sp/>top]](#)<sp/>[[Back<sp/>to<sp/>API<sp/>list]](../README.md#documentation-for-api-endpoints)<sp/>[[Back<sp/>to<sp/>Model<sp/>list]](../README.md#documentation-for-models)<sp/>[[Back<sp/>to<sp/>README]](../README.md)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>**get_graph_size**</highlight></codeline>
+<codeline><highlight class="normal">&gt;<sp/>int<sp/>get_graph_size(session_id)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Returns<sp/>the<sp/>size<sp/>of<sp/>the<sp/>graph<sp/>of<sp/>session<sp/>`sessionId`</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Example</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>__future__<sp/>import<sp/>print_function</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>time</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>composite_manager_client</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>composite_manager_client.rest<sp/>import<sp/>ApiException</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>pprint<sp/>import<sp/>pprint</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Defining<sp/>the<sp/>host<sp/>is<sp/>optional<sp/>and<sp/>defaults<sp/>to<sp/>http://localhost</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>See<sp/>configuration.py<sp/>for<sp/>a<sp/>list<sp/>of<sp/>all<sp/>supported<sp/>configuration<sp/>parameters.</highlight></codeline>
+<codeline><highlight class="normal">configuration<sp/>=<sp/>composite_manager_client.Configuration(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>host<sp/>=<sp/>&quot;http://localhost&quot;</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Enter<sp/>a<sp/>context<sp/>with<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>client</highlight></codeline>
+<codeline><highlight class="normal">with<sp/>composite_manager_client.ApiClient()<sp/>as<sp/>api_client:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Create<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>class</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>api_instance<sp/>=<sp/>composite_manager_client.DefaultApi(api_client)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>session_id<sp/>=<sp/>&apos;session_id_example&apos;<sp/>#<sp/>str<sp/>|<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>try:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>api_response<sp/>=<sp/>api_instance.get_graph_size(session_id)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pprint(api_response)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>except<sp/>ApiException<sp/>as<sp/>e:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(&quot;Exception<sp/>when<sp/>calling<sp/>DefaultApi-&gt;get_graph_size:<sp/>%s\n&quot;<sp/>%<sp/>e)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Parameters</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Name<sp/>|<sp/>Type<sp/>|<sp/>Description<sp/><sp/>|<sp/>Notes</highlight></codeline>
+<codeline><highlight class="normal">-------------<sp/>|<sp/>-------------<sp/>|<sp/>-------------<sp/>|<sp/>-------------</highlight></codeline>
+<codeline><highlight class="normal"><sp/>**session_id**<sp/>|<sp/>**str**|<sp/><sp/>|<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Return<sp/>type</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**int**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Authorization</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">No<sp/>authorization<sp/>required</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>request<sp/>headers</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Content-Type**:<sp/>Not<sp/>defined</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Accept**:<sp/>application/json</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>response<sp/>details</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Status<sp/>code<sp/>|<sp/>Description<sp/>|<sp/>Response<sp/>headers<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|-------------|-------------|------------------|</highlight></codeline>
+<codeline><highlight class="normal">**200**<sp/>|<sp/>The<sp/>size<sp/>of<sp/>the<sp/>graph<sp/>of<sp/>session<sp/>&amp;#x60;sessionId&amp;#x60;<sp/>|<sp/><sp/>-<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">**0**<sp/>|<sp/>unexpected<sp/>error<sp/>|<sp/><sp/>-<sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[[Back<sp/>to<sp/>top]](#)<sp/>[[Back<sp/>to<sp/>API<sp/>list]](../README.md#documentation-for-api-endpoints)<sp/>[[Back<sp/>to<sp/>Model<sp/>list]](../README.md#documentation-for-models)<sp/>[[Back<sp/>to<sp/>README]](../README.md)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>**get_graph_status**</highlight></codeline>
+<codeline><highlight class="normal">&gt;<sp/>object<sp/>get_graph_status(session_id)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Returns<sp/>the<sp/>status<sp/>graph<sp/>of<sp/>session<sp/>`sessionId`</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Example</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>__future__<sp/>import<sp/>print_function</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>time</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>composite_manager_client</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>composite_manager_client.rest<sp/>import<sp/>ApiException</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>pprint<sp/>import<sp/>pprint</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Defining<sp/>the<sp/>host<sp/>is<sp/>optional<sp/>and<sp/>defaults<sp/>to<sp/>http://localhost</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>See<sp/>configuration.py<sp/>for<sp/>a<sp/>list<sp/>of<sp/>all<sp/>supported<sp/>configuration<sp/>parameters.</highlight></codeline>
+<codeline><highlight class="normal">configuration<sp/>=<sp/>composite_manager_client.Configuration(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>host<sp/>=<sp/>&quot;http://localhost&quot;</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Enter<sp/>a<sp/>context<sp/>with<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>client</highlight></codeline>
+<codeline><highlight class="normal">with<sp/>composite_manager_client.ApiClient()<sp/>as<sp/>api_client:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Create<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>class</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>api_instance<sp/>=<sp/>composite_manager_client.DefaultApi(api_client)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>session_id<sp/>=<sp/>&apos;session_id_example&apos;<sp/>#<sp/>str<sp/>|<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>try:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>api_response<sp/>=<sp/>api_instance.get_graph_status(session_id)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pprint(api_response)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>except<sp/>ApiException<sp/>as<sp/>e:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(&quot;Exception<sp/>when<sp/>calling<sp/>DefaultApi-&gt;get_graph_status:<sp/>%s\n&quot;<sp/>%<sp/>e)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Parameters</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Name<sp/>|<sp/>Type<sp/>|<sp/>Description<sp/><sp/>|<sp/>Notes</highlight></codeline>
+<codeline><highlight class="normal">-------------<sp/>|<sp/>-------------<sp/>|<sp/>-------------<sp/>|<sp/>-------------</highlight></codeline>
+<codeline><highlight class="normal"><sp/>**session_id**<sp/>|<sp/>**str**|<sp/><sp/>|<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Return<sp/>type</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**object**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Authorization</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">No<sp/>authorization<sp/>required</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>request<sp/>headers</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Content-Type**:<sp/>Not<sp/>defined</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Accept**:<sp/>application/json</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>response<sp/>details</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Status<sp/>code<sp/>|<sp/>Description<sp/>|<sp/>Response<sp/>headers<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|-------------|-------------|------------------|</highlight></codeline>
+<codeline><highlight class="normal">**200**<sp/>|<sp/>Returns<sp/>status<sp/>graph<sp/>of<sp/>session<sp/>&amp;#x60;sessionId&amp;#x60;<sp/>|<sp/><sp/>-<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">**0**<sp/>|<sp/>unexpected<sp/>error<sp/>|<sp/><sp/>-<sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[[Back<sp/>to<sp/>top]](#)<sp/>[[Back<sp/>to<sp/>API<sp/>list]](../README.md#documentation-for-api-endpoints)<sp/>[[Back<sp/>to<sp/>Model<sp/>list]](../README.md#documentation-for-models)<sp/>[[Back<sp/>to<sp/>README]](../README.md)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>**get_node_graph**</highlight></codeline>
+<codeline><highlight class="normal">&gt;<sp/>object<sp/>get_node_graph(node,<sp/>session_id)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Your<sp/>GET<sp/>endpoint</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Returns<sp/>the<sp/>physical<sp/>graph<sp/>of<sp/>session<sp/>`sessionId`<sp/>in<sp/>`node`</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Example</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>__future__<sp/>import<sp/>print_function</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>time</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>composite_manager_client</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>composite_manager_client.rest<sp/>import<sp/>ApiException</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>pprint<sp/>import<sp/>pprint</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Defining<sp/>the<sp/>host<sp/>is<sp/>optional<sp/>and<sp/>defaults<sp/>to<sp/>http://localhost</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>See<sp/>configuration.py<sp/>for<sp/>a<sp/>list<sp/>of<sp/>all<sp/>supported<sp/>configuration<sp/>parameters.</highlight></codeline>
+<codeline><highlight class="normal">configuration<sp/>=<sp/>composite_manager_client.Configuration(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>host<sp/>=<sp/>&quot;http://localhost&quot;</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Enter<sp/>a<sp/>context<sp/>with<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>client</highlight></codeline>
+<codeline><highlight class="normal">with<sp/>composite_manager_client.ApiClient()<sp/>as<sp/>api_client:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Create<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>class</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>api_instance<sp/>=<sp/>composite_manager_client.DefaultApi(api_client)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>node<sp/>=<sp/>&apos;node_example&apos;<sp/>#<sp/>str<sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">session_id<sp/>=<sp/>&apos;session_id_example&apos;<sp/>#<sp/>str<sp/>|<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>try:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>Your<sp/>GET<sp/>endpoint</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>api_response<sp/>=<sp/>api_instance.get_node_graph(node,<sp/>session_id)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pprint(api_response)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>except<sp/>ApiException<sp/>as<sp/>e:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(&quot;Exception<sp/>when<sp/>calling<sp/>DefaultApi-&gt;get_node_graph:<sp/>%s\n&quot;<sp/>%<sp/>e)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Parameters</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Name<sp/>|<sp/>Type<sp/>|<sp/>Description<sp/><sp/>|<sp/>Notes</highlight></codeline>
+<codeline><highlight class="normal">-------------<sp/>|<sp/>-------------<sp/>|<sp/>-------------<sp/>|<sp/>-------------</highlight></codeline>
+<codeline><highlight class="normal"><sp/>**node**<sp/>|<sp/>**str**|<sp/><sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>**session_id**<sp/>|<sp/>**str**|<sp/><sp/>|<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Return<sp/>type</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**object**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Authorization</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">No<sp/>authorization<sp/>required</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>request<sp/>headers</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Content-Type**:<sp/>Not<sp/>defined</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Accept**:<sp/>application/json</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>response<sp/>details</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Status<sp/>code<sp/>|<sp/>Description<sp/>|<sp/>Response<sp/>headers<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|-------------|-------------|------------------|</highlight></codeline>
+<codeline><highlight class="normal">**200**<sp/>|<sp/>The<sp/>physical<sp/>graph<sp/>of<sp/>session<sp/>&amp;#x60;sessionId&amp;#x60;<sp/>in<sp/>&amp;#x60;node&amp;#x60;<sp/>|<sp/><sp/>-<sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[[Back<sp/>to<sp/>top]](#)<sp/>[[Back<sp/>to<sp/>API<sp/>list]](../README.md#documentation-for-api-endpoints)<sp/>[[Back<sp/>to<sp/>Model<sp/>list]](../README.md#documentation-for-models)<sp/>[[Back<sp/>to<sp/>README]](../README.md)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>**get_node_graph_status**</highlight></codeline>
+<codeline><highlight class="normal">&gt;<sp/>object<sp/>get_node_graph_status(node,<sp/>session_id)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Your<sp/>GET<sp/>endpoint</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Returns<sp/>the<sp/>status<sp/>graph<sp/>of<sp/>session<sp/>`sessionId`<sp/>in<sp/>`node`</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Example</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>__future__<sp/>import<sp/>print_function</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>time</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>composite_manager_client</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>composite_manager_client.rest<sp/>import<sp/>ApiException</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>pprint<sp/>import<sp/>pprint</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Defining<sp/>the<sp/>host<sp/>is<sp/>optional<sp/>and<sp/>defaults<sp/>to<sp/>http://localhost</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>See<sp/>configuration.py<sp/>for<sp/>a<sp/>list<sp/>of<sp/>all<sp/>supported<sp/>configuration<sp/>parameters.</highlight></codeline>
+<codeline><highlight class="normal">configuration<sp/>=<sp/>composite_manager_client.Configuration(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>host<sp/>=<sp/>&quot;http://localhost&quot;</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Enter<sp/>a<sp/>context<sp/>with<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>client</highlight></codeline>
+<codeline><highlight class="normal">with<sp/>composite_manager_client.ApiClient()<sp/>as<sp/>api_client:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Create<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>class</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>api_instance<sp/>=<sp/>composite_manager_client.DefaultApi(api_client)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>node<sp/>=<sp/>&apos;node_example&apos;<sp/>#<sp/>str<sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">session_id<sp/>=<sp/>&apos;session_id_example&apos;<sp/>#<sp/>str<sp/>|<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>try:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>Your<sp/>GET<sp/>endpoint</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>api_response<sp/>=<sp/>api_instance.get_node_graph_status(node,<sp/>session_id)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pprint(api_response)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>except<sp/>ApiException<sp/>as<sp/>e:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(&quot;Exception<sp/>when<sp/>calling<sp/>DefaultApi-&gt;get_node_graph_status:<sp/>%s\n&quot;<sp/>%<sp/>e)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Parameters</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Name<sp/>|<sp/>Type<sp/>|<sp/>Description<sp/><sp/>|<sp/>Notes</highlight></codeline>
+<codeline><highlight class="normal">-------------<sp/>|<sp/>-------------<sp/>|<sp/>-------------<sp/>|<sp/>-------------</highlight></codeline>
+<codeline><highlight class="normal"><sp/>**node**<sp/>|<sp/>**str**|<sp/><sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>**session_id**<sp/>|<sp/>**str**|<sp/><sp/>|<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Return<sp/>type</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**object**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Authorization</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">No<sp/>authorization<sp/>required</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>request<sp/>headers</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Content-Type**:<sp/>Not<sp/>defined</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Accept**:<sp/>application/json</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>response<sp/>details</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Status<sp/>code<sp/>|<sp/>Description<sp/>|<sp/>Response<sp/>headers<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|-------------|-------------|------------------|</highlight></codeline>
+<codeline><highlight class="normal">**200**<sp/>|<sp/>The<sp/>status<sp/>graph<sp/>of<sp/>session<sp/>&amp;#x60;sessionId&amp;#x60;<sp/>in<sp/>&amp;#x60;node&amp;#x60;<sp/>|<sp/><sp/>-<sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[[Back<sp/>to<sp/>top]](#)<sp/>[[Back<sp/>to<sp/>API<sp/>list]](../README.md#documentation-for-api-endpoints)<sp/>[[Back<sp/>to<sp/>Model<sp/>list]](../README.md#documentation-for-models)<sp/>[[Back<sp/>to<sp/>README]](../README.md)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>**get_node_session_information**</highlight></codeline>
+<codeline><highlight class="normal">&gt;<sp/>Session<sp/>get_node_session_information(node,<sp/>session_id)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Your<sp/>GET<sp/>endpoint</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Returns<sp/>the<sp/>main<sp/>information<sp/>of<sp/>session<sp/>`sessionId`<sp/>in<sp/>node<sp/>`node`</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Example</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>__future__<sp/>import<sp/>print_function</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>time</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>composite_manager_client</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>composite_manager_client.rest<sp/>import<sp/>ApiException</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>pprint<sp/>import<sp/>pprint</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Defining<sp/>the<sp/>host<sp/>is<sp/>optional<sp/>and<sp/>defaults<sp/>to<sp/>http://localhost</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>See<sp/>configuration.py<sp/>for<sp/>a<sp/>list<sp/>of<sp/>all<sp/>supported<sp/>configuration<sp/>parameters.</highlight></codeline>
+<codeline><highlight class="normal">configuration<sp/>=<sp/>composite_manager_client.Configuration(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>host<sp/>=<sp/>&quot;http://localhost&quot;</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Enter<sp/>a<sp/>context<sp/>with<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>client</highlight></codeline>
+<codeline><highlight class="normal">with<sp/>composite_manager_client.ApiClient()<sp/>as<sp/>api_client:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Create<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>class</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>api_instance<sp/>=<sp/>composite_manager_client.DefaultApi(api_client)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>node<sp/>=<sp/>&apos;node_example&apos;<sp/>#<sp/>str<sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">session_id<sp/>=<sp/>&apos;session_id_example&apos;<sp/>#<sp/>str<sp/>|<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>try:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>Your<sp/>GET<sp/>endpoint</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>api_response<sp/>=<sp/>api_instance.get_node_session_information(node,<sp/>session_id)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pprint(api_response)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>except<sp/>ApiException<sp/>as<sp/>e:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(&quot;Exception<sp/>when<sp/>calling<sp/>DefaultApi-&gt;get_node_session_information:<sp/>%s\n&quot;<sp/>%<sp/>e)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Parameters</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Name<sp/>|<sp/>Type<sp/>|<sp/>Description<sp/><sp/>|<sp/>Notes</highlight></codeline>
+<codeline><highlight class="normal">-------------<sp/>|<sp/>-------------<sp/>|<sp/>-------------<sp/>|<sp/>-------------</highlight></codeline>
+<codeline><highlight class="normal"><sp/>**node**<sp/>|<sp/>**str**|<sp/><sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>**session_id**<sp/>|<sp/>**str**|<sp/><sp/>|<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Return<sp/>type</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[**Session**](Session.md)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Authorization</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">No<sp/>authorization<sp/>required</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>request<sp/>headers</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Content-Type**:<sp/>Not<sp/>defined</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Accept**:<sp/>application/json</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>response<sp/>details</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Status<sp/>code<sp/>|<sp/>Description<sp/>|<sp/>Response<sp/>headers<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|-------------|-------------|------------------|</highlight></codeline>
+<codeline><highlight class="normal">**200**<sp/>|<sp/>The<sp/>main<sp/>information<sp/>of<sp/>session<sp/>&amp;#x60;sessionId&amp;#x60;<sp/>in<sp/>node<sp/>&amp;#x60;node&amp;#x60;<sp/>|<sp/><sp/>-<sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[[Back<sp/>to<sp/>top]](#)<sp/>[[Back<sp/>to<sp/>API<sp/>list]](../README.md#documentation-for-api-endpoints)<sp/>[[Back<sp/>to<sp/>Model<sp/>list]](../README.md#documentation-for-models)<sp/>[[Back<sp/>to<sp/>README]](../README.md)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>**get_node_session_status**</highlight></codeline>
+<codeline><highlight class="normal">&gt;<sp/>int<sp/>get_node_session_status(node,<sp/>session_id)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Your<sp/>GET<sp/>endpoint</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Returns<sp/>the<sp/>status<sp/>of<sp/>`sessionId`<sp/>in<sp/>`node`</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Example</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>__future__<sp/>import<sp/>print_function</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>time</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>composite_manager_client</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>composite_manager_client.rest<sp/>import<sp/>ApiException</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>pprint<sp/>import<sp/>pprint</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Defining<sp/>the<sp/>host<sp/>is<sp/>optional<sp/>and<sp/>defaults<sp/>to<sp/>http://localhost</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>See<sp/>configuration.py<sp/>for<sp/>a<sp/>list<sp/>of<sp/>all<sp/>supported<sp/>configuration<sp/>parameters.</highlight></codeline>
+<codeline><highlight class="normal">configuration<sp/>=<sp/>composite_manager_client.Configuration(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>host<sp/>=<sp/>&quot;http://localhost&quot;</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Enter<sp/>a<sp/>context<sp/>with<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>client</highlight></codeline>
+<codeline><highlight class="normal">with<sp/>composite_manager_client.ApiClient()<sp/>as<sp/>api_client:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Create<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>class</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>api_instance<sp/>=<sp/>composite_manager_client.DefaultApi(api_client)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>node<sp/>=<sp/>&apos;node_example&apos;<sp/>#<sp/>str<sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">session_id<sp/>=<sp/>&apos;session_id_example&apos;<sp/>#<sp/>str<sp/>|<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>try:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#<sp/>Your<sp/>GET<sp/>endpoint</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>api_response<sp/>=<sp/>api_instance.get_node_session_status(node,<sp/>session_id)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pprint(api_response)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>except<sp/>ApiException<sp/>as<sp/>e:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(&quot;Exception<sp/>when<sp/>calling<sp/>DefaultApi-&gt;get_node_session_status:<sp/>%s\n&quot;<sp/>%<sp/>e)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Parameters</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Name<sp/>|<sp/>Type<sp/>|<sp/>Description<sp/><sp/>|<sp/>Notes</highlight></codeline>
+<codeline><highlight class="normal">-------------<sp/>|<sp/>-------------<sp/>|<sp/>-------------<sp/>|<sp/>-------------</highlight></codeline>
+<codeline><highlight class="normal"><sp/>**node**<sp/>|<sp/>**str**|<sp/><sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>**session_id**<sp/>|<sp/>**str**|<sp/><sp/>|<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Return<sp/>type</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**int**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Authorization</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">No<sp/>authorization<sp/>required</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>request<sp/>headers</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Content-Type**:<sp/>Not<sp/>defined</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Accept**:<sp/>application/json</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>response<sp/>details</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Status<sp/>code<sp/>|<sp/>Description<sp/>|<sp/>Response<sp/>headers<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|-------------|-------------|------------------|</highlight></codeline>
+<codeline><highlight class="normal">**200**<sp/>|<sp/>The<sp/>status<sp/>of<sp/>&amp;#x60;sessionId&amp;#x60;<sp/>in<sp/>&amp;#x60;node<sp/>&amp;#x60;<sp/>|<sp/><sp/>-<sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[[Back<sp/>to<sp/>top]](#)<sp/>[[Back<sp/>to<sp/>API<sp/>list]](../README.md#documentation-for-api-endpoints)<sp/>[[Back<sp/>to<sp/>Model<sp/>list]](../README.md#documentation-for-models)<sp/>[[Back<sp/>to<sp/>README]](../README.md)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>**get_node_sessions**</highlight></codeline>
+<codeline><highlight class="normal">&gt;<sp/>OneOfarrayarray<sp/>get_node_sessions(node)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Get<sp/>the<sp/>list<sp/>of<sp/>sessions<sp/>on<sp/>`node`,<sp/>managed<sp/>by<sp/>this<sp/>Manager</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Example</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>__future__<sp/>import<sp/>print_function</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>time</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>composite_manager_client</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>composite_manager_client.rest<sp/>import<sp/>ApiException</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>pprint<sp/>import<sp/>pprint</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Defining<sp/>the<sp/>host<sp/>is<sp/>optional<sp/>and<sp/>defaults<sp/>to<sp/>http://localhost</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>See<sp/>configuration.py<sp/>for<sp/>a<sp/>list<sp/>of<sp/>all<sp/>supported<sp/>configuration<sp/>parameters.</highlight></codeline>
+<codeline><highlight class="normal">configuration<sp/>=<sp/>composite_manager_client.Configuration(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>host<sp/>=<sp/>&quot;http://localhost&quot;</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Enter<sp/>a<sp/>context<sp/>with<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>client</highlight></codeline>
+<codeline><highlight class="normal">with<sp/>composite_manager_client.ApiClient()<sp/>as<sp/>api_client:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Create<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>class</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>api_instance<sp/>=<sp/>composite_manager_client.DefaultApi(api_client)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>node<sp/>=<sp/>&apos;node_example&apos;<sp/>#<sp/>str<sp/>|<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>try:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>api_response<sp/>=<sp/>api_instance.get_node_sessions(node)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pprint(api_response)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>except<sp/>ApiException<sp/>as<sp/>e:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(&quot;Exception<sp/>when<sp/>calling<sp/>DefaultApi-&gt;get_node_sessions:<sp/>%s\n&quot;<sp/>%<sp/>e)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Parameters</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Name<sp/>|<sp/>Type<sp/>|<sp/>Description<sp/><sp/>|<sp/>Notes</highlight></codeline>
+<codeline><highlight class="normal">-------------<sp/>|<sp/>-------------<sp/>|<sp/>-------------<sp/>|<sp/>-------------</highlight></codeline>
+<codeline><highlight class="normal"><sp/>**node**<sp/>|<sp/>**str**|<sp/><sp/>|<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Return<sp/>type</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[**OneOfarrayarray**](OneOfarrayarray.md)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Authorization</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">No<sp/>authorization<sp/>required</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>request<sp/>headers</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Content-Type**:<sp/>Not<sp/>defined</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Accept**:<sp/>application/json</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>response<sp/>details</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Status<sp/>code<sp/>|<sp/>Description<sp/>|<sp/>Response<sp/>headers<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|-------------|-------------|------------------|</highlight></codeline>
+<codeline><highlight class="normal">**200**<sp/>|<sp/>The<sp/>list<sp/>of<sp/>sessions<sp/>on<sp/>&amp;#x60;node&amp;#x60;,<sp/>managed<sp/>by<sp/>this<sp/>Manager<sp/>|<sp/><sp/>-<sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[[Back<sp/>to<sp/>top]](#)<sp/>[[Back<sp/>to<sp/>API<sp/>list]](../README.md#documentation-for-api-endpoints)<sp/>[[Back<sp/>to<sp/>Model<sp/>list]](../README.md#documentation-for-models)<sp/>[[Back<sp/>to<sp/>README]](../README.md)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>**get_session_information**</highlight></codeline>
+<codeline><highlight class="normal">&gt;<sp/>Session<sp/>get_session_information(session_id)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Returns<sp/>the<sp/>main<sp/>information<sp/>of<sp/>session<sp/>`sessionId`</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Example</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>__future__<sp/>import<sp/>print_function</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>time</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>composite_manager_client</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>composite_manager_client.rest<sp/>import<sp/>ApiException</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>pprint<sp/>import<sp/>pprint</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Defining<sp/>the<sp/>host<sp/>is<sp/>optional<sp/>and<sp/>defaults<sp/>to<sp/>http://localhost</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>See<sp/>configuration.py<sp/>for<sp/>a<sp/>list<sp/>of<sp/>all<sp/>supported<sp/>configuration<sp/>parameters.</highlight></codeline>
+<codeline><highlight class="normal">configuration<sp/>=<sp/>composite_manager_client.Configuration(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>host<sp/>=<sp/>&quot;http://localhost&quot;</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Enter<sp/>a<sp/>context<sp/>with<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>client</highlight></codeline>
+<codeline><highlight class="normal">with<sp/>composite_manager_client.ApiClient()<sp/>as<sp/>api_client:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Create<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>class</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>api_instance<sp/>=<sp/>composite_manager_client.DefaultApi(api_client)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>session_id<sp/>=<sp/>&apos;session_id_example&apos;<sp/>#<sp/>str<sp/>|<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>try:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>api_response<sp/>=<sp/>api_instance.get_session_information(session_id)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pprint(api_response)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>except<sp/>ApiException<sp/>as<sp/>e:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(&quot;Exception<sp/>when<sp/>calling<sp/>DefaultApi-&gt;get_session_information:<sp/>%s\n&quot;<sp/>%<sp/>e)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Parameters</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Name<sp/>|<sp/>Type<sp/>|<sp/>Description<sp/><sp/>|<sp/>Notes</highlight></codeline>
+<codeline><highlight class="normal">-------------<sp/>|<sp/>-------------<sp/>|<sp/>-------------<sp/>|<sp/>-------------</highlight></codeline>
+<codeline><highlight class="normal"><sp/>**session_id**<sp/>|<sp/>**str**|<sp/><sp/>|<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Return<sp/>type</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[**Session**](Session.md)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Authorization</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">No<sp/>authorization<sp/>required</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>request<sp/>headers</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Content-Type**:<sp/>Not<sp/>defined</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Accept**:<sp/>application/json</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>response<sp/>details</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Status<sp/>code<sp/>|<sp/>Description<sp/>|<sp/>Response<sp/>headers<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|-------------|-------------|------------------|</highlight></codeline>
+<codeline><highlight class="normal">**200**<sp/>|<sp/>The<sp/>main<sp/>information<sp/>of<sp/>session<sp/>&amp;#x60;sessionId&amp;#x60;<sp/>|<sp/><sp/>-<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">**0**<sp/>|<sp/>unexpected<sp/>error<sp/>|<sp/><sp/>-<sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[[Back<sp/>to<sp/>top]](#)<sp/>[[Back<sp/>to<sp/>API<sp/>list]](../README.md#documentation-for-api-endpoints)<sp/>[[Back<sp/>to<sp/>Model<sp/>list]](../README.md#documentation-for-models)<sp/>[[Back<sp/>to<sp/>README]](../README.md)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>**get_session_status**</highlight></codeline>
+<codeline><highlight class="normal">&gt;<sp/>int<sp/>get_session_status(session_id)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Returns<sp/>the<sp/>status<sp/>of<sp/>`sessionId`</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Example</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>__future__<sp/>import<sp/>print_function</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>time</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>composite_manager_client</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>composite_manager_client.rest<sp/>import<sp/>ApiException</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>pprint<sp/>import<sp/>pprint</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Defining<sp/>the<sp/>host<sp/>is<sp/>optional<sp/>and<sp/>defaults<sp/>to<sp/>http://localhost</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>See<sp/>configuration.py<sp/>for<sp/>a<sp/>list<sp/>of<sp/>all<sp/>supported<sp/>configuration<sp/>parameters.</highlight></codeline>
+<codeline><highlight class="normal">configuration<sp/>=<sp/>composite_manager_client.Configuration(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>host<sp/>=<sp/>&quot;http://localhost&quot;</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Enter<sp/>a<sp/>context<sp/>with<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>client</highlight></codeline>
+<codeline><highlight class="normal">with<sp/>composite_manager_client.ApiClient()<sp/>as<sp/>api_client:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Create<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>class</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>api_instance<sp/>=<sp/>composite_manager_client.DefaultApi(api_client)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>session_id<sp/>=<sp/>&apos;session_id_example&apos;<sp/>#<sp/>str<sp/>|<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>try:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>api_response<sp/>=<sp/>api_instance.get_session_status(session_id)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pprint(api_response)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>except<sp/>ApiException<sp/>as<sp/>e:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(&quot;Exception<sp/>when<sp/>calling<sp/>DefaultApi-&gt;get_session_status:<sp/>%s\n&quot;<sp/>%<sp/>e)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Parameters</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Name<sp/>|<sp/>Type<sp/>|<sp/>Description<sp/><sp/>|<sp/>Notes</highlight></codeline>
+<codeline><highlight class="normal">-------------<sp/>|<sp/>-------------<sp/>|<sp/>-------------<sp/>|<sp/>-------------</highlight></codeline>
+<codeline><highlight class="normal"><sp/>**session_id**<sp/>|<sp/>**str**|<sp/><sp/>|<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Return<sp/>type</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**int**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Authorization</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">No<sp/>authorization<sp/>required</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>request<sp/>headers</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Content-Type**:<sp/>Not<sp/>defined</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Accept**:<sp/>application/json</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>response<sp/>details</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Status<sp/>code<sp/>|<sp/>Description<sp/>|<sp/>Response<sp/>headers<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|-------------|-------------|------------------|</highlight></codeline>
+<codeline><highlight class="normal">**200**<sp/>|<sp/>The<sp/>status<sp/>of<sp/>&amp;#x60;sessionId&amp;#x60;<sp/>|<sp/><sp/>-<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">**0**<sp/>|<sp/>unexpected<sp/>error<sp/>|<sp/><sp/>-<sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[[Back<sp/>to<sp/>top]](#)<sp/>[[Back<sp/>to<sp/>API<sp/>list]](../README.md#documentation-for-api-endpoints)<sp/>[[Back<sp/>to<sp/>Model<sp/>list]](../README.md#documentation-for-models)<sp/>[[Back<sp/>to<sp/>README]](../README.md)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>**get_sessions**</highlight></codeline>
+<codeline><highlight class="normal">&gt;<sp/>SessionInformation<sp/>get_sessions()</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Get<sp/>the<sp/>list<sp/>of<sp/>sessions<sp/>on<sp/>this<sp/>Manager</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Example</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>__future__<sp/>import<sp/>print_function</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>time</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>composite_manager_client</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>composite_manager_client.rest<sp/>import<sp/>ApiException</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>pprint<sp/>import<sp/>pprint</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Defining<sp/>the<sp/>host<sp/>is<sp/>optional<sp/>and<sp/>defaults<sp/>to<sp/>http://localhost</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>See<sp/>configuration.py<sp/>for<sp/>a<sp/>list<sp/>of<sp/>all<sp/>supported<sp/>configuration<sp/>parameters.</highlight></codeline>
+<codeline><highlight class="normal">configuration<sp/>=<sp/>composite_manager_client.Configuration(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>host<sp/>=<sp/>&quot;http://localhost&quot;</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Enter<sp/>a<sp/>context<sp/>with<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>client</highlight></codeline>
+<codeline><highlight class="normal">with<sp/>composite_manager_client.ApiClient()<sp/>as<sp/>api_client:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Create<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>class</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>api_instance<sp/>=<sp/>composite_manager_client.DefaultApi(api_client)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>try:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>api_response<sp/>=<sp/>api_instance.get_sessions()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pprint(api_response)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>except<sp/>ApiException<sp/>as<sp/>e:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(&quot;Exception<sp/>when<sp/>calling<sp/>DefaultApi-&gt;get_sessions:<sp/>%s\n&quot;<sp/>%<sp/>e)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Parameters</highlight></codeline>
+<codeline><highlight class="normal">This<sp/>endpoint<sp/>does<sp/>not<sp/>need<sp/>any<sp/>parameter.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Return<sp/>type</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[**SessionInformation**](SessionInformation.md)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Authorization</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">No<sp/>authorization<sp/>required</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>request<sp/>headers</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Content-Type**:<sp/>Not<sp/>defined</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Accept**:<sp/>application/json</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>response<sp/>details</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Status<sp/>code<sp/>|<sp/>Description<sp/>|<sp/>Response<sp/>headers<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|-------------|-------------|------------------|</highlight></codeline>
+<codeline><highlight class="normal">**200**<sp/>|<sp/>The<sp/>list<sp/>of<sp/>sessions<sp/>on<sp/>this<sp/>Manager<sp/>|<sp/><sp/>-<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">**0**<sp/>|<sp/>unexpected<sp/>error<sp/>|<sp/><sp/>-<sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[[Back<sp/>to<sp/>top]](#)<sp/>[[Back<sp/>to<sp/>API<sp/>list]](../README.md#documentation-for-api-endpoints)<sp/>[[Back<sp/>to<sp/>Model<sp/>list]](../README.md#documentation-for-models)<sp/>[[Back<sp/>to<sp/>README]](../README.md)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>**remove_cm_node**</highlight></codeline>
+<codeline><highlight class="normal">&gt;<sp/>remove_cm_node(node)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Remove<sp/>`node`<sp/>from<sp/>this<sp/>Composite<sp/>Manager&apos;s<sp/>nodes<sp/>list</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Example</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>__future__<sp/>import<sp/>print_function</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>time</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>composite_manager_client</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>composite_manager_client.rest<sp/>import<sp/>ApiException</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>pprint<sp/>import<sp/>pprint</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Defining<sp/>the<sp/>host<sp/>is<sp/>optional<sp/>and<sp/>defaults<sp/>to<sp/>http://localhost</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>See<sp/>configuration.py<sp/>for<sp/>a<sp/>list<sp/>of<sp/>all<sp/>supported<sp/>configuration<sp/>parameters.</highlight></codeline>
+<codeline><highlight class="normal">configuration<sp/>=<sp/>composite_manager_client.Configuration(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>host<sp/>=<sp/>&quot;http://localhost&quot;</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Enter<sp/>a<sp/>context<sp/>with<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>client</highlight></codeline>
+<codeline><highlight class="normal">with<sp/>composite_manager_client.ApiClient()<sp/>as<sp/>api_client:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Create<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>class</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>api_instance<sp/>=<sp/>composite_manager_client.DefaultApi(api_client)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>node<sp/>=<sp/>&apos;node_example&apos;<sp/>#<sp/>str<sp/>|<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>try:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>api_instance.remove_cm_node(node)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>except<sp/>ApiException<sp/>as<sp/>e:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(&quot;Exception<sp/>when<sp/>calling<sp/>DefaultApi-&gt;remove_cm_node:<sp/>%s\n&quot;<sp/>%<sp/>e)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Parameters</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Name<sp/>|<sp/>Type<sp/>|<sp/>Description<sp/><sp/>|<sp/>Notes</highlight></codeline>
+<codeline><highlight class="normal">-------------<sp/>|<sp/>-------------<sp/>|<sp/>-------------<sp/>|<sp/>-------------</highlight></codeline>
+<codeline><highlight class="normal"><sp/>**node**<sp/>|<sp/>**str**|<sp/><sp/>|<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Return<sp/>type</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">void<sp/>(empty<sp/>response<sp/>body)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Authorization</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">No<sp/>authorization<sp/>required</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>request<sp/>headers</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Content-Type**:<sp/>Not<sp/>defined</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Accept**:<sp/>Not<sp/>defined</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>response<sp/>details</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Status<sp/>code<sp/>|<sp/>Description<sp/>|<sp/>Response<sp/>headers<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|-------------|-------------|------------------|</highlight></codeline>
+<codeline><highlight class="normal">**200**<sp/>|<sp/>OK<sp/>|<sp/><sp/>-<sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[[Back<sp/>to<sp/>top]](#)<sp/>[[Back<sp/>to<sp/>API<sp/>list]](../README.md#documentation-for-api-endpoints)<sp/>[[Back<sp/>to<sp/>Model<sp/>list]](../README.md#documentation-for-models)<sp/>[[Back<sp/>to<sp/>README]](../README.md)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>**stop_manager**</highlight></codeline>
+<codeline><highlight class="normal">&gt;<sp/>stop_manager()</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Stop<sp/>the<sp/>manager</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Example</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>__future__<sp/>import<sp/>print_function</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>time</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>composite_manager_client</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>composite_manager_client.rest<sp/>import<sp/>ApiException</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>pprint<sp/>import<sp/>pprint</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Defining<sp/>the<sp/>host<sp/>is<sp/>optional<sp/>and<sp/>defaults<sp/>to<sp/>http://localhost</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>See<sp/>configuration.py<sp/>for<sp/>a<sp/>list<sp/>of<sp/>all<sp/>supported<sp/>configuration<sp/>parameters.</highlight></codeline>
+<codeline><highlight class="normal">configuration<sp/>=<sp/>composite_manager_client.Configuration(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>host<sp/>=<sp/>&quot;http://localhost&quot;</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Enter<sp/>a<sp/>context<sp/>with<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>client</highlight></codeline>
+<codeline><highlight class="normal">with<sp/>composite_manager_client.ApiClient()<sp/>as<sp/>api_client:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Create<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>class</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>api_instance<sp/>=<sp/>composite_manager_client.DefaultApi(api_client)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>try:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>api_instance.stop_manager()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>except<sp/>ApiException<sp/>as<sp/>e:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(&quot;Exception<sp/>when<sp/>calling<sp/>DefaultApi-&gt;stop_manager:<sp/>%s\n&quot;<sp/>%<sp/>e)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Parameters</highlight></codeline>
+<codeline><highlight class="normal">This<sp/>endpoint<sp/>does<sp/>not<sp/>need<sp/>any<sp/>parameter.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Return<sp/>type</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">void<sp/>(empty<sp/>response<sp/>body)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Authorization</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">No<sp/>authorization<sp/>required</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>request<sp/>headers</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Content-Type**:<sp/>Not<sp/>defined</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>**Accept**:<sp/>application/json</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>HTTP<sp/>response<sp/>details</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Status<sp/>code<sp/>|<sp/>Description<sp/>|<sp/>Response<sp/>headers<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|-------------|-------------|------------------|</highlight></codeline>
+<codeline><highlight class="normal">**200**<sp/>|<sp/>OK<sp/>|<sp/><sp/>-<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">**0**<sp/>|<sp/>unexpected<sp/>error<sp/>|<sp/><sp/>-<sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[[Back<sp/>to<sp/>top]](#)<sp/>[[Back<sp/>to<sp/>API<sp/>list]](../README.md#documentation-for-api-endpoints)<sp/>[[Back<sp/>to<sp/>Model<sp/>list]](../README.md#documentation-for-models)<sp/>[[Back<sp/>to<sp/>README]](../README.md)</highlight></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="OpenAPI/tests/editable_copies/composite_manager_client/docs/DefaultApi.md"/>
+  </compounddef>
+</doxygen>

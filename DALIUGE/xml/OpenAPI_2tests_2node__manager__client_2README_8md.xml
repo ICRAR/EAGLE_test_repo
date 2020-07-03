@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="OpenAPI_2tests_2node__manager__client_2README_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>node-manager-client</highlight></codeline>
+<codeline><highlight class="normal">Node<sp/>Manager<sp/>specific<sp/>entry<sp/>points</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>Python<sp/>package<sp/>is<sp/>automatically<sp/>generated<sp/>by<sp/>the<sp/>[OpenAPI<sp/>Generator](https://openapi-generator.tech)<sp/>project:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>API<sp/>version:<sp/>1.0</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Package<sp/>version:<sp/>1.0.0</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Build<sp/>package:<sp/>org.openapitools.codegen.languages.PythonClientCodegen</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Requirements.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Python<sp/>2.7<sp/>and<sp/>3.4+</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Installation<sp/>&amp;<sp/>Usage</highlight></codeline>
+<codeline><highlight class="normal">###<sp/>pip<sp/>install</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>the<sp/>python<sp/>package<sp/>is<sp/>hosted<sp/>on<sp/>a<sp/>repository,<sp/>you<sp/>can<sp/>install<sp/>directly<sp/>using:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```sh</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">(you<sp/>may<sp/>need<sp/>to<sp/>run<sp/>`pip`<sp/>with<sp/>root<sp/>permission:<sp/>`sudo<sp/>pip<sp/>install<sp/>git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git`)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Then<sp/>import<sp/>the<sp/>package:</highlight></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>node_manager_client</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Setuptools</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Install<sp/>via<sp/>[Setuptools](http://pypi.python.org/pypi/setuptools).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```sh</highlight></codeline>
+<codeline><highlight class="normal">python<sp/>setup.py<sp/>install<sp/>--user</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">(or<sp/>`sudo<sp/>python<sp/>setup.py<sp/>install`<sp/>to<sp/>install<sp/>the<sp/>package<sp/>for<sp/>all<sp/>users)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Then<sp/>import<sp/>the<sp/>package:</highlight></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>node_manager_client</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Getting<sp/>Started</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Please<sp/>follow<sp/>the<sp/>[installation<sp/>procedure](#installation--usage)<sp/>and<sp/>then<sp/>run<sp/>the<sp/>following:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```python</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>__future__<sp/>import<sp/>print_function</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">import<sp/>time</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>node_manager_client</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>node_manager_client.rest<sp/>import<sp/>ApiException</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>pprint<sp/>import<sp/>pprint</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Defining<sp/>the<sp/>host<sp/>is<sp/>optional<sp/>and<sp/>defaults<sp/>to<sp/>http://localhost</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>See<sp/>configuration.py<sp/>for<sp/>a<sp/>list<sp/>of<sp/>all<sp/>supported<sp/>configuration<sp/>parameters.</highlight></codeline>
+<codeline><highlight class="normal">configuration<sp/>=<sp/>node_manager_client.Configuration(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>host<sp/>=<sp/>&quot;http://localhost&quot;</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Enter<sp/>a<sp/>context<sp/>with<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>client</highlight></codeline>
+<codeline><highlight class="normal">with<sp/>node_manager_client.ApiClient(configuration)<sp/>as<sp/>api_client:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#<sp/>Create<sp/>an<sp/>instance<sp/>of<sp/>the<sp/>API<sp/>class</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>api_instance<sp/>=<sp/>node_manager_client.DefaultApi(api_client)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>session_id<sp/>=<sp/>&apos;session_id_example&apos;<sp/>#<sp/>str<sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">body<sp/>=<sp/>None<sp/>#<sp/>object<sp/>|<sp/>The<sp/>graph<sp/>content<sp/>to<sp/>append<sp/>(optional)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>try:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>api_instance.add_graph_parts(session_id,<sp/>body=body)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>except<sp/>ApiException<sp/>as<sp/>e:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(&quot;Exception<sp/>when<sp/>calling<sp/>DefaultApi-&gt;add_graph_parts:<sp/>%s\n&quot;<sp/>%<sp/>e)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Documentation<sp/>for<sp/>API<sp/>Endpoints</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">All<sp/>URIs<sp/>are<sp/>relative<sp/>to<sp/>*http://localhost*</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Class<sp/>|<sp/>Method<sp/>|<sp/>HTTP<sp/>request<sp/>|<sp/>Description</highlight></codeline>
+<codeline><highlight class="normal">------------<sp/>|<sp/>-------------<sp/>|<sp/>-------------<sp/>|<sp/>-------------</highlight></codeline>
+<codeline><highlight class="normal">*DefaultApi*<sp/>|<sp/>[**add_graph_parts**](docs/DefaultApi.md#add_graph_parts)<sp/>|<sp/>**POST**<sp/>/api/sessions/{sessionId}/graph/append<sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">*DefaultApi*<sp/>|<sp/>[**cancel_session**](docs/DefaultApi.md#cancel_session)<sp/>|<sp/>**POST**<sp/>/api/sessions/{sessionId}/cancel<sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">*DefaultApi*<sp/>|<sp/>[**create_session**](docs/DefaultApi.md#create_session)<sp/>|<sp/>**POST**<sp/>/api/sessions<sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">*DefaultApi*<sp/>|<sp/>[**deploy_session**](docs/DefaultApi.md#deploy_session)<sp/>|<sp/>**POST**<sp/>/api/sessions/{sessionId}/deploy<sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">*DefaultApi*<sp/>|<sp/>[**destroy_session**](docs/DefaultApi.md#destroy_session)<sp/>|<sp/>**DELETE**<sp/>/api/sessions/{sessionId}<sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">*DefaultApi*<sp/>|<sp/>[**get_graph**](docs/DefaultApi.md#get_graph)<sp/>|<sp/>**GET**<sp/>/api/sessions/{sessionId}/graph<sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">*DefaultApi*<sp/>|<sp/>[**get_graph_size**](docs/DefaultApi.md#get_graph_size)<sp/>|<sp/>**GET**<sp/>/api/sessions/{sessionId}/graph/size<sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">*DefaultApi*<sp/>|<sp/>[**get_graph_status**](docs/DefaultApi.md#get_graph_status)<sp/>|<sp/>**GET**<sp/>/api/sessions/{sessionId}/graph/status<sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">*DefaultApi*<sp/>|<sp/>[**get_nm_status**](docs/DefaultApi.md#get_nm_status)<sp/>|<sp/>**GET**<sp/>/api<sp/>|<sp/>Your<sp/>GET<sp/>endpoint</highlight></codeline>
+<codeline><highlight class="normal">*DefaultApi*<sp/>|<sp/>[**get_session_information**](docs/DefaultApi.md#get_session_information)<sp/>|<sp/>**GET**<sp/>/api/sessions/{sessionId}<sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">*DefaultApi*<sp/>|<sp/>[**get_session_status**](docs/DefaultApi.md#get_session_status)<sp/>|<sp/>**GET**<sp/>/api/sessions/{sessionId}/status<sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">*DefaultApi*<sp/>|<sp/>[**get_sessions**](docs/DefaultApi.md#get_sessions)<sp/>|<sp/>**GET**<sp/>/api/sessions<sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">*DefaultApi*<sp/>|<sp/>[**stop_manager**](docs/DefaultApi.md#stop_manager)<sp/>|<sp/>**POST**<sp/>/api/stop<sp/>|<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Documentation<sp/>For<sp/>Models</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>[InlineObject](docs/InlineObject.md)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>[InlineResponse200](docs/InlineResponse200.md)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>[Session](docs/Session.md)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>[SessionInformation](docs/SessionInformation.md)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Documentation<sp/>For<sp/>Authorization</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>All<sp/>endpoints<sp/>do<sp/>not<sp/>require<sp/>authorization.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Author</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="OpenAPI/tests/node_manager_client/README.md"/>
+  </compounddef>
+</doxygen>

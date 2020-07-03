@@ -1,0 +1,2871 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi" kind="class" language="Python" prot="public">
+    <compoundname>node_manager_client::api::default_api::DefaultApi</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a1c5900f8687ad08c04546b5ad1135cc8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>node_manager_client.api.default_api.DefaultApi::api_client</definition>
+        <argsstring></argsstring>
+        <name>api_client</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" line="37" column="1" bodyfile="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1acca9d8446994084ce8ad0986cb10b259" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.__init__</definition>
+        <argsstring>(self, api_client=None)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>api_client</type>
+          <defname>api_client</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" line="34" column="1" bodyfile="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" bodystart="34" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a577484b81ad3247bf18678d8c6bde569" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.add_graph_parts</definition>
+        <argsstring>(self, session_id, kwargs)</argsstring>
+        <name>add_graph_parts</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>session_id</type>
+          <defname>session_id</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>add_graph_parts  # noqa: E501
+
+Appends a physical graph to session `sessionId`  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.add_graph_parts(session_id, async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param session_id: (required)
+:type session_id: str
+:param body: The graph content to append
+:type body: object
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: None
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" line="39" column="1" bodyfile="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" bodystart="39" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1af79cb2f543f7983dccaf220631e9f766" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.add_graph_parts_with_http_info</definition>
+        <argsstring>(self, session_id, kwargs)</argsstring>
+        <name>add_graph_parts_with_http_info</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>session_id</type>
+          <defname>session_id</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>add_graph_parts  # noqa: E501
+
+Appends a physical graph to session `sessionId`  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.add_graph_parts_with_http_info(session_id, async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param session_id: (required)
+:type session_id: str
+:param body: The graph content to append
+:type body: object
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _return_http_data_only: response data without head status code
+                       and headers
+:type _return_http_data_only: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:param _request_auth: set to override the auth_settings for an a single
+              request; this effectively ignores the authentication
+              in the spec for a single request.
+:type _request_auth: dict, optional
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: None
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" line="71" column="1" bodyfile="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" bodystart="71" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a17d82b266f4c4df882772b25938f248f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.cancel_session</definition>
+        <argsstring>(self, session_id, kwargs)</argsstring>
+        <name>cancel_session</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>session_id</type>
+          <defname>session_id</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>cancel_session  # noqa: E501
+
+Cancels session `sessionId`  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.cancel_session(session_id, async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param session_id: (required)
+:type session_id: str
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: None
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" line="181" column="1" bodyfile="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" bodystart="181" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a05d4f607d439c29303913169c4d7b7d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.cancel_session_with_http_info</definition>
+        <argsstring>(self, session_id, kwargs)</argsstring>
+        <name>cancel_session_with_http_info</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>session_id</type>
+          <defname>session_id</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>cancel_session  # noqa: E501
+
+Cancels session `sessionId`  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.cancel_session_with_http_info(session_id, async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param session_id: (required)
+:type session_id: str
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _return_http_data_only: response data without head status code
+                       and headers
+:type _return_http_data_only: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:param _request_auth: set to override the auth_settings for an a single
+              request; this effectively ignores the authentication
+              in the spec for a single request.
+:type _request_auth: dict, optional
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: None
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" line="211" column="1" bodyfile="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" bodystart="211" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a734b84e23e32681d2e8a183e3bda5219" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.create_session</definition>
+        <argsstring>(self, kwargs)</argsstring>
+        <name>create_session</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>create_session  # noqa: E501
+
+Create a new session  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.create_session(async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param inline_object:
+:type inline_object: InlineObject
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: None
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" line="312" column="1" bodyfile="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" bodystart="312" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1ab4b9bfee745a399fac5dd827c778347a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.create_session_with_http_info</definition>
+        <argsstring>(self, kwargs)</argsstring>
+        <name>create_session_with_http_info</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>create_session  # noqa: E501
+
+Create a new session  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.create_session_with_http_info(async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param inline_object:
+:type inline_object: InlineObject
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _return_http_data_only: response data without head status code
+                       and headers
+:type _return_http_data_only: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:param _request_auth: set to override the auth_settings for an a single
+              request; this effectively ignores the authentication
+              in the spec for a single request.
+:type _request_auth: dict, optional
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: None
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" line="342" column="1" bodyfile="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" bodystart="342" bodyend="442"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1afa1182f22343c96df22b486a692bc2eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.deploy_session</definition>
+        <argsstring>(self, session_id, kwargs)</argsstring>
+        <name>deploy_session</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>session_id</type>
+          <defname>session_id</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>deploy_session  # noqa: E501
+
+Deploys session `sessionId`  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.deploy_session(session_id, async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param session_id: (required)
+:type session_id: str
+:param completed:
+:type completed: str
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: None
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" line="443" column="1" bodyfile="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" bodystart="443" bodyend="474"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a49756a72bc1a903ea3e3898b4824929e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.deploy_session_with_http_info</definition>
+        <argsstring>(self, session_id, kwargs)</argsstring>
+        <name>deploy_session_with_http_info</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>session_id</type>
+          <defname>session_id</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>deploy_session  # noqa: E501
+
+Deploys session `sessionId`  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.deploy_session_with_http_info(session_id, async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param session_id: (required)
+:type session_id: str
+:param completed:
+:type completed: str
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _return_http_data_only: response data without head status code
+                       and headers
+:type _return_http_data_only: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:param _request_auth: set to override the auth_settings for an a single
+              request; this effectively ignores the authentication
+              in the spec for a single request.
+:type _request_auth: dict, optional
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: None
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" line="475" column="1" bodyfile="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" bodystart="475" bodyend="580"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1ab8291a916fa35722c3525f5c3f108aa0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.destroy_session</definition>
+        <argsstring>(self, session_id, kwargs)</argsstring>
+        <name>destroy_session</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>session_id</type>
+          <defname>session_id</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>destroy_session  # noqa: E501
+
+Removes session `sessionId`  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.destroy_session(session_id, async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param session_id:  (required)
+:type session_id: str
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: None
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" line="581" column="1" bodyfile="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" bodystart="581" bodyend="610"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a04963722d427acc3a2f41bb7952ee9ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.destroy_session_with_http_info</definition>
+        <argsstring>(self, session_id, kwargs)</argsstring>
+        <name>destroy_session_with_http_info</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>session_id</type>
+          <defname>session_id</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>destroy_session  # noqa: E501
+
+Removes session `sessionId`  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.destroy_session_with_http_info(session_id, async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param session_id:  (required)
+:type session_id: str
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _return_http_data_only: response data without head status code
+                       and headers
+:type _return_http_data_only: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:param _request_auth: set to override the auth_settings for an a single
+              request; this effectively ignores the authentication
+              in the spec for a single request.
+:type _request_auth: dict, optional
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: None
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" line="611" column="1" bodyfile="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" bodystart="611" bodyend="711"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a76e5d6184af4abe5e7c34995754a43fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.get_graph</definition>
+        <argsstring>(self, session_id, kwargs)</argsstring>
+        <name>get_graph</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>session_id</type>
+          <defname>session_id</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>get_graph  # noqa: E501
+
+Returns the physical graph of session `sessionId`  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.get_graph(session_id, async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param session_id: (required)
+:type session_id: str
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: object
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" line="712" column="1" bodyfile="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" bodystart="712" bodyend="741"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1aef2c414893c4acc54853266f5c64cab2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.get_graph_with_http_info</definition>
+        <argsstring>(self, session_id, kwargs)</argsstring>
+        <name>get_graph_with_http_info</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>session_id</type>
+          <defname>session_id</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>get_graph  # noqa: E501
+
+Returns the physical graph of session `sessionId`  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.get_graph_with_http_info(session_id, async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param session_id: (required)
+:type session_id: str
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _return_http_data_only: response data without head status code
+                       and headers
+:type _return_http_data_only: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:param _request_auth: set to override the auth_settings for an a single
+              request; this effectively ignores the authentication
+              in the spec for a single request.
+:type _request_auth: dict, optional
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: tuple(object, status_code(int), headers(HTTPHeaderDict))
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" line="742" column="1" bodyfile="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" bodystart="742" bodyend="842"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1abf50e282a6008d7283288f47a65c845b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.get_graph_size</definition>
+        <argsstring>(self, session_id, kwargs)</argsstring>
+        <name>get_graph_size</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>session_id</type>
+          <defname>session_id</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>get_graph_size  # noqa: E501
+
+Returns the size of the graph of session `sessionId`  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.get_graph_size(session_id, async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param session_id: (required)
+:type session_id: str
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: int
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" line="843" column="1" bodyfile="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" bodystart="843" bodyend="872"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1afae9083f31eae6cbbc82bef858e7d1ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.get_graph_size_with_http_info</definition>
+        <argsstring>(self, session_id, kwargs)</argsstring>
+        <name>get_graph_size_with_http_info</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>session_id</type>
+          <defname>session_id</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>get_graph_size  # noqa: E501
+
+Returns the size of the graph of session `sessionId`  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.get_graph_size_with_http_info(session_id, async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param session_id: (required)
+:type session_id: str
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _return_http_data_only: response data without head status code
+                       and headers
+:type _return_http_data_only: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:param _request_auth: set to override the auth_settings for an a single
+              request; this effectively ignores the authentication
+              in the spec for a single request.
+:type _request_auth: dict, optional
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: tuple(int, status_code(int), headers(HTTPHeaderDict))
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" line="873" column="1" bodyfile="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" bodystart="873" bodyend="973"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a51270f867618d9d0d1c6fb36ef6715f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.get_graph_status</definition>
+        <argsstring>(self, session_id, kwargs)</argsstring>
+        <name>get_graph_status</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>session_id</type>
+          <defname>session_id</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>get_graph_status  # noqa: E501
+
+Returns the status graph of session `sessionId`  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.get_graph_status(session_id, async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param session_id: (required)
+:type session_id: str
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: object
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" line="974" column="1" bodyfile="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" bodystart="974" bodyend="1003"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a7c523603cb942b9708eae571939f9ee1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.get_graph_status_with_http_info</definition>
+        <argsstring>(self, session_id, kwargs)</argsstring>
+        <name>get_graph_status_with_http_info</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>session_id</type>
+          <defname>session_id</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>get_graph_status  # noqa: E501
+
+Returns the status graph of session `sessionId`  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.get_graph_status_with_http_info(session_id, async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param session_id: (required)
+:type session_id: str
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _return_http_data_only: response data without head status code
+                       and headers
+:type _return_http_data_only: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:param _request_auth: set to override the auth_settings for an a single
+              request; this effectively ignores the authentication
+              in the spec for a single request.
+:type _request_auth: dict, optional
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: tuple(object, status_code(int), headers(HTTPHeaderDict))
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" line="1004" column="1" bodyfile="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" bodystart="1004" bodyend="1104"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1af562d912e4c9285cbe784da455210310" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.get_nm_status</definition>
+        <argsstring>(self, kwargs)</argsstring>
+        <name>get_nm_status</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Your GET endpoint  # noqa: E501
+
+Return the status of the Node Manager  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.get_nm_status(async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: InlineResponse200
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" line="1105" column="1" bodyfile="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" bodystart="1105" bodyend="1132"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a48841c923268b422f6797fc6d9ada432" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.get_nm_status_with_http_info</definition>
+        <argsstring>(self, kwargs)</argsstring>
+        <name>get_nm_status_with_http_info</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Your GET endpoint  # noqa: E501
+
+Return the status of the Node Manager  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.get_nm_status_with_http_info(async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _return_http_data_only: response data without head status code
+                       and headers
+:type _return_http_data_only: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:param _request_auth: set to override the auth_settings for an a single
+              request; this effectively ignores the authentication
+              in the spec for a single request.
+:type _request_auth: dict, optional
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: tuple(InlineResponse200, status_code(int), headers(HTTPHeaderDict))
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" line="1133" column="1" bodyfile="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" bodystart="1133" bodyend="1224"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a474bb240bf99dd05749dc021c0c89f6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.get_session_information</definition>
+        <argsstring>(self, session_id, kwargs)</argsstring>
+        <name>get_session_information</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>session_id</type>
+          <defname>session_id</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>get_session_information  # noqa: E501
+
+Returns the main information of session `sessionId`  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.get_session_information(session_id, async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param session_id:  (required)
+:type session_id: str
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: Session
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" line="1225" column="1" bodyfile="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" bodystart="1225" bodyend="1254"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a550f40426a0001140a50996d47699c6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.get_session_information_with_http_info</definition>
+        <argsstring>(self, session_id, kwargs)</argsstring>
+        <name>get_session_information_with_http_info</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>session_id</type>
+          <defname>session_id</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>get_session_information  # noqa: E501
+
+Returns the main information of session `sessionId`  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.get_session_information_with_http_info(session_id, async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param session_id:  (required)
+:type session_id: str
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _return_http_data_only: response data without head status code
+                       and headers
+:type _return_http_data_only: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:param _request_auth: set to override the auth_settings for an a single
+              request; this effectively ignores the authentication
+              in the spec for a single request.
+:type _request_auth: dict, optional
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: tuple(Session, status_code(int), headers(HTTPHeaderDict))
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" line="1255" column="1" bodyfile="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" bodystart="1255" bodyend="1355"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1ae20ae85140ad2cbcff979ee935cfaa75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.get_session_status</definition>
+        <argsstring>(self, session_id, kwargs)</argsstring>
+        <name>get_session_status</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>session_id</type>
+          <defname>session_id</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>get_session_status  # noqa: E501
+
+Returns the status of `sessionId`  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.get_session_status(session_id, async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param session_id: (required)
+:type session_id: str
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: int
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" line="1356" column="1" bodyfile="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" bodystart="1356" bodyend="1385"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a3bae0357855fa747881c096889350606" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.get_session_status_with_http_info</definition>
+        <argsstring>(self, session_id, kwargs)</argsstring>
+        <name>get_session_status_with_http_info</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>session_id</type>
+          <defname>session_id</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>get_session_status  # noqa: E501
+
+Returns the status of `sessionId`  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.get_session_status_with_http_info(session_id, async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param session_id: (required)
+:type session_id: str
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _return_http_data_only: response data without head status code
+                       and headers
+:type _return_http_data_only: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:param _request_auth: set to override the auth_settings for an a single
+              request; this effectively ignores the authentication
+              in the spec for a single request.
+:type _request_auth: dict, optional
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: tuple(int, status_code(int), headers(HTTPHeaderDict))
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" line="1386" column="1" bodyfile="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" bodystart="1386" bodyend="1486"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a4923357e146b39c6ccc131342ba94887" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.get_sessions</definition>
+        <argsstring>(self, kwargs)</argsstring>
+        <name>get_sessions</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>get_sessions  # noqa: E501
+
+Get the list of sessions on this Manager  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.get_sessions(async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: SessionInformation
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" line="1487" column="1" bodyfile="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" bodystart="1487" bodyend="1514"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a7ad4ee16c19aa0603a170aa88f5d8267" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.get_sessions_with_http_info</definition>
+        <argsstring>(self, kwargs)</argsstring>
+        <name>get_sessions_with_http_info</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>get_sessions  # noqa: E501
+
+Get the list of sessions on this Manager  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.get_sessions_with_http_info(async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _return_http_data_only: response data without head status code
+                       and headers
+:type _return_http_data_only: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:param _request_auth: set to override the auth_settings for an a single
+              request; this effectively ignores the authentication
+              in the spec for a single request.
+:type _request_auth: dict, optional
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: tuple(SessionInformation, status_code(int), headers(HTTPHeaderDict))
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" line="1515" column="1" bodyfile="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" bodystart="1515" bodyend="1606"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a2ee83ac3c9b55ebe152c35f5e88d33d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.stop_manager</definition>
+        <argsstring>(self, kwargs)</argsstring>
+        <name>stop_manager</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>stop_manager  # noqa: E501
+
+Stop the manager  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.stop_manager(async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: None
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" line="1607" column="1" bodyfile="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" bodystart="1607" bodyend="1634"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a859559a4f3509ae0f0d69490921fdab2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.stop_manager_with_http_info</definition>
+        <argsstring>(self, kwargs)</argsstring>
+        <name>stop_manager_with_http_info</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>stop_manager  # noqa: E501
+
+Stop the manager  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.stop_manager_with_http_info(async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _return_http_data_only: response data without head status code
+                       and headers
+:type _return_http_data_only: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:param _request_auth: set to override the auth_settings for an a single
+              request; this effectively ignores the authentication
+              in the spec for a single request.
+:type _request_auth: dict, optional
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: None
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" line="1635" column="1" bodyfile="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" bodystart="1635" bodyend="1726"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1acca9d8446994084ce8ad0986cb10b259" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.__init__</definition>
+        <argsstring>(self, api_client=None)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>api_client</type>
+          <defname>api_client</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" line="34" column="1" bodyfile="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" bodystart="34" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a577484b81ad3247bf18678d8c6bde569" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.add_graph_parts</definition>
+        <argsstring>(self, session_id, kwargs)</argsstring>
+        <name>add_graph_parts</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>session_id</type>
+          <defname>session_id</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>add_graph_parts  # noqa: E501
+
+Appends a physical graph to session `sessionId`  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.add_graph_parts(session_id, async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param session_id: (required)
+:type session_id: str
+:param body: The graph content to append
+:type body: object
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: None
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" line="39" column="1" bodyfile="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" bodystart="39" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1af79cb2f543f7983dccaf220631e9f766" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.add_graph_parts_with_http_info</definition>
+        <argsstring>(self, session_id, kwargs)</argsstring>
+        <name>add_graph_parts_with_http_info</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>session_id</type>
+          <defname>session_id</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>add_graph_parts  # noqa: E501
+
+Appends a physical graph to session `sessionId`  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.add_graph_parts_with_http_info(session_id, async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param session_id: (required)
+:type session_id: str
+:param body: The graph content to append
+:type body: object
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _return_http_data_only: response data without head status code
+                       and headers
+:type _return_http_data_only: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:param _request_auth: set to override the auth_settings for an a single
+              request; this effectively ignores the authentication
+              in the spec for a single request.
+:type _request_auth: dict, optional
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: None
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" line="71" column="1" bodyfile="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" bodystart="71" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a17d82b266f4c4df882772b25938f248f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.cancel_session</definition>
+        <argsstring>(self, session_id, kwargs)</argsstring>
+        <name>cancel_session</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>session_id</type>
+          <defname>session_id</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>cancel_session  # noqa: E501
+
+Cancels session `sessionId`  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.cancel_session(session_id, async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param session_id: (required)
+:type session_id: str
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: None
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" line="181" column="1" bodyfile="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" bodystart="181" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a05d4f607d439c29303913169c4d7b7d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.cancel_session_with_http_info</definition>
+        <argsstring>(self, session_id, kwargs)</argsstring>
+        <name>cancel_session_with_http_info</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>session_id</type>
+          <defname>session_id</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>cancel_session  # noqa: E501
+
+Cancels session `sessionId`  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.cancel_session_with_http_info(session_id, async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param session_id: (required)
+:type session_id: str
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _return_http_data_only: response data without head status code
+                       and headers
+:type _return_http_data_only: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:param _request_auth: set to override the auth_settings for an a single
+              request; this effectively ignores the authentication
+              in the spec for a single request.
+:type _request_auth: dict, optional
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: None
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" line="211" column="1" bodyfile="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" bodystart="211" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a734b84e23e32681d2e8a183e3bda5219" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.create_session</definition>
+        <argsstring>(self, kwargs)</argsstring>
+        <name>create_session</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>create_session  # noqa: E501
+
+Create a new session  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.create_session(async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param inline_object:
+:type inline_object: InlineObject
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: None
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" line="312" column="1" bodyfile="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" bodystart="312" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1ab4b9bfee745a399fac5dd827c778347a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.create_session_with_http_info</definition>
+        <argsstring>(self, kwargs)</argsstring>
+        <name>create_session_with_http_info</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>create_session  # noqa: E501
+
+Create a new session  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.create_session_with_http_info(async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param inline_object:
+:type inline_object: InlineObject
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _return_http_data_only: response data without head status code
+                       and headers
+:type _return_http_data_only: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:param _request_auth: set to override the auth_settings for an a single
+              request; this effectively ignores the authentication
+              in the spec for a single request.
+:type _request_auth: dict, optional
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: None
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" line="342" column="1" bodyfile="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" bodystart="342" bodyend="442"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1afa1182f22343c96df22b486a692bc2eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.deploy_session</definition>
+        <argsstring>(self, session_id, kwargs)</argsstring>
+        <name>deploy_session</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>session_id</type>
+          <defname>session_id</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>deploy_session  # noqa: E501
+
+Deploys session `sessionId`  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.deploy_session(session_id, async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param session_id: (required)
+:type session_id: str
+:param completed:
+:type completed: str
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: None
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" line="443" column="1" bodyfile="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" bodystart="443" bodyend="474"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a49756a72bc1a903ea3e3898b4824929e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.deploy_session_with_http_info</definition>
+        <argsstring>(self, session_id, kwargs)</argsstring>
+        <name>deploy_session_with_http_info</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>session_id</type>
+          <defname>session_id</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>deploy_session  # noqa: E501
+
+Deploys session `sessionId`  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.deploy_session_with_http_info(session_id, async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param session_id: (required)
+:type session_id: str
+:param completed:
+:type completed: str
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _return_http_data_only: response data without head status code
+                       and headers
+:type _return_http_data_only: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:param _request_auth: set to override the auth_settings for an a single
+              request; this effectively ignores the authentication
+              in the spec for a single request.
+:type _request_auth: dict, optional
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: None
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" line="475" column="1" bodyfile="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" bodystart="475" bodyend="580"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1ab8291a916fa35722c3525f5c3f108aa0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.destroy_session</definition>
+        <argsstring>(self, session_id, kwargs)</argsstring>
+        <name>destroy_session</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>session_id</type>
+          <defname>session_id</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>destroy_session  # noqa: E501
+
+Removes session `sessionId`  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.destroy_session(session_id, async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param session_id:  (required)
+:type session_id: str
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: None
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" line="581" column="1" bodyfile="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" bodystart="581" bodyend="610"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a04963722d427acc3a2f41bb7952ee9ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.destroy_session_with_http_info</definition>
+        <argsstring>(self, session_id, kwargs)</argsstring>
+        <name>destroy_session_with_http_info</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>session_id</type>
+          <defname>session_id</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>destroy_session  # noqa: E501
+
+Removes session `sessionId`  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.destroy_session_with_http_info(session_id, async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param session_id:  (required)
+:type session_id: str
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _return_http_data_only: response data without head status code
+                       and headers
+:type _return_http_data_only: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:param _request_auth: set to override the auth_settings for an a single
+              request; this effectively ignores the authentication
+              in the spec for a single request.
+:type _request_auth: dict, optional
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: None
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" line="611" column="1" bodyfile="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" bodystart="611" bodyend="711"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a76e5d6184af4abe5e7c34995754a43fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.get_graph</definition>
+        <argsstring>(self, session_id, kwargs)</argsstring>
+        <name>get_graph</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>session_id</type>
+          <defname>session_id</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>get_graph  # noqa: E501
+
+Returns the physical graph of session `sessionId`  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.get_graph(session_id, async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param session_id: (required)
+:type session_id: str
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: object
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" line="712" column="1" bodyfile="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" bodystart="712" bodyend="741"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1aef2c414893c4acc54853266f5c64cab2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.get_graph_with_http_info</definition>
+        <argsstring>(self, session_id, kwargs)</argsstring>
+        <name>get_graph_with_http_info</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>session_id</type>
+          <defname>session_id</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>get_graph  # noqa: E501
+
+Returns the physical graph of session `sessionId`  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.get_graph_with_http_info(session_id, async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param session_id: (required)
+:type session_id: str
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _return_http_data_only: response data without head status code
+                       and headers
+:type _return_http_data_only: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:param _request_auth: set to override the auth_settings for an a single
+              request; this effectively ignores the authentication
+              in the spec for a single request.
+:type _request_auth: dict, optional
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: tuple(object, status_code(int), headers(HTTPHeaderDict))
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" line="742" column="1" bodyfile="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" bodystart="742" bodyend="842"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1abf50e282a6008d7283288f47a65c845b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.get_graph_size</definition>
+        <argsstring>(self, session_id, kwargs)</argsstring>
+        <name>get_graph_size</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>session_id</type>
+          <defname>session_id</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>get_graph_size  # noqa: E501
+
+Returns the size of the graph of session `sessionId`  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.get_graph_size(session_id, async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param session_id: (required)
+:type session_id: str
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: int
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" line="843" column="1" bodyfile="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" bodystart="843" bodyend="872"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1afae9083f31eae6cbbc82bef858e7d1ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.get_graph_size_with_http_info</definition>
+        <argsstring>(self, session_id, kwargs)</argsstring>
+        <name>get_graph_size_with_http_info</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>session_id</type>
+          <defname>session_id</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>get_graph_size  # noqa: E501
+
+Returns the size of the graph of session `sessionId`  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.get_graph_size_with_http_info(session_id, async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param session_id: (required)
+:type session_id: str
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _return_http_data_only: response data without head status code
+                       and headers
+:type _return_http_data_only: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:param _request_auth: set to override the auth_settings for an a single
+              request; this effectively ignores the authentication
+              in the spec for a single request.
+:type _request_auth: dict, optional
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: tuple(int, status_code(int), headers(HTTPHeaderDict))
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" line="873" column="1" bodyfile="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" bodystart="873" bodyend="973"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a51270f867618d9d0d1c6fb36ef6715f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.get_graph_status</definition>
+        <argsstring>(self, session_id, kwargs)</argsstring>
+        <name>get_graph_status</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>session_id</type>
+          <defname>session_id</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>get_graph_status  # noqa: E501
+
+Returns the status graph of session `sessionId`  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.get_graph_status(session_id, async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param session_id: (required)
+:type session_id: str
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: object
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" line="974" column="1" bodyfile="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" bodystart="974" bodyend="1003"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a7c523603cb942b9708eae571939f9ee1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.get_graph_status_with_http_info</definition>
+        <argsstring>(self, session_id, kwargs)</argsstring>
+        <name>get_graph_status_with_http_info</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>session_id</type>
+          <defname>session_id</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>get_graph_status  # noqa: E501
+
+Returns the status graph of session `sessionId`  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.get_graph_status_with_http_info(session_id, async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param session_id: (required)
+:type session_id: str
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _return_http_data_only: response data without head status code
+                       and headers
+:type _return_http_data_only: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:param _request_auth: set to override the auth_settings for an a single
+              request; this effectively ignores the authentication
+              in the spec for a single request.
+:type _request_auth: dict, optional
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: tuple(object, status_code(int), headers(HTTPHeaderDict))
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" line="1004" column="1" bodyfile="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" bodystart="1004" bodyend="1104"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1af562d912e4c9285cbe784da455210310" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.get_nm_status</definition>
+        <argsstring>(self, kwargs)</argsstring>
+        <name>get_nm_status</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Your GET endpoint  # noqa: E501
+
+Return the status of the Node Manager  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.get_nm_status(async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: InlineResponse200
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" line="1105" column="1" bodyfile="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" bodystart="1105" bodyend="1132"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a48841c923268b422f6797fc6d9ada432" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.get_nm_status_with_http_info</definition>
+        <argsstring>(self, kwargs)</argsstring>
+        <name>get_nm_status_with_http_info</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Your GET endpoint  # noqa: E501
+
+Return the status of the Node Manager  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.get_nm_status_with_http_info(async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _return_http_data_only: response data without head status code
+                       and headers
+:type _return_http_data_only: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:param _request_auth: set to override the auth_settings for an a single
+              request; this effectively ignores the authentication
+              in the spec for a single request.
+:type _request_auth: dict, optional
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: tuple(InlineResponse200, status_code(int), headers(HTTPHeaderDict))
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" line="1133" column="1" bodyfile="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" bodystart="1133" bodyend="1224"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a474bb240bf99dd05749dc021c0c89f6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.get_session_information</definition>
+        <argsstring>(self, session_id, kwargs)</argsstring>
+        <name>get_session_information</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>session_id</type>
+          <defname>session_id</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>get_session_information  # noqa: E501
+
+Returns the main information of session `sessionId`  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.get_session_information(session_id, async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param session_id:  (required)
+:type session_id: str
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: Session
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" line="1225" column="1" bodyfile="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" bodystart="1225" bodyend="1254"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a550f40426a0001140a50996d47699c6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.get_session_information_with_http_info</definition>
+        <argsstring>(self, session_id, kwargs)</argsstring>
+        <name>get_session_information_with_http_info</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>session_id</type>
+          <defname>session_id</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>get_session_information  # noqa: E501
+
+Returns the main information of session `sessionId`  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.get_session_information_with_http_info(session_id, async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param session_id:  (required)
+:type session_id: str
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _return_http_data_only: response data without head status code
+                       and headers
+:type _return_http_data_only: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:param _request_auth: set to override the auth_settings for an a single
+              request; this effectively ignores the authentication
+              in the spec for a single request.
+:type _request_auth: dict, optional
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: tuple(Session, status_code(int), headers(HTTPHeaderDict))
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" line="1255" column="1" bodyfile="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" bodystart="1255" bodyend="1355"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1ae20ae85140ad2cbcff979ee935cfaa75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.get_session_status</definition>
+        <argsstring>(self, session_id, kwargs)</argsstring>
+        <name>get_session_status</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>session_id</type>
+          <defname>session_id</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>get_session_status  # noqa: E501
+
+Returns the status of `sessionId`  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.get_session_status(session_id, async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param session_id: (required)
+:type session_id: str
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: int
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" line="1356" column="1" bodyfile="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" bodystart="1356" bodyend="1385"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a3bae0357855fa747881c096889350606" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.get_session_status_with_http_info</definition>
+        <argsstring>(self, session_id, kwargs)</argsstring>
+        <name>get_session_status_with_http_info</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>session_id</type>
+          <defname>session_id</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>get_session_status  # noqa: E501
+
+Returns the status of `sessionId`  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.get_session_status_with_http_info(session_id, async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param session_id: (required)
+:type session_id: str
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _return_http_data_only: response data without head status code
+                       and headers
+:type _return_http_data_only: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:param _request_auth: set to override the auth_settings for an a single
+              request; this effectively ignores the authentication
+              in the spec for a single request.
+:type _request_auth: dict, optional
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: tuple(int, status_code(int), headers(HTTPHeaderDict))
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" line="1386" column="1" bodyfile="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" bodystart="1386" bodyend="1486"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a4923357e146b39c6ccc131342ba94887" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.get_sessions</definition>
+        <argsstring>(self, kwargs)</argsstring>
+        <name>get_sessions</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>get_sessions  # noqa: E501
+
+Get the list of sessions on this Manager  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.get_sessions(async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: SessionInformation
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" line="1487" column="1" bodyfile="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" bodystart="1487" bodyend="1514"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a7ad4ee16c19aa0603a170aa88f5d8267" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.get_sessions_with_http_info</definition>
+        <argsstring>(self, kwargs)</argsstring>
+        <name>get_sessions_with_http_info</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>get_sessions  # noqa: E501
+
+Get the list of sessions on this Manager  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.get_sessions_with_http_info(async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _return_http_data_only: response data without head status code
+                       and headers
+:type _return_http_data_only: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:param _request_auth: set to override the auth_settings for an a single
+              request; this effectively ignores the authentication
+              in the spec for a single request.
+:type _request_auth: dict, optional
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: tuple(SessionInformation, status_code(int), headers(HTTPHeaderDict))
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" line="1515" column="1" bodyfile="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" bodystart="1515" bodyend="1606"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a2ee83ac3c9b55ebe152c35f5e88d33d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.stop_manager</definition>
+        <argsstring>(self, kwargs)</argsstring>
+        <name>stop_manager</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>stop_manager  # noqa: E501
+
+Stop the manager  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.stop_manager(async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: None
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" line="1607" column="1" bodyfile="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" bodystart="1607" bodyend="1634"/>
+      </memberdef>
+      <memberdef kind="function" id="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a859559a4f3509ae0f0d69490921fdab2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def node_manager_client.api.default_api.DefaultApi.stop_manager_with_http_info</definition>
+        <argsstring>(self, kwargs)</argsstring>
+        <name>stop_manager_with_http_info</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>stop_manager  # noqa: E501
+
+Stop the manager  # noqa: E501
+This method makes a synchronous HTTP request by default. To make an
+asynchronous HTTP request, please pass async_req=True
+
+&gt;&gt;&gt; thread = api.stop_manager_with_http_info(async_req=True)
+&gt;&gt;&gt; result = thread.get()
+
+:param async_req: Whether to execute the request asynchronously.
+:type async_req: bool, optional
+:param _return_http_data_only: response data without head status code
+                       and headers
+:type _return_http_data_only: bool, optional
+:param _preload_content: if False, the urllib3.HTTPResponse object will
+                 be returned without reading/decoding response
+                 data. Default is True.
+:type _preload_content: bool, optional
+:param _request_timeout: timeout setting for this request. If one
+                 number provided, it will be total request
+                 timeout. It can also be a pair (tuple) of
+                 (connection, read) timeouts.
+:param _request_auth: set to override the auth_settings for an a single
+              request; this effectively ignores the authentication
+              in the spec for a single request.
+:type _request_auth: dict, optional
+:return: Returns the result object.
+ If the method is called asynchronously,
+ returns the request thread.
+:rtype: None
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" line="1635" column="1" bodyfile="OpenAPI/tests/node_manager_client/node_manager_client/api/default_api.py" bodystart="1635" bodyend="1726"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>NOTE: This class is auto generated by OpenAPI Generator
+Ref: https://openapi-generator.tech
+
+Do not edit the class manually.
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="2343">
+        <label>node_manager_client.api.default_api.DefaultApi</label>
+        <link refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi"/>
+        <childnode refid="2344" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2344" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2344">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2345">
+        <label>node_manager_client.api.default_api.DefaultApi</label>
+        <link refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi"/>
+        <childnode refid="2346" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2346" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2346">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" line="27" column="1" bodyfile="OpenAPI/tests/editable_copies/node_manager_client/node_manager_client/api/default_api.py" bodystart="27" bodyend="1726"/>
+    <listofallmembers>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1acca9d8446994084ce8ad0986cb10b259" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>__init__</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1acca9d8446994084ce8ad0986cb10b259" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>__init__</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a577484b81ad3247bf18678d8c6bde569" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>add_graph_parts</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a577484b81ad3247bf18678d8c6bde569" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>add_graph_parts</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1af79cb2f543f7983dccaf220631e9f766" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>add_graph_parts_with_http_info</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1af79cb2f543f7983dccaf220631e9f766" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>add_graph_parts_with_http_info</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a1c5900f8687ad08c04546b5ad1135cc8" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>api_client</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a17d82b266f4c4df882772b25938f248f" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>cancel_session</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a17d82b266f4c4df882772b25938f248f" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>cancel_session</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a05d4f607d439c29303913169c4d7b7d1" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>cancel_session_with_http_info</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a05d4f607d439c29303913169c4d7b7d1" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>cancel_session_with_http_info</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a734b84e23e32681d2e8a183e3bda5219" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>create_session</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a734b84e23e32681d2e8a183e3bda5219" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>create_session</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1ab4b9bfee745a399fac5dd827c778347a" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>create_session_with_http_info</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1ab4b9bfee745a399fac5dd827c778347a" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>create_session_with_http_info</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1afa1182f22343c96df22b486a692bc2eb" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>deploy_session</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1afa1182f22343c96df22b486a692bc2eb" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>deploy_session</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a49756a72bc1a903ea3e3898b4824929e" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>deploy_session_with_http_info</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a49756a72bc1a903ea3e3898b4824929e" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>deploy_session_with_http_info</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1ab8291a916fa35722c3525f5c3f108aa0" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>destroy_session</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1ab8291a916fa35722c3525f5c3f108aa0" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>destroy_session</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a04963722d427acc3a2f41bb7952ee9ca" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>destroy_session_with_http_info</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a04963722d427acc3a2f41bb7952ee9ca" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>destroy_session_with_http_info</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a76e5d6184af4abe5e7c34995754a43fd" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>get_graph</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a76e5d6184af4abe5e7c34995754a43fd" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>get_graph</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1abf50e282a6008d7283288f47a65c845b" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>get_graph_size</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1abf50e282a6008d7283288f47a65c845b" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>get_graph_size</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1afae9083f31eae6cbbc82bef858e7d1ed" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>get_graph_size_with_http_info</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1afae9083f31eae6cbbc82bef858e7d1ed" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>get_graph_size_with_http_info</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a51270f867618d9d0d1c6fb36ef6715f6" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>get_graph_status</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a51270f867618d9d0d1c6fb36ef6715f6" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>get_graph_status</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a7c523603cb942b9708eae571939f9ee1" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>get_graph_status_with_http_info</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a7c523603cb942b9708eae571939f9ee1" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>get_graph_status_with_http_info</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1aef2c414893c4acc54853266f5c64cab2" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>get_graph_with_http_info</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1aef2c414893c4acc54853266f5c64cab2" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>get_graph_with_http_info</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1af562d912e4c9285cbe784da455210310" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>get_nm_status</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1af562d912e4c9285cbe784da455210310" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>get_nm_status</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a48841c923268b422f6797fc6d9ada432" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>get_nm_status_with_http_info</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a48841c923268b422f6797fc6d9ada432" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>get_nm_status_with_http_info</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a474bb240bf99dd05749dc021c0c89f6a" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>get_session_information</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a474bb240bf99dd05749dc021c0c89f6a" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>get_session_information</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a550f40426a0001140a50996d47699c6e" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>get_session_information_with_http_info</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a550f40426a0001140a50996d47699c6e" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>get_session_information_with_http_info</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1ae20ae85140ad2cbcff979ee935cfaa75" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>get_session_status</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1ae20ae85140ad2cbcff979ee935cfaa75" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>get_session_status</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a3bae0357855fa747881c096889350606" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>get_session_status_with_http_info</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a3bae0357855fa747881c096889350606" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>get_session_status_with_http_info</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a4923357e146b39c6ccc131342ba94887" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>get_sessions</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a4923357e146b39c6ccc131342ba94887" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>get_sessions</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a7ad4ee16c19aa0603a170aa88f5d8267" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>get_sessions_with_http_info</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a7ad4ee16c19aa0603a170aa88f5d8267" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>get_sessions_with_http_info</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a2ee83ac3c9b55ebe152c35f5e88d33d3" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>stop_manager</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a2ee83ac3c9b55ebe152c35f5e88d33d3" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>stop_manager</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a859559a4f3509ae0f0d69490921fdab2" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>stop_manager_with_http_info</name></member>
+      <member refid="classnode__manager__client_1_1api_1_1default__api_1_1DefaultApi_1a859559a4f3509ae0f0d69490921fdab2" prot="public" virt="non-virtual"><scope>node_manager_client::api::default_api::DefaultApi</scope><name>stop_manager_with_http_info</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
