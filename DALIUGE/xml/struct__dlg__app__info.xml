@@ -192,22 +192,22 @@
     <detaileddescription>
 <para>The representation of an application instance. Apart from its UID and OID, an application has an array of inputs (with n_inputs elements), streaming_inputs (with n_streaming_inputs) elements, and outputs (with n_outputs elements). If the application works in a streaming mode, then it is also given the running and done callbacks to signal the framwork that it started working, and that it is done with its work, respectively. Finally, a data pointer holds application-specific data. </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="1900">
+      <node id="1641">
         <label>_dlg_input_info</label>
         <link refid="struct__dlg__input__info"/>
       </node>
-      <node id="1901">
+      <node id="1642">
         <label>_dlg_output_info</label>
         <link refid="struct__dlg__output__info"/>
       </node>
-      <node id="1899">
+      <node id="1640">
         <label>_dlg_app_info</label>
         <link refid="struct__dlg__app__info"/>
-        <childnode refid="1900" relation="usage">
+        <childnode refid="1641" relation="usage">
           <edgelabel>inputs</edgelabel>
           <edgelabel>streaming_inputs</edgelabel>
         </childnode>
-        <childnode refid="1901" relation="usage">
+        <childnode refid="1642" relation="usage">
           <edgelabel>outputs</edgelabel>
         </childnode>
       </node>
