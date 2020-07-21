@@ -2,6 +2,7 @@
     "modelData": {
         "fileType": "palette",
         "repoService": "GitHub",
+        "repoBranch": "",
         "repo": "ICRAR/EAGLE_test_repo",
         "filePath": "SP-602/YAN-251-001.palette",
         "sha": "",
@@ -15,19 +16,27 @@
             "isGroup": false,
             "canHaveInputs": false,
             "canHaveOutputs": true,
-            "colour": "#229954",
+            "color": "#229954",
+            "drawOrderHint": 0,
             "key": -1,
             "text": "Start",
             "description": "The starting point for workflow execution",
-            "loc": "300 100",
+            "x": 300,
+            "y": 100,
+            "width": 200,
+            "height": 200,
             "collapsed": false,
+            "showPorts": false,
             "streaming": false,
             "subject": null,
-            "inputAppName": "",
-            "outputAppName": "",
-            "exitAppName": "",
-            "inputApplication": "Unknown",
-            "outputApplication": "Unknown",
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "Unknown",
+            "outputApplicationType": "Unknown",
+            "exitApplicationType": "None",
             "inputPorts": [],
             "outputPorts": [
                 {
@@ -48,19 +57,27 @@
             "isGroup": false,
             "canHaveInputs": true,
             "canHaveOutputs": true,
-            "colour": "#1C2833",
+            "color": "#1C2833",
+            "drawOrderHint": 0,
             "key": -2,
             "text": "Bash Shell App - echo",
             "description": "An application component run within the Bash Shell",
-            "loc": "300 100",
+            "x": 300,
+            "y": 100,
+            "width": 200,
+            "height": 200,
             "collapsed": false,
+            "showPorts": false,
             "streaming": false,
             "subject": null,
-            "inputAppName": "",
-            "outputAppName": "",
-            "exitAppName": "",
-            "inputApplication": "Unknown",
-            "outputApplication": "Unknown",
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "Unknown",
+            "outputApplicationType": "Unknown",
+            "exitApplicationType": "None",
             "inputPorts": [
                 {
                     "Id": "9db02940-b899-4d39-9c31-d1c779bc14eb",
@@ -81,22 +98,26 @@
                 {
                     "text": "Execution time",
                     "name": "execution_time",
-                    "value": "5"
+                    "value": "5",
+                    "description": ""
                 },
                 {
                     "text": "Num CPUs",
                     "name": "num_cpus",
-                    "value": "1"
+                    "value": "1",
+                    "description": ""
                 },
                 {
                     "text": "Group start",
                     "name": "group_start",
-                    "value": "0"
+                    "value": "0",
+                    "description": ""
                 },
                 {
                     "text": "Arg01",
                     "name": "arg01",
-                    "value": "echo"
+                    "value": "echo",
+                    "description": ""
                 }
             ]
         },
@@ -107,19 +128,27 @@
             "isGroup": false,
             "canHaveInputs": true,
             "canHaveOutputs": true,
-            "colour": "#1C2833",
+            "color": "#1C2833",
+            "drawOrderHint": 0,
             "key": -3,
             "text": "Bash Shell App - cat",
             "description": "An application component run within the Bash Shell",
-            "loc": "300 100",
+            "x": 300,
+            "y": 100,
+            "width": 200,
+            "height": 200,
             "collapsed": false,
+            "showPorts": false,
             "streaming": false,
             "subject": null,
-            "inputAppName": "",
-            "outputAppName": "",
-            "exitAppName": "",
-            "inputApplication": "Unknown",
-            "outputApplication": "Unknown",
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "Unknown",
+            "outputApplicationType": "Unknown",
+            "exitApplicationType": "None",
             "inputPorts": [
                 {
                     "Id": "93613ded-295d-41eb-a8b9-f809de9d1d87",
@@ -140,22 +169,26 @@
                 {
                     "text": "Execution time",
                     "name": "execution_time",
-                    "value": "5"
+                    "value": "5",
+                    "description": ""
                 },
                 {
                     "text": "Num CPUs",
                     "name": "num_cpus",
-                    "value": "1"
+                    "value": "1",
+                    "description": ""
                 },
                 {
                     "text": "Group start",
                     "name": "group_start",
-                    "value": "0"
+                    "value": "0",
+                    "description": ""
                 },
                 {
                     "text": "Arg01",
                     "name": "arg01",
-                    "value": "cat"
+                    "value": "cat",
+                    "description": ""
                 }
             ]
         },
@@ -166,19 +199,27 @@
             "isGroup": true,
             "canHaveInputs": true,
             "canHaveOutputs": true,
-            "colour": "#D35400",
+            "color": "#D35400",
+            "drawOrderHint": 0,
             "key": -4,
             "text": "Gather",
             "description": "Placeholder 'gather' description",
-            "loc": "300 100",
+            "x": 300,
+            "y": 100,
+            "width": 200,
+            "height": 200,
             "collapsed": false,
+            "showPorts": false,
             "streaming": false,
             "subject": null,
-            "inputAppName": "cat",
-            "outputAppName": "",
-            "exitAppName": "",
-            "inputApplication": "BashShellApp",
-            "outputApplication": "",
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "cat",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "BashShellApp",
+            "outputApplicationType": "",
+            "exitApplicationType": "None",
             "inputPorts": [
                 {
                     "Id": "a401217c-221b-4558-bee6-9d455fa6e918",
@@ -207,17 +248,20 @@
                 {
                     "text": "Execution time",
                     "name": "execution_time",
-                    "value": "5"
+                    "value": "5",
+                    "description": ""
                 },
                 {
                     "text": "Num CPUs",
                     "name": "num_cpus",
-                    "value": "1"
+                    "value": "1",
+                    "description": ""
                 },
                 {
                     "text": "Group start",
                     "name": "group_start",
-                    "value": "0"
+                    "value": "0",
+                    "description": ""
                 }
             ],
             "outputAppFields": [],
@@ -225,18 +269,16 @@
                 {
                     "text": "Number of inputs",
                     "name": "num_of_inputs",
-                    "value": "2"
+                    "value": "2",
+                    "description": ""
                 },
                 {
                     "text": "Gather axis",
                     "name": "gather_axis",
-                    "value": "stdin"
+                    "value": "stdin",
+                    "description": ""
                 }
-            ],
-            "desiredSize": {
-                "width": 200,
-                "height": 200
-            }
+            ]
         },
         {
             "category": "End",
@@ -245,19 +287,27 @@
             "isGroup": false,
             "canHaveInputs": true,
             "canHaveOutputs": false,
-            "colour": "#CB4335",
+            "color": "#CB4335",
+            "drawOrderHint": 0,
             "key": -5,
             "text": "End",
             "description": "The end of workflow execution",
-            "loc": "300 100",
+            "x": 300,
+            "y": 100,
+            "width": 200,
+            "height": 200,
             "collapsed": false,
+            "showPorts": false,
             "streaming": false,
             "subject": null,
-            "inputAppName": "",
-            "outputAppName": "",
-            "exitAppName": "",
-            "inputApplication": "Unknown",
-            "outputApplication": "Unknown",
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "Unknown",
+            "outputApplicationType": "Unknown",
+            "exitApplicationType": "None",
             "inputPorts": [
                 {
                     "Id": "cd81ce42-02e9-4ecb-8b56-35c8016da67c",

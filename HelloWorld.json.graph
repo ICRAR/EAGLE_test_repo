@@ -1,18 +1,524 @@
-{ "class": "go.GraphLinksModel",
-  "copiesArrays": true,
-  "copiesArrayObjects": true,
-  "linkFromPortIdProperty": "fromPort",
-  "linkToPortIdProperty": "toPort",
-  "nodeDataArray": [ 
-{"canHaveInputs":false, "canHaveOutputs":true, "category":"Start", "categoryType":"ControlComponent", "colour":" #229954", "fields":[], "inputPorts":[], "isData":false, "isGroup":false, "key":-1, "loc":"147.95482025967942 18.030925921940025", "outputPorts":[ {"Id":"output_event", "IdText":"event"},{"Id":"output_", "IdText":""} ], "text":"Start", "type":"Start"},
-{"canHaveInputs":true, "canHaveOutputs":true, "category":"file", "categoryType":"DataDrop", "check_filepath_exists":"0", "colour":" #394BB2", "data_volume":"5", "dirname":"", "fields":[ {"name":"data_volume", "text":"Data volume", "value":"5"},{"name":"group_end", "text":"Group end", "value":"0"},{"name":"check_filepath_exists", "text":"Check file path exists", "value":"0"},{"name":"filepath", "text":"File path", "value":"/tmp/HelloWorldOut.txt"},{"name":"dirname", "text":"Directory name", "value":""} ], "filepath":"/tmp/HelloWorldOut.txt", "group_end":"0", "inputPorts":[ {"Id":"input_file", "IdText":"file"} ], "isData":true, "isGroup":false, "key":-6, "loc":"424.43996187000425 109", "outputPorts":[ {"Id":"output_event", "IdText":"file"} ], "shape":"Card", "text":"OutputFile", "type":"File Drop"},
-{"canHaveInputs":true, "canHaveOutputs":true, "category":"file", "categoryType":"DataDrop", "check_filepath_exists":"1", "colour":" #394BB2", "data_volume":"5", "dirname":"", "fields":[ {"name":"data_volume", "text":"Data volume", "value":"5"},{"name":"group_end", "text":"Group end", "value":"0"},{"name":"check_filepath_exists", "text":"Check file path exists", "value":"1"},{"name":"filepath", "text":"File path", "value":"/tmp/HelloWorldIn.txt"},{"name":"dirname", "text":"Directory name", "value":""} ], "filepath":"/tmp/HelloWorldIn.txt", "group_end":"0", "inputPorts":[ {"Id":"input_event", "IdText":"event"} ], "isData":true, "isGroup":false, "key":-5, "loc":"422 18", "outputPorts":[ {"Id":"output_file", "IdText":"file"} ], "shape":"Card", "text":"InputFile", "type":"File Drop"},
-{"Arg01":"/tmp/myCat.sh", "Arg02":"%i[-5]", "Arg03":"%o[-6]", "canHaveInputs":true, "canHaveOutputs":true, "category":"BashShellApp", "categoryType":"ApplicationDrop", "colour":" #1C2833", "execution_time":"5", "fields":[ {"name":"execution_time", "text":"Execution time", "value":"5"},{"name":"num_cpus", "text":"Num CPUs", "value":"1"},{"name":"group_start", "text":"Group start", "value":"0"},{"name":"Arg01", "text":"Command", "value":"/tmp/myCat.sh"},{"name":"Arg02", "text":"Input Ref", "value":"%i[-5]"},{"name":"Arg03", "text":"Output Ref", "value":"%o[-6]"} ], "group_start":"0", "inputPorts":[ {"Id":"input_file", "IdText":"file"},{"Id":"input_", "IdText":""} ], "isData":false, "isGroup":false, "key":-19, "loc":"139.05191539341703 109.24619823293072", "num_cpus":"1", "outputPorts":[ {"Id":"output_file", "IdText":"file"},{"Id":"output_", "IdText":""} ], "text":"myCatApp", "type":"Shell App"},
-{"category":"Component", "loc":"143.28125 223", "type":"Python App", "key":-20, "isData":false, "fields":[ {"text":"Execution time", "name":"execution_time", "value":"5"},{"text":"Num CPUs", "name":"num_cpus", "value":"1"},{"text":"Group start", "name":"group_start", "value":"0"},{"text":"Appclass", "name":"appclass", "value":"dlg.apps.archiving.NgasArchivingApp"},{"text":"Arg01", "name":"Arg01", "value":"%i[-6]"},{"text":"Arg02", "name":"Arg02", "value":"ngasSrv=ngas.ddns.net"},{"text":"Arg03", "name":"Arg03", "value":"ngasPort=7777"},{"text":"Arg04", "name":"Arg04", "value":""},{"text":"Arg05", "name":"Arg05", "value":""},{"text":"Arg06", "name":"Arg06", "value":""},{"text":"Arg07", "name":"Arg07", "value":""},{"text":"Arg08", "name":"Arg08", "value":""},{"text":"Arg09", "name":"Arg09", "value":""},{"text":"Arg10", "name":"Arg10", "value":""} ], "colour":" #3498DB", "canHaveOutputs":true, "canHaveInputs":true, "outputPorts":[ {"IdText":"event", "Id":"output_event"} ], "isGroup":false, "inputPorts":[ {"IdText":"dlg_in", "Id":"input_dlg_in"},{"Id":"input_file", "IdText":"file"} ], "text":"NGAS Archiving", "categoryType":"ApplicationDrop"}
- ],
-  "linkDataArray": [ 
-{"from":-1, "fromPort":"output_event", "points":[ 300.3102890096794,42.43053529694002,310.3102890096794,42.43053529694002,310.3102890096794,42.399609375,310.3102890096794,42.399609375,412,42.399609375,422,42.399609375 ], "to":-5, "toPort":"input_event"},
-{"from":-19, "fromPort":"output_file", "points":[ 295.73160289341706,133.64580760793072,305.73160289341706,133.64580760793072,305.73160289341706,133.399609375,305.73160289341706,133.399609375,414.43996187000425,133.399609375,424.43996187000425,133.399609375 ], "to":-6, "toPort":"input_file"},
-{"from":-5, "fromPort":"output_file", "points":[ 592.6953125,42.399609375,602.6953125,42.399609375,605.2043826106311,42.399609375,605.2043826106311,92.80623636292658,132,92.80623636292658,132,133.64580760793072,129.05191539341703,133.64580760793072,139.05191539341703,133.64580760793072 ], "to":-19, "toPort":"input_file"},
-{"from":-6, "to":-20, "fromPort":"output_event", "toPort":"input_file", "points":[ 581.1196493700043,133.399609375,591.1196493700043,133.399609375,591.1196493700043,133.399609375,591.1196493700043,188,148,188,148,265.399609375,149.96875,265.399609375,159.96875,265.399609375 ]}
- ]}
+{
+    "modelData": {
+        "fileType": "graph",
+        "repoService": "Unknown",
+        "repoBranch": "",
+        "repo": "",
+        "filePath": "/Users/james/working/update-logical-graphs/../EAGLE_test_repo/HelloWorld.json.graph",
+        "sha": "",
+        "git_url": ""
+    },
+    "nodeDataArray": [
+        {
+            "category": "Start",
+            "categoryType": "Control",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": false,
+            "canHaveOutputs": true,
+            "color": "#229954",
+            "drawOrderHint": 0,
+            "key": -1,
+            "text": "Start",
+            "description": "",
+            "x": 147,
+            "y": 18,
+            "width": 200,
+            "height": 200,
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [],
+            "outputPorts": [
+                {
+                    "Id": "output_event",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "output_",
+                    "IdText": ""
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": []
+        },
+        {
+            "category": "File",
+            "categoryType": "Data",
+            "isData": true,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "color": "#394BB2",
+            "drawOrderHint": 0,
+            "key": -6,
+            "text": "OutputFile",
+            "description": "",
+            "x": 424,
+            "y": 109,
+            "width": 200,
+            "height": 200,
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "input_file",
+                    "IdText": "file"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "output_event",
+                    "IdText": "file"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "5",
+                    "description": ""
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "0",
+                    "description": ""
+                },
+                {
+                    "text": "Check file path exists",
+                    "name": "check_filepath_exists",
+                    "value": "0",
+                    "description": ""
+                },
+                {
+                    "text": "File path",
+                    "name": "filepath",
+                    "value": "/tmp/HelloWorldOut.txt",
+                    "description": ""
+                },
+                {
+                    "text": "Directory name",
+                    "name": "dirname",
+                    "value": "",
+                    "description": ""
+                },
+                {
+                    "text": "Data Volume",
+                    "name": "data_volume",
+                    "value": "5",
+                    "description": ""
+                },
+                {
+                    "text": "Group End",
+                    "name": "group_end",
+                    "value": "0",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "category": "File",
+            "categoryType": "Data",
+            "isData": true,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "color": "#394BB2",
+            "drawOrderHint": 0,
+            "key": -5,
+            "text": "InputFile",
+            "description": "",
+            "x": 422,
+            "y": 18,
+            "width": 200,
+            "height": 200,
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "input_event",
+                    "IdText": "event"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "output_file",
+                    "IdText": "file"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "5",
+                    "description": ""
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "0",
+                    "description": ""
+                },
+                {
+                    "text": "Check file path exists",
+                    "name": "check_filepath_exists",
+                    "value": "1",
+                    "description": ""
+                },
+                {
+                    "text": "File path",
+                    "name": "filepath",
+                    "value": "/tmp/HelloWorldIn.txt",
+                    "description": ""
+                },
+                {
+                    "text": "Directory name",
+                    "name": "dirname",
+                    "value": "",
+                    "description": ""
+                },
+                {
+                    "text": "Data Volume",
+                    "name": "data_volume",
+                    "value": "5",
+                    "description": ""
+                },
+                {
+                    "text": "Group End",
+                    "name": "group_end",
+                    "value": "0",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "category": "BashShellApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "color": "#1C2833",
+            "drawOrderHint": 0,
+            "key": -19,
+            "text": "myCatApp",
+            "description": "",
+            "x": 139,
+            "y": 109,
+            "width": 200,
+            "height": 200,
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "input_file",
+                    "IdText": "file"
+                },
+                {
+                    "Id": "input_",
+                    "IdText": ""
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "output_file",
+                    "IdText": "file"
+                },
+                {
+                    "Id": "output_",
+                    "IdText": ""
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "description": ""
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "description": ""
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "0",
+                    "description": ""
+                },
+                {
+                    "text": "Command",
+                    "name": "Arg01",
+                    "value": "/tmp/myCat.sh",
+                    "description": ""
+                },
+                {
+                    "text": "Input Ref",
+                    "name": "Arg02",
+                    "value": "%i[-5]",
+                    "description": ""
+                },
+                {
+                    "text": "Output Ref",
+                    "name": "Arg03",
+                    "value": "%o[-6]",
+                    "description": ""
+                },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "description": ""
+                },
+                {
+                    "text": "Group Start",
+                    "name": "group_start",
+                    "value": "0",
+                    "description": ""
+                },
+                {
+                    "text": "Number of CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "description": ""
+                },
+                {
+                    "text": "Arg 01",
+                    "name": "Arg01",
+                    "value": "/tmp/myCat.sh",
+                    "description": ""
+                },
+                {
+                    "text": "Arg 02",
+                    "name": "Arg02",
+                    "value": "%i[-5]",
+                    "description": ""
+                },
+                {
+                    "text": "Arg 03",
+                    "name": "Arg03",
+                    "value": "%o[-6]",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "category": "Component",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "color": "#3498DB",
+            "drawOrderHint": 0,
+            "key": -20,
+            "text": "NGAS Archiving",
+            "description": "",
+            "x": 143,
+            "y": 223,
+            "width": 200,
+            "height": 200,
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "input_dlg_in",
+                    "IdText": "dlg_in"
+                },
+                {
+                    "Id": "input_file",
+                    "IdText": "file"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "output_event",
+                    "IdText": "event"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "description": ""
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "description": ""
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "0",
+                    "description": ""
+                },
+                {
+                    "text": "Appclass",
+                    "name": "appclass",
+                    "value": "dlg.apps.archiving.NgasArchivingApp",
+                    "description": ""
+                },
+                {
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": "%i[-6]",
+                    "description": ""
+                },
+                {
+                    "text": "Arg02",
+                    "name": "Arg02",
+                    "value": "ngasSrv=ngas.ddns.net",
+                    "description": ""
+                },
+                {
+                    "text": "Arg03",
+                    "name": "Arg03",
+                    "value": "ngasPort=7777",
+                    "description": ""
+                },
+                {
+                    "text": "Arg04",
+                    "name": "Arg04",
+                    "value": "",
+                    "description": ""
+                },
+                {
+                    "text": "Arg05",
+                    "name": "Arg05",
+                    "value": "",
+                    "description": ""
+                },
+                {
+                    "text": "Arg06",
+                    "name": "Arg06",
+                    "value": "",
+                    "description": ""
+                },
+                {
+                    "text": "Arg07",
+                    "name": "Arg07",
+                    "value": "",
+                    "description": ""
+                },
+                {
+                    "text": "Arg08",
+                    "name": "Arg08",
+                    "value": "",
+                    "description": ""
+                },
+                {
+                    "text": "Arg09",
+                    "name": "Arg09",
+                    "value": "",
+                    "description": ""
+                },
+                {
+                    "text": "Arg10",
+                    "name": "Arg10",
+                    "value": "",
+                    "description": ""
+                }
+            ]
+        }
+    ],
+    "linkDataArray": [
+        {
+            "from": -1,
+            "fromPort": "output_event",
+            "to": -5,
+            "toPort": "input_event"
+        },
+        {
+            "from": -19,
+            "fromPort": "output_file",
+            "to": -6,
+            "toPort": "input_file"
+        },
+        {
+            "from": -5,
+            "fromPort": "output_file",
+            "to": -19,
+            "toPort": "input_file"
+        },
+        {
+            "from": -6,
+            "fromPort": "output_event",
+            "to": -20,
+            "toPort": "input_file"
+        }
+    ]
+}
