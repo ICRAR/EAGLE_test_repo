@@ -5913,6 +5913,279 @@ The solution (calibration parameters) is reported via solution accessor </para>
     <detaileddescription>
     </detaileddescription>
     <location file="docs/conf.py" line="1" column="1"/>
+  </compounddef><compounddef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namespacexml2palette" kind="namespace" language="Python">
+    <compoundname>xml2palette</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="xml2palette_8py_1a03678021339c363c9a07ae64c85f1633" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int xml2palette.next_key</definition>
+        <argsstring/>
+        <name>next_key</name>
+        <initializer>=  -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="xml2palette.py" line="9" column="1" bodyfile="xml2palette.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="xml2palette_8py_1ad494f4f157e8e9d7475ce69a6ac263f2" prot="public" static="no" mutable="no">
+        <type/>
+        <definition>xml2palette.inputfile</definition>
+        <argsstring/>
+        <name>inputfile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="xml2palette.py" line="279" column="1" bodyfile="xml2palette.py" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="xml2palette_8py_1a92c74dcde79839984e3e2f3262a36814" prot="public" static="no" mutable="no">
+        <type/>
+        <definition>xml2palette.outputfile</definition>
+        <argsstring/>
+        <name>outputfile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="xml2palette.py" line="279" column="1" bodyfile="xml2palette.py" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="xml2palette_8py_1a624f888f3e348fcc802bfb1c9b049c19" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list xml2palette.nodes</definition>
+        <argsstring/>
+        <name>nodes</name>
+        <initializer>=  []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="xml2palette.py" line="285" column="1" bodyfile="xml2palette.py" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="xml2palette_8py_1abe66901e9a456e491b02e878c27c1f02" prot="public" static="no" mutable="no">
+        <type/>
+        <definition>xml2palette.tree</definition>
+        <argsstring/>
+        <name>tree</name>
+        <initializer>=  ET.parse(inputfile)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="xml2palette.py" line="288" column="1" bodyfile="xml2palette.py" bodystart="288" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="xml2palette_8py_1a9c86877320b8be04d4ef3095195ac9c7" prot="public" static="no" mutable="no">
+        <type/>
+        <definition>xml2palette.xml_root</definition>
+        <argsstring/>
+        <name>xml_root</name>
+        <initializer>=  tree.getroot()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="xml2palette.py" line="289" column="1" bodyfile="xml2palette.py" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="xml2palette_8py_1a218e96bdfdd670f03ec22be78df02a00" prot="public" static="no" mutable="no">
+        <type>def</type>
+        <definition>def xml2palette.params</definition>
+        <argsstring/>
+        <name>params</name>
+        <initializer>=  process_compounddef(compounddef)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="xml2palette.py" line="293" column="1" bodyfile="xml2palette.py" bodystart="293" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="xml2palette_8py_1a63b494a03e527fa3f8afabeab5c17c88" prot="public" static="no" mutable="no">
+        <type>def</type>
+        <definition>def xml2palette.n</definition>
+        <argsstring/>
+        <name>n</name>
+        <initializer>=  create_palette_node_from_params(params)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="xml2palette.py" line="300" column="1" bodyfile="xml2palette.py" bodystart="300" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="xml2palette_8py_1afb0c17746b320a112584b3e245bbdd27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def xml2palette.get_filenames_from_command_line</definition>
+        <argsstring>(argv)</argsstring>
+        <name>get_filenames_from_command_line</name>
+        <param>
+          <type>argv</type>
+          <defname>argv</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="xml2palette.py" line="11" column="1" bodyfile="xml2palette.py" bodystart="11" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="xml2palette_8py_1a6f629792ea9a2bd1158429510979ba60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def xml2palette.get_next_key</definition>
+        <argsstring>()</argsstring>
+        <name>get_next_key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="xml2palette.py" line="35" column="1" bodyfile="xml2palette.py" bodystart="35" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="xml2palette_8py_1a79b4f7d953990c35c5bda248e2307ce7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def xml2palette.create_port</definition>
+        <argsstring>(name)</argsstring>
+        <name>create_port</name>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="xml2palette.py" line="43" column="1" bodyfile="xml2palette.py" bodystart="43" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="xml2palette_8py_1a8cc014a2a44c0ad0a2cd04a126be642c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def xml2palette.add_required_fields_for_category</definition>
+        <argsstring>(fields, category)</argsstring>
+        <name>add_required_fields_for_category</name>
+        <param>
+          <type>fields</type>
+          <defname>fields</defname>
+        </param>
+        <param>
+          <type>category</type>
+          <defname>category</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="xml2palette.py" line="50" column="1" bodyfile="xml2palette.py" bodystart="50" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="xml2palette_8py_1a573c6e0a5fc3f34c1670348cbc7c988a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def xml2palette.create_field</definition>
+        <argsstring>(text, name, value, description)</argsstring>
+        <name>create_field</name>
+        <param>
+          <type>text</type>
+          <defname>text</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>value</type>
+          <defname>value</defname>
+        </param>
+        <param>
+          <type>description</type>
+          <defname>description</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="xml2palette.py" line="76" column="1" bodyfile="xml2palette.py" bodystart="76" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="xml2palette_8py_1a7fba0e8a8d65eca0b42cc686ff987ae2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def xml2palette.create_palette_node_from_params</definition>
+        <argsstring>(params)</argsstring>
+        <name>create_palette_node_from_params</name>
+        <param>
+          <type>params</type>
+          <defname>params</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="xml2palette.py" line="86" column="1" bodyfile="xml2palette.py" bodystart="86" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="xml2palette_8py_1a1fc36f5bee0038c2cea59a179b390f36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def xml2palette.write_palette_json</definition>
+        <argsstring>(outputfile, nodes)</argsstring>
+        <name>write_palette_json</name>
+        <param>
+          <type>outputfile</type>
+          <defname>outputfile</defname>
+        </param>
+        <param>
+          <type>nodes</type>
+          <defname>nodes</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="xml2palette.py" line="179" column="1" bodyfile="xml2palette.py" bodystart="179" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="xml2palette_8py_1a83c1cc1fa172eb96252afc6e9951baee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def xml2palette.process_compounddef</definition>
+        <argsstring>(compounddef)</argsstring>
+        <name>process_compounddef</name>
+        <param>
+          <type>compounddef</type>
+          <defname>compounddef</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="xml2palette.py" line="198" column="1" bodyfile="xml2palette.py" bodystart="198" bodyend="277"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="xml2palette.py" line="1" column="1"/>
   </compounddef><compounddef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="CMakeLists_8txt" kind="file" language="C++">
     <compoundname>CMakeLists.txt</compoundname>
       <sectiondef kind="var">
@@ -6609,7 +6882,7 @@ This file is part of the JACAL software distribution.</para>
 <parametername>gitrepo</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>origin <ulink url="https://gitlab.com/ska-telescope/jacal.git">https://gitlab.com/ska-telescope/jacal.git</ulink> (fetch) origin <ulink url="https://gitlab.com/ska-telescope/jacal.git">https://gitlab.com/ska-telescope/jacal.git</ulink> (push) </para>
+<para><ulink url="https://gitlab.com/ska-telescope/jacal.git">https://gitlab.com/ska-telescope/jacal.git</ulink> </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -6617,7 +6890,7 @@ This file is part of the JACAL software distribution.</para>
 <parametername>version</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>2c90550 </para>
+<para>84e6d1a </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -6950,6 +7223,14 @@ This file is part of the JACAL software distribution.</para>
     <detaileddescription>
     </detaileddescription>
     <location file="README.md"/>
+  </compounddef><compounddef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="xml2palette_8py" kind="file" language="Python">
+    <compoundname>xml2palette.py</compoundname>
+    <innernamespace refid="namespacexml2palette">xml2palette</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="xml2palette.py"/>
   </compounddef><compounddef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="md_ProcessingComponentBindingGuide" kind="page">
     <compoundname>md_ProcessingComponentBindingGuide</compoundname>
     <title>Install Doxygen</title>
@@ -7158,7 +7439,7 @@ This file is part of the JACAL software distribution.</para>
 <sect3 id="md_ProcessingComponentBindingGuide_1autotoc_md8">
 <title>&lt;strong&gt;Version&lt;/strong&gt;</title>
 <para>The version of the code file.</para>
-<para>Note: the value of 2c90550 will be substituted at run-time, and also give value to PROJECT_NUMBER in the Doxygen configuration file "Doxyfile" ( PROJECT_NUMBER = 2c90550 ).</para>
+<para>Note: the value of 84e6d1a will be substituted at run-time, and also give value to PROJECT_NUMBER in the Doxygen configuration file "Doxyfile" ( PROJECT_NUMBER = 84e6d1a ).</para>
 <para><programlisting><codeline><highlight class="normal"><sp/>{c++}</highlight></codeline>
 <codeline><highlight class="normal">/*!<sp/></highlight></codeline>
 <codeline><highlight class="normal">*<sp/>\par<sp/>EAGLE_START<sp/></highlight></codeline>
