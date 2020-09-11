@@ -15,7 +15,7 @@
             "streaming": false, 
             "subject": null, 
             "category": "Memory", 
-            "outputAppFields": [], 
+            "group": -5, 
             "selected": false, 
             "canHaveInputs": true, 
             "showPorts": false, 
@@ -33,6 +33,7 @@
             "outputApplicationName": "", 
             "inputLocalPorts": [], 
             "key": -1, 
+            "outputAppFields": [], 
             "isData": true, 
             "fields": [
                 {
@@ -51,8 +52,8 @@
             "expanded": false, 
             "exitApplicationName": "", 
             "inputPorts": [], 
-            "y": 100, 
-            "x": 450, 
+            "y": 350, 
+            "x": 500, 
             "categoryType": "Data"
         }, 
         {
@@ -69,7 +70,7 @@
             "streaming": false, 
             "subject": null, 
             "category": "File", 
-            "outputAppFields": [], 
+            "group": -5, 
             "selected": false, 
             "canHaveInputs": true, 
             "showPorts": false, 
@@ -87,6 +88,7 @@
             "outputApplicationName": "", 
             "inputLocalPorts": [], 
             "key": -2, 
+            "outputAppFields": [], 
             "isData": true, 
             "fields": [
                 {
@@ -123,7 +125,7 @@
             "expanded": false, 
             "exitApplicationName": "", 
             "inputPorts": [], 
-            "y": 100, 
+            "y": 350, 
             "x": 650, 
             "categoryType": "Data"
         }, 
@@ -141,7 +143,7 @@
             "streaming": false, 
             "subject": null, 
             "category": "S3", 
-            "outputAppFields": [], 
+            "group": -5, 
             "selected": false, 
             "canHaveInputs": true, 
             "showPorts": false, 
@@ -159,6 +161,7 @@
             "outputApplicationName": "", 
             "inputLocalPorts": [], 
             "key": -3, 
+            "outputAppFields": [], 
             "isData": true, 
             "fields": [
                 {
@@ -177,8 +180,8 @@
             "expanded": false, 
             "exitApplicationName": "", 
             "inputPorts": [], 
-            "y": 100, 
-            "x": 850, 
+            "y": 350, 
+            "x": 800, 
             "categoryType": "Data"
         }, 
         {
@@ -195,7 +198,7 @@
             "streaming": false, 
             "subject": null, 
             "category": "NGAS", 
-            "outputAppFields": [], 
+            "group": -5, 
             "selected": false, 
             "canHaveInputs": true, 
             "showPorts": false, 
@@ -213,6 +216,7 @@
             "outputApplicationName": "", 
             "inputLocalPorts": [], 
             "key": -4, 
+            "outputAppFields": [], 
             "isData": true, 
             "fields": [
                 {
@@ -231,9 +235,84 @@
             "expanded": false, 
             "exitApplicationName": "", 
             "inputPorts": [], 
-            "y": 100, 
-            "x": 1050, 
+            "y": 350, 
+            "x": 950, 
             "categoryType": "Data"
+        }, 
+        {
+            "outputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "17847207-cf1d-4ded-9bf5-23039568a370"
+                }
+            ], 
+            "color": "#D32000", 
+            "text": "MKN", 
+            "isGroup": true, 
+            "height": 359, 
+            "streaming": false, 
+            "subject": null, 
+            "category": "MKN", 
+            "outputAppFields": [], 
+            "selected": true, 
+            "canHaveInputs": true, 
+            "showPorts": true, 
+            "width": 778, 
+            "inputAppFields": [], 
+            "exitApplicationType": "None", 
+            "inputApplicationType": "None", 
+            "inputApplicationName": "", 
+            "drawOrderHint": 0, 
+            "outputApplicationType": "None", 
+            "description": "Placeholder 'mkn' description", 
+            "outputLocalPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "b98d3021-abaf-42e5-a099-f3ba7f9f8532"
+                }
+            ], 
+            "collapsed": false, 
+            "canHaveOutputs": true, 
+            "outputApplicationName": "", 
+            "inputLocalPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "a199f383-eaf8-4406-ae10-cedc86a699c9"
+                }
+            ], 
+            "key": -5, 
+            "isData": false, 
+            "fields": [
+                {
+                    "text": "M", 
+                    "name": "m", 
+                    "value": "1", 
+                    "description": ""
+                }, 
+                {
+                    "text": "K", 
+                    "name": "k", 
+                    "value": "10", 
+                    "description": ""
+                }, 
+                {
+                    "text": "N", 
+                    "name": "n", 
+                    "value": "1", 
+                    "description": ""
+                }
+            ], 
+            "expanded": true, 
+            "exitApplicationName": "", 
+            "inputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "8ee7a110-7006-4495-990d-32d656afdecd"
+                }
+            ], 
+            "y": 196, 
+            "x": 477, 
+            "categoryType": "Group"
         }
     ], 
     "modelData": {
