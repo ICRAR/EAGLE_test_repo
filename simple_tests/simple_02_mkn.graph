@@ -2,7 +2,7 @@
     "modelData": {
         "fileType": "graph",
         "repoService": "GitHub",
-        "repoBranch": "",
+        "repoBranch": "master",
         "repo": "ICRAR/EAGLE_test_repo",
         "filePath": "simple_tests/simple_02_mkn.graph",
         "sha": "",
@@ -129,21 +129,21 @@
             "key": -6,
             "text": "MKN",
             "description": "Placeholder 'mkn' description",
-            "x": 350,
-            "y": 263,
+            "x": 376.1413889745554,
+            "y": 302.21208346183295,
             "width": 764,
             "height": 308,
             "collapsed": false,
-            "showPorts": false,
+            "showPorts": true,
             "streaming": false,
             "subject": null,
-            "selected": false,
-            "expanded": false,
+            "selected": true,
+            "expanded": true,
             "inputApplicationName": "mkn_in",
             "outputApplicationName": "mkn_out",
             "exitApplicationName": "",
-            "inputApplicationType": "Component",
-            "outputApplicationType": "Component",
+            "inputApplicationType": "BashShellApp",
+            "outputApplicationType": "BashShellApp",
             "exitApplicationType": "None",
             "inputPorts": [
                 {
@@ -189,10 +189,10 @@
                     "description": ""
                 },
                 {
-                    "text": "Appclass",
-                    "name": "appclass",
-                    "value": "test.graphsRepository",
-                    "description": ""
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": "sleep 2",
+                    "description": "The command line to be executed"
                 }
             ],
             "outputAppFields": [
@@ -215,10 +215,10 @@
                     "description": ""
                 },
                 {
-                    "text": "Appclass",
-                    "name": "appclass",
-                    "value": "test.graphsRepository",
-                    "description": ""
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": "sleep 5",
+                    "description": "The command line to be executed"
                 }
             ],
             "fields": [
@@ -243,7 +243,7 @@
             ]
         },
         {
-            "category": "Component",
+            "category": "PythonApp",
             "categoryType": "Application",
             "isData": false,
             "isGroup": false,
@@ -254,8 +254,8 @@
             "key": -3,
             "text": "Python Sleep App",
             "description": "An application component in the form of a Python app",
-            "x": 812,
-            "y": 435,
+            "x": 838.1413889745555,
+            "y": 474.212083461833,
             "width": 200,
             "height": 200,
             "collapsed": false,
@@ -317,7 +317,7 @@
                 {
                     "text": "Appclass",
                     "name": "appclass",
-                    "value": "dlg.apps.SleepApp",
+                    "value": "dlg.apps.simple.SleepApp",
                     "description": ""
                 },
                 {
@@ -329,7 +329,7 @@
             ]
         },
         {
-            "category": "Component",
+            "category": "PythonApp",
             "categoryType": "Application",
             "isData": false,
             "isGroup": false,
@@ -340,8 +340,8 @@
             "key": -2,
             "text": "Python Sleep App",
             "description": "An application component in the form of a Python app",
-            "x": 453,
-            "y": 398,
+            "x": 479.1413889745554,
+            "y": 437.21208346183295,
             "width": 200,
             "height": 200,
             "collapsed": false,
@@ -403,7 +403,7 @@
                 {
                     "text": "Appclass",
                     "name": "appclass",
-                    "value": "dlg.apps.SleepApp",
+                    "value": "dlg.apps.simple.SleepApp",
                     "description": ""
                 },
                 {
@@ -426,8 +426,8 @@
             "key": -1,
             "text": "end",
             "description": "",
-            "x": 1042,
-            "y": 359,
+            "x": 971.8935477500554,
+            "y": 408.90628804233273,
             "width": 200,
             "height": 200,
             "collapsed": false,
@@ -494,8 +494,8 @@
             "key": -8,
             "text": "start",
             "description": "",
-            "x": 374,
-            "y": 385,
+            "x": 394.200164207611,
+            "y": 362.42334588561096,
             "width": 200,
             "height": 200,
             "collapsed": false,
@@ -562,8 +562,8 @@
             "key": -9,
             "text": "link",
             "description": "",
-            "x": 707,
-            "y": 507,
+            "x": 691.5528156059449,
+            "y": 400.0579541950002,
             "width": 200,
             "height": 200,
             "collapsed": false,
@@ -706,16 +706,16 @@
             "toPort": "01bd22b3-9018-48f6-948e-89428936a99b"
         },
         {
-            "from": -3,
-            "fromPort": "49dc059c-33b4-4f07-889c-24a6be429b36",
+            "from": -2,
+            "fromPort": "1442ac73-a7e6-4c4c-a9fd-9620ac52e3b1",
             "to": -9,
             "toPort": "8aa39378-fdbe-49a5-9cb5-5bc341c64146"
         },
         {
             "from": -9,
             "fromPort": "533322fa-54b7-4d55-8317-ec239ce92e6d",
-            "to": -2,
-            "toPort": "1442ac73-a7e6-4c4c-a9fd-9620ac52e3b1"
+            "to": -3,
+            "toPort": "49dc059c-33b4-4f07-889c-24a6be429b36"
         }
     ]
 }
