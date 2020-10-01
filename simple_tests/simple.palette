@@ -621,6 +621,328 @@
             "inputAppFields": [],
             "outputAppFields": [],
             "fields": []
+        },
+        {
+            "category": "Scatter",
+            "categoryType": "Group",
+            "isData": false,
+            "isGroup": true,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "color": "#DDAD00",
+            "drawOrderHint": 0,
+            "key": -11,
+            "text": "Scatter",
+            "description": "Placeholder 'scatter' description",
+            "x": 300,
+            "y": 100,
+            "width": 200,
+            "height": 200,
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "2eae390a-44fa-4fed-ac26-06598f701146",
+                    "IdText": "event"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "8598c49e-b95f-4c42-b534-6379a825fba5",
+                    "IdText": "event"
+                }
+            ],
+            "inputLocalPorts": [
+                {
+                    "Id": "6e448e01-84fe-4511-92d7-24f31b55fe0f",
+                    "IdText": "event"
+                }
+            ],
+            "outputLocalPorts": [
+                {
+                    "Id": "8a683f5f-ff64-4753-b57f-c728c3cef3e5",
+                    "IdText": "event"
+                }
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Number of copies",
+                    "name": "num_of_copies",
+                    "value": "4",
+                    "description": ""
+                },
+                {
+                    "text": "Scatter axis",
+                    "name": "scatter_axis",
+                    "value": "time",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "category": "Gather",
+            "categoryType": "Group",
+            "isData": false,
+            "isGroup": true,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "color": "#D35400",
+            "drawOrderHint": 0,
+            "key": -12,
+            "text": "Gather",
+            "description": "Placeholder 'gather' description",
+            "x": 300,
+            "y": 100,
+            "width": 200,
+            "height": 200,
+            "collapsed": false,
+            "showPorts": true,
+            "streaming": false,
+            "subject": null,
+            "selected": true,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "17c03866-425f-4d7a-8d0b-8bec795e8b13",
+                    "IdText": "event"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "e8d53391-60e4-450d-a23d-09fd0d5aed30",
+                    "IdText": "event"
+                }
+            ],
+            "inputLocalPorts": [
+                {
+                    "Id": "abc2af42-c1a2-416f-a7cb-3f83f004ba05",
+                    "IdText": "event"
+                }
+            ],
+            "outputLocalPorts": [
+                {
+                    "Id": "7a6c04e1-064c-4190-8e9b-aa395daa5ae4",
+                    "IdText": "event"
+                }
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Number of inputs",
+                    "name": "num_of_inputs",
+                    "value": "2",
+                    "description": ""
+                },
+                {
+                    "text": "Gather axis",
+                    "name": "gather_axis",
+                    "value": "frequency",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "category": "PythonApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "color": "#3498DB",
+            "drawOrderHint": 0,
+            "key": -13,
+            "text": "RandomArray",
+            "description": "    A BarrierAppDrop that generates an array of random numbers. It does\n    not require any inputs and writes the generated array to all of its\n    outputs.\n\n    Keywords:\n\n    integer:  bool [True], generate integer array\n    low:      float, lower boundary (will be converted to int for integer arrays)\n    high:     float, upper boundary (will be converted to int for integer arrays)\n    size:     int, number of array elements\n",
+            "x": 300,
+            "y": 100,
+            "width": 200,
+            "height": 200,
+            "collapsed": false,
+            "showPorts": true,
+            "streaming": false,
+            "subject": null,
+            "selected": true,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "6b2b8a18-9f64-43ad-92cf-0168e217fbfe",
+                    "IdText": "event"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "2b480bed-64d7-4ac6-8f9a-caaaeb294838",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "5a07b742-c006-49ed-add0-377de53c4c96",
+                    "IdText": "randomArray"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": "1",
+                    "description": ""
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "description": ""
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "0",
+                    "description": ""
+                },
+                {
+                    "text": "Appclass",
+                    "name": "appclass",
+                    "value": "dlg.apps.simple.RandomArrayApp",
+                    "description": ""
+                },
+                {
+                    "text": "low",
+                    "name": "low",
+                    "value": "0",
+                    "description": ""
+                },
+                {
+                    "text": "high",
+                    "name": "high",
+                    "value": "100",
+                    "description": ""
+                },
+                {
+                    "text": "size",
+                    "name": "size",
+                    "value": "100",
+                    "description": ""
+                },
+                {
+                    "text": "integer",
+                    "name": "integer",
+                    "value": "True",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "category": "PythonApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "color": "#3498DB",
+            "drawOrderHint": 0,
+            "key": -14,
+            "text": "AverageArrays",
+            "description": "    A BarrierAppDrop that averages arrays received on input. It requires\n    multiple inputs and writes the generated average array to all of its\n    outputs.\n    The input arrays are assumed to have the same number of elements and\n    the output array will also have that same number of elements.\n\n    Keywords:\n\n    method:  string <['mean']|'median'>, use mean or median as method.\n",
+            "x": 300,
+            "y": 100,
+            "width": 200,
+            "height": 200,
+            "collapsed": false,
+            "showPorts": true,
+            "streaming": false,
+            "subject": null,
+            "selected": true,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "6b2b8a18-9f64-43ad-92cf-0168e217fbfe",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "d19b7aa1-1fae-411c-b4bf-76a74861a718",
+                    "IdText": "array"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "2b480bed-64d7-4ac6-8f9a-caaaeb294838",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "99c7c8d5-f026-4ad2-be36-2adfd16a966d",
+                    "IdText": "average"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": "1",
+                    "description": ""
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "description": ""
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "0",
+                    "description": ""
+                },
+                {
+                    "text": "Appclass",
+                    "name": "appclass",
+                    "value": "dlg.apps.simple.AverageArraysApp",
+                    "description": ""
+                },
+                {
+                    "text": "method",
+                    "name": "method",
+                    "value": "mean",
+                    "description": ""
+                }
+            ]
         }
     ],
     "linkDataArray": []
