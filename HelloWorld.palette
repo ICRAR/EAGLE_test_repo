@@ -1,9 +1,9 @@
 {
     "modelData": {
-        "fileType": "palette",
+        "fileType": "",
         "repoService": "GitHub",
-        "repoBranch": "",
-        "repo": "ICRAR/dlg_test_repo",
+        "repoBranch": "master",
+        "repo": "ICRAR/EAGLE_test_repo",
         "filePath": "HelloWorld.palette",
         "sha": "",
         "git_url": ""
@@ -18,10 +18,10 @@
             "canHaveOutputs": true,
             "color": "#394BB2",
             "drawOrderHint": 0,
-            "key": -4,
-            "text": "Enter label",
+            "key": -1,
+            "text": "Start data",
             "description": "",
-            "x": 300,
+            "x": 200,
             "y": 100,
             "width": 200,
             "height": 200,
@@ -38,7 +38,12 @@
             "outputApplicationType": "None",
             "exitApplicationType": "None",
             "inputPorts": [],
-            "outputPorts": [],
+            "outputPorts": [
+                {
+                    "Id": "ab5ada14-04d7-4b03-816d-c43428d4e2e4",
+                    "IdText": "event"
+                }
+            ],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
             "inputAppFields": [],
@@ -59,19 +64,19 @@
             ]
         },
         {
-            "category": "File",
-            "categoryType": "Data",
-            "isData": true,
+            "category": "BashShellApp",
+            "categoryType": "Application",
+            "isData": false,
             "isGroup": false,
             "canHaveInputs": true,
             "canHaveOutputs": true,
-            "color": "#394BB2",
+            "color": "#1C2833",
             "drawOrderHint": 0,
-            "key": -5,
-            "text": "Enter label",
+            "key": -2,
+            "text": "Sleep Bash",
             "description": "",
-            "x": 300,
-            "y": 100,
+            "x": 370.99236641221376,
+            "y": 200.76335877862596,
             "width": 200,
             "height": 200,
             "collapsed": false,
@@ -86,7 +91,162 @@
             "inputApplicationType": "None",
             "outputApplicationType": "None",
             "exitApplicationType": "None",
-            "inputPorts": [],
+            "inputPorts": [
+                {
+                    "Id": "c12aa833-43a9-4c1e-abaa-c77396010a31",
+                    "IdText": "event"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "47c421b8-5cdc-4ff7-ab7e-b75140f2d951",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "a8a6d942-61fe-4f04-a283-a23127f5a447",
+                    "IdText": "test"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "description": ""
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "description": ""
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "0",
+                    "description": ""
+                },
+                {
+                    "text": "Arg01",
+                    "name": "arg01",
+                    "value": "sleep 5",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "category": "PythonApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "color": "#3498DB",
+            "drawOrderHint": 0,
+            "key": -3,
+            "text": "SleepApp",
+            "description": "",
+            "x": 780.1526717557251,
+            "y": 232.0610687022898,
+            "width": 200,
+            "height": 200,
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "0178b7ce-79ed-406d-9e4b-ee2a53c168ec",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "5cf658e2-b0fe-4e55-9420-754fdba10063",
+                    "IdText": "test"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "f487361b-f633-43ba-978d-c65d7a52c34d",
+                    "IdText": "event"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "description": ""
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "description": ""
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "0",
+                    "description": ""
+                },
+                {
+                    "text": "Appclass",
+                    "name": "appclass",
+                    "value": "dlg.apps.simple.SleepApp",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "category": "File",
+            "categoryType": "Data",
+            "isData": true,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "color": "#394BB2",
+            "drawOrderHint": 0,
+            "key": -4,
+            "text": "Enter label",
+            "description": "",
+            "x": 937.4045801526719,
+            "y": 351.9083969465648,
+            "width": 200,
+            "height": 200,
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "c05689f4-6c5a-47dc-b3b1-fcbdfa09e4df",
+                    "IdText": "event"
+                }
+            ],
             "outputPorts": [],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
@@ -126,104 +286,6 @@
             ]
         },
         {
-            "category": "S3",
-            "categoryType": "Data",
-            "isData": true,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
-            "color": "#394BB2",
-            "drawOrderHint": 0,
-            "key": -6,
-            "text": "Enter label",
-            "description": "",
-            "x": 300,
-            "y": 100,
-            "width": 200,
-            "height": 200,
-            "collapsed": false,
-            "showPorts": false,
-            "streaming": false,
-            "subject": null,
-            "selected": false,
-            "expanded": false,
-            "inputApplicationName": "",
-            "outputApplicationName": "",
-            "exitApplicationName": "",
-            "inputApplicationType": "None",
-            "outputApplicationType": "None",
-            "exitApplicationType": "None",
-            "inputPorts": [],
-            "outputPorts": [],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "fields": [
-                {
-                    "text": "Data volume",
-                    "name": "data_volume",
-                    "value": "5",
-                    "description": ""
-                },
-                {
-                    "text": "Group end",
-                    "name": "group_end",
-                    "value": "0",
-                    "description": ""
-                }
-            ]
-        },
-        {
-            "category": "NGAS",
-            "categoryType": "Data",
-            "isData": true,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
-            "color": "#394BB2",
-            "drawOrderHint": 0,
-            "key": -7,
-            "text": "Enter label",
-            "description": "",
-            "x": 300,
-            "y": 100,
-            "width": 200,
-            "height": 200,
-            "collapsed": false,
-            "showPorts": false,
-            "streaming": false,
-            "subject": null,
-            "selected": false,
-            "expanded": false,
-            "inputApplicationName": "",
-            "outputApplicationName": "",
-            "exitApplicationName": "",
-            "inputApplicationType": "None",
-            "outputApplicationType": "None",
-            "exitApplicationType": "None",
-            "inputPorts": [],
-            "outputPorts": [],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "fields": [
-                {
-                    "text": "Data volume",
-                    "name": "data_volume",
-                    "value": "5",
-                    "description": ""
-                },
-                {
-                    "text": "Group end",
-                    "name": "group_end",
-                    "value": "0",
-                    "description": ""
-                }
-            ]
-        },
-        {
             "category": "Comment",
             "categoryType": "Other",
             "isData": false,
@@ -232,18 +294,18 @@
             "canHaveOutputs": false,
             "color": "#799938",
             "drawOrderHint": 0,
-            "key": -12,
+            "key": -6,
             "text": "",
             "description": "",
-            "x": 300,
-            "y": 100,
-            "width": 200,
-            "height": 200,
+            "x": 570.992366412214,
+            "y": 82.44274809160297,
+            "width": 175.5725190839694,
+            "height": 82.44274809160314,
             "collapsed": false,
-            "showPorts": false,
+            "showPorts": true,
             "streaming": false,
             "subject": null,
-            "selected": false,
+            "selected": true,
             "expanded": false,
             "inputApplicationName": "",
             "outputApplicationName": "",
@@ -261,1458 +323,30 @@
                 {
                     "text": "Comment",
                     "name": "comment",
-                    "value": "Enter comment",
+                    "value": "This graph does not execute, since just the event edge does not trigger the SleepApp.",
                     "description": "The text value of the comment"
-                }
-            ]
-        },
-        {
-            "category": "Description",
-            "categoryType": "Other",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": false,
-            "canHaveOutputs": false,
-            "color": "#9B3065",
-            "drawOrderHint": 0,
-            "key": -21,
-            "text": "Enter label",
-            "description": "",
-            "x": 300,
-            "y": 100,
-            "width": 200,
-            "height": 200,
-            "collapsed": false,
-            "showPorts": false,
-            "streaming": false,
-            "subject": null,
-            "selected": false,
-            "expanded": false,
-            "inputApplicationName": "",
-            "outputApplicationName": "",
-            "exitApplicationName": "",
-            "inputApplicationType": "None",
-            "outputApplicationType": "None",
-            "exitApplicationType": "None",
-            "inputPorts": [],
-            "outputPorts": [],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "fields": [
-                {
-                    "text": "Description",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Description",
-                    "name": "description",
-                    "value": "",
-                    "description": "The text value of the description"
-                }
-            ]
-        },
-        {
-            "category": "Component",
-            "categoryType": "Application",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
-            "color": "#3498DB",
-            "drawOrderHint": 0,
-            "key": -18,
-            "text": "Sleep",
-            "description": "",
-            "x": 163,
-            "y": 95,
-            "width": 200,
-            "height": 200,
-            "collapsed": false,
-            "showPorts": false,
-            "streaming": false,
-            "subject": null,
-            "selected": false,
-            "expanded": false,
-            "inputApplicationName": "",
-            "outputApplicationName": "",
-            "exitApplicationName": "",
-            "inputApplicationType": "None",
-            "outputApplicationType": "None",
-            "exitApplicationType": "None",
-            "inputPorts": [
-                {
-                    "Id": "c7c75304-9e9b-411e-8ef8-6b453147fc88",
-                    "IdText": "event"
-                },
-                {
-                    "Id": "9c948e6d-d1ff-4977-af1f-ceb995995d72",
-                    "IdText": "data"
-                }
-            ],
-            "outputPorts": [
-                {
-                    "Id": "64c1fc46-305b-45fd-945c-070038cf1e49",
-                    "IdText": "event"
-                },
-                {
-                    "Id": "9da2dcd9-e63c-4697-aff2-ff894e148ef7",
-                    "IdText": "data"
-                }
-            ],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "fields": [
-                {
-                    "text": "Execution time",
-                    "name": "execution_time",
-                    "value": "5",
-                    "description": ""
-                },
-                {
-                    "text": "Num CPUs",
-                    "name": "num_cpus",
-                    "value": "1",
-                    "description": ""
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
-                    "value": "0",
-                    "description": ""
-                },
-                {
-                    "text": "Appclass",
-                    "name": "appclass",
-                    "value": "dlg.apps.simple.SleepApp",
-                    "description": ""
-                },
-                {
-                    "text": "Arg01",
-                    "name": "Arg01",
-                    "value": "sleepTime=5.",
-                    "description": ""
-                },
-                {
-                    "text": "Arg02",
-                    "name": "Arg02",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg03",
-                    "name": "Arg03",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg04",
-                    "name": "Arg04",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg05",
-                    "name": "Arg05",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg06",
-                    "name": "Arg06",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg07",
-                    "name": "Arg07",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg08",
-                    "name": "Arg08",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg09",
-                    "name": "Arg09",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg10",
-                    "name": "Arg10",
-                    "value": "",
-                    "description": ""
-                }
-            ]
-        },
-        {
-            "category": "Component",
-            "categoryType": "Application",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
-            "color": "#3498DB",
-            "drawOrderHint": 0,
-            "key": -19,
-            "text": "urlopen",
-            "description": "",
-            "x": 271,
-            "y": 217,
-            "width": 200,
-            "height": 200,
-            "collapsed": false,
-            "showPorts": false,
-            "streaming": false,
-            "subject": null,
-            "selected": false,
-            "expanded": false,
-            "inputApplicationName": "",
-            "outputApplicationName": "",
-            "exitApplicationName": "",
-            "inputApplicationType": "None",
-            "outputApplicationType": "None",
-            "exitApplicationType": "None",
-            "inputPorts": [
-                {
-                    "Id": "input_string",
-                    "IdText": "string"
-                },
-                {
-                    "Id": "2c578ae5-dcbc-4ceb-9382-4fa728b7e142",
-                    "IdText": "event"
-                }
-            ],
-            "outputPorts": [
-                {
-                    "Id": "output_list",
-                    "IdText": "list"
-                },
-                {
-                    "Id": "3c65f92b-b5da-412a-ad03-54973b14a0f0",
-                    "IdText": "event"
-                }
-            ],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "fields": [
-                {
-                    "text": "Execution time",
-                    "name": "execution_time",
-                    "value": "5",
-                    "description": ""
-                },
-                {
-                    "text": "Num CPUs",
-                    "name": "num_cpus",
-                    "value": "1",
-                    "description": ""
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
-                    "value": "0",
-                    "description": ""
-                },
-                {
-                    "text": "Appclass",
-                    "name": "appclass",
-                    "value": "apps.pyfunc.PyFuncApp",
-                    "description": ""
-                },
-                {
-                    "text": "Arg01",
-                    "name": "Arg01",
-                    "value": "urllib2.urlopen",
-                    "description": ""
-                },
-                {
-                    "text": "Arg02",
-                    "name": "Arg02",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg03",
-                    "name": "Arg03",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg04",
-                    "name": "Arg04",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg05",
-                    "name": "Arg05",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg06",
-                    "name": "Arg06",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg07",
-                    "name": "Arg07",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg08",
-                    "name": "Arg08",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg09",
-                    "name": "Arg09",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg10",
-                    "name": "Arg10",
-                    "value": "",
-                    "description": ""
-                }
-            ]
-        },
-        {
-            "category": "Component",
-            "categoryType": "Application",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
-            "color": "#3498DB",
-            "drawOrderHint": 0,
-            "key": -20,
-            "text": "NGAS Archiving",
-            "description": "",
-            "x": 125,
-            "y": 100,
-            "width": 200,
-            "height": 200,
-            "collapsed": false,
-            "showPorts": false,
-            "streaming": false,
-            "subject": null,
-            "selected": false,
-            "expanded": false,
-            "inputApplicationName": "",
-            "outputApplicationName": "",
-            "exitApplicationName": "",
-            "inputApplicationType": "None",
-            "outputApplicationType": "None",
-            "exitApplicationType": "None",
-            "inputPorts": [
-                {
-                    "Id": "input_dlg_in",
-                    "IdText": "dlg_in"
-                },
-                {
-                    "Id": "input_file",
-                    "IdText": "file"
-                },
-                {
-                    "Id": "6a8119ef-f323-471c-b406-9106d4de974d",
-                    "IdText": "event"
-                }
-            ],
-            "outputPorts": [
-                {
-                    "Id": "output_dlg_out",
-                    "IdText": "dlg_out"
-                },
-                {
-                    "Id": "66508f63-17f0-4734-92fd-47a34105d94a",
-                    "IdText": "event"
-                }
-            ],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "fields": [
-                {
-                    "text": "Execution time",
-                    "name": "execution_time",
-                    "value": "5",
-                    "description": ""
-                },
-                {
-                    "text": "Num CPUs",
-                    "name": "num_cpus",
-                    "value": "1",
-                    "description": ""
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
-                    "value": "0",
-                    "description": ""
-                },
-                {
-                    "text": "Appclass",
-                    "name": "appclass",
-                    "value": "apps.archiving.NgasArchivingApp",
-                    "description": ""
-                },
-                {
-                    "text": "Arg01",
-                    "name": "Arg01",
-                    "value": "dummy_in",
-                    "description": ""
-                },
-                {
-                    "text": "Arg02",
-                    "name": "Arg02",
-                    "value": "dummy_out",
-                    "description": ""
-                },
-                {
-                    "text": "Arg03",
-                    "name": "Arg03",
-                    "value": "ngasSrv=ngas.ddns.net",
-                    "description": ""
-                },
-                {
-                    "text": "Arg04",
-                    "name": "Arg04",
-                    "value": "ngasPort=7777",
-                    "description": ""
-                },
-                {
-                    "text": "Arg05",
-                    "name": "Arg05",
-                    "value": "ngasTimeout=2.",
-                    "description": ""
-                },
-                {
-                    "text": "Arg06",
-                    "name": "Arg06",
-                    "value": "ngasConnectTimeout=2.",
-                    "description": ""
-                },
-                {
-                    "text": "Arg07",
-                    "name": "Arg07",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg08",
-                    "name": "Arg08",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg09",
-                    "name": "Arg09",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg10",
-                    "name": "Arg10",
-                    "value": "",
-                    "description": ""
-                }
-            ]
-        },
-        {
-            "category": "BashShellApp",
-            "categoryType": "Application",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
-            "color": "#1C2833",
-            "drawOrderHint": 0,
-            "key": -3,
-            "text": "cat file",
-            "description": "",
-            "x": 300,
-            "y": 100,
-            "width": 200,
-            "height": 200,
-            "collapsed": false,
-            "showPorts": false,
-            "streaming": false,
-            "subject": null,
-            "selected": false,
-            "expanded": false,
-            "inputApplicationName": "",
-            "outputApplicationName": "",
-            "exitApplicationName": "",
-            "inputApplicationType": "None",
-            "outputApplicationType": "None",
-            "exitApplicationType": "None",
-            "inputPorts": [
-                {
-                    "Id": "df650d73-4456-4238-a14d-6c3e1b629a82",
-                    "IdText": "event"
-                }
-            ],
-            "outputPorts": [
-                {
-                    "Id": "1edca8e4-92ef-442a-895c-a14b079ac669",
-                    "IdText": "event"
-                }
-            ],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "fields": [
-                {
-                    "text": "Execution time",
-                    "name": "execution_time",
-                    "value": "5",
-                    "description": ""
-                },
-                {
-                    "text": "Num CPUs",
-                    "name": "num_cpus",
-                    "value": "1",
-                    "description": ""
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
-                    "value": "0",
-                    "description": ""
-                },
-                {
-                    "text": "Arg01",
-                    "name": "Arg01",
-                    "value": "/tmp/catApp.sh",
-                    "description": ""
-                },
-                {
-                    "text": "Arg02",
-                    "name": "Arg02",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg03",
-                    "name": "Arg03",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg04",
-                    "name": "Arg04",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg05",
-                    "name": "Arg05",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg06",
-                    "name": "Arg06",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg07",
-                    "name": "Arg07",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg08",
-                    "name": "Arg08",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg09",
-                    "name": "Arg09",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg10",
-                    "name": "Arg10",
-                    "value": "",
-                    "description": ""
-                }
-            ]
-        },
-        {
-            "category": "Scatter",
-            "categoryType": "Group",
-            "isData": false,
-            "isGroup": true,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
-            "color": "#DDAD00",
-            "drawOrderHint": 0,
-            "key": -14,
-            "text": "Sleep",
-            "description": "",
-            "x": 300,
-            "y": 100,
-            "width": 200,
-            "height": 200,
-            "collapsed": false,
-            "showPorts": false,
-            "streaming": false,
-            "subject": null,
-            "selected": false,
-            "expanded": false,
-            "inputApplicationName": "",
-            "outputApplicationName": "",
-            "exitApplicationName": "",
-            "inputApplicationType": "Component",
-            "outputApplicationType": "None",
-            "exitApplicationType": "None",
-            "inputPorts": [
-                {
-                    "Id": "2b7619b6-7c25-408d-bc40-a22051d82354",
-                    "IdText": "data"
-                }
-            ],
-            "outputPorts": [
-                {
-                    "Id": "dec160fe-d25e-4af1-9469-913861004a9e",
-                    "IdText": "data"
-                }
-            ],
-            "inputLocalPorts": [
-                {
-                    "Id": "bb2ea24d-7fbf-4f12-afa2-65a22e3b6a0a",
-                    "IdText": "data"
-                }
-            ],
-            "outputLocalPorts": [
-                {
-                    "Id": "7915aba4-7ce8-428c-9529-dccd4766ef68",
-                    "IdText": "data"
-                }
-            ],
-            "inputAppFields": [
-                {
-                    "text": "Execution time",
-                    "name": "execution_time",
-                    "value": "5",
-                    "description": ""
-                },
-                {
-                    "text": "Num CPUs",
-                    "name": "num_cpus",
-                    "value": "1",
-                    "description": ""
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
-                    "value": "0",
-                    "description": ""
-                },
-                {
-                    "text": "Appclass",
-                    "name": "appclass",
-                    "value": "dlg.apps.simple.SleepApp",
-                    "description": ""
-                },
-                {
-                    "text": "Arg01",
-                    "name": "Arg01",
-                    "value": "sleepTime=5.",
-                    "description": ""
-                },
-                {
-                    "text": "Arg02",
-                    "name": "Arg02",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg03",
-                    "name": "Arg03",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg04",
-                    "name": "Arg04",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg05",
-                    "name": "Arg05",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg06",
-                    "name": "Arg06",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg07",
-                    "name": "Arg07",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg08",
-                    "name": "Arg08",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg09",
-                    "name": "Arg09",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg10",
-                    "name": "Arg10",
-                    "value": "",
-                    "description": ""
-                }
-            ],
-            "outputAppFields": [],
-            "fields": [
-                {
-                    "text": "Number of copies",
-                    "name": "num_of_copies",
-                    "value": "4",
-                    "description": ""
-                },
-                {
-                    "text": "Scatter axis",
-                    "name": "scatter_axis",
-                    "value": "time",
-                    "description": ""
-                }
-            ]
-        },
-        {
-            "category": "Gather",
-            "categoryType": "Group",
-            "isData": false,
-            "isGroup": true,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
-            "color": "#D35400",
-            "drawOrderHint": 0,
-            "key": -15,
-            "text": "Sleep",
-            "description": "",
-            "x": 300,
-            "y": 100,
-            "width": 200,
-            "height": 200,
-            "collapsed": false,
-            "showPorts": false,
-            "streaming": false,
-            "subject": null,
-            "selected": false,
-            "expanded": false,
-            "inputApplicationName": "",
-            "outputApplicationName": "",
-            "exitApplicationName": "",
-            "inputApplicationType": "Component",
-            "outputApplicationType": "None",
-            "exitApplicationType": "None",
-            "inputPorts": [
-                {
-                    "Id": "f0666a31-eb44-40a7-8f5c-cd8bd89c3f8a",
-                    "IdText": "data"
-                }
-            ],
-            "outputPorts": [
-                {
-                    "Id": "aa45528d-450c-43d6-83d7-63324eaf8479",
-                    "IdText": "data"
-                }
-            ],
-            "inputLocalPorts": [
-                {
-                    "Id": "216e4100-ff1e-47ed-b21a-9bdf2f98ebbd",
-                    "IdText": "data"
-                }
-            ],
-            "outputLocalPorts": [
-                {
-                    "Id": "5fdab3c9-fcee-4468-bf8f-7cc76b1cd663",
-                    "IdText": "data"
-                }
-            ],
-            "inputAppFields": [
-                {
-                    "text": "Execution time",
-                    "name": "execution_time",
-                    "value": "5",
-                    "description": ""
-                },
-                {
-                    "text": "Num CPUs",
-                    "name": "num_cpus",
-                    "value": "1",
-                    "description": ""
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
-                    "value": "0",
-                    "description": ""
-                },
-                {
-                    "text": "Appclass",
-                    "name": "appclass",
-                    "value": "dlg.apps.simple.SleepApp",
-                    "description": ""
-                },
-                {
-                    "text": "Arg01",
-                    "name": "Arg01",
-                    "value": "sleepTime=5.",
-                    "description": ""
-                },
-                {
-                    "text": "Arg02",
-                    "name": "Arg02",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg03",
-                    "name": "Arg03",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg04",
-                    "name": "Arg04",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg05",
-                    "name": "Arg05",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg06",
-                    "name": "Arg06",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg07",
-                    "name": "Arg07",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg08",
-                    "name": "Arg08",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg09",
-                    "name": "Arg09",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg10",
-                    "name": "Arg10",
-                    "value": "",
-                    "description": ""
-                }
-            ],
-            "outputAppFields": [],
-            "fields": [
-                {
-                    "text": "Number of inputs",
-                    "name": "num_of_inputs",
-                    "value": "4",
-                    "description": ""
-                },
-                {
-                    "text": "Gather axis",
-                    "name": "gather_axis",
-                    "value": "frequency",
-                    "description": ""
-                }
-            ]
-        },
-        {
-            "category": "Scatter",
-            "categoryType": "Group",
-            "isData": false,
-            "isGroup": true,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
-            "color": "#DDAD00",
-            "drawOrderHint": 0,
-            "key": -16,
-            "text": "Test",
-            "description": "",
-            "x": 300,
-            "y": 100,
-            "width": 200,
-            "height": 200,
-            "collapsed": false,
-            "showPorts": false,
-            "streaming": false,
-            "subject": null,
-            "selected": false,
-            "expanded": false,
-            "inputApplicationName": "",
-            "outputApplicationName": "",
-            "exitApplicationName": "",
-            "inputApplicationType": "Component",
-            "outputApplicationType": "None",
-            "exitApplicationType": "None",
-            "inputPorts": [
-                {
-                    "Id": "f35c647c-2a3c-4f44-8e20-aaf2acb53e47",
-                    "IdText": "event"
-                },
-                {
-                    "Id": "f0dead7a-d6b4-406d-8656-26cb7af499eb",
-                    "IdText": "data"
-                },
-                {
-                    "Id": "d710e05e-b542-4e59-8931-ee96dbb8fe3a",
-                    "IdText": "test"
-                }
-            ],
-            "outputPorts": [
-                {
-                    "Id": "a4d688d1-8a30-4b61-a928-aaa9f2872123",
-                    "IdText": "event"
-                },
-                {
-                    "Id": "8bdf7c73-fa75-4c04-a8d6-989f16fa91c6",
-                    "IdText": "data"
-                }
-            ],
-            "inputLocalPorts": [
-                {
-                    "Id": "5b3072d0-3497-429b-9f83-70da2e2f3612",
-                    "IdText": "event"
-                },
-                {
-                    "Id": "b91bb9ab-d1d1-411d-bab6-8b903b894fd8",
-                    "IdText": "data"
-                }
-            ],
-            "outputLocalPorts": [
-                {
-                    "Id": "774a4e12-88d9-42c0-8749-07dbda068202",
-                    "IdText": "event"
-                },
-                {
-                    "Id": "c4791564-294c-49d1-adad-8715f2d3bc2a",
-                    "IdText": "data"
-                },
-                {
-                    "Id": "0ca81c10-3fee-47ba-bdc0-62cb6af13287",
-                    "IdText": "test"
-                }
-            ],
-            "inputAppFields": [
-                {
-                    "text": "Execution time",
-                    "name": "execution_time",
-                    "value": "5",
-                    "description": ""
-                },
-                {
-                    "text": "Num CPUs",
-                    "name": "num_cpus",
-                    "value": "1",
-                    "description": ""
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
-                    "value": "0",
-                    "description": ""
-                },
-                {
-                    "text": "Appclass",
-                    "name": "appclass",
-                    "value": "test.graphsRepository",
-                    "description": ""
-                },
-                {
-                    "text": "Arg01",
-                    "name": "Arg01",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg02",
-                    "name": "Arg02",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg03",
-                    "name": "Arg03",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg04",
-                    "name": "Arg04",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg05",
-                    "name": "Arg05",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg06",
-                    "name": "Arg06",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg07",
-                    "name": "Arg07",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg08",
-                    "name": "Arg08",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg09",
-                    "name": "Arg09",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg10",
-                    "name": "Arg10",
-                    "value": "",
-                    "description": ""
-                }
-            ],
-            "outputAppFields": [],
-            "fields": [
-                {
-                    "text": "Number of copies",
-                    "name": "num_of_copies",
-                    "value": "4",
-                    "description": ""
-                },
-                {
-                    "text": "Scatter axis",
-                    "name": "scatter_axis",
-                    "value": "time",
-                    "description": ""
-                }
-            ]
-        },
-        {
-            "category": "Scatter",
-            "categoryType": "Group",
-            "isData": false,
-            "isGroup": true,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
-            "color": "#DDAD00",
-            "drawOrderHint": 0,
-            "key": -17,
-            "text": "Test2",
-            "description": "",
-            "x": 300,
-            "y": 100,
-            "width": 200,
-            "height": 200,
-            "collapsed": false,
-            "showPorts": false,
-            "streaming": false,
-            "subject": null,
-            "selected": false,
-            "expanded": false,
-            "inputApplicationName": "",
-            "outputApplicationName": "",
-            "exitApplicationName": "",
-            "inputApplicationType": "Component",
-            "outputApplicationType": "None",
-            "exitApplicationType": "None",
-            "inputPorts": [
-                {
-                    "Id": "f35c647c-2a3c-4f44-8e20-aaf2acb53e47",
-                    "IdText": "event"
-                }
-            ],
-            "outputPorts": [
-                {
-                    "Id": "a4d688d1-8a30-4b61-a928-aaa9f2872123",
-                    "IdText": "event"
-                }
-            ],
-            "inputLocalPorts": [
-                {
-                    "Id": "5b3072d0-3497-429b-9f83-70da2e2f3612",
-                    "IdText": "event"
-                }
-            ],
-            "outputLocalPorts": [
-                {
-                    "Id": "774a4e12-88d9-42c0-8749-07dbda068202",
-                    "IdText": "event"
-                }
-            ],
-            "inputAppFields": [
-                {
-                    "text": "Execution time",
-                    "name": "execution_time",
-                    "value": "5",
-                    "description": ""
-                },
-                {
-                    "text": "Num CPUs",
-                    "name": "num_cpus",
-                    "value": "1",
-                    "description": ""
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
-                    "value": "0",
-                    "description": ""
-                },
-                {
-                    "text": "Appclass",
-                    "name": "appclass",
-                    "value": "test.graphsRepository",
-                    "description": ""
-                },
-                {
-                    "text": "Arg01",
-                    "name": "Arg01",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg02",
-                    "name": "Arg02",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg03",
-                    "name": "Arg03",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg04",
-                    "name": "Arg04",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg05",
-                    "name": "Arg05",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg06",
-                    "name": "Arg06",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg07",
-                    "name": "Arg07",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg08",
-                    "name": "Arg08",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg09",
-                    "name": "Arg09",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg10",
-                    "name": "Arg10",
-                    "value": "",
-                    "description": ""
-                }
-            ],
-            "outputAppFields": [],
-            "fields": [
-                {
-                    "text": "Number of copies",
-                    "name": "num_of_copies",
-                    "value": "4",
-                    "description": ""
-                },
-                {
-                    "text": "Scatter axis",
-                    "name": "scatter_axis",
-                    "value": "time",
-                    "description": ""
-                }
-            ]
-        },
-        {
-            "category": "End",
-            "categoryType": "Control",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": false,
-            "color": "#CB4335",
-            "drawOrderHint": 0,
-            "key": -10,
-            "text": "Enter label",
-            "description": "",
-            "x": 300,
-            "y": 100,
-            "width": 200,
-            "height": 200,
-            "collapsed": false,
-            "showPorts": false,
-            "streaming": false,
-            "subject": null,
-            "selected": false,
-            "expanded": false,
-            "inputApplicationName": "",
-            "outputApplicationName": "",
-            "exitApplicationName": "",
-            "inputApplicationType": "None",
-            "outputApplicationType": "None",
-            "exitApplicationType": "None",
-            "inputPorts": [
-                {
-                    "Id": "a5f20e0c-b269-43cf-a584-203da48005a9",
-                    "IdText": "event"
-                }
-            ],
-            "outputPorts": [],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "fields": []
-        },
-        {
-            "category": "Start",
-            "categoryType": "Control",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": false,
-            "canHaveOutputs": true,
-            "color": "#229954",
-            "drawOrderHint": 0,
-            "key": -1,
-            "text": "Enter label",
-            "description": "",
-            "x": 300,
-            "y": 100,
-            "width": 200,
-            "height": 200,
-            "collapsed": false,
-            "showPorts": false,
-            "streaming": false,
-            "subject": null,
-            "selected": false,
-            "expanded": false,
-            "inputApplicationName": "",
-            "outputApplicationName": "",
-            "exitApplicationName": "",
-            "inputApplicationType": "None",
-            "outputApplicationType": "None",
-            "exitApplicationType": "None",
-            "inputPorts": [],
-            "outputPorts": [
-                {
-                    "Id": "535f0ab9-2c99-40bf-8159-079bc788895e",
-                    "IdText": "event"
-                }
-            ],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "fields": []
-        },
-        {
-            "category": "Component",
-            "categoryType": "Application",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
-            "color": "#3498DB",
-            "drawOrderHint": 0,
-            "key": -22,
-            "text": "Enter label",
-            "description": "",
-            "x": 300,
-            "y": 100,
-            "width": 200,
-            "height": 200,
-            "collapsed": false,
-            "showPorts": false,
-            "streaming": false,
-            "subject": null,
-            "selected": false,
-            "expanded": false,
-            "inputApplicationName": "",
-            "outputApplicationName": "",
-            "exitApplicationName": "",
-            "inputApplicationType": "None",
-            "outputApplicationType": "None",
-            "exitApplicationType": "None",
-            "inputPorts": [
-                {
-                    "Id": "07c6b043-c9cc-4521-8f69-a6c542d2be23",
-                    "IdText": "event"
-                }
-            ],
-            "outputPorts": [
-                {
-                    "Id": "6e419d3b-4c89-4fc5-a1f5-8ffa72da9a3f",
-                    "IdText": "event"
-                }
-            ],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "fields": [
-                {
-                    "text": "Execution time",
-                    "name": "execution_time",
-                    "value": "5",
-                    "description": ""
-                },
-                {
-                    "text": "Num CPUs",
-                    "name": "num_cpus",
-                    "value": "1",
-                    "description": ""
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
-                    "value": "0",
-                    "description": ""
-                },
-                {
-                    "text": "Appclass",
-                    "name": "appclass",
-                    "value": "test.graphsRepository",
-                    "description": ""
-                },
-                {
-                    "text": "Arg01",
-                    "name": "Arg01",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg02",
-                    "name": "Arg02",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg03",
-                    "name": "Arg03",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg04",
-                    "name": "Arg04",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg05",
-                    "name": "Arg05",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg06",
-                    "name": "Arg06",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg07",
-                    "name": "Arg07",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg08",
-                    "name": "Arg08",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg09",
-                    "name": "Arg09",
-                    "value": "",
-                    "description": ""
-                },
-                {
-                    "text": "Arg10",
-                    "name": "Arg10",
-                    "value": "",
-                    "description": ""
                 }
             ]
         }
     ],
-    "linkDataArray": []
+    "linkDataArray": [
+        {
+            "from": -1,
+            "fromPort": "ab5ada14-04d7-4b03-816d-c43428d4e2e4",
+            "to": -2,
+            "toPort": "c12aa833-43a9-4c1e-abaa-c77396010a31"
+        },
+        {
+            "from": -2,
+            "fromPort": "47c421b8-5cdc-4ff7-ab7e-b75140f2d951",
+            "to": -3,
+            "toPort": "0178b7ce-79ed-406d-9e4b-ee2a53c168ec"
+        },
+        {
+            "from": -3,
+            "fromPort": "f487361b-f633-43ba-978d-c65d7a52c34d",
+            "to": -4,
+            "toPort": "c05689f4-6c5a-47dc-b3b1-fcbdfa09e4df"
+        }
+    ]
 }
