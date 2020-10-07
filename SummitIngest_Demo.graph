@@ -153,13 +153,13 @@
             "key": -9,
             "text": "visStream",
             "description": "",
-            "x": 683.852411067365,
-            "y": 754.0783410131997,
+            "x": 598.323989060331,
+            "y": 770.4293628674859,
             "width": 200,
             "height": 200,
             "collapsed": false,
             "showPorts": false,
-            "streaming": false,
+            "streaming": true,
             "subject": null,
             "selected": false,
             "expanded": false,
@@ -172,22 +172,14 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "c4294fd2-80aa-42c4-a030-080194dd2532",
-                    "IdText": "event"
-                },
-                {
-                    "Id": "21789d51-a9b7-476a-af7d-1786d0e3b0a4",
-                    "IdText": "visStream"
+                    "Id": "150aaf64-0e7e-4b27-b087-c983e8a43fc3",
+                    "IdText": "vis"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "b2907ead-c5b8-4672-b601-95f2dcbf4a44",
-                    "IdText": "event"
-                },
-                {
-                    "Id": "6bc3e992-9c7a-4bf3-8e33-7a273f63b886",
-                    "IdText": "visStream"
+                    "Id": "32c19361-004e-421c-84f3-dc3935c4de12",
+                    "IdText": "vis"
                 }
             ],
             "inputLocalPorts": [],
@@ -295,7 +287,7 @@
                 {
                     "text": "Appclass",
                     "name": "appclass",
-                    "value": "test.graphsRepository",
+                    "value": "dlg.apps.simple.SleepApp",
                     "description": ""
                 }
             ],
@@ -332,10 +324,10 @@
             "width": 271.4744839752345,
             "height": 262.2727940341717,
             "collapsed": false,
-            "showPorts": true,
+            "showPorts": false,
             "streaming": false,
             "subject": null,
-            "selected": true,
+            "selected": false,
             "expanded": true,
             "inputApplicationName": "average",
             "outputApplicationName": "",
@@ -345,8 +337,8 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "6ba850f4-c177-4ff8-9df8-d332ef0ae905",
-                    "IdText": "visStream"
+                    "Id": "4faac86a-3033-4f45-bb2b-f457183aa02c",
+                    "IdText": "vis"
                 }
             ],
             "outputPorts": [],
@@ -362,8 +354,8 @@
             ],
             "outputLocalPorts": [
                 {
-                    "Id": "21eb0971-e285-4f06-9994-2d171cdefbad",
-                    "IdText": "visStream"
+                    "Id": "00c45461-5d1a-4a64-bc23-1d27b037daed",
+                    "IdText": "vis"
                 }
             ],
             "inputAppFields": [
@@ -420,8 +412,8 @@
             "key": -17,
             "text": "OSKAR2",
             "description": "",
-            "x": 551.4891605899156,
-            "y": 622.4656880421962,
+            "x": 552.7469315017838,
+            "y": 619.95014621846,
             "width": 200,
             "height": 200,
             "collapsed": false,
@@ -445,8 +437,8 @@
             ],
             "outputPorts": [
                 {
-                    "Id": "f34cc7bf-1916-470c-983c-b7f29e3beb29",
-                    "IdText": "visStream"
+                    "Id": "2673898b-86bc-47f3-89a9-d305a957c44c",
+                    "IdText": "vis"
                 }
             ],
             "inputLocalPorts": [],
@@ -475,7 +467,7 @@
                 {
                     "text": "Appclass",
                     "name": "appclass",
-                    "value": "test.graphsRepository",
+                    "value": "dlg.apps.simple.SleepApp",
                     "description": ""
                 }
             ]
@@ -498,7 +490,7 @@
             "height": 200,
             "collapsed": false,
             "showPorts": false,
-            "streaming": false,
+            "streaming": true,
             "subject": null,
             "selected": false,
             "expanded": false,
@@ -511,14 +503,14 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "27070df6-c821-4eac-8e84-c86b4e36075f",
-                    "IdText": "visStream"
+                    "Id": "34c91ff1-0683-4e29-b924-0a72cb7ef1f7",
+                    "IdText": "vis"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "70042ade-9212-4282-948f-4b7ae9c3479e",
-                    "IdText": "visStream"
+                    "Id": "d29e458f-4725-451c-a3bc-a2d76715c6dc",
+                    "IdText": "vis"
                 }
             ],
             "inputLocalPorts": [],
@@ -570,15 +562,15 @@
             "key": -2,
             "text": "NodeScatter",
             "description": "Placeholder 'scatter' description",
-            "x": 426.5447206852949,
-            "y": 491.39607197036565,
+            "x": 427.80249159716305,
+            "y": 488.8805301466294,
             "width": 774.325271911242,
             "height": 517.2968583811218,
             "collapsed": false,
-            "showPorts": false,
+            "showPorts": true,
             "streaming": false,
             "subject": null,
-            "selected": false,
+            "selected": true,
             "expanded": true,
             "group": -12,
             "inputApplicationName": "splitConfig",
@@ -641,7 +633,7 @@
                 {
                     "text": "Arg01",
                     "name": "Arg01",
-                    "value": "",
+                    "value": "sleep 1",
                     "description": "The command line to be executed"
                 }
             ],
@@ -691,8 +683,8 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "6ba850f4-c177-4ff8-9df8-d332ef0ae905",
-                    "IdText": "visStream"
+                    "Id": "933b3307-5dc4-4e62-8904-597f6ca27865",
+                    "IdText": "vis"
                 }
             ],
             "outputPorts": [],
@@ -708,8 +700,8 @@
             ],
             "outputLocalPorts": [
                 {
-                    "Id": "21eb0971-e285-4f06-9994-2d171cdefbad",
-                    "IdText": "visStream"
+                    "Id": "554eb78a-3714-4feb-a282-96358262b20d",
+                    "IdText": "vis"
                 }
             ],
             "inputAppFields": [
@@ -772,7 +764,7 @@
             "height": 200,
             "collapsed": false,
             "showPorts": false,
-            "streaming": false,
+            "streaming": true,
             "subject": null,
             "selected": false,
             "expanded": false,
@@ -785,14 +777,14 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "fa0bdcc1-3b5d-4bca-b389-1d549a8187c4",
-                    "IdText": "visStream"
+                    "Id": "d6660913-cbcd-482d-830d-9073d6251909",
+                    "IdText": "vis"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "7097983d-45e5-46c5-9970-15aeb0616599",
-                    "IdText": "visStream"
+                    "Id": "2492d997-a5a2-4a96-a4f6-6664857c63f2",
+                    "IdText": "vis"
                 }
             ],
             "inputLocalPorts": [],
@@ -844,8 +836,8 @@
             "key": -6,
             "text": "config",
             "description": "",
-            "x": 398.6713532094025,
-            "y": 670.4072111329154,
+            "x": 399.92912412127066,
+            "y": 667.8916693091792,
             "width": 200,
             "height": 200,
             "collapsed": false,
@@ -923,8 +915,8 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "ae801428-7df9-43d2-936a-c1db2e3d35de",
-                    "IdText": "visStream"
+                    "Id": "5754b723-67be-41de-9515-331e8a110677",
+                    "IdText": "vis"
                 }
             ],
             "outputPorts": [
@@ -959,7 +951,7 @@
                 {
                     "text": "Appclass",
                     "name": "appclass",
-                    "value": "test.graphsRepository",
+                    "value": "dlg.apps.simple.SleepApp",
                     "description": ""
                 },
                 {
@@ -1041,36 +1033,6 @@
     ],
     "linkDataArray": [
         {
-            "from": -9,
-            "fromPort": "6bc3e992-9c7a-4bf3-8e33-7a273f63b886",
-            "to": -13,
-            "toPort": "6ba850f4-c177-4ff8-9df8-d332ef0ae905"
-        },
-        {
-            "from": -17,
-            "fromPort": "f34cc7bf-1916-470c-983c-b7f29e3beb29",
-            "to": -9,
-            "toPort": "21789d51-a9b7-476a-af7d-1786d0e3b0a4"
-        },
-        {
-            "from": -1,
-            "fromPort": "70042ade-9212-4282-948f-4b7ae9c3479e",
-            "to": -3,
-            "toPort": "6ba850f4-c177-4ff8-9df8-d332ef0ae905"
-        },
-        {
-            "from": -3,
-            "fromPort": "21eb0971-e285-4f06-9994-2d171cdefbad",
-            "to": -5,
-            "toPort": "fa0bdcc1-3b5d-4bca-b389-1d549a8187c4"
-        },
-        {
-            "from": -13,
-            "fromPort": "21eb0971-e285-4f06-9994-2d171cdefbad",
-            "to": -1,
-            "toPort": "27070df6-c821-4eac-8e84-c86b4e36075f"
-        },
-        {
             "from": -2,
             "fromPort": "5ba40023-cba8-4d7b-8113-d738ef47d31c",
             "to": -6,
@@ -1081,12 +1043,6 @@
             "fromPort": "b902fc9c-c6a9-48c6-a3c9-705fcece69be",
             "to": -17,
             "toPort": "b7ceb6fd-2186-481d-a665-1a604be74d29"
-        },
-        {
-            "from": -5,
-            "fromPort": "7097983d-45e5-46c5-9970-15aeb0616599",
-            "to": -8,
-            "toPort": "ae801428-7df9-43d2-936a-c1db2e3d35de"
         },
         {
             "from": -8,
@@ -1111,6 +1067,42 @@
             "fromPort": "d9692c4d-fee8-4d08-b0e9-977349deb2d1",
             "to": -2,
             "toPort": "a0af7d75-fec4-47f5-bd71-0f7c6f2b7174"
+        },
+        {
+            "from": -17,
+            "fromPort": "2673898b-86bc-47f3-89a9-d305a957c44c",
+            "to": -9,
+            "toPort": "150aaf64-0e7e-4b27-b087-c983e8a43fc3"
+        },
+        {
+            "from": -9,
+            "fromPort": "32c19361-004e-421c-84f3-dc3935c4de12",
+            "to": -13,
+            "toPort": "4faac86a-3033-4f45-bb2b-f457183aa02c"
+        },
+        {
+            "from": -13,
+            "fromPort": "00c45461-5d1a-4a64-bc23-1d27b037daed",
+            "to": -1,
+            "toPort": "34c91ff1-0683-4e29-b924-0a72cb7ef1f7"
+        },
+        {
+            "from": -1,
+            "fromPort": "d29e458f-4725-451c-a3bc-a2d76715c6dc",
+            "to": -3,
+            "toPort": "933b3307-5dc4-4e62-8904-597f6ca27865"
+        },
+        {
+            "from": -3,
+            "fromPort": "554eb78a-3714-4feb-a282-96358262b20d",
+            "to": -5,
+            "toPort": "d6660913-cbcd-482d-830d-9073d6251909"
+        },
+        {
+            "from": -5,
+            "fromPort": "2492d997-a5a2-4a96-a4f6-6664857c63f2",
+            "to": -8,
+            "toPort": "5754b723-67be-41de-9515-331e8a110677"
         }
     ]
 }
