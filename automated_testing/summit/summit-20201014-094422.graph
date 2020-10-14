@@ -1,0 +1,652 @@
+{
+    "modelData": {
+        "fileType": "graph",
+        "repoService": "GitHub",
+        "repoBranch": "master",
+        "repo": "ICRAR/EAGLE_test_repo",
+        "filePath": "automated_testing/summit/summit-20201014-094422.graph",
+        "sha": "",
+        "git_url": ""
+    },
+    "nodeDataArray": [
+        {
+            "category": "Scatter",
+            "categoryType": "Group",
+            "isData": false,
+            "isGroup": true,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "color": "#DDAD00",
+            "drawOrderHint": 0,
+            "key": -1,
+            "text": "ClusterScatterAverager",
+            "description": "Placeholder 'scatter' description",
+            "x": 320,
+            "y": 100,
+            "width": 570,
+            "height": 400,
+            "collapsed": false,
+            "showPorts": true,
+            "streaming": false,
+            "subject": null,
+            "selected": true,
+            "expanded": true,
+            "inputApplicationName": "Scope: Summit Cluster (4560 Nodes)",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "DynlibApp",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "cd908175-06c9-4d57-b034-9cce3348eb23",
+                    "IdText": "event"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "cc1e8c02-7648-421f-a18c-6ceefec2e60d",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "b7456875-3fb4-4758-88ba-925ba81877fa",
+                    "IdText": "spead2"
+                }
+            ],
+            "inputLocalPorts": [
+                {
+                    "Id": "014265b8-5f40-4fa3-af92-be8815d403c3",
+                    "IdText": "event"
+                }
+            ],
+            "outputLocalPorts": [
+                {
+                    "Id": "78038c4c-71dd-4bdd-8652-52e6b46f6e6a",
+                    "IdText": "event"
+                }
+            ],
+            "inputAppFields": [
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "description": ""
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "description": ""
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "0",
+                    "description": ""
+                },
+                {
+                    "text": "Library path",
+                    "name": "libpath",
+                    "value": "",
+                    "description": ""
+                }
+            ],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Number of copies",
+                    "name": "num_of_copies",
+                    "value": "4560",
+                    "description": ""
+                },
+                {
+                    "text": "Scatter axis",
+                    "name": "scatter_axis",
+                    "value": "time",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "category": "Scatter",
+            "categoryType": "Group",
+            "isData": false,
+            "isGroup": true,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "color": "#DDAD00",
+            "drawOrderHint": 0,
+            "key": -2,
+            "text": "NodeScatterAverager",
+            "description": "Placeholder 'scatter' description",
+            "x": 340,
+            "y": 175,
+            "width": 320,
+            "height": 310,
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": true,
+            "group": -1,
+            "inputApplicationName": "Scope: 1 Node (6 GPUs)",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "DynlibApp",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "8f635538-0ea9-47ac-90db-5f805e75d7c0",
+                    "IdText": "event"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "85f53ed8-bb48-4797-9de6-cffa5b7b6832",
+                    "IdText": "event"
+                }
+            ],
+            "inputLocalPorts": [
+                {
+                    "Id": "cb40617b-20e3-4129-a4bf-8aa4696d6ecd",
+                    "IdText": "event"
+                }
+            ],
+            "outputLocalPorts": [
+                {
+                    "Id": "fe15e70b-b46a-4d44-bc13-f2d5ccf48296",
+                    "IdText": "event"
+                }
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Number of copies",
+                    "name": "num_of_copies",
+                    "value": "6",
+                    "description": ""
+                },
+                {
+                    "text": "Scatter axis",
+                    "name": "scatter_axis",
+                    "value": "time",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "category": "PythonApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "color": "#3498DB",
+            "drawOrderHint": 0,
+            "key": -3,
+            "text": "OSKAR2 Simulator",
+            "description": "An application component in the form of a Python app",
+            "x": 360,
+            "y": 250,
+            "width": 200,
+            "height": 200,
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "group": -2,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "512bab22-18df-4475-8a7f-907aabd6affb",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "ed273241-c6a8-4e16-8cb8-59f426864714",
+                    "IdText": "Conf"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "1968d42e-8857-426c-87b4-a3155f735702",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "f13971ec-4ec1-4deb-90b0-4191c8f93e39",
+                    "IdText": "spead2"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "description": ""
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "description": ""
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "0",
+                    "description": ""
+                },
+                {
+                    "text": "Appclass",
+                    "name": "appclass",
+                    "value": "test.graphsRepository",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "category": "PythonApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "color": "#3498DB",
+            "drawOrderHint": 0,
+            "key": -4,
+            "text": "Average 6 Channels",
+            "description": "An application component in the form of a Python app",
+            "x": 670,
+            "y": 250,
+            "width": 200,
+            "height": 200,
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "group": -1,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "512bab22-18df-4475-8a7f-907aabd6affb",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "0cb59c89-3f42-426c-a08a-a15d5e07458a",
+                    "IdText": "spead2"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "1968d42e-8857-426c-87b4-a3155f735702",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "03ba1e75-bb2b-47c9-b1af-1b269e7e0bdc",
+                    "IdText": "spead2"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "description": ""
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "description": ""
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "0",
+                    "description": ""
+                },
+                {
+                    "text": "Appclass",
+                    "name": "appclass",
+                    "value": "test.graphsRepository",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "category": "Memory",
+            "categoryType": "Data",
+            "isData": true,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "color": "#394BB2",
+            "drawOrderHint": 0,
+            "key": -5,
+            "text": "spead2",
+            "description": "",
+            "x": 515,
+            "y": 250,
+            "width": 200,
+            "height": 200,
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "group": -2,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "dbe3606a-43ef-45be-8708-8b4b66df8a2f",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "7bb4b54a-86d6-46d6-bc70-1f1f58e69ca1",
+                    "IdText": "spead2"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "5716db62-b2ee-46c6-a861-5bcf787c25b0",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "95f97629-6a22-4ff2-9536-7a53278d8a8b",
+                    "IdText": "spead2"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "5",
+                    "description": ""
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "0",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "category": "Gather",
+            "categoryType": "Group",
+            "isData": false,
+            "isGroup": true,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "color": "#D35400",
+            "drawOrderHint": 0,
+            "key": -6,
+            "text": "Averager",
+            "description": "Placeholder 'gather' description",
+            "x": 940,
+            "y": 200,
+            "width": 200,
+            "height": 200,
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "Scope: Spectral Band",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "c1806211-467a-41b8-b6fe-b3f0e226a80d",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "4f998bd3-5019-499d-95d9-3524822e81be",
+                    "IdText": "spead2"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "a3fc3aa8-de2c-4818-83d7-b13340265656",
+                    "IdText": "event"
+                }
+            ],
+            "inputLocalPorts": [
+                {
+                    "Id": "5295e6ff-c279-4412-8950-37c6c2989186",
+                    "IdText": "event"
+                }
+            ],
+            "outputLocalPorts": [
+                {
+                    "Id": "9c0f74be-15f5-419d-b00e-7a11bb7b8851",
+                    "IdText": "event"
+                }
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Number of inputs",
+                    "name": "num_of_inputs",
+                    "value": "2",
+                    "description": ""
+                },
+                {
+                    "text": "Gather axis",
+                    "name": "gather_axis",
+                    "value": "frequency",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "category": "Memory",
+            "categoryType": "Data",
+            "isData": true,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "color": "#394BB2",
+            "drawOrderHint": 0,
+            "key": -7,
+            "text": "spead2",
+            "description": "",
+            "x": 805,
+            "y": 225,
+            "width": 200,
+            "height": 200,
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "group": -1,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "dbe3606a-43ef-45be-8708-8b4b66df8a2f",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "34c51c3d-a1c7-45b1-9c10-86ff7d149bb1",
+                    "IdText": "spead2"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "5716db62-b2ee-46c6-a861-5bcf787c25b0",
+                    "IdText": "event"
+                },
+                {
+                    "Id": "e2902abb-8bec-4758-980b-40f74c7c3dee",
+                    "IdText": "spead2"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "5",
+                    "description": ""
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "0",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "category": "File",
+            "categoryType": "Data",
+            "isData": true,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "color": "#394BB2",
+            "drawOrderHint": 0,
+            "key": -8,
+            "text": "Write Data Product",
+            "description": "",
+            "x": 940,
+            "y": 450,
+            "width": 200,
+            "height": 200,
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "8476a948-26cf-4155-8dff-ef376a847174",
+                    "IdText": "event"
+                }
+            ],
+            "outputPorts": [],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "5",
+                    "description": ""
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "0",
+                    "description": ""
+                },
+                {
+                    "text": "Check file path exists",
+                    "name": "check_filepath_exists",
+                    "value": "1",
+                    "description": ""
+                },
+                {
+                    "text": "File path",
+                    "name": "filepath",
+                    "value": "",
+                    "description": ""
+                },
+                {
+                    "text": "Directory name",
+                    "name": "dirname",
+                    "value": "",
+                    "description": ""
+                }
+            ]
+        }
+    ],
+    "linkDataArray": [
+        {
+            "from": -3,
+            "fromPort": "f13971ec-4ec1-4deb-90b0-4191c8f93e39",
+            "to": -5,
+            "toPort": "7bb4b54a-86d6-46d6-bc70-1f1f58e69ca1",
+            "loop_aware": "0"
+        },
+        {
+            "from": -5,
+            "fromPort": "95f97629-6a22-4ff2-9536-7a53278d8a8b",
+            "to": -4,
+            "toPort": "0cb59c89-3f42-426c-a08a-a15d5e07458a",
+            "loop_aware": "0"
+        },
+        {
+            "from": -4,
+            "fromPort": "03ba1e75-bb2b-47c9-b1af-1b269e7e0bdc",
+            "to": -7,
+            "toPort": "34c51c3d-a1c7-45b1-9c10-86ff7d149bb1",
+            "loop_aware": "0"
+        },
+        {
+            "from": -7,
+            "fromPort": "e2902abb-8bec-4758-980b-40f74c7c3dee",
+            "to": -6,
+            "toPort": "4f998bd3-5019-499d-95d9-3524822e81be",
+            "loop_aware": "0"
+        }
+    ]
+}
