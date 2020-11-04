@@ -1,46 +1,46 @@
 {
     "linkDataArray": [
         {
-            "toPort": "d19187de-1fbd-4834-965c-04f5ff5621a7", 
-            "fromPort": "91e339dc-fc41-4f21-a199-8dba4baed863", 
-            "loop_aware": "0", 
-            "from": -1, 
-            "to": -4
-        }, 
-        {
-            "toPort": "eb6cd8c8-c32c-4e15-ab21-0ad0b71d0cf0", 
-            "fromPort": "df157401-4abf-420e-9479-0c3cd9436ee8", 
-            "loop_aware": "0", 
-            "from": -4, 
-            "to": -3
-        }, 
-        {
-            "toPort": "7f286adf-46f8-4f42-a441-b67a6b3991ab", 
-            "fromPort": "a3f953f8-80e8-418c-a54f-e3530c7b5c5e", 
-            "loop_aware": "0", 
-            "from": -3, 
-            "to": -5
-        }, 
-        {
-            "toPort": "bf41f56c-b691-45d7-9bc0-b2e4a617430f", 
-            "fromPort": "0ca9f716-3738-4fa9-b9f1-8612e57fd068", 
+            "toPort": "ccee6df6-1a62-4105-ac6f-bf4404476ace", 
+            "fromPort": "63ef213a-26ed-4e4a-95d9-e82de2e5eba7", 
             "loop_aware": "0", 
             "from": -5, 
+            "to": -7
+        }, 
+        {
+            "toPort": "d335aa66-6366-4806-a520-7e1fcdae38ef", 
+            "fromPort": "4e7aa2e7-c5c0-4171-83e2-0b849affb3a2", 
+            "loop_aware": "0", 
+            "from": -4, 
             "to": -2
         }, 
         {
-            "toPort": "31f055e9-184e-465b-9a2c-4996a604fd51", 
-            "fromPort": "f2620995-5522-489f-8e2d-787fc63899ce", 
+            "toPort": "a0728ecc-499d-4d47-a00c-dc1c5e6ce692", 
+            "fromPort": "ba0a5fb0-f0af-4e02-941e-939141cbd81b", 
             "loop_aware": "0", 
             "from": -2, 
+            "to": -8
+        }, 
+        {
+            "toPort": "9d6b4617-ebc1-4208-9d0d-609237a810a1", 
+            "fromPort": "b12ad1dd-2570-4ce2-bb09-a97ed48d4089", 
+            "loop_aware": "0", 
+            "from": -8, 
+            "to": -3
+        }, 
+        {
+            "toPort": "48491b26-f411-4a53-bf01-f648659a6b15", 
+            "fromPort": "510dce35-a727-42d5-b39f-e2056f1644ba", 
+            "loop_aware": "0", 
+            "from": -3, 
             "to": -6
         }, 
         {
-            "toPort": "778c6ace-b91c-4004-9f0c-6c07d013f280", 
-            "fromPort": "39d6deac-4266-4281-8eac-77d205c0bbfb", 
+            "toPort": "1ffa91ab-b83c-429d-a145-a5f47d5fa8ec", 
+            "fromPort": "8e96e1ae-f0e3-401b-9a50-2e6d10562c52", 
             "loop_aware": "0", 
-            "from": -7, 
-            "to": -1
+            "from": -6, 
+            "to": -5
         }
     ], 
     "nodeDataArray": [
@@ -49,81 +49,42 @@
             "color": "#DDAD00", 
             "text": "Scatter", 
             "isGroup": true, 
-            "height": 444, 
+            "height": 436, 
             "streaming": false, 
             "inputApplication": {
                 "outputPorts": [
                     {
                         "IdText": "Config", 
-                        "Id": "91e339dc-fc41-4f21-a199-8dba4baed863"
+                        "Id": "ba0a5fb0-f0af-4e02-941e-939141cbd81b"
                     }
                 ], 
                 "color": "#3498DB", 
-                "text": "Produce Config.", 
+                "text": "ProduceConfig", 
                 "isGroup": false, 
                 "height": 200, 
                 "streaming": false, 
                 "subject": null, 
                 "category": "Component", 
                 "selected": false, 
-                "canHaveInputs": true, 
+                "canHaveInputs": false, 
                 "showPorts": false, 
                 "width": 200, 
                 "drawOrderHint": 0, 
-                "description": "Produce Config\nA BarrierAppDrop that produces multiple config files suitable for the CallLeap BarrierAppDrop", 
+                "description": "", 
                 "collapsed": false, 
-                "canHaveOutputs": true, 
-                "key": 46802, 
+                "canHaveOutputs": false, 
+                "key": 0, 
                 "isData": false, 
-                "fields": [
-                    {
-                        "text": "number_of_stations (Integer)", 
-                        "name": "number_of_stations", 
-                        "value": "1", 
-                        "description": "The number of stations from the measurement set that should be processed"
-                    }, 
-                    {
-                        "text": "implementation (String)", 
-                        "name": "implementation", 
-                        "value": "eigen", 
-                        "description": "The implementation of the LEAP algorithm to use (eigen, casa, cuda)"
-                    }, 
-                    {
-                        "text": "auto_correlation (string)", 
-                        "name": "auto_correlation", 
-                        "value": "false", 
-                        "description": "Enable auto correlation in the LEAP algorithm"
-                    }, 
-                    {
-                        "text": "appclass (String)", 
-                        "name": "appclass", 
-                        "value": "leap_nodes.ProduceConfig.ProduceConfig", 
-                        "description": "The path to the class that implements this app"
-                    }, 
-                    {
-                        "text": "Execution time", 
-                        "name": "execution_time", 
-                        "value": 5, 
-                        "description": ""
-                    }, 
-                    {
-                        "text": "Num CPUs", 
-                        "name": "num_cpus", 
-                        "value": 1, 
-                        "description": ""
-                    }, 
-                    {
-                        "text": "Group start", 
-                        "name": "group_start", 
-                        "value": 0, 
-                        "description": ""
-                    }
-                ], 
+                "fields": [], 
                 "expanded": false, 
                 "inputPorts": [
                     {
                         "IdText": "Directions", 
-                        "Id": "778c6ace-b91c-4004-9f0c-6c07d013f280"
+                        "Id": "d335aa66-6366-4806-a520-7e1fcdae38ef"
+                    }, 
+                    {
+                        "IdText": "event", 
+                        "Id": "6aa15f60-4927-4cb1-9ad0-fd504b381737"
                     }
                 ], 
                 "y": 100, 
@@ -135,12 +96,12 @@
             "selected": false, 
             "canHaveInputs": true, 
             "showPorts": false, 
-            "width": 597, 
+            "width": 657, 
             "drawOrderHint": 0, 
             "description": "Placeholder 'scatter' description", 
             "collapsed": false, 
             "canHaveOutputs": true, 
-            "key": -1, 
+            "key": -2, 
             "isData": false, 
             "fields": [
                 {
@@ -158,8 +119,8 @@
             ], 
             "expanded": true, 
             "inputPorts": [], 
-            "y": 98, 
-            "x": 619, 
+            "y": 152.2624712589346, 
+            "x": 661.0660016288416, 
             "categoryType": "Group"
         }, 
         {
@@ -167,63 +128,42 @@
             "color": "#D35400", 
             "text": "Gather", 
             "isGroup": true, 
-            "height": 336, 
+            "height": 200, 
             "streaming": false, 
             "inputApplication": {
                 "outputPorts": [
                     {
                         "IdText": "Result", 
-                        "Id": "f2620995-5522-489f-8e2d-787fc63899ce"
+                        "Id": "63ef213a-26ed-4e4a-95d9-e82de2e5eba7"
                     }
                 ], 
                 "color": "#3498DB", 
-                "text": "Leap Gather.", 
+                "text": "LeapGather", 
                 "isGroup": false, 
                 "height": 200, 
                 "streaming": false, 
                 "subject": null, 
                 "category": "Component", 
                 "selected": false, 
-                "canHaveInputs": true, 
+                "canHaveInputs": false, 
                 "showPorts": false, 
                 "width": 200, 
                 "drawOrderHint": 0, 
-                "description": "Leap Gather\nA BarrierAppDrop that gathers output from multiple instances of the LeapAccelerateCLI application, sorts it, and outputs it", 
+                "description": "", 
                 "collapsed": false, 
-                "canHaveOutputs": true, 
-                "key": 138684, 
+                "canHaveOutputs": false, 
+                "key": 0, 
                 "isData": false, 
-                "fields": [
-                    {
-                        "text": "appclass (String)", 
-                        "name": "appclass", 
-                        "value": "leap_nodes.LeapGather.LeapGather", 
-                        "description": "The path to the class that implements this app"
-                    }, 
-                    {
-                        "text": "Execution time", 
-                        "name": "execution_time", 
-                        "value": 5, 
-                        "description": ""
-                    }, 
-                    {
-                        "text": "Num CPUs", 
-                        "name": "num_cpus", 
-                        "value": 1, 
-                        "description": ""
-                    }, 
-                    {
-                        "text": "Group start", 
-                        "name": "group_start", 
-                        "value": 0, 
-                        "description": ""
-                    }
-                ], 
+                "fields": [], 
                 "expanded": false, 
                 "inputPorts": [
                     {
                         "IdText": "Result", 
-                        "Id": "bf41f56c-b691-45d7-9bc0-b2e4a617430f"
+                        "Id": "1ffa91ab-b83c-429d-a145-a5f47d5fa8ec"
+                    }, 
+                    {
+                        "IdText": "event", 
+                        "Id": "2621abe4-a16e-4d03-b4a3-635c76e4b0cc"
                     }
                 ], 
                 "y": 100, 
@@ -232,21 +172,21 @@
             }, 
             "subject": null, 
             "category": "Gather", 
-            "selected": false, 
+            "selected": true, 
             "canHaveInputs": true, 
-            "showPorts": false, 
-            "width": 344, 
+            "showPorts": true, 
+            "width": 200, 
             "drawOrderHint": 0, 
             "description": "Placeholder 'gather' description", 
             "collapsed": false, 
             "canHaveOutputs": true, 
-            "key": -2, 
+            "key": -5, 
             "isData": false, 
             "fields": [
                 {
                     "text": "Number of inputs", 
                     "name": "num_of_inputs", 
-                    "value": "2", 
+                    "value": "4", 
                     "description": ""
                 }, 
                 {
@@ -256,99 +196,88 @@
                     "description": ""
                 }
             ], 
-            "expanded": true, 
+            "expanded": false, 
             "inputPorts": [], 
-            "y": 110, 
-            "x": 1229, 
+            "y": 273.54105911097196, 
+            "x": 1356.5909441467109, 
             "categoryType": "Group"
         }, 
         {
-            "outputPorts": [
-                {
-                    "IdText": "Result", 
-                    "Id": "a3f953f8-80e8-418c-a54f-e3530c7b5c5e"
-                }
-            ], 
-            "color": "#3498DB", 
-            "text": "Call Leap.", 
+            "outputPorts": [], 
+            "color": "#394BB2", 
+            "text": "End", 
             "isGroup": false, 
             "height": 200, 
             "streaming": false, 
             "subject": null, 
-            "category": "Component", 
-            "group": -1, 
+            "category": "File", 
             "selected": false, 
             "canHaveInputs": true, 
             "showPorts": false, 
             "width": 200, 
             "drawOrderHint": 0, 
-            "description": "Call Leap\nA BarrierAppDrop that reads a config file, generates a command line for the LeapAccelerateCLI application, and then executes the application", 
+            "description": "", 
             "collapsed": false, 
             "canHaveOutputs": true, 
-            "key": -3, 
-            "isData": false, 
+            "key": -7, 
+            "isData": true, 
             "fields": [
                 {
-                    "text": "measurementSetFilename (String)", 
-                    "name": "measurementSetFilename", 
-                    "value": "-", 
-                    "description": "The file from which the input measurement set should be loaded"
-                }, 
-                {
-                    "text": "appclass (String)", 
-                    "name": "appclass", 
-                    "value": "leap_nodes.CallLeap.CallLeap", 
-                    "description": "The path to the class that implements this app"
-                }, 
-                {
-                    "text": "Execution time", 
-                    "name": "execution_time", 
-                    "value": 5, 
+                    "text": "Data volume", 
+                    "name": "data_volume", 
+                    "value": "5", 
                     "description": ""
                 }, 
                 {
-                    "text": "Num CPUs", 
-                    "name": "num_cpus", 
-                    "value": 1, 
+                    "text": "Group end", 
+                    "name": "group_end", 
+                    "value": "0", 
                     "description": ""
                 }, 
                 {
-                    "text": "Group start", 
-                    "name": "group_start", 
-                    "value": 0, 
+                    "text": "Check file path exists", 
+                    "name": "check_filepath_exists", 
+                    "value": "1", 
+                    "description": ""
+                }, 
+                {
+                    "text": "File path", 
+                    "name": "filepath", 
+                    "value": "result.json", 
+                    "description": ""
+                }, 
+                {
+                    "text": "Directory name", 
+                    "name": "dirname", 
+                    "value": "/Users/james/working/leap-accelerate/leap_drops/output/", 
                     "description": ""
                 }
             ], 
             "expanded": false, 
             "inputPorts": [
                 {
-                    "IdText": "Config", 
-                    "Id": "eb6cd8c8-c32c-4e15-ab21-0ad0b71d0cf0"
+                    "IdText": "Result", 
+                    "Id": "ccee6df6-1a62-4105-ac6f-bf4404476ace"
                 }
             ], 
-            "y": 307, 
-            "x": 772, 
-            "categoryType": "Application"
+            "y": 298, 
+            "x": 1559, 
+            "categoryType": "Data"
         }, 
         {
             "outputPorts": [
                 {
-                    "IdText": "event", 
-                    "Id": "1da46351-b7a0-41c5-a0db-485c21b8e50f"
-                }, 
-                {
-                    "IdText": "Config", 
-                    "Id": "df157401-4abf-420e-9479-0c3cd9436ee8"
+                    "IdText": "Directions", 
+                    "Id": "4e7aa2e7-c5c0-4171-83e2-0b849affb3a2"
                 }
             ], 
             "color": "#394BB2", 
-            "text": "Config", 
+            "text": "Directions", 
             "isGroup": false, 
             "height": 200, 
             "streaming": false, 
             "subject": null, 
-            "category": "Memory", 
-            "group": -1, 
+            "category": "File", 
             "selected": false, 
             "canHaveInputs": true, 
             "showPorts": false, 
@@ -371,42 +300,152 @@
                     "name": "group_end", 
                     "value": "0", 
                     "description": ""
+                }, 
+                {
+                    "text": "Check file path exists", 
+                    "name": "check_filepath_exists", 
+                    "value": "1", 
+                    "description": ""
+                }, 
+                {
+                    "text": "File path", 
+                    "name": "filepath", 
+                    "value": "directions.csv", 
+                    "description": ""
+                }, 
+                {
+                    "text": "Directory name", 
+                    "name": "dirname", 
+                    "value": "/Users/james/working/leap-accelerate/leap_drops/", 
+                    "description": ""
+                }
+            ], 
+            "expanded": false, 
+            "inputPorts": [], 
+            "y": 98.932463114728, 
+            "x": 383.81964696300935, 
+            "categoryType": "Data"
+        }, 
+        {
+            "outputPorts": [], 
+            "color": "#799938", 
+            "text": "", 
+            "isGroup": false, 
+            "height": 90.2271675598681, 
+            "streaming": false, 
+            "subject": null, 
+            "category": "Comment", 
+            "selected": false, 
+            "canHaveInputs": false, 
+            "showPorts": false, 
+            "width": 233.04988503573858, 
+            "drawOrderHint": 0, 
+            "description": "", 
+            "collapsed": false, 
+            "canHaveOutputs": false, 
+            "key": -9, 
+            "isData": false, 
+            "fields": [
+                {
+                    "text": "Comment", 
+                    "name": "comment", 
+                    "value": "This is assuming shared file system for the MS.  Scatter Input App is directly calling LEAP with the correct command line parameters.", 
+                    "description": "The text value of the comment"
+                }
+            ], 
+            "expanded": false, 
+            "inputPorts": [], 
+            "y": 627.6178075348281, 
+            "x": 390.8871838482813, 
+            "categoryType": "Other"
+        }, 
+        {
+            "outputPorts": [
+                {
+                    "IdText": "Result", 
+                    "Id": "510dce35-a727-42d5-b39f-e2056f1644ba"
+                }
+            ], 
+            "color": "#3498DB", 
+            "text": "CallLeap", 
+            "isGroup": false, 
+            "height": 200, 
+            "streaming": false, 
+            "subject": null, 
+            "category": "Component", 
+            "group": -2, 
+            "selected": false, 
+            "canHaveInputs": true, 
+            "showPorts": false, 
+            "width": 200, 
+            "drawOrderHint": 0, 
+            "description": "A PythonApp that loads a config file, generates a LeapAccelerateCLI command line and calls the LeapAccelerateCLI application. The result of the application is output.", 
+            "collapsed": false, 
+            "canHaveOutputs": true, 
+            "key": -3, 
+            "isData": false, 
+            "fields": [
+                {
+                    "text": "Execution time", 
+                    "name": "execution_time", 
+                    "value": "5", 
+                    "description": ""
+                }, 
+                {
+                    "text": "Num CPUs", 
+                    "name": "num_cpus", 
+                    "value": "1", 
+                    "description": ""
+                }, 
+                {
+                    "text": "Group start", 
+                    "name": "group_start", 
+                    "value": "0", 
+                    "description": ""
+                }, 
+                {
+                    "text": "Appclass", 
+                    "name": "appclass", 
+                    "value": "leap_drops.CallLeap.CallLeap", 
+                    "description": ""
+                }, 
+                {
+                    "text": "measurementSetFilename", 
+                    "name": "measurementsetfilename", 
+                    "value": "/Users/james/working/leap-accelerate/testdata/1197638568-32.ms", 
+                    "description": ""
                 }
             ], 
             "expanded": false, 
             "inputPorts": [
                 {
-                    "IdText": "event", 
-                    "Id": "5c2d2983-782d-41d1-b598-4ff31d6e6ae0"
-                }, 
-                {
                     "IdText": "Config", 
-                    "Id": "d19187de-1fbd-4834-965c-04f5ff5621a7"
+                    "Id": "9d6b4617-ebc1-4208-9d0d-609237a810a1"
                 }
             ], 
-            "y": 292.5, 
-            "x": 597.5, 
-            "categoryType": "Data"
+            "y": 352, 
+            "x": 849, 
+            "categoryType": "Application"
         }, 
         {
             "outputPorts": [
                 {
                     "IdText": "event", 
-                    "Id": "1da46351-b7a0-41c5-a0db-485c21b8e50f"
+                    "Id": "247be1d4-d633-465f-9534-5368bb24923e"
                 }, 
                 {
-                    "IdText": "Result", 
-                    "Id": "0ca9f716-3738-4fa9-b9f1-8612e57fd068"
+                    "IdText": "Config", 
+                    "Id": "b12ad1dd-2570-4ce2-bb09-a97ed48d4089"
                 }
             ], 
             "color": "#394BB2", 
-            "text": "Result", 
+            "text": "Config", 
             "isGroup": false, 
             "height": 200, 
             "streaming": false, 
             "subject": null, 
-            "category": "Memory", 
-            "group": -1, 
+            "category": "File", 
+            "group": -2, 
             "selected": false, 
             "canHaveInputs": true, 
             "showPorts": false, 
@@ -415,7 +454,7 @@
             "description": "", 
             "collapsed": false, 
             "canHaveOutputs": true, 
-            "key": -5, 
+            "key": -8, 
             "isData": true, 
             "fields": [
                 {
@@ -429,27 +468,54 @@
                     "name": "group_end", 
                     "value": "0", 
                     "description": ""
+                }, 
+                {
+                    "text": "Check file path exists", 
+                    "name": "check_filepath_exists", 
+                    "value": "1", 
+                    "description": ""
+                }, 
+                {
+                    "text": "File path", 
+                    "name": "filepath", 
+                    "value": "", 
+                    "description": ""
+                }, 
+                {
+                    "text": "Directory name", 
+                    "name": "dirname", 
+                    "value": "/Users/james/working/leap-accelerate/leap_drops/output/", 
+                    "description": ""
                 }
             ], 
             "expanded": false, 
             "inputPorts": [
                 {
                     "IdText": "event", 
-                    "Id": "5c2d2983-782d-41d1-b598-4ff31d6e6ae0"
+                    "Id": "4d17d258-39f8-451b-8350-f3c1f79e0fd1"
                 }, 
                 {
-                    "IdText": "Result", 
-                    "Id": "7f286adf-46f8-4f42-a441-b67a6b3991ab"
+                    "IdText": "Config", 
+                    "Id": "a0728ecc-499d-4d47-a00c-dc1c5e6ce692"
                 }
             ], 
-            "y": 208, 
-            "x": 1062, 
+            "y": 283.1312356294673, 
+            "x": 672.0330008144208, 
             "categoryType": "Data"
         }, 
         {
-            "outputPorts": [], 
+            "outputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "247be1d4-d633-465f-9534-5368bb24923e"
+                }, 
+                {
+                    "IdText": "Result", 
+                    "Id": "8e96e1ae-f0e3-401b-9a50-2e6d10562c52"
+                }
+            ], 
             "color": "#394BB2", 
-            "text": "End", 
+            "text": "Result", 
             "isGroup": false, 
             "height": 200, 
             "streaming": false, 
@@ -494,81 +560,23 @@
                 {
                     "text": "Directory name", 
                     "name": "dirname", 
-                    "value": "", 
+                    "value": "/Users/james/working/leap-accelerate/leap_drops/output/", 
                     "description": ""
                 }
             ], 
             "expanded": false, 
             "inputPorts": [
                 {
+                    "IdText": "event", 
+                    "Id": "4d17d258-39f8-451b-8350-f3c1f79e0fd1"
+                }, 
+                {
                     "IdText": "Result", 
-                    "Id": "31f055e9-184e-465b-9a2c-4996a604fd51"
+                    "Id": "48491b26-f411-4a53-bf01-f648659a6b15"
                 }
             ], 
-            "y": 258, 
-            "x": 1406, 
-            "categoryType": "Data"
-        }, 
-        {
-            "outputPorts": [
-                {
-                    "IdText": "Directions", 
-                    "Id": "39d6deac-4266-4281-8eac-77d205c0bbfb"
-                }
-            ], 
-            "color": "#394BB2", 
-            "text": "Start", 
-            "isGroup": false, 
-            "height": 200, 
-            "streaming": false, 
-            "subject": null, 
-            "category": "File", 
-            "selected": true, 
-            "canHaveInputs": true, 
-            "showPorts": true, 
-            "width": 200, 
-            "drawOrderHint": 0, 
-            "description": "", 
-            "collapsed": false, 
-            "canHaveOutputs": true, 
-            "key": -7, 
-            "isData": true, 
-            "fields": [
-                {
-                    "text": "Data volume", 
-                    "name": "data_volume", 
-                    "value": "5", 
-                    "description": ""
-                }, 
-                {
-                    "text": "Group end", 
-                    "name": "group_end", 
-                    "value": "0", 
-                    "description": ""
-                }, 
-                {
-                    "text": "Check file path exists", 
-                    "name": "check_filepath_exists", 
-                    "value": "1", 
-                    "description": ""
-                }, 
-                {
-                    "text": "File path", 
-                    "name": "filepath", 
-                    "value": "", 
-                    "description": ""
-                }, 
-                {
-                    "text": "Directory name", 
-                    "name": "dirname", 
-                    "value": "", 
-                    "description": ""
-                }
-            ], 
-            "expanded": false, 
-            "inputPorts": [], 
-            "y": 113, 
-            "x": 363, 
+            "y": 313.77052955548595, 
+            "x": 1053.7954720733555, 
             "categoryType": "Data"
         }
     ], 
