@@ -13633,13 +13633,6 @@
     <detaileddescription>
     </detaileddescription>
     <location file="docs/Submodules.md"/>
-  </compounddef><compounddef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="ProcessingComponentBindingGuide_8md" kind="file" language="Markdown">
-    <compoundname>ProcessingComponentBindingGuide.md</compoundname>
-    <briefdescription>
-    </briefdescription>
-    <detaileddescription>
-    </detaileddescription>
-    <location file="ProcessingComponentBindingGuide.md"/>
   </compounddef><compounddef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="README_8md" kind="file" language="Markdown">
     <compoundname>README.md</compoundname>
     <briefdescription>
@@ -16522,379 +16515,6 @@
 <para>git submodule add <ndash/>name gtest-1.8.1 <ulink url="https://github.com/google/googletest.git">https://github.com/google/googletest.git</ulink> external/gtest-1.8.1 git submodule add <ndash/>name cmake-modules <ulink url="https://gitlab.com/ska-telescope/cmake-modules.git">https://gitlab.com/ska-telescope/cmake-modules.git</ulink> external/cmake-modules git submodule add <ndash/>name eigen-3.3.90 <ulink url="https://gitlab.com/libeigen/eigen.git">https://gitlab.com/libeigen/eigen.git</ulink> external/eigen-3.3.90 git submodule add <ndash/>name rapidjson-1.1.0 <ulink url="https://github.com/Tencent/rapidjson.git">https://github.com/Tencent/rapidjson.git</ulink> external/rapidjson-1.1.0 </para>
 </sect1>
     </detaileddescription>
-  </compounddef><compounddef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="md_ProcessingComponentBindingGuide" kind="page">
-    <compoundname>md_ProcessingComponentBindingGuide</compoundname>
-    <title>Install Doxygen</title>
-    <briefdescription>
-    </briefdescription>
-    <detaileddescription>
-<para><ulink url="http://www.doxygen.nl/">http://www.doxygen.nl/</ulink></para>
-<sect1 id="md_ProcessingComponentBindingGuide_1autotoc_md7">
-<title>Configure the configuration file (Doxyfile as default)</title>
-<para><programlisting filename=".python"><codeline><highlight class="normal">#<sp/>Doxyfile<sp/>1.8.#<sp/>Doxyfile<sp/>1.8.17<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>This<sp/>file<sp/>describes<sp/>the<sp/>settings<sp/>to<sp/>be<sp/>used<sp/>by<sp/>the<sp/>documentation<sp/>system<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>doxygen<sp/>(www.doxygen.org)<sp/>for<sp/>a<sp/>project.<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>All<sp/>text<sp/>after<sp/>a<sp/>double<sp/>hash<sp/>(##)<sp/>is<sp/>considered<sp/>a<sp/>comment<sp/>and<sp/>is<sp/>placed<sp/>in<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>front<sp/>of<sp/>the<sp/>TAG<sp/>it<sp/>is<sp/>preceding.<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>All<sp/>text<sp/>after<sp/>a<sp/>single<sp/>hash<sp/>(#)<sp/>is<sp/>considered<sp/>a<sp/>comment<sp/>and<sp/>will<sp/>be<sp/>ignored.<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>The<sp/>format<sp/>is:<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>TAG<sp/>=<sp/>value<sp/>[value,<sp/>...]<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>For<sp/>lists,<sp/>items<sp/>can<sp/>also<sp/>be<sp/>appended<sp/>using:<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>TAG<sp/>+=<sp/>value<sp/>[value,<sp/>...]<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>Values<sp/>that<sp/>contain<sp/>spaces<sp/>should<sp/>be<sp/>placed<sp/>between<sp/>quotes<sp/>(\"<sp/>\").<sp/></highlight></codeline>
-<codeline><highlight class="normal">#---------------------------------------------------------------------------<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>Project<sp/>related<sp/>configuration<sp/>options<sp/></highlight></codeline>
-<codeline><highlight class="normal">#---------------------------------------------------------------------------<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>The<sp/>PROJECT_NAME<sp/>tag<sp/>is<sp/>a<sp/>single<sp/>word<sp/>(or<sp/>a<sp/>sequence<sp/>of<sp/>words<sp/>surrounded<sp/>by<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>double-quotes,<sp/>unless<sp/>you<sp/>are<sp/>using<sp/>Doxywizard)<sp/>that<sp/>should<sp/>identify<sp/>the<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>project<sp/>for<sp/>which<sp/>the<sp/>documentation<sp/>is<sp/>generated.<sp/>This<sp/>name<sp/>is<sp/>used<sp/>in<sp/>the<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>title<sp/>of<sp/>most<sp/>generated<sp/>pages<sp/>and<sp/>in<sp/>a<sp/>few<sp/>other<sp/>places.<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>The<sp/>default<sp/>value<sp/>is:<sp/>My<sp/>Project.<sp/></highlight></codeline>
-<codeline><highlight class="normal">PROJECT_NAME           <sp/>=<sp/>JACAL<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>The<sp/>PROJECT_NUMBER<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>enter<sp/>a<sp/>project<sp/>or<sp/>revision<sp/>number.<sp/>This<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>could<sp/>be<sp/>handy<sp/>for<sp/>archiving<sp/>the<sp/>generated<sp/>documentation<sp/>or<sp/>if<sp/>some<sp/>version<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>control<sp/>system<sp/>is<sp/>used.<sp/></highlight></codeline>
-<codeline><highlight class="normal">PROJECT_NUMBER        <sp/>=<sp/>$(PROJECT_VERSION)<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>The<sp/>INPUT<sp/>tag<sp/>is<sp/>used<sp/>to<sp/>specify<sp/>the<sp/>files<sp/>and/or<sp/>directories<sp/>that<sp/>contain<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>documented<sp/>source<sp/>files.<sp/>You<sp/>may<sp/>enter<sp/>file<sp/>names<sp/>like<sp/>myfile.cpp<sp/>or<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>directories<sp/>like<sp/>/usr/src/myproject.<sp/>Separate<sp/>the<sp/>files<sp/>or<sp/>directories<sp/>with<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>spaces.<sp/>See<sp/>also<sp/>FILE_PATTERNS<sp/>and<sp/>EXTENSION_MAPPING<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>Note:<sp/>If<sp/>this<sp/>tag<sp/>is<sp/>empty<sp/>the<sp/>current<sp/>directory<sp/>is<sp/>searched.<sp/></highlight></codeline>
-<codeline><highlight class="normal">INPUT                 <sp/>=<sp/><sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>The<sp/>OUTPUT_DIRECTORY<sp/>tag<sp/>is<sp/>used<sp/>to<sp/>specify<sp/>the<sp/>(relative<sp/>or<sp/>absolute)<sp/>path<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>into<sp/>which<sp/>the<sp/>generated<sp/>documentation<sp/>will<sp/>be<sp/>written.<sp/>If<sp/>a<sp/>relative<sp/>path<sp/>is<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>entered,<sp/>it<sp/>will<sp/>be<sp/>relative<sp/>to<sp/>the<sp/>location<sp/>where<sp/>doxygen<sp/>was<sp/>started.<sp/>If<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>left<sp/>blank<sp/>the<sp/>current<sp/>directory<sp/>will<sp/>be<sp/>used.<sp/></highlight></codeline>
-<codeline><highlight class="normal">OUTPUT_DIRECTORY      <sp/>= <sp/>JACAL<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>The<sp/>OUTPUT_LANGUAGE<sp/>tag<sp/>is<sp/>used<sp/>to<sp/>specify<sp/>the<sp/>language<sp/>in<sp/>which<sp/>all<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>documentation<sp/>generated<sp/>by<sp/>doxygen<sp/>is<sp/>written.<sp/>Doxygen<sp/>will<sp/>use<sp/>this<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>information<sp/>to<sp/>generate<sp/>all<sp/>constant<sp/>output<sp/>in<sp/>the<sp/>proper<sp/>language.<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>Possible<sp/>values<sp/>are:<sp/>Afrikaans,<sp/>Arabic,<sp/>Armenian,<sp/>Brazilian,<sp/>Catalan,<sp/>Chinese,<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>Chinese-Traditional,<sp/>Croatian,<sp/>Czech,<sp/>Danish,<sp/>Dutch,<sp/>English<sp/>(United<sp/>States),<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>Esperanto,<sp/>Farsi<sp/>(Persian),<sp/>Finnish,<sp/>French,<sp/>German,<sp/>Greek,<sp/>Hungarian,<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>Indonesian,<sp/>Italian,<sp/>Japanese,<sp/>Japanese-en<sp/>(Japanese<sp/>with<sp/>English<sp/>messages),<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>Korean,<sp/>Korean-en<sp/>(Korean<sp/>with<sp/>English<sp/>messages),<sp/>Latvian,<sp/>Lithuanian,<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>Macedonian,<sp/>Norwegian,<sp/>Persian<sp/>(Farsi),<sp/>Polish,<sp/>Portuguese,<sp/>Romanian,<sp/>Russian,<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>Serbian,<sp/>Serbian-Cyrillic,<sp/>Slovak,<sp/>Slovene,<sp/>Spanish,<sp/>Swedish,<sp/>Turkish,<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>Ukrainian<sp/>and<sp/>Vietnamese.<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>The<sp/>default<sp/>value<sp/>is:<sp/>English.<sp/></highlight></codeline>
-<codeline><highlight class="normal">OUTPUT_LANGUAGE       <sp/>=<sp/>English<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>When<sp/>enabled<sp/>doxygen<sp/>tries<sp/>to<sp/>link<sp/>words<sp/>that<sp/>correspond<sp/>to<sp/>documented<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>classes,<sp/>or<sp/>namespaces<sp/>to<sp/>their<sp/>corresponding<sp/>documentation.<sp/>Such<sp/>a<sp/>link<sp/>can<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>be<sp/>prevented<sp/>in<sp/>individual<sp/>cases<sp/>by<sp/>putting<sp/>a<sp/>%<sp/>sign<sp/>in<sp/>front<sp/>of<sp/>the<sp/>word<sp/>or<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>globally<sp/>by<sp/>setting<sp/>AUTOLINK_SUPPORT<sp/>to<sp/>NO.<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>The<sp/>default<sp/>value<sp/>is:<sp/>YES.<sp/></highlight></codeline>
-<codeline><highlight class="normal">AUTOLINK_SUPPORT      <sp/>=<sp/>NO<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>For<sp/>Microsoft's<sp/>IDL<sp/>there<sp/>are<sp/>propget<sp/>and<sp/>propput<sp/>attributes<sp/>to<sp/>indicate<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>getter<sp/>and<sp/>setter<sp/>methods<sp/>for<sp/>a<sp/>property.<sp/>Setting<sp/>this<sp/>option<sp/>to<sp/>YES<sp/>will<sp/>make<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>doxygen<sp/>to<sp/>replace<sp/>the<sp/>get<sp/>and<sp/>set<sp/>methods<sp/>by<sp/>a<sp/>property<sp/>in<sp/>the<sp/>documentation.<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>This<sp/>will<sp/>only<sp/>work<sp/>if<sp/>the<sp/>methods<sp/>are<sp/>indeed<sp/>getting<sp/>or<sp/>setting<sp/>a<sp/>simple<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>type.<sp/>If<sp/>this<sp/>is<sp/>not<sp/>the<sp/>case,<sp/>or<sp/>you<sp/>want<sp/>to<sp/>show<sp/>the<sp/>methods<sp/>anyway,<sp/>you<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>should<sp/>set<sp/>this<sp/>option<sp/>to<sp/>NO.<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>The<sp/>default<sp/>value<sp/>is:<sp/>YES.<sp/></highlight></codeline>
-<codeline><highlight class="normal">IDL_PROPERTY_SUPPORT  <sp/>=<sp/>NO<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>Set<sp/>the<sp/>OPTIMIZE_OUTPUT_FOR_C<sp/>tag<sp/>to<sp/>YES<sp/>if<sp/>your<sp/>project<sp/>consists<sp/>of<sp/>C<sp/>sources<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>#<sp/>only.<sp/>Doxygen<sp/>will<sp/>then<sp/>generate<sp/>output<sp/>that<sp/>is<sp/>more<sp/>tailored<sp/>for<sp/>C.<sp/>For<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>#<sp/>instance,<sp/>some<sp/>of<sp/>the<sp/>names<sp/>that<sp/>are<sp/>used<sp/>will<sp/>be<sp/>different.<sp/>The<sp/>list<sp/>of<sp/>all<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>#<sp/>members<sp/>will<sp/>be<sp/>omitted,<sp/>etc.<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>#<sp/>The<sp/>default<sp/>value<sp/>is:<sp/>NO.<sp/></highlight></codeline>
-<codeline><highlight class="normal">OPTIMIZE_OUTPUT_FOR_C <sp/>=<sp/>YES<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>Set<sp/>the<sp/>OPTIMIZE_OUTPUT_JAVA<sp/>tag<sp/>to<sp/>YES<sp/>if<sp/>your<sp/>project<sp/>consists<sp/>of<sp/>Java<sp/>or<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>#<sp/>Python<sp/>sources<sp/>only.<sp/>Doxygen<sp/>will<sp/>then<sp/>generate<sp/>output<sp/>that<sp/>is<sp/>more<sp/>tailored<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>#<sp/>for<sp/>that<sp/>language.<sp/>For<sp/>instance,<sp/>namespaces<sp/>will<sp/>be<sp/>presented<sp/>as<sp/>packages,<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>#<sp/>qualified<sp/>scopes<sp/>will<sp/>look<sp/>different,<sp/>etc.<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>#<sp/>The<sp/>default<sp/>value<sp/>is:<sp/>NO.<sp/></highlight></codeline>
-<codeline><highlight class="normal">OPTIMIZE_OUTPUT_JAVA  <sp/>=<sp/>NO<sp/></highlight></codeline>
-<codeline><highlight class="normal">#---------------------------------------------------------------------------<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>Configuration<sp/>options<sp/>related<sp/>to<sp/>the<sp/>input<sp/>files<sp/></highlight></codeline>
-<codeline><highlight class="normal">#---------------------------------------------------------------------------<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>The<sp/>RECURSIVE<sp/>tag<sp/>can<sp/>be<sp/>used<sp/>to<sp/>specify<sp/>whether<sp/>or<sp/>not<sp/>subdirectories<sp/>should<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>be<sp/>searched<sp/>for<sp/>input<sp/>files<sp/>as<sp/>well.<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>The<sp/>default<sp/>value<sp/>is:<sp/>NO.<sp/></highlight></codeline>
-<codeline><highlight class="normal">RECURSIVE             <sp/>=<sp/>YES<sp/></highlight></codeline>
-<codeline><highlight class="normal">#---------------------------------------------------------------------------<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>Configuration<sp/>options<sp/>related<sp/>to<sp/>the<sp/>HTML<sp/>output<sp/></highlight></codeline>
-<codeline><highlight class="normal">#---------------------------------------------------------------------------<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>GENERATE_HTML<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>doxygen<sp/>will<sp/>generate<sp/>HTML<sp/>output<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>The<sp/>default<sp/>value<sp/>is:<sp/>YES.<sp/></highlight></codeline>
-<codeline><highlight class="normal">GENERATE_HTML         <sp/>=<sp/>NO<sp/></highlight></codeline>
-<codeline><highlight class="normal">#---------------------------------------------------------------------------<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>Configuration<sp/>options<sp/>related<sp/>to<sp/>the<sp/>LaTeX<sp/>output<sp/></highlight></codeline>
-<codeline><highlight class="normal">#---------------------------------------------------------------------------<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>GENERATE_LATEX<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>doxygen<sp/>will<sp/>generate<sp/>LaTeX<sp/>output.<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>The<sp/>default<sp/>value<sp/>is:<sp/>YES.<sp/></highlight></codeline>
-<codeline><highlight class="normal">GENERATE_LATEX        <sp/>=<sp/>NO<sp/></highlight></codeline>
-<codeline><highlight class="normal">#---------------------------------------------------------------------------<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>Configuration<sp/>options<sp/>related<sp/>to<sp/>the<sp/>XML<sp/>output<sp/></highlight></codeline>
-<codeline><highlight class="normal">#---------------------------------------------------------------------------<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>SOURCE_BROWSER<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES<sp/>then<sp/>a<sp/>list<sp/>of<sp/>source<sp/>files<sp/>will<sp/>be<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>#<sp/>generated.<sp/>Documented<sp/>entities<sp/>will<sp/>be<sp/>cross-referenced<sp/>with<sp/>these<sp/>sources.<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>#<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>#<sp/>Note:<sp/>To<sp/>get<sp/>rid<sp/>of<sp/>all<sp/>source<sp/>code<sp/>in<sp/>the<sp/>generated<sp/>output,<sp/>make<sp/>sure<sp/>that<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>#<sp/>also<sp/>VERBATIM_HEADERS<sp/>is<sp/>set<sp/>to<sp/>NO.<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>#<sp/>The<sp/>default<sp/>value<sp/>is:<sp/>NO.<sp/></highlight></codeline>
-<codeline><highlight class="normal">SOURCE_BROWSER        <sp/>=<sp/>NO<sp/><sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>VERBATIM_HEADERS<sp/>tag<sp/>is<sp/>set<sp/>the<sp/>YES<sp/>then<sp/>doxygen<sp/>will<sp/>generate<sp/>a<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>#<sp/>verbatim<sp/>copy<sp/>of<sp/>the<sp/>header<sp/>file<sp/>for<sp/>each<sp/>class<sp/>for<sp/>which<sp/>an<sp/>include<sp/>is<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>#<sp/>specified.<sp/>Set<sp/>to<sp/>NO<sp/>to<sp/>disable<sp/>this.<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>#<sp/>See<sp/>also:<sp/>Section<sp/>\class.<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>#<sp/>The<sp/>default<sp/>value<sp/>is:<sp/>YES.<sp/></highlight></codeline>
-<codeline><highlight class="normal">VERBATIM_HEADERS      <sp/>=<sp/>NO<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>GENERATE_XML<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>doxygen<sp/>will<sp/>generate<sp/>an<sp/>XML<sp/>file<sp/>that<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>captures<sp/>the<sp/>structure<sp/>of<sp/>the<sp/>code<sp/>including<sp/>all<sp/>documentation.<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>The<sp/>default<sp/>value<sp/>is:<sp/>NO.<sp/></highlight></codeline>
-<codeline><highlight class="normal">GENERATE_XML          <sp/>=<sp/>YES<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>XML_PROGRAMLISTING<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>doxygen<sp/>will<sp/>dump<sp/>the<sp/>program<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>listings<sp/>(including<sp/>syntax<sp/>highlighting<sp/>and<sp/>cross-referencing<sp/>information)<sp/>to<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>the<sp/>XML<sp/>output.<sp/>Note<sp/>that<sp/>enabling<sp/>this<sp/>will<sp/>significantly<sp/>increase<sp/>the<sp/>size<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>of<sp/>the<sp/>XML<sp/>output.<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>The<sp/>default<sp/>value<sp/>is:<sp/>YES.<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>This<sp/>tag<sp/>requires<sp/>that<sp/>the<sp/>tag<sp/>GENERATE_XML<sp/>is<sp/>set<sp/>to<sp/>YES.<sp/></highlight></codeline>
-<codeline><highlight class="normal">XML_PROGRAMLISTING    <sp/>=<sp/>NO<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>XML_NS_MEMB_FILE_SCOPE<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>doxygen<sp/>will<sp/>include<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>namespace<sp/>members<sp/>in<sp/>file<sp/>scope<sp/>as<sp/>well,<sp/>matching<sp/>the<sp/>HTML<sp/>output.<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>The<sp/>default<sp/>value<sp/>is:<sp/>NO.<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>This<sp/>tag<sp/>requires<sp/>that<sp/>the<sp/>tag<sp/>GENERATE_XML<sp/>is<sp/>set<sp/>to<sp/>YES.<sp/></highlight></codeline>
-<codeline><highlight class="normal">XML_NS_MEMB_FILE_SCOPE<sp/>=<sp/>NO<sp/></highlight></codeline>
-<codeline><highlight class="normal">#---------------------------------------------------------------------------<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>Configuration<sp/>options<sp/>related<sp/>to<sp/>the<sp/>preprocessor<sp/></highlight></codeline>
-<codeline><highlight class="normal">#---------------------------------------------------------------------------<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>ENABLE_PREPROCESSING<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>doxygen<sp/>will<sp/>evaluate<sp/>all<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>C-preprocessor<sp/>directives<sp/>found<sp/>in<sp/>the<sp/>sources<sp/>and<sp/>include<sp/>files.<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>The<sp/>default<sp/>value<sp/>is:<sp/>YES.<sp/></highlight></codeline>
-<codeline><highlight class="normal">ENABLE_PREPROCESSING  <sp/>=<sp/>NO<sp/></highlight></codeline>
-<codeline><highlight class="normal">#---------------------------------------------------------------------------<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>Configuration<sp/>options<sp/>related<sp/>to<sp/>the<sp/>dot<sp/>tool<sp/></highlight></codeline>
-<codeline><highlight class="normal">#---------------------------------------------------------------------------<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>CLASS_DIAGRAMS<sp/>tag<sp/>is<sp/>set<sp/>to<sp/>YES,<sp/>doxygen<sp/>will<sp/>generate<sp/>a<sp/>class<sp/>diagram<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>(in<sp/>HTML<sp/>and<sp/>LaTeX)<sp/>for<sp/>classes<sp/>with<sp/>base<sp/>or<sp/>super<sp/>classes.<sp/>Setting<sp/>the<sp/>tag<sp/>to<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>NO<sp/>turns<sp/>the<sp/>diagrams<sp/>off.<sp/>Note<sp/>that<sp/>this<sp/>option<sp/>also<sp/>works<sp/>with<sp/>HAVE_DOT<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>disabled,<sp/>but<sp/>it<sp/>is<sp/>recommended<sp/>to<sp/>install<sp/>and<sp/>use<sp/>dot,<sp/>since<sp/>it<sp/>yields<sp/>more<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>powerful<sp/>graphs.<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>The<sp/>default<sp/>value<sp/>is:<sp/>YES.<sp/></highlight></codeline>
-<codeline><highlight class="normal">CLASS_DIAGRAMS        <sp/>=<sp/>NO<sp/></highlight></codeline>
-</programlisting></para>
-</sect1>
-<sect1 id="md_ProcessingComponentBindingGuide_1autotoc_md8">
-<title>Add comments  in the source code files</title>
-<sect2 id="md_ProcessingComponentBindingGuide_1autotoc_md9">
-<title>Source Files</title>
-<sect3 id="md_ProcessingComponentBindingGuide_1autotoc_md10">
-<title>&lt;strong&gt;Filename&lt;/strong&gt;</title>
-<para>The name of the source file</para>
-<para><programlisting><codeline><highlight class="normal"><sp/>{c++}</highlight></codeline>
-<codeline><highlight class="normal">/*!<sp/></highlight></codeline>
-<codeline><highlight class="normal">* \file<sp/>LoadVis.h<sp/></highlight></codeline>
-<codeline><highlight class="normal">*/<sp/></highlight></codeline>
-</programlisting></para>
-<para>or <programlisting filename=".python"><codeline><highlight class="normal">/##<sp/></highlight></codeline>
-<codeline><highlight class="normal"><sp/>#<sp/>\file<sp/>LoadVis.h<sp/></highlight></codeline>
-</programlisting></para>
-</sect3>
-<sect3 id="md_ProcessingComponentBindingGuide_1autotoc_md11">
-<title>&lt;strong&gt;Description&lt;/strong&gt;</title>
-<para>A brief description of the purpose of this component.<nonbreakablespace/>A detailed description is also included here.</para>
-<para><programlisting><codeline><highlight class="normal"><sp/>{c++}</highlight></codeline>
-<codeline><highlight class="normal">/*!<sp/></highlight></codeline>
-<codeline><highlight class="normal"> *<sp/>\brief<sp/>Loads<sp/>visibility<sp/>set<sp/></highlight></codeline>
-<codeline><highlight class="normal"> *<sp/>\details<sp/>Loads<sp/>a<sp/>configuration<sp/>from<sp/>a<sp/>file<sp/>drop<sp/>and<sp/>a<sp/>visibility<sp/>set<sp/>from<sp/>a<sp/>casacore::Measurement<sp/>Set<sp/></highlight></codeline>
-<codeline><highlight class="normal">*/<sp/></highlight></codeline>
-</programlisting></para>
-<para><programlisting filename=".python"><codeline><highlight class="normal">/##<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>\brief<sp/>Loads<sp/>visibility<sp/>set<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>\details<sp/>Loads<sp/>a<sp/>configuration<sp/>from<sp/>a<sp/>file<sp/>drop<sp/>and<sp/>a<sp/>visibility<sp/>set<sp/>from<sp/>a<sp/>casacore::Measurement<sp/>Set<sp/></highlight></codeline>
-</programlisting></para>
-</sect3>
-<sect3 id="md_ProcessingComponentBindingGuide_1autotoc_md12">
-<title>Location</title>
-<para>The location of the file that generated this component description. Contains repository location, file path within repository and git commit hash.</para>
-<para>Note: the value of  will be substituted at run-time.</para>
-<para><programlisting><codeline><highlight class="normal"><sp/>{c++}</highlight></codeline>
-<codeline><highlight class="normal">/*!<sp/></highlight></codeline>
-<codeline><highlight class="normal">*<sp/>\par<sp/>EAGLE_START<sp/></highlight></codeline>
-<codeline><highlight class="normal">*<sp/>\param<sp/>gitrepo<sp/>$(GIT_REPO)<sp/></highlight></codeline>
-<codeline><highlight class="normal">*<sp/>\par<sp/>EAGLE_END<sp/></highlight></codeline>
-<codeline><highlight class="normal">*/<sp/></highlight></codeline>
-</programlisting></para>
-</sect3>
-<sect3 id="md_ProcessingComponentBindingGuide_1autotoc_md13">
-<title>autotoc_md13</title>
-<para><programlisting filename=".python"><codeline><highlight class="normal">/##<sp/></highlight></codeline>
-<codeline><highlight class="normal"><sp/>#<sp/>\par<sp/>EAGLE_START<sp/></highlight></codeline>
-<codeline><highlight class="normal"><sp/>#<sp/>\param<sp/>gitrepo<sp/>$(GIT_REPO)<sp/></highlight></codeline>
-<codeline><highlight class="normal"><sp/>#<sp/>\par<sp/>EAGLE_END<sp/></highlight></codeline>
-</programlisting></para>
-</sect3>
-<sect3 id="md_ProcessingComponentBindingGuide_1autotoc_md14">
-<title>&lt;strong&gt;Version&lt;/strong&gt;</title>
-<para>The version of the code file.</para>
-<para>Note: the value of 180ab19 will be substituted at run-time, and also give value to PROJECT_NUMBER in the Doxygen configuration file "Doxyfile" ( PROJECT_NUMBER = 180ab19 ).</para>
-<para><programlisting><codeline><highlight class="normal"><sp/>{c++}</highlight></codeline>
-<codeline><highlight class="normal">/*!<sp/></highlight></codeline>
-<codeline><highlight class="normal">*<sp/>\par<sp/>EAGLE_START<sp/></highlight></codeline>
-<codeline><highlight class="normal">*<sp/>\param<sp/>version<sp/>$(PROJECT_VERSION)<sp/></highlight></codeline>
-<codeline><highlight class="normal">*<sp/>\par<sp/>EAGLE_END<sp/></highlight></codeline>
-<codeline><highlight class="normal">*/<sp/></highlight></codeline>
-</programlisting></para>
-<para><programlisting filename=".python"><codeline><highlight class="normal">/##<sp/></highlight></codeline>
-<codeline><highlight class="normal"><sp/>#<sp/>\par<sp/>EAGLE_START<sp/></highlight></codeline>
-<codeline><highlight class="normal"><sp/>#<sp/>\param<sp/>version<sp/>$(PROJECT_VERSION)<sp/></highlight></codeline>
-<codeline><highlight class="normal"><sp/>#<sp/>\par<sp/>EAGLE_END<sp/></highlight></codeline>
-</programlisting></para>
-</sect3>
-<sect3 id="md_ProcessingComponentBindingGuide_1autotoc_md15">
-<title>&lt;strong&gt;Category&lt;/strong&gt;</title>
-<para>DynlibApp, DynlibProcApp,<nonbreakablespace/>PythonApp, BashShellApp</para>
-<para><programlisting><codeline><highlight class="normal"><sp/>{c++}</highlight></codeline>
-<codeline><highlight class="normal">/*!<sp/></highlight></codeline>
-<codeline><highlight class="normal">*<sp/>\par<sp/>EAGLE_START<sp/></highlight></codeline>
-<codeline><highlight class="normal">*<sp/>\param<sp/>category<sp/>DynlibApp<sp/></highlight></codeline>
-<codeline><highlight class="normal">*<sp/>\par<sp/>EAGLE_END<sp/></highlight></codeline>
-<codeline><highlight class="normal">*/<sp/></highlight></codeline>
-</programlisting></para>
-</sect3>
-</sect2>
-<sect2 id="md_ProcessingComponentBindingGuide_1autotoc_md16">
-<title>autotoc_md16</title>
-<para><programlisting filename=".python"><codeline><highlight class="normal">/##<sp/></highlight></codeline>
-<codeline><highlight class="normal"><sp/>#<sp/>\par<sp/>EAGLE_START<sp/></highlight></codeline>
-<codeline><highlight class="normal"><sp/>#<sp/>\param<sp/>category<sp/>DynlibApp<sp/></highlight></codeline>
-<codeline><highlight class="normal"><sp/>#<sp/>\par<sp/>EAGLE_END<sp/></highlight></codeline>
-</programlisting></para>
-</sect2>
-<sect2 id="md_ProcessingComponentBindingGuide_1autotoc_md17">
-<title>Parameters (Fields)</title>
-<sect3 id="md_ProcessingComponentBindingGuide_1autotoc_md18">
-<title>&lt;strong&gt;Name, Description, Direction, Default Value, Data Type&lt;/strong&gt;</title>
-<para>The pattern is:</para>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>[</parametername>
-</parameternamelist>
-<parameterdescription>
-<para><bold>Direction</bold> ] param/ <bold>Name</bold> / <bold>Default Value</bold> / <bold>Data Type</bold></para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-LanguageOption1 <bold>D</bold> <bold>escription</bold></para>
-<para>LanguageOption2 <bold>Description</bold></para>
-<para><programlisting><codeline><highlight class="normal"><sp/>{c++}</highlight></codeline>
-<codeline><highlight class="normal">/*!<sp/></highlight></codeline>
-<codeline><highlight class="normal">*<sp/>\par<sp/>EAGLE_START<sp/></highlight></codeline>
-<codeline><highlight class="normal">*<sp/>\param[in]<sp/>param/start_frequency/500/Integer<sp/></highlight></codeline>
-<codeline><highlight class="normal">* <sp/> <sp/> \~English<sp/>the<sp/>start<sp/>frequency<sp/>to<sp/>read<sp/>from\n<sp/></highlight></codeline>
-<codeline><highlight class="normal">* <sp/> <sp/> \~Chinese<sp/>要读取的起始频率\n<sp/></highlight></codeline>
-<codeline><highlight class="normal">* <sp/> <sp/> \~<sp/></highlight></codeline>
-<codeline><highlight class="normal">*<sp/>\param[in]<sp/>param/end_frequency/500/Integer<sp/><sp/></highlight></codeline>
-<codeline><highlight class="normal">* <sp/> <sp/> \~English<sp/>the<sp/>end<sp/>frequency<sp/>to<sp/>read<sp/>from\n<sp/><sp/></highlight></codeline>
-<codeline><highlight class="normal">* <sp/> <sp/> \~Chinese<sp/>要读取的结束频率\n<sp/><sp/></highlight></codeline>
-<codeline><highlight class="normal">* <sp/> <sp/> \~<sp/><sp/></highlight></codeline>
-<codeline><highlight class="normal">*<sp/>\param[in]<sp/>param/channels/64/Integer<sp/><sp/></highlight></codeline>
-<codeline><highlight class="normal">* <sp/> <sp/> \~English<sp/>how<sp/>many<sp/>channels<sp/>to<sp/>load\n<sp/><sp/></highlight></codeline>
-<codeline><highlight class="normal">* <sp/> <sp/> \~Chinese<sp/>需要加载的通道数量\n<sp/><sp/></highlight></codeline>
-<codeline><highlight class="normal">* <sp/> <sp/> \~<sp/></highlight></codeline>
-<codeline><highlight class="normal">*<sp/>\par<sp/>EAGLE_END<sp/></highlight></codeline>
-<codeline><highlight class="normal">*/<sp/></highlight></codeline>
-</programlisting></para>
-</sect3>
-</sect2>
-<sect2 id="md_ProcessingComponentBindingGuide_1autotoc_md19">
-<title>autotoc_md19</title>
-<para><programlisting filename=".python"><codeline><highlight class="normal">/##<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>\par<sp/>EAGLE_START<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>\param[in]<sp/>param/start_frequency/500/Integer<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\~English<sp/>the<sp/>start<sp/>frequency<sp/>to<sp/>read<sp/>from\n<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\~Chinese<sp/>要读取的起始频率\n<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\~<sp/><sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>\param[in]<sp/>param/end_frequency/500/Integer<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\~English<sp/>the<sp/>end<sp/>frequency<sp/>to<sp/>read<sp/>from\n<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\~Chinese<sp/>要读取的结束频率\n<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\~<sp/><sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>\param[in]<sp/>param/channels/64/Integer<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\~English<sp/>how<sp/>many<sp/>channels<sp/>to<sp/>load\n<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\~Chinese<sp/>需要加载的通道数量\n<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\~<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>\par<sp/>EAGLE_END<sp/></highlight></codeline>
-</programlisting></para>
-</sect2>
-<sect2 id="md_ProcessingComponentBindingGuide_1autotoc_md20">
-<title>Ports/Local Ports</title>
-<sect3 id="md_ProcessingComponentBindingGuide_1autotoc_md21">
-<title>&lt;strong&gt;Name, Description, Direction&lt;/strong&gt;</title>
-<para>The pattern is:</para>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>[</parametername>
-</parameternamelist>
-<parameterdescription>
-<para><bold>Direction</bold> ] port/ <bold>Name</bold></para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-LanguageOption1 <bold>Description</bold></para>
-<para>LanguageOption2 <bold>Description</bold></para>
-<para><programlisting><codeline><highlight class="normal"><sp/>{c++}</highlight></codeline>
-<codeline><highlight class="normal">/*!<sp/></highlight></codeline>
-<codeline><highlight class="normal">*<sp/>\par<sp/>EAGLE_START<sp/></highlight></codeline>
-<codeline><highlight class="normal">*<sp/>\param[in]<sp/>port/config<sp/></highlight></codeline>
-<codeline><highlight class="normal">* <sp/> <sp/> \~English<sp/>the<sp/>configuration<sp/>of<sp/>the<sp/>input_port\n<sp/></highlight></codeline>
-<codeline><highlight class="normal">* <sp/> <sp/> \~Chinese<sp/>输入端口的设置\n<sp/></highlight></codeline>
-<codeline><highlight class="normal">* <sp/> <sp/> \~<sp/></highlight></codeline>
-<codeline><highlight class="normal">*<sp/>\param[in]<sp/>port/event<sp/></highlight></codeline>
-<codeline><highlight class="normal">* <sp/> <sp/> \~English<sp/>the<sp/>event<sp/>of<sp/>the<sp/>input_port\n<sp/></highlight></codeline>
-<codeline><highlight class="normal">* <sp/> <sp/> \~Chinese<sp/>输入端口的事件\n<sp/></highlight></codeline>
-<codeline><highlight class="normal">* <sp/> <sp/> \~<sp/></highlight></codeline>
-<codeline><highlight class="normal">*<sp/>\param[out]<sp/>port/File<sp/></highlight></codeline>
-<codeline><highlight class="normal">* <sp/> <sp/> \~English<sp/>the<sp/>file<sp/>of<sp/>the<sp/>output_port<sp/>\n<sp/></highlight></codeline>
-<codeline><highlight class="normal">* <sp/> <sp/> \~Chinese<sp/>输出端口的文件\n<sp/></highlight></codeline>
-<codeline><highlight class="normal">* <sp/> <sp/> \~<sp/></highlight></codeline>
-<codeline><highlight class="normal">*<sp/>\par<sp/>EAGLE_END<sp/></highlight></codeline>
-<codeline><highlight class="normal">*/<sp/></highlight></codeline>
-</programlisting></para>
-<para><programlisting filename=".python"><codeline><highlight class="normal">/##<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>\par<sp/>EAGLE_START<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>\param[in]<sp/>port/config<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\~English<sp/>the<sp/>configuration<sp/>of<sp/>the<sp/>input_port\n<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\~Chinese<sp/>输入端口的设置\n<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\~<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>\param[in]<sp/>port/event<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\~English<sp/>the<sp/>event<sp/>of<sp/>the<sp/>input_port\n<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\~Chinese<sp/>输入端口的事件\n<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\~<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>\param[in]<sp/>local-port/event<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\~English<sp/>the<sp/>event<sp/>of<sp/>the<sp/>input_port\n<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\~Chinese<sp/>输入端口的事件\n<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\~<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>\param[out]<sp/>port/File<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\~English<sp/>the<sp/>file<sp/>of<sp/>the<sp/>output_port<sp/>\n<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\~Chinese<sp/>输出端口的文件\n<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\~<sp/></highlight></codeline>
-<codeline><highlight class="normal">#<sp/>\par<sp/>EAGLE_END<sp/></highlight></codeline>
-</programlisting></para>
-</sect3>
-</sect2>
-</sect1>
-<sect1 id="md_ProcessingComponentBindingGuide_1autotoc_md22">
-<title>Run Doxygen</title>
-<para>If do not need the location and version of the current cod e , could just run <linebreak/>
-</para>
-<para><programlisting filename=".shell"><codeline><highlight class="normal">doxygen<sp/>Doxyfile<sp/></highlight></codeline>
-</programlisting></para>
-<para>or <programlisting filename=".shell"><codeline><highlight class="normal">doxygen<sp/><sp/>#the<sp/>default<sp/>configuration<sp/>file<sp/>named<sp/>as<sp/>Doxyfile<sp/></highlight></codeline>
-</programlisting></para>
-<para>Otherwise , could get the location information with:</para>
-<para><programlisting filename=".plain"><codeline><highlight class="normal">git<sp/>config<sp/>--get<sp/>remote.origin.url<sp/></highlight></codeline>
-</programlisting></para>
-<para>get the version information with (at first, make sure it is the correct branch): <programlisting filename=".shell"><codeline><highlight class="normal">git<sp/>rev-parse<sp/>--short<sp/>HEAD<sp/></highlight></codeline>
-</programlisting></para>
-<para>and the GIT_REPO or PROJECT_VERSION should be subscripted with GIT_REPO=$( git config <ndash/>get remote.origin.url ) and PROJECT_VERSION=$(git rev-parse <ndash/>short HEAD) , could run like this: <programlisting filename=".shell"><codeline><highlight class="normal">GIT_REPO=$(git<sp/>config<sp/>--get<sp/>remote.origin.url<sp/>)<sp/>PROJECT_VERSION=$(git<sp/>rev-parse<sp/>--short<sp/>HEAD)<sp/>doxygen<sp/></highlight></codeline>
-</programlisting></para>
-<para>Combine the files to one file. <programlisting filename=".shell"><codeline><highlight class="normal">xsltproc<sp/>combine.xslt<sp/>index.xml<sp/>&gt;jacal.xml<sp/></highlight></codeline>
-</programlisting> </para>
-</sect1>
-    </detaileddescription>
   </compounddef><compounddef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="md_README" kind="page">
     <compoundname>md_README</compoundname>
     <title>LEAP Accelerate</title>
@@ -16913,27 +16533,27 @@ LanguageOption1 <bold>Description</bold></para>
 </listitem><listitem><para>leap-accelerate-server: a socket server interface for dispatching data processing to LEAP-Cal clients</para>
 </listitem></itemizedlist>
 </para>
-<sect1 id="md_README_1autotoc_md24">
+<sect1 id="md_README_1autotoc_md7">
 <title>Build</title>
-<sect2 id="md_README_1autotoc_md25">
+<sect2 id="md_README_1autotoc_md8">
 <title>Linux</title>
 <para><computeroutput>export CUDA_HOME=/usr/local/cuda</computeroutput></para>
 <para><computeroutput>export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${CUDA_HOME}/lib64:${CUDA_HOME}/extras/CUPTI/lib64</computeroutput></para>
 <para><computeroutput>export PATH=$PATH:$CUDA_HOME/bin</computeroutput></para>
 <para><computeroutput>mkdir -p build/linux/{Debug,Release} &amp;&amp; cd build/linux</computeroutput></para>
-<sect3 id="md_README_1autotoc_md26">
+<sect3 id="md_README_1autotoc_md9">
 <title>Debug</title>
 <para><computeroutput>cd Debug</computeroutput></para>
 <para><computeroutput>cmake ../../ -DCMAKE_CXX_FLAGS_DEBUG="-g -O1" -DCMAKE_BUILD_TYPE=Debug</computeroutput></para>
 <para>(with tracing):</para>
 <para><computeroutput>cmake ../../ -DCMAKE_CXX_FLAGS_DEBUG="-g -O1" -DTRACE=ON -DCMAKE_BUILD_TYPE=Debug</computeroutput></para>
 </sect3>
-<sect3 id="md_README_1autotoc_md27">
+<sect3 id="md_README_1autotoc_md10">
 <title>Release</title>
 <para><computeroutput>cd Release</computeroutput></para>
 <para><computeroutput>cmake ../../ -DCMAKE_BUILD_TYPE=Release</computeroutput></para>
 </sect3>
-<sect3 id="md_README_1autotoc_md28">
+<sect3 id="md_README_1autotoc_md11">
 <title>Linux Cluster</title>
 <para><computeroutput>module load cmake/3.15.1 gcc/6.3.0 boost/1.66.0 casacore/3.1.2</computeroutput></para>
 <para><computeroutput>module unload gfortran/default</computeroutput></para>
@@ -16944,7 +16564,7 @@ LanguageOption1 <bold>Description</bold></para>
 <para><computeroutput>mkdir -p build &amp;&amp; cd build</computeroutput></para>
 <para><computeroutput>cmake ../../ -DCUDA_TOOLKIT_ROOT_DIR=$CUDA_HOME -DCUDA_HOST_COMPILER=g++ -DCASACORE_ROOT_DIR=$BLDR_CASACORE_BASE_PATH -DCMAKE_BUILD_TYPE=Release</computeroutput></para>
 </sect3>
-<sect3 id="md_README_1autotoc_md29">
+<sect3 id="md_README_1autotoc_md12">
 <title>Ubuntu/Debian Dependencies</title>
 <para>20.04 LTS</para>
 <para><itemizedlist>
@@ -16970,7 +16590,7 @@ LanguageOption1 <bold>Description</bold></para>
 </listitem></itemizedlist>
 </para>
 </sect3>
-<sect3 id="md_README_1autotoc_md30">
+<sect3 id="md_README_1autotoc_md13">
 <title>Recommended Versions Compatibility</title>
 <para><itemizedlist>
 <listitem><para>g++ 9.3.0</para>
@@ -16981,7 +16601,7 @@ LanguageOption1 <bold>Description</bold></para>
 </listitem></itemizedlist>
 </para>
 </sect3>
-<sect3 id="md_README_1autotoc_md31">
+<sect3 id="md_README_1autotoc_md14">
 <title>Minimum Versions Compatibility</title>
 <para><itemizedlist>
 <listitem><para>g++ 6.3.0</para>
@@ -16994,7 +16614,7 @@ LanguageOption1 <bold>Description</bold></para>
 </sect3>
 </sect2>
 </sect1>
-<sect1 id="md_README_1autotoc_md32">
+<sect1 id="md_README_1autotoc_md15">
 <title>Test</title>
 <para>Testing provided via googletest. To test using CTest use the following command in build/linux:</para>
 <para><computeroutput>make test</computeroutput> or <computeroutput>ctest</computeroutput></para>
@@ -17003,20 +16623,20 @@ LanguageOption1 <bold>Description</bold></para>
 <para>To test using the google test runner, the test binaries can be executed directly using the following commands:</para>
 <para><computeroutput>./src/icrar/leap-accelerate/tests/LeapAccelerate.Tests</computeroutput> <computeroutput>./src/icrar/leap-accelerate-cli/tests/LeapAccelerateCLI.Tests</computeroutput></para>
 </sect1>
-<sect1 id="md_README_1autotoc_md33">
+<sect1 id="md_README_1autotoc_md16">
 <title>Doxygen</title>
 <para>Doxygen is generated with the following target:</para>
 <para><computeroutput>make doxygen</computeroutput></para>
 <para>Generated doxygen is available at the following file location:</para>
 <para><computeroutput>src/out/html/index.html</computeroutput></para>
 </sect1>
-<sect1 id="md_README_1autotoc_md34">
+<sect1 id="md_README_1autotoc_md17">
 <title>Run CLI</title>
 <para><computeroutput>./src/icrar/leap-accelerate-cli/LeapAccelerateCLI</computeroutput></para>
 <para>or</para>
 <para><computeroutput>./bin/LeapAccelerateCLI</computeroutput></para>
 </sect1>
-<sect1 id="md_README_1autotoc_md35">
+<sect1 id="md_README_1autotoc_md18">
 <title>Profiling</title>
 <para><itemizedlist>
 <listitem><para>nvprof</para>
@@ -17034,7 +16654,7 @@ LanguageOption1 <bold>Description</bold></para>
     <detaileddescription>
 <para>This module within leap-accelerate provides cuda acceleration for common math and algorithmic operations.</para>
 <para>Cuda files here are compiled by nvcc for linking with leap-accelerate.</para>
-<sect1 id="md_src_icrar_leap-accelerate_math_cuda_ReadMe_1autotoc_md37">
+<sect1 id="md_src_icrar_leap-accelerate_math_cuda_ReadMe_1autotoc_md20">
 <title>File types</title>
 <para><itemizedlist>
 <listitem><para>*.cu - Cuda C++ source file targetted by nvcc.</para>
