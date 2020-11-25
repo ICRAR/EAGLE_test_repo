@@ -1,0 +1,961 @@
+{
+    "linkDataArray": [], 
+    "nodeDataArray": [
+        {
+            "outputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "2bf83638-315b-496a-9af3-dbd59b746b71"
+                }
+            ], 
+            "color": "#229954", 
+            "text": "Start", 
+            "isGroup": false, 
+            "height": 200, 
+            "streaming": false, 
+            "subject": null, 
+            "category": "Start", 
+            "outputAppFields": [], 
+            "selected": false, 
+            "canHaveInputs": false, 
+            "showPorts": false, 
+            "width": 200, 
+            "inputAppFields": [], 
+            "exitApplicationType": "None", 
+            "inputApplicationType": "None", 
+            "inputApplicationName": "", 
+            "drawOrderHint": 0, 
+            "outputApplicationType": "None", 
+            "description": "The starting point for workflow execution", 
+            "outputLocalPorts": [], 
+            "collapsed": false, 
+            "canHaveOutputs": true, 
+            "outputApplicationName": "", 
+            "inputLocalPorts": [], 
+            "key": -1, 
+            "isData": false, 
+            "fields": [], 
+            "expanded": false, 
+            "exitApplicationName": "", 
+            "inputPorts": [], 
+            "y": 100, 
+            "x": 300, 
+            "categoryType": "Control"
+        }, 
+        {
+            "outputPorts": [], 
+            "color": "#CB4335", 
+            "text": "End", 
+            "isGroup": false, 
+            "height": 200, 
+            "streaming": false, 
+            "subject": null, 
+            "category": "End", 
+            "outputAppFields": [], 
+            "selected": false, 
+            "canHaveInputs": true, 
+            "showPorts": false, 
+            "width": 200, 
+            "inputAppFields": [], 
+            "exitApplicationType": "None", 
+            "inputApplicationType": "None", 
+            "inputApplicationName": "", 
+            "drawOrderHint": 0, 
+            "outputApplicationType": "None", 
+            "description": "The end of workflow execution", 
+            "outputLocalPorts": [], 
+            "collapsed": false, 
+            "canHaveOutputs": false, 
+            "outputApplicationName": "", 
+            "inputLocalPorts": [], 
+            "key": -2, 
+            "isData": false, 
+            "fields": [], 
+            "expanded": false, 
+            "exitApplicationName": "", 
+            "inputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "c8f739f6-4fe5-4563-a6f2-1f7168092768"
+                }
+            ], 
+            "y": 100, 
+            "x": 300, 
+            "categoryType": "Control"
+        }, 
+        {
+            "outputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "8aafca22-69eb-4f33-9a69-7085cc832884"
+                }
+            ], 
+            "color": "#1C2833", 
+            "text": "Bash Shell App", 
+            "isGroup": false, 
+            "height": 200, 
+            "streaming": false, 
+            "subject": null, 
+            "category": "BashShellApp", 
+            "outputAppFields": [], 
+            "selected": false, 
+            "canHaveInputs": true, 
+            "showPorts": false, 
+            "width": 200, 
+            "inputAppFields": [], 
+            "exitApplicationType": "None", 
+            "inputApplicationType": "None", 
+            "inputApplicationName": "", 
+            "drawOrderHint": 0, 
+            "outputApplicationType": "None", 
+            "description": "An application component run within the Bash Shell", 
+            "outputLocalPorts": [], 
+            "collapsed": false, 
+            "canHaveOutputs": true, 
+            "outputApplicationName": "", 
+            "inputLocalPorts": [], 
+            "key": -3, 
+            "isData": false, 
+            "fields": [
+                {
+                    "text": "Execution time", 
+                    "name": "execution_time", 
+                    "value": "5", 
+                    "description": ""
+                }, 
+                {
+                    "text": "Num CPUs", 
+                    "name": "num_cpus", 
+                    "value": "1", 
+                    "description": ""
+                }, 
+                {
+                    "text": "Group start", 
+                    "name": "group_start", 
+                    "value": "0", 
+                    "description": ""
+                }, 
+                {
+                    "text": "Arg01", 
+                    "name": "Arg01", 
+                    "value": "", 
+                    "description": "The command line to be executed"
+                }
+            ], 
+            "expanded": false, 
+            "exitApplicationName": "", 
+            "inputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "7916e0d6-503d-4b67-9f84-7a5a155e667e"
+                }
+            ], 
+            "y": 100, 
+            "x": 300, 
+            "categoryType": "Application"
+        }, 
+        {
+            "outputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "e198010e-bdf5-46bf-9da8-bc41d420b889"
+                }
+            ], 
+            "color": "#3470AA", 
+            "text": "Dynlib App", 
+            "isGroup": false, 
+            "height": 200, 
+            "streaming": false, 
+            "subject": null, 
+            "category": "DynlibApp", 
+            "outputAppFields": [], 
+            "selected": false, 
+            "canHaveInputs": true, 
+            "showPorts": false, 
+            "width": 200, 
+            "inputAppFields": [], 
+            "exitApplicationType": "None", 
+            "inputApplicationType": "None", 
+            "inputApplicationName": "", 
+            "drawOrderHint": 0, 
+            "outputApplicationType": "None", 
+            "description": "An application component run from a dynamic library", 
+            "outputLocalPorts": [], 
+            "collapsed": false, 
+            "canHaveOutputs": true, 
+            "outputApplicationName": "", 
+            "inputLocalPorts": [], 
+            "key": -4, 
+            "isData": false, 
+            "fields": [
+                {
+                    "text": "Execution time", 
+                    "name": "execution_time", 
+                    "value": "5", 
+                    "description": ""
+                }, 
+                {
+                    "text": "Num CPUs", 
+                    "name": "num_cpus", 
+                    "value": "1", 
+                    "description": ""
+                }, 
+                {
+                    "text": "Group start", 
+                    "name": "group_start", 
+                    "value": "0", 
+                    "description": ""
+                }, 
+                {
+                    "text": "Library path", 
+                    "name": "libpath", 
+                    "value": "", 
+                    "description": ""
+                }
+            ], 
+            "expanded": false, 
+            "exitApplicationName": "", 
+            "inputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "de3c4718-6fcf-47c3-981d-9214069ff3c7"
+                }
+            ], 
+            "y": 100, 
+            "x": 300, 
+            "categoryType": "Application"
+        }, 
+        {
+            "outputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "b298114d-d7c3-4e92-9f92-9ba516e047b8"
+                }
+            ], 
+            "color": "#1E90FF", 
+            "text": "MPI", 
+            "isGroup": false, 
+            "height": 200, 
+            "streaming": false, 
+            "subject": null, 
+            "category": "Mpi", 
+            "outputAppFields": [], 
+            "selected": false, 
+            "canHaveInputs": true, 
+            "showPorts": false, 
+            "width": 200, 
+            "inputAppFields": [], 
+            "exitApplicationType": "None", 
+            "inputApplicationType": "None", 
+            "inputApplicationName": "", 
+            "drawOrderHint": 0, 
+            "outputApplicationType": "None", 
+            "description": "An application component using the Message Passing Interface (MPI)", 
+            "outputLocalPorts": [], 
+            "collapsed": false, 
+            "canHaveOutputs": true, 
+            "outputApplicationName": "", 
+            "inputLocalPorts": [], 
+            "key": -5, 
+            "isData": true, 
+            "fields": [
+                {
+                    "text": "Group end", 
+                    "name": "group_end", 
+                    "value": "0", 
+                    "description": ""
+                }, 
+                {
+                    "text": "Execution time", 
+                    "name": "execution_time", 
+                    "value": "5", 
+                    "description": ""
+                }, 
+                {
+                    "text": "Num CPUs", 
+                    "name": "num_cpus", 
+                    "value": "1", 
+                    "description": ""
+                }, 
+                {
+                    "text": "Num procs", 
+                    "name": "num_of_procs", 
+                    "value": "4", 
+                    "description": ""
+                }
+            ], 
+            "expanded": false, 
+            "exitApplicationName": "", 
+            "inputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "17fb8269-1412-41ab-aec4-a5f879586e51"
+                }
+            ], 
+            "y": 100, 
+            "x": 300, 
+            "categoryType": "Application"
+        }, 
+        {
+            "outputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "b0582975-e910-45ec-9e24-05f1ce8835b7"
+                }
+            ], 
+            "color": "#331C54", 
+            "text": "Docker", 
+            "isGroup": false, 
+            "height": 200, 
+            "streaming": false, 
+            "subject": null, 
+            "category": "Docker", 
+            "outputAppFields": [], 
+            "selected": false, 
+            "canHaveInputs": true, 
+            "showPorts": false, 
+            "width": 200, 
+            "inputAppFields": [], 
+            "exitApplicationType": "None", 
+            "inputApplicationType": "None", 
+            "inputApplicationName": "", 
+            "drawOrderHint": 0, 
+            "outputApplicationType": "None", 
+            "description": "An application component run from a Docker image", 
+            "outputLocalPorts": [], 
+            "collapsed": false, 
+            "canHaveOutputs": true, 
+            "outputApplicationName": "", 
+            "inputLocalPorts": [], 
+            "key": -6, 
+            "isData": true, 
+            "fields": [
+                {
+                    "text": "Execution time", 
+                    "name": "execution_time", 
+                    "value": "5", 
+                    "description": ""
+                }, 
+                {
+                    "text": "Num CPUs", 
+                    "name": "num_cpus", 
+                    "value": "1", 
+                    "description": ""
+                }, 
+                {
+                    "text": "Group start", 
+                    "name": "group_start", 
+                    "value": "0", 
+                    "description": ""
+                }, 
+                {
+                    "text": "Image", 
+                    "name": "image", 
+                    "value": "", 
+                    "description": ""
+                }, 
+                {
+                    "text": "Command", 
+                    "name": "command", 
+                    "value": "", 
+                    "description": ""
+                }, 
+                {
+                    "text": "User", 
+                    "name": "user", 
+                    "value": "", 
+                    "description": ""
+                }, 
+                {
+                    "text": "Ensure User And Switch", 
+                    "name": "ensureUserAndSwitch", 
+                    "value": "0", 
+                    "description": ""
+                }, 
+                {
+                    "text": "Remove Container", 
+                    "name": "removeContainer", 
+                    "value": "1", 
+                    "description": ""
+                }, 
+                {
+                    "text": "Additional Bindings", 
+                    "name": "additionalBindings", 
+                    "value": "", 
+                    "description": ""
+                }
+            ], 
+            "expanded": false, 
+            "exitApplicationName": "", 
+            "inputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "e40006f6-dcf4-4aa6-8406-251f49b0d7d6"
+                }
+            ], 
+            "y": 100, 
+            "x": 300, 
+            "categoryType": "Application"
+        }, 
+        {
+            "outputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "adea7e10-d69a-4aea-8104-ed19649237ac"
+                }
+            ], 
+            "color": "#3498DB", 
+            "text": "Python App", 
+            "isGroup": false, 
+            "height": 200, 
+            "streaming": false, 
+            "subject": null, 
+            "category": "Component", 
+            "outputAppFields": [], 
+            "selected": false, 
+            "canHaveInputs": true, 
+            "showPorts": false, 
+            "width": 200, 
+            "inputAppFields": [], 
+            "exitApplicationType": "None", 
+            "inputApplicationType": "None", 
+            "inputApplicationName": "", 
+            "drawOrderHint": 0, 
+            "outputApplicationType": "None", 
+            "description": "An application component in the form of a Python app", 
+            "outputLocalPorts": [], 
+            "collapsed": false, 
+            "canHaveOutputs": true, 
+            "outputApplicationName": "", 
+            "inputLocalPorts": [], 
+            "key": -7, 
+            "isData": false, 
+            "fields": [
+                {
+                    "text": "Execution time", 
+                    "name": "execution_time", 
+                    "value": "5", 
+                    "description": ""
+                }, 
+                {
+                    "text": "Num CPUs", 
+                    "name": "num_cpus", 
+                    "value": "1", 
+                    "description": ""
+                }, 
+                {
+                    "text": "Group start", 
+                    "name": "group_start", 
+                    "value": "0", 
+                    "description": ""
+                }, 
+                {
+                    "text": "Appclass", 
+                    "name": "appclass", 
+                    "value": "test.graphsRepository", 
+                    "description": ""
+                }
+            ], 
+            "expanded": false, 
+            "exitApplicationName": "", 
+            "inputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "c1f57d2d-fc72-4719-ad86-d872b5e4a733"
+                }
+            ], 
+            "y": 100, 
+            "x": 300, 
+            "categoryType": "Application"
+        }, 
+        {
+            "outputPorts": [], 
+            "color": "#7F8C8D", 
+            "text": "Group By", 
+            "isGroup": true, 
+            "height": 200, 
+            "streaming": false, 
+            "subject": null, 
+            "category": "GroupBy", 
+            "outputAppFields": [], 
+            "selected": false, 
+            "canHaveInputs": false, 
+            "showPorts": false, 
+            "width": 200, 
+            "inputAppFields": [], 
+            "exitApplicationType": "None", 
+            "inputApplicationType": "None", 
+            "inputApplicationName": "", 
+            "drawOrderHint": 0, 
+            "outputApplicationType": "None", 
+            "description": "Placeholder 'group by' description", 
+            "outputLocalPorts": [], 
+            "collapsed": false, 
+            "canHaveOutputs": false, 
+            "outputApplicationName": "", 
+            "inputLocalPorts": [], 
+            "key": -8, 
+            "isData": false, 
+            "fields": [
+                {
+                    "text": "Group key", 
+                    "name": "group_key", 
+                    "value": "None", 
+                    "description": ""
+                }, 
+                {
+                    "text": "Group axis", 
+                    "name": "group_axis", 
+                    "value": "frequency", 
+                    "description": ""
+                }
+            ], 
+            "expanded": false, 
+            "exitApplicationName": "", 
+            "inputPorts": [], 
+            "y": 100, 
+            "x": 300, 
+            "categoryType": "Group"
+        }, 
+        {
+            "outputPorts": [], 
+            "color": "#D35400", 
+            "text": "Gather", 
+            "isGroup": true, 
+            "height": 200, 
+            "streaming": false, 
+            "subject": null, 
+            "category": "Gather", 
+            "outputAppFields": [], 
+            "selected": false, 
+            "canHaveInputs": false, 
+            "showPorts": false, 
+            "width": 200, 
+            "inputAppFields": [], 
+            "exitApplicationType": "None", 
+            "inputApplicationType": "None", 
+            "inputApplicationName": "", 
+            "drawOrderHint": 0, 
+            "outputApplicationType": "None", 
+            "description": "Placeholder 'gather' description", 
+            "outputLocalPorts": [], 
+            "collapsed": false, 
+            "canHaveOutputs": false, 
+            "outputApplicationName": "", 
+            "inputLocalPorts": [], 
+            "key": -9, 
+            "isData": false, 
+            "fields": [
+                {
+                    "text": "Number of inputs", 
+                    "name": "num_of_inputs", 
+                    "value": "2", 
+                    "description": ""
+                }, 
+                {
+                    "text": "Gather axis", 
+                    "name": "gather_axis", 
+                    "value": "frequency", 
+                    "description": ""
+                }
+            ], 
+            "expanded": false, 
+            "exitApplicationName": "", 
+            "inputPorts": [], 
+            "y": 100, 
+            "x": 300, 
+            "categoryType": "Group"
+        }, 
+        {
+            "outputPorts": [], 
+            "color": "#DDAD00", 
+            "text": "Scatter", 
+            "isGroup": true, 
+            "height": 200, 
+            "streaming": false, 
+            "subject": null, 
+            "category": "Scatter", 
+            "outputAppFields": [], 
+            "selected": false, 
+            "canHaveInputs": false, 
+            "showPorts": false, 
+            "width": 200, 
+            "inputAppFields": [], 
+            "exitApplicationType": "None", 
+            "inputApplicationType": "None", 
+            "inputApplicationName": "", 
+            "drawOrderHint": 0, 
+            "outputApplicationType": "None", 
+            "description": "Placeholder 'scatter' description", 
+            "outputLocalPorts": [], 
+            "collapsed": false, 
+            "canHaveOutputs": false, 
+            "outputApplicationName": "", 
+            "inputLocalPorts": [], 
+            "key": -10, 
+            "isData": false, 
+            "fields": [
+                {
+                    "text": "Number of copies", 
+                    "name": "num_of_copies", 
+                    "value": "4", 
+                    "description": ""
+                }, 
+                {
+                    "text": "Scatter axis", 
+                    "name": "scatter_axis", 
+                    "value": "time", 
+                    "description": ""
+                }
+            ], 
+            "expanded": false, 
+            "exitApplicationName": "", 
+            "inputPorts": [], 
+            "y": 100, 
+            "x": 300, 
+            "categoryType": "Group"
+        }, 
+        {
+            "outputPorts": [], 
+            "color": "#D32000", 
+            "text": "MKN", 
+            "isGroup": true, 
+            "height": 200, 
+            "streaming": false, 
+            "subject": null, 
+            "category": "MKN", 
+            "outputAppFields": [], 
+            "selected": false, 
+            "canHaveInputs": false, 
+            "showPorts": false, 
+            "width": 200, 
+            "inputAppFields": [], 
+            "exitApplicationType": "None", 
+            "inputApplicationType": "None", 
+            "inputApplicationName": "", 
+            "drawOrderHint": 0, 
+            "outputApplicationType": "None", 
+            "description": "Placeholder 'mkn' description", 
+            "outputLocalPorts": [], 
+            "collapsed": false, 
+            "canHaveOutputs": false, 
+            "outputApplicationName": "", 
+            "inputLocalPorts": [], 
+            "key": -11, 
+            "isData": false, 
+            "fields": [
+                {
+                    "text": "M", 
+                    "name": "m", 
+                    "value": "1", 
+                    "description": ""
+                }, 
+                {
+                    "text": "K", 
+                    "name": "k", 
+                    "value": "1", 
+                    "description": ""
+                }, 
+                {
+                    "text": "N", 
+                    "name": "n", 
+                    "value": "1", 
+                    "description": ""
+                }
+            ], 
+            "expanded": false, 
+            "exitApplicationName": "", 
+            "inputPorts": [], 
+            "y": 100, 
+            "x": 300, 
+            "categoryType": "Group"
+        }, 
+        {
+            "outputPorts": [], 
+            "color": "#512E5F", 
+            "text": "Loop", 
+            "isGroup": true, 
+            "height": 200, 
+            "streaming": false, 
+            "subject": null, 
+            "category": "Loop", 
+            "outputAppFields": [], 
+            "selected": false, 
+            "canHaveInputs": false, 
+            "showPorts": false, 
+            "width": 200, 
+            "inputAppFields": [], 
+            "exitApplicationType": "None", 
+            "inputApplicationType": "None", 
+            "inputApplicationName": "", 
+            "drawOrderHint": 0, 
+            "outputApplicationType": "None", 
+            "description": "Placeholder 'loop' description", 
+            "outputLocalPorts": [], 
+            "collapsed": false, 
+            "canHaveOutputs": false, 
+            "outputApplicationName": "", 
+            "inputLocalPorts": [], 
+            "key": -12, 
+            "isData": false, 
+            "fields": [
+                {
+                    "text": "Number loops", 
+                    "name": "num_of_iter", 
+                    "value": "5", 
+                    "description": ""
+                }
+            ], 
+            "expanded": false, 
+            "exitApplicationName": "", 
+            "inputPorts": [], 
+            "y": 100, 
+            "x": 300, 
+            "categoryType": "Group"
+        }, 
+        {
+            "outputPorts": [], 
+            "color": "#EB1672", 
+            "text": "Service", 
+            "isGroup": false, 
+            "height": 200, 
+            "streaming": false, 
+            "subject": null, 
+            "category": "Service", 
+            "outputAppFields": [], 
+            "selected": false, 
+            "canHaveInputs": true, 
+            "showPorts": false, 
+            "width": 200, 
+            "inputAppFields": [], 
+            "exitApplicationType": "None", 
+            "inputApplicationType": "None", 
+            "inputApplicationName": "", 
+            "drawOrderHint": 0, 
+            "outputApplicationType": "None", 
+            "description": "An external service (e.g. a database)", 
+            "outputLocalPorts": [], 
+            "collapsed": false, 
+            "canHaveOutputs": false, 
+            "outputApplicationName": "", 
+            "inputLocalPorts": [], 
+            "key": -13, 
+            "isData": false, 
+            "fields": [], 
+            "expanded": false, 
+            "exitApplicationName": "", 
+            "inputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "fd39ba52-610d-4063-a94f-59250f09b86e"
+                }
+            ], 
+            "y": 100, 
+            "x": 300, 
+            "categoryType": "Other"
+        }, 
+        {
+            "outputPorts": [], 
+            "color": "#799938", 
+            "text": "Comment", 
+            "isGroup": false, 
+            "height": 200, 
+            "streaming": false, 
+            "subject": null, 
+            "category": "Comment", 
+            "outputAppFields": [], 
+            "selected": false, 
+            "canHaveInputs": false, 
+            "showPorts": false, 
+            "width": 200, 
+            "inputAppFields": [], 
+            "exitApplicationType": "None", 
+            "inputApplicationType": "None", 
+            "inputApplicationName": "", 
+            "drawOrderHint": 0, 
+            "outputApplicationType": "None", 
+            "description": "A node that places a comment in the graph. The comment can be used to communicate important information or intention", 
+            "outputLocalPorts": [], 
+            "collapsed": false, 
+            "canHaveOutputs": false, 
+            "outputApplicationName": "", 
+            "inputLocalPorts": [], 
+            "key": -14, 
+            "isData": false, 
+            "fields": [
+                {
+                    "text": "Comment", 
+                    "name": "comment", 
+                    "value": "", 
+                    "description": "The text value of the comment"
+                }
+            ], 
+            "expanded": false, 
+            "exitApplicationName": "", 
+            "inputPorts": [], 
+            "y": 100, 
+            "x": 300, 
+            "categoryType": "Other"
+        }, 
+        {
+            "outputPorts": [], 
+            "color": "#9B3065", 
+            "text": "Description", 
+            "isGroup": false, 
+            "height": 200, 
+            "streaming": false, 
+            "subject": null, 
+            "category": "Description", 
+            "outputAppFields": [], 
+            "selected": false, 
+            "canHaveInputs": false, 
+            "showPorts": false, 
+            "width": 200, 
+            "inputAppFields": [], 
+            "exitApplicationType": "None", 
+            "inputApplicationType": "None", 
+            "inputApplicationName": "", 
+            "drawOrderHint": 0, 
+            "outputApplicationType": "None", 
+            "description": "A node that places a description in the graph. The description should be used to communicate the purpose of the graph", 
+            "outputLocalPorts": [], 
+            "collapsed": false, 
+            "canHaveOutputs": false, 
+            "outputApplicationName": "", 
+            "inputLocalPorts": [], 
+            "key": -15, 
+            "isData": false, 
+            "fields": [
+                {
+                    "text": "Description", 
+                    "name": "description", 
+                    "value": "", 
+                    "description": "The text value of the description"
+                }
+            ], 
+            "expanded": false, 
+            "exitApplicationName": "", 
+            "inputPorts": [], 
+            "y": 100, 
+            "x": 300, 
+            "categoryType": "Other"
+        }, 
+        {
+            "outputPorts": [], 
+            "color": "#000000", 
+            "text": "Exclusive Force Node", 
+            "isGroup": true, 
+            "height": 200, 
+            "streaming": false, 
+            "subject": null, 
+            "category": "ExclusiveForceNode", 
+            "outputAppFields": [], 
+            "selected": false, 
+            "canHaveInputs": false, 
+            "showPorts": false, 
+            "width": 200, 
+            "inputAppFields": [], 
+            "exitApplicationType": "None", 
+            "inputApplicationType": "None", 
+            "inputApplicationName": "", 
+            "drawOrderHint": 0, 
+            "outputApplicationType": "None", 
+            "description": "A group that completely specifies the computation on a single node. All child components must be deployed to a single node, and no other components can be deployed to the same node.", 
+            "outputLocalPorts": [], 
+            "collapsed": false, 
+            "canHaveOutputs": false, 
+            "outputApplicationName": "", 
+            "inputLocalPorts": [], 
+            "key": -16, 
+            "isData": false, 
+            "fields": [], 
+            "expanded": false, 
+            "exitApplicationName": "", 
+            "inputPorts": [], 
+            "y": 100, 
+            "x": 300, 
+            "categoryType": "Control"
+        }, 
+        {
+            "outputPorts": [], 
+            "color": "#C10000", 
+            "text": "Variables", 
+            "isGroup": false, 
+            "height": 200, 
+            "streaming": false, 
+            "subject": null, 
+            "category": "Variables", 
+            "outputAppFields": [], 
+            "selected": false, 
+            "canHaveInputs": false, 
+            "showPorts": false, 
+            "width": 200, 
+            "inputAppFields": [], 
+            "exitApplicationType": "None", 
+            "inputApplicationType": "None", 
+            "inputApplicationName": "", 
+            "drawOrderHint": 0, 
+            "outputApplicationType": "None", 
+            "description": "A node that contains variables for use in the graph. Often used to specify global variables.", 
+            "outputLocalPorts": [], 
+            "collapsed": false, 
+            "canHaveOutputs": false, 
+            "outputApplicationName": "", 
+            "inputLocalPorts": [], 
+            "key": -17, 
+            "isData": false, 
+            "fields": [], 
+            "expanded": false, 
+            "exitApplicationName": "", 
+            "inputPorts": [], 
+            "y": 100, 
+            "x": 300, 
+            "categoryType": "Other"
+        }, 
+        {
+            "outputPorts": [], 
+            "color": "#00BDA1", 
+            "text": "Branch", 
+            "isGroup": false, 
+            "height": 200, 
+            "streaming": false, 
+            "subject": null, 
+            "category": "Branch", 
+            "outputAppFields": [], 
+            "selected": false, 
+            "canHaveInputs": false, 
+            "showPorts": false, 
+            "width": 200, 
+            "inputAppFields": [], 
+            "exitApplicationType": "None", 
+            "inputApplicationType": "None", 
+            "inputApplicationName": "", 
+            "drawOrderHint": 0, 
+            "outputApplicationType": "None", 
+            "description": "A conditional branch to control flow.", 
+            "outputLocalPorts": [], 
+            "collapsed": false, 
+            "canHaveOutputs": false, 
+            "outputApplicationName": "", 
+            "inputLocalPorts": [], 
+            "key": -18, 
+            "isData": false, 
+            "fields": [], 
+            "expanded": false, 
+            "exitApplicationName": "", 
+            "inputPorts": [], 
+            "y": 100, 
+            "x": 300, 
+            "categoryType": "Control"
+        }
+    ], 
+    "modelData": {
+        "repoBranch": "master", 
+        "filePath": "everything2.palette", 
+        "fileType": "palette", 
+        "repo": "ICRAR/EAGLE_test_repo", 
+        "sha": "", 
+        "git_url": "", 
+        "repoService": "GitHub"
+    }
+}
