@@ -5,7 +5,7 @@
         "repoBranch": "master",
         "repo": "ICRAR/EAGLE_test_repo",
         "filePath": "leap.palette",
-        "sha": "05be43c",
+        "sha": "df01feb",
         "git_url": ""
     },
     "nodeDataArray": [
@@ -34,13 +34,13 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "657a76dd-df11-4749-bfe7-5f39548fe338",
+                    "Id": "fd229bce-5b29-4869-993f-97b3458a9c90",
                     "IdText": "Config"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "de571115-920c-483e-be42-13e3ca4568b3",
+                    "Id": "97b39d26-3b47-4255-965e-62ead0aeae65",
                     "IdText": "Result"
                 }
             ],
@@ -52,32 +52,37 @@
                 {
                     "text": "measurementSetFilename (String)",
                     "name": "measurementSetFilename",
-                    "value": "-",
-                    "description": "The file from which the input measurement set should be loaded"
+                    "value": "",
+                    "description": "The file from which the input measurement set should be loaded",
+                    "access": false
                 },
                 {
                     "text": "appclass (String)",
                     "name": "appclass",
                     "value": "leap_nodes.CallLeap.CallLeap",
-                    "description": "The path to the class that implements this app"
+                    "description": "The path to the class that implements this app",
+                    "access": true
                 },
                 {
                     "text": "Execution time",
                     "name": "execution_time",
                     "value": 5,
-                    "description": ""
+                    "description": "",
+                    "access": false
                 },
                 {
                     "text": "Num CPUs",
                     "name": "num_cpus",
                     "value": 1,
-                    "description": ""
+                    "description": "",
+                    "access": false
                 },
                 {
                     "text": "Group start",
                     "name": "group_start",
                     "value": 0,
-                    "description": ""
+                    "description": "",
+                    "access": false
                 }
             ]
         },
@@ -106,13 +111,13 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "f2d8cce3-28d7-4805-9fac-d787cf64742f",
+                    "Id": "535265ab-0fd6-4293-b921-36b3c0f82bc3",
                     "IdText": "Result"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "e66852f5-5c12-4b25-8336-a830bc194c7c",
+                    "Id": "faa6660d-ee6b-47f5-9063-1019dc3b1349",
                     "IdText": "Result"
                 }
             ],
@@ -125,25 +130,29 @@
                     "text": "appclass (String)",
                     "name": "appclass",
                     "value": "leap_nodes.LeapGather.LeapGather",
-                    "description": "The path to the class that implements this app"
+                    "description": "The path to the class that implements this app",
+                    "access": true
                 },
                 {
                     "text": "Execution time",
                     "name": "execution_time",
                     "value": 5,
-                    "description": ""
+                    "description": "",
+                    "access": false
                 },
                 {
                     "text": "Num CPUs",
                     "name": "num_cpus",
                     "value": 1,
-                    "description": ""
+                    "description": "",
+                    "access": false
                 },
                 {
                     "text": "Group start",
                     "name": "group_start",
                     "value": 0,
-                    "description": ""
+                    "description": "",
+                    "access": false
                 }
             ]
         },
@@ -172,13 +181,13 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "41381d2e-0e8b-4ed1-983b-3a31e48e8ccc",
+                    "Id": "164382a6-23e0-43b8-bd39-4c0cf90a3408",
                     "IdText": "Directions"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "e108ca25-45c5-43df-9e55-b22ba2273278",
+                    "Id": "5f15bc78-6667-46ff-a4e6-e7003b28bd1c",
                     "IdText": "Config"
                 }
             ],
@@ -191,43 +200,50 @@
                     "text": "number_of_stations (Integer)",
                     "name": "number_of_stations",
                     "value": "1",
-                    "description": "The number of stations from the measurement set that should be processed"
+                    "description": "The number of stations from the measurement set that should be processed",
+                    "access": false
                 },
                 {
                     "text": "implementation (String)",
                     "name": "implementation",
                     "value": "cpu",
-                    "description": "The implementation of the LEAP algorithm to use (cpu, casa, cuda)"
+                    "description": "The implementation of the LEAP algorithm to use (cpu, casa, cuda)",
+                    "access": false
                 },
                 {
                     "text": "auto_correlation (string)",
                     "name": "auto_correlation",
                     "value": "false",
-                    "description": "Enable auto correlation in the LEAP algorithm"
+                    "description": "Enable auto correlation in the LEAP algorithm",
+                    "access": false
                 },
                 {
                     "text": "appclass (String)",
                     "name": "appclass",
                     "value": "leap_nodes.ProduceConfig.ProduceConfig",
-                    "description": "The path to the class that implements this app"
+                    "description": "The path to the class that implements this app",
+                    "access": true
                 },
                 {
                     "text": "Execution time",
                     "name": "execution_time",
                     "value": 5,
-                    "description": ""
+                    "description": "",
+                    "access": false
                 },
                 {
                     "text": "Num CPUs",
                     "name": "num_cpus",
                     "value": 1,
-                    "description": ""
+                    "description": "",
+                    "access": false
                 },
                 {
                     "text": "Group start",
                     "name": "group_start",
                     "value": 0,
-                    "description": ""
+                    "description": "",
+                    "access": false
                 }
             ]
         }
