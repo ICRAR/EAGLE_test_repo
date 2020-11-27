@@ -34,13 +34,13 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "afeeef3e-d2af-416d-ba13-06d267568043",
+                    "Id": "482f5b5b-33e3-4f4c-8ee9-2f0d454fb749",
                     "IdText": "Config"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "94bbc98e-e5de-464e-82ee-025ae3e3d3c3",
+                    "Id": "5c4e5f0c-ce64-40fd-828b-61e463856064",
                     "IdText": "Result"
                 }
             ],
@@ -54,35 +54,40 @@
                     "name": "measurementSetFilename",
                     "value": "",
                     "description": "The file from which the input measurement set should be loaded",
-                    "readonly": false
+                    "readonly": false,
+                    "type": "String"
                 },
                 {
                     "text": "appclass (String)",
                     "name": "appclass",
                     "value": "leap_nodes.CallLeap.CallLeap",
                     "description": "The path to the class that implements this app",
-                    "readonly": true
+                    "readonly": true,
+                    "type": "String"
                 },
                 {
                     "text": "Execution time",
                     "name": "execution_time",
                     "value": 5,
                     "description": "",
-                    "readonly": false
+                    "readonly": false,
+                    "type": "Float"
                 },
                 {
                     "text": "Num CPUs",
                     "name": "num_cpus",
                     "value": 1,
                     "description": "",
-                    "readonly": false
+                    "readonly": false,
+                    "type": "Integer"
                 },
                 {
                     "text": "Group start",
                     "name": "group_start",
                     "value": 0,
                     "description": "",
-                    "readonly": false
+                    "readonly": false,
+                    "type": "Boolean"
                 }
             ]
         },
@@ -111,13 +116,13 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "bd0994c8-4fcf-4481-993a-ba03a8c20da5",
+                    "Id": "43273742-e353-4022-ac2f-e1250a963384",
                     "IdText": "Result"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "771719b4-4dba-4889-9dbb-0446922f8312",
+                    "Id": "3085da45-2198-4028-9024-9f26d51e33fb",
                     "IdText": "Result"
                 }
             ],
@@ -131,28 +136,32 @@
                     "name": "appclass",
                     "value": "leap_nodes.LeapGather.LeapGather",
                     "description": "The path to the class that implements this app",
-                    "readonly": true
+                    "readonly": true,
+                    "type": "String"
                 },
                 {
                     "text": "Execution time",
                     "name": "execution_time",
                     "value": 5,
                     "description": "",
-                    "readonly": false
+                    "readonly": false,
+                    "type": "Float"
                 },
                 {
                     "text": "Num CPUs",
                     "name": "num_cpus",
                     "value": 1,
                     "description": "",
-                    "readonly": false
+                    "readonly": false,
+                    "type": "Integer"
                 },
                 {
                     "text": "Group start",
                     "name": "group_start",
                     "value": 0,
                     "description": "",
-                    "readonly": false
+                    "readonly": false,
+                    "type": "Boolean"
                 }
             ]
         },
@@ -181,13 +190,13 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "d0feaae4-9c6f-4752-ac9a-b26ba0e556c3",
+                    "Id": "0f9fd462-b736-419d-a723-4b337efe6ec4",
                     "IdText": "Directions"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "5c698e47-001f-4eb3-9546-692eb81deb95",
+                    "Id": "a95eb697-4ab9-41e1-987d-c654da0e85f4",
                     "IdText": "Config"
                 }
             ],
@@ -201,49 +210,56 @@
                     "name": "number_of_stations",
                     "value": "1",
                     "description": "The number of stations from the measurement set that should be processed",
-                    "readonly": false
+                    "readonly": false,
+                    "type": "Integer"
                 },
                 {
                     "text": "implementation (String)",
                     "name": "implementation",
                     "value": "cpu",
                     "description": "The implementation of the LEAP algorithm to use (cpu, cuda)",
-                    "readonly": false
+                    "readonly": false,
+                    "type": "String"
                 },
                 {
                     "text": "auto_correlation (string)",
                     "name": "auto_correlation",
                     "value": "false",
                     "description": "Enable auto correlation in the LEAP algorithm",
-                    "readonly": false
+                    "readonly": false,
+                    "type": "string"
                 },
                 {
                     "text": "appclass (String)",
                     "name": "appclass",
                     "value": "leap_nodes.ProduceConfig.ProduceConfig",
                     "description": "The path to the class that implements this app",
-                    "readonly": true
+                    "readonly": true,
+                    "type": "String"
                 },
                 {
                     "text": "Execution time",
                     "name": "execution_time",
                     "value": 5,
                     "description": "",
-                    "readonly": false
+                    "readonly": false,
+                    "type": "Float"
                 },
                 {
                     "text": "Num CPUs",
                     "name": "num_cpus",
                     "value": 1,
                     "description": "",
-                    "readonly": false
+                    "readonly": false,
+                    "type": "Integer"
                 },
                 {
                     "text": "Group start",
                     "name": "group_start",
                     "value": 0,
                     "description": "",
-                    "readonly": false
+                    "readonly": false,
+                    "type": "Boolean"
                 }
             ]
         }
