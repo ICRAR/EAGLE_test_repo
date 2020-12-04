@@ -1,0 +1,221 @@
+{
+    "linkDataArray": [
+        {
+            "toPort": "86678900-79c8-44b4-9b88-a9315d2ade39", 
+            "fromPort": "17bd3fa8-801a-43eb-8178-6c1a08460752", 
+            "loop_aware": "0", 
+            "from": -2, 
+            "to": -4
+        }, 
+        {
+            "toPort": "69df6612-e7a3-40e3-8c75-b52ed9f68b18", 
+            "fromPort": "d802ab26-1fde-4e7d-8320-36d590e50af4", 
+            "loop_aware": "0", 
+            "from": -4, 
+            "to": -3
+        }
+    ], 
+    "nodeDataArray": [
+        {
+            "outputPorts": [], 
+            "color": "#512E5F", 
+            "text": "Loop", 
+            "isGroup": true, 
+            "height": 380, 
+            "streaming": false, 
+            "subject": null, 
+            "category": "Loop", 
+            "outputAppFields": [], 
+            "selected": false, 
+            "canHaveInputs": false, 
+            "showPorts": false, 
+            "width": 561, 
+            "inputAppFields": [], 
+            "exitApplicationType": "PythonApp", 
+            "inputApplicationType": "None", 
+            "inputApplicationName": "", 
+            "drawOrderHint": 0, 
+            "outputApplicationType": "None", 
+            "description": "Placeholder 'loop' description", 
+            "outputLocalPorts": [], 
+            "collapsed": false, 
+            "canHaveOutputs": false, 
+            "outputApplicationName": "", 
+            "inputLocalPorts": [], 
+            "key": -1, 
+            "isData": false, 
+            "fields": [
+                {
+                    "name": "num_of_iter", 
+                    "text": "Number loops", 
+                    "value": "5", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }
+            ], 
+            "expanded": true, 
+            "exitApplicationName": "Python App", 
+            "inputPorts": [], 
+            "y": 152, 
+            "x": 484, 
+            "categoryType": "Group"
+        }, 
+        {
+            "outputPorts": [
+                {
+                    "IdText": "Test", 
+                    "Id": "17bd3fa8-801a-43eb-8178-6c1a08460752"
+                }
+            ], 
+            "color": "#3498DB", 
+            "text": "Python App", 
+            "isGroup": false, 
+            "height": 200, 
+            "streaming": false, 
+            "subject": null, 
+            "category": "PythonApp", 
+            "group": -1, 
+            "selected": true, 
+            "canHaveInputs": true, 
+            "showPorts": true, 
+            "width": 200, 
+            "inputAppFields": [], 
+            "exitApplicationType": "None", 
+            "inputApplicationType": "None", 
+            "inputApplicationName": "", 
+            "drawOrderHint": 0, 
+            "outputApplicationType": "None", 
+            "description": "An application component in the form of a Python app", 
+            "outputLocalPorts": [], 
+            "collapsed": false, 
+            "canHaveOutputs": true, 
+            "outputApplicationName": "", 
+            "inputLocalPorts": [], 
+            "key": -2, 
+            "outputAppFields": [], 
+            "isData": false, 
+            "fields": [
+                {
+                    "name": "execution_time", 
+                    "text": "Execution time", 
+                    "value": "5", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "num_cpus", 
+                    "text": "Num CPUs", 
+                    "value": "1", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "group_start", 
+                    "text": "Group start", 
+                    "value": "0", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "appclass", 
+                    "text": "Appclass", 
+                    "value": "test.graphsRepository", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }
+            ], 
+            "expanded": false, 
+            "exitApplicationName": "", 
+            "inputPorts": [], 
+            "y": 310, 
+            "x": 523, 
+            "categoryType": "Application"
+        }, 
+        {
+            "outputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "ece22cd4-5e09-46ed-97e0-f36ce0963a97"
+                }, 
+                {
+                    "IdText": "Test", 
+                    "Id": "d802ab26-1fde-4e7d-8320-36d590e50af4"
+                }
+            ], 
+            "color": "#394BB2", 
+            "text": "Test", 
+            "isGroup": false, 
+            "height": 200, 
+            "streaming": false, 
+            "subject": null, 
+            "category": "Memory", 
+            "group": -1, 
+            "selected": false, 
+            "canHaveInputs": true, 
+            "showPorts": false, 
+            "width": 200, 
+            "inputAppFields": [], 
+            "exitApplicationType": "None", 
+            "inputApplicationType": "None", 
+            "inputApplicationName": "", 
+            "drawOrderHint": 0, 
+            "outputApplicationType": "None", 
+            "description": "", 
+            "outputLocalPorts": [], 
+            "collapsed": false, 
+            "canHaveOutputs": true, 
+            "outputApplicationName": "", 
+            "inputLocalPorts": [], 
+            "key": -4, 
+            "outputAppFields": [], 
+            "isData": true, 
+            "fields": [
+                {
+                    "name": "data_volume", 
+                    "text": "Data volume", 
+                    "value": "5", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "group_end", 
+                    "text": "Group end", 
+                    "value": "0", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }
+            ], 
+            "expanded": false, 
+            "exitApplicationName": "", 
+            "inputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "c6ba094a-51c3-40f1-af0e-451485e16fd2"
+                }, 
+                {
+                    "IdText": "Test", 
+                    "Id": "86678900-79c8-44b4-9b88-a9315d2ade39"
+                }
+            ], 
+            "y": 290.5, 
+            "x": 785, 
+            "categoryType": "Data"
+        }
+    ], 
+    "modelData": {
+        "repoBranch": "master", 
+        "filePath": "loop/loop_exit_app_ports.graph", 
+        "fileType": "graph", 
+        "repo": "ICRAR/EAGLE_test_repo", 
+        "sha": "", 
+        "git_url": "", 
+        "repoService": "GitHub"
+    }
+}
