@@ -13,6 +13,20 @@
             "loop_aware": "0", 
             "from": -8, 
             "to": -7
+        }, 
+        {
+            "toPort": "6bbdcdf1-e269-405b-b673-57c7f50398fc", 
+            "fromPort": "419675d9-7e74-4c4d-99a3-129bf89b63e4", 
+            "loop_aware": "0", 
+            "from": -7, 
+            "to": -9
+        }, 
+        {
+            "toPort": "c2c53bf8-cb68-4d84-9eb2-bd6c40902387", 
+            "fromPort": "63bec7ff-0288-4b30-b92f-deeb09221096", 
+            "loop_aware": "0", 
+            "from": -9, 
+            "to": -3
         }
     ], 
     "nodeDataArray": [
@@ -433,7 +447,7 @@
                 {
                     "IdText": "event", 
                     "Id": "3c01dea0-5bf4-45a5-8e1b-912d8ed83062", 
-                    "event": true
+                    "event": false
                 }, 
                 {
                     "IdText": "Test", 
@@ -491,7 +505,7 @@
                 {
                     "IdText": "event", 
                     "Id": "089ca8d7-4b71-4c60-8ea1-62297e6d72ee", 
-                    "event": true
+                    "event": false
                 }, 
                 {
                     "IdText": "Test", 
@@ -501,6 +515,83 @@
             ], 
             "y": 244, 
             "x": 852, 
+            "categoryType": "Data"
+        }, 
+        {
+            "exitAppFields": [], 
+            "outputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "6e88e5b6-0557-4d38-afaf-2ee56bd4d922", 
+                    "event": true
+                }, 
+                {
+                    "IdText": "Test", 
+                    "Id": "63bec7ff-0288-4b30-b92f-deeb09221096", 
+                    "event": false
+                }
+            ], 
+            "color": "#394BB2", 
+            "text": "Test", 
+            "isGroup": false, 
+            "height": 200, 
+            "streaming": false, 
+            "subject": null, 
+            "category": "Memory", 
+            "group": -1, 
+            "selected": false, 
+            "canHaveInputs": true, 
+            "showPorts": false, 
+            "width": 200, 
+            "inputAppFields": [], 
+            "exitApplicationType": "None", 
+            "inputApplicationType": "None", 
+            "inputApplicationName": "", 
+            "drawOrderHint": 0, 
+            "outputApplicationType": "None", 
+            "description": "", 
+            "outputLocalPorts": [], 
+            "collapsed": false, 
+            "canHaveOutputs": true, 
+            "outputApplicationName": "", 
+            "inputLocalPorts": [], 
+            "key": -9, 
+            "outputAppFields": [], 
+            "isData": true, 
+            "fields": [
+                {
+                    "name": "data_volume", 
+                    "text": "Data volume", 
+                    "value": "5", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "group_end", 
+                    "text": "Group end", 
+                    "value": "0", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }
+            ], 
+            "expanded": false, 
+            "exitApplicationName": "", 
+            "inputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "d3b8cda0-8207-49e5-bf6f-9062b5828c56", 
+                    "event": true
+                }, 
+                {
+                    "IdText": "Test", 
+                    "Id": "6bbdcdf1-e269-405b-b673-57c7f50398fc", 
+                    "event": false
+                }
+            ], 
+            "y": 250, 
+            "x": 1238, 
             "categoryType": "Data"
         }
     ], 
