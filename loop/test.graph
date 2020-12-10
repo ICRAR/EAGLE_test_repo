@@ -80,9 +80,9 @@
             "subject": null, 
             "category": "Loop", 
             "outputAppFields": [], 
-            "selected": true, 
+            "selected": false, 
             "canHaveInputs": false, 
-            "showPorts": true, 
+            "showPorts": false, 
             "width": 615, 
             "inputAppFields": [
                 {
@@ -345,7 +345,7 @@
                     "description": ""
                 }
             ], 
-            "expanded": false, 
+            "expanded": true, 
             "exitApplicationName": "", 
             "inputPorts": [
                 {
@@ -593,6 +593,89 @@
             "y": 250, 
             "x": 1238, 
             "categoryType": "Data"
+        }, 
+        {
+            "exitAppFields": [], 
+            "outputPorts": [
+                {
+                    "IdText": "Test", 
+                    "Id": "9fd4578a-2c73-4e43-9ecd-ef46b1ce79e2", 
+                    "event": false
+                }
+            ], 
+            "color": "#1C2833", 
+            "text": "Bash Shell App", 
+            "isGroup": false, 
+            "height": 200, 
+            "streaming": false, 
+            "subject": null, 
+            "category": "BashShellApp", 
+            "group": -4, 
+            "selected": true, 
+            "canHaveInputs": true, 
+            "showPorts": true, 
+            "width": 200, 
+            "inputAppFields": [], 
+            "exitApplicationType": "None", 
+            "inputApplicationType": "None", 
+            "inputApplicationName": "", 
+            "drawOrderHint": 0, 
+            "outputApplicationType": "None", 
+            "description": "An application component run within the Bash Shell", 
+            "outputLocalPorts": [], 
+            "collapsed": false, 
+            "canHaveOutputs": true, 
+            "outputApplicationName": "", 
+            "inputLocalPorts": [], 
+            "key": -10, 
+            "outputAppFields": [], 
+            "isData": false, 
+            "fields": [
+                {
+                    "name": "execution_time", 
+                    "text": "Execution time", 
+                    "value": "5", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "num_cpus", 
+                    "text": "Num CPUs", 
+                    "value": "1", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "group_start", 
+                    "text": "Group start", 
+                    "value": "0", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "Arg01", 
+                    "text": "Arg01", 
+                    "value": "", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": "The command line to be executed"
+                }
+            ], 
+            "expanded": false, 
+            "exitApplicationName": "", 
+            "inputPorts": [
+                {
+                    "IdText": "Test", 
+                    "Id": "fb0e59c6-40e3-4b2c-b3e7-d047e2cc19c8", 
+                    "event": false
+                }
+            ], 
+            "y": 795, 
+            "x": 871, 
+            "categoryType": "Application"
         }
     ], 
     "modelData": {
