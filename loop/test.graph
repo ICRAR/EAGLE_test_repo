@@ -27,6 +27,34 @@
             "loop_aware": "0", 
             "from": -9, 
             "to": -3
+        }, 
+        {
+            "toPort": "4b641da6-bf23-4579-ad15-4a82e98a02c1", 
+            "fromPort": "6fb7df7f-7d28-43f4-b4e3-31e8515ba757", 
+            "loop_aware": "0", 
+            "from": -5, 
+            "to": -11
+        }, 
+        {
+            "toPort": "fb0e59c6-40e3-4b2c-b3e7-d047e2cc19c8", 
+            "fromPort": "457a81bf-b45a-455b-a31a-82b611275985", 
+            "loop_aware": "0", 
+            "from": -11, 
+            "to": -10
+        }, 
+        {
+            "toPort": "f3bb771b-3c6b-4074-a2c6-b3a23e72af98", 
+            "fromPort": "9fd4578a-2c73-4e43-9ecd-ef46b1ce79e2", 
+            "loop_aware": "0", 
+            "from": -10, 
+            "to": -12
+        }, 
+        {
+            "toPort": "3bace299-3556-44e5-8aaa-284f369c3a6d", 
+            "fromPort": "786d1fe8-0d24-442f-a2bc-f8a967e55bde", 
+            "loop_aware": "0", 
+            "from": -12, 
+            "to": -6
         }
     ], 
     "nodeDataArray": [
@@ -256,9 +284,9 @@
                     "description": ""
                 }
             ], 
-            "selected": false, 
+            "selected": true, 
             "canHaveInputs": false, 
-            "showPorts": false, 
+            "showPorts": true, 
             "width": 746, 
             "inputAppFields": [
                 {
@@ -611,9 +639,9 @@
             "subject": null, 
             "category": "BashShellApp", 
             "group": -4, 
-            "selected": true, 
+            "selected": false, 
             "canHaveInputs": true, 
-            "showPorts": true, 
+            "showPorts": false, 
             "width": 200, 
             "inputAppFields": [], 
             "exitApplicationType": "None", 
@@ -676,6 +704,183 @@
             "y": 795, 
             "x": 871, 
             "categoryType": "Application"
+        }, 
+        {
+            "exitAppFields": [], 
+            "outputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "7e4928ed-0611-4792-a1a3-72060a64db2e", 
+                    "event": true
+                }, 
+                {
+                    "IdText": "Test", 
+                    "Id": "457a81bf-b45a-455b-a31a-82b611275985", 
+                    "event": false
+                }
+            ], 
+            "color": "#394BB2", 
+            "text": "Test", 
+            "isGroup": false, 
+            "height": 200, 
+            "streaming": false, 
+            "subject": null, 
+            "category": "File", 
+            "outputAppFields": [], 
+            "selected": false, 
+            "canHaveInputs": true, 
+            "showPorts": false, 
+            "width": 200, 
+            "inputAppFields": [], 
+            "exitApplicationType": "None", 
+            "inputApplicationType": "None", 
+            "inputApplicationName": "", 
+            "drawOrderHint": 0, 
+            "outputApplicationType": "None", 
+            "description": "", 
+            "outputLocalPorts": [], 
+            "collapsed": false, 
+            "canHaveOutputs": true, 
+            "outputApplicationName": "", 
+            "inputLocalPorts": [], 
+            "key": -11, 
+            "isData": true, 
+            "fields": [
+                {
+                    "name": "data_volume", 
+                    "text": "Data volume", 
+                    "value": "5", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "group_end", 
+                    "text": "Group end", 
+                    "value": "0", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "check_filepath_exists", 
+                    "text": "Check file path exists", 
+                    "value": "1", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "filepath", 
+                    "text": "File path", 
+                    "value": "", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "dirname", 
+                    "text": "Directory name", 
+                    "value": "", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }
+            ], 
+            "expanded": false, 
+            "exitApplicationName": "", 
+            "inputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "5b6e8dab-5005-4f25-84ba-7c15073bb75a", 
+                    "event": true
+                }, 
+                {
+                    "IdText": "Test", 
+                    "Id": "4b641da6-bf23-4579-ad15-4a82e98a02c1", 
+                    "event": false
+                }
+            ], 
+            "y": 715.5, 
+            "x": 661.5, 
+            "categoryType": "Data"
+        }, 
+        {
+            "exitAppFields": [], 
+            "outputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "6e88e5b6-0557-4d38-afaf-2ee56bd4d922", 
+                    "event": true
+                }, 
+                {
+                    "IdText": "Test", 
+                    "Id": "786d1fe8-0d24-442f-a2bc-f8a967e55bde", 
+                    "event": false
+                }
+            ], 
+            "color": "#394BB2", 
+            "text": "Test", 
+            "isGroup": false, 
+            "height": 200, 
+            "streaming": false, 
+            "subject": null, 
+            "category": "Memory", 
+            "group": -4, 
+            "selected": false, 
+            "canHaveInputs": true, 
+            "showPorts": false, 
+            "width": 200, 
+            "inputAppFields": [], 
+            "exitApplicationType": "None", 
+            "inputApplicationType": "None", 
+            "inputApplicationName": "", 
+            "drawOrderHint": 0, 
+            "outputApplicationType": "None", 
+            "description": "", 
+            "outputLocalPorts": [], 
+            "collapsed": false, 
+            "canHaveOutputs": true, 
+            "outputApplicationName": "", 
+            "inputLocalPorts": [], 
+            "key": -12, 
+            "outputAppFields": [], 
+            "isData": true, 
+            "fields": [
+                {
+                    "name": "data_volume", 
+                    "text": "Data volume", 
+                    "value": "5", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "group_end", 
+                    "text": "Group end", 
+                    "value": "0", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }
+            ], 
+            "expanded": false, 
+            "exitApplicationName": "", 
+            "inputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "d3b8cda0-8207-49e5-bf6f-9062b5828c56", 
+                    "event": true
+                }, 
+                {
+                    "IdText": "Test", 
+                    "Id": "f3bb771b-3c6b-4074-a2c6-b3a23e72af98", 
+                    "event": false
+                }
+            ], 
+            "y": 719.5, 
+            "x": 1114.5, 
+            "categoryType": "Data"
         }
     ], 
     "modelData": {
