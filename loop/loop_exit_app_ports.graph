@@ -17,11 +17,18 @@
     ], 
     "nodeDataArray": [
         {
-            "outputPorts": [], 
+            "exitAppFields": [], 
+            "outputPorts": [
+                {
+                    "IdText": "Output", 
+                    "Id": "4ecd070d-54a6-4e7c-b195-9f9ead88b153", 
+                    "event": false
+                }
+            ], 
             "color": "#512E5F", 
             "text": "Loop", 
             "isGroup": true, 
-            "height": 380, 
+            "height": 416, 
             "streaming": false, 
             "subject": null, 
             "category": "Loop", 
@@ -29,11 +36,44 @@
             "selected": true, 
             "canHaveInputs": false, 
             "showPorts": true, 
-            "width": 561, 
-            "inputAppFields": [], 
+            "width": 606, 
+            "inputAppFields": [
+                {
+                    "name": "execution_time", 
+                    "text": "Execution time", 
+                    "value": "5", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "num_cpus", 
+                    "text": "Num CPUs", 
+                    "value": "1", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "group_start", 
+                    "text": "Group start", 
+                    "value": "0", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "libpath", 
+                    "text": "Library path", 
+                    "value": "", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }
+            ], 
             "exitApplicationType": "PythonApp", 
-            "inputApplicationType": "None", 
-            "inputApplicationName": "", 
+            "inputApplicationType": "DynlibApp", 
+            "inputApplicationName": "Dynlib App", 
             "drawOrderHint": 0, 
             "outputApplicationType": "None", 
             "description": "Placeholder 'loop' description", 
@@ -47,7 +87,13 @@
             "collapsed": false, 
             "canHaveOutputs": false, 
             "outputApplicationName": "", 
-            "inputLocalPorts": [], 
+            "inputLocalPorts": [
+                {
+                    "IdText": "Test", 
+                    "Id": "eb5e8881-9b2d-482c-b1a3-6f8a02345973", 
+                    "event": false
+                }
+            ], 
             "key": -1, 
             "isData": false, 
             "fields": [
@@ -62,12 +108,19 @@
             ], 
             "expanded": true, 
             "exitApplicationName": "Python App", 
-            "inputPorts": [], 
-            "y": 152, 
-            "x": 484, 
+            "inputPorts": [
+                {
+                    "IdText": "Input", 
+                    "Id": "e5df2a10-b891-44c0-837c-387d90d442f2", 
+                    "event": false
+                }
+            ], 
+            "y": 161, 
+            "x": 508, 
             "categoryType": "Group"
         }, 
         {
+            "exitAppFields": [], 
             "outputPorts": [
                 {
                     "IdText": "Test", 
@@ -139,11 +192,12 @@
             "expanded": false, 
             "exitApplicationName": "", 
             "inputPorts": [], 
-            "y": 310, 
-            "x": 523, 
+            "y": 319, 
+            "x": 547, 
             "categoryType": "Application"
         }, 
         {
+            "exitAppFields": [], 
             "outputPorts": [
                 {
                     "IdText": "event", 
@@ -215,8 +269,8 @@
                     "event": false
                 }
             ], 
-            "y": 290.5, 
-            "x": 785, 
+            "y": 299.5, 
+            "x": 809, 
             "categoryType": "Data"
         }
     ], 
