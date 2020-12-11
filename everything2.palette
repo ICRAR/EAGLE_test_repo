@@ -2,10 +2,12 @@
     "linkDataArray": [], 
     "nodeDataArray": [
         {
+            "exitAppFields": [], 
             "outputPorts": [
                 {
                     "IdText": "event", 
-                    "Id": "2bf83638-315b-496a-9af3-dbd59b746b71"
+                    "Id": "bbd427d7-c50a-4ef6-a1d1-bbdb3fd3de41", 
+                    "event": true
                 }
             ], 
             "color": "#229954", 
@@ -13,11 +15,12 @@
             "isGroup": false, 
             "height": 200, 
             "streaming": false, 
+            "canHaveInputs": false, 
             "subject": null, 
             "category": "Start", 
             "outputAppFields": [], 
             "selected": false, 
-            "canHaveInputs": false, 
+            "flipPorts": false, 
             "showPorts": false, 
             "width": 200, 
             "inputAppFields": [], 
@@ -38,22 +41,24 @@
             "expanded": false, 
             "exitApplicationName": "", 
             "inputPorts": [], 
-            "y": 100, 
-            "x": 300, 
+            "y": 0, 
+            "x": 0, 
             "categoryType": "Control"
         }, 
         {
+            "exitAppFields": [], 
             "outputPorts": [], 
             "color": "#CB4335", 
             "text": "End", 
             "isGroup": false, 
             "height": 200, 
             "streaming": false, 
+            "canHaveInputs": true, 
             "subject": null, 
             "category": "End", 
             "outputAppFields": [], 
             "selected": false, 
-            "canHaveInputs": true, 
+            "flipPorts": false, 
             "showPorts": false, 
             "width": 200, 
             "inputAppFields": [], 
@@ -76,18 +81,21 @@
             "inputPorts": [
                 {
                     "IdText": "event", 
-                    "Id": "c8f739f6-4fe5-4563-a6f2-1f7168092768"
+                    "Id": "fbff1def-fc62-413e-a8da-96fa62f21e11", 
+                    "event": true
                 }
             ], 
-            "y": 100, 
-            "x": 300, 
+            "y": 0, 
+            "x": 0, 
             "categoryType": "Control"
         }, 
         {
+            "exitAppFields": [], 
             "outputPorts": [
                 {
                     "IdText": "event", 
-                    "Id": "8aafca22-69eb-4f33-9a69-7085cc832884"
+                    "Id": "0852641a-9c54-4d75-9169-698999ebf504", 
+                    "event": true
                 }
             ], 
             "color": "#1C2833", 
@@ -95,11 +103,12 @@
             "isGroup": false, 
             "height": 200, 
             "streaming": false, 
+            "canHaveInputs": true, 
             "subject": null, 
             "category": "BashShellApp", 
             "outputAppFields": [], 
             "selected": false, 
-            "canHaveInputs": true, 
+            "flipPorts": false, 
             "showPorts": false, 
             "width": 200, 
             "inputAppFields": [], 
@@ -118,27 +127,35 @@
             "isData": false, 
             "fields": [
                 {
-                    "text": "Execution time", 
                     "name": "execution_time", 
+                    "text": "Execution time", 
                     "value": "5", 
+                    "readonly": false, 
+                    "type": "Unknown", 
                     "description": ""
                 }, 
                 {
-                    "text": "Num CPUs", 
                     "name": "num_cpus", 
+                    "text": "Num CPUs", 
                     "value": "1", 
+                    "readonly": false, 
+                    "type": "Unknown", 
                     "description": ""
                 }, 
                 {
-                    "text": "Group start", 
                     "name": "group_start", 
+                    "text": "Group start", 
                     "value": "0", 
+                    "readonly": false, 
+                    "type": "Unknown", 
                     "description": ""
                 }, 
                 {
-                    "text": "Arg01", 
                     "name": "Arg01", 
+                    "text": "Arg01", 
                     "value": "", 
+                    "readonly": false, 
+                    "type": "Unknown", 
                     "description": "The command line to be executed"
                 }
             ], 
@@ -147,18 +164,21 @@
             "inputPorts": [
                 {
                     "IdText": "event", 
-                    "Id": "7916e0d6-503d-4b67-9f84-7a5a155e667e"
+                    "Id": "8f42d897-12ee-4d1e-8900-f1a706a6eccd", 
+                    "event": true
                 }
             ], 
-            "y": 100, 
-            "x": 300, 
+            "y": 0, 
+            "x": 0, 
             "categoryType": "Application"
         }, 
         {
+            "exitAppFields": [], 
             "outputPorts": [
                 {
                     "IdText": "event", 
-                    "Id": "e198010e-bdf5-46bf-9da8-bc41d420b889"
+                    "Id": "b7b3fc31-ce89-4b11-b739-2baae5e38178", 
+                    "event": true
                 }
             ], 
             "color": "#3470AA", 
@@ -166,11 +186,12 @@
             "isGroup": false, 
             "height": 200, 
             "streaming": false, 
+            "canHaveInputs": true, 
             "subject": null, 
             "category": "DynlibApp", 
             "outputAppFields": [], 
             "selected": false, 
-            "canHaveInputs": true, 
+            "flipPorts": false, 
             "showPorts": false, 
             "width": 200, 
             "inputAppFields": [], 
@@ -189,27 +210,35 @@
             "isData": false, 
             "fields": [
                 {
-                    "text": "Execution time", 
                     "name": "execution_time", 
+                    "text": "Execution time", 
                     "value": "5", 
+                    "readonly": false, 
+                    "type": "Unknown", 
                     "description": ""
                 }, 
                 {
-                    "text": "Num CPUs", 
                     "name": "num_cpus", 
+                    "text": "Num CPUs", 
                     "value": "1", 
+                    "readonly": false, 
+                    "type": "Unknown", 
                     "description": ""
                 }, 
                 {
-                    "text": "Group start", 
                     "name": "group_start", 
+                    "text": "Group start", 
                     "value": "0", 
+                    "readonly": false, 
+                    "type": "Unknown", 
                     "description": ""
                 }, 
                 {
-                    "text": "Library path", 
                     "name": "libpath", 
+                    "text": "Library path", 
                     "value": "", 
+                    "readonly": false, 
+                    "type": "Unknown", 
                     "description": ""
                 }
             ], 
@@ -218,18 +247,21 @@
             "inputPorts": [
                 {
                     "IdText": "event", 
-                    "Id": "de3c4718-6fcf-47c3-981d-9214069ff3c7"
+                    "Id": "76cc6afc-a293-4d2b-b813-e3b54941956e", 
+                    "event": true
                 }
             ], 
-            "y": 100, 
-            "x": 300, 
+            "y": 0, 
+            "x": 0, 
             "categoryType": "Application"
         }, 
         {
+            "exitAppFields": [], 
             "outputPorts": [
                 {
                     "IdText": "event", 
-                    "Id": "b298114d-d7c3-4e92-9f92-9ba516e047b8"
+                    "Id": "06a83a4c-b894-40c2-828e-16f754abb231", 
+                    "event": true
                 }
             ], 
             "color": "#1E90FF", 
@@ -237,11 +269,12 @@
             "isGroup": false, 
             "height": 200, 
             "streaming": false, 
+            "canHaveInputs": true, 
             "subject": null, 
             "category": "Mpi", 
             "outputAppFields": [], 
             "selected": false, 
-            "canHaveInputs": true, 
+            "flipPorts": false, 
             "showPorts": false, 
             "width": 200, 
             "inputAppFields": [], 
@@ -260,27 +293,35 @@
             "isData": true, 
             "fields": [
                 {
-                    "text": "Group end", 
                     "name": "group_end", 
+                    "text": "Group end", 
                     "value": "0", 
+                    "readonly": false, 
+                    "type": "Unknown", 
                     "description": ""
                 }, 
                 {
-                    "text": "Execution time", 
                     "name": "execution_time", 
+                    "text": "Execution time", 
                     "value": "5", 
+                    "readonly": false, 
+                    "type": "Unknown", 
                     "description": ""
                 }, 
                 {
-                    "text": "Num CPUs", 
                     "name": "num_cpus", 
+                    "text": "Num CPUs", 
                     "value": "1", 
+                    "readonly": false, 
+                    "type": "Unknown", 
                     "description": ""
                 }, 
                 {
-                    "text": "Num procs", 
                     "name": "num_of_procs", 
+                    "text": "Num procs", 
                     "value": "4", 
+                    "readonly": false, 
+                    "type": "Unknown", 
                     "description": ""
                 }
             ], 
@@ -289,18 +330,21 @@
             "inputPorts": [
                 {
                     "IdText": "event", 
-                    "Id": "17fb8269-1412-41ab-aec4-a5f879586e51"
+                    "Id": "1668d392-f5bd-493b-b931-949fc6596d0f", 
+                    "event": true
                 }
             ], 
-            "y": 100, 
-            "x": 300, 
+            "y": 0, 
+            "x": 0, 
             "categoryType": "Application"
         }, 
         {
+            "exitAppFields": [], 
             "outputPorts": [
                 {
                     "IdText": "event", 
-                    "Id": "b0582975-e910-45ec-9e24-05f1ce8835b7"
+                    "Id": "2d0f7384-9711-477f-831d-57c1c6a32182", 
+                    "event": true
                 }
             ], 
             "color": "#331C54", 
@@ -308,11 +352,12 @@
             "isGroup": false, 
             "height": 200, 
             "streaming": false, 
+            "canHaveInputs": true, 
             "subject": null, 
             "category": "Docker", 
             "outputAppFields": [], 
             "selected": false, 
-            "canHaveInputs": true, 
+            "flipPorts": false, 
             "showPorts": false, 
             "width": 200, 
             "inputAppFields": [], 
@@ -331,57 +376,75 @@
             "isData": true, 
             "fields": [
                 {
-                    "text": "Execution time", 
                     "name": "execution_time", 
+                    "text": "Execution time", 
                     "value": "5", 
+                    "readonly": false, 
+                    "type": "Unknown", 
                     "description": ""
                 }, 
                 {
-                    "text": "Num CPUs", 
                     "name": "num_cpus", 
+                    "text": "Num CPUs", 
                     "value": "1", 
+                    "readonly": false, 
+                    "type": "Unknown", 
                     "description": ""
                 }, 
                 {
-                    "text": "Group start", 
                     "name": "group_start", 
+                    "text": "Group start", 
                     "value": "0", 
+                    "readonly": false, 
+                    "type": "Unknown", 
                     "description": ""
                 }, 
                 {
-                    "text": "Image", 
                     "name": "image", 
+                    "text": "Image", 
                     "value": "", 
+                    "readonly": false, 
+                    "type": "Unknown", 
                     "description": ""
                 }, 
                 {
-                    "text": "Command", 
                     "name": "command", 
+                    "text": "Command", 
                     "value": "", 
+                    "readonly": false, 
+                    "type": "Unknown", 
                     "description": ""
                 }, 
                 {
-                    "text": "User", 
                     "name": "user", 
+                    "text": "User", 
                     "value": "", 
+                    "readonly": false, 
+                    "type": "Unknown", 
                     "description": ""
                 }, 
                 {
-                    "text": "Ensure User And Switch", 
                     "name": "ensureUserAndSwitch", 
+                    "text": "Ensure User And Switch", 
                     "value": "0", 
+                    "readonly": false, 
+                    "type": "Unknown", 
                     "description": ""
                 }, 
                 {
-                    "text": "Remove Container", 
                     "name": "removeContainer", 
+                    "text": "Remove Container", 
                     "value": "1", 
+                    "readonly": false, 
+                    "type": "Unknown", 
                     "description": ""
                 }, 
                 {
-                    "text": "Additional Bindings", 
                     "name": "additionalBindings", 
+                    "text": "Additional Bindings", 
                     "value": "", 
+                    "readonly": false, 
+                    "type": "Unknown", 
                     "description": ""
                 }
             ], 
@@ -390,18 +453,21 @@
             "inputPorts": [
                 {
                     "IdText": "event", 
-                    "Id": "e40006f6-dcf4-4aa6-8406-251f49b0d7d6"
+                    "Id": "43c33056-d4bb-40db-abb6-3ea335571f1f", 
+                    "event": true
                 }
             ], 
-            "y": 100, 
-            "x": 300, 
+            "y": 0, 
+            "x": 0, 
             "categoryType": "Application"
         }, 
         {
+            "exitAppFields": [], 
             "outputPorts": [
                 {
                     "IdText": "event", 
-                    "Id": "adea7e10-d69a-4aea-8104-ed19649237ac"
+                    "Id": "ce4834bb-974d-42d8-b9ca-510ec346b76f", 
+                    "event": true
                 }
             ], 
             "color": "#3498DB", 
@@ -409,11 +475,12 @@
             "isGroup": false, 
             "height": 200, 
             "streaming": false, 
+            "canHaveInputs": true, 
             "subject": null, 
-            "category": "Component", 
+            "category": "PythonApp", 
             "outputAppFields": [], 
             "selected": false, 
-            "canHaveInputs": true, 
+            "flipPorts": false, 
             "showPorts": false, 
             "width": 200, 
             "inputAppFields": [], 
@@ -432,27 +499,35 @@
             "isData": false, 
             "fields": [
                 {
-                    "text": "Execution time", 
                     "name": "execution_time", 
+                    "text": "Execution time", 
                     "value": "5", 
+                    "readonly": false, 
+                    "type": "Unknown", 
                     "description": ""
                 }, 
                 {
-                    "text": "Num CPUs", 
                     "name": "num_cpus", 
+                    "text": "Num CPUs", 
                     "value": "1", 
+                    "readonly": false, 
+                    "type": "Unknown", 
                     "description": ""
                 }, 
                 {
-                    "text": "Group start", 
                     "name": "group_start", 
+                    "text": "Group start", 
                     "value": "0", 
+                    "readonly": false, 
+                    "type": "Unknown", 
                     "description": ""
                 }, 
                 {
-                    "text": "Appclass", 
                     "name": "appclass", 
+                    "text": "Appclass", 
                     "value": "test.graphsRepository", 
+                    "readonly": false, 
+                    "type": "Unknown", 
                     "description": ""
                 }
             ], 
@@ -461,25 +536,360 @@
             "inputPorts": [
                 {
                     "IdText": "event", 
-                    "Id": "c1f57d2d-fc72-4719-ad86-d872b5e4a733"
+                    "Id": "794d737b-d642-40b9-b363-e6e11609fdb9", 
+                    "event": true
                 }
             ], 
-            "y": 100, 
-            "x": 300, 
+            "y": 0, 
+            "x": 0, 
             "categoryType": "Application"
         }, 
         {
+            "exitAppFields": [], 
+            "outputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "0e98c1be-708e-4b0f-93d0-bda281a62d64", 
+                    "event": true
+                }
+            ], 
+            "color": "#394BB2", 
+            "text": "Memory", 
+            "isGroup": false, 
+            "height": 200, 
+            "streaming": false, 
+            "canHaveInputs": true, 
+            "subject": null, 
+            "category": "Memory", 
+            "outputAppFields": [], 
+            "selected": false, 
+            "flipPorts": false, 
+            "showPorts": false, 
+            "width": 200, 
+            "inputAppFields": [], 
+            "exitApplicationType": "None", 
+            "inputApplicationType": "None", 
+            "inputApplicationName": "", 
+            "drawOrderHint": 0, 
+            "outputApplicationType": "None", 
+            "description": "", 
+            "outputLocalPorts": [], 
+            "collapsed": false, 
+            "canHaveOutputs": true, 
+            "outputApplicationName": "", 
+            "inputLocalPorts": [], 
+            "key": -8, 
+            "isData": true, 
+            "fields": [
+                {
+                    "name": "data_volume", 
+                    "text": "Data volume", 
+                    "value": "5", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "group_end", 
+                    "text": "Group end", 
+                    "value": "0", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }
+            ], 
+            "expanded": false, 
+            "exitApplicationName": "", 
+            "inputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "b36de8f9-3888-48ef-b503-946449508158", 
+                    "event": true
+                }
+            ], 
+            "y": 0, 
+            "x": 0, 
+            "categoryType": "Data"
+        }, 
+        {
+            "exitAppFields": [], 
+            "outputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "0e2ced10-a529-4038-8aad-479d86e44792", 
+                    "event": true
+                }
+            ], 
+            "color": "#394BB2", 
+            "text": "File", 
+            "isGroup": false, 
+            "height": 200, 
+            "streaming": false, 
+            "canHaveInputs": true, 
+            "subject": null, 
+            "category": "File", 
+            "outputAppFields": [], 
+            "selected": false, 
+            "flipPorts": false, 
+            "showPorts": false, 
+            "width": 200, 
+            "inputAppFields": [], 
+            "exitApplicationType": "None", 
+            "inputApplicationType": "None", 
+            "inputApplicationName": "", 
+            "drawOrderHint": 0, 
+            "outputApplicationType": "None", 
+            "description": "", 
+            "outputLocalPorts": [], 
+            "collapsed": false, 
+            "canHaveOutputs": true, 
+            "outputApplicationName": "", 
+            "inputLocalPorts": [], 
+            "key": -9, 
+            "isData": true, 
+            "fields": [
+                {
+                    "name": "data_volume", 
+                    "text": "Data volume", 
+                    "value": "5", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "group_end", 
+                    "text": "Group end", 
+                    "value": "0", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "check_filepath_exists", 
+                    "text": "Check file path exists", 
+                    "value": "1", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "filepath", 
+                    "text": "File path", 
+                    "value": "", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "dirname", 
+                    "text": "Directory name", 
+                    "value": "", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }
+            ], 
+            "expanded": false, 
+            "exitApplicationName": "", 
+            "inputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "bc7cf1c2-2122-43e6-852e-a9f15aac2dd3", 
+                    "event": true
+                }
+            ], 
+            "y": 0, 
+            "x": 0, 
+            "categoryType": "Data"
+        }, 
+        {
+            "exitAppFields": [], 
+            "outputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "38011338-5703-4c4d-88aa-351b7c69c3b2", 
+                    "event": true
+                }
+            ], 
+            "color": "#394BB2", 
+            "text": "S3", 
+            "isGroup": false, 
+            "height": 200, 
+            "streaming": false, 
+            "canHaveInputs": true, 
+            "subject": null, 
+            "category": "S3", 
+            "outputAppFields": [], 
+            "selected": false, 
+            "flipPorts": false, 
+            "showPorts": false, 
+            "width": 200, 
+            "inputAppFields": [], 
+            "exitApplicationType": "None", 
+            "inputApplicationType": "None", 
+            "inputApplicationName": "", 
+            "drawOrderHint": 0, 
+            "outputApplicationType": "None", 
+            "description": "", 
+            "outputLocalPorts": [], 
+            "collapsed": false, 
+            "canHaveOutputs": true, 
+            "outputApplicationName": "", 
+            "inputLocalPorts": [], 
+            "key": -10, 
+            "isData": true, 
+            "fields": [
+                {
+                    "name": "data_volume", 
+                    "text": "Data volume", 
+                    "value": "5", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "group_end", 
+                    "text": "Group end", 
+                    "value": "0", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "bucket", 
+                    "text": "Bucket", 
+                    "value": "", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": "The S3 Bucket"
+                }, 
+                {
+                    "name": "object_name", 
+                    "text": "Object Name", 
+                    "value": "", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": "The S3 Object"
+                }, 
+                {
+                    "name": "profile_name", 
+                    "text": "Profile Name", 
+                    "value": "", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": "The S3 Profile"
+                }
+            ], 
+            "expanded": false, 
+            "exitApplicationName": "", 
+            "inputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "1edb12f6-eb35-4fba-b51e-8f33699e3312", 
+                    "event": true
+                }
+            ], 
+            "y": 0, 
+            "x": 0, 
+            "categoryType": "Data"
+        }, 
+        {
+            "exitAppFields": [], 
+            "outputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "b1ac83e0-6ffe-47c8-81bb-742ff68a55aa", 
+                    "event": true
+                }
+            ], 
+            "color": "#394BB2", 
+            "text": "NGAS", 
+            "isGroup": false, 
+            "height": 200, 
+            "streaming": false, 
+            "canHaveInputs": true, 
+            "subject": null, 
+            "category": "NGAS", 
+            "outputAppFields": [], 
+            "selected": false, 
+            "flipPorts": false, 
+            "showPorts": false, 
+            "width": 200, 
+            "inputAppFields": [], 
+            "exitApplicationType": "None", 
+            "inputApplicationType": "None", 
+            "inputApplicationName": "", 
+            "drawOrderHint": 0, 
+            "outputApplicationType": "None", 
+            "description": "", 
+            "outputLocalPorts": [], 
+            "collapsed": false, 
+            "canHaveOutputs": true, 
+            "outputApplicationName": "", 
+            "inputLocalPorts": [], 
+            "key": -11, 
+            "isData": true, 
+            "fields": [
+                {
+                    "name": "data_volume", 
+                    "text": "Data volume", 
+                    "value": "5", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "group_end", 
+                    "text": "Group end", 
+                    "value": "0", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "ngasSrv", 
+                    "text": "NGAS Server", 
+                    "value": "localhost", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": "The URL of the NGAS Server"
+                }, 
+                {
+                    "name": "ngasPort", 
+                    "text": "NGAS Port", 
+                    "value": "7777", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": "The port of the NGAS Server"
+                }
+            ], 
+            "expanded": false, 
+            "exitApplicationName": "", 
+            "inputPorts": [
+                {
+                    "IdText": "event", 
+                    "Id": "19ac7365-6d59-4538-89d8-43c185188537", 
+                    "event": true
+                }
+            ], 
+            "y": 0, 
+            "x": 0, 
+            "categoryType": "Data"
+        }, 
+        {
+            "exitAppFields": [], 
             "outputPorts": [], 
             "color": "#7F8C8D", 
             "text": "Group By", 
             "isGroup": true, 
             "height": 200, 
             "streaming": false, 
+            "canHaveInputs": false, 
             "subject": null, 
             "category": "GroupBy", 
             "outputAppFields": [], 
             "selected": false, 
-            "canHaveInputs": false, 
+            "flipPorts": false, 
             "showPorts": false, 
             "width": 200, 
             "inputAppFields": [], 
@@ -494,41 +904,47 @@
             "canHaveOutputs": false, 
             "outputApplicationName": "", 
             "inputLocalPorts": [], 
-            "key": -8, 
+            "key": -12, 
             "isData": false, 
             "fields": [
                 {
-                    "text": "Group key", 
                     "name": "group_key", 
+                    "text": "Group key", 
                     "value": "None", 
+                    "readonly": false, 
+                    "type": "Unknown", 
                     "description": ""
                 }, 
                 {
-                    "text": "Group axis", 
                     "name": "group_axis", 
+                    "text": "Group axis", 
                     "value": "frequency", 
+                    "readonly": false, 
+                    "type": "Unknown", 
                     "description": ""
                 }
             ], 
             "expanded": false, 
             "exitApplicationName": "", 
             "inputPorts": [], 
-            "y": 100, 
-            "x": 300, 
+            "y": 0, 
+            "x": 0, 
             "categoryType": "Group"
         }, 
         {
+            "exitAppFields": [], 
             "outputPorts": [], 
             "color": "#D35400", 
             "text": "Gather", 
             "isGroup": true, 
             "height": 200, 
             "streaming": false, 
+            "canHaveInputs": false, 
             "subject": null, 
             "category": "Gather", 
             "outputAppFields": [], 
             "selected": false, 
-            "canHaveInputs": false, 
+            "flipPorts": false, 
             "showPorts": false, 
             "width": 200, 
             "inputAppFields": [], 
@@ -543,41 +959,47 @@
             "canHaveOutputs": false, 
             "outputApplicationName": "", 
             "inputLocalPorts": [], 
-            "key": -9, 
+            "key": -13, 
             "isData": false, 
             "fields": [
                 {
-                    "text": "Number of inputs", 
                     "name": "num_of_inputs", 
+                    "text": "Number of inputs", 
                     "value": "2", 
+                    "readonly": false, 
+                    "type": "Unknown", 
                     "description": ""
                 }, 
                 {
-                    "text": "Gather axis", 
                     "name": "gather_axis", 
+                    "text": "Gather axis", 
                     "value": "frequency", 
+                    "readonly": false, 
+                    "type": "Unknown", 
                     "description": ""
                 }
             ], 
             "expanded": false, 
             "exitApplicationName": "", 
             "inputPorts": [], 
-            "y": 100, 
-            "x": 300, 
+            "y": 0, 
+            "x": 0, 
             "categoryType": "Group"
         }, 
         {
+            "exitAppFields": [], 
             "outputPorts": [], 
             "color": "#DDAD00", 
             "text": "Scatter", 
             "isGroup": true, 
             "height": 200, 
             "streaming": false, 
+            "canHaveInputs": false, 
             "subject": null, 
             "category": "Scatter", 
             "outputAppFields": [], 
             "selected": false, 
-            "canHaveInputs": false, 
+            "flipPorts": false, 
             "showPorts": false, 
             "width": 200, 
             "inputAppFields": [], 
@@ -592,41 +1014,47 @@
             "canHaveOutputs": false, 
             "outputApplicationName": "", 
             "inputLocalPorts": [], 
-            "key": -10, 
+            "key": -14, 
             "isData": false, 
             "fields": [
                 {
-                    "text": "Number of copies", 
                     "name": "num_of_copies", 
+                    "text": "Number of copies", 
                     "value": "4", 
+                    "readonly": false, 
+                    "type": "Unknown", 
                     "description": ""
                 }, 
                 {
-                    "text": "Scatter axis", 
                     "name": "scatter_axis", 
+                    "text": "Scatter axis", 
                     "value": "time", 
+                    "readonly": false, 
+                    "type": "Unknown", 
                     "description": ""
                 }
             ], 
             "expanded": false, 
             "exitApplicationName": "", 
             "inputPorts": [], 
-            "y": 100, 
-            "x": 300, 
+            "y": 0, 
+            "x": 0, 
             "categoryType": "Group"
         }, 
         {
+            "exitAppFields": [], 
             "outputPorts": [], 
             "color": "#D32000", 
             "text": "MKN", 
             "isGroup": true, 
             "height": 200, 
             "streaming": false, 
+            "canHaveInputs": false, 
             "subject": null, 
             "category": "MKN", 
             "outputAppFields": [], 
             "selected": false, 
-            "canHaveInputs": false, 
+            "flipPorts": false, 
             "showPorts": false, 
             "width": 200, 
             "inputAppFields": [], 
@@ -641,47 +1069,55 @@
             "canHaveOutputs": false, 
             "outputApplicationName": "", 
             "inputLocalPorts": [], 
-            "key": -11, 
+            "key": -15, 
             "isData": false, 
             "fields": [
                 {
-                    "text": "M", 
                     "name": "m", 
+                    "text": "M", 
                     "value": "1", 
+                    "readonly": false, 
+                    "type": "Unknown", 
                     "description": ""
                 }, 
                 {
-                    "text": "K", 
                     "name": "k", 
+                    "text": "K", 
                     "value": "1", 
+                    "readonly": false, 
+                    "type": "Unknown", 
                     "description": ""
                 }, 
                 {
-                    "text": "N", 
                     "name": "n", 
+                    "text": "N", 
                     "value": "1", 
+                    "readonly": false, 
+                    "type": "Unknown", 
                     "description": ""
                 }
             ], 
             "expanded": false, 
             "exitApplicationName": "", 
             "inputPorts": [], 
-            "y": 100, 
-            "x": 300, 
+            "y": 0, 
+            "x": 0, 
             "categoryType": "Group"
         }, 
         {
+            "exitAppFields": [], 
             "outputPorts": [], 
             "color": "#512E5F", 
             "text": "Loop", 
             "isGroup": true, 
             "height": 200, 
             "streaming": false, 
+            "canHaveInputs": false, 
             "subject": null, 
             "category": "Loop", 
             "outputAppFields": [], 
             "selected": false, 
-            "canHaveInputs": false, 
+            "flipPorts": false, 
             "showPorts": false, 
             "width": 200, 
             "inputAppFields": [], 
@@ -696,35 +1132,39 @@
             "canHaveOutputs": false, 
             "outputApplicationName": "", 
             "inputLocalPorts": [], 
-            "key": -12, 
+            "key": -16, 
             "isData": false, 
             "fields": [
                 {
-                    "text": "Number loops", 
                     "name": "num_of_iter", 
+                    "text": "Number loops", 
                     "value": "5", 
+                    "readonly": false, 
+                    "type": "Unknown", 
                     "description": ""
                 }
             ], 
             "expanded": false, 
             "exitApplicationName": "", 
             "inputPorts": [], 
-            "y": 100, 
-            "x": 300, 
+            "y": 0, 
+            "x": 0, 
             "categoryType": "Group"
         }, 
         {
+            "exitAppFields": [], 
             "outputPorts": [], 
             "color": "#EB1672", 
             "text": "Service", 
             "isGroup": false, 
             "height": 200, 
             "streaming": false, 
+            "canHaveInputs": true, 
             "subject": null, 
             "category": "Service", 
             "outputAppFields": [], 
             "selected": false, 
-            "canHaveInputs": true, 
+            "flipPorts": false, 
             "showPorts": false, 
             "width": 200, 
             "inputAppFields": [], 
@@ -736,10 +1176,10 @@
             "description": "An external service (e.g. a database)", 
             "outputLocalPorts": [], 
             "collapsed": false, 
-            "canHaveOutputs": false, 
+            "canHaveOutputs": true, 
             "outputApplicationName": "", 
             "inputLocalPorts": [], 
-            "key": -13, 
+            "key": -17, 
             "isData": false, 
             "fields": [], 
             "expanded": false, 
@@ -747,25 +1187,28 @@
             "inputPorts": [
                 {
                     "IdText": "event", 
-                    "Id": "fd39ba52-610d-4063-a94f-59250f09b86e"
+                    "Id": "92293a91-9d3b-432f-89fa-0a75719dca05", 
+                    "event": true
                 }
             ], 
-            "y": 100, 
-            "x": 300, 
+            "y": 0, 
+            "x": 0, 
             "categoryType": "Other"
         }, 
         {
+            "exitAppFields": [], 
             "outputPorts": [], 
             "color": "#799938", 
             "text": "Comment", 
             "isGroup": false, 
             "height": 200, 
             "streaming": false, 
+            "canHaveInputs": false, 
             "subject": null, 
             "category": "Comment", 
             "outputAppFields": [], 
             "selected": false, 
-            "canHaveInputs": false, 
+            "flipPorts": false, 
             "showPorts": false, 
             "width": 200, 
             "inputAppFields": [], 
@@ -780,35 +1223,39 @@
             "canHaveOutputs": false, 
             "outputApplicationName": "", 
             "inputLocalPorts": [], 
-            "key": -14, 
+            "key": -18, 
             "isData": false, 
             "fields": [
                 {
-                    "text": "Comment", 
                     "name": "comment", 
+                    "text": "Comment", 
                     "value": "", 
+                    "readonly": false, 
+                    "type": "Unknown", 
                     "description": "The text value of the comment"
                 }
             ], 
             "expanded": false, 
             "exitApplicationName": "", 
             "inputPorts": [], 
-            "y": 100, 
-            "x": 300, 
+            "y": 0, 
+            "x": 0, 
             "categoryType": "Other"
         }, 
         {
+            "exitAppFields": [], 
             "outputPorts": [], 
             "color": "#9B3065", 
             "text": "Description", 
             "isGroup": false, 
             "height": 200, 
             "streaming": false, 
+            "canHaveInputs": false, 
             "subject": null, 
             "category": "Description", 
             "outputAppFields": [], 
             "selected": false, 
-            "canHaveInputs": false, 
+            "flipPorts": false, 
             "showPorts": false, 
             "width": 200, 
             "inputAppFields": [], 
@@ -823,35 +1270,39 @@
             "canHaveOutputs": false, 
             "outputApplicationName": "", 
             "inputLocalPorts": [], 
-            "key": -15, 
+            "key": -19, 
             "isData": false, 
             "fields": [
                 {
-                    "text": "Description", 
                     "name": "description", 
+                    "text": "Description", 
                     "value": "", 
+                    "readonly": false, 
+                    "type": "Unknown", 
                     "description": "The text value of the description"
                 }
             ], 
             "expanded": false, 
             "exitApplicationName": "", 
             "inputPorts": [], 
-            "y": 100, 
-            "x": 300, 
+            "y": 0, 
+            "x": 0, 
             "categoryType": "Other"
         }, 
         {
+            "exitAppFields": [], 
             "outputPorts": [], 
             "color": "#000000", 
             "text": "Exclusive Force Node", 
             "isGroup": true, 
             "height": 200, 
             "streaming": false, 
+            "canHaveInputs": false, 
             "subject": null, 
             "category": "ExclusiveForceNode", 
             "outputAppFields": [], 
             "selected": false, 
-            "canHaveInputs": false, 
+            "flipPorts": false, 
             "showPorts": false, 
             "width": 200, 
             "inputAppFields": [], 
@@ -866,28 +1317,30 @@
             "canHaveOutputs": false, 
             "outputApplicationName": "", 
             "inputLocalPorts": [], 
-            "key": -16, 
+            "key": -20, 
             "isData": false, 
             "fields": [], 
             "expanded": false, 
             "exitApplicationName": "", 
             "inputPorts": [], 
-            "y": 100, 
-            "x": 300, 
+            "y": 0, 
+            "x": 0, 
             "categoryType": "Control"
         }, 
         {
+            "exitAppFields": [], 
             "outputPorts": [], 
             "color": "#C10000", 
             "text": "Variables", 
             "isGroup": false, 
             "height": 200, 
             "streaming": false, 
+            "canHaveInputs": false, 
             "subject": null, 
             "category": "Variables", 
             "outputAppFields": [], 
             "selected": false, 
-            "canHaveInputs": false, 
+            "flipPorts": false, 
             "showPorts": false, 
             "width": 200, 
             "inputAppFields": [], 
@@ -902,28 +1355,30 @@
             "canHaveOutputs": false, 
             "outputApplicationName": "", 
             "inputLocalPorts": [], 
-            "key": -17, 
+            "key": -21, 
             "isData": false, 
             "fields": [], 
             "expanded": false, 
             "exitApplicationName": "", 
             "inputPorts": [], 
-            "y": 100, 
-            "x": 300, 
+            "y": 0, 
+            "x": 0, 
             "categoryType": "Other"
         }, 
         {
+            "exitAppFields": [], 
             "outputPorts": [], 
             "color": "#00BDA1", 
             "text": "Branch", 
             "isGroup": false, 
             "height": 200, 
             "streaming": false, 
+            "canHaveInputs": false, 
             "subject": null, 
             "category": "Branch", 
             "outputAppFields": [], 
             "selected": false, 
-            "canHaveInputs": false, 
+            "flipPorts": false, 
             "showPorts": false, 
             "width": 200, 
             "inputAppFields": [], 
@@ -938,24 +1393,26 @@
             "canHaveOutputs": false, 
             "outputApplicationName": "", 
             "inputLocalPorts": [], 
-            "key": -18, 
+            "key": -22, 
             "isData": false, 
             "fields": [], 
             "expanded": false, 
             "exitApplicationName": "", 
             "inputPorts": [], 
-            "y": 100, 
-            "x": 300, 
+            "y": 0, 
+            "x": 0, 
             "categoryType": "Control"
         }
     ], 
     "modelData": {
         "repoBranch": "master", 
         "filePath": "everything2.palette", 
+        "eagleCommitHash": "Unknown", 
         "fileType": "palette", 
         "repo": "ICRAR/EAGLE_test_repo", 
         "sha": "", 
         "git_url": "", 
+        "eagleVersion": "Unknown", 
         "repoService": "GitHub"
     }
 }
