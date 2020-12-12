@@ -408,6 +408,95 @@
             "exitApplicationName": "",
             "exitApplicationType": "None",
             "outputAppFields": []
+        },
+        {
+            "category": "Gather",
+            "categoryType": "Group",
+            "isData": false,
+            "isGroup": true,
+            "canHaveInputs": false,
+            "canHaveOutputs": false,
+            "color": "#D35400",
+            "drawOrderHint": 0,
+            "key": -5,
+            "text": "MergeResults",
+            "description": "Merge inputs into a single output",
+            "x": 300,
+            "y": 100,
+            "width": 200,
+            "height": 200,
+            "collapsed": false,
+            "showPorts": true,
+            "flipPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": true,
+            "expanded": false,
+            "inputPorts": [
+                {
+                    "Id": "d5fd5292-0cd8-46ae-8921-054d1957ae59",
+                    "IdText": "Result"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "f0e84f00-41c5-421a-8d9b-4a956888108e",
+                    "IdText": "Result"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "Number of inputs",
+                    "name": "num_of_inputs",
+                    "value": "2",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
+                }
+            ],
+            "inputAppFields": [
+                {
+                    "text": "appclass",
+                    "name": "appclass",
+                    "value": "leap_nodes.LeapGather.LeapGather",
+                    "description": "The path to the class that implements this app",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "description": "",
+                    "readonly": false,
+                    "type": "Float"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "description": "",
+                    "readonly": false,
+                    "type": "Integer"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": 0,
+                    "description": "",
+                    "readonly": false,
+                    "type": "Boolean"
+                }
+            ],
+            "inputApplicationName": "Leap Gather.",
+            "inputApplicationType": "PythonApp",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "exitApplicationName": "",
+            "exitApplicationType": "None",
+            "outputAppFields": []
         }
     ],
     "linkDataArray": []
