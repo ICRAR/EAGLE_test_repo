@@ -288,6 +288,126 @@
             "exitApplicationName": "",
             "exitApplicationType": "None",
             "outputAppFields": []
+        },
+        {
+            "category": "Docker",
+            "categoryType": "Application",
+            "isData": true,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "color": "#331C54",
+            "drawOrderHint": 0,
+            "key": -4,
+            "text": "LeapAccelerateDocker",
+            "description": "Component to run the LEAP-accelerate docker container.",
+            "x": 300,
+            "y": 100,
+            "width": 200,
+            "height": 200,
+            "collapsed": false,
+            "showPorts": true,
+            "flipPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": true,
+            "expanded": false,
+            "inputPorts": [
+                {
+                    "Id": "16536ae5-319e-48b0-85cb-0e03032855f2",
+                    "IdText": "event"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "111229cc-c7ee-49cd-a567-9f0e57f0b9d4",
+                    "IdText": "event"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "0",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
+                },
+                {
+                    "text": "Image",
+                    "name": "image",
+                    "value": "icrar/leap_cli:0.7.0",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
+                },
+                {
+                    "text": "Command",
+                    "name": "command",
+                    "value": "LeapAccelerateCLI -c %i0 -f %i1 -o %o0 -v 0",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
+                },
+                {
+                    "text": "User",
+                    "name": "user",
+                    "value": "",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
+                },
+                {
+                    "text": "Ensure User And Switch",
+                    "name": "ensureUserAndSwitch",
+                    "value": "0",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
+                },
+                {
+                    "text": "Remove Container",
+                    "name": "removeContainer",
+                    "value": "1",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
+                },
+                {
+                    "text": "Additional Bindings",
+                    "name": "additionalBindings",
+                    "value": "/var/dlg_home",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
+                }
+            ],
+            "inputAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "exitApplicationName": "",
+            "exitApplicationType": "None",
+            "outputAppFields": []
         }
     ],
     "linkDataArray": []
