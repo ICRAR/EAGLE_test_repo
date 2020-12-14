@@ -6,7 +6,7 @@
             "outputPorts": [
                 {
                     "IdText": "Result", 
-                    "Id": "a7fe36cd-c635-4fde-8b64-eccf4183b0ba", 
+                    "Id": "e9857083-5e7a-4000-86bb-fcbb9f71d503", 
                     "event": false
                 }
             ], 
@@ -84,7 +84,7 @@
             "inputPorts": [
                 {
                     "IdText": "Config", 
-                    "Id": "2b73a92a-67b8-492c-8372-e643331363da", 
+                    "Id": "c6059307-c0aa-4567-9ea5-21d551431dbe", 
                     "event": false
                 }
             ], 
@@ -97,7 +97,7 @@
             "outputPorts": [
                 {
                     "IdText": "Result", 
-                    "Id": "ec58b26e-3ad1-486a-a586-b7fe16288184", 
+                    "Id": "f0e84f00-41c5-421a-8d9b-4a956888108e", 
                     "event": false
                 }
             ], 
@@ -167,7 +167,7 @@
             "inputPorts": [
                 {
                     "IdText": "Result", 
-                    "Id": "3cc2d4dd-d307-408f-bd93-b34502e108cb", 
+                    "Id": "d5fd5292-0cd8-46ae-8921-054d1957ae59", 
                     "event": false
                 }
             ], 
@@ -180,7 +180,7 @@
             "outputPorts": [
                 {
                     "IdText": "Config", 
-                    "Id": "dff2b1f4-cc6d-4259-88d0-a54e9d2afddc", 
+                    "Id": "feb241fc-e883-472b-b740-bff1e458139a", 
                     "event": false
                 }
             ], 
@@ -193,9 +193,9 @@
             "subject": null, 
             "category": "PythonApp", 
             "outputAppFields": [], 
-            "selected": false, 
+            "selected": true, 
             "flipPorts": false, 
-            "showPorts": false, 
+            "showPorts": true, 
             "width": 200, 
             "inputAppFields": [], 
             "exitApplicationType": "None", 
@@ -237,14 +237,6 @@
                     "description": "Enable auto correlation in the LEAP algorithm"
                 }, 
                 {
-                    "name": "max_directions", 
-                    "text": "max_directions", 
-                    "value": "false", 
-                    "readonly": false, 
-                    "type": "Integer", 
-                    "description": "Maximum number of directions per LEAP instance"
-                }, 
-                {
                     "name": "appclass", 
                     "text": "appclass", 
                     "value": "leap_nodes.ProduceConfig.ProduceConfig", 
@@ -275,6 +267,14 @@
                     "readonly": false, 
                     "type": "Boolean", 
                     "description": ""
+                }, 
+                {
+                    "name": "max_directions", 
+                    "text": "max_directions", 
+                    "value": "1", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
                 }
             ], 
             "expanded": false, 
@@ -282,7 +282,7 @@
             "inputPorts": [
                 {
                     "IdText": "Directions", 
-                    "Id": "7e20e53b-b936-4520-98cb-cce1a3c02e91", 
+                    "Id": "6c715de2-3a4e-49bc-9dfc-eb3b85b7be21", 
                     "event": false
                 }
             ], 
@@ -295,22 +295,22 @@
             "outputPorts": [
                 {
                     "IdText": "event", 
-                    "Id": "c0263e00-7ace-4df6-88a4-de61aa10590d", 
-                    "event": true
+                    "Id": "111229cc-c7ee-49cd-a567-9f0e57f0b9d4", 
+                    "event": false
                 }
             ], 
-            "color": "#3498DB", 
-            "text": "Python App", 
+            "color": "#331C54", 
+            "text": "LeapAccelerateDocker", 
             "isGroup": false, 
             "height": 200, 
             "streaming": false, 
             "canHaveInputs": true, 
             "subject": null, 
-            "category": "PythonApp", 
+            "category": "Docker", 
             "outputAppFields": [], 
-            "selected": false, 
+            "selected": true, 
             "flipPorts": false, 
-            "showPorts": false, 
+            "showPorts": true, 
             "width": 200, 
             "inputAppFields": [], 
             "exitApplicationType": "None", 
@@ -318,14 +318,14 @@
             "inputApplicationName": "", 
             "drawOrderHint": 0, 
             "outputApplicationType": "None", 
-            "description": "An application component in the form of a Python app", 
+            "description": "Component to run the LEAP-accelerate docker container.", 
             "outputLocalPorts": [], 
             "collapsed": false, 
             "canHaveOutputs": true, 
             "outputApplicationName": "", 
             "inputLocalPorts": [], 
             "key": -4, 
-            "isData": false, 
+            "isData": true, 
             "fields": [
                 {
                     "name": "execution_time", 
@@ -352,9 +352,49 @@
                     "description": ""
                 }, 
                 {
-                    "name": "appclass", 
-                    "text": "Appclass", 
-                    "value": "test.graphsRepository", 
+                    "name": "image", 
+                    "text": "Image", 
+                    "value": "icrar/leap_cli:0.7.0", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "command", 
+                    "text": "Command", 
+                    "value": "LeapAccelerateCLI -c %i0 -f %i1 -o %o0 -v 0", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "user", 
+                    "text": "User", 
+                    "value": "", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "ensureUserAndSwitch", 
+                    "text": "Ensure User And Switch", 
+                    "value": "0", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "removeContainer", 
+                    "text": "Remove Container", 
+                    "value": "1", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "additionalBindings", 
+                    "text": "Additional Bindings", 
+                    "value": "/var/dlg_home", 
                     "readonly": false, 
                     "type": "Unknown", 
                     "description": ""
@@ -365,13 +405,99 @@
             "inputPorts": [
                 {
                     "IdText": "event", 
-                    "Id": "353b06f2-f2ee-46b5-83c1-2c3c67d262d3", 
-                    "event": true
+                    "Id": "16536ae5-319e-48b0-85cb-0e03032855f2", 
+                    "event": false
                 }
             ], 
             "y": 0, 
             "x": 0, 
             "categoryType": "Application"
+        }, 
+        {
+            "exitAppFields": [], 
+            "outputPorts": [], 
+            "color": "#D35400", 
+            "text": "MergeResults", 
+            "isGroup": true, 
+            "height": 200, 
+            "streaming": false, 
+            "canHaveInputs": false, 
+            "subject": null, 
+            "category": "Gather", 
+            "outputAppFields": [], 
+            "selected": true, 
+            "flipPorts": false, 
+            "showPorts": true, 
+            "width": 200, 
+            "inputAppFields": [
+                {
+                    "name": "appclass", 
+                    "text": "appclass", 
+                    "value": "leap_nodes.LeapGather.LeapGather", 
+                    "readonly": true, 
+                    "type": "String", 
+                    "description": "The path to the class that implements this app"
+                }, 
+                {
+                    "name": "execution_time", 
+                    "text": "Execution time", 
+                    "value": 5, 
+                    "readonly": false, 
+                    "type": "Float", 
+                    "description": ""
+                }, 
+                {
+                    "name": "num_cpus", 
+                    "text": "Num CPUs", 
+                    "value": 1, 
+                    "readonly": false, 
+                    "type": "Integer", 
+                    "description": ""
+                }, 
+                {
+                    "name": "group_start", 
+                    "text": "Group start", 
+                    "value": 0, 
+                    "readonly": false, 
+                    "type": "Boolean", 
+                    "description": ""
+                }
+            ], 
+            "exitApplicationType": "None", 
+            "inputApplicationType": "PythonApp", 
+            "inputApplicationName": "Leap Gather.", 
+            "drawOrderHint": 0, 
+            "outputApplicationType": "None", 
+            "description": "Merge inputs into a single output", 
+            "outputLocalPorts": [], 
+            "collapsed": false, 
+            "canHaveOutputs": false, 
+            "outputApplicationName": "", 
+            "inputLocalPorts": [], 
+            "key": -5, 
+            "isData": false, 
+            "fields": [
+                {
+                    "name": "num_of_inputs", 
+                    "text": "Number of inputs", 
+                    "value": "2", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }
+            ], 
+            "expanded": false, 
+            "exitApplicationName": "", 
+            "inputPorts": [
+                {
+                    "IdText": "Result", 
+                    "Id": "d5fd5292-0cd8-46ae-8921-054d1957ae59", 
+                    "event": false
+                }
+            ], 
+            "y": 0, 
+            "x": 0, 
+            "categoryType": "Group"
         }
     ], 
     "modelData": {
