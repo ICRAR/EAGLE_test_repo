@@ -1,0 +1,102 @@
+{
+    "linkDataArray": [], 
+    "nodeDataArray": [
+        {
+            "exitAppFields": [], 
+            "outputPorts": [], 
+            "color": "#D35400", 
+            "text": "Gather", 
+            "isGroup": true, 
+            "height": 200, 
+            "streaming": false, 
+            "canHaveInputs": false, 
+            "subject": null, 
+            "category": "Gather", 
+            "outputAppFields": [], 
+            "selected": true, 
+            "flipPorts": false, 
+            "showPorts": true, 
+            "width": 200, 
+            "inputAppFields": [
+                {
+                    "name": "execution_time", 
+                    "text": "Execution time", 
+                    "value": "5", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "num_cpus", 
+                    "text": "Num CPUs", 
+                    "value": "1", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "group_start", 
+                    "text": "Group start", 
+                    "value": "0", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "Arg01", 
+                    "text": "Arg01", 
+                    "value": "cat %i0.json %i1.json %i2.json> %o0", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": "The command line to be executed"
+                }
+            ], 
+            "exitApplicationType": "None", 
+            "inputApplicationType": "BashShellApp", 
+            "inputApplicationName": "LEAPGather", 
+            "drawOrderHint": 0, 
+            "outputApplicationType": "None", 
+            "description": "Merge the individual results into a single file", 
+            "outputLocalPorts": [], 
+            "collapsed": false, 
+            "canHaveOutputs": false, 
+            "outputApplicationName": "", 
+            "inputLocalPorts": [], 
+            "key": -5, 
+            "isData": false, 
+            "fields": [
+                {
+                    "name": "num_of_inputs", 
+                    "text": "Number of inputs", 
+                    "value": "3", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }
+            ], 
+            "expanded": true, 
+            "exitApplicationName": "", 
+            "inputPorts": [
+                {
+                    "IdText": "Result", 
+                    "Id": "1ffa91ab-b83c-429d-a145-a5f47d5fa8ec", 
+                    "event": false
+                }
+            ], 
+            "y": 337.0596152125075, 
+            "x": 1556.8636714194383, 
+            "categoryType": "Group"
+        }
+    ], 
+    "modelData": {
+        "repoBranch": "master", 
+        "filePath": "trash/james2.palette", 
+        "eagleCommitHash": "Unknown", 
+        "fileType": "palette", 
+        "repo": "ICRAR/EAGLE_test_repo", 
+        "sha": "", 
+        "git_url": "", 
+        "eagleVersion": "Unknown", 
+        "repoService": "GitHub"
+    }
+}
