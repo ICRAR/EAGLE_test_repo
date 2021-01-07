@@ -1,16 +1,18 @@
 {
     "modelData": {
-        "fileType": "",
+        "fileType": "palette",
         "repoService": "GitHub",
         "repoBranch": "master",
         "repo": "ICRAR/EAGLE_test_repo",
         "filePath": "HelloWorld.palette",
         "sha": "",
-        "git_url": ""
+        "git_url": "",
+        "eagleVersion": "v2.8.6",
+        "eagleCommitHash": "53e6cb21002a9629982944f12719ec53e80fbe2f"
     },
     "nodeDataArray": [
         {
-            "category": "Memory",
+            "category": "NGAS",
             "categoryType": "Data",
             "isData": true,
             "isGroup": false,
@@ -18,50 +20,73 @@
             "canHaveOutputs": true,
             "color": "#394BB2",
             "drawOrderHint": 0,
-            "key": -1,
-            "text": "Start data",
+            "key": -5,
+            "text": "NGAS",
             "description": "",
-            "x": 200,
-            "y": 100,
+            "x": 1194.5506692160616,
+            "y": 412.9606571708592,
             "width": 200,
             "height": 200,
             "collapsed": false,
-            "showPorts": false,
+            "showPorts": true,
+            "flipPorts": false,
             "streaming": false,
             "subject": null,
-            "selected": false,
+            "selected": true,
             "expanded": false,
-            "inputApplicationName": "",
-            "outputApplicationName": "",
-            "exitApplicationName": "",
-            "inputApplicationType": "None",
-            "outputApplicationType": "None",
-            "exitApplicationType": "None",
-            "inputPorts": [],
-            "outputPorts": [
+            "inputPorts": [
                 {
-                    "Id": "ab5ada14-04d7-4b03-816d-c43428d4e2e4",
-                    "IdText": "event"
+                    "Id": "ea139ac3-722b-4d50-a34c-fff1cffd92b8",
+                    "IdText": "result",
+                    "event": false
                 }
             ],
+            "outputPorts": [],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
-            "inputAppFields": [],
-            "outputAppFields": [],
             "fields": [
                 {
                     "text": "Data volume",
                     "name": "data_volume",
                     "value": "5",
-                    "description": ""
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
                 },
                 {
                     "text": "Group end",
                     "name": "group_end",
                     "value": "0",
-                    "description": ""
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
+                },
+                {
+                    "text": "NGAS Server",
+                    "name": "ngasSrv",
+                    "value": "130.95.218.221",
+                    "description": "The URL of the NGAS Server",
+                    "readonly": false,
+                    "type": "Unknown"
+                },
+                {
+                    "text": "NGAS Port",
+                    "name": "ngasPort",
+                    "value": "7777",
+                    "description": "The port of the NGAS Server",
+                    "readonly": false,
+                    "type": "Unknown"
                 }
-            ]
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "exitAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "exitApplicationName": "",
+            "exitApplicationType": "None"
         },
         {
             "category": "BashShellApp",
@@ -73,145 +98,155 @@
             "color": "#1C2833",
             "drawOrderHint": 0,
             "key": -2,
-            "text": "Sleep Bash",
-            "description": "",
-            "x": 370.99236641221376,
-            "y": 200.76335877862596,
+            "text": "Publish",
+            "description": "An application component run within the Bash Shell",
+            "x": 780.1147227533463,
+            "y": 238.04973507474543,
             "width": 200,
             "height": 200,
             "collapsed": false,
             "showPorts": false,
+            "flipPorts": false,
             "streaming": false,
             "subject": null,
             "selected": false,
             "expanded": false,
-            "inputApplicationName": "",
-            "outputApplicationName": "",
-            "exitApplicationName": "",
-            "inputApplicationType": "None",
-            "outputApplicationType": "None",
-            "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "c12aa833-43a9-4c1e-abaa-c77396010a31",
-                    "IdText": "event"
+                    "Id": "06658511-ab00-4d85-934f-7f06e00755ec",
+                    "IdText": "hello",
+                    "event": false
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "47c421b8-5cdc-4ff7-ab7e-b75140f2d951",
-                    "IdText": "event"
-                },
-                {
-                    "Id": "a8a6d942-61fe-4f04-a283-a23127f5a447",
-                    "IdText": "test"
+                    "Id": "115e5f42-b6f8-4bf0-9b5a-871c582361ae",
+                    "IdText": "result",
+                    "event": false
                 }
             ],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
-            "inputAppFields": [],
-            "outputAppFields": [],
             "fields": [
                 {
                     "text": "Execution time",
                     "name": "execution_time",
                     "value": "5",
-                    "description": ""
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
                 },
                 {
                     "text": "Num CPUs",
                     "name": "num_cpus",
                     "value": "1",
-                    "description": ""
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
                 },
                 {
                     "text": "Group start",
                     "name": "group_start",
                     "value": "0",
-                    "description": ""
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
                 },
                 {
                     "text": "Arg01",
-                    "name": "arg01",
-                    "value": "sleep 5",
-                    "description": ""
+                    "name": "Arg01",
+                    "value": "cp %i0 %o0",
+                    "description": "The command line to be executed",
+                    "readonly": false,
+                    "type": "Unknown"
                 }
-            ]
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "exitAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "exitApplicationName": "",
+            "exitApplicationType": "None"
         },
         {
-            "category": "PythonApp",
+            "category": "BashShellApp",
             "categoryType": "Application",
             "isData": false,
             "isGroup": false,
             "canHaveInputs": true,
             "canHaveOutputs": true,
-            "color": "#3498DB",
+            "color": "#1C2833",
             "drawOrderHint": 0,
-            "key": -3,
-            "text": "SleepApp",
-            "description": "",
-            "x": 780.1526717557251,
-            "y": 232.0610687022898,
+            "key": -1,
+            "text": "Hello World",
+            "description": "An application component run within the Bash Shell",
+            "x": 336.99808795411116,
+            "y": 291.1090084973076,
             "width": 200,
             "height": 200,
             "collapsed": false,
             "showPorts": false,
+            "flipPorts": false,
             "streaming": false,
             "subject": null,
             "selected": false,
             "expanded": false,
-            "inputApplicationName": "",
-            "outputApplicationName": "",
-            "exitApplicationName": "",
-            "inputApplicationType": "None",
-            "outputApplicationType": "None",
-            "exitApplicationType": "None",
-            "inputPorts": [
-                {
-                    "Id": "0178b7ce-79ed-406d-9e4b-ee2a53c168ec",
-                    "IdText": "event"
-                },
-                {
-                    "Id": "5cf658e2-b0fe-4e55-9420-754fdba10063",
-                    "IdText": "test"
-                }
-            ],
+            "inputPorts": [],
             "outputPorts": [
                 {
-                    "Id": "f487361b-f633-43ba-978d-c65d7a52c34d",
-                    "IdText": "event"
+                    "Id": "587371ba-6508-43eb-8c1a-6d261bbd0ce9",
+                    "IdText": "hello",
+                    "event": false
                 }
             ],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
-            "inputAppFields": [],
-            "outputAppFields": [],
             "fields": [
                 {
                     "text": "Execution time",
                     "name": "execution_time",
                     "value": "5",
-                    "description": ""
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
                 },
                 {
                     "text": "Num CPUs",
                     "name": "num_cpus",
                     "value": "1",
-                    "description": ""
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
                 },
                 {
                     "text": "Group start",
                     "name": "group_start",
                     "value": "0",
-                    "description": ""
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
                 },
                 {
-                    "text": "Appclass",
-                    "name": "appclass",
-                    "value": "dlg.apps.simple.SleepApp",
-                    "description": ""
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": "echo -en 'Hello world' > %o0",
+                    "description": "The command line to be executed",
+                    "readonly": false,
+                    "type": "Unknown"
                 }
-            ]
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "exitAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "exitApplicationName": "",
+            "exitApplicationType": "None"
         },
         {
             "category": "File",
@@ -222,131 +257,181 @@
             "canHaveOutputs": true,
             "color": "#394BB2",
             "drawOrderHint": 0,
-            "key": -4,
-            "text": "Enter label",
+            "key": -3,
+            "text": "hello",
             "description": "",
-            "x": 937.4045801526719,
-            "y": 351.9083969465648,
+            "x": 558.5564053537287,
+            "y": 264.5793717860265,
             "width": 200,
             "height": 200,
             "collapsed": false,
             "showPorts": false,
+            "flipPorts": false,
             "streaming": false,
             "subject": null,
             "selected": false,
             "expanded": false,
-            "inputApplicationName": "",
-            "outputApplicationName": "",
-            "exitApplicationName": "",
-            "inputApplicationType": "None",
-            "outputApplicationType": "None",
-            "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "c05689f4-6c5a-47dc-b3b1-fcbdfa09e4df",
-                    "IdText": "event"
+                    "Id": "d0d88720-e9cd-4f5d-8c67-06d12e31e0a2",
+                    "IdText": "hello",
+                    "event": false
                 }
             ],
-            "outputPorts": [],
+            "outputPorts": [
+                {
+                    "Id": "44ddb012-ed8e-4b29-b516-d09c6dedf7a1",
+                    "IdText": "hello",
+                    "event": false
+                }
+            ],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
-            "inputAppFields": [],
-            "outputAppFields": [],
             "fields": [
                 {
                     "text": "Data volume",
                     "name": "data_volume",
                     "value": "5",
-                    "description": ""
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
                 },
                 {
                     "text": "Group end",
                     "name": "group_end",
                     "value": "0",
-                    "description": ""
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
                 },
                 {
                     "text": "Check file path exists",
                     "name": "check_filepath_exists",
                     "value": "1",
-                    "description": ""
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
                 },
                 {
                     "text": "File path",
                     "name": "filepath",
                     "value": "",
-                    "description": ""
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
                 },
                 {
                     "text": "Directory name",
                     "name": "dirname",
                     "value": "",
-                    "description": ""
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
                 }
-            ]
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "exitAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "exitApplicationName": "",
+            "exitApplicationType": "None"
         },
         {
-            "category": "Comment",
-            "categoryType": "Other",
+            "category": "Component",
+            "categoryType": "Application",
             "isData": false,
             "isGroup": false,
-            "canHaveInputs": false,
-            "canHaveOutputs": false,
-            "color": "#799938",
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "color": "#3498DB",
             "drawOrderHint": 0,
             "key": -6,
-            "text": "",
-            "description": "",
-            "x": 570.992366412214,
-            "y": 82.44274809160297,
-            "width": 175.5725190839694,
-            "height": 82.44274809160314,
+            "text": "NGAS App",
+            "description": "NGAS application allowing to read and write to an NGAS instance.",
+            "x": 788.8589003778786,
+            "y": 423.14721407644237,
+            "width": 200,
+            "height": 200,
             "collapsed": false,
-            "showPorts": true,
+            "showPorts": false,
+            "flipPorts": false,
             "streaming": false,
             "subject": null,
-            "selected": true,
+            "selected": false,
             "expanded": false,
-            "inputApplicationName": "",
-            "outputApplicationName": "",
-            "exitApplicationName": "",
-            "inputApplicationType": "None",
-            "outputApplicationType": "None",
-            "exitApplicationType": "None",
-            "inputPorts": [],
+            "inputPorts": [
+                {
+                    "Id": "f600d1f6-4b0f-4a8b-bf08-efe576781b9d",
+                    "IdText": "hello",
+                    "event": false
+                }
+            ],
             "outputPorts": [],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
-            "inputAppFields": [],
-            "outputAppFields": [],
             "fields": [
                 {
-                    "text": "Comment",
-                    "name": "comment",
-                    "value": "This graph does not execute, since just the event edge does not trigger the SleepApp.",
-                    "description": "The text value of the comment"
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "0",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
+                },
+                {
+                    "text": "Appclass",
+                    "name": "appclass",
+                    "value": "dlg.apps.archiving.NgasArchivingApp",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
+                },
+                {
+                    "text": "ngasSrv",
+                    "name": "ngassrv",
+                    "value": "130.95.218.221",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
+                },
+                {
+                    "text": "ngasPort",
+                    "name": "ngasport",
+                    "value": "7777",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
                 }
-            ]
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "exitAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "exitApplicationName": "",
+            "exitApplicationType": "None"
         }
     ],
-    "linkDataArray": [
-        {
-            "from": -1,
-            "fromPort": "ab5ada14-04d7-4b03-816d-c43428d4e2e4",
-            "to": -2,
-            "toPort": "c12aa833-43a9-4c1e-abaa-c77396010a31"
-        },
-        {
-            "from": -2,
-            "fromPort": "47c421b8-5cdc-4ff7-ab7e-b75140f2d951",
-            "to": -3,
-            "toPort": "0178b7ce-79ed-406d-9e4b-ee2a53c168ec"
-        },
-        {
-            "from": -3,
-            "fromPort": "f487361b-f633-43ba-978d-c65d7a52c34d",
-            "to": -4,
-            "toPort": "c05689f4-6c5a-47dc-b3b1-fcbdfa09e4df"
-        }
-    ]
+    "linkDataArray": []
 }
