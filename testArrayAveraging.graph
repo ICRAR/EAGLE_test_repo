@@ -1,0 +1,592 @@
+{
+    "modelData": {
+        "fileType": "graph",
+        "repoService": "GitHub",
+        "repoBranch": "master",
+        "repo": "ICRAR/EAGLE_test_repo",
+        "filePath": "testArrayAveraging.graph",
+        "sha": "",
+        "git_url": "",
+        "eagleVersion": "v2.8.6",
+        "eagleCommitHash": "40dcaf41448f53e7ba1129a2e5a98d97e32124ed"
+    },
+    "nodeDataArray": [
+        {
+            "category": "Component",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "color": "#3498DB",
+            "drawOrderHint": 0,
+            "key": -1,
+            "text": "RandomArrayApp",
+            "description": "A testing APP that does not take any input and produces a random array of type int64, if integer is set to True, else of type float64. size indicates the number of elements ranging between the values low and high. The resulting array will be send to all connected output apps.",
+            "x": -12.47586623631148,
+            "y": 147.5561892971365,
+            "width": 200,
+            "height": 200,
+            "collapsed": false,
+            "showPorts": false,
+            "flipPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputPorts": [],
+            "outputPorts": [
+                {
+                    "Id": "55f8ceac-ba87-4628-9399-6865b8dabe20",
+                    "IdText": "array",
+                    "event": false
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "size",
+                    "name": "size",
+                    "value": "100",
+                    "description": "the siz of the array",
+                    "readonly": false,
+                    "type": "Integer"
+                },
+                {
+                    "text": "integer",
+                    "name": "integer",
+                    "value": "True",
+                    "description": "Generate integer array?",
+                    "readonly": false,
+                    "type": "Boolean"
+                },
+                {
+                    "text": "low",
+                    "name": "low",
+                    "value": "0",
+                    "description": "low value of range in array [inclusive]",
+                    "readonly": false,
+                    "type": "float"
+                },
+                {
+                    "text": "high",
+                    "name": "high",
+                    "value": "1",
+                    "description": "high value of range of array [exclusive]",
+                    "readonly": false,
+                    "type": "float"
+                },
+                {
+                    "text": "appclass",
+                    "name": "appclass",
+                    "value": "dlg.apps.simple.RandomArrayApp",
+                    "description": "Application class",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": 0,
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean"
+                }
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "exitAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "exitApplicationName": "",
+            "exitApplicationType": "None"
+        },
+        {
+            "category": "Component",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "color": "#3498DB",
+            "drawOrderHint": 0,
+            "key": -2,
+            "text": "RandomArrayApp",
+            "description": "A testing APP that does not take any input and produces a random array of type int64, if integer is set to True, else of type float64. size indicates the number of elements ranging between the values low and high. The resulting array will be send to all connected output apps.",
+            "x": -9.830363590808838,
+            "y": 347.2916390325865,
+            "width": 200,
+            "height": 200,
+            "collapsed": false,
+            "showPorts": false,
+            "flipPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputPorts": [],
+            "outputPorts": [
+                {
+                    "Id": "55f8ceac-ba87-4628-9399-6865b8dabe20",
+                    "IdText": "array",
+                    "event": false
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "size",
+                    "name": "size",
+                    "value": "100",
+                    "description": "the siz of the array",
+                    "readonly": false,
+                    "type": "Integer"
+                },
+                {
+                    "text": "integer",
+                    "name": "integer",
+                    "value": "True",
+                    "description": "Generate integer array?",
+                    "readonly": false,
+                    "type": "Boolean"
+                },
+                {
+                    "text": "low",
+                    "name": "low",
+                    "value": "0",
+                    "description": "low value of range in array [inclusive]",
+                    "readonly": false,
+                    "type": "float"
+                },
+                {
+                    "text": "high",
+                    "name": "high",
+                    "value": "1",
+                    "description": "high value of range of array [exclusive]",
+                    "readonly": false,
+                    "type": "float"
+                },
+                {
+                    "text": "appclass",
+                    "name": "appclass",
+                    "value": "dlg.apps.simple.RandomArrayApp",
+                    "description": "Application class",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": 0,
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean"
+                }
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "exitAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "exitApplicationName": "",
+            "exitApplicationType": "None"
+        },
+        {
+            "category": "Component",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "color": "#3498DB",
+            "drawOrderHint": 0,
+            "key": -3,
+            "text": "AverageArrays",
+            "description": "A testing APP that takes multiple numpy arrays on input and calculates the mean or the median, depending on the value provided in the method parameter. Users can add as many producers to the input array port as required and the resulting array will also be send to all connected output apps.",
+            "x": 316.8892131287681,
+            "y": 233.53502527597252,
+            "width": 200,
+            "height": 200,
+            "collapsed": false,
+            "showPorts": false,
+            "flipPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputPorts": [
+                {
+                    "Id": "8c9663ed-0617-450b-836a-c142ea6b4a4d",
+                    "IdText": "array",
+                    "event": false
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "6dbeb133-808f-4df4-9f40-9b2fe4fa122e",
+                    "IdText": "array",
+                    "event": false
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "method",
+                    "name": "method",
+                    "value": "mean",
+                    "description": "the methd used for averaging",
+                    "readonly": false,
+                    "type": "string"
+                },
+                {
+                    "text": "appclass",
+                    "name": "appclass",
+                    "value": "dlg.apps.simple.AverageArraysApp",
+                    "description": "Application class",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": 0,
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean"
+                }
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "exitAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "exitApplicationName": "",
+            "exitApplicationType": "None"
+        },
+        {
+            "category": "NGAS",
+            "categoryType": "Data",
+            "isData": true,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "color": "#394BB2",
+            "drawOrderHint": 0,
+            "key": -4,
+            "text": "NGAS",
+            "description": "",
+            "x": 675.3548215943771,
+            "y": 242.79428453523167,
+            "width": 200,
+            "height": 200,
+            "collapsed": false,
+            "showPorts": false,
+            "flipPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputPorts": [
+                {
+                    "Id": "52bd3f01-e92b-4102-abc3-518b86bc74d3",
+                    "IdText": "array",
+                    "event": false
+                }
+            ],
+            "outputPorts": [],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "5",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "0",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
+                },
+                {
+                    "text": "ngasSrv",
+                    "name": "ngassrv",
+                    "value": "10.21.33.20",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
+                },
+                {
+                    "text": "ngasPort",
+                    "name": "ngasport",
+                    "value": "7777",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
+                }
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "exitAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "exitApplicationName": "",
+            "exitApplicationType": "None"
+        },
+        {
+            "category": "Memory",
+            "categoryType": "Data",
+            "isData": true,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "color": "#394BB2",
+            "drawOrderHint": 0,
+            "key": -5,
+            "text": "array",
+            "description": "",
+            "x": 152.2066734462283,
+            "y": 190.5456072865545,
+            "width": 200,
+            "height": 200,
+            "collapsed": false,
+            "showPorts": false,
+            "flipPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputPorts": [
+                {
+                    "Id": "92152ba2-9bf1-4c2a-b2fc-38b588729477",
+                    "IdText": "event",
+                    "event": true
+                },
+                {
+                    "Id": "06c41c9e-8e07-47c2-90f9-44ce92c36e26",
+                    "IdText": "array",
+                    "event": false
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "ab733d99-2b4a-4274-8765-e26f0cd82bcd",
+                    "IdText": "event",
+                    "event": true
+                },
+                {
+                    "Id": "49df0585-b162-4bc9-a799-7f044eabe7d3",
+                    "IdText": "array",
+                    "event": false
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "5",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "0",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
+                }
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "exitAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "exitApplicationName": "",
+            "exitApplicationType": "None"
+        },
+        {
+            "category": "Memory",
+            "categoryType": "Data",
+            "isData": true,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "color": "#394BB2",
+            "drawOrderHint": 0,
+            "key": -6,
+            "text": "array",
+            "description": "",
+            "x": 153.52942476897965,
+            "y": 290.4133321542795,
+            "width": 200,
+            "height": 200,
+            "collapsed": false,
+            "showPorts": false,
+            "flipPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputPorts": [
+                {
+                    "Id": "92152ba2-9bf1-4c2a-b2fc-38b588729477",
+                    "IdText": "event",
+                    "event": true
+                },
+                {
+                    "Id": "18ad5080-3916-42a7-b4c0-a1c1db21209c",
+                    "IdText": "array",
+                    "event": false
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "ab733d99-2b4a-4274-8765-e26f0cd82bcd",
+                    "IdText": "event",
+                    "event": true
+                },
+                {
+                    "Id": "c1ef1168-83ad-4998-8d69-50d4b1384a1f",
+                    "IdText": "array",
+                    "event": false
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "5",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "0",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
+                }
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "exitAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "exitApplicationName": "",
+            "exitApplicationType": "None"
+        }
+    ],
+    "linkDataArray": [
+        {
+            "from": -1,
+            "fromPort": "55f8ceac-ba87-4628-9399-6865b8dabe20",
+            "to": -5,
+            "toPort": "06c41c9e-8e07-47c2-90f9-44ce92c36e26",
+            "loop_aware": "0"
+        },
+        {
+            "from": -5,
+            "fromPort": "49df0585-b162-4bc9-a799-7f044eabe7d3",
+            "to": -3,
+            "toPort": "8c9663ed-0617-450b-836a-c142ea6b4a4d",
+            "loop_aware": "0"
+        },
+        {
+            "from": -2,
+            "fromPort": "55f8ceac-ba87-4628-9399-6865b8dabe20",
+            "to": -6,
+            "toPort": "18ad5080-3916-42a7-b4c0-a1c1db21209c",
+            "loop_aware": "0"
+        },
+        {
+            "from": -6,
+            "fromPort": "c1ef1168-83ad-4998-8d69-50d4b1384a1f",
+            "to": -3,
+            "toPort": "8c9663ed-0617-450b-836a-c142ea6b4a4d",
+            "loop_aware": "0"
+        },
+        {
+            "from": -3,
+            "fromPort": "6dbeb133-808f-4df4-9f40-9b2fe4fa122e",
+            "to": -4,
+            "toPort": "52bd3f01-e92b-4102-abc3-518b86bc74d3",
+            "loop_aware": "0"
+        }
+    ]
+}
