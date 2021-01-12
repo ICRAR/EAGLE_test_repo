@@ -23,7 +23,7 @@
             "key": -1,
             "text": "RandomArrayApp",
             "description": "A testing APP that does not take any input and produces a random array of type int64, if integer is set to True, else of type float64. size indicates the number of elements ranging between the values low and high. The resulting array will be send to all connected output apps.",
-            "x": -12.47586623631148,
+            "x": 0,
             "y": 147.5561892971365,
             "width": 200,
             "height": 200,
@@ -132,7 +132,7 @@
             "key": -2,
             "text": "RandomArrayApp",
             "description": "A testing APP that does not take any input and produces a random array of type int64, if integer is set to True, else of type float64. size indicates the number of elements ranging between the values low and high. The resulting array will be send to all connected output apps.",
-            "x": -9.830363590808838,
+            "x": 2.645502645502642,
             "y": 347.2916390325865,
             "width": 200,
             "height": 200,
@@ -241,7 +241,7 @@
             "key": -3,
             "text": "AverageArrays",
             "description": "A testing APP that takes multiple numpy arrays on input and calculates the mean or the median, depending on the value provided in the method parameter. Users can add as many producers to the input array port as required and the resulting array will also be send to all connected output apps.",
-            "x": 316.8892131287681,
+            "x": 329.3650793650796,
             "y": 233.53502527597252,
             "width": 200,
             "height": 200,
@@ -321,83 +321,6 @@
             "exitApplicationType": "None"
         },
         {
-            "category": "NGAS",
-            "categoryType": "Data",
-            "isData": true,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
-            "color": "#394BB2",
-            "drawOrderHint": 0,
-            "key": -4,
-            "text": "NGAS",
-            "description": "",
-            "x": 675.3548215943771,
-            "y": 242.79428453523167,
-            "width": 200,
-            "height": 200,
-            "collapsed": false,
-            "showPorts": false,
-            "flipPorts": false,
-            "streaming": false,
-            "subject": null,
-            "selected": false,
-            "expanded": false,
-            "inputPorts": [
-                {
-                    "Id": "52bd3f01-e92b-4102-abc3-518b86bc74d3",
-                    "IdText": "array",
-                    "event": false
-                }
-            ],
-            "outputPorts": [],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "fields": [
-                {
-                    "text": "Data volume",
-                    "name": "data_volume",
-                    "value": "5",
-                    "description": "",
-                    "readonly": false,
-                    "type": "Unknown"
-                },
-                {
-                    "text": "Group end",
-                    "name": "group_end",
-                    "value": "0",
-                    "description": "",
-                    "readonly": false,
-                    "type": "Unknown"
-                },
-                {
-                    "text": "ngasSrv",
-                    "name": "ngassrv",
-                    "value": "10.21.33.20",
-                    "description": "",
-                    "readonly": false,
-                    "type": "Unknown"
-                },
-                {
-                    "text": "ngasPort",
-                    "name": "ngasport",
-                    "value": "7777",
-                    "description": "",
-                    "readonly": false,
-                    "type": "Unknown"
-                }
-            ],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "exitAppFields": [],
-            "inputApplicationName": "",
-            "inputApplicationType": "None",
-            "outputApplicationName": "",
-            "outputApplicationType": "None",
-            "exitApplicationName": "",
-            "exitApplicationType": "None"
-        },
-        {
             "category": "Memory",
             "categoryType": "Data",
             "isData": true,
@@ -409,7 +332,7 @@
             "key": -5,
             "text": "array",
             "description": "",
-            "x": 152.2066734462283,
+            "x": 164.68253968253978,
             "y": 190.5456072865545,
             "width": 200,
             "height": 200,
@@ -486,7 +409,7 @@
             "key": -6,
             "text": "array",
             "description": "",
-            "x": 153.52942476897965,
+            "x": 166.00529100529113,
             "y": 290.4133321542795,
             "width": 200,
             "height": 200,
@@ -550,6 +473,83 @@
             "outputApplicationType": "None",
             "exitApplicationName": "",
             "exitApplicationType": "None"
+        },
+        {
+            "category": "NGAS",
+            "categoryType": "Data",
+            "isData": true,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "color": "#394BB2",
+            "drawOrderHint": 0,
+            "key": -4,
+            "text": "NGAS",
+            "description": "",
+            "x": 655.836969188791,
+            "y": 242.5565807799446,
+            "width": 200,
+            "height": 200,
+            "collapsed": false,
+            "showPorts": false,
+            "flipPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputPorts": [
+                {
+                    "Id": "5d1e1988-8109-411e-bff5-b640df9acd7a",
+                    "IdText": "array",
+                    "event": false
+                }
+            ],
+            "outputPorts": [],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "5",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "0",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
+                },
+                {
+                    "text": "NGAS Server",
+                    "name": "ngasSrv",
+                    "value": "10.21.33.20",
+                    "description": "The URL of the NGAS Server",
+                    "readonly": false,
+                    "type": "Unknown"
+                },
+                {
+                    "text": "NGAS Port",
+                    "name": "ngasPort",
+                    "value": "7777",
+                    "description": "The port of the NGAS Server",
+                    "readonly": false,
+                    "type": "Unknown"
+                }
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "exitAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "exitApplicationName": "",
+            "exitApplicationType": "None"
         }
     ],
     "linkDataArray": [
@@ -585,7 +585,7 @@
             "from": -3,
             "fromPort": "6dbeb133-808f-4df4-9f40-9b2fe4fa122e",
             "to": -4,
-            "toPort": "52bd3f01-e92b-4102-abc3-518b86bc74d3",
+            "toPort": "5d1e1988-8109-411e-bff5-b640df9acd7a",
             "loop_aware": "0"
         }
     ]
