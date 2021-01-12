@@ -12,83 +12,6 @@
     },
     "nodeDataArray": [
         {
-            "category": "NGAS",
-            "categoryType": "Data",
-            "isData": true,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
-            "color": "#394BB2",
-            "drawOrderHint": 0,
-            "key": -5,
-            "text": "NGAS local",
-            "description": "",
-            "x": 713.8371421673222,
-            "y": 219.26264212797383,
-            "width": 200,
-            "height": 200,
-            "collapsed": false,
-            "showPorts": false,
-            "flipPorts": false,
-            "streaming": false,
-            "subject": null,
-            "selected": false,
-            "expanded": false,
-            "inputPorts": [
-                {
-                    "Id": "c2e9c141-a8cf-40f5-853b-a0479ebbffb8",
-                    "IdText": "hello",
-                    "event": false
-                }
-            ],
-            "outputPorts": [],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "fields": [
-                {
-                    "text": "Data volume",
-                    "name": "data_volume",
-                    "value": "5",
-                    "description": "",
-                    "readonly": false,
-                    "type": "Unknown"
-                },
-                {
-                    "text": "Group end",
-                    "name": "group_end",
-                    "value": "0",
-                    "description": "",
-                    "readonly": false,
-                    "type": "Unknown"
-                },
-                {
-                    "text": "ngasSrv",
-                    "name": "ngassrv",
-                    "value": "10.21.33.20",
-                    "description": "",
-                    "readonly": false,
-                    "type": "Unknown"
-                },
-                {
-                    "text": "ngasPort",
-                    "name": "ngasport",
-                    "value": "7777",
-                    "description": "",
-                    "readonly": false,
-                    "type": "Unknown"
-                }
-            ],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "exitAppFields": [],
-            "inputApplicationName": "",
-            "inputApplicationType": "None",
-            "outputApplicationName": "",
-            "outputApplicationType": "None",
-            "exitApplicationName": "",
-            "exitApplicationType": "None"
-        },
-        {
             "category": "Component",
             "categoryType": "Application",
             "isData": false,
@@ -270,8 +193,8 @@
             "key": -3,
             "text": "NGAS@AWS",
             "description": "",
-            "x": 699.2465279207129,
-            "y": 105.2875470349605,
+            "x": 667.3165610255255,
+            "y": 52.18668282076071,
             "width": 200,
             "height": 200,
             "collapsed": false,
@@ -283,7 +206,7 @@
             "expanded": false,
             "inputPorts": [
                 {
-                    "Id": "c2e9c141-a8cf-40f5-853b-a0479ebbffb8",
+                    "Id": "2c607af9-54f1-40a7-a210-5177041d4649",
                     "IdText": "hello",
                     "event": false
                 }
@@ -309,18 +232,95 @@
                     "type": "Unknown"
                 },
                 {
-                    "text": "ngasSrv",
-                    "name": "ngassrv",
+                    "text": "NGAS Server",
+                    "name": "ngasSrv",
                     "value": "ngas.ddns.net",
+                    "description": "The URL of the NGAS Server",
+                    "readonly": false,
+                    "type": "Unknown"
+                },
+                {
+                    "text": "NGAS Port",
+                    "name": "ngasPort",
+                    "value": "7777",
+                    "description": "The port of the NGAS Server",
+                    "readonly": false,
+                    "type": "Unknown"
+                }
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "exitAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "exitApplicationName": "",
+            "exitApplicationType": "None"
+        },
+        {
+            "category": "NGAS",
+            "categoryType": "Data",
+            "isData": true,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "color": "#394BB2",
+            "drawOrderHint": 0,
+            "key": -4,
+            "text": "NGAS",
+            "description": "",
+            "x": 699.8420712296075,
+            "y": 193.7683154738221,
+            "width": 200,
+            "height": 200,
+            "collapsed": false,
+            "showPorts": false,
+            "flipPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputPorts": [
+                {
+                    "Id": "c1bc8d3d-f6b4-42fc-bd46-62f84b3bd958",
+                    "IdText": "hello",
+                    "event": false
+                }
+            ],
+            "outputPorts": [],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "5",
                     "description": "",
                     "readonly": false,
                     "type": "Unknown"
                 },
                 {
-                    "text": "ngasPort",
-                    "name": "ngasport",
-                    "value": "7777",
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "0",
                     "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
+                },
+                {
+                    "text": "NGAS Server",
+                    "name": "ngasSrv",
+                    "value": "10.21.33.20",
+                    "description": "The URL of the NGAS Server",
+                    "readonly": false,
+                    "type": "Unknown"
+                },
+                {
+                    "text": "NGAS Port",
+                    "name": "ngasPort",
+                    "value": "7777",
+                    "description": "The port of the NGAS Server",
                     "readonly": false,
                     "type": "Unknown"
                 }
@@ -340,13 +340,6 @@
         {
             "from": -2,
             "fromPort": "74813e53-f20e-44cd-b48b-2a6b2916a290",
-            "to": -5,
-            "toPort": "c2e9c141-a8cf-40f5-853b-a0479ebbffb8",
-            "loop_aware": "0"
-        },
-        {
-            "from": -2,
-            "fromPort": "74813e53-f20e-44cd-b48b-2a6b2916a290",
             "to": -1,
             "toPort": "339a69a7-0186-4ac4-8a6a-d45a2daf9803",
             "loop_aware": "0"
@@ -355,7 +348,14 @@
             "from": -2,
             "fromPort": "74813e53-f20e-44cd-b48b-2a6b2916a290",
             "to": -3,
-            "toPort": "c2e9c141-a8cf-40f5-853b-a0479ebbffb8",
+            "toPort": "2c607af9-54f1-40a7-a210-5177041d4649",
+            "loop_aware": "0"
+        },
+        {
+            "from": -2,
+            "fromPort": "74813e53-f20e-44cd-b48b-2a6b2916a290",
+            "to": -4,
+            "toPort": "c1bc8d3d-f6b4-42fc-bd46-62f84b3bd958",
             "loop_aware": "0"
         }
     ]
