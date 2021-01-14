@@ -1,7 +1,7 @@
 {
     "linkDataArray": [
         {
-            "toPort": "c18eee07-e04d-48f7-9906-8ca3d370c352", 
+            "toPort": "88fe5827-753c-4cd5-965f-14a18e2eb730", 
             "fromPort": "26824bae-b52b-4bf6-9b03-4466f112bad7", 
             "loop_aware": "0", 
             "from": -2, 
@@ -9,58 +9,6 @@
         }
     ], 
     "nodeDataArray": [
-        {
-            "exitAppFields": [], 
-            "outputPorts": [
-                {
-                    "type": "Unknown", 
-                    "IdText": "True", 
-                    "Id": "d2bb4937-1f5d-4939-940a-d5258c981153", 
-                    "event": false
-                }
-            ], 
-            "color": "#00BDA1", 
-            "text": "Branch", 
-            "isGroup": false, 
-            "height": 200, 
-            "streaming": false, 
-            "canHaveInputs": true, 
-            "subject": null, 
-            "category": "Branch", 
-            "outputAppFields": [], 
-            "selected": false, 
-            "flipPorts": false, 
-            "showPorts": false, 
-            "width": 200, 
-            "inputAppFields": [], 
-            "exitApplicationType": "None", 
-            "inputApplicationType": "None", 
-            "inputApplicationName": "", 
-            "drawOrderHint": 0, 
-            "outputApplicationType": "None", 
-            "description": "A conditional branch to control flow.", 
-            "outputLocalPorts": [], 
-            "collapsed": false, 
-            "canHaveOutputs": true, 
-            "outputApplicationName": "", 
-            "inputLocalPorts": [], 
-            "key": -1, 
-            "isData": false, 
-            "fields": [], 
-            "expanded": false, 
-            "exitApplicationName": "", 
-            "inputPorts": [
-                {
-                    "type": "Unknown", 
-                    "IdText": "james", 
-                    "Id": "c18eee07-e04d-48f7-9906-8ca3d370c352", 
-                    "event": false
-                }
-            ], 
-            "y": 372.0118431650453, 
-            "x": 1382.08877553979, 
-            "categoryType": "Control"
-        }, 
         {
             "exitAppFields": [], 
             "outputPorts": [
@@ -80,9 +28,9 @@
             "subject": null, 
             "category": "PythonApp", 
             "outputAppFields": [], 
-            "selected": true, 
+            "selected": false, 
             "flipPorts": false, 
-            "showPorts": true, 
+            "showPorts": false, 
             "width": 200, 
             "inputAppFields": [], 
             "exitApplicationType": "None", 
@@ -138,6 +86,97 @@
             "y": 339.622752342218, 
             "x": 1123.901451552106, 
             "categoryType": "Application"
+        }, 
+        {
+            "exitAppFields": [], 
+            "outputPorts": [
+                {
+                    "type": "Unknown", 
+                    "IdText": "True", 
+                    "Id": "c76ff3f9-7b49-4c93-bfcd-d9a4c5853001", 
+                    "event": false
+                }, 
+                {
+                    "type": "Unknown", 
+                    "IdText": "False", 
+                    "Id": "69069ddf-ed5b-4e07-8fb4-23f914c90a92", 
+                    "event": false
+                }
+            ], 
+            "color": "#00BDA1", 
+            "text": "Branch", 
+            "isGroup": false, 
+            "height": 200, 
+            "streaming": false, 
+            "canHaveInputs": true, 
+            "subject": null, 
+            "category": "Branch", 
+            "outputAppFields": [], 
+            "selected": true, 
+            "flipPorts": false, 
+            "showPorts": true, 
+            "width": 200, 
+            "inputAppFields": [], 
+            "exitApplicationType": "None", 
+            "inputApplicationType": "None", 
+            "inputApplicationName": "", 
+            "drawOrderHint": 0, 
+            "outputApplicationType": "None", 
+            "description": "A conditional branch to control flow.", 
+            "outputLocalPorts": [], 
+            "collapsed": false, 
+            "canHaveOutputs": true, 
+            "outputApplicationName": "", 
+            "inputLocalPorts": [], 
+            "key": -1, 
+            "isData": false, 
+            "fields": [
+                {
+                    "name": "execution_time", 
+                    "text": "Execution time", 
+                    "value": "5", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": "Estimate of execution time (in seconds) for this application."
+                }, 
+                {
+                    "name": "num_cpus", 
+                    "text": "Num CPUs", 
+                    "value": "1", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "group_start", 
+                    "text": "Group start", 
+                    "value": "0", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "appclass", 
+                    "text": "Appclass", 
+                    "value": "dlg.apps.simple.BranchBaseApp", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": "The python class that implements this branch"
+                }
+            ], 
+            "expanded": false, 
+            "exitApplicationName": "", 
+            "inputPorts": [
+                {
+                    "type": "Unknown", 
+                    "IdText": "james", 
+                    "Id": "88fe5827-753c-4cd5-965f-14a18e2eb730", 
+                    "event": false
+                }
+            ], 
+            "y": 359, 
+            "x": 1393.5, 
+            "categoryType": "Control"
         }
     ], 
     "modelData": {
