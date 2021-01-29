@@ -1,29 +1,29 @@
 {
     "linkDataArray": [
         {
-            "toPort": "0f41f533-816c-4e81-9e52-faf2544ab2ca", 
-            "fromPort": "1b498966-8a1a-41b5-bbc4-00edbd2bddee", 
+            "toPort": "ead5f59a-17ea-484f-b02a-244d337d880a", 
+            "fromPort": "f404ed4b-2f35-43e4-8401-2af463dcfdd1", 
             "loop_aware": "0", 
             "from": -2, 
             "to": -4
         }, 
         {
-            "toPort": "c6370e43-25ca-4f82-8d82-926394d4d71f", 
-            "fromPort": "117e5704-e06f-4628-8959-e99c97ae3c23", 
+            "toPort": "c175d1c5-772e-43f6-9467-14383360aadf", 
+            "fromPort": "f586a389-0fbd-4c79-a374-0b66ca181c52", 
             "loop_aware": "0", 
             "from": -4, 
             "to": -3
         }, 
         {
-            "toPort": "2a5e5478-5c43-405c-9e72-32d0e1bc486c", 
-            "fromPort": "50e0b1f7-601f-4608-886f-31b4940130b3", 
+            "toPort": "bdda1cc6-de39-4fb0-8b87-0f59e3feb57d", 
+            "fromPort": "ecbaafad-bf2a-495a-b05b-cdf4462d59f4", 
             "loop_aware": "0", 
             "from": -6, 
             "to": -7
         }, 
         {
-            "toPort": "9a7ff45c-d802-4cb7-89c3-45edc1a190d1", 
-            "fromPort": "ecfe85f4-5620-48f2-9e11-2865564e6aeb", 
+            "toPort": "d6c187f2-05c0-4efb-b195-2885ca6ec20c", 
+            "fromPort": "b1d7a9b7-9ff3-49da-88cb-42bf266ec72a", 
             "loop_aware": "0", 
             "from": -7, 
             "to": -5
@@ -35,19 +35,20 @@
             "outputPorts": [
                 {
                     "type": "Unknown", 
-                    "IdText": "test", 
-                    "Id": "1b498966-8a1a-41b5-bbc4-00edbd2bddee", 
+                    "IdText": "testport", 
+                    "Id": "f404ed4b-2f35-43e4-8401-2af463dcfdd1", 
                     "event": false
                 }
             ], 
             "color": "#D32000", 
             "text": "MKN", 
             "isGroup": true, 
-            "height": 200, 
+            "height": 210, 
             "streaming": false, 
             "canHaveInputs": false, 
             "subject": null, 
             "category": "MKN", 
+            "inputApplicationKey": -5, 
             "outputAppFields": [
                 {
                     "name": "execution_time", 
@@ -82,10 +83,12 @@
                     "description": "The command line to be executed"
                 }
             ], 
+            "exitApplicationKey": null, 
+            "outputApplicationKey": -2, 
             "selected": true, 
             "flipPorts": false, 
             "showPorts": true, 
-            "width": 233, 
+            "width": 251, 
             "readonly": false, 
             "inputAppFields": [
                 {
@@ -113,17 +116,17 @@
                     "description": ""
                 }, 
                 {
-                    "name": "Arg01", 
-                    "text": "Arg01", 
-                    "value": "", 
+                    "name": "appclass", 
+                    "text": "Appclass", 
+                    "value": "test.graphsRepository", 
                     "readonly": false, 
                     "type": "Unknown", 
-                    "description": "The command line to be executed"
+                    "description": "The python class that implements this application"
                 }
             ], 
             "exitApplicationType": "None", 
-            "inputApplicationType": "BashShellApp", 
-            "inputApplicationName": "Bash Shell App", 
+            "inputApplicationType": "PythonApp", 
+            "inputApplicationName": "Python App", 
             "drawOrderHint": 0, 
             "outputApplicationType": "BashShellApp", 
             "description": "Placeholder 'mkn' description", 
@@ -165,13 +168,13 @@
             "inputPorts": [
                 {
                     "type": "Unknown", 
-                    "IdText": "test", 
-                    "Id": "9a7ff45c-d802-4cb7-89c3-45edc1a190d1", 
+                    "IdText": "testport", 
+                    "Id": "d6c187f2-05c0-4efb-b195-2885ca6ec20c", 
                     "event": false
                 }
             ], 
-            "y": 291, 
-            "x": 426, 
+            "y": 217, 
+            "x": 441, 
             "categoryType": "Group"
         }, 
         {
@@ -185,7 +188,10 @@
             "canHaveInputs": true, 
             "subject": null, 
             "category": "PythonApp", 
+            "inputApplicationKey": null, 
             "outputAppFields": [], 
+            "exitApplicationKey": null, 
+            "outputApplicationKey": null, 
             "selected": false, 
             "flipPorts": false, 
             "showPorts": false, 
@@ -244,13 +250,13 @@
             "inputPorts": [
                 {
                     "type": "Unknown", 
-                    "IdText": "test", 
-                    "Id": "c6370e43-25ca-4f82-8d82-926394d4d71f", 
+                    "IdText": "testport", 
+                    "Id": "c175d1c5-772e-43f6-9467-14383360aadf", 
                     "event": false
                 }
             ], 
-            "y": 457, 
-            "x": 777, 
+            "y": 230, 
+            "x": 816, 
             "categoryType": "Application"
         }, 
         {
@@ -258,20 +264,23 @@
             "outputPorts": [
                 {
                     "type": "Unknown", 
-                    "IdText": "test", 
-                    "Id": "117e5704-e06f-4628-8959-e99c97ae3c23", 
+                    "IdText": "testport", 
+                    "Id": "f586a389-0fbd-4c79-a374-0b66ca181c52", 
                     "event": false
                 }
             ], 
             "color": "#394BB2", 
-            "text": "test", 
+            "text": "testport", 
             "isGroup": false, 
             "height": 200, 
             "streaming": false, 
             "canHaveInputs": true, 
             "subject": null, 
             "category": "Memory", 
+            "inputApplicationKey": null, 
             "outputAppFields": [], 
+            "exitApplicationKey": null, 
+            "outputApplicationKey": null, 
             "selected": false, 
             "flipPorts": false, 
             "showPorts": false, 
@@ -314,13 +323,13 @@
             "inputPorts": [
                 {
                     "type": "Unknown", 
-                    "IdText": "test", 
-                    "Id": "0f41f533-816c-4e81-9e52-faf2544ab2ca", 
+                    "IdText": "testport", 
+                    "Id": "ead5f59a-17ea-484f-b02a-244d337d880a", 
                     "event": false
                 }
             ], 
-            "y": 336.5, 
-            "x": 632, 
+            "y": 210.5, 
+            "x": 656, 
             "categoryType": "Data"
         }, 
         {
@@ -328,8 +337,8 @@
             "outputPorts": [
                 {
                     "type": "Unknown", 
-                    "IdText": "test", 
-                    "Id": "50e0b1f7-601f-4608-886f-31b4940130b3", 
+                    "IdText": "testport", 
+                    "Id": "ecbaafad-bf2a-495a-b05b-cdf4462d59f4", 
                     "event": false
                 }
             ], 
@@ -341,7 +350,10 @@
             "canHaveInputs": true, 
             "subject": null, 
             "category": "PythonApp", 
+            "inputApplicationKey": null, 
             "outputAppFields": [], 
+            "exitApplicationKey": null, 
+            "outputApplicationKey": null, 
             "selected": false, 
             "flipPorts": false, 
             "showPorts": false, 
@@ -398,8 +410,8 @@
             "expanded": false, 
             "exitApplicationName": "", 
             "inputPorts": [], 
-            "y": 66, 
-            "x": 304, 
+            "y": 80, 
+            "x": 307, 
             "categoryType": "Application"
         }, 
         {
@@ -407,20 +419,23 @@
             "outputPorts": [
                 {
                     "type": "Unknown", 
-                    "IdText": "test", 
-                    "Id": "ecfe85f4-5620-48f2-9e11-2865564e6aeb", 
+                    "IdText": "testport", 
+                    "Id": "b1d7a9b7-9ff3-49da-88cb-42bf266ec72a", 
                     "event": false
                 }
             ], 
             "color": "#394BB2", 
-            "text": "test", 
+            "text": "testport", 
             "isGroup": false, 
             "height": 200, 
             "streaming": false, 
             "canHaveInputs": true, 
             "subject": null, 
-            "category": "File", 
+            "category": "Memory", 
+            "inputApplicationKey": null, 
             "outputAppFields": [], 
+            "exitApplicationKey": null, 
+            "outputApplicationKey": null, 
             "selected": false, 
             "flipPorts": false, 
             "showPorts": false, 
@@ -456,30 +471,6 @@
                     "readonly": false, 
                     "type": "Unknown", 
                     "description": ""
-                }, 
-                {
-                    "name": "check_filepath_exists", 
-                    "text": "Check file path exists", 
-                    "value": "1", 
-                    "readonly": false, 
-                    "type": "Unknown", 
-                    "description": ""
-                }, 
-                {
-                    "name": "filepath", 
-                    "text": "File path", 
-                    "value": "", 
-                    "readonly": false, 
-                    "type": "Unknown", 
-                    "description": ""
-                }, 
-                {
-                    "name": "dirname", 
-                    "text": "Directory name", 
-                    "value": "", 
-                    "readonly": false, 
-                    "type": "Unknown", 
-                    "description": ""
                 }
             ], 
             "expanded": false, 
@@ -487,13 +478,13 @@
             "inputPorts": [
                 {
                     "type": "Unknown", 
-                    "IdText": "test", 
-                    "Id": "2a5e5478-5c43-405c-9e72-32d0e1bc486c", 
+                    "IdText": "testport", 
+                    "Id": "bdda1cc6-de39-4fb0-8b87-0f59e3feb57d", 
                     "event": false
                 }
             ], 
-            "y": 300.5, 
-            "x": 268, 
+            "y": 208, 
+            "x": 227.5, 
             "categoryType": "Data"
         }
     ], 
