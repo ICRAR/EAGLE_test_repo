@@ -13,6 +13,20 @@
             "loop_aware": "0", 
             "from": -4, 
             "to": -3
+        }, 
+        {
+            "toPort": "2a5e5478-5c43-405c-9e72-32d0e1bc486c", 
+            "fromPort": "50e0b1f7-601f-4608-886f-31b4940130b3", 
+            "loop_aware": "0", 
+            "from": -6, 
+            "to": -7
+        }, 
+        {
+            "toPort": "9a7ff45c-d802-4cb7-89c3-45edc1a190d1", 
+            "fromPort": "ecfe85f4-5620-48f2-9e11-2865564e6aeb", 
+            "loop_aware": "0", 
+            "from": -7, 
+            "to": -5
         }
     ], 
     "nodeDataArray": [
@@ -71,12 +85,45 @@
             "selected": true, 
             "flipPorts": false, 
             "showPorts": true, 
-            "width": 200, 
+            "width": 233, 
             "readonly": false, 
-            "inputAppFields": [], 
+            "inputAppFields": [
+                {
+                    "name": "execution_time", 
+                    "text": "Execution time", 
+                    "value": "5", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": "Estimate of execution time (in seconds) for this application."
+                }, 
+                {
+                    "name": "num_cpus", 
+                    "text": "Num CPUs", 
+                    "value": "1", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "group_start", 
+                    "text": "Group start", 
+                    "value": "0", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "Arg01", 
+                    "text": "Arg01", 
+                    "value": "", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": "The command line to be executed"
+                }
+            ], 
             "exitApplicationType": "None", 
-            "inputApplicationType": "None", 
-            "inputApplicationName": "", 
+            "inputApplicationType": "BashShellApp", 
+            "inputApplicationName": "Bash Shell App", 
             "drawOrderHint": 0, 
             "outputApplicationType": "BashShellApp", 
             "description": "Placeholder 'mkn' description", 
@@ -115,9 +162,16 @@
             ], 
             "expanded": false, 
             "exitApplicationName": "", 
-            "inputPorts": [], 
-            "y": 303, 
-            "x": 390, 
+            "inputPorts": [
+                {
+                    "type": "Unknown", 
+                    "IdText": "test", 
+                    "Id": "9a7ff45c-d802-4cb7-89c3-45edc1a190d1", 
+                    "event": false
+                }
+            ], 
+            "y": 291, 
+            "x": 426, 
             "categoryType": "Group"
         }, 
         {
@@ -195,8 +249,8 @@
                     "event": false
                 }
             ], 
-            "y": 371, 
-            "x": 806, 
+            "y": 457, 
+            "x": 777, 
             "categoryType": "Application"
         }, 
         {
@@ -265,8 +319,181 @@
                     "event": false
                 }
             ], 
-            "y": 335.5, 
-            "x": 598, 
+            "y": 336.5, 
+            "x": 632, 
+            "categoryType": "Data"
+        }, 
+        {
+            "exitAppFields": [], 
+            "outputPorts": [
+                {
+                    "type": "Unknown", 
+                    "IdText": "test", 
+                    "Id": "50e0b1f7-601f-4608-886f-31b4940130b3", 
+                    "event": false
+                }
+            ], 
+            "color": "#3498DB", 
+            "text": "Python App", 
+            "isGroup": false, 
+            "height": 200, 
+            "streaming": false, 
+            "canHaveInputs": true, 
+            "subject": null, 
+            "category": "PythonApp", 
+            "outputAppFields": [], 
+            "selected": false, 
+            "flipPorts": false, 
+            "showPorts": false, 
+            "width": 200, 
+            "readonly": false, 
+            "inputAppFields": [], 
+            "exitApplicationType": "None", 
+            "inputApplicationType": "None", 
+            "inputApplicationName": "", 
+            "drawOrderHint": 0, 
+            "outputApplicationType": "None", 
+            "description": "An application component in the form of a Python app", 
+            "outputLocalPorts": [], 
+            "collapsed": false, 
+            "canHaveOutputs": true, 
+            "outputApplicationName": "", 
+            "inputLocalPorts": [], 
+            "key": -6, 
+            "isData": false, 
+            "fields": [
+                {
+                    "name": "execution_time", 
+                    "text": "Execution time", 
+                    "value": "5", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": "Estimate of execution time (in seconds) for this application."
+                }, 
+                {
+                    "name": "num_cpus", 
+                    "text": "Num CPUs", 
+                    "value": "1", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "group_start", 
+                    "text": "Group start", 
+                    "value": "0", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "appclass", 
+                    "text": "Appclass", 
+                    "value": "test.graphsRepository", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": "The python class that implements this application"
+                }
+            ], 
+            "expanded": false, 
+            "exitApplicationName": "", 
+            "inputPorts": [], 
+            "y": 66, 
+            "x": 304, 
+            "categoryType": "Application"
+        }, 
+        {
+            "exitAppFields": [], 
+            "outputPorts": [
+                {
+                    "type": "Unknown", 
+                    "IdText": "test", 
+                    "Id": "ecfe85f4-5620-48f2-9e11-2865564e6aeb", 
+                    "event": false
+                }
+            ], 
+            "color": "#394BB2", 
+            "text": "test", 
+            "isGroup": false, 
+            "height": 200, 
+            "streaming": false, 
+            "canHaveInputs": true, 
+            "subject": null, 
+            "category": "File", 
+            "outputAppFields": [], 
+            "selected": false, 
+            "flipPorts": false, 
+            "showPorts": false, 
+            "width": 200, 
+            "readonly": false, 
+            "inputAppFields": [], 
+            "exitApplicationType": "None", 
+            "inputApplicationType": "None", 
+            "inputApplicationName": "", 
+            "drawOrderHint": 0, 
+            "outputApplicationType": "None", 
+            "description": "", 
+            "outputLocalPorts": [], 
+            "collapsed": false, 
+            "canHaveOutputs": true, 
+            "outputApplicationName": "", 
+            "inputLocalPorts": [], 
+            "key": -7, 
+            "isData": true, 
+            "fields": [
+                {
+                    "name": "data_volume", 
+                    "text": "Data volume", 
+                    "value": "5", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "group_end", 
+                    "text": "Group end", 
+                    "value": "0", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "check_filepath_exists", 
+                    "text": "Check file path exists", 
+                    "value": "1", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "filepath", 
+                    "text": "File path", 
+                    "value": "", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "dirname", 
+                    "text": "Directory name", 
+                    "value": "", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }
+            ], 
+            "expanded": false, 
+            "exitApplicationName": "", 
+            "inputPorts": [
+                {
+                    "type": "Unknown", 
+                    "IdText": "test", 
+                    "Id": "2a5e5478-5c43-405c-9e72-32d0e1bc486c", 
+                    "event": false
+                }
+            ], 
+            "y": 300.5, 
+            "x": 268, 
             "categoryType": "Data"
         }
     ], 
