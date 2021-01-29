@@ -62,6 +62,13 @@
             "loop_aware": "0", 
             "from": -12, 
             "to": -9
+        }, 
+        {
+            "toPort": "5b9f401d-2eee-4db7-b4df-eb21d51d3233", 
+            "fromPort": "e271fa88-b6ca-40cb-8a6b-c90662b226a3", 
+            "loop_aware": "0", 
+            "from": -13, 
+            "to": -9
         }
     ], 
     "nodeDataArray": [
@@ -719,9 +726,9 @@
             "subject": null, 
             "category": "Branch", 
             "outputAppFields": [], 
-            "selected": true, 
+            "selected": false, 
             "flipPorts": false, 
-            "showPorts": true, 
+            "showPorts": false, 
             "width": 200, 
             "readonly": false, 
             "inputAppFields": [], 
@@ -791,6 +798,12 @@
                     "type": "Unknown", 
                     "IdText": "james3", 
                     "Id": "99b79895-305a-4f1e-b702-628068a6f370", 
+                    "event": false
+                }, 
+                {
+                    "type": "Unknown", 
+                    "IdText": "james4", 
+                    "Id": "5b9f401d-2eee-4db7-b4df-eb21d51d3233", 
                     "event": false
                 }
             ], 
@@ -1032,6 +1045,85 @@
             "exitApplicationName": "", 
             "inputPorts": [], 
             "y": 449, 
+            "x": 328, 
+            "categoryType": "Application"
+        }, 
+        {
+            "exitAppFields": [], 
+            "outputPorts": [
+                {
+                    "type": "Unknown", 
+                    "IdText": "james4", 
+                    "Id": "e271fa88-b6ca-40cb-8a6b-c90662b226a3", 
+                    "event": false
+                }
+            ], 
+            "color": "#3498DB", 
+            "text": "Python App", 
+            "isGroup": false, 
+            "height": 200, 
+            "streaming": false, 
+            "canHaveInputs": true, 
+            "subject": null, 
+            "category": "PythonApp", 
+            "outputAppFields": [], 
+            "selected": true, 
+            "flipPorts": false, 
+            "showPorts": true, 
+            "width": 200, 
+            "readonly": false, 
+            "inputAppFields": [], 
+            "exitApplicationType": "None", 
+            "inputApplicationType": "None", 
+            "inputApplicationName": "", 
+            "drawOrderHint": 0, 
+            "outputApplicationType": "None", 
+            "description": "An application component in the form of a Python app", 
+            "outputLocalPorts": [], 
+            "collapsed": false, 
+            "canHaveOutputs": true, 
+            "outputApplicationName": "", 
+            "inputLocalPorts": [], 
+            "key": -13, 
+            "isData": false, 
+            "fields": [
+                {
+                    "name": "execution_time", 
+                    "text": "Execution time", 
+                    "value": "5", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": "Estimate of execution time (in seconds) for this application."
+                }, 
+                {
+                    "name": "num_cpus", 
+                    "text": "Num CPUs", 
+                    "value": "1", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "group_start", 
+                    "text": "Group start", 
+                    "value": "0", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": ""
+                }, 
+                {
+                    "name": "appclass", 
+                    "text": "Appclass", 
+                    "value": "test.graphsRepository", 
+                    "readonly": false, 
+                    "type": "Unknown", 
+                    "description": "The python class that implements this application"
+                }
+            ], 
+            "expanded": false, 
+            "exitApplicationName": "", 
+            "inputPorts": [], 
+            "y": 527, 
             "x": 328, 
             "categoryType": "Application"
         }
