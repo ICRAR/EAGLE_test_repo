@@ -39,16 +39,16 @@
             "readonly": false,
             "inputPorts": [
                 {
-                    "Id": "70421bfa-9f40-401f-b32e-0e7e10521b06",
-                    "IdText": "L",
+                    "Id": "97723fdc-cf42-418c-bb37-f073ef3b1cf3",
+                    "IdText": "Cube",
                     "event": false,
                     "type": "Unknown"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "a9bfb163-966a-48f6-807f-c0b7c16a788f",
-                    "IdText": "L",
+                    "Id": "6cafabdf-fd8d-4488-a09f-f13441041d5a",
+                    "IdText": "Cube",
                     "event": false,
                     "type": "Unknown"
                 }
@@ -181,8 +181,8 @@
             "key": -3,
             "text": "Config File",
             "description": "",
-            "x": 808,
-            "y": 125,
+            "x": 853,
+            "y": 139,
             "width": 200,
             "height": 200,
             "collapsed": false,
@@ -196,12 +196,6 @@
             "inputPorts": [],
             "outputPorts": [
                 {
-                    "Id": "c08b49ed-392c-4f5c-ac59-303085e92942",
-                    "IdText": "R",
-                    "event": false,
-                    "type": "Unknown"
-                },
-                {
                     "Id": "6e5425db-abe2-429d-9fb4-e0f917b4e740",
                     "IdText": "T",
                     "event": false,
@@ -210,6 +204,12 @@
                 {
                     "Id": "d9e935ec-7d42-4108-b59e-b0d0d670e012",
                     "IdText": "B",
+                    "event": false,
+                    "type": "Unknown"
+                },
+                {
+                    "Id": "707d430a-7abb-4a44-b096-7d7b63d3160a",
+                    "IdText": "Config",
                     "event": false,
                     "type": "Unknown"
                 }
@@ -288,17 +288,17 @@
             "width": 200,
             "height": 200,
             "collapsed": false,
-            "showPorts": false,
+            "showPorts": true,
             "flipPorts": false,
             "streaming": false,
             "subject": null,
-            "selected": false,
+            "selected": true,
             "expanded": false,
             "readonly": false,
             "inputPorts": [
                 {
-                    "Id": "e89f9adc-05c9-4809-a654-a39bef427cbc",
-                    "IdText": "channel",
+                    "Id": "ab97395a-043d-41e8-9664-3d2415b7866d",
+                    "IdText": "Cube",
                     "event": false,
                     "type": "Unknown"
                 }
@@ -362,109 +362,6 @@
             "exitApplicationKey": null
         },
         {
-            "category": "DynlibApp",
-            "categoryType": "Application",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
-            "color": "#3470AA",
-            "drawOrderHint": 0,
-            "key": -5,
-            "text": "InitSpectralCube.",
-            "description": "Implements a test method that uses the contents of the the parset to load in a measurement set and print a summary of its contents",
-            "x": 557,
-            "y": 171,
-            "width": 200,
-            "height": 200,
-            "collapsed": false,
-            "showPorts": false,
-            "flipPorts": true,
-            "streaming": false,
-            "subject": null,
-            "selected": false,
-            "expanded": false,
-            "readonly": true,
-            "inputPorts": [
-                {
-                    "Id": "acce2044-c856-4f62-8a51-76034be60106",
-                    "IdText": "R",
-                    "event": false,
-                    "type": "Unknown"
-                },
-                {
-                    "Id": "7ca0dbad-5b15-490e-b178-417c09b5184f",
-                    "IdText": "T",
-                    "event": false,
-                    "type": "Unknown"
-                }
-            ],
-            "outputPorts": [
-                {
-                    "Id": "22f9e709-bf63-41c9-8a7a-2e675d93aa1d",
-                    "IdText": "L",
-                    "event": false,
-                    "type": "Unknown"
-                }
-            ],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "fields": [
-                {
-                    "text": "LibraryPath",
-                    "name": "libpath",
-                    "value": "%JACAL_SO%",
-                    "description": "The path to the JACAL library",
-                    "readonly": true,
-                    "type": "String"
-                },
-                {
-                    "text": "Arg01",
-                    "name": "Arg01",
-                    "value": "name=InitSpectralCube",
-                    "description": "",
-                    "readonly": true,
-                    "type": "String"
-                },
-                {
-                    "text": "Execution time",
-                    "name": "execution_time",
-                    "value": 5,
-                    "description": "Estimated execution time",
-                    "readonly": false,
-                    "type": "Float"
-                },
-                {
-                    "text": "Num CPUs",
-                    "name": "num_cpus",
-                    "value": 1,
-                    "description": "Number of cores used",
-                    "readonly": false,
-                    "type": "Integer"
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
-                    "value": 0,
-                    "description": "Component is start of a group",
-                    "readonly": false,
-                    "type": "Boolean"
-                }
-            ],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "exitAppFields": [],
-            "inputApplicationName": "",
-            "inputApplicationType": "None",
-            "inputApplicationKey": null,
-            "outputApplicationName": "",
-            "outputApplicationType": "None",
-            "outputApplicationKey": null,
-            "exitApplicationName": "",
-            "exitApplicationType": "None",
-            "exitApplicationKey": null
-        },
-        {
             "category": "Loop",
             "categoryType": "Group",
             "isData": false,
@@ -481,11 +378,11 @@
             "width": 708,
             "height": 466,
             "collapsed": false,
-            "showPorts": true,
+            "showPorts": false,
             "flipPorts": false,
             "streaming": false,
             "subject": null,
-            "selected": true,
+            "selected": false,
             "expanded": true,
             "readonly": false,
             "group": -2,
@@ -501,220 +398,6 @@
                     "description": "",
                     "readonly": false,
                     "type": "Unknown"
-                }
-            ],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "exitAppFields": [],
-            "inputApplicationName": "",
-            "inputApplicationType": "None",
-            "inputApplicationKey": null,
-            "outputApplicationName": "",
-            "outputApplicationType": "None",
-            "outputApplicationKey": null,
-            "exitApplicationName": "",
-            "exitApplicationType": "None",
-            "exitApplicationKey": null
-        },
-        {
-            "category": "DynlibApp",
-            "categoryType": "Application",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
-            "color": "#3470AA",
-            "drawOrderHint": 0,
-            "key": -7,
-            "text": "MajorCycle.",
-            "description": "Loads a visibility set grids it onto the UV plane and FFTs the grid",
-            "x": 558,
-            "y": 575,
-            "width": 200,
-            "height": 200,
-            "collapsed": false,
-            "showPorts": false,
-            "flipPorts": false,
-            "streaming": false,
-            "subject": null,
-            "selected": false,
-            "expanded": false,
-            "readonly": true,
-            "group": -6,
-            "inputPorts": [
-                {
-                    "Id": "c4fede21-2ddc-4bb5-9291-966b879db2c5",
-                    "IdText": "T",
-                    "event": false,
-                    "type": "Unknown"
-                },
-                {
-                    "Id": "ee3a8974-d0d7-4e0c-8c2b-ca31c40733ae",
-                    "IdText": "L",
-                    "event": false,
-                    "type": "Unknown"
-                },
-                {
-                    "Id": "364cfc99-311a-4e18-bee6-0616eb88f06f",
-                    "IdText": "B",
-                    "event": false,
-                    "type": "Unknown"
-                }
-            ],
-            "outputPorts": [
-                {
-                    "Id": "f8712dc7-a1d0-4660-91ba-1c89a5c69173",
-                    "IdText": "R",
-                    "event": false,
-                    "type": "Unknown"
-                }
-            ],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "fields": [
-                {
-                    "text": "LibraryPath",
-                    "name": "libpath",
-                    "value": "%JACAL_SO%",
-                    "description": "The path to the JACAL library",
-                    "readonly": true,
-                    "type": "String"
-                },
-                {
-                    "text": "Arg01",
-                    "name": "Arg01",
-                    "value": "name=MajorCycle",
-                    "description": "",
-                    "readonly": true,
-                    "type": "String"
-                },
-                {
-                    "text": "Execution time",
-                    "name": "execution_time",
-                    "value": 5,
-                    "description": "Estimated execution time",
-                    "readonly": false,
-                    "type": "Float"
-                },
-                {
-                    "text": "Num CPUs",
-                    "name": "num_cpus",
-                    "value": 1,
-                    "description": "Number of cores used",
-                    "readonly": false,
-                    "type": "Integer"
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
-                    "value": 0,
-                    "description": "Component is start of a group",
-                    "readonly": false,
-                    "type": "Boolean"
-                }
-            ],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "exitAppFields": [],
-            "inputApplicationName": "",
-            "inputApplicationType": "None",
-            "inputApplicationKey": null,
-            "outputApplicationName": "",
-            "outputApplicationType": "None",
-            "outputApplicationKey": null,
-            "exitApplicationName": "",
-            "exitApplicationType": "None",
-            "exitApplicationKey": null
-        },
-        {
-            "category": "DynlibApp",
-            "categoryType": "Application",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
-            "color": "#3470AA",
-            "drawOrderHint": 0,
-            "key": -8,
-            "text": "SolveNE.",
-            "description": "IMplements an ASKAPSoft solver. This essentially takes a NormalEquation and generates a set of params usually via a minor cycle deconvolution.",
-            "x": 995,
-            "y": 573,
-            "width": 200,
-            "height": 200,
-            "collapsed": false,
-            "showPorts": false,
-            "flipPorts": false,
-            "streaming": false,
-            "subject": null,
-            "selected": false,
-            "expanded": false,
-            "readonly": true,
-            "group": -6,
-            "inputPorts": [
-                {
-                    "Id": "ddf93c91-d53c-4952-b614-0ccea3c6ea85",
-                    "IdText": "L",
-                    "event": false,
-                    "type": "Unknown"
-                },
-                {
-                    "Id": "39dbb592-029a-4da5-bc70-bf3d45342e1d",
-                    "IdText": "T",
-                    "event": false,
-                    "type": "Unknown"
-                }
-            ],
-            "outputPorts": [
-                {
-                    "Id": "75f7c791-81e0-4e0d-9f41-603b6f0a7644",
-                    "IdText": "R",
-                    "event": false,
-                    "type": "Unknown"
-                }
-            ],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "fields": [
-                {
-                    "text": "LibraryPath",
-                    "name": "libpath",
-                    "value": "%JACAL_SO%",
-                    "description": "The path to the JACAL library",
-                    "readonly": true,
-                    "type": "String"
-                },
-                {
-                    "text": "Arg01",
-                    "name": "Arg01",
-                    "value": "name=SolveNE",
-                    "description": "",
-                    "readonly": true,
-                    "type": "String"
-                },
-                {
-                    "text": "Execution time",
-                    "name": "execution_time",
-                    "value": 5,
-                    "description": "Estimated execution time",
-                    "readonly": false,
-                    "type": "Float"
-                },
-                {
-                    "text": "Num CPUs",
-                    "name": "num_cpus",
-                    "value": 1,
-                    "description": "Number of cores used",
-                    "readonly": false,
-                    "type": "Integer"
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
-                    "value": 0,
-                    "description": "Component is start of a group",
-                    "readonly": false,
-                    "type": "Boolean"
                 }
             ],
             "inputAppFields": [],
@@ -757,16 +440,16 @@
             "group": -6,
             "inputPorts": [
                 {
-                    "Id": "98db9ac3-2539-47c0-a38f-2a25cd65470f",
-                    "IdText": "R",
+                    "Id": "6c02da79-4de0-4a8d-80ac-f14a4e93ee2e",
+                    "IdText": "Normal",
                     "event": false,
                     "type": "Unknown"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "b43e894d-a252-4d5e-906d-08a6eb6a5b15",
-                    "IdText": "L",
+                    "Id": "bd6bcd66-f6e0-4971-aa6c-cefac5a45636",
+                    "IdText": "Normal",
                     "event": false,
                     "type": "Unknown"
                 }
@@ -831,22 +514,164 @@
             "group": -6,
             "inputPorts": [
                 {
-                    "Id": "11eb4bc8-0f75-4f05-83cc-db6abf69dc8b",
-                    "IdText": "R",
+                    "Id": "8f973ca6-af39-4c11-a661-d11839bdaba2",
+                    "IdText": "Model",
                     "event": false,
                     "type": "Unknown"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "38e115c8-c473-4f40-8c6c-8ed6ecc27047",
-                    "IdText": "B",
+                    "Id": "011b8ade-f716-442d-8c1e-ceac2830a4e9",
+                    "IdText": "Model",
                     "event": false,
+                    "type": "Unknown"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "5",
+                    "description": "",
+                    "readonly": false,
                     "type": "Unknown"
                 },
                 {
-                    "Id": "c2976791-a363-49f5-a4ab-c661791f0e5d",
-                    "IdText": "L",
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "0",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
+                }
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "exitAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputApplicationKey": null,
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "exitApplicationName": "",
+            "exitApplicationType": "None",
+            "exitApplicationKey": null
+        },
+        {
+            "category": "Memory",
+            "categoryType": "Data",
+            "isData": true,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "color": "#394BB2",
+            "drawOrderHint": 0,
+            "key": -14,
+            "text": "Normal Equation",
+            "description": "",
+            "x": 1241,
+            "y": 793,
+            "width": 200,
+            "height": 200,
+            "collapsed": false,
+            "showPorts": false,
+            "flipPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "readonly": false,
+            "group": -2,
+            "inputPorts": [
+                {
+                    "Id": "a9a6bc76-3c79-4909-9666-bef92b377691",
+                    "IdText": "Normal",
+                    "event": false,
+                    "type": "Unknown"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "35dded8c-9fc6-4b9d-93db-f073f5ccb8bf",
+                    "IdText": "Normal",
+                    "event": false,
+                    "type": "Unknown"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "5",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "0",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
+                }
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "exitAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputApplicationKey": null,
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "exitApplicationName": "",
+            "exitApplicationType": "None",
+            "exitApplicationKey": null
+        },
+        {
+            "category": "Memory",
+            "categoryType": "Data",
+            "isData": true,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "color": "#394BB2",
+            "drawOrderHint": 0,
+            "key": -15,
+            "text": "Restored Model",
+            "description": "",
+            "x": 1509,
+            "y": 644,
+            "width": 200,
+            "height": 200,
+            "collapsed": false,
+            "showPorts": false,
+            "flipPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "readonly": false,
+            "group": -2,
+            "inputPorts": [
+                {
+                    "Id": "80af6a48-b141-46c5-8a3c-9b103ab49c22",
+                    "IdText": "Model",
+                    "event": false,
+                    "type": "Unknown"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "cd1cea94-de92-4f96-8f82-26cab8e19f94",
+                    "IdText": "Model",
                     "event": false,
                     "type": "Unknown"
                 }
@@ -893,11 +718,108 @@
             "canHaveOutputs": true,
             "color": "#3470AA",
             "drawOrderHint": 0,
-            "key": -11,
-            "text": "FinalMajorCycle.",
+            "key": -16,
+            "text": "InitSpectralCube.",
+            "description": "Implements a test method that uses the contents of the the parset to load in a measurement set and print a summary of its contents",
+            "x": 559,
+            "y": 185.5,
+            "width": 200,
+            "height": 200,
+            "collapsed": false,
+            "showPorts": false,
+            "flipPorts": true,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "readonly": true,
+            "inputPorts": [
+                {
+                    "Id": "01591c4c-2a11-451d-aeb0-46a2d1a7a32c",
+                    "IdText": "Config",
+                    "event": false,
+                    "type": "Unknown"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "ded83b17-daf1-4fbd-9aa2-b59d2077c26a",
+                    "IdText": "Cube",
+                    "event": false,
+                    "type": "Unknown"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "LibraryPath",
+                    "name": "libpath",
+                    "value": "%JACAL_SO%",
+                    "description": "The path to the JACAL library",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": "name=InitSpectralCube",
+                    "description": "",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": 0,
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean"
+                }
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "exitAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputApplicationKey": null,
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "exitApplicationName": "",
+            "exitApplicationType": "None",
+            "exitApplicationKey": null
+        },
+        {
+            "category": "DynlibApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "color": "#3470AA",
+            "drawOrderHint": 0,
+            "key": -5,
+            "text": "MajorCycle.",
             "description": "Loads a visibility set grids it onto the UV plane and FFTs the grid",
-            "x": 1282,
-            "y": 462,
+            "x": 572,
+            "y": 543.5,
             "width": 200,
             "height": 200,
             "collapsed": false,
@@ -908,31 +830,31 @@
             "selected": false,
             "expanded": false,
             "readonly": true,
-            "group": -2,
+            "group": -6,
             "inputPorts": [
                 {
-                    "Id": "c4fede21-2ddc-4bb5-9291-966b879db2c5",
-                    "IdText": "T",
+                    "Id": "f17fb547-1c15-4146-a169-6f9174124eaa",
+                    "IdText": "Config",
                     "event": false,
                     "type": "Unknown"
                 },
                 {
-                    "Id": "ee3a8974-d0d7-4e0c-8c2b-ca31c40733ae",
-                    "IdText": "L",
+                    "Id": "01a8ab35-5d14-4d92-adb8-85990b7c1e15",
+                    "IdText": "Model",
                     "event": false,
                     "type": "Unknown"
                 },
                 {
-                    "Id": "364cfc99-311a-4e18-bee6-0616eb88f06f",
-                    "IdText": "B",
+                    "Id": "68dcc47a-338d-4f7a-b1a1-60b0ceea3fc7",
+                    "IdText": "Cube",
                     "event": false,
                     "type": "Unknown"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "f8712dc7-a1d0-4660-91ba-1c89a5c69173",
-                    "IdText": "R",
+                    "Id": "75c35944-4e23-401b-9ea8-9bb15de551d2",
+                    "IdText": "Normal",
                     "event": false,
                     "type": "Unknown"
                 }
@@ -1003,11 +925,11 @@
             "canHaveOutputs": true,
             "color": "#3470AA",
             "drawOrderHint": 0,
-            "key": -12,
-            "text": "SpectralCube.",
-            "description": "Implements a test method that uses the contents of the the parset to load in a measurement set and print a summary of its contents.",
-            "x": 1552,
-            "y": 462,
+            "key": -7,
+            "text": "SolveNE.",
+            "description": "IMplements an ASKAPSoft solver. This essentially takes a NormalEquation and generates a set of params usually via a minor cycle deconvolution.",
+            "x": 985,
+            "y": 563.5,
             "width": 200,
             "height": 200,
             "collapsed": false,
@@ -1018,25 +940,25 @@
             "selected": false,
             "expanded": false,
             "readonly": true,
-            "group": -2,
+            "group": -6,
             "inputPorts": [
                 {
-                    "Id": "18977404-558d-479a-9fe2-47c314f5d3aa",
-                    "IdText": "T",
+                    "Id": "07ba7356-60ab-46cc-8c73-b73fb0f52ca4",
+                    "IdText": "Config",
                     "event": false,
                     "type": "Unknown"
                 },
                 {
-                    "Id": "987823b7-feba-48a7-a255-c670be97d98a",
-                    "IdText": "B",
+                    "Id": "9adfeacc-4238-42a1-97e2-52e416a08af6",
+                    "IdText": "Normal",
                     "event": false,
                     "type": "Unknown"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "7de5549e-848d-4457-89a0-01c95ef27d0b",
-                    "IdText": "channel",
+                    "Id": "4ff301bb-6064-4100-9bda-8fa3c28f5584",
+                    "IdText": "Model",
                     "event": false,
                     "type": "Unknown"
                 }
@@ -1055,7 +977,7 @@
                 {
                     "text": "Arg01",
                     "name": "Arg01",
-                    "value": "name=SpectralCube",
+                    "value": "name=SolveNE",
                     "description": "",
                     "readonly": true,
                     "type": "String"
@@ -1107,11 +1029,11 @@
             "canHaveOutputs": true,
             "color": "#3470AA",
             "drawOrderHint": 0,
-            "key": -13,
-            "text": "RestoreSolver.",
-            "description": "Implements an ASKAPSoft Restore solver. This essentially takes a NormalEquation and a set of \"params\" and creates a restored image.",
-            "x": 1506,
-            "y": 745,
+            "key": -8,
+            "text": "FinalMajorCycle.",
+            "description": "Loads a visibility set grids it onto the UV plane and FFTs the grid",
+            "x": 1297,
+            "y": 499.5,
             "width": 200,
             "height": 200,
             "collapsed": false,
@@ -1125,28 +1047,138 @@
             "group": -2,
             "inputPorts": [
                 {
-                    "Id": "6f9318f6-18e6-4fd2-924b-af2594e7b046",
-                    "IdText": "L",
+                    "Id": "f17fb547-1c15-4146-a169-6f9174124eaa",
+                    "IdText": "Config",
                     "event": false,
                     "type": "Unknown"
                 },
                 {
-                    "Id": "2b6e2846-c3ee-4f97-a2b3-a6da84c1dc25",
-                    "IdText": "T",
+                    "Id": "01a8ab35-5d14-4d92-adb8-85990b7c1e15",
+                    "IdText": "Model",
                     "event": false,
                     "type": "Unknown"
                 },
                 {
-                    "Id": "71eb982c-32e7-485c-97f0-50d597e7a8a6",
-                    "IdText": "B",
+                    "Id": "68dcc47a-338d-4f7a-b1a1-60b0ceea3fc7",
+                    "IdText": "Cube",
                     "event": false,
                     "type": "Unknown"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "e95fddfd-73d6-4f9d-a43c-4ab440eaccc0",
-                    "IdText": "R",
+                    "Id": "75c35944-4e23-401b-9ea8-9bb15de551d2",
+                    "IdText": "Normal",
+                    "event": false,
+                    "type": "Unknown"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "LibraryPath",
+                    "name": "libpath",
+                    "value": "%JACAL_SO%",
+                    "description": "The path to the JACAL library",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": "name=MajorCycle",
+                    "description": "",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": 0,
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean"
+                }
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "exitAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputApplicationKey": null,
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "exitApplicationName": "",
+            "exitApplicationType": "None",
+            "exitApplicationKey": null
+        },
+        {
+            "category": "DynlibApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "color": "#3470AA",
+            "drawOrderHint": 0,
+            "key": -11,
+            "text": "RestoreSolver.",
+            "description": "Implements an ASKAPSoft Restore solver. This essentially takes a NormalEquation and a set of \"params\" and creates a restored image.",
+            "x": 1512,
+            "y": 747.5,
+            "width": 200,
+            "height": 200,
+            "collapsed": false,
+            "showPorts": false,
+            "flipPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "readonly": true,
+            "group": -2,
+            "inputPorts": [
+                {
+                    "Id": "8c3b66e4-40f3-4bc0-827d-43f7ed024ead",
+                    "IdText": "Config",
+                    "event": false,
+                    "type": "Unknown"
+                },
+                {
+                    "Id": "a520048a-0cd7-4168-b277-a1a4de5c5b08",
+                    "IdText": "Model",
+                    "event": false,
+                    "type": "Unknown"
+                },
+                {
+                    "Id": "3b78c16b-9b81-4983-b81f-0d55e55ffcbe",
+                    "IdText": "Normal",
+                    "event": false,
+                    "type": "Unknown"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "125f8fb6-5ca6-473e-b224-66dd598c0c0f",
+                    "IdText": "Model",
                     "event": false,
                     "type": "Unknown"
                 }
@@ -1209,19 +1241,19 @@
             "exitApplicationKey": null
         },
         {
-            "category": "Memory",
-            "categoryType": "Data",
-            "isData": true,
+            "category": "DynlibApp",
+            "categoryType": "Application",
+            "isData": false,
             "isGroup": false,
             "canHaveInputs": true,
             "canHaveOutputs": true,
-            "color": "#394BB2",
+            "color": "#3470AA",
             "drawOrderHint": 0,
-            "key": -14,
-            "text": "Normal Equation",
-            "description": "",
-            "x": 1241,
-            "y": 793,
+            "key": -12,
+            "text": "SpectralCube.",
+            "description": "Implements a test method that uses the contents of the the parset to load in a measurement set and print a summary of its contents.",
+            "x": 1525,
+            "y": 448.5,
             "width": 200,
             "height": 200,
             "collapsed": false,
@@ -1231,20 +1263,26 @@
             "subject": null,
             "selected": false,
             "expanded": false,
-            "readonly": false,
+            "readonly": true,
             "group": -2,
             "inputPorts": [
                 {
-                    "Id": "068b892e-ff25-4ccd-9ab4-abe34a2048e5",
-                    "IdText": "R",
+                    "Id": "a684c0b4-b28e-4ddd-bd30-2d821b195c6b",
+                    "IdText": "Config",
+                    "event": false,
+                    "type": "Unknown"
+                },
+                {
+                    "Id": "5b3c1ab1-f503-4282-8aab-48697ad8570e",
+                    "IdText": "Model",
                     "event": false,
                     "type": "Unknown"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "227ce061-04b7-4694-97a7-596ceeff43e4",
-                    "IdText": "T",
+                    "Id": "e7d95d7d-9aa5-4a5e-b010-6362ba336c95",
+                    "IdText": "Cube",
                     "event": false,
                     "type": "Unknown"
                 }
@@ -1253,94 +1291,44 @@
             "outputLocalPorts": [],
             "fields": [
                 {
-                    "text": "Data volume",
-                    "name": "data_volume",
-                    "value": "5",
-                    "description": "",
-                    "readonly": false,
-                    "type": "Unknown"
+                    "text": "LibraryPath",
+                    "name": "libpath",
+                    "value": "%JACAL_SO%",
+                    "description": "The path to the JACAL library",
+                    "readonly": true,
+                    "type": "String"
                 },
                 {
-                    "text": "Group end",
-                    "name": "group_end",
-                    "value": "0",
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": "name=SpectralCube",
                     "description": "",
-                    "readonly": false,
-                    "type": "Unknown"
-                }
-            ],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "exitAppFields": [],
-            "inputApplicationName": "",
-            "inputApplicationType": "None",
-            "inputApplicationKey": null,
-            "outputApplicationName": "",
-            "outputApplicationType": "None",
-            "outputApplicationKey": null,
-            "exitApplicationName": "",
-            "exitApplicationType": "None",
-            "exitApplicationKey": null
-        },
-        {
-            "category": "Memory",
-            "categoryType": "Data",
-            "isData": true,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
-            "color": "#394BB2",
-            "drawOrderHint": 0,
-            "key": -15,
-            "text": "Restored Model",
-            "description": "",
-            "x": 1509,
-            "y": 644,
-            "width": 200,
-            "height": 200,
-            "collapsed": false,
-            "showPorts": false,
-            "flipPorts": false,
-            "streaming": false,
-            "subject": null,
-            "selected": false,
-            "expanded": false,
-            "readonly": false,
-            "group": -2,
-            "inputPorts": [
-                {
-                    "Id": "e9cbbe81-777e-4741-b8e6-4948f8df1019",
-                    "IdText": "R",
-                    "event": false,
-                    "type": "Unknown"
-                }
-            ],
-            "outputPorts": [
-                {
-                    "Id": "b2c66ade-09bf-4385-b37d-a62647b18105",
-                    "IdText": "B",
-                    "event": false,
-                    "type": "Unknown"
-                }
-            ],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "fields": [
-                {
-                    "text": "Data volume",
-                    "name": "data_volume",
-                    "value": "5",
-                    "description": "",
-                    "readonly": false,
-                    "type": "Unknown"
+                    "readonly": true,
+                    "type": "String"
                 },
                 {
-                    "text": "Group end",
-                    "name": "group_end",
-                    "value": "0",
-                    "description": "",
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "description": "Estimated execution time",
                     "readonly": false,
-                    "type": "Unknown"
+                    "type": "Float"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": 0,
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean"
                 }
             ],
             "inputAppFields": [],
@@ -1359,136 +1347,136 @@
     ],
     "linkDataArray": [
         {
-            "from": -5,
-            "fromPort": "22f9e709-bf63-41c9-8a7a-2e675d93aa1d",
+            "from": -3,
+            "fromPort": "707d430a-7abb-4a44-b096-7d7b63d3160a",
+            "to": -16,
+            "toPort": "01591c4c-2a11-451d-aeb0-46a2d1a7a32c",
+            "loop_aware": "0"
+        },
+        {
+            "from": -16,
+            "fromPort": "ded83b17-daf1-4fbd-9aa2-b59d2077c26a",
             "to": -1,
-            "toPort": "70421bfa-9f40-401f-b32e-0e7e10521b06",
+            "toPort": "97723fdc-cf42-418c-bb37-f073ef3b1cf3",
             "loop_aware": "0"
         },
         {
             "from": -3,
-            "fromPort": "c08b49ed-392c-4f5c-ac59-303085e92942",
+            "fromPort": "707d430a-7abb-4a44-b096-7d7b63d3160a",
             "to": -5,
-            "toPort": "acce2044-c856-4f62-8a51-76034be60106",
+            "toPort": "f17fb547-1c15-4146-a169-6f9174124eaa",
             "loop_aware": "0"
         },
         {
             "from": -1,
-            "fromPort": "a9bfb163-966a-48f6-807f-c0b7c16a788f",
-            "to": -7,
-            "toPort": "ee3a8974-d0d7-4e0c-8c2b-ca31c40733ae",
+            "fromPort": "6cafabdf-fd8d-4488-a09f-f13441041d5a",
+            "to": -5,
+            "toPort": "68dcc47a-338d-4f7a-b1a1-60b0ceea3fc7",
             "loop_aware": "0"
         },
         {
-            "from": -3,
-            "fromPort": "6e5425db-abe2-429d-9fb4-e0f917b4e740",
-            "to": -7,
-            "toPort": "c4fede21-2ddc-4bb5-9291-966b879db2c5",
-            "loop_aware": "0"
-        },
-        {
-            "from": -7,
-            "fromPort": "f8712dc7-a1d0-4660-91ba-1c89a5c69173",
+            "from": -5,
+            "fromPort": "75c35944-4e23-401b-9ea8-9bb15de551d2",
             "to": -9,
-            "toPort": "98db9ac3-2539-47c0-a38f-2a25cd65470f",
-            "loop_aware": "0"
-        },
-        {
-            "from": -8,
-            "fromPort": "75f7c791-81e0-4e0d-9f41-603b6f0a7644",
-            "to": -10,
-            "toPort": "11eb4bc8-0f75-4f05-83cc-db6abf69dc8b",
+            "toPort": "6c02da79-4de0-4a8d-80ac-f14a4e93ee2e",
             "loop_aware": "0"
         },
         {
             "from": -10,
-            "fromPort": "38e115c8-c473-4f40-8c6c-8ed6ecc27047",
-            "to": -7,
-            "toPort": "364cfc99-311a-4e18-bee6-0616eb88f06f",
-            "loop_aware": "0"
-        },
-        {
-            "from": -3,
-            "fromPort": "6e5425db-abe2-429d-9fb4-e0f917b4e740",
-            "to": -8,
-            "toPort": "39dbb592-029a-4da5-bc70-bf3d45342e1d",
-            "loop_aware": "0"
-        },
-        {
-            "from": -3,
-            "fromPort": "6e5425db-abe2-429d-9fb4-e0f917b4e740",
-            "to": -11,
-            "toPort": "c4fede21-2ddc-4bb5-9291-966b879db2c5",
-            "loop_aware": "0"
-        },
-        {
-            "from": -10,
-            "fromPort": "c2976791-a363-49f5-a4ab-c661791f0e5d",
-            "to": -11,
-            "toPort": "ee3a8974-d0d7-4e0c-8c2b-ca31c40733ae",
-            "loop_aware": "0"
-        },
-        {
-            "from": -11,
-            "fromPort": "f8712dc7-a1d0-4660-91ba-1c89a5c69173",
-            "to": -14,
-            "toPort": "068b892e-ff25-4ccd-9ab4-abe34a2048e5",
-            "loop_aware": "0"
-        },
-        {
-            "from": -3,
-            "fromPort": "d9e935ec-7d42-4108-b59e-b0d0d670e012",
-            "to": -13,
-            "toPort": "71eb982c-32e7-485c-97f0-50d597e7a8a6",
-            "loop_aware": "0"
-        },
-        {
-            "from": -14,
-            "fromPort": "227ce061-04b7-4694-97a7-596ceeff43e4",
-            "to": -13,
-            "toPort": "2b6e2846-c3ee-4f97-a2b3-a6da84c1dc25",
-            "loop_aware": "0"
-        },
-        {
-            "from": -10,
-            "fromPort": "c2976791-a363-49f5-a4ab-c661791f0e5d",
-            "to": -13,
-            "toPort": "6f9318f6-18e6-4fd2-924b-af2594e7b046",
-            "loop_aware": "0"
-        },
-        {
-            "from": -3,
-            "fromPort": "6e5425db-abe2-429d-9fb4-e0f917b4e740",
-            "to": -12,
-            "toPort": "18977404-558d-479a-9fe2-47c314f5d3aa",
-            "loop_aware": "0"
-        },
-        {
-            "from": -12,
-            "fromPort": "7de5549e-848d-4457-89a0-01c95ef27d0b",
-            "to": -4,
-            "toPort": "e89f9adc-05c9-4809-a654-a39bef427cbc",
-            "loop_aware": "0"
-        },
-        {
-            "from": -13,
-            "fromPort": "e95fddfd-73d6-4f9d-a43c-4ab440eaccc0",
-            "to": -15,
-            "toPort": "e9cbbe81-777e-4741-b8e6-4948f8df1019",
-            "loop_aware": "0"
-        },
-        {
-            "from": -15,
-            "fromPort": "b2c66ade-09bf-4385-b37d-a62647b18105",
-            "to": -12,
-            "toPort": "987823b7-feba-48a7-a255-c670be97d98a",
+            "fromPort": "011b8ade-f716-442d-8c1e-ceac2830a4e9",
+            "to": -5,
+            "toPort": "01a8ab35-5d14-4d92-adb8-85990b7c1e15",
             "loop_aware": "0"
         },
         {
             "from": -9,
-            "fromPort": "b43e894d-a252-4d5e-906d-08a6eb6a5b15",
+            "fromPort": "bd6bcd66-f6e0-4971-aa6c-cefac5a45636",
+            "to": -7,
+            "toPort": "9adfeacc-4238-42a1-97e2-52e416a08af6",
+            "loop_aware": "0"
+        },
+        {
+            "from": -7,
+            "fromPort": "4ff301bb-6064-4100-9bda-8fa3c28f5584",
+            "to": -10,
+            "toPort": "8f973ca6-af39-4c11-a661-d11839bdaba2",
+            "loop_aware": "0"
+        },
+        {
+            "from": -3,
+            "fromPort": "707d430a-7abb-4a44-b096-7d7b63d3160a",
+            "to": -7,
+            "toPort": "07ba7356-60ab-46cc-8c73-b73fb0f52ca4",
+            "loop_aware": "0"
+        },
+        {
+            "from": -3,
+            "fromPort": "707d430a-7abb-4a44-b096-7d7b63d3160a",
             "to": -8,
-            "toPort": "ddf93c91-d53c-4952-b614-0ccea3c6ea85",
+            "toPort": "f17fb547-1c15-4146-a169-6f9174124eaa",
+            "loop_aware": "0"
+        },
+        {
+            "from": -10,
+            "fromPort": "011b8ade-f716-442d-8c1e-ceac2830a4e9",
+            "to": -8,
+            "toPort": "01a8ab35-5d14-4d92-adb8-85990b7c1e15",
+            "loop_aware": "0"
+        },
+        {
+            "from": -8,
+            "fromPort": "75c35944-4e23-401b-9ea8-9bb15de551d2",
+            "to": -14,
+            "toPort": "a9a6bc76-3c79-4909-9666-bef92b377691",
+            "loop_aware": "0"
+        },
+        {
+            "from": -14,
+            "fromPort": "35dded8c-9fc6-4b9d-93db-f073f5ccb8bf",
+            "to": -11,
+            "toPort": "3b78c16b-9b81-4983-b81f-0d55e55ffcbe",
+            "loop_aware": "0"
+        },
+        {
+            "from": -10,
+            "fromPort": "011b8ade-f716-442d-8c1e-ceac2830a4e9",
+            "to": -11,
+            "toPort": "a520048a-0cd7-4168-b277-a1a4de5c5b08",
+            "loop_aware": "0"
+        },
+        {
+            "from": -3,
+            "fromPort": "707d430a-7abb-4a44-b096-7d7b63d3160a",
+            "to": -11,
+            "toPort": "8c3b66e4-40f3-4bc0-827d-43f7ed024ead",
+            "loop_aware": "0"
+        },
+        {
+            "from": -11,
+            "fromPort": "125f8fb6-5ca6-473e-b224-66dd598c0c0f",
+            "to": -15,
+            "toPort": "80af6a48-b141-46c5-8a3c-9b103ab49c22",
+            "loop_aware": "0"
+        },
+        {
+            "from": -3,
+            "fromPort": "707d430a-7abb-4a44-b096-7d7b63d3160a",
+            "to": -12,
+            "toPort": "a684c0b4-b28e-4ddd-bd30-2d821b195c6b",
+            "loop_aware": "0"
+        },
+        {
+            "from": -15,
+            "fromPort": "cd1cea94-de92-4f96-8f82-26cab8e19f94",
+            "to": -12,
+            "toPort": "5b3c1ab1-f503-4282-8aab-48697ad8570e",
+            "loop_aware": "0"
+        },
+        {
+            "from": -12,
+            "fromPort": "e7d95d7d-9aa5-4a5e-b010-6362ba336c95",
+            "to": -4,
+            "toPort": "ab97395a-043d-41e8-9664-3d2415b7866d",
             "loop_aware": "0"
         }
     ]
