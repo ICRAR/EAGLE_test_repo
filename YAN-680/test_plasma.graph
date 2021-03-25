@@ -1,0 +1,225 @@
+{
+    "modelData": {
+        "fileType": "graph",
+        "repoService": "GitHub",
+        "repoBranch": "master",
+        "repo": "ICRAR/EAGLE_test_repo",
+        "filePath": "YAN-680/test_plasma.graph",
+        "sha": "",
+        "git_url": "",
+        "eagleVersion": "Unknown",
+        "eagleCommitHash": "Unknown",
+        "schemaVersion": "OJS",
+        "readonly": true
+    },
+    "nodeDataArray": [
+        {
+            "category": "Description",
+            "categoryType": "Other",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": false,
+            "canHaveOutputs": false,
+            "color": "#9B3065",
+            "drawOrderHint": 0,
+            "key": -1,
+            "text": "Description",
+            "description": "",
+            "x": 583,
+            "y": 119.5,
+            "width": 200,
+            "height": 100,
+            "collapsed": false,
+            "showPorts": false,
+            "flipPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "readonly": false,
+            "inputPorts": [],
+            "outputPorts": [],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "",
+                    "name": "",
+                    "value": "Plasma Test",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
+                }
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "exitAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputApplicationKey": null,
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "exitApplicationName": "",
+            "exitApplicationType": "None",
+            "exitApplicationKey": null
+        },
+        {
+            "category": "File",
+            "categoryType": "Data",
+            "isData": true,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "color": "#394BB2",
+            "drawOrderHint": 0,
+            "key": -2,
+            "text": "Plasma",
+            "description": "",
+            "x": 695,
+            "y": 336.5,
+            "width": 200,
+            "height": 200,
+            "collapsed": false,
+            "showPorts": false,
+            "flipPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "readonly": false,
+            "inputPorts": [],
+            "outputPorts": [
+                {
+                    "Id": "99a6baaf-089c-4144-a13c-f72c223461a8",
+                    "IdText": "storage",
+                    "event": false,
+                    "type": "Unknown"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "5",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "0",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
+                }
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "exitAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputApplicationKey": null,
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "exitApplicationName": "",
+            "exitApplicationType": "None",
+            "exitApplicationKey": null
+        },
+        {
+            "category": "Component",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "color": "#3498DB",
+            "drawOrderHint": 0,
+            "key": -3,
+            "text": "Python App",
+            "description": "An application component in the form of a Python app",
+            "x": 989,
+            "y": 334.5,
+            "width": 200,
+            "height": 200,
+            "collapsed": false,
+            "showPorts": false,
+            "flipPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "readonly": false,
+            "inputPorts": [
+                {
+                    "Id": "af1399d0-85d5-462e-9145-0f787bf8529d",
+                    "IdText": "storage",
+                    "event": false,
+                    "type": "Unknown"
+                }
+            ],
+            "outputPorts": [],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "description": "Estimate of execution time (in seconds) for this application.",
+                    "readonly": false,
+                    "type": "Unknown"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "0",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown"
+                },
+                {
+                    "text": "Appclass",
+                    "name": "appclass",
+                    "value": "test.graphsRepository",
+                    "description": "The python class that implements this application",
+                    "readonly": false,
+                    "type": "Unknown"
+                }
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "exitAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputApplicationKey": null,
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "exitApplicationName": "",
+            "exitApplicationType": "None",
+            "exitApplicationKey": null
+        }
+    ],
+    "linkDataArray": [
+        {
+            "from": -2,
+            "fromPort": "99a6baaf-089c-4144-a13c-f72c223461a8",
+            "to": -3,
+            "toPort": "af1399d0-85d5-462e-9145-0f787bf8529d",
+            "loop_aware": "0"
+        }
+    ]
+}
