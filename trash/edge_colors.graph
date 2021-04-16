@@ -25,8 +25,8 @@
             "key": -1,
             "text": "RandomArrayApp",
             "description": "A testing APP that does not take any input and produces a random array of type int64, if integer is set to True, else of type float64. size indicates the number of elements ranging between the values low and high. The resulting array will be send to all connected output apps.",
-            "x": 384,
-            "y": 644,
+            "x": 392,
+            "y": 648,
             "width": 200,
             "height": 200,
             "collapsed": false,
@@ -234,10 +234,10 @@
             "color": "#3498DB",
             "drawOrderHint": 0,
             "key": -3,
-            "text": "CopyApp",
+            "text": "Normal App",
             "description": "A simple APP that copies its inputs into its outputs. All inputs are copied into all outputs in the order they were declared in the graph. If an input is a container (e.g. a directory) it copies the content recursively.",
             "x": 1199,
-            "y": 659,
+            "y": 685,
             "width": 200,
             "height": 200,
             "collapsed": false,
@@ -401,7 +401,7 @@
             "streaming": false,
             "subject": null,
             "selected": false,
-            "expanded": false,
+            "expanded": true,
             "readonly": false,
             "inputPorts": [],
             "outputPorts": [],
@@ -448,7 +448,7 @@
             "color": "#3498DB",
             "drawOrderHint": 0,
             "key": -6,
-            "text": "Python App",
+            "text": "Inside Construct App",
             "description": "An application component in the form of a Python app",
             "x": 1266,
             "y": 474,
@@ -604,7 +604,7 @@
             "color": "#3498DB",
             "drawOrderHint": 0,
             "key": -8,
-            "text": "StreamingApp",
+            "text": "Streaming App",
             "description": "An application component in the form of a Python app",
             "x": 1201,
             "y": 820,
@@ -686,7 +686,7 @@
             "color": "#394BB2",
             "drawOrderHint": 0,
             "key": -9,
-            "text": "array",
+            "text": "streaming array",
             "description": "",
             "x": 934.5,
             "y": 756.5,
@@ -711,6 +711,161 @@
             "outputPorts": [
                 {
                     "Id": "cf2555cf-2da9-41f2-92f9-3ad5346999ec",
+                    "IdText": "array",
+                    "event": false,
+                    "type": "Unknown"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": 5,
+                    "description": "Estimated size of the data contained in this node",
+                    "readonly": false,
+                    "type": "Float"
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": false,
+                    "description": "Is this node the end of a group?",
+                    "readonly": false,
+                    "type": "Boolean"
+                }
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "exitAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputApplicationKey": null,
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "exitApplicationName": "",
+            "exitApplicationType": "None",
+            "exitApplicationKey": null
+        },
+        {
+            "category": "PythonApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "color": "#3498DB",
+            "drawOrderHint": 0,
+            "key": -10,
+            "text": "Wrong Port App",
+            "description": "An application component in the form of a Python app",
+            "x": 1194,
+            "y": 208,
+            "width": 200,
+            "height": 200,
+            "collapsed": false,
+            "showPorts": false,
+            "flipPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "readonly": false,
+            "inputPorts": [
+                {
+                    "Id": "ae7cfc8b-4796-4412-942c-9d49911fc98a",
+                    "IdText": "notarray",
+                    "event": false,
+                    "type": "Unknown"
+                }
+            ],
+            "outputPorts": [],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "description": "Estimate of execution time (in seconds) for this application.",
+                    "readonly": false,
+                    "type": "Float"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "description": "Number of CPUs used for this application.",
+                    "readonly": false,
+                    "type": "Integer"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": false,
+                    "description": "Is this node the start of a group?",
+                    "readonly": false,
+                    "type": "Boolean"
+                },
+                {
+                    "text": "Appclass",
+                    "name": "appclass",
+                    "value": "test.graphsRepository",
+                    "description": "The python class that implements this application",
+                    "readonly": false,
+                    "type": "String"
+                }
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "exitAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputApplicationKey": null,
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "exitApplicationName": "",
+            "exitApplicationType": "None",
+            "exitApplicationKey": null
+        },
+        {
+            "category": "Memory",
+            "categoryType": "Data",
+            "isData": true,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "color": "#394BB2",
+            "drawOrderHint": 0,
+            "key": -11,
+            "text": "array",
+            "description": "",
+            "x": 938,
+            "y": 427.5,
+            "width": 200,
+            "height": 200,
+            "collapsed": false,
+            "showPorts": false,
+            "flipPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "readonly": false,
+            "inputPorts": [
+                {
+                    "Id": "d5c8745d-5483-4853-8c5f-e0ef699c4770",
+                    "IdText": "array",
+                    "event": false,
+                    "type": "Unknown"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "2456eb05-d3d3-4a29-a6de-e52fb358e3b7",
                     "IdText": "array",
                     "event": false,
                     "type": "Unknown"
@@ -798,6 +953,20 @@
             "fromPort": "cf2555cf-2da9-41f2-92f9-3ad5346999ec",
             "to": -8,
             "toPort": "d613a051-b6d5-498a-a181-efe74775ddca",
+            "loop_aware": "0"
+        },
+        {
+            "from": -2,
+            "fromPort": "6dbeb133-808f-4df4-9f40-9b2fe4fa122e",
+            "to": -11,
+            "toPort": "d5c8745d-5483-4853-8c5f-e0ef699c4770",
+            "loop_aware": "0"
+        },
+        {
+            "from": -11,
+            "fromPort": "2456eb05-d3d3-4a29-a6de-e52fb358e3b7",
+            "to": -10,
+            "toPort": "ae7cfc8b-4796-4412-942c-9d49911fc98a",
             "loop_aware": "0"
         }
     ]
