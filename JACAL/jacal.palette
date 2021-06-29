@@ -6,7 +6,7 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "jacal.palette",
-        "sha": "f5d7c5a",
+        "sha": "3e47f36",
         "git_url": ""
     },
     "nodeDataArray": [
@@ -19,8 +19,8 @@
             "canHaveOutputs": true,
             "drawOrderHint": 0,
             "key": -1,
-            "text": "InitSpectralCube.",
-            "description": "Implements a test method that uses the contents of the the parset to load in a measurement set and print a summary of its contents",
+            "text": "CalcNE",
+            "description": "Calculates the Normal Equations\nThis class encorporates all the tasks to read from a measurement set; subtract a model; grid residual visibilities and FFT the grid",
             "collapsed": false,
             "showPorts": false,
             "streaming": false,
@@ -35,13 +35,99 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "01591c4c-2a11-451d-aeb0-46a2d1a7a32c",
+                    "Id": "46b784b4-64c4-43db-b43f-8a821a2aac10",
+                    "IdText": "Config"
+                },
+                {
+                    "Id": "4e8e4788-4c54-41f9-9d66-2cc9d1a55260",
+                    "IdText": "Model"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "aaa4ff2f-5a13-4593-ad57-919bb371f775",
+                    "IdText": "Normal"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "LibraryPath",
+                    "name": "libpath",
+                    "value": "%JACAL_SO%",
+                    "description": "The path to the JACAL library",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": "name=CalcNE",
+                    "description": "",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": 0,
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean"
+                }
+            ]
+        },
+        {
+            "category": "DynlibApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -2,
+            "text": "InitSpectralCube",
+            "description": "Build the output image cube\nThis class builds the output cube in the format specified by the parset.",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "f35e08ef-8de0-4a12-bfb1-08edf3fa1d3d",
                     "IdText": "Config"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "ded83b17-daf1-4fbd-9aa2-b59d2077c26a",
+                    "Id": "54875201-e9b8-4140-9dbe-045aff8a1958",
                     "IdText": "Cube"
                 }
             ],
@@ -100,9 +186,9 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -2,
-            "text": "LoadVis.",
-            "description": "Loads a visibility set grids it onto the UV plane and FFTs the grid",
+            "key": -3,
+            "text": "LoadNE",
+            "description": "Example class that simply loads Normal Equations from a drop\nImplements a test method that uses the contents of the the parset to load in a measurement set and print a summary of its contents. We will simply load in a NormalEquation from a daliuge drop and output the image. This simply tests the NE interface to the daliuge memory drop.",
             "collapsed": false,
             "showPorts": false,
             "streaming": false,
@@ -117,11 +203,183 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "13d6ce01-242a-4538-ab20-d0c3cbd432c1",
-                    "IdText": "Config"
+                    "Id": "41c40301-c2fa-4a96-98b1-716ad612ed06",
+                    "IdText": "Normal"
                 }
             ],
             "outputPorts": [],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "LibraryPath",
+                    "name": "libpath",
+                    "value": "%JACAL_SO%",
+                    "description": "The path to the JACAL library",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": "name=LoadNE",
+                    "description": "",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": 0,
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean"
+                }
+            ]
+        },
+        {
+            "category": "DynlibApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -4,
+            "text": "LoadParset",
+            "description": "Load a LOFAR Parameter Set in the DaliugeApplication Framework\nLoads a configuration from a file drop and generates a LOFAR::ParameterSet The first ASKAP example in the Daliuge framework that actually performs an ASKAP related task. We load a parset into memory from either a file or another Daliuge drop_status",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "5d5796f3-0ab5-4710-808c-815fe4cf9e4f",
+                    "IdText": "Config"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "004ee3f4-ad4f-4afa-be95-848bd3dc2086",
+                    "IdText": "Config"
+                },
+                {
+                    "Id": "bec3377a-4c1f-450e-890d-52365e598c3e",
+                    "IdText": "Config"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "LibraryPath",
+                    "name": "libpath",
+                    "value": "%JACAL_SO%",
+                    "description": "The path to the JACAL library",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": "name=LoadParset",
+                    "description": "",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": 0,
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean"
+                }
+            ]
+        },
+        {
+            "category": "DynlibApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -5,
+            "text": "LoadVis",
+            "description": "Loads a visibility set, grids it onto the UV plane and FFTs the grid\nLoads a configuration from a file drop and a visibility set from a casacore::Measurement Set",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "9ed9c44a-db97-4010-b247-6795215aea61",
+                    "IdText": "Config"
+                },
+                {
+                    "Id": "79aa2aa7-c7a5-4fc4-8d7c-46237ab36768",
+                    "IdText": "Model"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "83888db7-d4be-4fde-a18c-50ad1d235244",
+                    "IdText": "Normal"
+                }
+            ],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
             "inputAppFields": [],
@@ -177,9 +435,9 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -3,
-            "text": "MajorCycle.",
-            "description": "Loads a visibility set grids it onto the UV plane and FFTs the grid",
+            "key": -6,
+            "text": "MajorCycle",
+            "description": "Loads a visibility set, grids it onto the UV plane and FFTs the grid\nLoads a configuration from a file drop and a visibility set from a casacore::Measurement Set",
             "collapsed": false,
             "showPorts": false,
             "streaming": false,
@@ -194,21 +452,21 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "f17fb547-1c15-4146-a169-6f9174124eaa",
+                    "Id": "2fedd51e-5545-4ff5-8f09-de4f29c7a551",
                     "IdText": "Config"
                 },
                 {
-                    "Id": "01a8ab35-5d14-4d92-adb8-85990b7c1e15",
+                    "Id": "a9ea3b47-99b9-42f6-b336-94b688aa6358",
                     "IdText": "Model"
                 },
                 {
-                    "Id": "68dcc47a-338d-4f7a-b1a1-60b0ceea3fc7",
+                    "Id": "ca9ac898-b22a-4814-9e34-984b4fcbb42b",
                     "IdText": "Cube"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "75c35944-4e23-401b-9ea8-9bb15de551d2",
+                    "Id": "4e2504e3-1754-4af4-b524-a1a9bad06526",
                     "IdText": "Normal"
                 }
             ],
@@ -267,9 +525,9 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -4,
-            "text": "RestoreSolver.",
-            "description": "Implements an ASKAPSoft Restore solver. This essentially takes a NormalEquation and a set of \"params\" and creates a restored image.",
+            "key": -7,
+            "text": "NESpectralCube",
+            "description": "Build an output image cube from input NormalEquations\nThis class builds the output cube is whatever format specified by the parset. Generates a cube of NormalEquation slices.",
             "collapsed": false,
             "showPorts": false,
             "streaming": false,
@@ -284,22 +542,185 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "8c3b66e4-40f3-4bc0-827d-43f7ed024ead",
+                    "Id": "63d1cb9c-af33-4b4e-b030-ac9602a72be5",
                     "IdText": "Config"
                 },
                 {
-                    "Id": "a520048a-0cd7-4168-b277-a1a4de5c5b08",
+                    "Id": "3c4a7795-545d-4295-93d1-31d848a406dd",
+                    "IdText": "Normal"
+                }
+            ],
+            "outputPorts": [],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "LibraryPath",
+                    "name": "libpath",
+                    "value": "%JACAL_SO%",
+                    "description": "The path to the JACAL library",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": "name=NESpectralCube",
+                    "description": "",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": 0,
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean"
+                }
+            ]
+        },
+        {
+            "category": "DynlibApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -8,
+            "text": "OutputParams",
+            "description": "Solves an Normal Equation provided by a Daliuge Drop. Outputs the Params class as images.\nImplements an ASKAPSoft solver. This essentially takes a NormalEquation and generates a a set of \"params\" usually via a minor cycle deconvolution. We will simply load in a NormalEquation from a daliuge drop and solve it via a minor cycle deconvolution. This drop actually generates the output images based upon the contents of the Params object.",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "2fda1358-ce61-4f33-979e-f27dc28a548a",
+                    "IdText": "Config"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "33773a74-ca57-4327-8287-ad2bc6270ef0",
+                    "IdText": "Model"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "LibraryPath",
+                    "name": "libpath",
+                    "value": "%JACAL_SO%",
+                    "description": "The path to the JACAL library",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": "name=OutputParams",
+                    "description": "",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": 0,
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean"
+                }
+            ]
+        },
+        {
+            "category": "DynlibApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -9,
+            "text": "RestoreSolver",
+            "description": "Implements an ASKAPSoft Restore solver. This essentially takes a NormalEquation and a set of \"params\" and creates a restored image.\nThis takes a configuration and a set of normal equations and uses the Solver requested in in the ParameterSet to produce an ouput model.",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "7add296b-59a1-4db9-b84d-570d7b735ee0",
+                    "IdText": "Config"
+                },
+                {
+                    "Id": "16ceae6b-d682-469a-9bc6-e1c96f782000",
                     "IdText": "Model"
                 },
                 {
-                    "Id": "3b78c16b-9b81-4983-b81f-0d55e55ffcbe",
+                    "Id": "879106e4-aa34-4f60-8452-7c24d68e994b",
                     "IdText": "Normal"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "125f8fb6-5ca6-473e-b224-66dd598c0c0f",
-                    "IdText": "Model"
+                    "Id": "16d90575-4bcc-4e4c-9ad4-d1c06666e79f",
+                    "IdText": "Restored"
                 }
             ],
             "inputLocalPorts": [],
@@ -357,9 +778,9 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -5,
-            "text": "SolveNE.",
-            "description": "IMplements an ASKAPSoft solver. This essentially takes a NormalEquation and generates a set of params usually via a minor cycle deconvolution.",
+            "key": -10,
+            "text": "SolveNE",
+            "description": "Implements an ASKAPSoft solver. This essentially takes a NormalEquation and generates a set of params usually via a minor cycle deconvolution.\nThis takes a configuration and a set of normal equations and uses the Solver requested in in the ParameterSet to produce an ouput model.",
             "collapsed": false,
             "showPorts": false,
             "streaming": false,
@@ -374,17 +795,17 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "07ba7356-60ab-46cc-8c73-b73fb0f52ca4",
+                    "Id": "14ab672a-15f9-48d2-8d05-02be8468b39e",
                     "IdText": "Config"
                 },
                 {
-                    "Id": "9adfeacc-4238-42a1-97e2-52e416a08af6",
+                    "Id": "bce692d4-07a8-4767-999a-b42951854dbc",
                     "IdText": "Normal"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "4ff301bb-6064-4100-9bda-8fa3c28f5584",
+                    "Id": "e2119ffd-e322-4dd5-a6f7-beb2515273db",
                     "IdText": "Model"
                 }
             ],
@@ -443,9 +864,9 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -6,
-            "text": "SpectralCube.",
-            "description": "Implements a test method that uses the contents of the the parset to load in a measurement set and print a summary of its contents.",
+            "key": -11,
+            "text": "SpectralCube",
+            "description": "Build the output image cube\nThis class builds the output cube is whatever format specified by the parset.",
             "collapsed": false,
             "showPorts": false,
             "streaming": false,
@@ -460,17 +881,17 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "a684c0b4-b28e-4ddd-bd30-2d821b195c6b",
+                    "Id": "4de83439-a2ee-487d-874f-f4b1bef54165",
                     "IdText": "Config"
                 },
                 {
-                    "Id": "5b3c1ab1-f503-4282-8aab-48697ad8570e",
+                    "Id": "1c4503b6-9e55-4c74-9e84-362ed301ac79",
                     "IdText": "Model"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "e7d95d7d-9aa5-4a5e-b010-6362ba336c95",
+                    "Id": "ec3ea1b0-94dd-405c-b4ae-8dd0d195ecdc",
                     "IdText": "Cube"
                 }
             ],
