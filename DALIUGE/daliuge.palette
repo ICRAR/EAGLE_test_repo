@@ -6,7 +6,7 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "daliuge.palette",
-        "sha": "df6bef8",
+        "sha": "a030a4e",
         "git_url": ""
     },
     "nodeDataArray": [
@@ -35,13 +35,13 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "b0b73c0e-116f-49b7-a1e2-f40be324e557",
+                    "Id": "bdd25ce8-d9e6-4110-8d3c-86cd0b00d5e3",
                     "IdText": "array"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "4aa7501e-1412-4961-b9b0-c4bdb626e5aa",
+                    "Id": "27bcd6e4-6d82-4f9c-b5ff-3d111f0af1d6",
                     "IdText": "array"
                 }
             ],
@@ -182,7 +182,7 @@
             "inputPorts": [],
             "outputPorts": [
                 {
-                    "Id": "e937843c-2360-4f5d-bcef-91dd62ebf00d",
+                    "Id": "6d1b3d06-4583-4d79-9f45-4a5b041f7db7",
                     "IdText": "content"
                 }
             ],
@@ -251,7 +251,7 @@
             "inputPorts": [],
             "outputPorts": [
                 {
-                    "Id": "0942f540-84e1-410d-8083-7785f97b1252",
+                    "Id": "d05c7d11-4fa9-455a-8be3-e755610cea0d",
                     "IdText": "hello"
                 }
             ],
@@ -311,6 +311,83 @@
             "canHaveOutputs": true,
             "drawOrderHint": 0,
             "key": -5,
+            "text": "ListAppendThrashingApp",
+            "description": "A testing APP that appends a random integer to a list num times. This is a CPU intensive operation and can thus be used to provide a test for application threading since this operation will not yield. The resulting array will be sent to all connected output apps. \nsize: int, number of array elements",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [],
+            "outputPorts": [
+                {
+                    "Id": "a4f5d231-9913-44dd-9161-2d265be2b240",
+                    "IdText": "array"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "100",
+                    "name": "size",
+                    "value": "Integer",
+                    "description": "the size of the array",
+                    "readonly": false,
+                    "type": "readwrite"
+                },
+                {
+                    "text": "dlg.apps.simple.ListAppendThrashingApp",
+                    "name": "appclass",
+                    "value": "String",
+                    "description": "Application class",
+                    "readonly": false,
+                    "type": "readonly"
+                },
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": 0,
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean"
+                }
+            ]
+        },
+        {
+            "category": "PythonApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -6,
             "text": "MSPlasmaReader",
             "description": "Batch read entire Measurement Set from Plasma.",
             "collapsed": false,
@@ -327,13 +404,13 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "479b3d2b-b47a-4e10-ba6a-aaaf0956724f",
+                    "Id": "089754c6-aae7-438f-a252-b4d10dd8267f",
                     "IdText": "plasma_ms_input"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "4002c443-7810-41fb-8f86-afdde94b334a",
+                    "Id": "50b1bbe1-efb6-4a96-98a2-2338a824607c",
                     "IdText": "output_ms"
                 }
             ],
@@ -384,7 +461,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -6,
+            "key": -7,
             "text": "MSPlasmaWriter",
             "description": "Batch write entire Measurement Set to Plamsa.",
             "collapsed": false,
@@ -401,13 +478,13 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "1a0677bb-a291-4640-a6c3-5171a19ab226",
+                    "Id": "9cda4273-76b8-4d66-bcda-824d39f9a805",
                     "IdText": "input_ms"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "9b66169c-f184-4b1e-82a4-fef41c4dbce5",
+                    "Id": "24f0743a-72e4-428e-8652-73a28091b2df",
                     "IdText": "plasma_ms_output"
                 }
             ],
@@ -458,7 +535,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -7,
+            "key": -8,
             "text": "MSStreamingPlasmaConsumer",
             "description": "Stream Measurement Set one correlator timestep at a time via Plasma.",
             "collapsed": false,
@@ -475,13 +552,13 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "5e188374-424a-4c55-9027-2cf92c73f7cf",
+                    "Id": "6d160a07-aa5b-4cc5-9d5b-6b2ff4709c10",
                     "IdText": "plasma_ms_input"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "e551004c-470c-44e3-a11c-3819a0958fcf",
+                    "Id": "471a8aba-b05c-48d9-8cea-f2bd2796d819",
                     "IdText": "output_file"
                 }
             ],
@@ -540,7 +617,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -8,
+            "key": -9,
             "text": "MSStreamingPlasmaProducer",
             "description": "Stream Measurement Set one correlator timestep at a time via Plasma.",
             "collapsed": false,
@@ -557,13 +634,13 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "40ca8cb6-39b7-4f4b-8c48-0efc1ba181c3",
+                    "Id": "bb500a8b-3a03-49b5-93ef-55f9066f000e",
                     "IdText": "input_file"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "0943dd56-3dbc-4cfb-903d-cb0707f34ee8",
+                    "Id": "4e749ece-cc08-43bf-a930-74e872465881",
                     "IdText": "plasma_ms_output"
                 }
             ],
@@ -622,7 +699,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -9,
+            "key": -10,
             "text": "RandomArrayApp",
             "description": "A testing APP that does not take any input and produces a random array of type int64, if integer is set to True, else of type float64. size indicates the number of elements ranging between the values low and high. The resulting array will be send to all connected output apps. \ninteger: bool [True], generate integer array low: float, lower boundary (will be converted to int for integer arrays) high: float, upper boundary (will be converted to int for integer arrays) size: int, number of array elements",
             "collapsed": false,
@@ -640,7 +717,7 @@
             "inputPorts": [],
             "outputPorts": [
                 {
-                    "Id": "d32c77f9-b2d3-4ca2-92a4-80ede36c9148",
+                    "Id": "f839cbb4-ed70-4b21-88d0-1e765de8b7d6",
                     "IdText": "array"
                 }
             ],
@@ -723,7 +800,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -10,
+            "key": -11,
             "text": "SleepApp",
             "description": "A simple APP that sleeps the specified amount of time (0 by default). This is mainly useful (and used) to test graph translation and structure without executing real algorithms. Very useful for debugging.",
             "collapsed": false,
@@ -795,7 +872,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -11,
+            "key": -12,
             "text": "UrlRetrieveApp",
             "description": "A simple APP that retrieves the content of a URL and writes. it to all outputs.",
             "collapsed": false,
@@ -813,7 +890,7 @@
             "inputPorts": [],
             "outputPorts": [
                 {
-                    "Id": "1353ab71-732b-4e26-ac9d-a2e9aa8f2cd1",
+                    "Id": "d32e8a5e-f281-4ea7-a2ff-a9dda51719a0",
                     "IdText": "content"
                 }
             ],
