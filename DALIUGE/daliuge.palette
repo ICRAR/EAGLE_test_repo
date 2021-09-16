@@ -6,7 +6,7 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "daliuge.palette",
-        "sha": "e23f65a",
+        "sha": "61d4706",
         "git_url": ""
     },
     "nodeDataArray": [
@@ -35,13 +35,13 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "1fc81eac-3c00-4a8e-8d14-c60806fab855",
+                    "Id": "7ffab863-73e9-4029-bcb9-bf7214a78afc",
                     "IdText": "array"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "9bc150c4-61e6-4592-8807-98d2f1c45c17",
+                    "Id": "f6afc403-bd5a-4b59-a416-bf9b48bd7957",
                     "IdText": "array"
                 }
             ],
@@ -182,7 +182,7 @@
             "inputPorts": [],
             "outputPorts": [
                 {
-                    "Id": "678ef16e-7625-4d00-ad1e-590e905d2b14",
+                    "Id": "66387dbb-64c4-4f37-b750-50c10238a795",
                     "IdText": "content"
                 }
             ],
@@ -194,7 +194,7 @@
                 {
                     "text": "Application Class",
                     "name": "appclass",
-                    "value": "dlg.apps.simple.GenericSplitApp",
+                    "value": "dlg.apps.simple.GenericScatterApp",
                     "description": "Application class",
                     "readonly": true,
                     "type": "String"
@@ -251,7 +251,7 @@
             "inputPorts": [],
             "outputPorts": [
                 {
-                    "Id": "55e9ebcd-5824-4bdd-821e-8f867e44812c",
+                    "Id": "e30c23f7-a86e-413b-810c-402c769161ec",
                     "IdText": "hello"
                 }
             ],
@@ -327,13 +327,13 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "53262ec3-0558-4090-9965-466d138d9bce",
+                    "Id": "1be57f0d-3fac-4db0-9db0-1464d9defbcc",
                     "IdText": "plasma_ms_input"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "d617bdd7-33c1-4278-8a1c-2ce61f18a339",
+                    "Id": "02a2d010-8ebd-40e2-9d5d-a0e70e194f24",
                     "IdText": "output_ms"
                 }
             ],
@@ -342,6 +342,14 @@
             "inputAppFields": [],
             "outputAppFields": [],
             "fields": [
+                {
+                    "text": "Application class",
+                    "name": "appclass",
+                    "value": "dlg.apps.plasma.MSPlasmaReader",
+                    "description": "Application class",
+                    "readonly": true,
+                    "type": "String"
+                },
                 {
                     "text": "Execution time",
                     "name": "execution_time",
@@ -365,14 +373,6 @@
                     "description": "Component is start of a group",
                     "readonly": false,
                     "type": "Boolean"
-                },
-                {
-                    "text": "Appclass",
-                    "name": "appclass",
-                    "value": "dlg.apps.simple.SleepApp",
-                    "description": "Application class",
-                    "readonly": false,
-                    "type": "String"
                 }
             ]
         },
@@ -386,7 +386,7 @@
             "drawOrderHint": 0,
             "key": -6,
             "text": "MSPlasmaWriter",
-            "description": "Batch write entire Measurement Set to Plamsa.",
+            "description": "Batch write entire Measurement Set to Plasma.",
             "collapsed": false,
             "showPorts": false,
             "streaming": false,
@@ -401,13 +401,13 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "1c5cafb8-1211-4311-91de-c4e06836bf36",
+                    "Id": "40618bbd-196c-4572-b31e-79b40ecc0fb4",
                     "IdText": "input_ms"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "0e586082-c371-4686-ba81-45888378c774",
+                    "Id": "9508861b-e3d6-4d1f-bd88-fae4db78740b",
                     "IdText": "plasma_ms_output"
                 }
             ],
@@ -416,6 +416,14 @@
             "inputAppFields": [],
             "outputAppFields": [],
             "fields": [
+                {
+                    "text": "Application class",
+                    "name": "appclass",
+                    "value": "dlg.apps.plasma.MSPlasmaWriter",
+                    "description": "Application class",
+                    "readonly": true,
+                    "type": "String"
+                },
                 {
                     "text": "Execution time",
                     "name": "execution_time",
@@ -439,14 +447,6 @@
                     "description": "Component is start of a group",
                     "readonly": false,
                     "type": "Boolean"
-                },
-                {
-                    "text": "Appclass",
-                    "name": "appclass",
-                    "value": "dlg.apps.simple.SleepApp",
-                    "description": "Application class",
-                    "readonly": false,
-                    "type": "String"
                 }
             ]
         },
@@ -475,13 +475,13 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "846c34c0-6297-48ed-b553-2f5cc45ead50",
+                    "Id": "8d0a1c6c-5ad0-4309-a9ea-7daa20dd166a",
                     "IdText": "plasma_ms_input"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "037a54d4-0762-4a7f-b7e1-56db92c4920c",
+                    "Id": "9f9d75bf-333e-4f87-8989-5a59b31f3ee9",
                     "IdText": "output_file"
                 }
             ],
@@ -491,11 +491,19 @@
             "outputAppFields": [],
             "fields": [
                 {
-                    "text": "Path to plasma store.",
+                    "text": "Plasma Path",
                     "name": "plasma_path",
                     "value": "",
                     "description": "Path to plasma store.",
                     "readonly": false,
+                    "type": "String"
+                },
+                {
+                    "text": "Application class",
+                    "name": "appclass",
+                    "value": "dlg.apps.plasma.MSStreamingPlasmaConsumer",
+                    "description": "Application class",
+                    "readonly": true,
                     "type": "String"
                 },
                 {
@@ -521,14 +529,6 @@
                     "description": "Component is start of a group",
                     "readonly": false,
                     "type": "Boolean"
-                },
-                {
-                    "text": "Appclass",
-                    "name": "appclass",
-                    "value": "dlg.apps.simple.SleepApp",
-                    "description": "Application class",
-                    "readonly": false,
-                    "type": "String"
                 }
             ]
         },
@@ -557,13 +557,13 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "f1c4611c-ee27-48e9-bfde-11e0cfdf3f8e",
+                    "Id": "b7a840f5-3055-4fcc-a02f-12274fb85402",
                     "IdText": "input_file"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "90960c92-9493-418f-8750-799e4c2f5a86",
+                    "Id": "72b5940e-80ed-4982-8cc3-9237014249d8",
                     "IdText": "plasma_ms_output"
                 }
             ],
@@ -573,11 +573,19 @@
             "outputAppFields": [],
             "fields": [
                 {
-                    "text": "Path to plasma store.",
+                    "text": "Plasma Path",
                     "name": "plasma_path",
                     "value": "",
-                    "description": "Path to plasma store.",
+                    "description": "readwrite Path to plasma store",
                     "readonly": false,
+                    "type": "String"
+                },
+                {
+                    "text": "Application class",
+                    "name": "appclass",
+                    "value": "dlg.apps.plasma.MSStreamingPlasmaProducer",
+                    "description": "Application class",
+                    "readonly": true,
                     "type": "String"
                 },
                 {
@@ -603,14 +611,6 @@
                     "description": "Component is start of a group",
                     "readonly": false,
                     "type": "Boolean"
-                },
-                {
-                    "text": "Appclass",
-                    "name": "appclass",
-                    "value": "dlg.apps.simple.SleepApp",
-                    "description": "Application class",
-                    "readonly": false,
-                    "type": "String"
                 }
             ]
         },
@@ -640,7 +640,7 @@
             "inputPorts": [],
             "outputPorts": [
                 {
-                    "Id": "758c973c-a125-4e7a-ad8d-d0c28be97b6e",
+                    "Id": "5400e990-57b7-4e37-a25c-27dbc2fffa7e",
                     "IdText": "array"
                 }
             ],
@@ -813,7 +813,7 @@
             "inputPorts": [],
             "outputPorts": [
                 {
-                    "Id": "45a6d254-f4f8-4972-8317-0ac5552df3ea",
+                    "Id": "36171cb9-d342-417e-95a5-bdb855dfc364",
                     "IdText": "content"
                 }
             ],
