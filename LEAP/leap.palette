@@ -35,13 +35,13 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "4149c947-b499-458d-b66f-3a80cf536520",
+                    "Id": "1048f340-4ef5-4551-9652-45167d223081",
                     "IdText": "Config"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "d06a549b-fedb-47c8-be45-53559569e2fc",
+                    "Id": "450c1b8f-389d-4a8d-b605-3b6b90fefd71",
                     "IdText": "Result"
                 }
             ],
@@ -51,19 +51,19 @@
             "outputAppFields": [],
             "fields": [
                 {
-                    "text": "Measurement",
+                    "text": "Measurement Set Filename",
                     "name": "measurementSetFilename",
                     "value": "",
-                    "description": "Set Filename\"/\"\"/String/readwrite The file from which the input measurement set should be loaded",
+                    "description": "The file from which the input measurement set should be loaded",
                     "readonly": false,
                     "type": "String"
                 },
                 {
-                    "text": "Application",
+                    "text": "Application Class",
                     "name": "appclass",
-                    "value": "",
-                    "description": "Class\"/leap_nodes.CallLeap.CallLeap/String/readonly The path to the class that implements this app",
-                    "readonly": false,
+                    "value": "leap_nodes.CallLeap.CallLeap",
+                    "description": "The path to the class that implements this app",
+                    "readonly": true,
                     "type": "String"
                 },
                 {
@@ -85,7 +85,7 @@
                 {
                     "text": "Group start",
                     "name": "group_start",
-                    "value": 0,
+                    "value": "false",
                     "description": "Component is start of a group",
                     "readonly": false,
                     "type": "Boolean"
@@ -148,13 +148,13 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "ac090f90-6378-4bb0-a6ff-acf3186d32fe",
+                    "Id": "9e624a6b-d74c-4cdc-a25b-1765b0a17837",
                     "IdText": "Result"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "76ef6e9f-f730-474d-9fd4-c698f78ab6bf",
+                    "Id": "9bff5eb7-7f9d-46d5-b1d9-f4ef378499eb",
                     "IdText": "Result"
                 }
             ],
@@ -164,11 +164,11 @@
             "outputAppFields": [],
             "fields": [
                 {
-                    "text": "Application",
+                    "text": "Application Class",
                     "name": "appclass",
-                    "value": "",
-                    "description": "Class/leap_nodes.LeapGather.LeapGather/String/readonly The path to the class that implements this app",
-                    "readonly": false,
+                    "value": "leap_nodes.LeapGather.LeapGather",
+                    "description": "The path to the class that implements this app",
+                    "readonly": true,
                     "type": "String"
                 },
                 {
@@ -190,7 +190,7 @@
                 {
                     "text": "Group start",
                     "name": "group_start",
-                    "value": 0,
+                    "value": "false",
                     "description": "Component is start of a group",
                     "readonly": false,
                     "type": "Boolean"
@@ -222,13 +222,13 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "2b938a03-160f-4008-b157-16f1aeb94384",
+                    "Id": "8e08d390-5ba7-4974-8418-4a76606fb9b5",
                     "IdText": "Directions"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "c8580b29-c2d1-4ee9-a72c-51133ea955d0",
+                    "Id": "a85f404a-8a1c-48e7-9b3c-16483572f653",
                     "IdText": "Config"
                 }
             ],
@@ -238,7 +238,7 @@
             "outputAppFields": [],
             "fields": [
                 {
-                    "text": "filePath",
+                    "text": "File Path",
                     "name": "filePath",
                     "value": "",
                     "description": "Path to the MS",
@@ -246,7 +246,7 @@
                     "type": "String"
                 },
                 {
-                    "text": "outputFilePath",
+                    "text": "Output File Path",
                     "name": "outputFilePath",
                     "value": "",
                     "description": "Path for output file",
@@ -270,11 +270,11 @@
                     "type": "String"
                 },
                 {
-                    "text": "Application",
+                    "text": "Application Class",
                     "name": "appclass",
-                    "value": "",
-                    "description": "Class/leap_nodes.ProduceConfig.ProduceConfig/String/readonly The path to the class that implements this app",
-                    "readonly": false,
+                    "value": "leap_nodes.ProduceConfig.ProduceConfig",
+                    "description": "The path to the class that implements this app",
+                    "readonly": true,
                     "type": "String"
                 },
                 {
@@ -296,7 +296,7 @@
                 {
                     "text": "Group start",
                     "name": "group_start",
-                    "value": 0,
+                    "value": "false",
                     "description": "Component is start of a group",
                     "readonly": false,
                     "type": "Boolean"
