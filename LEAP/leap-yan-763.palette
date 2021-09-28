@@ -1,0 +1,308 @@
+{
+    "modelData": {
+        "fileType": "palette",
+        "repoService": "GitHub",
+        "repoBranch": "master",
+        "repo": "ICRAR/EAGLE_test_repo",
+        "readonly": true,
+        "filePath": "leap-yan-763.palette",
+        "sha": "",
+        "git_url": ""
+    },
+    "nodeDataArray": [
+        {
+            "category": "PythonApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -1,
+            "text": "Call Leap",
+            "description": "Call Leap\nA BarrierAppDrop that reads a config file, generates a command line for the LeapAccelerateCLI application, and then executes the application",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "fa942a3f-9881-4a1a-8445-c699f327c933",
+                    "IdText": "Config"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "497807dc-d09e-474a-a4e1-ecefe2e93dd9",
+                    "IdText": "Result"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Measurement Set Filename",
+                    "name": "measurementSetFilename",
+                    "value": "",
+                    "description": "The file from which the input measurement set should be loaded",
+                    "readonly": false,
+                    "type": "String"
+                },
+                {
+                    "text": "Application Class",
+                    "name": "appclass",
+                    "value": "leap_nodes.CallLeap.CallLeap",
+                    "description": "The path to the class that implements this app",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "false",
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean"
+                }
+            ]
+        },
+        {
+            "category": "",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -2,
+            "text": "A cuda device tensor buffer object that references a tensor in cuda device memory buffer for manipulation by the host",
+            "description": "",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [],
+            "outputPorts": [],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": []
+        },
+        {
+            "category": "PythonApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -3,
+            "text": "Leap Gather",
+            "description": "Leap Gather\nA BarrierAppDrop that gathers output from multiple instances of the LeapAccelerateCLI application, sorts it, and outputs it",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "927c798f-ddb3-4ea7-addd-d9c89b9b8ab3",
+                    "IdText": "Result"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "3557d0ee-6d05-4d10-aac9-b441188bea35",
+                    "IdText": "Result"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Application Class",
+                    "name": "appclass",
+                    "value": "leap_nodes.LeapGather.LeapGather",
+                    "description": "The path to the class that implements this app",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "false",
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean"
+                }
+            ]
+        },
+        {
+            "category": "PythonApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -4,
+            "text": "Produce Config",
+            "description": "Produce Config\nA BarrierAppDrop that produces multiple config files suitable for the CallLeap BarrierAppDrop",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "15049247-5a88-45b7-8123-6238336b014f",
+                    "IdText": "Directions"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "d6d3380f-ca10-49fd-9962-d917ca2e298c",
+                    "IdText": "Config"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "File Path",
+                    "name": "filePath",
+                    "value": "",
+                    "description": "Path to the MS",
+                    "readonly": false,
+                    "type": "String"
+                },
+                {
+                    "text": "Output File Path",
+                    "name": "outputFilePath",
+                    "value": "",
+                    "description": "Path for output file",
+                    "readonly": false,
+                    "type": "String"
+                },
+                {
+                    "text": "Implementation",
+                    "name": "implementation",
+                    "value": "cpu",
+                    "description": "The implementation of the LEAP algorithm to use (cpu, cuda)",
+                    "readonly": false,
+                    "type": "String"
+                },
+                {
+                    "text": "verbosity",
+                    "name": "verbosity",
+                    "value": "info",
+                    "description": "The verbosity of the LEAP logging output (info|debug)",
+                    "readonly": false,
+                    "type": "String"
+                },
+                {
+                    "text": "Application Class",
+                    "name": "appclass",
+                    "value": "leap_nodes.ProduceConfig.ProduceConfig",
+                    "description": "The path to the class that implements this app",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "false",
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean"
+                }
+            ]
+        }
+    ],
+    "linkDataArray": []
+}
