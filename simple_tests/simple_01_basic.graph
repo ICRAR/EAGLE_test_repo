@@ -7,15 +7,14 @@
         "filePath": "simple_tests/simple_01_basic.graph",
         "sha": "",
         "git_url": "",
-        "eagleVersion": "Unknown",
-        "eagleCommitHash": "Unknown",
+        "eagleVersion": "v3.1.0",
+        "eagleCommitHash": "d3979bd7a0209fd589e2a0b038f028ec22c3ba4e",
         "schemaVersion": "OJS",
         "readonly": true
     },
     "nodeDataArray": [
         {
             "category": "Memory",
-            "categoryType": "Data",
             "isData": true,
             "isGroup": false,
             "canHaveInputs": true,
@@ -28,7 +27,7 @@
             "x": 471,
             "y": 375,
             "width": 200,
-            "height": 200,
+            "height": 72,
             "collapsed": false,
             "showPorts": false,
             "flipPorts": false,
@@ -43,7 +42,8 @@
                     "Id": "eba8f9fd-259b-4bd3-bc5e-b17be45aae6e",
                     "IdText": "event",
                     "event": false,
-                    "type": "Unknown"
+                    "type": "Unknown",
+                    "description": ""
                 }
             ],
             "inputLocalPorts": [],
@@ -81,7 +81,6 @@
         },
         {
             "category": "Memory",
-            "categoryType": "Data",
             "isData": true,
             "isGroup": false,
             "canHaveInputs": true,
@@ -94,7 +93,7 @@
             "x": 919,
             "y": 375,
             "width": 200,
-            "height": 200,
+            "height": 72,
             "collapsed": false,
             "showPorts": false,
             "flipPorts": false,
@@ -108,7 +107,8 @@
                     "Id": "279ee7d5-fcd1-4871-8a5b-91bfcbcb5d12",
                     "IdText": "event",
                     "event": false,
-                    "type": "Unknown"
+                    "type": "Unknown",
+                    "description": ""
                 }
             ],
             "outputPorts": [],
@@ -147,7 +147,6 @@
         },
         {
             "category": "PythonApp",
-            "categoryType": "Application",
             "isData": false,
             "isGroup": false,
             "canHaveInputs": true,
@@ -160,7 +159,7 @@
             "x": 635,
             "y": 361,
             "width": 200,
-            "height": 200,
+            "height": 72,
             "collapsed": false,
             "showPorts": false,
             "flipPorts": false,
@@ -174,7 +173,8 @@
                     "Id": "4de79720-e16d-4eb1-aec6-79a994a8e819",
                     "IdText": "event",
                     "event": false,
-                    "type": "Unknown"
+                    "type": "Unknown",
+                    "description": ""
                 }
             ],
             "outputPorts": [
@@ -182,7 +182,8 @@
                     "Id": "fbafc3ba-8c0c-4b0e-b88a-541cf228248d",
                     "IdText": "event",
                     "event": false,
-                    "type": "Unknown"
+                    "type": "Unknown",
+                    "description": ""
                 }
             ],
             "inputLocalPorts": [],
@@ -215,7 +216,7 @@
                 {
                     "text": "Appclass",
                     "name": "appclass",
-                    "value": "dlg.apps.SleepApp",
+                    "value": "dlg.apps.simple.SleepApp",
                     "description": "",
                     "readonly": false,
                     "type": "Unknown"
@@ -244,11 +245,10 @@
         },
         {
             "category": "Comment",
-            "categoryType": "Control",
             "isData": false,
             "isGroup": false,
             "canHaveInputs": false,
-            "canHaveOutputs": true,
+            "canHaveOutputs": false,
             "color": "#799938",
             "drawOrderHint": 0,
             "key": -4,
