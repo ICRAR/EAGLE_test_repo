@@ -6,8 +6,8 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "daliuge-master.palette",
-        "sha": "b494768",
-        "git_url": ""
+        "sha": "d9b61ed",
+        "git_url": "https://github.com/ICRAR/daliuge.git"
     },
     "nodeDataArray": [
         {
@@ -35,18 +35,20 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "c8944daa-539e-4582-a94f-ddfffb5dcaac",
-                    "IdText": "array",
+                    "Id": "6ac23a3d-59ac-4db2-a224-225170927313",
+                    "IdText": "Array",
                     "event": false,
-                    "type": "Unknown"
+                    "type": "array",
+                    "description": " Port for the input array(s)"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "d87e3909-092e-4001-85af-341ea054a44a",
-                    "IdText": "array",
+                    "Id": "156ad04e-a6f3-491c-81b5-a3740ad0c911",
+                    "IdText": "Array",
                     "event": false,
-                    "type": "Unknown"
+                    "type": "Array",
+                    "description": " Port carrying the averaged array"
                 }
             ],
             "inputLocalPorts": [],
@@ -95,8 +97,8 @@
                     "type": "Boolean"
                 }
             ],
-            "git_url": "",
-            "sha": "b494768"
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "d9b61ed"
         },
         {
             "category": "PythonApp",
@@ -161,8 +163,8 @@
                     "type": "Boolean"
                 }
             ],
-            "git_url": "",
-            "sha": "b494768"
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "d9b61ed"
         },
         {
             "category": "PythonApp",
@@ -190,10 +192,11 @@
             "inputPorts": [],
             "outputPorts": [
                 {
-                    "Id": "2e7bbd3b-705b-4b57-bbe6-b7eb46ca2610",
-                    "IdText": "content",
+                    "Id": "2a64a669-c41e-40c1-91a0-9113a0dcef02",
+                    "IdText": "Array",
                     "event": false,
-                    "type": "Unknown"
+                    "type": "Array A numpy array of arrays, where the first axis is of length <numSplit>",
+                    "description": "Array A numpy array of arrays, where the first axis is of length <numSplit>"
                 }
             ],
             "inputLocalPorts": [],
@@ -234,8 +237,8 @@
                     "type": "Boolean"
                 }
             ],
-            "git_url": "",
-            "sha": "b494768"
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "d9b61ed"
         },
         {
             "category": "PythonApp",
@@ -263,10 +266,11 @@
             "inputPorts": [],
             "outputPorts": [
                 {
-                    "Id": "4a48669f-780e-4472-949a-b07886d61048",
-                    "IdText": "hello",
+                    "Id": "31f2a65e-aa5b-4353-8dd8-d161bc0e4238",
+                    "IdText": "Hello",
                     "event": false,
-                    "type": "Unknown"
+                    "type": "String",
+                    "description": " The port carrying the message produced by the app."
                 }
             ],
             "inputLocalPorts": [],
@@ -315,8 +319,8 @@
                     "type": "Boolean"
                 }
             ],
-            "git_url": "",
-            "sha": "b494768"
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "d9b61ed"
         },
         {
             "category": "PythonApp",
@@ -343,18 +347,20 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "a2de13f4-6a04-4418-bb8c-8fa636f36a61",
-                    "IdText": "plasma_ms_input",
+                    "Id": "a8f258ac-1b34-4684-80a6-fd4b19b893f8",
+                    "IdText": "Plasma MS Input",
                     "event": false,
-                    "type": "Unknown"
+                    "type": "Measurement Set",
+                    "description": " Plasma MS store input"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "e4638d93-ade7-4fe5-94b8-51ec4c6ba569",
-                    "IdText": "output_ms",
+                    "Id": "a7546548-9ad2-41a2-ab95-b2b729ad7db0",
+                    "IdText": "Output MS",
                     "event": false,
-                    "type": "Unknown"
+                    "type": "Measurement Set",
+                    "description": " Output MS file"
                 }
             ],
             "inputLocalPorts": [],
@@ -395,8 +401,8 @@
                     "type": "Boolean"
                 }
             ],
-            "git_url": "",
-            "sha": ""
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "d9b61ed"
         },
         {
             "category": "PythonApp",
@@ -423,18 +429,20 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "0f6c3a59-e938-4d02-a98d-316b8f8dd747",
-                    "IdText": "input_ms",
+                    "Id": "a7f5537f-0a86-436f-8821-9ec42c2fa450",
+                    "IdText": "Input MS",
                     "event": false,
-                    "type": "Unknown"
+                    "type": "Measurement Set",
+                    "description": " Input MS file"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "033a10d0-b59c-4f4a-8fae-b47b4a251522",
-                    "IdText": "plasma_ms_output",
+                    "Id": "0110386c-cc8a-4d70-9474-412f68c47c6a",
+                    "IdText": "Plasma MS Output",
                     "event": false,
-                    "type": "Unknown"
+                    "type": "Measurement Set",
+                    "description": " Plasma MS store output"
                 }
             ],
             "inputLocalPorts": [],
@@ -475,8 +483,8 @@
                     "type": "Boolean"
                 }
             ],
-            "git_url": "",
-            "sha": ""
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "d9b61ed"
         },
         {
             "category": "PythonApp",
@@ -503,18 +511,20 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "f0aa2a44-e631-4257-860e-1c7743799945",
-                    "IdText": "plasma_ms_input",
+                    "Id": "7f0ae483-c452-4980-a91c-86607207d564",
+                    "IdText": "Plasma MS Input",
                     "event": false,
-                    "type": "Unknown"
+                    "type": "Measurement Set",
+                    "description": " Plasma MS input"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "b8fff0f0-3276-475f-9531-b038977a6b76",
-                    "IdText": "output_file",
+                    "Id": "275ba0d7-3b30-4cd7-8ccc-319fe070a7dc",
+                    "IdText": "Output File",
                     "event": false,
-                    "type": "Unknown"
+                    "type": "File",
+                    "description": " MS output file"
                 }
             ],
             "inputLocalPorts": [],
@@ -563,8 +573,8 @@
                     "type": "Boolean"
                 }
             ],
-            "git_url": "",
-            "sha": ""
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "d9b61ed"
         },
         {
             "category": "PythonApp",
@@ -591,18 +601,20 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "1b574fe5-0c54-4f1d-8796-a876d9fb866b",
-                    "IdText": "input_file",
+                    "Id": "aea2bb1a-56e0-4859-86ff-07c1ac5f2629",
+                    "IdText": "Input File",
                     "event": false,
-                    "type": "Unknown"
+                    "type": "File",
+                    "description": " MS input file"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "df029419-bbee-42aa-b97f-8e8a76a15a65",
-                    "IdText": "plasma_ms_output",
+                    "Id": "119b7b0d-1633-40f2-a745-6521ef437d2b",
+                    "IdText": "Plasma MS Output",
                     "event": false,
-                    "type": "Unknown"
+                    "type": "Measurement Set",
+                    "description": " Plasma MS output"
                 }
             ],
             "inputLocalPorts": [],
@@ -651,8 +663,8 @@
                     "type": "Boolean"
                 }
             ],
-            "git_url": "",
-            "sha": ""
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "d9b61ed"
         },
         {
             "category": "PythonApp",
@@ -679,10 +691,11 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "14d39258-3b2f-4cae-8366-01021616cc42",
-                    "IdText": "fileObject",
+                    "Id": "600c06a6-7d09-4da6-82f4-1879ca6c395a",
+                    "IdText": "File Object",
                     "event": false,
-                    "type": "Unknown"
+                    "type": "File",
+                    "description": " Input File Object"
                 }
             ],
             "outputPorts": [],
@@ -764,8 +777,8 @@
                     "type": "Boolean"
                 }
             ],
-            "git_url": "",
-            "sha": ""
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "d9b61ed"
         },
         {
             "category": "PythonApp",
@@ -793,10 +806,11 @@
             "inputPorts": [],
             "outputPorts": [
                 {
-                    "Id": "8776488b-dde5-4346-8dac-4fa77f546d8b",
-                    "IdText": "array",
+                    "Id": "4405c52b-2d69-44c5-a605-fa4176443628",
+                    "IdText": "Array",
                     "event": false,
-                    "type": "Unknown"
+                    "type": "Array",
+                    "description": " Port carrying the averaged array"
                 }
             ],
             "inputLocalPorts": [],
@@ -869,8 +883,8 @@
                     "type": "Boolean"
                 }
             ],
-            "git_url": "",
-            "sha": "b494768"
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "d9b61ed"
         },
         {
             "category": "PythonApp",
@@ -943,8 +957,8 @@
                     "type": "Boolean"
                 }
             ],
-            "git_url": "",
-            "sha": "b494768"
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "d9b61ed"
         },
         {
             "category": "PythonApp",
@@ -972,10 +986,11 @@
             "inputPorts": [],
             "outputPorts": [
                 {
-                    "Id": "6fbb2d31-81e2-4147-a76c-400292c5e2fb",
-                    "IdText": "content",
+                    "Id": "fb4bc7c8-16c9-4b18-bae2-1d09ef988f97",
+                    "IdText": "Content",
                     "event": false,
-                    "type": "Unknown"
+                    "type": "String",
+                    "description": " The port carrying the content read from the URL."
                 }
             ],
             "inputLocalPorts": [],
@@ -1024,8 +1039,8 @@
                     "type": "Boolean"
                 }
             ],
-            "git_url": "",
-            "sha": "b494768"
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "d9b61ed"
         }
     ],
     "linkDataArray": []
