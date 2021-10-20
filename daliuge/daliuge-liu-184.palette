@@ -6,7 +6,7 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "daliuge-liu-184.palette",
-        "sha": "c2fdb39",
+        "sha": "731a425",
         "git_url": "https://github.com/ICRAR/daliuge.git"
     },
     "nodeDataArray": [
@@ -35,20 +35,20 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "04cafb9b-c08e-4d60-ac29-90b87bd4533b",
+                    "Id": "6ac23a3d-59ac-4db2-a224-225170927313",
                     "IdText": "Array",
                     "event": false,
                     "type": "array",
-                    "description": "A testing APP that takes multiple numpy arrays on input and calculates the mean or the median, depending on the value provided in the method parameter. Users can add as many producers to the input array port as required and the resulting array will also be send to all connected output apps. \nmethod: string <['mean']|'median'>, use mean or median as method."
+                    "description": " Port for the input array(s)"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "66f6e78d-b943-45b2-8242-8790f519f331",
+                    "Id": "156ad04e-a6f3-491c-81b5-a3740ad0c911",
                     "IdText": "Array",
                     "event": false,
                     "type": "Array",
-                    "description": "A testing APP that takes multiple numpy arrays on input and calculates the mean or the median, depending on the value provided in the method parameter. Users can add as many producers to the input array port as required and the resulting array will also be send to all connected output apps. \nmethod: string <['mean']|'median'>, use mean or median as method."
+                    "description": " Port carrying the averaged array"
                 }
             ],
             "inputLocalPorts": [],
@@ -98,7 +98,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "c2fdb39"
+            "sha": "731a425"
         },
         {
             "category": "PythonApp",
@@ -164,7 +164,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "c2fdb39"
+            "sha": "731a425"
         },
         {
             "category": "PythonApp",
@@ -192,11 +192,11 @@
             "inputPorts": [],
             "outputPorts": [
                 {
-                    "Id": "c2a7b4ea-cd9e-43ab-8ffb-6035e99acbc0",
+                    "Id": "2a64a669-c41e-40c1-91a0-9113a0dcef02",
                     "IdText": "Array",
                     "event": false,
                     "type": "Array A numpy array of arrays, where the first axis is of length <numSplit>",
-                    "description": "An APP that splits about any object that can be converted to a numpy array into as many parts as the app has outputs, provided that the initially converted numpy array has enough elements. The return will be a numpy array of arrays, where the first axis is of length len(outputs). The modulo remainder of the length of the original array and the number of outputs will be distributed across the first len(outputs)-1 elements of the resulting array."
+                    "description": "Array A numpy array of arrays, where the first axis is of length <numSplit>"
                 }
             ],
             "inputLocalPorts": [],
@@ -238,7 +238,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "c2fdb39"
+            "sha": "731a425"
         },
         {
             "category": "PythonApp",
@@ -266,11 +266,11 @@
             "inputPorts": [],
             "outputPorts": [
                 {
-                    "Id": "1f1e61d9-3d13-49e7-90f0-6a2127487dc6",
+                    "Id": "31f2a65e-aa5b-4353-8dd8-d161bc0e4238",
                     "IdText": "Hello",
                     "event": false,
                     "type": "String",
-                    "description": "A simple APP that implements the standard Hello World in DALiuGE. It allows to change 'World' with some other string and it also permits to connect the single output port to multiple sinks, which will all receive the same message. App does not require any input."
+                    "description": " The port carrying the message produced by the app."
                 }
             ],
             "inputLocalPorts": [],
@@ -320,7 +320,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "c2fdb39"
+            "sha": "731a425"
         },
         {
             "category": "PythonApp",
@@ -347,20 +347,20 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "7d37fb7a-62fd-4d4d-a227-457ca9a09261",
+                    "Id": "a8f258ac-1b34-4684-80a6-fd4b19b893f8",
                     "IdText": "Plasma MS Input",
                     "event": false,
                     "type": "Measurement Set",
-                    "description": "Batch read entire Measurement Set from Plasma."
+                    "description": " Plasma MS store input"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "fc0a219b-5395-4cd2-88b5-0fb2b2d90ace",
+                    "Id": "a7546548-9ad2-41a2-ab95-b2b729ad7db0",
                     "IdText": "Output MS",
                     "event": false,
                     "type": "Measurement Set",
-                    "description": "Batch read entire Measurement Set from Plasma."
+                    "description": " Output MS file"
                 }
             ],
             "inputLocalPorts": [],
@@ -402,7 +402,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "c2fdb39"
+            "sha": "731a425"
         },
         {
             "category": "PythonApp",
@@ -429,20 +429,20 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "d7c6f6cb-0a58-46a3-b4d1-9702955a7ac4",
+                    "Id": "a7f5537f-0a86-436f-8821-9ec42c2fa450",
                     "IdText": "Input MS",
                     "event": false,
                     "type": "Measurement Set",
-                    "description": "Batch write entire Measurement Set to Plasma."
+                    "description": " Input MS file"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "7a72bef3-0a0f-4f47-a8d3-070343b37ff7",
+                    "Id": "0110386c-cc8a-4d70-9474-412f68c47c6a",
                     "IdText": "Plasma MS Output",
                     "event": false,
                     "type": "Measurement Set",
-                    "description": "Batch write entire Measurement Set to Plasma."
+                    "description": " Plasma MS store output"
                 }
             ],
             "inputLocalPorts": [],
@@ -484,7 +484,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "c2fdb39"
+            "sha": "731a425"
         },
         {
             "category": "PythonApp",
@@ -511,20 +511,20 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "0f20e58f-12e6-4b93-9a11-0ba0d7c1114a",
+                    "Id": "7f0ae483-c452-4980-a91c-86607207d564",
                     "IdText": "Plasma MS Input",
                     "event": false,
                     "type": "Measurement Set",
-                    "description": "Stream Measurement Set one correlator timestep at a time via Plasma."
+                    "description": " Plasma MS input"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "2d832b26-3547-4804-9899-ae5aaf8abec5",
+                    "Id": "275ba0d7-3b30-4cd7-8ccc-319fe070a7dc",
                     "IdText": "Output File",
                     "event": false,
                     "type": "File",
-                    "description": "Stream Measurement Set one correlator timestep at a time via Plasma."
+                    "description": " MS output file"
                 }
             ],
             "inputLocalPorts": [],
@@ -574,7 +574,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "c2fdb39"
+            "sha": "731a425"
         },
         {
             "category": "PythonApp",
@@ -601,20 +601,20 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "557788c8-07ec-479c-a564-550000db4a52",
+                    "Id": "aea2bb1a-56e0-4859-86ff-07c1ac5f2629",
                     "IdText": "Input File",
                     "event": false,
                     "type": "File",
-                    "description": "Stream Measurement Set one correlator timestep at a time via Plasma."
+                    "description": " MS input file"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "d723005c-beff-41ce-a431-b5afc1eb6eb1",
+                    "Id": "119b7b0d-1633-40f2-a745-6521ef437d2b",
                     "IdText": "Plasma MS Output",
                     "event": false,
                     "type": "Measurement Set",
-                    "description": "Stream Measurement Set one correlator timestep at a time via Plasma."
+                    "description": " Plasma MS output"
                 }
             ],
             "inputLocalPorts": [],
@@ -664,7 +664,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "c2fdb39"
+            "sha": "731a425"
         },
         {
             "category": "PythonApp",
@@ -691,11 +691,11 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "59fba435-822f-4553-9d9e-abd5d0d7b329",
+                    "Id": "600c06a6-7d09-4da6-82f4-1879ca6c395a",
                     "IdText": "File Object",
                     "event": false,
                     "type": "File",
-                    "description": "Takes an input and archives it in an NGAS server."
+                    "description": " Input File Object"
                 }
             ],
             "outputPorts": [],
@@ -778,7 +778,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "c2fdb39"
+            "sha": "731a425"
         },
         {
             "category": "PythonApp",
@@ -806,11 +806,11 @@
             "inputPorts": [],
             "outputPorts": [
                 {
-                    "Id": "384077ce-6ad1-429b-b3b4-4e6f765d6279",
+                    "Id": "4405c52b-2d69-44c5-a605-fa4176443628",
                     "IdText": "Array",
                     "event": false,
                     "type": "Array",
-                    "description": "A testing APP that does not take any input and produces a random array of type int64, if integer is set to True, else of type float64. size indicates the number of elements ranging between the values low and high. The resulting array will be send to all connected output apps. \ninteger: bool [True], generate integer array low: float, lower boundary (will be converted to int for integer arrays) high: float, upper boundary (will be converted to int for integer arrays) size: int, number of array elements"
+                    "description": " Port carrying the averaged array"
                 }
             ],
             "inputLocalPorts": [],
@@ -884,7 +884,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "c2fdb39"
+            "sha": "731a425"
         },
         {
             "category": "PythonApp",
@@ -958,7 +958,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "c2fdb39"
+            "sha": "731a425"
         },
         {
             "category": "PythonApp",
@@ -986,11 +986,11 @@
             "inputPorts": [],
             "outputPorts": [
                 {
-                    "Id": "5658bd5b-cec2-4008-be3a-783aeaabe75b",
+                    "Id": "fb4bc7c8-16c9-4b18-bae2-1d09ef988f97",
                     "IdText": "Content",
                     "event": false,
                     "type": "String",
-                    "description": "A simple APP that retrieves the content of a URL and writes. it to all outputs."
+                    "description": " The port carrying the content read from the URL."
                 }
             ],
             "inputLocalPorts": [],
@@ -1040,7 +1040,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "c2fdb39"
+            "sha": "731a425"
         }
     ],
     "linkDataArray": []
