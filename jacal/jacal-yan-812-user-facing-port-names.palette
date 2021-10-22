@@ -1,0 +1,986 @@
+{
+    "modelData": {
+        "fileType": "palette",
+        "repoService": "GitHub",
+        "repoBranch": "master",
+        "repo": "ICRAR/EAGLE_test_repo",
+        "readonly": true,
+        "filePath": "jacal-yan-812-user-facing-port-names.palette",
+        "sha": "",
+        "git_url": ""
+    },
+    "nodeDataArray": [
+        {
+            "category": "DynlibApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -1,
+            "text": "CalcNE",
+            "description": "Calculates the Normal Equations\nThis class encorporates all the tasks to read from a measurement set; subtract a model; grid residual visibilities and FFT the grid",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "0db9cf68-f774-4c14-b0b4-f8db1a38eda7",
+                    "IdText": "Config",
+                    "event": false,
+                    "type": "Unknown"
+                },
+                {
+                    "Id": "f7e35694-47da-4fc2-b40f-7309abd268f5",
+                    "IdText": "Model",
+                    "event": false,
+                    "type": "Unknown"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "2a40c0d9-e7f2-44a2-9dff-0f7964ebdcca",
+                    "IdText": "Normal",
+                    "event": false,
+                    "type": "Unknown"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Library Path",
+                    "name": "libpath",
+                    "value": "%JACAL_SO%",
+                    "description": "The path to the JACAL library",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": "name=CalcNE",
+                    "description": "",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "false",
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean"
+                }
+            ],
+            "git_url": "",
+            "sha": ""
+        },
+        {
+            "category": "DynlibApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -2,
+            "text": "InitSpectralCube",
+            "description": "Build the output image cube\nThis class builds the output cube in the format specified by the parset.",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "29cf0675-180d-46e4-8cb0-5ec05f823bfd",
+                    "IdText": "Config",
+                    "event": false,
+                    "type": "Unknown"
+                }
+            ],
+            "outputPorts": [],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Library Path",
+                    "name": "libpath",
+                    "value": "%JACAL_SO%",
+                    "description": "The path to the JACAL library",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": "name=InitSpectralCube",
+                    "description": "",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "false",
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean"
+                }
+            ],
+            "git_url": "",
+            "sha": ""
+        },
+        {
+            "category": "DynlibApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -3,
+            "text": "LoadNE",
+            "description": "Example class that simply loads Normal Equations from a drop\nImplements a test method that uses the contents of the the parset to load in a measurement set and print a summary of its contents. We will simply load in a NormalEquation from a daliuge drop and output the image. This simply tests the NE interface to the daliuge memory drop.",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "476f2bd6-ae1c-4749-840b-9b982cd4906c",
+                    "IdText": "Normal",
+                    "event": false,
+                    "type": "Unknown"
+                }
+            ],
+            "outputPorts": [],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Library Path",
+                    "name": "libpath",
+                    "value": "%JACAL_SO%",
+                    "description": "The path to the JACAL library",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": "name=LoadNE",
+                    "description": "",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "false",
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean"
+                }
+            ],
+            "git_url": "",
+            "sha": ""
+        },
+        {
+            "category": "DynlibApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -4,
+            "text": "LoadParset",
+            "description": "Load a LOFAR Parameter Set in the DaliugeApplication Framework\nLoads a configuration from a file drop and generates a LOFAR::ParameterSet The first ASKAP example in the Daliuge framework that actually performs an ASKAP related task. We load a parset into memory from either a file or another Daliuge drop_status",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "c59e0cc9-29f9-4bec-a04e-bb85d0aead0c",
+                    "IdText": "Config",
+                    "event": false,
+                    "type": "Unknown"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "1bbf687f-ae5b-4581-8706-65f734e7b0bf",
+                    "IdText": "Config",
+                    "event": false,
+                    "type": "Unknown"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Library Path",
+                    "name": "libpath",
+                    "value": "%JACAL_SO%",
+                    "description": "The path to the JACAL library",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": "name=LoadParset",
+                    "description": "",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "false",
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean"
+                }
+            ],
+            "git_url": "",
+            "sha": ""
+        },
+        {
+            "category": "DynlibApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -5,
+            "text": "LoadVis",
+            "description": "Loads a visibility set, grids it onto the UV plane and FFTs the grid\nLoads a configuration from a file drop and a visibility set from a casacore::Measurement Set",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "a4e47248-2d2c-4899-9f1a-20bbebdc59b1",
+                    "IdText": "Config",
+                    "event": false,
+                    "type": "Unknown"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "6899ef46-8664-4732-b0d5-d0d2c4bb83ae",
+                    "IdText": "Normal",
+                    "event": false,
+                    "type": "Unknown"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Library Path",
+                    "name": "libpath",
+                    "value": "%JACAL_SO%",
+                    "description": "The path to the JACAL library",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": "name=LoadVis",
+                    "description": "",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "false",
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean"
+                }
+            ],
+            "git_url": "",
+            "sha": ""
+        },
+        {
+            "category": "DynlibApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -6,
+            "text": "MajorCycle",
+            "description": "Loads a visibility set, grids it onto the UV plane and FFTs the grid\nLoads a configuration from a file drop and a visibility set from a casacore::Measurement Set",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "0d17d78c-dec6-4727-a81d-b4fe969fdf71",
+                    "IdText": "Config",
+                    "event": false,
+                    "type": "Unknown"
+                },
+                {
+                    "Id": "bb17a718-8ca0-49ca-ac5e-8a3a514339d1",
+                    "IdText": "Cube",
+                    "event": false,
+                    "type": "Unknown"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "d160d18b-1981-48b0-beca-275cdfc650ea",
+                    "IdText": "Normal",
+                    "event": false,
+                    "type": "Unknown"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Library Path",
+                    "name": "libpath",
+                    "value": "%JACAL_SO%",
+                    "description": "The path to the JACAL library",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": "name=MajorCycle",
+                    "description": "",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "false",
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean"
+                }
+            ],
+            "git_url": "",
+            "sha": ""
+        },
+        {
+            "category": "DynlibApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -7,
+            "text": "NESpectralCube",
+            "description": "Build an output image cube from input NormalEquations\nThis class builds the output cube is whatever format specified by the parset. Generates a cube of NormalEquation slices.",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "8d66d735-7194-46d2-b73b-2ff6bd04507b",
+                    "IdText": "Config",
+                    "event": false,
+                    "type": "Unknown"
+                },
+                {
+                    "Id": "1a1acd73-ed76-43aa-a224-c824b27206ff",
+                    "IdText": "Normal",
+                    "event": false,
+                    "type": "Unknown"
+                }
+            ],
+            "outputPorts": [],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Library Path",
+                    "name": "libpath",
+                    "value": "%JACAL_SO%",
+                    "description": "The path to the JACAL library",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": "name=NESpectralCube",
+                    "description": "",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "false",
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean"
+                }
+            ],
+            "git_url": "",
+            "sha": ""
+        },
+        {
+            "category": "DynlibApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -8,
+            "text": "OutputParams",
+            "description": "Solves an Normal Equation provided by a Daliuge Drop. Outputs the Params class as images.\nImplements an ASKAPSoft solver. This essentially takes a NormalEquation and generates a a set of \"params\" usually via a minor cycle deconvolution. We will simply load in a NormalEquation from a daliuge drop and solve it via a minor cycle deconvolution. This drop actually generates the output images based upon the contents of the Params object.",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "d21e0001-58dc-408e-b7d6-8e0d79165bd0",
+                    "IdText": "Config",
+                    "event": false,
+                    "type": "Unknown"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "07a86b7a-9d59-49fb-af1e-0b2b18b8be38",
+                    "IdText": "Model",
+                    "event": false,
+                    "type": "Unknown"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Library Path",
+                    "name": "libpath",
+                    "value": "%JACAL_SO%",
+                    "description": "The path to the JACAL library",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": "name=OutputParams",
+                    "description": "",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "false",
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean"
+                }
+            ],
+            "git_url": "",
+            "sha": ""
+        },
+        {
+            "category": "DynlibApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -9,
+            "text": "RestoreSolver",
+            "description": "Implements an ASKAPSoft Restore solver. This essentially takes a NormalEquation and a set of \"params\" and creates a restored image.\nThis takes a configuration and a set of normal equations and uses the Solver requested in in the ParameterSet to produce an ouput model.",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "4691d873-9743-47a2-b96b-eda01ddec9fb",
+                    "IdText": "Config",
+                    "event": false,
+                    "type": "Unknown"
+                },
+                {
+                    "Id": "f0213abd-c7b0-4ac2-9386-ceb09753f11b",
+                    "IdText": "Normal",
+                    "event": false,
+                    "type": "Unknown"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "3cc1b220-91f0-441b-87e1-e7633cb316ee",
+                    "IdText": "Restored Model",
+                    "event": false,
+                    "type": "Unknown"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Library Path",
+                    "name": "libpath",
+                    "value": "%JACAL_SO%",
+                    "description": "The path to the JACAL library",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": "name=RestoreSolver",
+                    "description": "",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "false",
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean"
+                }
+            ],
+            "git_url": "",
+            "sha": ""
+        },
+        {
+            "category": "DynlibApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -10,
+            "text": "SolveNE",
+            "description": "Implements an ASKAPSoft solver. This essentially takes a NormalEquation and generates a set of params usually via a minor cycle deconvolution.\nThis takes a configuration and a set of normal equations and uses the Solver requested in in the ParameterSet to produce an ouput model.",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "25af3469-0e9b-4cc9-93f7-a68fe33ad2f1",
+                    "IdText": "Config",
+                    "event": false,
+                    "type": "Unknown"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "2bed7845-d33f-4dcd-94bf-170c96eec55f",
+                    "IdText": "Model",
+                    "event": false,
+                    "type": "Unknown"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Library Path",
+                    "name": "libpath",
+                    "value": "%JACAL_SO%",
+                    "description": "The path to the JACAL library",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": "name=SolveNE",
+                    "description": "",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "false",
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean"
+                }
+            ],
+            "git_url": "",
+            "sha": ""
+        },
+        {
+            "category": "DynlibApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -11,
+            "text": "SpectralCube",
+            "description": "Build the output image cube\nThis class builds the output cube is whatever format specified by the parset.",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "b502b9e7-18b7-4423-b7c5-a8c70ebca1c3",
+                    "IdText": "Config",
+                    "event": false,
+                    "type": "Unknown"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "23036fb4-c75c-4fc4-a198-67bd2e338973",
+                    "IdText": "Cube",
+                    "event": false,
+                    "type": "Unknown"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Library Path",
+                    "name": "libpath",
+                    "value": "%JACAL_SO%",
+                    "description": "The path to the JACAL library",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": "name=SpectralCube",
+                    "description": "",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "false",
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean"
+                }
+            ],
+            "git_url": "",
+            "sha": ""
+        }
+    ],
+    "linkDataArray": []
+}
