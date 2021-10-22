@@ -1,0 +1,289 @@
+{
+    "modelData": {
+        "fileType": "palette",
+        "repoService": "GitHub",
+        "repoBranch": "master",
+        "repo": "ICRAR/EAGLE_test_repo",
+        "readonly": true,
+        "filePath": "leap-yan-812-user-facing-port-names.palette",
+        "sha": "c244dea",
+        "git_url": "https://gitlab-ci-token:eqFrhe55Y2JZA2d26u2J@gitlab.com/ska-telescope/icrar-leap-accelerate.git"
+    },
+    "nodeDataArray": [
+        {
+            "category": "PythonApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -1,
+            "text": "Call Leap",
+            "description": "Call Leap\nA BarrierAppDrop that reads a config file, generates a command line for the LeapAccelerateCLI application, and then executes the application",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [],
+            "outputPorts": [],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Measurement Set Filename",
+                    "name": "measurementSetFilename",
+                    "value": "",
+                    "description": "The file from which the input measurement set should be loaded",
+                    "readonly": false,
+                    "type": "String"
+                },
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "false",
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean"
+                },
+                {
+                    "text": "Appclass",
+                    "name": "appclass",
+                    "value": "dlg.apps.simple.SleepApp",
+                    "description": "Application class",
+                    "readonly": false,
+                    "type": "String"
+                }
+            ],
+            "git_url": "https://gitlab-ci-token:eqFrhe55Y2JZA2d26u2J@gitlab.com/ska-telescope/icrar-leap-accelerate.git",
+            "sha": "c244dea"
+        },
+        {
+            "category": "PythonApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -2,
+            "text": "Leap Gather",
+            "description": "Leap Gather\nA BarrierAppDrop that gathers output from multiple instances of the LeapAccelerateCLI application, sorts it, and outputs it",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "3b6e0601-dbf7-4699-a612-edfbf80f1704",
+                    "IdText": "Result",
+                    "text": "Result",
+                    "event": false,
+                    "type": "File",
+                    "description": " The JSON output from an instance of LeapAccelerateCLI"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "83328053-eabf-4628-9d7e-79bc20646d1d",
+                    "IdText": "Result",
+                    "text": "Result",
+                    "event": false,
+                    "type": "File",
+                    "description": " The combined output from many instances the LeapAccelerateCLI application (JSON)"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Application Class",
+                    "name": "appclass",
+                    "value": "leap_nodes.LeapGather.LeapGather",
+                    "description": "The path to the class that implements this app",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "false",
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean"
+                }
+            ],
+            "git_url": "https://gitlab-ci-token:eqFrhe55Y2JZA2d26u2J@gitlab.com/ska-telescope/icrar-leap-accelerate.git",
+            "sha": "c244dea"
+        },
+        {
+            "category": "PythonApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -3,
+            "text": "Produce Config",
+            "description": "Produce Config\nA BarrierAppDrop that produces multiple config files suitable for the CallLeap BarrierAppDrop",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "b6d0144a-32d2-4c39-9e6a-4626db8b4386",
+                    "IdText": "Directions",
+                    "text": "Directions",
+                    "event": false,
+                    "type": "File",
+                    "description": " A CSV file containing directions for calibration"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "db9f5194-df25-442d-a37b-a957a457edfb",
+                    "IdText": "Config",
+                    "text": "Config",
+                    "event": false,
+                    "type": "File",
+                    "description": " A JSON config containing the specification for running an instance of LeapAccelerateCLI"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "File Path",
+                    "name": "filePath",
+                    "value": "",
+                    "description": "Path to the MS",
+                    "readonly": false,
+                    "type": "String"
+                },
+                {
+                    "text": "Output File Path",
+                    "name": "outputFilePath",
+                    "value": "",
+                    "description": "Path for output file",
+                    "readonly": false,
+                    "type": "String"
+                },
+                {
+                    "text": "Implementation",
+                    "name": "implementation",
+                    "value": "cpu",
+                    "description": "The implementation of the LEAP algorithm to use (cpu, cuda)",
+                    "readonly": false,
+                    "type": "String"
+                },
+                {
+                    "text": "verbosity",
+                    "name": "verbosity",
+                    "value": "info",
+                    "description": "The verbosity of the LEAP logging output (info|debug)",
+                    "readonly": false,
+                    "type": "String"
+                },
+                {
+                    "text": "Application Class",
+                    "name": "appclass",
+                    "value": "leap_nodes.ProduceConfig.ProduceConfig",
+                    "description": "The path to the class that implements this app",
+                    "readonly": true,
+                    "type": "String"
+                },
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float"
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "false",
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean"
+                }
+            ],
+            "git_url": "https://gitlab-ci-token:eqFrhe55Y2JZA2d26u2J@gitlab.com/ska-telescope/icrar-leap-accelerate.git",
+            "sha": "c244dea"
+        }
+    ],
+    "linkDataArray": []
+}
