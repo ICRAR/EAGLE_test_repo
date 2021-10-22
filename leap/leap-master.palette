@@ -6,8 +6,8 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "leap-master.palette",
-        "sha": "b66b593",
-        "git_url": ""
+        "sha": "395bea3",
+        "git_url": "https://gitlab-ci-token:gwndUnkZdonBf_6XFSZ4@gitlab.com/ska-telescope/icrar-leap-accelerate.git"
     },
     "nodeDataArray": [
         {
@@ -33,22 +33,8 @@
             "inputApplicationType": "None",
             "outputApplicationType": "None",
             "exitApplicationType": "None",
-            "inputPorts": [
-                {
-                    "Id": "7b26cfd4-abe0-4a8b-9df8-5a679691feb1",
-                    "IdText": "Config",
-                    "event": false,
-                    "type": "Unknown"
-                }
-            ],
-            "outputPorts": [
-                {
-                    "Id": "8fc06e12-668f-42f3-9e50-cd3ab71b593a",
-                    "IdText": "Result",
-                    "event": false,
-                    "type": "Unknown"
-                }
-            ],
+            "inputPorts": [],
+            "outputPorts": [],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
             "inputAppFields": [],
@@ -60,14 +46,6 @@
                     "value": "",
                     "description": "The file from which the input measurement set should be loaded",
                     "readonly": false,
-                    "type": "String"
-                },
-                {
-                    "text": "Application Class",
-                    "name": "appclass",
-                    "value": "leap_nodes.CallLeap.CallLeap",
-                    "description": "The path to the class that implements this app",
-                    "readonly": true,
                     "type": "String"
                 },
                 {
@@ -93,10 +71,18 @@
                     "description": "Component is start of a group",
                     "readonly": false,
                     "type": "Boolean"
+                },
+                {
+                    "text": "Appclass",
+                    "name": "appclass",
+                    "value": "dlg.apps.simple.SleepApp",
+                    "description": "Application class",
+                    "readonly": false,
+                    "type": "String"
                 }
             ],
-            "git_url": "",
-            "sha": "b66b593"
+            "git_url": "https://gitlab-ci-token:gwndUnkZdonBf_6XFSZ4@gitlab.com/ska-telescope/icrar-leap-accelerate.git",
+            "sha": "395bea3"
         },
         {
             "category": "PythonApp",
@@ -123,18 +109,22 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "cf0171ec-cd4c-4546-97d8-b9bcf8c1896f",
+                    "Id": "3b6e0601-dbf7-4699-a612-edfbf80f1704",
                     "IdText": "Result",
+                    "text": "Result",
                     "event": false,
-                    "type": "Unknown"
+                    "type": "File",
+                    "description": " The JSON output from an instance of LeapAccelerateCLI"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "d96a2374-bd13-4444-96a5-ab15426f6190",
+                    "Id": "83328053-eabf-4628-9d7e-79bc20646d1d",
                     "IdText": "Result",
+                    "text": "Result",
                     "event": false,
-                    "type": "Unknown"
+                    "type": "File",
+                    "description": " The combined output from many instances the LeapAccelerateCLI application (JSON)"
                 }
             ],
             "inputLocalPorts": [],
@@ -175,8 +165,8 @@
                     "type": "Boolean"
                 }
             ],
-            "git_url": "",
-            "sha": "b66b593"
+            "git_url": "https://gitlab-ci-token:gwndUnkZdonBf_6XFSZ4@gitlab.com/ska-telescope/icrar-leap-accelerate.git",
+            "sha": "395bea3"
         },
         {
             "category": "PythonApp",
@@ -203,18 +193,22 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "0f5c7ff6-81de-45c9-88fd-02f654aec49d",
+                    "Id": "b6d0144a-32d2-4c39-9e6a-4626db8b4386",
                     "IdText": "Directions",
+                    "text": "Directions",
                     "event": false,
-                    "type": "Unknown"
+                    "type": "File",
+                    "description": " A CSV file containing directions for calibration"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "6578acb3-94cc-4fca-9db3-c6263c52d552",
+                    "Id": "db9f5194-df25-442d-a37b-a957a457edfb",
                     "IdText": "Config",
+                    "text": "Config",
                     "event": false,
-                    "type": "Unknown"
+                    "type": "File",
+                    "description": " A JSON config containing the specification for running an instance of LeapAccelerateCLI"
                 }
             ],
             "inputLocalPorts": [],
@@ -287,8 +281,8 @@
                     "type": "Boolean"
                 }
             ],
-            "git_url": "",
-            "sha": "b66b593"
+            "git_url": "https://gitlab-ci-token:gwndUnkZdonBf_6XFSZ4@gitlab.com/ska-telescope/icrar-leap-accelerate.git",
+            "sha": "395bea3"
         }
     ],
     "linkDataArray": []
