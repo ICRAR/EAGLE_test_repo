@@ -6,8 +6,8 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "jacal-master.palette",
-        "sha": "8c766aa",
-        "git_url": ""
+        "sha": "d48dca5",
+        "git_url": "https://gitlab-ci-token:2i7oSb_ZS5jezC1R3dC_@gitlab.com/ska-telescope/ska-sdp-jacal.git"
     },
     "nodeDataArray": [
         {
@@ -35,24 +35,30 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "6306ba0d-964d-44f1-a39f-83c99f0991ff",
+                    "Id": "43684be1-4fd5-4b13-ba50-8559e0826a6c",
                     "IdText": "Config",
+                    "text": "Config",
                     "event": false,
-                    "type": "LOFAR::ParameterSet"
+                    "type": "LOFARParameterSet",
+                    "description": " ParameterSet descriptor for the image solver"
                 },
                 {
-                    "Id": "026d5405-b91e-416e-9983-1fe24d28d60c",
+                    "Id": "4041d723-2e8d-4e20-97a0-a2ee7c7aaecd",
                     "IdText": "Model",
+                    "text": "Model",
                     "event": false,
-                    "type": "scimath::Params"
+                    "type": "scimathParams",
+                    "description": " Params of solved normal equations"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "7b1e474a-3938-4fa1-a93b-540294c8913b",
+                    "Id": "f92f20e1-a86b-45fc-9d86-4d00b7df89c7",
                     "IdText": "Normal",
+                    "text": "Normal",
                     "event": false,
-                    "type": "scimath::ImagingNormalEquations"
+                    "type": "scimathImagingNormalEquations ImagingNormalEquations to solve",
+                    "description": "scimathImagingNormalEquations ImagingNormalEquations to solve"
                 }
             ],
             "inputLocalPorts": [],
@@ -101,8 +107,8 @@
                     "type": "Boolean"
                 }
             ],
-            "git_url": "",
-            "sha": "8c766aa"
+            "git_url": "https://gitlab-ci-token:2i7oSb_ZS5jezC1R3dC_@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "d48dca5"
         },
         {
             "category": "DynlibApp",
@@ -129,10 +135,12 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "1412d262-b993-4656-ba7a-a9760b6f32dd",
+                    "Id": "b55ae366-2105-4f5e-a95c-bdb2e5b46cb9",
                     "IdText": "Config",
+                    "text": "Config",
                     "event": false,
-                    "type": "LOFAR::ParameterSet"
+                    "type": "LOFARParameterSet",
+                    "description": " The Config file"
                 }
             ],
             "outputPorts": [],
@@ -182,8 +190,8 @@
                     "type": "Boolean"
                 }
             ],
-            "git_url": "",
-            "sha": "8c766aa"
+            "git_url": "https://gitlab-ci-token:2i7oSb_ZS5jezC1R3dC_@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "d48dca5"
         },
         {
             "category": "DynlibApp",
@@ -210,10 +218,12 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "1b543edc-f7a2-49c3-af77-341f67abe71d",
+                    "Id": "1670e398-4e0a-48e3-83c1-82df60fb1580",
                     "IdText": "Normal",
+                    "text": "Normal",
                     "event": false,
-                    "type": "scimath::ImagingNormalEquations"
+                    "type": "scimathImagingNormalEquations",
+                    "description": " ImagingNormalEquations to solve"
                 }
             ],
             "outputPorts": [],
@@ -263,8 +273,8 @@
                     "type": "Boolean"
                 }
             ],
-            "git_url": "",
-            "sha": "8c766aa"
+            "git_url": "https://gitlab-ci-token:2i7oSb_ZS5jezC1R3dC_@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "d48dca5"
         },
         {
             "category": "DynlibApp",
@@ -291,18 +301,22 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "f46015e0-cf0e-4770-9ce3-209f97cfc233",
+                    "Id": "dea70c27-a5a0-4863-a365-6aba831e6382",
                     "IdText": "Config",
+                    "text": "Config",
                     "event": false,
-                    "type": "LOFAR::ParameterSet"
+                    "type": "LOFARParameterSet",
+                    "description": " ParameterSet descriptor for the image solver"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "6deabc5e-20cc-4b6c-86af-de76fc857d28",
+                    "Id": "e4ce1292-6800-4cd6-8cd3-21b72cdaa06d",
                     "IdText": "Config",
+                    "text": "Config",
                     "event": false,
-                    "type": "LOFAR::ParameterSet"
+                    "type": "LOFARParameterSet",
+                    "description": ""
                 }
             ],
             "inputLocalPorts": [],
@@ -351,8 +365,8 @@
                     "type": "Boolean"
                 }
             ],
-            "git_url": "",
-            "sha": "8c766aa"
+            "git_url": "https://gitlab-ci-token:2i7oSb_ZS5jezC1R3dC_@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "d48dca5"
         },
         {
             "category": "DynlibApp",
@@ -379,18 +393,22 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "e0a494ce-9cfd-4030-b587-373cdf5c69f2",
+                    "Id": "f9c5f1da-6b53-41a3-9535-b347396d3e3b",
                     "IdText": "Config",
+                    "text": "Config",
                     "event": false,
-                    "type": "LOFAR::ParameterSet"
+                    "type": "LOFARParameterSet",
+                    "description": " The Config file Params of solved normal equations"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "5c671bd7-d790-411e-b52c-35d5d82f275d",
+                    "Id": "ca041179-6b28-4e06-a5b6-058efcbef938",
                     "IdText": "Normal",
+                    "text": "Normal",
                     "event": false,
-                    "type": "scimath::ImagingNormalEquations"
+                    "type": "scimathImagingNormalEquations",
+                    "description": " ImagingNormalEquations to solve"
                 }
             ],
             "inputLocalPorts": [],
@@ -439,8 +457,8 @@
                     "type": "Boolean"
                 }
             ],
-            "git_url": "",
-            "sha": "8c766aa"
+            "git_url": "https://gitlab-ci-token:2i7oSb_ZS5jezC1R3dC_@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "d48dca5"
         },
         {
             "category": "DynlibApp",
@@ -467,24 +485,30 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "e8e97b2f-7693-4116-bec8-cb125262e869",
+                    "Id": "f45ef6fd-19e9-4115-b31e-914508e28f70",
                     "IdText": "Config",
+                    "text": "Config",
                     "event": false,
-                    "type": "LOFAR::ParameterSet"
+                    "type": "LOFARParameterSet",
+                    "description": " The Config file"
                 },
                 {
-                    "Id": "9688ce15-5365-4d01-a2a1-36c00bff3f13",
+                    "Id": "09971e96-a220-47d2-85bd-f2adfcd1d3e0",
                     "IdText": "Cube",
+                    "text": "Cube",
                     "event": false,
-                    "type": "Cube"
+                    "type": "Cube",
+                    "description": "Cube"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "38aa5e2f-dc22-401b-8af9-befde89797e4",
+                    "Id": "c2e7d955-f7ef-4ba0-b194-80129baa458f",
                     "IdText": "Normal",
+                    "text": "Normal",
                     "event": false,
-                    "type": "scimath::ImagingNormalEquations"
+                    "type": "scimathImagingNormalEquations",
+                    "description": " ImagingNormalEquations to solve"
                 }
             ],
             "inputLocalPorts": [],
@@ -533,8 +557,8 @@
                     "type": "Boolean"
                 }
             ],
-            "git_url": "",
-            "sha": "8c766aa"
+            "git_url": "https://gitlab-ci-token:2i7oSb_ZS5jezC1R3dC_@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "d48dca5"
         },
         {
             "category": "DynlibApp",
@@ -561,16 +585,20 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "33f7560c-66b1-4e55-bea5-171164d19647",
+                    "Id": "0853c67d-af27-4cb3-8738-0280f0b17942",
                     "IdText": "Config",
+                    "text": "Config",
                     "event": false,
-                    "type": "LOFAR::ParameterSet"
+                    "type": "LOFARParameterSet",
+                    "description": " ParameterSet descriptor for the image solver"
                 },
                 {
-                    "Id": "84a0e8bc-327f-4fbd-aa0f-87b581a42876",
+                    "Id": "a35450d3-9c2b-4b64-a35f-6e969660acd5",
                     "IdText": "Normal",
+                    "text": "Normal",
                     "event": false,
-                    "type": "scimath::ImagingNormalEquations"
+                    "type": "scimathImagingNormalEquations",
+                    "description": " ImagingNormalEquations to solve"
                 }
             ],
             "outputPorts": [],
@@ -620,8 +648,8 @@
                     "type": "Boolean"
                 }
             ],
-            "git_url": "",
-            "sha": "8c766aa"
+            "git_url": "https://gitlab-ci-token:2i7oSb_ZS5jezC1R3dC_@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "d48dca5"
         },
         {
             "category": "DynlibApp",
@@ -648,18 +676,22 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "3cecaaa0-7d66-41d4-9fcf-2dd547a95adf",
+                    "Id": "0590a70c-65bb-4d99-b0ac-fe89816c9cb8",
                     "IdText": "Config",
+                    "text": "Config",
                     "event": false,
-                    "type": "LOFAR::ParameterSet"
+                    "type": "LOFARParameterSet",
+                    "description": " ParameterSet descriptor for the image solver"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "e9d7f995-c35f-4b74-a92e-3c5312de7ad4",
+                    "Id": "06af74c0-4b0a-43c1-8c03-178ed498638f",
                     "IdText": "Model",
+                    "text": "Model",
                     "event": false,
-                    "type": "scimath::Params"
+                    "type": "scimathParams",
+                    "description": ""
                 }
             ],
             "inputLocalPorts": [],
@@ -708,8 +740,8 @@
                     "type": "Boolean"
                 }
             ],
-            "git_url": "",
-            "sha": "8c766aa"
+            "git_url": "https://gitlab-ci-token:2i7oSb_ZS5jezC1R3dC_@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "d48dca5"
         },
         {
             "category": "DynlibApp",
@@ -736,24 +768,30 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "031404db-3556-4a1d-87f7-4ebc5f96b7f8",
+                    "Id": "5d423a83-1583-4176-8347-e0392fa0b6d0",
                     "IdText": "Config",
+                    "text": "Config",
                     "event": false,
-                    "type": "LOFAR::ParameterSet"
+                    "type": "LOFARParameterSet",
+                    "description": " The Config file Params of solved normal equations"
                 },
                 {
-                    "Id": "15a890c7-a954-4618-b761-dfbf24e15d6d",
+                    "Id": "a14d4360-4681-445f-b68b-ce57c6ebfc1e",
                     "IdText": "Normal",
+                    "text": "Normal",
                     "event": false,
-                    "type": "scimath::ImagingNormalEquations"
+                    "type": "scimathImagingNormalEquations",
+                    "description": " ImagingNormalEquations to solve"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "64d082de-8982-491c-b213-55e474abe157",
+                    "Id": "f0e0048f-5edc-4576-9c0b-8935e985ae14",
                     "IdText": "Restored Model",
+                    "text": "Restored Model",
                     "event": false,
-                    "type": "scimath::Params"
+                    "type": "scimathParams",
+                    "description": ""
                 }
             ],
             "inputLocalPorts": [],
@@ -802,8 +840,8 @@
                     "type": "Boolean"
                 }
             ],
-            "git_url": "",
-            "sha": "8c766aa"
+            "git_url": "https://gitlab-ci-token:2i7oSb_ZS5jezC1R3dC_@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "d48dca5"
         },
         {
             "category": "DynlibApp",
@@ -830,18 +868,22 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "bb65569c-8983-48ea-9325-d827f903dcd6",
+                    "Id": "ac3d1af5-98fa-4aa0-8032-f12c93fb73b0",
                     "IdText": "Config",
+                    "text": "Config",
                     "event": false,
-                    "type": "LOFAR::ParameterSet"
+                    "type": "LOFARParameterSet",
+                    "description": " The Config file ImagingNormalEquations to solve"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "c581aefb-4b44-40fa-889e-96026874bd2a",
+                    "Id": "55e0bd6f-d6d0-4c39-bd11-a8f34d4ed980",
                     "IdText": "Model",
+                    "text": "Model",
                     "event": false,
-                    "type": "scimath::Params"
+                    "type": "scimathParams",
+                    "description": " Params of solved normal equations"
                 }
             ],
             "inputLocalPorts": [],
@@ -890,8 +932,8 @@
                     "type": "Boolean"
                 }
             ],
-            "git_url": "",
-            "sha": "8c766aa"
+            "git_url": "https://gitlab-ci-token:2i7oSb_ZS5jezC1R3dC_@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "d48dca5"
         },
         {
             "category": "DynlibApp",
@@ -918,18 +960,22 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "53d4a7a6-93e1-4356-a4ec-261a6e400b9e",
+                    "Id": "683abf49-0bba-4840-be52-1cf698e12636",
                     "IdText": "Config",
+                    "text": "Config",
                     "event": false,
-                    "type": "LOFAR::ParameterSet"
+                    "type": "LOFARParameterSet",
+                    "description": " The Config file Params of solved normal equations"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "96271592-35ee-4332-8aa6-ed3226621ae4",
+                    "Id": "2623cd74-97d6-47b8-8b2d-4aba7c98a2f6",
                     "IdText": "Cube",
+                    "text": "Cube",
                     "event": false,
-                    "type": "Cube"
+                    "type": "Cube",
+                    "description": ""
                 }
             ],
             "inputLocalPorts": [],
@@ -978,8 +1024,8 @@
                     "type": "Boolean"
                 }
             ],
-            "git_url": "",
-            "sha": "8c766aa"
+            "git_url": "https://gitlab-ci-token:2i7oSb_ZS5jezC1R3dC_@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "d48dca5"
         }
     ],
     "linkDataArray": []
