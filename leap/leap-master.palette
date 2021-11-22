@@ -7,7 +7,7 @@
         "readonly": true,
         "filePath": "leap-master.palette",
         "sha": "395bea3",
-        "git_url": "https://gitlab-ci-token:Hn39_ty-6G2RyZQsJzsX@gitlab.com/ska-telescope/icrar-leap-accelerate.git"
+        "git_url": "https://gitlab-ci-token:vK29KZ1mJxS_jTaRGz9Z@gitlab.com/ska-telescope/icrar-leap-accelerate.git"
     },
     "nodeDataArray": [
         {
@@ -44,44 +44,54 @@
                     "text": "Measurement Set Filename",
                     "name": "measurementSetFilename",
                     "value": "",
+                    "default": "",
                     "description": "The file from which the input measurement set should be loaded",
                     "readonly": false,
-                    "type": "String"
+                    "type": "String",
+                    "precious": false
                 },
                 {
                     "text": "Execution time",
                     "name": "execution_time",
                     "value": 5,
+                    "default": 5,
                     "description": "Estimated execution time",
                     "readonly": false,
-                    "type": "Float"
+                    "type": "Float",
+                    "precious": false
                 },
                 {
                     "text": "Num CPUs",
                     "name": "num_cpus",
                     "value": 1,
+                    "default": 1,
                     "description": "Number of cores used",
                     "readonly": false,
-                    "type": "Integer"
+                    "type": "Integer",
+                    "precious": false
                 },
                 {
                     "text": "Group start",
                     "name": "group_start",
                     "value": "false",
+                    "default": "false",
                     "description": "Component is start of a group",
                     "readonly": false,
-                    "type": "Boolean"
+                    "type": "Boolean",
+                    "precious": false
                 },
                 {
                     "text": "Appclass",
                     "name": "appclass",
                     "value": "dlg.apps.simple.SleepApp",
+                    "default": "dlg.apps.simple.SleepApp",
                     "description": "Application class",
                     "readonly": false,
-                    "type": "String"
+                    "type": "String",
+                    "precious": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:Hn39_ty-6G2RyZQsJzsX@gitlab.com/ska-telescope/icrar-leap-accelerate.git",
+            "git_url": "https://gitlab-ci-token:vK29KZ1mJxS_jTaRGz9Z@gitlab.com/ska-telescope/icrar-leap-accelerate.git",
             "sha": "395bea3"
         },
         {
@@ -136,36 +146,44 @@
                     "text": "Application Class",
                     "name": "appclass",
                     "value": "leap_nodes.LeapGather.LeapGather",
+                    "default": "leap_nodes.LeapGather.LeapGather",
                     "description": "The path to the class that implements this app",
                     "readonly": true,
-                    "type": "String"
+                    "type": "String",
+                    "precious": false
                 },
                 {
                     "text": "Execution time",
                     "name": "execution_time",
                     "value": 5,
+                    "default": 5,
                     "description": "Estimated execution time",
                     "readonly": false,
-                    "type": "Float"
+                    "type": "Float",
+                    "precious": false
                 },
                 {
                     "text": "Num CPUs",
                     "name": "num_cpus",
                     "value": 1,
+                    "default": 1,
                     "description": "Number of cores used",
                     "readonly": false,
-                    "type": "Integer"
+                    "type": "Integer",
+                    "precious": false
                 },
                 {
                     "text": "Group start",
                     "name": "group_start",
                     "value": "false",
+                    "default": "false",
                     "description": "Component is start of a group",
                     "readonly": false,
-                    "type": "Boolean"
+                    "type": "Boolean",
+                    "precious": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:Hn39_ty-6G2RyZQsJzsX@gitlab.com/ska-telescope/icrar-leap-accelerate.git",
+            "git_url": "https://gitlab-ci-token:vK29KZ1mJxS_jTaRGz9Z@gitlab.com/ska-telescope/icrar-leap-accelerate.git",
             "sha": "395bea3"
         },
         {
@@ -220,68 +238,84 @@
                     "text": "File Path",
                     "name": "filePath",
                     "value": "",
+                    "default": "",
                     "description": "Path to the MS",
                     "readonly": false,
-                    "type": "String"
+                    "type": "String",
+                    "precious": false
                 },
                 {
                     "text": "Output File Path",
                     "name": "outputFilePath",
                     "value": "",
+                    "default": "",
                     "description": "Path for output file",
                     "readonly": false,
-                    "type": "String"
+                    "type": "String",
+                    "precious": false
                 },
                 {
                     "text": "Implementation",
                     "name": "implementation",
                     "value": "cpu",
+                    "default": "cpu",
                     "description": "The implementation of the LEAP algorithm to use (cpu, cuda)",
                     "readonly": false,
-                    "type": "String"
+                    "type": "String",
+                    "precious": false
                 },
                 {
                     "text": "verbosity",
                     "name": "verbosity",
                     "value": "info",
+                    "default": "info",
                     "description": "The verbosity of the LEAP logging output (info|debug)",
                     "readonly": false,
-                    "type": "String"
+                    "type": "String",
+                    "precious": false
                 },
                 {
                     "text": "Application Class",
                     "name": "appclass",
                     "value": "leap_nodes.ProduceConfig.ProduceConfig",
+                    "default": "leap_nodes.ProduceConfig.ProduceConfig",
                     "description": "The path to the class that implements this app",
                     "readonly": true,
-                    "type": "String"
+                    "type": "String",
+                    "precious": false
                 },
                 {
                     "text": "Execution time",
                     "name": "execution_time",
                     "value": 5,
+                    "default": 5,
                     "description": "Estimated execution time",
                     "readonly": false,
-                    "type": "Float"
+                    "type": "Float",
+                    "precious": false
                 },
                 {
                     "text": "Num CPUs",
                     "name": "num_cpus",
                     "value": 1,
+                    "default": 1,
                     "description": "Number of cores used",
                     "readonly": false,
-                    "type": "Integer"
+                    "type": "Integer",
+                    "precious": false
                 },
                 {
                     "text": "Group start",
                     "name": "group_start",
                     "value": "false",
+                    "default": "false",
                     "description": "Component is start of a group",
                     "readonly": false,
-                    "type": "Boolean"
+                    "type": "Boolean",
+                    "precious": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:Hn39_ty-6G2RyZQsJzsX@gitlab.com/ska-telescope/icrar-leap-accelerate.git",
+            "git_url": "https://gitlab-ci-token:vK29KZ1mJxS_jTaRGz9Z@gitlab.com/ska-telescope/icrar-leap-accelerate.git",
             "sha": "395bea3"
         }
     ],
