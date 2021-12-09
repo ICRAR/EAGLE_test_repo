@@ -6,8 +6,8 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "jacal-master.palette",
-        "sha": "bbb13bb",
-        "git_url": "https://gitlab-ci-token:1fExYYW2N9ZJmSby3RrE@gitlab.com/ska-telescope/ska-sdp-jacal.git"
+        "sha": "2f53a81",
+        "git_url": "https://gitlab-ci-token:6zdzMH-AsmNo6dw69XNE@gitlab.com/ska-telescope/ska-sdp-jacal.git"
     },
     "nodeDataArray": [
         {
@@ -20,7 +20,7 @@
             "drawOrderHint": 0,
             "key": -1,
             "text": "CalcNE",
-            "description": "Calculates the Normal Equations\nThis class encorporates all the tasks to read from a measurement set; subtract a model; grid residual visibilities and FFT the grid",
+            "description": "Calculates the Normal Equations\nThis class encorporates all of the tasks needed to form imaging Normal Equations: read from a measurement set; degrid model visibilities; subtract model visibilities; grid residual visibilities and FFT the grid",
             "collapsed": false,
             "showPorts": false,
             "streaming": false,
@@ -117,8 +117,8 @@
                     "precious": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:1fExYYW2N9ZJmSby3RrE@gitlab.com/ska-telescope/ska-sdp-jacal.git",
-            "sha": "bbb13bb"
+            "git_url": "https://gitlab-ci-token:6zdzMH-AsmNo6dw69XNE@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "2f53a81"
         },
         {
             "category": "DynlibApp",
@@ -129,116 +129,6 @@
             "canHaveOutputs": true,
             "drawOrderHint": 0,
             "key": -2,
-            "text": "CalcNElight",
-            "description": "Calculates the Normal Equations\nThis class encorporates all the tasks to read from a measurement set; subtract a model; grid residual visibilities and FFT the grid",
-            "collapsed": false,
-            "showPorts": false,
-            "streaming": false,
-            "subject": null,
-            "selected": false,
-            "expanded": false,
-            "inputApplicationName": "",
-            "outputApplicationName": "",
-            "exitApplicationName": "",
-            "inputApplicationType": "None",
-            "outputApplicationType": "None",
-            "exitApplicationType": "None",
-            "inputPorts": [
-                {
-                    "Id": "8c3d86b4-516e-413a-bbf0-54d937b6dbb1",
-                    "IdText": "Config",
-                    "text": "Config",
-                    "event": false,
-                    "type": "LOFARParameterSet",
-                    "description": " ParameterSet descriptor for the image solver"
-                },
-                {
-                    "Id": "76558eb7-59b5-493f-8eaa-292745ce5891",
-                    "IdText": "Model",
-                    "text": "Model",
-                    "event": false,
-                    "type": "scimathParams",
-                    "description": " Params of solved normal equations"
-                }
-            ],
-            "outputPorts": [
-                {
-                    "Id": "974c0a6c-f9bd-40f5-8ff3-1db8b85f9941",
-                    "IdText": "Normal",
-                    "text": "Normal",
-                    "event": false,
-                    "type": "scimathImagingNormalEquations ImagingNormalEquations to solve",
-                    "description": "scimathImagingNormalEquations ImagingNormalEquations to solve"
-                }
-            ],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "fields": [
-                {
-                    "text": "Library Path",
-                    "name": "libpath",
-                    "value": "%JACAL_SO%",
-                    "default": "%JACAL_SO%",
-                    "description": "The path to the JACAL library",
-                    "readonly": true,
-                    "type": "String",
-                    "precious": false
-                },
-                {
-                    "text": "Arg01",
-                    "name": "Arg01",
-                    "value": "name=CalcNElight",
-                    "default": "name=CalcNElight",
-                    "description": "",
-                    "readonly": true,
-                    "type": "String",
-                    "precious": false
-                },
-                {
-                    "text": "Execution time",
-                    "name": "execution_time",
-                    "value": 5,
-                    "default": 5,
-                    "description": "Estimated execution time",
-                    "readonly": false,
-                    "type": "Float",
-                    "precious": false
-                },
-                {
-                    "text": "Num CPUs",
-                    "name": "num_cpus",
-                    "value": 1,
-                    "default": 1,
-                    "description": "Number of cores used",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
-                    "value": "false",
-                    "default": "false",
-                    "description": "Component is start of a group",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false
-                }
-            ],
-            "git_url": "https://gitlab-ci-token:1fExYYW2N9ZJmSby3RrE@gitlab.com/ska-telescope/ska-sdp-jacal.git",
-            "sha": "bbb13bb"
-        },
-        {
-            "category": "DynlibApp",
-            "categoryType": "Application",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
-            "drawOrderHint": 0,
-            "key": -3,
             "text": "InitSpectralCube",
             "description": "Build the output image cube\nThis class builds the output cube in the format specified by the parset.",
             "collapsed": false,
@@ -320,8 +210,8 @@
                     "precious": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:1fExYYW2N9ZJmSby3RrE@gitlab.com/ska-telescope/ska-sdp-jacal.git",
-            "sha": "bbb13bb"
+            "git_url": "https://gitlab-ci-token:6zdzMH-AsmNo6dw69XNE@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "2f53a81"
         },
         {
             "category": "DynlibApp",
@@ -331,7 +221,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -4,
+            "key": -3,
             "text": "LoadNE",
             "description": "Example class that simply loads Normal Equations from a drop\nImplements a test method that uses the contents of the the parset to load in a measurement set and print a summary of its contents. We will simply load in a NormalEquation from a daliuge drop and output the image. This simply tests the NE interface to the daliuge memory drop.",
             "collapsed": false,
@@ -413,8 +303,8 @@
                     "precious": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:1fExYYW2N9ZJmSby3RrE@gitlab.com/ska-telescope/ska-sdp-jacal.git",
-            "sha": "bbb13bb"
+            "git_url": "https://gitlab-ci-token:6zdzMH-AsmNo6dw69XNE@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "2f53a81"
         },
         {
             "category": "DynlibApp",
@@ -424,7 +314,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -5,
+            "key": -4,
             "text": "LoadParset",
             "description": "Load a LOFAR Parameter Set in the DaliugeApplication Framework\nLoads a configuration from a file drop and generates a LOFAR::ParameterSet The first ASKAP example in the Daliuge framework that actually performs an ASKAP related task. We load a parset into memory from either a file or another Daliuge drop_status",
             "collapsed": false,
@@ -515,8 +405,8 @@
                     "precious": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:1fExYYW2N9ZJmSby3RrE@gitlab.com/ska-telescope/ska-sdp-jacal.git",
-            "sha": "bbb13bb"
+            "git_url": "https://gitlab-ci-token:6zdzMH-AsmNo6dw69XNE@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "2f53a81"
         },
         {
             "category": "DynlibApp",
@@ -526,7 +416,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -6,
+            "key": -5,
             "text": "LoadVis",
             "description": "Loads a visibility set, grids it onto the UV plane and FFTs the grid\nLoads a configuration from a file drop and a visibility set from a casacore::Measurement Set",
             "collapsed": false,
@@ -617,8 +507,8 @@
                     "precious": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:1fExYYW2N9ZJmSby3RrE@gitlab.com/ska-telescope/ska-sdp-jacal.git",
-            "sha": "bbb13bb"
+            "git_url": "https://gitlab-ci-token:6zdzMH-AsmNo6dw69XNE@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "2f53a81"
         },
         {
             "category": "DynlibApp",
@@ -628,7 +518,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -7,
+            "key": -6,
             "text": "MajorCycle",
             "description": "Loads a visibility set, grids it onto the UV plane and FFTs the grid\nLoads a configuration from a file drop and a visibility set from a casacore::Measurement Set",
             "collapsed": false,
@@ -727,8 +617,8 @@
                     "precious": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:1fExYYW2N9ZJmSby3RrE@gitlab.com/ska-telescope/ska-sdp-jacal.git",
-            "sha": "bbb13bb"
+            "git_url": "https://gitlab-ci-token:6zdzMH-AsmNo6dw69XNE@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "2f53a81"
         },
         {
             "category": "DynlibApp",
@@ -738,7 +628,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -8,
+            "key": -7,
             "text": "NESpectralCube",
             "description": "Build an output image cube from input NormalEquations\nThis class builds the output cube is whatever format specified by the parset. Generates a cube of NormalEquation slices.",
             "collapsed": false,
@@ -828,8 +718,8 @@
                     "precious": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:1fExYYW2N9ZJmSby3RrE@gitlab.com/ska-telescope/ska-sdp-jacal.git",
-            "sha": "bbb13bb"
+            "git_url": "https://gitlab-ci-token:6zdzMH-AsmNo6dw69XNE@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "2f53a81"
         },
         {
             "category": "DynlibApp",
@@ -839,7 +729,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -9,
+            "key": -8,
             "text": "OutputParams",
             "description": "Solves an Normal Equation provided by a Daliuge Drop. Outputs the Params class as images.\nImplements an ASKAPSoft solver. This essentially takes a NormalEquation and generates a a set of \"params\" usually via a minor cycle deconvolution. We will simply load in a NormalEquation from a daliuge drop and solve it via a minor cycle deconvolution. This drop actually generates the output images based upon the contents of the Params object.",
             "collapsed": false,
@@ -862,18 +752,25 @@
                     "event": false,
                     "type": "LOFARParameterSet",
                     "description": " ParameterSet descriptor for the image solver"
-                }
-            ],
-            "outputPorts": [
+                },
                 {
-                    "Id": "06af74c0-4b0a-43c1-8c03-178ed498638f",
+                    "Id": "65bc7846-aa06-4f66-b01a-4dfdf7ef83ed",
                     "IdText": "Model",
                     "text": "Model",
                     "event": false,
                     "type": "scimathParams",
                     "description": ""
+                },
+                {
+                    "Id": "f6bd20ed-200f-4ccd-a751-c4199ef6c3ce",
+                    "IdText": "Restored Model",
+                    "text": "Restored Model",
+                    "event": false,
+                    "type": "scimathParams",
+                    "description": ""
                 }
             ],
+            "outputPorts": [],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
             "inputAppFields": [],
@@ -930,8 +827,8 @@
                     "precious": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:1fExYYW2N9ZJmSby3RrE@gitlab.com/ska-telescope/ska-sdp-jacal.git",
-            "sha": "bbb13bb"
+            "git_url": "https://gitlab-ci-token:6zdzMH-AsmNo6dw69XNE@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "2f53a81"
         },
         {
             "category": "DynlibApp",
@@ -941,7 +838,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -10,
+            "key": -9,
             "text": "RestoreSolver",
             "description": "Implements an ASKAPSoft Restore solver. This essentially takes a NormalEquation and a set of \"params\" and creates a restored image.\nThis takes a configuration and a set of normal equations and uses the Solver requested in in the ParameterSet to produce an ouput model.",
             "collapsed": false,
@@ -1040,8 +937,8 @@
                     "precious": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:1fExYYW2N9ZJmSby3RrE@gitlab.com/ska-telescope/ska-sdp-jacal.git",
-            "sha": "bbb13bb"
+            "git_url": "https://gitlab-ci-token:6zdzMH-AsmNo6dw69XNE@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "2f53a81"
         },
         {
             "category": "DynlibApp",
@@ -1051,7 +948,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -11,
+            "key": -10,
             "text": "SolveNE",
             "description": "Implements an ASKAPSoft solver. This essentially takes a NormalEquation and generates a set of params usually via a minor cycle deconvolution.\nThis takes a configuration and a set of normal equations and uses the Solver requested in in the ParameterSet to produce an ouput model.",
             "collapsed": false,
@@ -1142,8 +1039,8 @@
                     "precious": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:1fExYYW2N9ZJmSby3RrE@gitlab.com/ska-telescope/ska-sdp-jacal.git",
-            "sha": "bbb13bb"
+            "git_url": "https://gitlab-ci-token:6zdzMH-AsmNo6dw69XNE@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "2f53a81"
         },
         {
             "category": "DynlibApp",
@@ -1153,7 +1050,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -12,
+            "key": -11,
             "text": "SpectralCube",
             "description": "Build the output image cube\nThis class builds the output cube is whatever format specified by the parset.",
             "collapsed": false,
@@ -1244,8 +1141,8 @@
                     "precious": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:1fExYYW2N9ZJmSby3RrE@gitlab.com/ska-telescope/ska-sdp-jacal.git",
-            "sha": "bbb13bb"
+            "git_url": "https://gitlab-ci-token:6zdzMH-AsmNo6dw69XNE@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "2f53a81"
         }
     ],
     "linkDataArray": []
