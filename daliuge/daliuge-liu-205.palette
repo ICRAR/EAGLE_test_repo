@@ -6,7 +6,7 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "daliuge-liu-205.palette",
-        "sha": "6682c25",
+        "sha": "cdb25a4",
         "git_url": "https://github.com/ICRAR/daliuge.git"
     },
     "nodeDataArray": [
@@ -110,7 +110,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "6682c25"
+            "sha": "cdb25a4"
         },
         {
             "category": "PythonApp",
@@ -184,7 +184,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "6682c25"
+            "sha": "cdb25a4"
         },
         {
             "category": "PythonApp",
@@ -195,6 +195,89 @@
             "canHaveOutputs": true,
             "drawOrderHint": 0,
             "key": -3,
+            "text": "CRCStreamApp",
+            "description": "Calculate CRC in the streaming mode i.e. A \"streamingConsumer\" of its predecessor in the graph",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [],
+            "outputPorts": [
+                {
+                    "Id": "9ea0db74-31ae-4734-ba9e-5bac6ae55d39",
+                    "IdText": "data",
+                    "text": "Data",
+                    "event": false,
+                    "type": "String",
+                    "description": ""
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Application Class",
+                    "name": "appclass",
+                    "value": "dlg.apps.crc.CRCStreamApp",
+                    "default": "dlg.apps.crc.CRCStreamApp",
+                    "description": "Application class",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false
+                },
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "default": 5,
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float",
+                    "precious": false
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "default": 1,
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "false",
+                    "default": "false",
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false
+                }
+            ],
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "cdb25a4"
+        },
+        {
+            "category": "PythonApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -4,
             "text": "GenericScatterApp",
             "description": "An APP that splits about any object that can be converted to a numpy array into as many parts as the app has outputs, provided that the initially converted numpy array has enough elements. The return will be a numpy array of arrays, where the first axis is of length len(outputs). The modulo remainder of the length of the original array and the number of outputs will be distributed across the first len(outputs)-1 elements of the resulting array.",
             "collapsed": false,
@@ -267,7 +350,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "6682c25"
+            "sha": "cdb25a4"
         },
         {
             "category": "PythonApp",
@@ -277,7 +360,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -4,
+            "key": -5,
             "text": "HelloWorldApp",
             "description": "A simple APP that implements the standard Hello World in DALiuGE. It allows to change 'World' with some other string and it also permits to connect the single output port to multiple sinks, which will all receive the same message. App does not require any input.",
             "collapsed": false,
@@ -360,7 +443,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "6682c25"
+            "sha": "cdb25a4"
         },
         {
             "category": "PythonApp",
@@ -370,7 +453,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -5,
+            "key": -6,
             "text": "MSPlasmaReader",
             "description": "Batch read entire Measurement Set from Plasma.",
             "collapsed": false,
@@ -452,7 +535,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "6682c25"
+            "sha": "cdb25a4"
         },
         {
             "category": "PythonApp",
@@ -462,7 +545,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -6,
+            "key": -7,
             "text": "MSPlasmaWriter",
             "description": "Batch write entire Measurement Set to Plasma.",
             "collapsed": false,
@@ -544,7 +627,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "6682c25"
+            "sha": "cdb25a4"
         },
         {
             "category": "PythonApp",
@@ -554,7 +637,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -7,
+            "key": -8,
             "text": "MSStreamingPlasmaConsumer",
             "description": "Stream Measurement Set one correlator timestep at a time via Plasma.",
             "collapsed": false,
@@ -646,7 +729,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "6682c25"
+            "sha": "cdb25a4"
         },
         {
             "category": "PythonApp",
@@ -656,7 +739,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -8,
+            "key": -9,
             "text": "MSStreamingPlasmaProducer",
             "description": "Stream Measurement Set one correlator timestep at a time via Plasma.",
             "collapsed": false,
@@ -748,7 +831,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "6682c25"
+            "sha": "cdb25a4"
         },
         {
             "category": "PythonApp",
@@ -758,7 +841,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -9,
+            "key": -10,
             "text": "NgasArchivingApp",
             "description": "Takes an input and archives it in an NGAS server.",
             "collapsed": false,
@@ -881,7 +964,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "6682c25"
+            "sha": "cdb25a4"
         },
         {
             "category": "PythonApp",
@@ -891,7 +974,131 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -10,
+            "key": -11,
+            "text": "PyFuncApp",
+            "description": "An application that wraps a simple python function. The inputs of the application are treated as the arguments of the function. Conversely, the output of the function is treated as the output of the application. If the application has more than one output, the result of calling the function is treated as an iterable, with each individual object being written to its corresponding output. \nUsers indicate the function to be wrapped via the ``func_name`` parameter. Otherwise, users can also *send* over the python code using the ``func_code`` parameter. The code needs to be base64-encoded and produced with the marshal module of the same Python version used to run DALiuGE.\nBoth inputs and outputs are serialized using the pickle protocol.",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [],
+            "outputPorts": [],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Application Class",
+                    "name": "appclass",
+                    "value": "dlg.apps.pyfunc.PyFuncApp",
+                    "default": "dlg.apps.pyfunc.PyFuncApp",
+                    "description": "Application class",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false
+                },
+                {
+                    "text": "Function Name",
+                    "name": "func_name",
+                    "value": "",
+                    "default": "",
+                    "description": "Python fuction name",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false
+                },
+                {
+                    "text": "Function Code",
+                    "name": "func_code",
+                    "value": "",
+                    "default": "",
+                    "description": "Python fuction code, e.g. 'def fuction_name(args): return args'",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false
+                },
+                {
+                    "text": "Pickle",
+                    "name": "pickle",
+                    "value": "",
+                    "default": "",
+                    "description": "Whether the python arguments are pickled.",
+                    "readonly": false,
+                    "type": "bool",
+                    "precious": false
+                },
+                {
+                    "text": "Function Defaults",
+                    "name": "func_defaults",
+                    "value": "",
+                    "default": "",
+                    "description": "Mapping from argname to default value. Should match only the last part of the argnames list",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false
+                },
+                {
+                    "text": "Function Arguments Mapping",
+                    "name": "func_arg_mapping",
+                    "value": "",
+                    "default": "",
+                    "description": "Mapping between argument name and input drop uids",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false
+                },
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "default": 5,
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float",
+                    "precious": false
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "default": 1,
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "false",
+                    "default": "false",
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false
+                }
+            ],
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "cdb25a4"
+        },
+        {
+            "category": "PythonApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -12,
             "text": "RandomArrayApp",
             "description": "A testing APP that does not take any input and produces a random array of type int64, if integer is set to True, else of type float64. size indicates the number of elements ranging between the values low and high. The resulting array will be send to all connected output apps. \ninteger: bool [True], generate integer array low: float, lower boundary (will be converted to int for integer arrays) high: float, upper boundary (will be converted to int for integer arrays) size: int, number of array elements",
             "collapsed": false,
@@ -1004,7 +1211,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "6682c25"
+            "sha": "cdb25a4"
         },
         {
             "category": "PythonApp",
@@ -1014,7 +1221,129 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -11,
+            "key": -13,
+            "text": "ScpApp",
+            "description": "A BarrierAppDROP that copies the content of its single input onto its single output via SSH's scp protocol. \nDepending on the physical location of each DROP (this application, and its input and outputs) this application will copy data FROM another host or TO other host. This application's node must thus coincide with one of the two I/O DROPs.",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "55c8087b-4ef9-43a9-9d5f-10ad6cabf45a",
+                    "IdText": "file",
+                    "text": "File",
+                    "event": false,
+                    "type": "PathBasedDrop",
+                    "description": " Input file path"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "f7f19622-d74d-4d0c-a17f-4821ab3b178a",
+                    "IdText": "file",
+                    "text": "File",
+                    "event": false,
+                    "type": "PathBasedDrop",
+                    "description": " Output file path"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Application Class",
+                    "name": "appclass",
+                    "value": "dlg.apps.scp.ScpApp",
+                    "default": "dlg.apps.scp.ScpApp",
+                    "description": "Application class",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false
+                },
+                {
+                    "text": "Remote User",
+                    "name": "remoteUser",
+                    "value": "",
+                    "default": "",
+                    "description": "Remote user address",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false
+                },
+                {
+                    "text": "Private Key Path",
+                    "name": "pkeyPath",
+                    "value": "",
+                    "default": "",
+                    "description": "Private key path",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false
+                },
+                {
+                    "text": "Timeout",
+                    "name": "timeout",
+                    "value": "",
+                    "default": "",
+                    "description": "Connection timeout in seconds",
+                    "readonly": false,
+                    "type": "Float",
+                    "precious": false
+                },
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "default": 5,
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float",
+                    "precious": false
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "default": 1,
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "false",
+                    "default": "false",
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false
+                }
+            ],
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "cdb25a4"
+        },
+        {
+            "category": "PythonApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -14,
             "text": "SleepApp",
             "description": "A simple APP that sleeps the specified amount of time (0 by default). This is mainly useful (and used) to test graph translation and structure without executing real algorithms. Very useful for debugging.",
             "collapsed": false,
@@ -1088,7 +1417,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "6682c25"
+            "sha": "cdb25a4"
         },
         {
             "category": "PythonApp",
@@ -1098,9 +1427,132 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -12,
+            "key": -15,
+            "text": "SocketListenerApp",
+            "description": "A BarrierAppDROP that listens on a socket for data. The server-side socket expects only one client, and assumes that the client will close the connection after all its data has been sent. This application expects no input DROPs, and therefore raises an exception whenever one is added. On the output side, one or more outputs can be specified with the restriction that they are not ContainerDROPs so data can be written into them through the framework.",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [],
+            "outputPorts": [
+                {
+                    "Id": "ea318e8a-418e-4b5c-8b73-00fc6a3a4c68",
+                    "IdText": "data",
+                    "text": "Data",
+                    "event": false,
+                    "type": "String",
+                    "description": ""
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Application Class",
+                    "name": "appclass",
+                    "value": "dlg.apps.socket_listener.SocketListener",
+                    "default": "dlg.apps.socket_listener.SocketListener",
+                    "description": "Application class",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false
+                },
+                {
+                    "text": "Host",
+                    "name": "host",
+                    "value": "127.0.0.1",
+                    "default": "127.0.0.1",
+                    "description": "Host address",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false
+                },
+                {
+                    "text": "Port",
+                    "name": "port",
+                    "value": "1111",
+                    "default": "1111",
+                    "description": "Host port",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false
+                },
+                {
+                    "text": "Buffer Size",
+                    "name": "bufsize",
+                    "value": "4096",
+                    "default": "4096",
+                    "description": "Receive buffer size",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false
+                },
+                {
+                    "text": "Reuse Address",
+                    "name": "reuseAddr",
+                    "value": "False",
+                    "default": "False",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false
+                },
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "default": 5,
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float",
+                    "precious": false
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "default": 1,
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "false",
+                    "default": "false",
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false
+                }
+            ],
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "cdb25a4"
+        },
+        {
+            "category": "PythonApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -16,
             "text": "UrlRetrieveApp",
-            "description": "A simple APP that retrieves the content of a URL and writes. it to all outputs.",
+            "description": "A simple APP that retrieves the content of a URL and writes it to all outputs.",
             "collapsed": false,
             "showPorts": false,
             "streaming": false,
@@ -1181,7 +1633,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "6682c25"
+            "sha": "cdb25a4"
         }
     ],
     "linkDataArray": []
