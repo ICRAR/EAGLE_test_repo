@@ -6,8 +6,8 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "jacal-yan-859.palette",
-        "sha": "d7a8b7c",
-        "git_url": "https://gitlab-ci-token:FqHaW6oiya6LkwXWsRay@gitlab.com/ska-telescope/ska-sdp-jacal.git"
+        "sha": "2ebc389",
+        "git_url": "https://gitlab-ci-token:SgVoPJZJoAyrTxcgpdx6@gitlab.com/ska-telescope/ska-sdp-jacal.git"
     },
     "nodeDataArray": [
         {
@@ -117,412 +117,8 @@
                     "precious": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:FqHaW6oiya6LkwXWsRay@gitlab.com/ska-telescope/ska-sdp-jacal.git",
-            "sha": "d7a8b7c"
-        },
-        {
-            "category": "DataDrop",
-            "categoryType": "Application",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
-            "drawOrderHint": 0,
-            "key": -2,
-            "text": "CImagerConfigTemplate",
-            "description": "A first-dummy test as a config template",
-            "collapsed": false,
-            "showPorts": false,
-            "streaming": false,
-            "subject": null,
-            "selected": false,
-            "expanded": false,
-            "inputApplicationName": "",
-            "outputApplicationName": "",
-            "exitApplicationName": "",
-            "inputApplicationType": "None",
-            "outputApplicationType": "None",
-            "exitApplicationType": "None",
-            "inputPorts": [
-                {
-                    "Id": "6d2a93b1-57be-47f7-a3d2-287063efe6bf",
-                    "IdText": "Config",
-                    "text": "InitialConfigFile",
-                    "event": false,
-                    "type": "File",
-                    "description": "An optional initial configuration file to append information to"
-                }
-            ],
-            "outputPorts": [
-                {
-                    "Id": "c28e443c-5f6c-4df2-abd7-8ac0fe31a33d",
-                    "IdText": "Config",
-                    "text": "ConfigFile",
-                    "event": false,
-                    "type": "File",
-                    "description": "The output configuration file"
-                }
-            ],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "fields": [
-                {
-                    "text": "imagetype",
-                    "name": "Cimager.imagetype",
-                    "value": "casa",
-                    "default": "casa",
-                    "description": "Type of the image handler (determines the format of the images, both which are written to or read from the disk). Either \u201cfits\u201d or \u201ccasa\u201d can be requested.",
-                    "readonly": false,
-                    "type": "string",
-                    "precious": false
-                },
-                {
-                    "text": "Cimager.dataset",
-                    "name": "Cimager.dataset",
-                    "value": "None",
-                    "default": "None",
-                    "description": "Measurement set file name to read from. Usual substitution rules apply if the parameter is a single string. If the parameter is given as a vector of strings all measurement sets given by this vector are effectively concatenated together on-the-fly in the serial case. In the parallel case, the size of the vector is required to be either 1 or the number of nodes - 1, and therefore there is one measurement set per worker node.",
-                    "readonly": false,
-                    "type": "vector<string>",
-                    "precious": false
-                },
-                {
-                    "text": "Cimager.nworkergroups",
-                    "name": "Cimager.nworkergroups",
-                    "value": "1",
-                    "default": "1",
-                    "description": "Number of worker groups. This option can only be used in the parallel mode. If it is greater than 1, the model parameters are distributed (as evenly as possible) between the given number of groups of workers (e.g. if one calculates a Taylor term expansion of the order of 1 for one image, setting this parameter to 3 will allow parallel computation of the Taylor terms for this image). This is on top of the normal parallelism within the group (the w index spans from 0 to the number of workers per group - 1). Essentially, this option allows to throw several workers on the same problem if the model allows partitioning.Taylor terms, faceting and multiple images in the model are the typical use cases.",
-                    "readonly": false,
-                    "type": "int",
-                    "precious": false
-                },
-                {
-                    "text": "Cimager.datacolumn",
-                    "name": "Cimager.datacolumn",
-                    "value": "DATA",
-                    "default": "DATA",
-                    "description": "The name of the data column in the measurement set which will be the source of visibilities.This can be useful to process real telescope data which were passed through casapy at some stage (e.g. to image calibrated data which are stored in the CORRECTED_DATA column). In the measurement set convention, the DATA column which is used by default contains raw uncalibrated data as received directly from the telescope. Calibration tasks in casapy make a copy when calibration is applied creating a new data column.",
-                    "readonly": false,
-                    "type": "string",
-                    "precious": false
-                },
-                {
-                    "text": "Cimager.sphfuncforpsf",
-                    "name": "Cimager.sphfuncforpsf",
-                    "value": "False",
-                    "default": "False",
-                    "description": "If true, the default spheroidal function gridder is used to compute PSF regardless of the gridder selected for model degridding and residual gridding. This has a potential to produce better behaving PSF by taking out two major factors of position dependence. Note, this doesn\u2019t make the PSF correct or otherwise,it is just a different approximation",
-                    "readonly": false,
-                    "type": "bool",
-                    "precious": false
-                },
-                {
-                    "text": "Cimager.calibrate",
-                    "name": "Cimager.calibrate",
-                    "value": "False",
-                    "default": "False",
-                    "description": "If true, the default spheroidal function gridder is used to compute PSF regardless of the gridder selected for model degridding and residual gridding. This has a potential to produce better behaving PSF by taking out two major factors of position dependence. Note, this doesn\u2019t make the PSF correct or otherwise,it is just a different approximation",
-                    "readonly": false,
-                    "type": "bool",
-                    "precious": false
-                },
-                {
-                    "text": "Cimager.calibrate.scalenoise",
-                    "name": "Cimager.calibrate.scalenoise",
-                    "value": "<default_value>",
-                    "default": "<default_value>",
-                    "description": "If true, the noise estimate will be scaled in accordance with the applied calibrator factor to achieve proper weighting.",
-                    "readonly": false,
-                    "type": "<type>",
-                    "precious": false
-                },
-                {
-                    "text": "Cimager.calibrate.allowflag",
-                    "name": "Cimager.calibrate.allowflag",
-                    "value": "False",
-                    "default": "False",
-                    "description": "If true, the noise estimate will be scaled in accordance with the applied calibrator factor to achieve proper weighting.",
-                    "readonly": false,
-                    "type": "bool",
-                    "precious": false
-                },
-                {
-                    "text": "Cimager.calibrate.ignorebeam",
-                    "name": "Cimager.calibrate.ignorebeam",
-                    "value": "False",
-                    "default": "False",
-                    "description": "If true, the calibration solution corresponding to beam 0 will be applied to all beams",
-                    "readonly": false,
-                    "type": "bool",
-                    "precious": false
-                },
-                {
-                    "text": "Cimager.gainsfile",
-                    "name": "Cimager.gainsfile",
-                    "value": "None",
-                    "default": "None",
-                    "description": "This is an obsolete parameter, which is still supported for backwards compatibility defining the file with antenna gains (a parset format, keywords look like gain.g11.0, where g11 or g22 in the middle correspond to different polarisations and the trailing number is the zero-based antenna number. The default value (empty string) means no gain correction is performed. The gain file format is the same as produced by Ccalibrator.",
-                    "readonly": false,
-                    "type": "string",
-                    "precious": false
-                },
-                {
-                    "text": "Cimager.restore",
-                    "name": "Cimager.restore",
-                    "value": "False",
-                    "default": "False",
-                    "description": "If true, the image will be restored (by convolving with the given 2D gaussian). This is an additional step to normal imaging, which, by default, ends with just a model image. The restored image is written into a separate image file (with the .restored suffix). The convolution is done with the restore solver (see also Solvers) which by default reuses the same parameters used to setup the image solver. An additional preconditioning step with alternative parameters can be specified using restore.preconditioner.xxx, which results in a second set of restored files (with the .alt.restored suffix). The only additional parameter of the restore solver is the shape of the gaussian representing clean beam (or flag to determine the shape). It is given by the restore.beam parameter, which must be present if restore is set to True.",
-                    "readonly": false,
-                    "type": "bool",
-                    "precious": false
-                },
-                {
-                    "text": "Cimager.residuals",
-                    "name": "Cimager.residuals",
-                    "value": "True",
-                    "default": "True",
-                    "description": "If true write out the residual image.",
-                    "readonly": false,
-                    "type": "bool",
-                    "precious": false
-                },
-                {
-                    "text": "Cimager.restore.beam",
-                    "name": "Cimager.restore.beam",
-                    "value": "None",
-                    "default": "None",
-                    "description": "Either a single word fit or a quantity string describing the shape of the clean beam (to convolve the model image with). If quantity is given it must have exactly 3 elements, e.g. [30arcsec, 10arcsec, 40deg]. Otherwise an exception is thrown. This parameter is only used if restore is set to True. If restore.beam=fit, the code will fit a 2D gaussian to the PSF image (first encountered if multiple images are solved for) and use the results of this fit.",
-                    "readonly": false,
-                    "type": "vector<string>",
-                    "precious": false
-                },
-                {
-                    "text": "Cimager.restore.beam.cutoff",
-                    "name": "Cimager.restore.beam.cutoff",
-                    "value": "0.05",
-                    "default": "0.05",
-                    "description": "Cutoff for the support search prior to beam fitting, as a fraction of the PSF peak. This parameter is only used if restore.beam=fit. The code does fitting on a limited support (to speed things up and to avoid sidelobes influencing the fit). The extent of this support is controlled by this parameter representing the level of the PSF which should be included into support. This value should be above the first sidelobe level for meaningful results.",
-                    "readonly": false,
-                    "type": "double",
-                    "precious": false
-                },
-                {
-                    "text": "Cimager.restore.preconditioner.xxx",
-                    "name": "Cimager.restore.preconditioner.xxx",
-                    "value": "None",
-                    "default": "None",
-                    "description": "Specify an additional preconditioner to be used when restoring. This will result in an a second set of restored files with the .alt.restored suffix. See preconditioner below. When using multiple restore solvers, one should use the restore.beam=fit option to allow for different beam shapes.",
-                    "readonly": false,
-                    "type": "Vector<String>",
-                    "precious": false
-                },
-                {
-                    "text": "Cimager.restore.equalise",
-                    "name": "Cimager.restore.equalise",
-                    "value": "False",
-                    "default": "False",
-                    "description": "If true, the final residual is multiplied by the square root of the truncated normalised weight (i.e. additional weight described by Sault et al. (1996), which gives a flat noise). Note, that the source flux densities are likely to have position-dependent errors if this option is used because not all flux is recovered during the clean process. However, the images look aesthetically pleasing with this option.",
-                    "readonly": false,
-                    "type": "bool",
-                    "precious": false
-                },
-                {
-                    "text": "Cimager.restore.updateresiduals",
-                    "name": "Cimager.restore.updateresiduals",
-                    "value": "True",
-                    "default": "True",
-                    "description": "The residual image written out by the restore solver can be updated using the latest model. This is now the default behviour. Note the majorcycle outputs do not pass through the restore solver so are not updated so therefore correspond to the residuals at the beginning of the last minor cycle.",
-                    "readonly": false,
-                    "type": "bool",
-                    "precious": false
-                },
-                {
-                    "text": "Cimager.nUVWMachines",
-                    "name": "Cimager.nUVWMachines",
-                    "value": "1",
-                    "default": "1",
-                    "description": "Size of uvw-machines cache. uvw-machines are used to convert uvw from a given phase centre to a common tangent point. To reduce the cost to set the machine up (calculation of the transformation matrix), a number of these machines is cached. The key to the cache is a pair of two directions: the current phase centre and the tangent centre. If the required pair is within the tolerances of that used to setup one of the machines in the cache, this machine is reused. If none of the cache items matches the least accessed one is replaced by the new machine which is set up with the new pair of directions. The code would work faster if this parameter is set to the number of phase centres encountered during imaging. In non-faceting case, the optimal setting would be the number of synthetic beams times the number of fields. For faceting (btw, the performance gain is quite significant in this case), it should be further multiplied by the number of facets. Direction tolerances are given as a separate parameter.",
-                    "readonly": false,
-                    "type": "int",
-                    "precious": false
-                },
-                {
-                    "text": "Cimager.gridder",
-                    "name": "Cimager.gridder",
-                    "value": "None",
-                    "default": "None",
-                    "description": "Name of the gridder, further parameters are given by gridder.something. See Gridders for details.",
-                    "readonly": false,
-                    "type": "string",
-                    "precious": false
-                },
-                {
-                    "text": "Cimager.includeflagged",
-                    "name": "Cimager.includeflagged",
-                    "value": "True",
-                    "default": "True",
-                    "description": "By default the flags are ignored when scanning through the data for ranges of frequencies, uvw values and other parameters because this is faster. Set to false to exclude flagged data and make the advice more accurate. Flagged data are always excluded during imaging.",
-                    "readonly": false,
-                    "type": "bool",
-                    "precious": false
-                },
-                {
-                    "text": "Cimager.rankstoringcf",
-                    "name": "Cimager.rankstoringcf",
-                    "value": "1",
-                    "default": "1",
-                    "description": "In the parallel mode, only this rank will attempt to export convolution functions if this operation is requested (see tablename option in the Gridders) This option is ignored in the serial mode.",
-                    "readonly": false,
-                    "type": "int",
-                    "precious": false
-                },
-                {
-                    "text": "Cimager.visweights",
-                    "name": "Cimager.visweights",
-                    "value": "None",
-                    "default": "None",
-                    "description": "degrid with the weight required for multi-frequency synthesis. At the moment, this parameter is decoupled from the image setup, which has to be done separately in a consistent way to use MSMFS (nterms should be set to something greater than 1).",
-                    "readonly": false,
-                    "type": "string",
-                    "precious": false
-                },
-                {
-                    "text": "Cimager.visweights.MFS.reffreq",
-                    "name": "Cimager.visweights.MFS.reffreq",
-                    "value": "0.0",
-                    "default": "0.0",
-                    "description": "Reference frequency in Hz for MFS processing (see above)",
-                    "readonly": false,
-                    "type": "double",
-                    "precious": false
-                },
-                {
-                    "text": "Cimager.solver",
-                    "name": "Cimager.solver",
-                    "value": "None",
-                    "default": "None",
-                    "description": "Name of the solver, further parameters are given by solver.something. See Solvers for details",
-                    "readonly": false,
-                    "type": "string",
-                    "precious": false
-                },
-                {
-                    "text": "Cimager.ncycles",
-                    "name": "Cimager.ncycles",
-                    "value": "0",
-                    "default": "0",
-                    "description": "Number of major cycles (and iterations over the dataset)",
-                    "readonly": false,
-                    "type": "int",
-                    "precious": false
-                },
-                {
-                    "text": "Cimager.sensitivityimage",
-                    "name": "Cimager.sensitivityimage",
-                    "value": "True",
-                    "default": "True",
-                    "description": "If true, an image with theoretical sensitivity will be created in addition to weights image",
-                    "readonly": false,
-                    "type": "bool",
-                    "precious": false
-                },
-                {
-                    "text": "Cimager.sensitivityimage.cutoff",
-                    "name": "Cimager.sensitivityimage.cutoff",
-                    "value": "0.01",
-                    "default": "0.01",
-                    "description": "Desired cutoff in the sensitivity image",
-                    "readonly": false,
-                    "type": "float",
-                    "precious": false
-                },
-                {
-                    "text": "Cimager.freqframe",
-                    "name": "Cimager.freqframe",
-                    "value": "topo",
-                    "default": "topo",
-                    "description": "Frequency frame to work in (the frame is converted when the dataset is read). Either lsrk or topo is supported.",
-                    "readonly": false,
-                    "type": "string",
-                    "precious": false
-                },
-                {
-                    "text": "ConfigData",
-                    "name": "config_data",
-                    "value": "",
-                    "default": "",
-                    "description": "Additional configuration information to be mixed in with the initial data",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false
-                }
-            ],
-            "git_url": "https://gitlab-ci-token:FqHaW6oiya6LkwXWsRay@gitlab.com/ska-telescope/ska-sdp-jacal.git",
-            "sha": "d7a8b7c"
-        },
-        {
-            "category": "DataDrop",
-            "categoryType": "Application",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
-            "drawOrderHint": 0,
-            "key": -3,
-            "text": "ConfigTemplate",
-            "description": "A generic configuration file template wrapper",
-            "collapsed": false,
-            "showPorts": false,
-            "streaming": false,
-            "subject": null,
-            "selected": false,
-            "expanded": false,
-            "inputApplicationName": "",
-            "outputApplicationName": "",
-            "exitApplicationName": "",
-            "inputApplicationType": "None",
-            "outputApplicationType": "None",
-            "exitApplicationType": "None",
-            "inputPorts": [
-                {
-                    "Id": "fff742ae-697f-4277-a273-60e408b9fca3",
-                    "IdText": "Config",
-                    "text": "InitialConfigFile",
-                    "event": false,
-                    "type": "File",
-                    "description": "An optional initial configuration file to append information to"
-                }
-            ],
-            "outputPorts": [
-                {
-                    "Id": "be64e864-ad61-4d9b-8c1c-22a2fd9fcff3",
-                    "IdText": "Config",
-                    "text": "ConfigFile",
-                    "event": false,
-                    "type": "File",
-                    "description": "The output configuration file"
-                }
-            ],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "fields": [
-                {
-                    "text": "ConfigData",
-                    "name": "config_data",
-                    "value": "",
-                    "default": "",
-                    "description": "Additional configuration information to be mixed in with the initial data",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false
-                }
-            ],
-            "git_url": "https://gitlab-ci-token:FqHaW6oiya6LkwXWsRay@gitlab.com/ska-telescope/ska-sdp-jacal.git",
-            "sha": "d7a8b7c"
+            "git_url": "https://gitlab-ci-token:SgVoPJZJoAyrTxcgpdx6@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "2ebc389"
         },
         {
             "category": "DynlibApp",
@@ -532,7 +128,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -4,
+            "key": -2,
             "text": "InitSpectralCube",
             "description": "Build the output image cube\nThis class builds the output cube in the format specified by the parset.",
             "collapsed": false,
@@ -614,8 +210,8 @@
                     "precious": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:FqHaW6oiya6LkwXWsRay@gitlab.com/ska-telescope/ska-sdp-jacal.git",
-            "sha": "d7a8b7c"
+            "git_url": "https://gitlab-ci-token:SgVoPJZJoAyrTxcgpdx6@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "2ebc389"
         },
         {
             "category": "DynlibApp",
@@ -625,7 +221,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -5,
+            "key": -3,
             "text": "LoadNE",
             "description": "Example class that simply loads Normal Equations from a drop\nImplements a test method that uses the contents of the the parset to load in a measurement set and print a summary of its contents. We will simply load in a NormalEquation from a daliuge drop and output the image. This simply tests the NE interface to the daliuge memory drop.",
             "collapsed": false,
@@ -707,8 +303,8 @@
                     "precious": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:FqHaW6oiya6LkwXWsRay@gitlab.com/ska-telescope/ska-sdp-jacal.git",
-            "sha": "d7a8b7c"
+            "git_url": "https://gitlab-ci-token:SgVoPJZJoAyrTxcgpdx6@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "2ebc389"
         },
         {
             "category": "DynlibApp",
@@ -718,7 +314,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -6,
+            "key": -4,
             "text": "LoadParset",
             "description": "Load a LOFAR Parameter Set in the DaliugeApplication Framework\nLoads a configuration from a file drop and generates a LOFAR::ParameterSet The first ASKAP example in the Daliuge framework that actually performs an ASKAP related task. We load a parset into memory from either a file or another Daliuge drop_status",
             "collapsed": false,
@@ -809,8 +405,8 @@
                     "precious": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:FqHaW6oiya6LkwXWsRay@gitlab.com/ska-telescope/ska-sdp-jacal.git",
-            "sha": "d7a8b7c"
+            "git_url": "https://gitlab-ci-token:SgVoPJZJoAyrTxcgpdx6@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "2ebc389"
         },
         {
             "category": "DynlibApp",
@@ -820,7 +416,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -7,
+            "key": -5,
             "text": "LoadVis",
             "description": "Loads a visibility set, grids it onto the UV plane and FFTs the grid\nLoads a configuration from a file drop and a visibility set from a casacore::Measurement Set",
             "collapsed": false,
@@ -911,8 +507,8 @@
                     "precious": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:FqHaW6oiya6LkwXWsRay@gitlab.com/ska-telescope/ska-sdp-jacal.git",
-            "sha": "d7a8b7c"
+            "git_url": "https://gitlab-ci-token:SgVoPJZJoAyrTxcgpdx6@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "2ebc389"
         },
         {
             "category": "DynlibApp",
@@ -922,7 +518,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -8,
+            "key": -6,
             "text": "MajorCycle",
             "description": "Loads a visibility set, grids it onto the UV plane and FFTs the grid\nLoads a configuration from a file drop and a visibility set from a casacore::Measurement Set",
             "collapsed": false,
@@ -1021,8 +617,8 @@
                     "precious": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:FqHaW6oiya6LkwXWsRay@gitlab.com/ska-telescope/ska-sdp-jacal.git",
-            "sha": "d7a8b7c"
+            "git_url": "https://gitlab-ci-token:SgVoPJZJoAyrTxcgpdx6@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "2ebc389"
         },
         {
             "category": "DynlibApp",
@@ -1032,7 +628,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -9,
+            "key": -7,
             "text": "NESpectralCube",
             "description": "Build an output image cube from input NormalEquations\nThis class builds the output cube is whatever format specified by the parset. Generates a cube of NormalEquation slices.",
             "collapsed": false,
@@ -1122,8 +718,8 @@
                     "precious": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:FqHaW6oiya6LkwXWsRay@gitlab.com/ska-telescope/ska-sdp-jacal.git",
-            "sha": "d7a8b7c"
+            "git_url": "https://gitlab-ci-token:SgVoPJZJoAyrTxcgpdx6@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "2ebc389"
         },
         {
             "category": "DynlibApp",
@@ -1133,7 +729,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -10,
+            "key": -8,
             "text": "OutputParams",
             "description": "Solves an Normal Equation provided by a Daliuge Drop. Outputs the Params class as images.\nImplements an ASKAPSoft solver. This essentially takes a NormalEquation and generates a a set of \"params\" usually via a minor cycle deconvolution. We will simply load in a NormalEquation from a daliuge drop and solve it via a minor cycle deconvolution. This drop actually generates the output images based upon the contents of the Params object.",
             "collapsed": false,
@@ -1231,8 +827,8 @@
                     "precious": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:FqHaW6oiya6LkwXWsRay@gitlab.com/ska-telescope/ska-sdp-jacal.git",
-            "sha": "d7a8b7c"
+            "git_url": "https://gitlab-ci-token:SgVoPJZJoAyrTxcgpdx6@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "2ebc389"
         },
         {
             "category": "DynlibApp",
@@ -1242,7 +838,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -11,
+            "key": -9,
             "text": "RestoreSolver",
             "description": "Implements an ASKAPSoft Restore solver. This essentially takes a NormalEquation and a set of \"params\" and creates a restored image.\nThis takes a configuration and a set of normal equations and uses the Solver requested in in the ParameterSet to produce an ouput model.",
             "collapsed": false,
@@ -1341,8 +937,8 @@
                     "precious": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:FqHaW6oiya6LkwXWsRay@gitlab.com/ska-telescope/ska-sdp-jacal.git",
-            "sha": "d7a8b7c"
+            "git_url": "https://gitlab-ci-token:SgVoPJZJoAyrTxcgpdx6@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "2ebc389"
         },
         {
             "category": "DynlibApp",
@@ -1352,7 +948,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -12,
+            "key": -10,
             "text": "SolveNE",
             "description": "Implements an ASKAPSoft solver. This essentially takes a NormalEquation and generates a set of params usually via a minor cycle deconvolution.\nThis takes a configuration and a set of normal equations and uses the Solver requested in in the ParameterSet to produce an ouput model.",
             "collapsed": false,
@@ -1443,8 +1039,8 @@
                     "precious": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:FqHaW6oiya6LkwXWsRay@gitlab.com/ska-telescope/ska-sdp-jacal.git",
-            "sha": "d7a8b7c"
+            "git_url": "https://gitlab-ci-token:SgVoPJZJoAyrTxcgpdx6@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "2ebc389"
         },
         {
             "category": "DynlibApp",
@@ -1454,7 +1050,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -13,
+            "key": -11,
             "text": "SpectralCube",
             "description": "Build the output image cube\nThis class builds the output cube is whatever format specified by the parset.",
             "collapsed": false,
@@ -1545,20 +1141,20 @@
                     "precious": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:FqHaW6oiya6LkwXWsRay@gitlab.com/ska-telescope/ska-sdp-jacal.git",
-            "sha": "d7a8b7c"
+            "git_url": "https://gitlab-ci-token:SgVoPJZJoAyrTxcgpdx6@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "2ebc389"
         },
         {
-            "category": "DataDrop",
+            "category": "ParameterSet",
             "categoryType": "Application",
             "isData": false,
             "isGroup": false,
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -14,
-            "text": "YandaConfigTemplate",
-            "description": "A first cut at a complete config template",
+            "key": -12,
+            "text": "YandaParset",
+            "description": "A first cut at a complete parameter set template",
             "collapsed": false,
             "showPorts": false,
             "streaming": false,
@@ -1571,19 +1167,10 @@
             "inputApplicationType": "None",
             "outputApplicationType": "None",
             "exitApplicationType": "None",
-            "inputPorts": [
-                {
-                    "Id": "f1b6192f-c227-49f1-8c30-b4bbe78f070a",
-                    "IdText": "Config",
-                    "text": "InitialConfigFile",
-                    "event": false,
-                    "type": "File",
-                    "description": "An optional initial configuration file to append information to"
-                }
-            ],
+            "inputPorts": [],
             "outputPorts": [
                 {
-                    "Id": "5ea2d41e-a055-4123-8bb8-4cfbcfe5f46b",
+                    "Id": "00f7c2e8-ea56-4206-990d-c52fd8d701f7",
                     "IdText": "Config",
                     "text": "ConfigFile",
                     "event": false,
@@ -4817,8 +4404,8 @@
                     "precious": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:FqHaW6oiya6LkwXWsRay@gitlab.com/ska-telescope/ska-sdp-jacal.git",
-            "sha": "d7a8b7c"
+            "git_url": "https://gitlab-ci-token:SgVoPJZJoAyrTxcgpdx6@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "2ebc389"
         }
     ],
     "linkDataArray": []
