@@ -6,7 +6,7 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "daliuge-component-examples-yan-840.palette",
-        "sha": "10f52e9",
+        "sha": "2f9d0db",
         "git_url": "https://github.com/ICRAR/daliuge-component-examples"
     },
     "nodeDataArray": [
@@ -19,8 +19,8 @@
             "canHaveOutputs": true,
             "drawOrderHint": 0,
             "key": -1,
-            "text": "ForcedBranch",
-            "description": "Simple branch App, which is told its result as a parameter. This component does uses default input and output ports, but it is internally not using the data passed through them.",
+            "text": "FileGlob",
+            "description": "An App that uses glob to find all files matching a template given by a filepath and a wildcard string",
             "collapsed": false,
             "showPorts": false,
             "streaming": false,
@@ -33,32 +33,15 @@
             "inputApplicationType": "None",
             "outputApplicationType": "None",
             "exitApplicationType": "None",
-            "inputPorts": [
-                {
-                    "Id": "adb86f5d-c56e-4e7c-aff5-f827caa27b97",
-                    "IdText": "dummy",
-                    "text": "Dummy",
-                    "event": false,
-                    "type": "complex",
-                    "description": " Port receiving some input"
-                }
-            ],
+            "inputPorts": [],
             "outputPorts": [
                 {
-                    "Id": "c2a8a722-7ce2-49c4-bb9a-ac7cd3c268c7",
-                    "IdText": "Y",
-                    "text": "Y",
+                    "Id": "55a7bd85-93f5-4c5d-b380-bbf41eb6eb52",
+                    "IdText": "file_list",
+                    "text": "file_list",
                     "event": false,
-                    "type": "event",
-                    "description": " Port triggering the Y branch"
-                },
-                {
-                    "Id": "057dc21e-9d66-44e1-97f2-c55e1be8366b",
-                    "IdText": "N",
-                    "text": "N",
-                    "event": false,
-                    "type": "event",
-                    "description": " Port triggering the N branch"
+                    "type": "array",
+                    "description": " Port carrying the list of files"
                 }
             ],
             "inputLocalPorts": [],
@@ -67,12 +50,22 @@
             "outputAppFields": [],
             "fields": [
                 {
-                    "text": "Application Class",
-                    "name": "appclass",
-                    "value": "branch.ForcedBranch",
-                    "default": "branch.ForcedBranch",
-                    "description": "Import direction for application class",
-                    "readonly": true,
+                    "text": "wildcard",
+                    "name": "wildcard",
+                    "value": "*",
+                    "default": "*",
+                    "description": "Wildcard used to search for files",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false
+                },
+                {
+                    "text": "filepath",
+                    "name": "filepath",
+                    "value": ".",
+                    "default": ".",
+                    "description": "Import path for application class",
+                    "readonly": false,
                     "type": "String",
                     "precious": false
                 },
@@ -105,10 +98,20 @@
                     "readonly": false,
                     "type": "Boolean",
                     "precious": false
+                },
+                {
+                    "text": "Appclass",
+                    "name": "appclass",
+                    "value": "dlg.apps.simple.SleepApp",
+                    "default": "dlg.apps.simple.SleepApp",
+                    "description": "Application class",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "10f52e9"
+            "sha": "2f9d0db"
         },
         {
             "category": "PythonApp",
@@ -169,8 +172,8 @@
                 {
                     "text": "Application Class",
                     "name": "appclass",
-                    "value": "branch.MyBranch",
-                    "default": "branch.MyBranch",
+                    "value": " dlg_example_cmpts.appCmpts.MyBranch",
+                    "default": " dlg_example_cmpts.appCmpts.MyBranch",
                     "description": "Import direction for application class",
                     "readonly": true,
                     "type": "String",
@@ -208,7 +211,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "10f52e9"
+            "sha": "2f9d0db"
         },
         {
             "category": "File",
@@ -280,7 +283,109 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "10f52e9"
+            "sha": "2f9d0db"
+        },
+        {
+            "category": "PythonApp param/appclass Application Class/ dlg_example_cmpts.appCmpts.PickOne/String/readonly/ Import path for application class",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -4,
+            "text": "PickOne",
+            "description": "App that picks the first element of an input list, passes that to all outputs, except the first one. The first output is used to pass the remaining array on. This app is useful for a loop.",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "dabfdaf2-f272-4005-84ca-deddbf4ef91f",
+                    "IdText": "rest_array",
+                    "text": "rest_array",
+                    "event": false,
+                    "type": "",
+                    "description": " List of elements"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "e1b3141c-c2e3-47a9-a205-27b4369fa971",
+                    "IdText": "element",
+                    "text": "element",
+                    "event": false,
+                    "type": "complex",
+                    "description": " Port carrying the first element of input array the type is dependent on the list element type."
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [],
+            "git_url": "https://github.com/ICRAR/daliuge-component-examples",
+            "sha": "2f9d0db"
+        },
+        {
+            "category": "PythonApp param/appclass Application Class/ dlg_example_cmpts.apps.String2JSON/String/readonly/ Import path for application class",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -5,
+            "text": "String2JSON",
+            "description": "App that reads a string from a single input and tries to convert that to JSON",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "c6a2f2bc-4612-405c-93cb-cca781250c66",
+                    "IdText": "string",
+                    "text": "string",
+                    "event": false,
+                    "type": "",
+                    "description": " String to be converted"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "94cdd51e-ce22-4d69-ab1a-23914a1bb517",
+                    "IdText": "element",
+                    "text": "element",
+                    "event": false,
+                    "type": "complex",
+                    "description": " Port carrying the JSON structure"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [],
+            "git_url": "https://github.com/ICRAR/daliuge-component-examples",
+            "sha": "2f9d0db"
         }
     ],
     "linkDataArray": []
