@@ -6,7 +6,7 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "daliuge-component-examples-main.palette",
-        "sha": "b415a77",
+        "sha": "9a494b5",
         "git_url": "https://github.com/ICRAR/daliuge-component-examples"
     },
     "nodeDataArray": [
@@ -19,6 +19,108 @@
             "canHaveOutputs": true,
             "drawOrderHint": 0,
             "key": -1,
+            "text": "ExtractColumn",
+            "description": "App that extracts one column of an table-like ndarray. The array is assumed to be row major, i.e. the second index refers to columns. The column is # selected by index counting from 0. If the array is 1-D the result is a 1 element array. The component is passing whatever type is in the selected column.",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "05f12f2e-2115-4880-964d-b76e7da70f50",
+                    "IdText": "table_array",
+                    "text": "table_array",
+                    "event": false,
+                    "type": "",
+                    "description": " List of elements"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "485c3fd5-4f5a-48ca-b834-98166f32f19a",
+                    "IdText": "column",
+                    "text": "column",
+                    "event": false,
+                    "type": "1Darray",
+                    "description": " Port carrying the first element of input array the type is dependent on the list element type."
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "index",
+                    "name": "index",
+                    "value": "0",
+                    "default": "0",
+                    "description": "0-base index of column to extract",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false
+                },
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "default": 5,
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float",
+                    "precious": false
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "default": 1,
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "false",
+                    "default": "false",
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false
+                },
+                {
+                    "text": "Appclass",
+                    "name": "appclass",
+                    "value": "dlg.apps.simple.SleepApp",
+                    "default": "dlg.apps.simple.SleepApp",
+                    "description": "Application class",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false
+                }
+            ],
+            "git_url": "https://github.com/ICRAR/daliuge-component-examples",
+            "sha": "9a494b5"
+        },
+        {
+            "category": "PythonApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -2,
             "text": "FileGlob",
             "description": "An App that uses glob to find all files matching a template given by a filepath and a wildcard string",
             "collapsed": false,
@@ -111,7 +213,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "b415a77"
+            "sha": "9a494b5"
         },
         {
             "category": "PythonApp",
@@ -121,7 +223,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -2,
+            "key": -3,
             "text": "MyBranch",
             "description": "Simple app to demonstrate how to write a branch actually making a decision and passing data on. Most of the code is boilerplate and can be copied verbatim. Note that a branch app is allowed to have multiple inputs, but just exactly two outputs. This example is using just a single input. There is an associated logical graph available on github:\nThe application assumes to receive a random floating point array with values in the range [0,1] on input. It will calculate the mean of that array and then branch depending on whether the mean is smaller or larger than 0.5.",
             "collapsed": false,
@@ -211,7 +313,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "b415a77"
+            "sha": "9a494b5"
         },
         {
             "category": "File",
@@ -221,7 +323,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -3,
+            "key": -4,
             "text": "MyData",
             "description": "Template app for demonstration only! Replace the documentation with whatever you want/need to show in the DALiuGE workflow editor. The dataclass parameter should contain the relative Pythonpath to import MyApp.",
             "collapsed": false,
@@ -283,7 +385,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "b415a77"
+            "sha": "9a494b5"
         },
         {
             "category": "PythonApp",
@@ -293,7 +395,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -4,
+            "key": -5,
             "text": "PickOne",
             "description": "App that picks the first element of an input list, passes that to all outputs, except the first one. The first output is used to pass the remaining array on. This app is useful for a loop.",
             "collapsed": false,
@@ -375,7 +477,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "b415a77"
+            "sha": "9a494b5"
         },
         {
             "category": "PythonApp",
@@ -385,7 +487,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -5,
+            "key": -6,
             "text": "String2JSON",
             "description": "App that reads a string from a single input and tries to convert that to JSON",
             "collapsed": false,
@@ -467,7 +569,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "b415a77"
+            "sha": "9a494b5"
         }
     ],
     "linkDataArray": []
