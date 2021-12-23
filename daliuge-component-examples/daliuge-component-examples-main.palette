@@ -6,7 +6,7 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "daliuge-component-examples-main.palette",
-        "sha": "cf9b758",
+        "sha": "8520baf",
         "git_url": "https://github.com/ICRAR/daliuge-component-examples"
     },
     "nodeDataArray": [
@@ -110,7 +110,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "cf9b758"
+            "sha": "8520baf"
         },
         {
             "category": "PythonApp",
@@ -212,7 +212,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "cf9b758"
+            "sha": "8520baf"
         },
         {
             "category": "PythonApp",
@@ -315,7 +315,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "cf9b758"
+            "sha": "8520baf"
         },
         {
             "category": "PythonApp",
@@ -326,6 +326,98 @@
             "canHaveOutputs": true,
             "drawOrderHint": 0,
             "key": -4,
+            "text": "GenericGather",
+            "description": "App that reads all its inputs and simply writes them in concatenated to all its outputs. This can be used stand-alone or as part of a Gather. It does not do anything to the data, just passing it on.",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "28293a21-e713-4747-9de6-de99115164ca",
+                    "IdText": "input",
+                    "text": "input",
+                    "event": false,
+                    "type": "complex",
+                    "description": " 0-base placeholder port for inputs"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "95eec02a-3128-4d1e-9033-ed3a900585c5",
+                    "IdText": "output",
+                    "text": "output",
+                    "event": false,
+                    "type": "complex",
+                    "description": " Placeholder port for outputs"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "default": 5,
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float",
+                    "precious": false
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "default": 1,
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "false",
+                    "default": "false",
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false
+                },
+                {
+                    "text": "Appclass",
+                    "name": "appclass",
+                    "value": "dlg.apps.simple.SleepApp",
+                    "default": "dlg.apps.simple.SleepApp",
+                    "description": "Application class",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false
+                }
+            ],
+            "git_url": "https://github.com/ICRAR/daliuge-component-examples",
+            "sha": "8520baf"
+        },
+        {
+            "category": "PythonApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -5,
             "text": "MyBranch",
             "description": "Simple app to demonstrate how to write a branch actually making a decision and passing data on. Most of the code is boilerplate and can be copied verbatim. Note that a branch app is allowed to have multiple inputs, but just exactly two outputs. This example is using just a single input. There is an associated logical graph available on github:\nThe application assumes to receive a random floating point array with values in the range [0,1] on input. It will calculate the mean of that array and then branch depending on whether the mean is smaller or larger than 0.5.",
             "collapsed": false,
@@ -415,7 +507,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "cf9b758"
+            "sha": "8520baf"
         },
         {
             "category": "File",
@@ -425,7 +517,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -5,
+            "key": -6,
             "text": "MyData",
             "description": "Template app for demonstration only! Replace the documentation with whatever you want/need to show in the DALiuGE workflow editor. The dataclass parameter should contain the relative Pythonpath to import MyApp.",
             "collapsed": false,
@@ -487,7 +579,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "cf9b758"
+            "sha": "8520baf"
         },
         {
             "category": "PythonApp",
@@ -497,7 +589,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -6,
+            "key": -7,
             "text": "PickOne",
             "description": "App that picks the first element of an input list, passes that to all outputs, except the first one. The first output is used to pass the remaining array on. This app is useful for a loop.",
             "collapsed": false,
@@ -579,7 +671,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "cf9b758"
+            "sha": "8520baf"
         },
         {
             "category": "PythonApp",
@@ -589,7 +681,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -7,
+            "key": -8,
             "text": "String2JSON",
             "description": "App that reads a string from a single input and tries to convert that to JSON",
             "collapsed": false,
@@ -671,7 +763,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "cf9b758"
+            "sha": "8520baf"
         }
     ],
     "linkDataArray": []
