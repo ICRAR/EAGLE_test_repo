@@ -6,7 +6,7 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "daliuge-yan-839.palette",
-        "sha": "f697215",
+        "sha": "8101bf2",
         "git_url": ""
     },
     "nodeDataArray": [
@@ -110,7 +110,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "f697215"
+            "sha": "8101bf2"
         },
         {
             "category": "PythonApp",
@@ -184,7 +184,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "f697215"
+            "sha": "8101bf2"
         },
         {
             "category": "PythonApp",
@@ -267,7 +267,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "f697215"
+            "sha": "8101bf2"
         },
         {
             "category": "PythonApp",
@@ -350,7 +350,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "f697215"
+            "sha": "8101bf2"
         },
         {
             "category": "PythonApp",
@@ -443,7 +443,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "f697215"
+            "sha": "8101bf2"
         },
         {
             "category": "PythonApp",
@@ -536,7 +536,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "f697215"
+            "sha": "8101bf2"
         },
         {
             "category": "PythonApp",
@@ -628,7 +628,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "f697215"
+            "sha": "8101bf2"
         },
         {
             "category": "PythonApp",
@@ -720,7 +720,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "f697215"
+            "sha": "8101bf2"
         },
         {
             "category": "PythonApp",
@@ -822,7 +822,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "f697215"
+            "sha": "8101bf2"
         },
         {
             "category": "PythonApp",
@@ -924,7 +924,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "f697215"
+            "sha": "8101bf2"
         },
         {
             "category": "PythonApp",
@@ -1057,7 +1057,70 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "f697215"
+            "sha": "8101bf2"
+        },
+        {
+            "category": "ParameterSet",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -12,
+            "text": "ParameterSet",
+            "description": "A set of parameters, wholly specified in EAGLE",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [],
+            "outputPorts": [
+                {
+                    "Id": "2933e446-488d-4fd0-b0c5-bc274280949e",
+                    "IdText": "Config",
+                    "text": "ConfigFile",
+                    "event": false,
+                    "type": "File",
+                    "description": "The output configuration file"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Parset mode",
+                    "name": "mode",
+                    "value": "YANDA",
+                    "default": "YANDA",
+                    "description": "To what standard DALiuGE should filter and serialize the parameters.",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false
+                },
+                {
+                    "text": "ConfigData",
+                    "name": "config_data",
+                    "value": "",
+                    "default": "",
+                    "description": "Additional configuration information to be mixed in with the initial data",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false
+                }
+            ],
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "8101bf2"
         },
         {
             "category": "PythonApp",
@@ -1067,7 +1130,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -12,
+            "key": -13,
             "text": "PyFuncApp",
             "description": "An application that wraps a simple python function. The inputs of the application are treated as the arguments of the function. Conversely, the output of the function is treated as the output of the application. If the application has more than one output, the result of calling the function is treated as an iterable, with each individual object being written to its corresponding output. \nUsers indicate the function to be wrapped via the ``func_name`` parameter. Otherwise, users can also *send* over the python code using the ``func_code`` parameter. The code needs to be base64-encoded and produced with the marshal module of the same Python version used to run DALiuGE.\nBoth inputs and outputs are serialized using the pickle protocol.",
             "collapsed": false,
@@ -1181,7 +1244,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "f697215"
+            "sha": "8101bf2"
         },
         {
             "category": "PythonApp",
@@ -1191,7 +1254,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -13,
+            "key": -14,
             "text": "RandomArrayApp",
             "description": "A testing APP that does not take any input and produces a random array of type int64, if integer is set to True, else of type float64. size indicates the number of elements ranging between the values low and high. The resulting array will be send to all connected output apps. \ninteger: bool [True], generate integer array low: float, lower boundary (will be converted to int for integer arrays) high: float, upper boundary (will be converted to int for integer arrays) size: int, number of array elements",
             "collapsed": false,
@@ -1304,7 +1367,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "f697215"
+            "sha": "8101bf2"
         },
         {
             "category": "PythonApp",
@@ -1314,7 +1377,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -14,
+            "key": -15,
             "text": "ScpApp",
             "description": "A BarrierAppDROP that copies the content of its single input onto its single output via SSH's scp protocol. \nDepending on the physical location of each DROP (this application, and its input and outputs) this application will copy data FROM another host or TO other host. This application's node must thus coincide with one of the two I/O DROPs.",
             "collapsed": false,
@@ -1426,7 +1489,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "f697215"
+            "sha": "8101bf2"
         },
         {
             "category": "PythonApp",
@@ -1436,7 +1499,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -15,
+            "key": -16,
             "text": "SleepApp",
             "description": "A simple APP that sleeps the specified amount of time (0 by default). This is mainly useful (and used) to test graph translation and structure without executing real algorithms. Very useful for debugging.",
             "collapsed": false,
@@ -1510,7 +1573,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "f697215"
+            "sha": "8101bf2"
         },
         {
             "category": "PythonApp",
@@ -1520,7 +1583,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -16,
+            "key": -17,
             "text": "SocketListenerApp",
             "description": "A BarrierAppDROP that listens on a socket for data. The server-side socket expects only one client, and assumes that the client will close the connection after all its data has been sent. This application expects no input DROPs, and therefore raises an exception whenever one is added. On the output side, one or more outputs can be specified with the restriction that they are not ContainerDROPs so data can be written into them through the framework.",
             "collapsed": false,
@@ -1633,7 +1696,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "f697215"
+            "sha": "8101bf2"
         },
         {
             "category": "PythonApp",
@@ -1643,7 +1706,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -17,
+            "key": -18,
             "text": "UrlRetrieveApp",
             "description": "A simple APP that retrieves the content of a URL and writes it to all outputs.",
             "collapsed": false,
@@ -1726,7 +1789,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "f697215"
+            "sha": "8101bf2"
         }
     ],
     "linkDataArray": []
