@@ -6,7 +6,7 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "daliuge-master.palette",
-        "sha": "8fdb40c",
+        "sha": "cadb548",
         "git_url": ""
     },
     "nodeDataArray": [
@@ -110,7 +110,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8fdb40c"
+            "sha": "cadb548"
         },
         {
             "category": "PythonApp",
@@ -184,7 +184,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8fdb40c"
+            "sha": "cadb548"
         },
         {
             "category": "PythonApp",
@@ -267,40 +267,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8fdb40c"
-        },
-        {
-            "category": "EnvironmentVars",
-            "categoryType": "Application",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
-            "drawOrderHint": 0,
-            "key": -4,
-            "text": "Environment variables",
-            "description": "A set of environment variables, wholly specified in EAGLE and accessible to all drops.",
-            "collapsed": false,
-            "showPorts": false,
-            "streaming": false,
-            "subject": null,
-            "selected": false,
-            "expanded": false,
-            "inputApplicationName": "",
-            "outputApplicationName": "",
-            "exitApplicationName": "",
-            "inputApplicationType": "None",
-            "outputApplicationType": "None",
-            "exitApplicationType": "None",
-            "inputPorts": [],
-            "outputPorts": [],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "fields": [],
-            "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8fdb40c"
+            "sha": "cadb548"
         },
         {
             "category": "",
@@ -310,7 +277,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -5,
+            "key": -4,
             "text": "File",
             "description": "A standard file on a filesystem mounted to the deployment machine \nIn some cases drops are created **outside** the context of a session, most notably during unit tests. In these cases the base directory is a fixed location under ``/tmp``.\nThe following table summarizes the calculation of the final path used by the ``FileDrop`` class depending on its parameters:\n============ ===================== ===================== ========== . filepath ------------ ------------------------------------------------------ dirname empty relative absolute ============ ===================== ===================== ========== **empty** /``$B``/``$u`` /``$B``/``$f`` /``$f`` **relative** /``$B``/``$d``/``$u`` /``$B``/``$d``/``$f`` **ERROR** **absolute** /``$d``/``$u`` /``$d``/``$f`` **ERROR** ============ ===================== ===================== ==========\nIn the table, ``$f`` is the value of ``filepath``, ``$d`` is the value of ``dirname``, ``$u`` is the drop's UID and ``$B`` is the base directory for this drop's session, namelly ``/the/cwd/$session_id``.",
             "collapsed": false,
@@ -384,7 +351,100 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8fdb40c"
+            "sha": "cadb548"
+        },
+        {
+            "category": "PythonApp",
+            "categoryType": "Application",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -5,
+            "text": "GenericNpyScatterApp",
+            "description": "An APP that splits about any axis on any npy format data drop into as many parts as the app has outputs, provided that the initially converted numpy array has enough elements. The return will be a numpy array of arrays, where the first axis is of length len(outputs). The modulo remainder of the length of the original array and the number of outputs will be distributed across the first len(outputs)-1 elements of the resulting array.",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [],
+            "outputPorts": [
+                {
+                    "Id": "fb327336-448d-45c9-9f3d-da99023a0827",
+                    "IdText": "array",
+                    "text": "Array",
+                    "event": false,
+                    "type": "npy",
+                    "description": " A numpy array of arrays"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Application Class",
+                    "name": "appclass",
+                    "value": "dlg.apps.simple.GenericNpyScatterApp",
+                    "default": "dlg.apps.simple.GenericNpyScatterApp",
+                    "description": "Application class",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false
+                },
+                {
+                    "text": "Scatter Axes",
+                    "name": "scatter_axes",
+                    "value": "String",
+                    "default": "String",
+                    "description": "readwrite The axes to split input ndarrays on, e.g. [0,0,0], length must match the number of input ports",
+                    "readonly": false,
+                    "type": "readwrite The axes to split input ndarrays on, e.g. [0,0,0], length must match the number of input ports",
+                    "precious": false
+                },
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "default": 5,
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float",
+                    "precious": false
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "default": 1,
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "false",
+                    "default": "false",
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false
+                }
+            ],
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "cadb548"
         },
         {
             "category": "PythonApp",
@@ -467,7 +527,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8fdb40c"
+            "sha": "cadb548"
         },
         {
             "category": "PythonApp",
@@ -560,7 +620,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8fdb40c"
+            "sha": "cadb548"
         },
         {
             "category": "",
@@ -614,7 +674,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8fdb40c"
+            "sha": "cadb548"
         },
         {
             "category": "PythonApp",
@@ -707,7 +767,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8fdb40c"
+            "sha": "cadb548"
         },
         {
             "category": "PythonApp",
@@ -799,7 +859,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8fdb40c"
+            "sha": "cadb548"
         },
         {
             "category": "PythonApp",
@@ -891,7 +951,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8fdb40c"
+            "sha": "cadb548"
         },
         {
             "category": "PythonApp",
@@ -993,7 +1053,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8fdb40c"
+            "sha": "cadb548"
         },
         {
             "category": "PythonApp",
@@ -1095,7 +1155,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8fdb40c"
+            "sha": "cadb548"
         },
         {
             "category": "PythonApp",
@@ -1228,7 +1288,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8fdb40c"
+            "sha": "cadb548"
         },
         {
             "category": "",
@@ -1342,7 +1402,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8fdb40c"
+            "sha": "cadb548"
         },
         {
             "category": "ParameterSet",
@@ -1405,7 +1465,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8fdb40c"
+            "sha": "cadb548"
         },
         {
             "category": "",
@@ -1489,7 +1549,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8fdb40c"
+            "sha": "cadb548"
         },
         {
             "category": "",
@@ -1573,7 +1633,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8fdb40c"
+            "sha": "cadb548"
         },
         {
             "category": "PythonApp",
@@ -1697,7 +1757,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8fdb40c"
+            "sha": "cadb548"
         },
         {
             "category": "PythonApp",
@@ -1820,7 +1880,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8fdb40c"
+            "sha": "cadb548"
         },
         {
             "category": "",
@@ -1904,7 +1964,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8fdb40c"
+            "sha": "cadb548"
         },
         {
             "category": "PythonApp",
@@ -2026,7 +2086,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8fdb40c"
+            "sha": "cadb548"
         },
         {
             "category": "PythonApp",
@@ -2110,7 +2170,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8fdb40c"
+            "sha": "cadb548"
         },
         {
             "category": "PythonApp",
@@ -2233,7 +2293,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8fdb40c"
+            "sha": "cadb548"
         },
         {
             "category": "PythonApp",
@@ -2326,7 +2386,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8fdb40c"
+            "sha": "cadb548"
         }
     ],
     "linkDataArray": []
