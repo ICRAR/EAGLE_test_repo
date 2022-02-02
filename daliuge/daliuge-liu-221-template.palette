@@ -6,10 +6,64 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "daliuge-liu-221-template.palette",
-        "sha": "74d5460",
+        "sha": "c728616",
         "git_url": "https://github.com/ICRAR/daliuge.git"
     },
     "nodeDataArray": [
+        {
+            "category": "Branch",
+            "tag": "template",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -2,
+            "text": "Branch",
+            "description": "A conditional branch to control flow",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [],
+            "outputPorts": [],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Application Class",
+                    "name": "appclass",
+                    "value": "dlg.apps.simple.HelloWorldApp",
+                    "default": "dlg.apps.simple.HelloWorldApp",
+                    "description": "Application class",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "False",
+                    "default": "False",
+                    "description": "Is this node the start of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false
+                }
+            ],
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "c728616"
+        },
         {
             "category": "File",
             "tag": "template",
@@ -18,7 +72,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -5,
+            "key": -6,
             "text": "File",
             "description": "A standard file on a filesystem mounted to the deployment machine \nIn some cases drops are created **outside** the context of a session, most notably during unit tests. In these cases the base directory is a fixed location under ``/tmp``.\nThe following table summarizes the calculation of the final path used by the ``FileDrop`` class depending on its parameters:\n============ ===================== ===================== ========== . filepath ------------ ------------------------------------------------------ dirname empty relative absolute ============ ===================== ===================== ========== **empty** /``$B``/``$u`` /``$B``/``$f`` /``$f`` **relative** /``$B``/``$d``/``$u`` /``$B``/``$d``/``$f`` **ERROR** **absolute** /``$d``/``$u`` /``$d``/``$f`` **ERROR** ============ ===================== ===================== ==========\nIn the table, ``$f`` is the value of ``filepath``, ``$d`` is the value of ``dirname``, ``$u`` is the drop's UID and ``$B`` is the base directory for this drop's session, namelly ``/the/cwd/$session_id``.",
             "collapsed": false,
@@ -92,7 +146,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "74d5460"
+            "sha": "c728616"
         },
         {
             "category": "Memory",
@@ -102,7 +156,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -9,
+            "key": -10,
             "text": "Memory",
             "description": "In-memory storage of intermediate data products",
             "collapsed": false,
@@ -146,7 +200,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "74d5460"
+            "sha": "c728616"
         },
         {
             "category": "NGAS",
@@ -156,7 +210,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -16,
+            "key": -17,
             "text": "NGAS",
             "description": "An archive on the Next Generation Archive System (NGAS).",
             "collapsed": false,
@@ -260,7 +314,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "74d5460"
+            "sha": "c728616"
         },
         {
             "category": "ParameterSet",
@@ -270,7 +324,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -18,
+            "key": -19,
             "text": "ParameterSet",
             "description": "A set of parameters, wholly specified in EAGLE",
             "collapsed": false,
@@ -323,7 +377,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "74d5460"
+            "sha": "c728616"
         },
         {
             "category": "Plasma",
@@ -333,7 +387,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -19,
+            "key": -20,
             "text": "Plasma",
             "description": "An object in a Apache Arrow Plasma in-memory object store",
             "collapsed": false,
@@ -407,7 +461,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "74d5460"
+            "sha": "c728616"
         },
         {
             "category": "PlasmaFlight",
@@ -417,7 +471,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -20,
+            "key": -21,
             "text": "PlasmaFlight",
             "description": "An Apache Arrow Flight server providing distributed access to a Plasma in-memory object store",
             "collapsed": false,
@@ -491,7 +545,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "74d5460"
+            "sha": "c728616"
         },
         {
             "category": "S3",
@@ -501,7 +555,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -23,
+            "key": -24,
             "text": "S3",
             "description": "A 'bucket' object available on Amazon's Simple Storage Service (S3)",
             "collapsed": false,
@@ -575,7 +629,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "74d5460"
+            "sha": "c728616"
         }
     ],
     "linkDataArray": []
