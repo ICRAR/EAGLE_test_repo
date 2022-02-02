@@ -6,10 +6,114 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "daliuge-liu-221-template.palette",
-        "sha": "ab592b2",
+        "sha": "06c8af9",
         "git_url": "https://github.com/ICRAR/daliuge.git"
     },
     "nodeDataArray": [
+        {
+            "category": "BashShellApp",
+            "tag": "template",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -2,
+            "text": "BashShellApp",
+            "description": "An application component able to run an arbitrary command within the Bash Shell",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [],
+            "outputPorts": [],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Command",
+                    "name": "command",
+                    "value": "",
+                    "default": "",
+                    "description": "The command to be executed",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false
+                },
+                {
+                    "text": "Input Redirection",
+                    "name": "input_redirection",
+                    "value": "",
+                    "default": "",
+                    "description": "The command line argument that specifies the input into this application",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false
+                },
+                {
+                    "text": "Output Redirection",
+                    "name": "output_redirection",
+                    "value": "",
+                    "default": "",
+                    "description": "The command line argument that specifies the output from this application",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false
+                },
+                {
+                    "text": "Command Line Arguments",
+                    "name": "command_line_arguments",
+                    "value": "",
+                    "default": "",
+                    "description": "Additional command line arguments to be added to the command line to be executed",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false
+                },
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "default": 5,
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float",
+                    "precious": false
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "default": 1,
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "false",
+                    "default": "false",
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false
+                }
+            ],
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "06c8af9"
+        },
         {
             "category": "Branch",
             "tag": "template",
@@ -18,7 +122,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -2,
+            "key": -3,
             "text": "Branch",
             "description": "A conditional branch to control flow",
             "collapsed": false,
@@ -82,7 +186,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "ab592b2"
+            "sha": "06c8af9"
         },
         {
             "category": "File",
@@ -92,7 +196,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -6,
+            "key": -7,
             "text": "File",
             "description": "A standard file on a filesystem mounted to the deployment machine \nIn some cases drops are created **outside** the context of a session, most notably during unit tests. In these cases the base directory is a fixed location under ``/tmp``.\nThe following table summarizes the calculation of the final path used by the ``FileDrop`` class depending on its parameters:\n============ ===================== ===================== ========== . filepath ------------ ------------------------------------------------------ dirname empty relative absolute ============ ===================== ===================== ========== **empty** /``$B``/``$u`` /``$B``/``$f`` /``$f`` **relative** /``$B``/``$d``/``$u`` /``$B``/``$d``/``$f`` **ERROR** **absolute** /``$d``/``$u`` /``$d``/``$f`` **ERROR** ============ ===================== ===================== ==========\nIn the table, ``$f`` is the value of ``filepath``, ``$d`` is the value of ``dirname``, ``$u`` is the drop's UID and ``$B`` is the base directory for this drop's session, namelly ``/the/cwd/$session_id``.",
             "collapsed": false,
@@ -166,7 +270,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "ab592b2"
+            "sha": "06c8af9"
         },
         {
             "category": "Memory",
@@ -176,7 +280,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -10,
+            "key": -11,
             "text": "Memory",
             "description": "In-memory storage of intermediate data products",
             "collapsed": false,
@@ -220,7 +324,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "ab592b2"
+            "sha": "06c8af9"
         },
         {
             "category": "NGAS",
@@ -230,7 +334,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -17,
+            "key": -18,
             "text": "NGAS",
             "description": "An archive on the Next Generation Archive System (NGAS).",
             "collapsed": false,
@@ -334,7 +438,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "ab592b2"
+            "sha": "06c8af9"
         },
         {
             "category": "ParameterSet",
@@ -344,7 +448,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -19,
+            "key": -20,
             "text": "ParameterSet",
             "description": "A set of parameters, wholly specified in EAGLE",
             "collapsed": false,
@@ -417,7 +521,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "ab592b2"
+            "sha": "06c8af9"
         },
         {
             "category": "Plasma",
@@ -427,7 +531,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -20,
+            "key": -21,
             "text": "Plasma",
             "description": "An object in a Apache Arrow Plasma in-memory object store",
             "collapsed": false,
@@ -501,7 +605,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "ab592b2"
+            "sha": "06c8af9"
         },
         {
             "category": "PlasmaFlight",
@@ -511,7 +615,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -21,
+            "key": -22,
             "text": "PlasmaFlight",
             "description": "An Apache Arrow Flight server providing distributed access to a Plasma in-memory object store",
             "collapsed": false,
@@ -585,7 +689,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "ab592b2"
+            "sha": "06c8af9"
         },
         {
             "category": "S3",
@@ -595,7 +699,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -24,
+            "key": -25,
             "text": "S3",
             "description": "A 'bucket' object available on Amazon's Simple Storage Service (S3)",
             "collapsed": false,
@@ -669,7 +773,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "ab592b2"
+            "sha": "06c8af9"
         }
     ],
     "linkDataArray": []
