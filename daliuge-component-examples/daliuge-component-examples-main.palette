@@ -6,13 +6,13 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "daliuge-component-examples-main.palette",
-        "sha": "6d1417d",
+        "sha": "a1da7a5",
         "git_url": "https://github.com/ICRAR/daliuge-component-examples"
     },
     "nodeDataArray": [
         {
             "category": "PythonApp",
-            "categoryType": "Application",
+            "tag": "",
             "isData": false,
             "isGroup": false,
             "canHaveInputs": true,
@@ -110,11 +110,11 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "6d1417d"
+            "sha": "a1da7a5"
         },
         {
             "category": "PythonApp",
-            "categoryType": "Application",
+            "tag": "",
             "isData": false,
             "isGroup": false,
             "canHaveInputs": true,
@@ -212,11 +212,11 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "6d1417d"
+            "sha": "a1da7a5"
         },
         {
             "category": "PythonApp",
-            "categoryType": "Application",
+            "tag": "",
             "isData": false,
             "isGroup": false,
             "canHaveInputs": true,
@@ -315,11 +315,11 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "6d1417d"
+            "sha": "a1da7a5"
         },
         {
             "category": "PythonApp",
-            "categoryType": "Application",
+            "tag": "",
             "isData": false,
             "isGroup": false,
             "canHaveInputs": true,
@@ -407,17 +407,117 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "6d1417d"
+            "sha": "a1da7a5"
         },
         {
             "category": "PythonApp",
-            "categoryType": "Application",
+            "tag": "",
             "isData": false,
             "isGroup": false,
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
             "key": -5,
+            "text": "LengthCheck",
+            "description": "This branch returns true if the length of the input array is > 0. It also passes the array on to the output ports (will be an empty array in the case of N==0).",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "f2a2c8c4-8c5e-4dd4-99cb-e9f454ca6c26",
+                    "IdText": "array",
+                    "text": "Array",
+                    "event": false,
+                    "type": "float",
+                    "description": " Port receiving the input array"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "2be259f9-774e-4d8b-b673-5cfce81d3d5f",
+                    "IdText": "Y",
+                    "text": "Y",
+                    "event": false,
+                    "type": "float",
+                    "description": " Port carrying the array if Y."
+                },
+                {
+                    "Id": "81a5af10-135a-4d25-81f7-ad18aba33c9a",
+                    "IdText": "N",
+                    "text": "N",
+                    "event": false,
+                    "type": "float",
+                    "description": " Port carrying an empty array (N)"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Application Class",
+                    "name": "appclass",
+                    "value": "dlg_example_cmpts.apps.LengthCheck",
+                    "default": "dlg_example_cmpts.apps.LengthCheck",
+                    "description": "# noqa: E501 Import direction for application class",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false
+                },
+                {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "default": 5,
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float",
+                    "precious": false
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "default": 1,
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "false",
+                    "default": "false",
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false
+                }
+            ],
+            "git_url": "https://github.com/ICRAR/daliuge-component-examples",
+            "sha": "a1da7a5"
+        },
+        {
+            "category": "PythonApp",
+            "tag": "",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -6,
             "text": "MyBranch",
             "description": "Simple app to demonstrate how to write a branch actually making a decision and passing data on. Most of the code is boilerplate and can be copied verbatim. Note that a branch app is allowed to have multiple inputs, but just exactly two outputs. This example is using just a single input. There is an associated logical graph available on github:\nThe application assumes to receive a random floating point array with values in the range [0,1] on input. It will calculate the mean of that array and then branch depending on whether the mean is smaller or larger than 0.5.",
             "collapsed": false,
@@ -507,17 +607,17 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "6d1417d"
+            "sha": "a1da7a5"
         },
         {
             "category": "File",
-            "categoryType": "Application",
+            "tag": "",
             "isData": false,
             "isGroup": false,
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -6,
+            "key": -7,
             "text": "MyData",
             "description": "Template app for demonstration only! Replace the documentation with whatever you want/need to show in the DALiuGE workflow editor. The dataclass parameter should contain the relative Pythonpath to import MyApp.",
             "collapsed": false,
@@ -576,20 +676,40 @@
                     "readonly": false,
                     "type": "String",
                     "precious": false
+                },
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": 5,
+                    "default": 5,
+                    "description": "Estimated size of the data contained in this node",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "false",
+                    "default": "false",
+                    "description": "Component is end of a group",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "6d1417d"
+            "sha": "a1da7a5"
         },
         {
             "category": "PythonApp",
-            "categoryType": "Application",
+            "tag": "",
             "isData": false,
             "isGroup": false,
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -7,
+            "key": -8,
             "text": "PickOne",
             "description": "App that picks the first element of an input list, passes that to all outputs, except the first one. The first output is used to pass the remaining array on. This app is useful for a loop.",
             "collapsed": false,
@@ -671,17 +791,17 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "6d1417d"
+            "sha": "a1da7a5"
         },
         {
             "category": "PythonApp",
-            "categoryType": "Application",
+            "tag": "",
             "isData": false,
             "isGroup": false,
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -8,
+            "key": -9,
             "text": "String2JSON",
             "description": "App that reads a string from a single input and tries to convert that to JSON",
             "collapsed": false,
@@ -698,11 +818,11 @@
             "exitApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "c6a2f2bc-4612-405c-93cb-cca781250c66",
+                    "Id": "8909a256-7038-4992-a970-cbd6f882f70f",
                     "IdText": "string",
                     "text": "string",
                     "event": false,
-                    "type": "",
+                    "type": "string",
                     "description": " String to be converted"
                 }
             ],
@@ -763,7 +883,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "6d1417d"
+            "sha": "a1da7a5"
         }
     ],
     "linkDataArray": []
