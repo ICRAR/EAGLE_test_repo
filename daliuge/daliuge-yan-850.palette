@@ -6,7 +6,7 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "daliuge-yan-850.palette",
-        "sha": "ed7e938",
+        "sha": "6c33a5b",
         "git_url": "https://github.com/ICRAR/daliuge.git"
     },
     "nodeDataArray": [
@@ -59,16 +59,6 @@
             "outputAppFields": [],
             "fields": [
                 {
-                    "text": "Method",
-                    "name": "method",
-                    "value": "mean",
-                    "default": "mean",
-                    "description": "The method used for averaging",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false
-                },
-                {
                     "text": "Application Class",
                     "name": "appclass",
                     "value": "dlg.apps.simple.AverageArraysApp",
@@ -79,38 +69,50 @@
                     "precious": false
                 },
                 {
-                    "text": "Execution time",
+                    "text": "Execution Time",
                     "name": "execution_time",
-                    "value": 5,
-                    "default": 5,
+                    "value": "5",
+                    "default": "5",
                     "description": "Estimated execution time",
-                    "readonly": false,
+                    "readonly": true,
                     "type": "Float",
                     "precious": false
                 },
                 {
-                    "text": "Num CPUs",
+                    "text": "No. of CPUs",
                     "name": "num_cpus",
-                    "value": 1,
-                    "default": 1,
+                    "value": "1",
+                    "default": "1",
                     "description": "Number of cores used",
-                    "readonly": false,
+                    "readonly": true,
                     "type": "Integer",
                     "precious": false
                 },
                 {
                     "text": "Group start",
                     "name": "group_start",
-                    "value": "false",
-                    "default": "false",
-                    "description": "Component is start of a group",
+                    "value": "False",
+                    "default": "False",
+                    "description": "Is this node the start of a group?",
                     "readonly": false,
                     "type": "Boolean",
                     "precious": false
                 }
             ],
+            "applicationArgs": [
+                {
+                    "text": "Method",
+                    "name": "method",
+                    "value": "mean",
+                    "default": "mean",
+                    "description": "The method used for averaging",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false
+                }
+            ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "ed7e938"
+            "sha": "6c33a5b"
         },
         {
             "category": "PythonApp",
@@ -153,6 +155,38 @@
                     "precious": false
                 },
                 {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "default": "5",
+                    "description": "Estimated execution time",
+                    "readonly": true,
+                    "type": "Float",
+                    "precious": false
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "default": "1",
+                    "description": "Number of cores used",
+                    "readonly": true,
+                    "type": "Integer",
+                    "precious": false
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "False",
+                    "default": "False",
+                    "description": "Is this node the start of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false
+                }
+            ],
+            "applicationArgs": [
+                {
                     "text": "buffer size",
                     "name": "bufsize",
                     "value": "65536",
@@ -161,40 +195,10 @@
                     "readonly": false,
                     "type": "Integer",
                     "precious": false
-                },
-                {
-                    "text": "Execution time",
-                    "name": "execution_time",
-                    "value": 5,
-                    "default": 5,
-                    "description": "Estimated execution time",
-                    "readonly": false,
-                    "type": "Float",
-                    "precious": false
-                },
-                {
-                    "text": "Num CPUs",
-                    "name": "num_cpus",
-                    "value": 1,
-                    "default": 1,
-                    "description": "Number of cores used",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
-                    "value": "false",
-                    "default": "false",
-                    "description": "Component is start of a group",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "ed7e938"
+            "sha": "6c33a5b"
         },
         {
             "category": "PythonApp",
@@ -246,38 +250,39 @@
                     "precious": false
                 },
                 {
-                    "text": "Execution time",
+                    "text": "Execution Time",
                     "name": "execution_time",
-                    "value": 5,
-                    "default": 5,
+                    "value": "5",
+                    "default": "5",
                     "description": "Estimated execution time",
-                    "readonly": false,
+                    "readonly": true,
                     "type": "Float",
                     "precious": false
                 },
                 {
-                    "text": "Num CPUs",
+                    "text": "No. of CPUs",
                     "name": "num_cpus",
-                    "value": 1,
-                    "default": 1,
+                    "value": "1",
+                    "default": "1",
                     "description": "Number of cores used",
-                    "readonly": false,
+                    "readonly": true,
                     "type": "Integer",
                     "precious": false
                 },
                 {
                     "text": "Group start",
                     "name": "group_start",
-                    "value": "false",
-                    "default": "false",
-                    "description": "Component is start of a group",
+                    "value": "False",
+                    "default": "False",
+                    "description": "Is this node the start of a group?",
                     "readonly": false,
                     "type": "Boolean",
                     "precious": false
                 }
             ],
+            "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "ed7e938"
+            "sha": "6c33a5b"
         },
         {
             "category": "PythonApp",
@@ -329,48 +334,50 @@
                     "precious": false
                 },
                 {
-                    "text": "Scatter Axes",
-                    "name": "scatter_axes",
-                    "value": "String",
-                    "default": "String",
-                    "description": "readwrite The axes to split input ndarrays on, e.g. [0,0,0], length must match the number of input ports",
-                    "readonly": false,
-                    "type": "readwrite The axes to split input ndarrays on, e.g. [0,0,0], length must match the number of input ports",
-                    "precious": false
-                },
-                {
-                    "text": "Execution time",
+                    "text": "Execution Time",
                     "name": "execution_time",
-                    "value": 5,
-                    "default": 5,
+                    "value": "5",
+                    "default": "5",
                     "description": "Estimated execution time",
-                    "readonly": false,
+                    "readonly": true,
                     "type": "Float",
                     "precious": false
                 },
                 {
-                    "text": "Num CPUs",
+                    "text": "No. of CPUs",
                     "name": "num_cpus",
-                    "value": 1,
-                    "default": 1,
+                    "value": "1",
+                    "default": "1",
                     "description": "Number of cores used",
-                    "readonly": false,
+                    "readonly": true,
                     "type": "Integer",
                     "precious": false
                 },
                 {
                     "text": "Group start",
                     "name": "group_start",
-                    "value": "false",
-                    "default": "false",
-                    "description": "Component is start of a group",
+                    "value": "False",
+                    "default": "False",
+                    "description": "Is this node the start of a group?",
                     "readonly": false,
                     "type": "Boolean",
                     "precious": false
                 }
             ],
+            "applicationArgs": [
+                {
+                    "text": "Scatter Axes",
+                    "name": "scatter_axes",
+                    "value": "",
+                    "default": "",
+                    "description": "The axes to split input ndarrays on, e.g. [0,0,0], length must match the number of input ports",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false
+                }
+            ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "ed7e938"
+            "sha": "6c33a5b"
         },
         {
             "category": "PythonApp",
@@ -422,38 +429,39 @@
                     "precious": false
                 },
                 {
-                    "text": "Execution time",
+                    "text": "Execution Time",
                     "name": "execution_time",
-                    "value": 5,
-                    "default": 5,
+                    "value": "5",
+                    "default": "5",
                     "description": "Estimated execution time",
-                    "readonly": false,
+                    "readonly": true,
                     "type": "Float",
                     "precious": false
                 },
                 {
-                    "text": "Num CPUs",
+                    "text": "No. of CPUs",
                     "name": "num_cpus",
-                    "value": 1,
-                    "default": 1,
+                    "value": "1",
+                    "default": "1",
                     "description": "Number of cores used",
-                    "readonly": false,
+                    "readonly": true,
                     "type": "Integer",
                     "precious": false
                 },
                 {
                     "text": "Group start",
                     "name": "group_start",
-                    "value": "false",
-                    "default": "false",
-                    "description": "Component is start of a group",
+                    "value": "False",
+                    "default": "False",
+                    "description": "Is this node the start of a group?",
                     "readonly": false,
                     "type": "Boolean",
                     "precious": false
                 }
             ],
+            "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "ed7e938"
+            "sha": "6c33a5b"
         },
         {
             "category": "PythonApp",
@@ -495,16 +503,6 @@
             "outputAppFields": [],
             "fields": [
                 {
-                    "text": "Greet",
-                    "name": "greet",
-                    "value": "World",
-                    "default": "World",
-                    "description": "What appears after 'Hello '",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false
-                },
-                {
                     "text": "Application Class",
                     "name": "appclass",
                     "value": "dlg.apps.simple.HelloWorldApp",
@@ -515,38 +513,50 @@
                     "precious": false
                 },
                 {
-                    "text": "Execution time",
+                    "text": "Execution Time",
                     "name": "execution_time",
-                    "value": 5,
-                    "default": 5,
+                    "value": "5",
+                    "default": "5",
                     "description": "Estimated execution time",
-                    "readonly": false,
+                    "readonly": true,
                     "type": "Float",
                     "precious": false
                 },
                 {
-                    "text": "Num CPUs",
+                    "text": "No. of CPUs",
                     "name": "num_cpus",
-                    "value": 1,
-                    "default": 1,
+                    "value": "1",
+                    "default": "1",
                     "description": "Number of cores used",
-                    "readonly": false,
+                    "readonly": true,
                     "type": "Integer",
                     "precious": false
                 },
                 {
                     "text": "Group start",
                     "name": "group_start",
-                    "value": "false",
-                    "default": "false",
-                    "description": "Component is start of a group",
+                    "value": "False",
+                    "default": "False",
+                    "description": "Is this node the start of a group?",
                     "readonly": false,
                     "type": "Boolean",
                     "precious": false
                 }
             ],
+            "applicationArgs": [
+                {
+                    "text": "Greet",
+                    "name": "greet",
+                    "value": "World",
+                    "default": "World",
+                    "description": "What appears after 'Hello '",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false
+                }
+            ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "ed7e938"
+            "sha": "6c33a5b"
         },
         {
             "category": "PythonApp",
@@ -574,12 +584,12 @@
             "inputPorts": [],
             "outputPorts": [
                 {
-                    "Id": "da289b2d-725e-46db-b382-c61942b7c44f",
+                    "Id": "53273be8-72c1-4ac0-bdd8-628e0bf21733",
                     "IdText": "array",
-                    "text": "Port carrying the random array.",
+                    "text": "Array",
                     "event": false,
-                    "type": "String",
-                    "description": "Port carrying the random array."
+                    "type": "array",
+                    "description": " Port carrying the random array."
                 }
             ],
             "inputLocalPorts": [],
@@ -588,58 +598,60 @@
             "outputAppFields": [],
             "fields": [
                 {
-                    "text": "the size of the array",
-                    "name": "size",
-                    "value": "",
-                    "default": "",
-                    "description": "the size of the array",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false
-                },
-                {
-                    "text": "Application class",
+                    "text": "Application Class",
                     "name": "appclass",
-                    "value": "",
-                    "default": "",
+                    "value": "dlg.apps.simple.ListAppendThrashingApp",
+                    "default": "dlg.apps.simple.ListAppendThrashingApp",
                     "description": "Application class",
-                    "readonly": false,
+                    "readonly": true,
                     "type": "String",
                     "precious": false
                 },
                 {
-                    "text": "Execution time",
+                    "text": "Execution Time",
                     "name": "execution_time",
-                    "value": 5,
-                    "default": 5,
+                    "value": "5",
+                    "default": "5",
                     "description": "Estimated execution time",
-                    "readonly": false,
+                    "readonly": true,
                     "type": "Float",
                     "precious": false
                 },
                 {
-                    "text": "Num CPUs",
+                    "text": "No. of CPUs",
                     "name": "num_cpus",
-                    "value": 1,
-                    "default": 1,
+                    "value": "1",
+                    "default": "1",
                     "description": "Number of cores used",
-                    "readonly": false,
+                    "readonly": true,
                     "type": "Integer",
                     "precious": false
                 },
                 {
                     "text": "Group start",
                     "name": "group_start",
-                    "value": "false",
-                    "default": "false",
-                    "description": "Component is start of a group",
+                    "value": "False",
+                    "default": "False",
+                    "description": "Is this node the start of a group?",
                     "readonly": false,
                     "type": "Boolean",
                     "precious": false
                 }
             ],
+            "applicationArgs": [
+                {
+                    "text": "Size",
+                    "name": "size",
+                    "value": "100",
+                    "default": "100",
+                    "description": "the size of the array",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false
+                }
+            ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "ed7e938"
+            "sha": "6c33a5b"
         },
         {
             "category": "PythonApp",
@@ -700,38 +712,39 @@
                     "precious": false
                 },
                 {
-                    "text": "Execution time",
+                    "text": "Execution Time",
                     "name": "execution_time",
-                    "value": 5,
-                    "default": 5,
+                    "value": "5",
+                    "default": "5",
                     "description": "Estimated execution time",
-                    "readonly": false,
+                    "readonly": true,
                     "type": "Float",
                     "precious": false
                 },
                 {
-                    "text": "Num CPUs",
+                    "text": "No. of CPUs",
                     "name": "num_cpus",
-                    "value": 1,
-                    "default": 1,
+                    "value": "1",
+                    "default": "1",
                     "description": "Number of cores used",
-                    "readonly": false,
+                    "readonly": true,
                     "type": "Integer",
                     "precious": false
                 },
                 {
                     "text": "Group start",
                     "name": "group_start",
-                    "value": "false",
-                    "default": "false",
-                    "description": "Component is start of a group",
+                    "value": "False",
+                    "default": "False",
+                    "description": "Is this node the start of a group?",
                     "readonly": false,
                     "type": "Boolean",
                     "precious": false
                 }
             ],
+            "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "ed7e938"
+            "sha": "6c33a5b"
         },
         {
             "category": "PythonApp",
@@ -792,38 +805,39 @@
                     "precious": false
                 },
                 {
-                    "text": "Execution time",
+                    "text": "Execution Time",
                     "name": "execution_time",
-                    "value": 5,
-                    "default": 5,
+                    "value": "5",
+                    "default": "5",
                     "description": "Estimated execution time",
-                    "readonly": false,
+                    "readonly": true,
                     "type": "Float",
                     "precious": false
                 },
                 {
-                    "text": "Num CPUs",
+                    "text": "No. of CPUs",
                     "name": "num_cpus",
-                    "value": 1,
-                    "default": 1,
+                    "value": "1",
+                    "default": "1",
                     "description": "Number of cores used",
-                    "readonly": false,
+                    "readonly": true,
                     "type": "Integer",
                     "precious": false
                 },
                 {
                     "text": "Group start",
                     "name": "group_start",
-                    "value": "false",
-                    "default": "false",
-                    "description": "Component is start of a group",
+                    "value": "False",
+                    "default": "False",
+                    "description": "Is this node the start of a group?",
                     "readonly": false,
                     "type": "Boolean",
                     "precious": false
                 }
             ],
+            "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "ed7e938"
+            "sha": "6c33a5b"
         },
         {
             "category": "PythonApp",
@@ -874,16 +888,6 @@
             "outputAppFields": [],
             "fields": [
                 {
-                    "text": "Plasma Path",
-                    "name": "plasma_path",
-                    "value": "",
-                    "default": "",
-                    "description": "Path to plasma store.",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false
-                },
-                {
                     "text": "Application class",
                     "name": "appclass",
                     "value": "dlg.apps.plasma.MSStreamingPlasmaConsumer",
@@ -894,38 +898,50 @@
                     "precious": false
                 },
                 {
-                    "text": "Execution time",
+                    "text": "Execution Time",
                     "name": "execution_time",
-                    "value": 5,
-                    "default": 5,
+                    "value": "5",
+                    "default": "5",
                     "description": "Estimated execution time",
-                    "readonly": false,
+                    "readonly": true,
                     "type": "Float",
                     "precious": false
                 },
                 {
-                    "text": "Num CPUs",
+                    "text": "No. of CPUs",
                     "name": "num_cpus",
-                    "value": 1,
-                    "default": 1,
+                    "value": "1",
+                    "default": "1",
                     "description": "Number of cores used",
-                    "readonly": false,
+                    "readonly": true,
                     "type": "Integer",
                     "precious": false
                 },
                 {
                     "text": "Group start",
                     "name": "group_start",
-                    "value": "false",
-                    "default": "false",
-                    "description": "Component is start of a group",
+                    "value": "False",
+                    "default": "False",
+                    "description": "Is this node the start of a group?",
                     "readonly": false,
                     "type": "Boolean",
                     "precious": false
                 }
             ],
+            "applicationArgs": [
+                {
+                    "text": "Plasma Path",
+                    "name": "plasma_path",
+                    "value": "",
+                    "default": "",
+                    "description": "Path to plasma store.",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false
+                }
+            ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "ed7e938"
+            "sha": "6c33a5b"
         },
         {
             "category": "PythonApp",
@@ -976,16 +992,6 @@
             "outputAppFields": [],
             "fields": [
                 {
-                    "text": "Plasma Path",
-                    "name": "plasma_path",
-                    "value": "",
-                    "default": "",
-                    "description": "Path to plasma store",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false
-                },
-                {
                     "text": "Application class",
                     "name": "appclass",
                     "value": "dlg.apps.plasma.MSStreamingPlasmaProducer",
@@ -996,38 +1002,50 @@
                     "precious": false
                 },
                 {
-                    "text": "Execution time",
+                    "text": "Execution Time",
                     "name": "execution_time",
-                    "value": 5,
-                    "default": 5,
+                    "value": "5",
+                    "default": "5",
                     "description": "Estimated execution time",
-                    "readonly": false,
+                    "readonly": true,
                     "type": "Float",
                     "precious": false
                 },
                 {
-                    "text": "Num CPUs",
+                    "text": "No. of CPUs",
                     "name": "num_cpus",
-                    "value": 1,
-                    "default": 1,
+                    "value": "1",
+                    "default": "1",
                     "description": "Number of cores used",
-                    "readonly": false,
+                    "readonly": true,
                     "type": "Integer",
                     "precious": false
                 },
                 {
                     "text": "Group start",
                     "name": "group_start",
-                    "value": "false",
-                    "default": "false",
-                    "description": "Component is start of a group",
+                    "value": "False",
+                    "default": "False",
+                    "description": "Is this node the start of a group?",
                     "readonly": false,
                     "type": "Boolean",
                     "precious": false
                 }
             ],
+            "applicationArgs": [
+                {
+                    "text": "Plasma Path",
+                    "name": "plasma_path",
+                    "value": "",
+                    "default": "",
+                    "description": "Path to plasma store",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false
+                }
+            ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "ed7e938"
+            "sha": "6c33a5b"
         },
         {
             "category": "PythonApp",
@@ -1079,6 +1097,38 @@
                     "precious": false
                 },
                 {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "default": "5",
+                    "description": "Estimated execution time",
+                    "readonly": true,
+                    "type": "Float",
+                    "precious": false
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "default": "1",
+                    "description": "Number of cores used",
+                    "readonly": true,
+                    "type": "Integer",
+                    "precious": false
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "False",
+                    "default": "False",
+                    "description": "Is this node the start of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false
+                }
+            ],
+            "applicationArgs": [
+                {
                     "text": "NGAS Server URL",
                     "name": "ngasSrv",
                     "value": "localhost",
@@ -1127,40 +1177,10 @@
                     "readonly": true,
                     "type": "Integer",
                     "precious": false
-                },
-                {
-                    "text": "Execution time",
-                    "name": "execution_time",
-                    "value": 5,
-                    "default": 5,
-                    "description": "Estimated execution time",
-                    "readonly": false,
-                    "type": "Float",
-                    "precious": false
-                },
-                {
-                    "text": "Num CPUs",
-                    "name": "num_cpus",
-                    "value": 1,
-                    "default": 1,
-                    "description": "Number of cores used",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
-                    "value": "false",
-                    "default": "false",
-                    "description": "Component is start of a group",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "ed7e938"
+            "sha": "6c33a5b"
         },
         {
             "category": "PythonApp",
@@ -1202,6 +1222,38 @@
                     "type": "String",
                     "precious": false
                 },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "default": "5",
+                    "description": "Estimated execution time",
+                    "readonly": true,
+                    "type": "Float",
+                    "precious": false
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "default": "1",
+                    "description": "Number of cores used",
+                    "readonly": true,
+                    "type": "Integer",
+                    "precious": false
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "False",
+                    "default": "False",
+                    "description": "Is this node the start of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false
+                }
+            ],
+            "applicationArgs": [
                 {
                     "text": "Function Name",
                     "name": "func_name",
@@ -1251,40 +1303,10 @@
                     "readonly": false,
                     "type": "String",
                     "precious": false
-                },
-                {
-                    "text": "Execution time",
-                    "name": "execution_time",
-                    "value": 5,
-                    "default": 5,
-                    "description": "Estimated execution time",
-                    "readonly": false,
-                    "type": "Float",
-                    "precious": false
-                },
-                {
-                    "text": "Num CPUs",
-                    "name": "num_cpus",
-                    "value": 1,
-                    "default": 1,
-                    "description": "Number of cores used",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
-                    "value": "false",
-                    "default": "false",
-                    "description": "Component is start of a group",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "ed7e938"
+            "sha": "6c33a5b"
         },
         {
             "category": "PythonApp",
@@ -1326,6 +1348,48 @@
             "outputAppFields": [],
             "fields": [
                 {
+                    "text": "Application class",
+                    "name": "appclass",
+                    "value": "dlg.apps.simple.RandomArrayApp",
+                    "default": "dlg.apps.simple.RandomArrayApp",
+                    "description": "Application class",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false
+                },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "default": "5",
+                    "description": "Estimated execution time",
+                    "readonly": true,
+                    "type": "Float",
+                    "precious": false
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "default": "1",
+                    "description": "Number of cores used",
+                    "readonly": true,
+                    "type": "Integer",
+                    "precious": false
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "False",
+                    "default": "False",
+                    "description": "Is this node the start of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false
+                }
+            ],
+            "applicationArgs": [
+                {
                     "text": "Size",
                     "name": "size",
                     "value": "100",
@@ -1364,50 +1428,10 @@
                     "readonly": false,
                     "type": "float",
                     "precious": false
-                },
-                {
-                    "text": "Application class",
-                    "name": "appclass",
-                    "value": "dlg.apps.simple.RandomArrayApp",
-                    "default": "dlg.apps.simple.RandomArrayApp",
-                    "description": "Application class",
-                    "readonly": true,
-                    "type": "String",
-                    "precious": false
-                },
-                {
-                    "text": "Execution time",
-                    "name": "execution_time",
-                    "value": 5,
-                    "default": 5,
-                    "description": "Estimated execution time",
-                    "readonly": false,
-                    "type": "Float",
-                    "precious": false
-                },
-                {
-                    "text": "Num CPUs",
-                    "name": "num_cpus",
-                    "value": 1,
-                    "default": 1,
-                    "description": "Number of cores used",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
-                    "value": "false",
-                    "default": "false",
-                    "description": "Component is start of a group",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "ed7e938"
+            "sha": "6c33a5b"
         },
         {
             "category": "PythonApp",
@@ -1468,6 +1492,38 @@
                     "precious": false
                 },
                 {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "default": "5",
+                    "description": "Estimated execution time",
+                    "readonly": true,
+                    "type": "Float",
+                    "precious": false
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "default": "1",
+                    "description": "Number of cores used",
+                    "readonly": true,
+                    "type": "Integer",
+                    "precious": false
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "False",
+                    "default": "False",
+                    "description": "Is this node the start of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false
+                }
+            ],
+            "applicationArgs": [
+                {
                     "text": "Remote User",
                     "name": "remoteUser",
                     "value": "",
@@ -1496,40 +1552,10 @@
                     "readonly": false,
                     "type": "Float",
                     "precious": false
-                },
-                {
-                    "text": "Execution time",
-                    "name": "execution_time",
-                    "value": 5,
-                    "default": 5,
-                    "description": "Estimated execution time",
-                    "readonly": false,
-                    "type": "Float",
-                    "precious": false
-                },
-                {
-                    "text": "Num CPUs",
-                    "name": "num_cpus",
-                    "value": 1,
-                    "default": 1,
-                    "description": "Number of cores used",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
-                    "value": "false",
-                    "default": "false",
-                    "description": "Component is start of a group",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "ed7e938"
+            "sha": "6c33a5b"
         },
         {
             "category": "PythonApp",
@@ -1540,6 +1566,92 @@
             "canHaveOutputs": true,
             "drawOrderHint": 0,
             "key": -30,
+            "text": "SleepAndCopyApp",
+            "description": "",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [],
+            "outputPorts": [],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Application Class",
+                    "name": "appclass",
+                    "value": "dlg.apps.simple.SleepAndCopyApp",
+                    "default": "dlg.apps.simple.SleepAndCopyApp",
+                    "description": "Application class",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false
+                },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "default": "5",
+                    "description": "Estimated execution time",
+                    "readonly": true,
+                    "type": "Float",
+                    "precious": false
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "default": "1",
+                    "description": "Number of cores used",
+                    "readonly": true,
+                    "type": "Integer",
+                    "precious": false
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "False",
+                    "default": "False",
+                    "description": "Is this node the start of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false
+                }
+            ],
+            "applicationArgs": [
+                {
+                    "text": "Sleep Time",
+                    "name": "sleepTime",
+                    "value": "5",
+                    "default": "5",
+                    "description": "The number of seconds to sleep",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false
+                }
+            ],
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "6c33a5b"
+        },
+        {
+            "category": "PythonApp",
+            "tag": "daliuge",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -31,
             "text": "SleepApp",
             "description": "A simple APP that sleeps the specified amount of time (0 by default). This is mainly useful (and used) to test graph translation and structure without executing real algorithms. Very useful for debugging.",
             "collapsed": false,
@@ -1562,16 +1674,6 @@
             "outputAppFields": [],
             "fields": [
                 {
-                    "text": "Sleep Time",
-                    "name": "sleepTime",
-                    "value": "5",
-                    "default": "5",
-                    "description": "The number of seconds to sleep",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false
-                },
-                {
                     "text": "Application Class",
                     "name": "appclass",
                     "value": "dlg.apps.simple.SleepApp",
@@ -1582,38 +1684,50 @@
                     "precious": false
                 },
                 {
-                    "text": "Execution time",
+                    "text": "Execution Time",
                     "name": "execution_time",
-                    "value": 5,
-                    "default": 5,
+                    "value": "5",
+                    "default": "5",
                     "description": "Estimated execution time",
-                    "readonly": false,
+                    "readonly": true,
                     "type": "Float",
                     "precious": false
                 },
                 {
-                    "text": "Num CPUs",
+                    "text": "No. of CPUs",
                     "name": "num_cpus",
-                    "value": 1,
-                    "default": 1,
+                    "value": "1",
+                    "default": "1",
                     "description": "Number of cores used",
-                    "readonly": false,
+                    "readonly": true,
                     "type": "Integer",
                     "precious": false
                 },
                 {
                     "text": "Group start",
                     "name": "group_start",
-                    "value": "false",
-                    "default": "false",
-                    "description": "Component is start of a group",
+                    "value": "False",
+                    "default": "False",
+                    "description": "Is this node the start of a group?",
                     "readonly": false,
                     "type": "Boolean",
                     "precious": false
                 }
             ],
+            "applicationArgs": [
+                {
+                    "text": "Sleep Time",
+                    "name": "sleepTime",
+                    "value": "5",
+                    "default": "5",
+                    "description": "The number of seconds to sleep",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false
+                }
+            ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "ed7e938"
+            "sha": "6c33a5b"
         },
         {
             "category": "PythonApp",
@@ -1623,7 +1737,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -31,
+            "key": -32,
             "text": "SocketListenerApp",
             "description": "A BarrierAppDROP that listens on a socket for data. The server-side socket expects only one client, and assumes that the client will close the connection after all its data has been sent. This application expects no input DROPs, and therefore raises an exception whenever one is added. On the output side, one or more outputs can be specified with the restriction that they are not ContainerDROPs so data can be written into them through the framework.",
             "collapsed": false,
@@ -1665,6 +1779,38 @@
                     "precious": false
                 },
                 {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "default": "5",
+                    "description": "Estimated execution time",
+                    "readonly": true,
+                    "type": "Float",
+                    "precious": false
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "default": "1",
+                    "description": "Number of cores used",
+                    "readonly": true,
+                    "type": "Integer",
+                    "precious": false
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "False",
+                    "default": "False",
+                    "description": "Is this node the start of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false
+                }
+            ],
+            "applicationArgs": [
+                {
                     "text": "Host",
                     "name": "host",
                     "value": "127.0.0.1",
@@ -1703,40 +1849,10 @@
                     "readonly": false,
                     "type": "Boolean",
                     "precious": false
-                },
-                {
-                    "text": "Execution time",
-                    "name": "execution_time",
-                    "value": 5,
-                    "default": 5,
-                    "description": "Estimated execution time",
-                    "readonly": false,
-                    "type": "Float",
-                    "precious": false
-                },
-                {
-                    "text": "Num CPUs",
-                    "name": "num_cpus",
-                    "value": 1,
-                    "default": 1,
-                    "description": "Number of cores used",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
-                    "value": "false",
-                    "default": "false",
-                    "description": "Component is start of a group",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "ed7e938"
+            "sha": "6c33a5b"
         },
         {
             "category": "PythonApp",
@@ -1746,7 +1862,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -32,
+            "key": -33,
             "text": "UrlRetrieveApp",
             "description": "A simple APP that retrieves the content of a URL and writes it to all outputs.",
             "collapsed": false,
@@ -1778,16 +1894,6 @@
             "outputAppFields": [],
             "fields": [
                 {
-                    "text": "URL",
-                    "name": "url",
-                    "value": "https://eagle.icrar.org",
-                    "default": "https://eagle.icrar.org",
-                    "description": "The URL to retrieve",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false
-                },
-                {
                     "text": "Application Class",
                     "name": "appclass",
                     "value": "dlg.apps.simple.UrlRetrieveApp",
@@ -1798,38 +1904,50 @@
                     "precious": false
                 },
                 {
-                    "text": "Execution time",
+                    "text": "Execution Time",
                     "name": "execution_time",
-                    "value": 5,
-                    "default": 5,
+                    "value": "5",
+                    "default": "5",
                     "description": "Estimated execution time",
-                    "readonly": false,
+                    "readonly": true,
                     "type": "Float",
                     "precious": false
                 },
                 {
-                    "text": "Num CPUs",
+                    "text": "No. of CPUs",
                     "name": "num_cpus",
-                    "value": 1,
-                    "default": 1,
+                    "value": "1",
+                    "default": "1",
                     "description": "Number of cores used",
-                    "readonly": false,
+                    "readonly": true,
                     "type": "Integer",
                     "precious": false
                 },
                 {
                     "text": "Group start",
                     "name": "group_start",
-                    "value": "false",
-                    "default": "false",
-                    "description": "Component is start of a group",
+                    "value": "False",
+                    "default": "False",
+                    "description": "Is this node the start of a group?",
                     "readonly": false,
                     "type": "Boolean",
                     "precious": false
                 }
             ],
+            "applicationArgs": [
+                {
+                    "text": "URL",
+                    "name": "url",
+                    "value": "https://eagle.icrar.org",
+                    "default": "https://eagle.icrar.org",
+                    "description": "The URL to retrieve",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false
+                }
+            ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "ed7e938"
+            "sha": "6c33a5b"
         }
     ],
     "linkDataArray": []
