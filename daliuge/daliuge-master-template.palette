@@ -6,7 +6,7 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "daliuge-master-template.palette",
-        "sha": "27433f2",
+        "sha": "2a5244a",
         "git_url": "https://github.com/ICRAR/daliuge.git"
     },
     "nodeDataArray": [
@@ -81,38 +81,59 @@
                     "precious": false
                 },
                 {
-                    "text": "Execution time",
-                    "name": "execution_time",
-                    "value": 5,
-                    "default": 5,
-                    "description": "Estimated execution time",
+                    "text": "Param value separator",
+                    "name": "paramValueSeparator",
+                    "value": " ",
+                    "default": " ",
+                    "description": "Separator character(s) between parameters on the command line",
                     "readonly": false,
+                    "type": "String",
+                    "precious": false
+                },
+                {
+                    "text": "Argument prefix",
+                    "name": "argumentPrefix",
+                    "value": "--",
+                    "default": "--",
+                    "description": "Prefix to each keyed argument on the command line",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false
+                },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "default": "5",
+                    "description": "Estimated execution time",
+                    "readonly": true,
                     "type": "Float",
                     "precious": false
                 },
                 {
-                    "text": "Num CPUs",
+                    "text": "No. of CPUs",
                     "name": "num_cpus",
-                    "value": 1,
-                    "default": 1,
+                    "value": "1",
+                    "default": "1",
                     "description": "Number of cores used",
-                    "readonly": false,
+                    "readonly": true,
                     "type": "Integer",
                     "precious": false
                 },
                 {
                     "text": "Group start",
                     "name": "group_start",
-                    "value": "false",
-                    "default": "false",
-                    "description": "Component is start of a group",
+                    "value": "False",
+                    "default": "False",
+                    "description": "Is this node the start of a group?",
                     "readonly": false,
                     "type": "Boolean",
                     "precious": false
                 }
             ],
+            "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "27433f2"
+            "sha": "2a5244a"
         },
         {
             "category": "Branch",
@@ -155,6 +176,26 @@
                     "precious": false
                 },
                 {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "default": "5",
+                    "description": "Estimated execution time",
+                    "readonly": true,
+                    "type": "Float",
+                    "precious": false
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "default": "1",
+                    "description": "Number of cores used",
+                    "readonly": true,
+                    "type": "Integer",
+                    "precious": false
+                },
+                {
                     "text": "Group start",
                     "name": "group_start",
                     "value": "False",
@@ -163,30 +204,11 @@
                     "readonly": false,
                     "type": "Boolean",
                     "precious": false
-                },
-                {
-                    "text": "Execution time",
-                    "name": "execution_time",
-                    "value": 5,
-                    "default": 5,
-                    "description": "Estimated execution time",
-                    "readonly": false,
-                    "type": "Float",
-                    "precious": false
-                },
-                {
-                    "text": "Num CPUs",
-                    "name": "num_cpus",
-                    "value": 1,
-                    "default": 1,
-                    "description": "Number of cores used",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false
                 }
             ],
+            "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "27433f2"
+            "sha": "2a5244a"
         },
         {
             "category": "Docker",
@@ -259,6 +281,86 @@
                     "precious": false
                 },
                 {
+                    "text": "Input Redirection",
+                    "name": "input_redirection",
+                    "value": "",
+                    "default": "",
+                    "description": "The command line argument that specifies the input into this application",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false
+                },
+                {
+                    "text": "Output Redirection",
+                    "name": "output_redirection",
+                    "value": "",
+                    "default": "",
+                    "description": "The command line argument that specifies the output from this application",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false
+                },
+                {
+                    "text": "Command Line Arguments",
+                    "name": "command_line_arguments",
+                    "value": "",
+                    "default": "",
+                    "description": "Additional command line arguments to be added to the command line to be executed",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false
+                },
+                {
+                    "text": "Param value separator",
+                    "name": "paramValueSeparator",
+                    "value": " ",
+                    "default": " ",
+                    "description": "Separator character(s) between parameters on the command line",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false
+                },
+                {
+                    "text": "Argument prefix",
+                    "name": "argumentPrefix",
+                    "value": "--",
+                    "default": "--",
+                    "description": "Prefix to each keyed argument on the command line",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false
+                },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "default": "5",
+                    "description": "Estimated execution time",
+                    "readonly": true,
+                    "type": "Float",
+                    "precious": false
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "default": "1",
+                    "description": "Number of cores used",
+                    "readonly": true,
+                    "type": "Integer",
+                    "precious": false
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "False",
+                    "default": "False",
+                    "description": "Is this node the start of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false
+                },
+                {
                     "text": "User",
                     "name": "user",
                     "value": "",
@@ -307,40 +409,11 @@
                     "readonly": false,
                     "type": "String",
                     "precious": false
-                },
-                {
-                    "text": "Execution time",
-                    "name": "execution_time",
-                    "value": 5,
-                    "default": 5,
-                    "description": "Estimated execution time",
-                    "readonly": false,
-                    "type": "Float",
-                    "precious": false
-                },
-                {
-                    "text": "Num CPUs",
-                    "name": "num_cpus",
-                    "value": 1,
-                    "default": 1,
-                    "description": "Number of cores used",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
-                    "value": "false",
-                    "default": "false",
-                    "description": "Component is start of a group",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false
                 }
             ],
+            "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "27433f2"
+            "sha": "2a5244a"
         },
         {
             "category": "DynlibApp",
@@ -383,38 +456,39 @@
                     "precious": false
                 },
                 {
-                    "text": "Execution time",
+                    "text": "Execution Time",
                     "name": "execution_time",
-                    "value": 5,
-                    "default": 5,
+                    "value": "5",
+                    "default": "5",
                     "description": "Estimated execution time",
-                    "readonly": false,
+                    "readonly": true,
                     "type": "Float",
                     "precious": false
                 },
                 {
-                    "text": "Num CPUs",
+                    "text": "No. of CPUs",
                     "name": "num_cpus",
-                    "value": 1,
-                    "default": 1,
+                    "value": "1",
+                    "default": "1",
                     "description": "Number of cores used",
-                    "readonly": false,
+                    "readonly": true,
                     "type": "Integer",
                     "precious": false
                 },
                 {
                     "text": "Group start",
                     "name": "group_start",
-                    "value": "false",
-                    "default": "false",
-                    "description": "Component is start of a group",
+                    "value": "False",
+                    "default": "False",
+                    "description": "Is this node the start of a group?",
                     "readonly": false,
                     "type": "Boolean",
                     "precious": false
                 }
             ],
+            "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "27433f2"
+            "sha": "2a5244a"
         },
         {
             "category": "File",
@@ -465,7 +539,9 @@
                     "readonly": false,
                     "type": "Boolean",
                     "precious": false
-                },
+                }
+            ],
+            "applicationArgs": [
                 {
                     "text": "Check file path exists",
                     "name": "check_filepath_exists",
@@ -498,7 +574,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "27433f2"
+            "sha": "2a5244a"
         },
         {
             "category": "Memory",
@@ -551,8 +627,9 @@
                     "precious": false
                 }
             ],
+            "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "27433f2"
+            "sha": "2a5244a"
         },
         {
             "category": "Mpi",
@@ -587,46 +664,107 @@
                 {
                     "text": "Num procs",
                     "name": "num_of_procs",
-                    "value": "",
-                    "default": "",
+                    "value": "1",
+                    "default": "1",
                     "description": "Number of processes used for this application",
                     "readonly": false,
                     "type": "Integer",
                     "precious": false
                 },
                 {
-                    "text": "Execution time",
-                    "name": "execution_time",
-                    "value": 5,
-                    "default": 5,
-                    "description": "Estimated execution time",
+                    "text": "Command",
+                    "name": "command",
+                    "value": "",
+                    "default": "",
+                    "description": "The command to be executed",
                     "readonly": false,
+                    "type": "String",
+                    "precious": false
+                },
+                {
+                    "text": "Input Redirection",
+                    "name": "input_redirection",
+                    "value": "",
+                    "default": "",
+                    "description": "The command line argument that specifies the input into this application",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false
+                },
+                {
+                    "text": "Output Redirection",
+                    "name": "output_redirection",
+                    "value": "",
+                    "default": "",
+                    "description": "The command line argument that specifies the output from this application",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false
+                },
+                {
+                    "text": "Command Line Arguments",
+                    "name": "command_line_arguments",
+                    "value": "",
+                    "default": "",
+                    "description": "Additional command line arguments to be added to the command line to be executed",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false
+                },
+                {
+                    "text": "Param value separator",
+                    "name": "paramValueSeparator",
+                    "value": " ",
+                    "default": " ",
+                    "description": "Separator character(s) between parameters on the command line",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false
+                },
+                {
+                    "text": "Argument prefix",
+                    "name": "argumentPrefix",
+                    "value": "--",
+                    "default": "--",
+                    "description": "Prefix to each keyed argument on the command line",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false
+                },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "default": "5",
+                    "description": "Estimated execution time",
+                    "readonly": true,
                     "type": "Float",
                     "precious": false
                 },
                 {
-                    "text": "Num CPUs",
+                    "text": "No. of CPUs",
                     "name": "num_cpus",
-                    "value": 1,
-                    "default": 1,
+                    "value": "1",
+                    "default": "1",
                     "description": "Number of cores used",
-                    "readonly": false,
+                    "readonly": true,
                     "type": "Integer",
                     "precious": false
                 },
                 {
                     "text": "Group end",
                     "name": "group_end",
-                    "value": "false",
-                    "default": "false",
-                    "description": "Component is end of a group",
+                    "value": "False",
+                    "default": "False",
+                    "description": "Is this node the end of a group?",
                     "readonly": false,
                     "type": "Boolean",
                     "precious": false
                 }
             ],
+            "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "27433f2"
+            "sha": "2a5244a"
         },
         {
             "category": "NGAS",
@@ -677,7 +815,9 @@
                     "readonly": false,
                     "type": "Boolean",
                     "precious": false
-                },
+                }
+            ],
+            "applicationArgs": [
                 {
                     "text": "NGAS Server",
                     "name": "ngsSrv",
@@ -721,11 +861,11 @@
                 {
                     "text": "NGAS mime-type",
                     "name": "ngasMime",
-                    "value": "text\\",
-                    "default": "text\\",
+                    "value": "text/ascii",
+                    "default": "text/ascii",
                     "description": "Mime-type to be used for archiving",
                     "readonly": false,
-                    "type": "ascii",
+                    "type": "String",
                     "precious": false
                 },
                 {
@@ -740,7 +880,92 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "27433f2"
+            "sha": "2a5244a"
+        },
+        {
+            "category": "ParameterSet",
+            "tag": "template",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -22,
+            "text": "ParameterSet",
+            "description": "A set of parameters, wholly specified in EAGLE",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [],
+            "outputPorts": [
+                {
+                    "Id": "2933e446-488d-4fd0-b0c5-bc274280949e",
+                    "IdText": "Config",
+                    "text": "ConfigFile",
+                    "event": false,
+                    "type": "File",
+                    "description": "The output configuration file"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "5",
+                    "default": "5",
+                    "description": "Estimated size of the data contained in this node",
+                    "readonly": false,
+                    "type": "Float",
+                    "precious": false
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "False",
+                    "default": "False",
+                    "description": "Is this node the end of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false
+                }
+            ],
+            "applicationArgs": [
+                {
+                    "text": "Parset mode",
+                    "name": "mode",
+                    "value": "YANDA",
+                    "default": "YANDA",
+                    "description": "To what standard DALiuGE should filter and serialize the parameters.",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false
+                },
+                {
+                    "text": "ConfigData",
+                    "name": "config_data",
+                    "value": "",
+                    "default": "",
+                    "description": "Additional configuration information to be mixed in with the initial data",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false
+                }
+            ],
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "2a5244a"
         },
         {
             "category": "S3",
@@ -750,7 +975,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -27,
+            "key": -28,
             "text": "S3",
             "description": "A 'bucket' object available on Amazon's Simple Storage Service (S3)",
             "collapsed": false,
@@ -823,8 +1048,9 @@
                     "precious": false
                 }
             ],
+            "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "27433f2"
+            "sha": "2a5244a"
         }
     ],
     "linkDataArray": []
