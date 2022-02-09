@@ -6,7 +6,7 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "daliuge-yan-850-template.palette",
-        "sha": "8f22482",
+        "sha": "32c35bd",
         "git_url": "https://github.com/ICRAR/daliuge.git"
     },
     "nodeDataArray": [
@@ -112,7 +112,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8f22482"
+            "sha": "32c35bd"
         },
         {
             "category": "Branch",
@@ -186,7 +186,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8f22482"
+            "sha": "32c35bd"
         },
         {
             "category": "Docker",
@@ -340,7 +340,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8f22482"
+            "sha": "32c35bd"
         },
         {
             "category": "DynlibApp",
@@ -414,7 +414,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8f22482"
+            "sha": "32c35bd"
         },
         {
             "category": "File",
@@ -498,7 +498,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8f22482"
+            "sha": "32c35bd"
         },
         {
             "category": "Memory",
@@ -552,7 +552,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8f22482"
+            "sha": "32c35bd"
         },
         {
             "category": "Mpi",
@@ -626,7 +626,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8f22482"
+            "sha": "32c35bd"
         },
         {
             "category": "NGAS",
@@ -740,258 +740,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8f22482"
-        },
-        {
-            "category": "ParameterSet",
-            "tag": "template",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
-            "drawOrderHint": 0,
-            "key": -23,
-            "text": "ParameterSet",
-            "description": "A set of parameters, wholly specified in EAGLE",
-            "collapsed": false,
-            "showPorts": false,
-            "streaming": false,
-            "subject": null,
-            "selected": false,
-            "expanded": false,
-            "inputApplicationName": "",
-            "outputApplicationName": "",
-            "exitApplicationName": "",
-            "inputApplicationType": "None",
-            "outputApplicationType": "None",
-            "exitApplicationType": "None",
-            "inputPorts": [],
-            "outputPorts": [
-                {
-                    "Id": "2933e446-488d-4fd0-b0c5-bc274280949e",
-                    "IdText": "Config",
-                    "text": "ConfigFile",
-                    "event": false,
-                    "type": "File",
-                    "description": "The output configuration file"
-                }
-            ],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "fields": [
-                {
-                    "text": "Parset mode",
-                    "name": "mode",
-                    "value": "YANDA",
-                    "default": "YANDA",
-                    "description": "To what standard DALiuGE should filter and serialize the parameters.",
-                    "readonly": true,
-                    "type": "String",
-                    "precious": false
-                },
-                {
-                    "text": "ConfigData",
-                    "name": "config_data",
-                    "value": "",
-                    "default": "",
-                    "description": "Additional configuration information to be mixed in with the initial data",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false
-                },
-                {
-                    "text": "Data volume",
-                    "name": "data_volume",
-                    "value": 5,
-                    "default": 5,
-                    "description": "Estimated size of the data contained in this node",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false
-                },
-                {
-                    "text": "Group end",
-                    "name": "group_end",
-                    "value": "false",
-                    "default": "false",
-                    "description": "Component is end of a group",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false
-                }
-            ],
-            "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8f22482"
-        },
-        {
-            "category": "Plasma",
-            "tag": "template",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
-            "drawOrderHint": 0,
-            "key": -24,
-            "text": "Plasma",
-            "description": "An object in a Apache Arrow Plasma in-memory object store",
-            "collapsed": false,
-            "showPorts": false,
-            "streaming": false,
-            "subject": null,
-            "selected": false,
-            "expanded": false,
-            "inputApplicationName": "",
-            "outputApplicationName": "",
-            "exitApplicationName": "",
-            "inputApplicationType": "None",
-            "outputApplicationType": "None",
-            "exitApplicationType": "None",
-            "inputPorts": [],
-            "outputPorts": [],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "fields": [
-                {
-                    "text": "Data volume",
-                    "name": "data_volume",
-                    "value": "5",
-                    "default": "5",
-                    "description": "Estimated size of the data contained in this node",
-                    "readonly": false,
-                    "type": "Float",
-                    "precious": false
-                },
-                {
-                    "text": "Group end",
-                    "name": "group_end",
-                    "value": "False",
-                    "default": "False",
-                    "description": "Is this node the end of a group?",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false
-                },
-                {
-                    "text": "Plasma Path",
-                    "name": "plasma_path",
-                    "value": "",
-                    "default": "",
-                    "description": "Path to the local plasma store",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false
-                },
-                {
-                    "text": "Object Id",
-                    "name": "object_id",
-                    "value": "",
-                    "default": "",
-                    "description": "PlasmaId of the object for all compute nodes",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false
-                },
-                {
-                    "text": "Use Staging",
-                    "name": "use_staging",
-                    "value": "False",
-                    "default": "False",
-                    "description": "Enables writing to a dynamically resizeable staging buffer",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false
-                }
-            ],
-            "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8f22482"
-        },
-        {
-            "category": "PlasmaFlight",
-            "tag": "template",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
-            "drawOrderHint": 0,
-            "key": -25,
-            "text": "PlasmaFlight",
-            "description": "An Apache Arrow Flight server providing distributed access to a Plasma in-memory object store",
-            "collapsed": false,
-            "showPorts": false,
-            "streaming": false,
-            "subject": null,
-            "selected": false,
-            "expanded": false,
-            "inputApplicationName": "",
-            "outputApplicationName": "",
-            "exitApplicationName": "",
-            "inputApplicationType": "None",
-            "outputApplicationType": "None",
-            "exitApplicationType": "None",
-            "inputPorts": [],
-            "outputPorts": [],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "fields": [
-                {
-                    "text": "Data volume",
-                    "name": "data_volume",
-                    "value": "5",
-                    "default": "5",
-                    "description": "Estimated size of the data contained in this node",
-                    "readonly": false,
-                    "type": "Float",
-                    "precious": false
-                },
-                {
-                    "text": "Group end",
-                    "name": "group_end",
-                    "value": "False",
-                    "default": "False",
-                    "description": "Is this node the end of a group?",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false
-                },
-                {
-                    "text": "Plasma Path",
-                    "name": "plasma_path",
-                    "value": "",
-                    "default": "",
-                    "description": "Path to the local plasma store",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false
-                },
-                {
-                    "text": "Object Id",
-                    "name": "object_id",
-                    "value": "",
-                    "default": "",
-                    "description": "PlasmaId of the object for all compute nodes",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false
-                },
-                {
-                    "text": "Flight Path",
-                    "name": "flight_path",
-                    "value": "",
-                    "default": "",
-                    "description": "IP and flight port of the drop owner",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false
-                }
-            ],
-            "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8f22482"
+            "sha": "32c35bd"
         },
         {
             "category": "S3",
@@ -1075,7 +824,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8f22482"
+            "sha": "32c35bd"
         }
     ],
     "linkDataArray": []
