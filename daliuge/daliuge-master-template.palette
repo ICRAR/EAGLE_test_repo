@@ -6,7 +6,7 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "daliuge-master-template.palette",
-        "sha": "eacdb9e",
+        "sha": "04b0fb5",
         "git_url": "https://github.com/ICRAR/daliuge.git"
     },
     "nodeDataArray": [
@@ -129,11 +129,41 @@
                     "readonly": false,
                     "type": "Boolean",
                     "precious": false
+                },
+                {
+                    "text": "Input error threshold (0 and 100)",
+                    "name": "input_error_threshold",
+                    "value": "0",
+                    "default": "0",
+                    "description": "Indicates the tolerance to erroneous effective inputs, and after which the application will not be run but moved to the ERROR state",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false
+                },
+                {
+                    "text": "Number of effective inputs",
+                    "name": "n_effective_inputs",
+                    "value": "-1",
+                    "default": "-1",
+                    "description": "Application will block until this number of inputs have moved to the COMPLETED state. Special value of -1 means that all inputs are considered as effective",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false
+                },
+                {
+                    "text": "Number of tries",
+                    "name": "n_tries",
+                    "value": "1",
+                    "default": "1",
+                    "description": "Specifies the number of times the 'run' method will be executed before finally giving up",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false
                 }
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "eacdb9e"
+            "sha": "04b0fb5"
         },
         {
             "category": "Branch",
@@ -204,11 +234,41 @@
                     "readonly": false,
                     "type": "Boolean",
                     "precious": false
+                },
+                {
+                    "text": "Input error threshold (0 and 100)",
+                    "name": "input_error_threshold",
+                    "value": "0",
+                    "default": "0",
+                    "description": "Indicates the tolerance to erroneous effective inputs, and after which the application will not be run but moved to the ERROR state",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false
+                },
+                {
+                    "text": "Number of effective inputs",
+                    "name": "n_effective_inputs",
+                    "value": "-1",
+                    "default": "-1",
+                    "description": "Application will block until this number of inputs have moved to the COMPLETED state. Special value of -1 means that all inputs are considered as effective",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false
+                },
+                {
+                    "text": "Number of tries",
+                    "name": "n_tries",
+                    "value": "1",
+                    "default": "1",
+                    "description": "Specifies the number of times the 'run' method will be executed before finally giving up",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false
                 }
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "eacdb9e"
+            "sha": "04b0fb5"
         },
         {
             "category": "Docker",
@@ -361,6 +421,36 @@
                     "precious": false
                 },
                 {
+                    "text": "Input error threshold (0 and 100)",
+                    "name": "input_error_threshold",
+                    "value": "0",
+                    "default": "0",
+                    "description": "Indicates the tolerance to erroneous effective inputs, and after which the application will not be run but moved to the ERROR state",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false
+                },
+                {
+                    "text": "Number of effective inputs",
+                    "name": "n_effective_inputs",
+                    "value": "-1",
+                    "default": "-1",
+                    "description": "Application will block until this number of inputs have moved to the COMPLETED state. Special value of -1 means that all inputs are considered as effective",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false
+                },
+                {
+                    "text": "Number of tries",
+                    "name": "n_tries",
+                    "value": "1",
+                    "default": "1",
+                    "description": "Specifies the number of times the 'run' method will be executed before finally giving up",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false
+                },
+                {
                     "text": "User",
                     "name": "user",
                     "value": "",
@@ -413,7 +503,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "eacdb9e"
+            "sha": "04b0fb5"
         },
         {
             "category": "DynlibApp",
@@ -484,11 +574,41 @@
                     "readonly": false,
                     "type": "Boolean",
                     "precious": false
+                },
+                {
+                    "text": "Input error threshold (0 and 100)",
+                    "name": "input_error_threshold",
+                    "value": "0",
+                    "default": "0",
+                    "description": "Indicates the tolerance to erroneous effective inputs, and after which the application will not be run but moved to the ERROR state",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false
+                },
+                {
+                    "text": "Number of effective inputs",
+                    "name": "n_effective_inputs",
+                    "value": "-1",
+                    "default": "-1",
+                    "description": "Application will block until this number of inputs have moved to the COMPLETED state. Special value of -1 means that all inputs are considered as effective",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false
+                },
+                {
+                    "text": "Number of tries",
+                    "name": "n_tries",
+                    "value": "1",
+                    "default": "1",
+                    "description": "Specifies the number of times the 'run' method will be executed before finally giving up",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false
                 }
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "eacdb9e"
+            "sha": "04b0fb5"
         },
         {
             "category": "File",
@@ -574,7 +694,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "eacdb9e"
+            "sha": "04b0fb5"
         },
         {
             "category": "Memory",
@@ -629,7 +749,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "eacdb9e"
+            "sha": "04b0fb5"
         },
         {
             "category": "Mpi",
@@ -760,11 +880,41 @@
                     "readonly": false,
                     "type": "Boolean",
                     "precious": false
+                },
+                {
+                    "text": "Input error threshold (0 and 100)",
+                    "name": "input_error_threshold",
+                    "value": "0",
+                    "default": "0",
+                    "description": "Indicates the tolerance to erroneous effective inputs, and after which the application will not be run but moved to the ERROR state",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false
+                },
+                {
+                    "text": "Number of effective inputs",
+                    "name": "n_effective_inputs",
+                    "value": "-1",
+                    "default": "-1",
+                    "description": "Application will block until this number of inputs have moved to the COMPLETED state. Special value of -1 means that all inputs are considered as effective",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false
+                },
+                {
+                    "text": "Number of tries",
+                    "name": "n_tries",
+                    "value": "1",
+                    "default": "1",
+                    "description": "Specifies the number of times the 'run' method will be executed before finally giving up",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false
                 }
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "eacdb9e"
+            "sha": "04b0fb5"
         },
         {
             "category": "NGAS",
@@ -880,7 +1030,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "eacdb9e"
+            "sha": "04b0fb5"
         },
         {
             "category": "ParameterSet",
@@ -965,7 +1115,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "eacdb9e"
+            "sha": "04b0fb5"
         },
         {
             "category": "S3",
@@ -1050,7 +1200,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "eacdb9e"
+            "sha": "04b0fb5"
         }
     ],
     "linkDataArray": []
