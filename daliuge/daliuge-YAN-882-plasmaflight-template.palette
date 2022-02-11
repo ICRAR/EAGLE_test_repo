@@ -6,7 +6,7 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "daliuge-YAN-882-plasmaflight-template.palette",
-        "sha": "21fe497",
+        "sha": "e8c60c3",
         "git_url": "https://github.com/ICRAR/daliuge.git"
     },
     "nodeDataArray": [
@@ -163,7 +163,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "21fe497"
+            "sha": "e8c60c3"
         },
         {
             "category": "Branch",
@@ -268,7 +268,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "21fe497"
+            "sha": "e8c60c3"
         },
         {
             "category": "Docker",
@@ -503,7 +503,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "21fe497"
+            "sha": "e8c60c3"
         },
         {
             "category": "DynlibApp",
@@ -608,7 +608,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "21fe497"
+            "sha": "e8c60c3"
         },
         {
             "category": "File",
@@ -694,7 +694,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "21fe497"
+            "sha": "e8c60c3"
         },
         {
             "category": "Memory",
@@ -749,7 +749,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "21fe497"
+            "sha": "e8c60c3"
         },
         {
             "category": "Mpi",
@@ -914,7 +914,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "21fe497"
+            "sha": "e8c60c3"
         },
         {
             "category": "NGAS",
@@ -1030,7 +1030,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "21fe497"
+            "sha": "e8c60c3"
         },
         {
             "category": "ParameterSet",
@@ -1115,7 +1115,92 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "21fe497"
+            "sha": "e8c60c3"
+        },
+        {
+            "category": "ParameterSet",
+            "tag": "template",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -23,
+            "text": "ParameterSet",
+            "description": "A set of parameters, wholly specified in EAGLE",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [],
+            "outputPorts": [
+                {
+                    "Id": "2933e446-488d-4fd0-b0c5-bc274280949e",
+                    "IdText": "Config",
+                    "text": "ConfigFile",
+                    "event": false,
+                    "type": "File",
+                    "description": "The output configuration file"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": 5,
+                    "default": 5,
+                    "description": "Estimated size of the data contained in this node",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "false",
+                    "default": "false",
+                    "description": "Component is end of a group",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false
+                }
+            ],
+            "applicationArgs": [
+                {
+                    "text": "Parset mode",
+                    "name": "mode",
+                    "value": "YANDA",
+                    "default": "YANDA",
+                    "description": "To what standard DALiuGE should filter and serialize the parameters.",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false
+                },
+                {
+                    "text": "ConfigData",
+                    "name": "config_data",
+                    "value": "",
+                    "default": "",
+                    "description": "Additional configuration information to be mixed in with the initial data",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false
+                }
+            ],
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "e8c60c3"
         },
         {
             "category": "S3",
@@ -1200,7 +1285,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "21fe497"
+            "sha": "e8c60c3"
         }
     ],
     "linkDataArray": []
