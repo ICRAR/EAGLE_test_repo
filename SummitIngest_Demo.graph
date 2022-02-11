@@ -44,7 +44,7 @@
                     "IdText": "ConfList",
                     "text": "",
                     "event": false,
-                    "type": "Unknown",
+                    "type": "String",
                     "description": ""
                 }
             ],
@@ -782,22 +782,22 @@
             "group": -12,
             "inputPorts": [
                 {
-                    "Id": "a0af7d75-fec4-47f5-bd71-0f7c6f2b7174",
+                    "Id": "a9cdbae5-6a20-4528-9d24-a55e82dd2245",
                     "IdText": "ConfList",
                     "text": "",
                     "event": false,
-                    "type": "Unknown",
+                    "type": "String",
                     "description": ""
                 }
             ],
             "outputPorts": [],
             "inputLocalPorts": [
                 {
-                    "Id": "e5930166-7ade-4874-b3a5-37013ebb1f68",
+                    "Id": "da518b04-0e87-4482-a305-303bc4fbaada",
                     "IdText": "config",
                     "text": "",
                     "event": false,
-                    "type": "Unknown",
+                    "type": "String",
                     "description": ""
                 }
             ],
@@ -831,25 +831,37 @@
             "applicationArgs": [],
             "inputAppFields": [
                 {
-                    "text": "Execution time",
-                    "name": "execution_time",
-                    "value": "1",
-                    "defaultValue": "",
-                    "description": "",
-                    "readonly": false,
-                    "type": "Unknown",
+                    "text": "Application Class",
+                    "name": "appclass",
+                    "value": "dlg.apps.simple.SleepApp",
+                    "defaultValue": "dlg.apps.simple.SleepApp",
+                    "description": "Application class",
+                    "readonly": true,
+                    "type": "String",
                     "precious": false,
                     "options": [],
                     "positional": false
                 },
                 {
-                    "text": "Num CPUs",
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "defaultValue": "5",
+                    "description": "Estimated execution time",
+                    "readonly": true,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "No. of CPUs",
                     "name": "num_cpus",
-                    "value": "1",
-                    "defaultValue": "",
-                    "description": "",
-                    "readonly": false,
-                    "type": "Unknown",
+                    "value": 1,
+                    "defaultValue": "1",
+                    "description": "Number of cores used",
+                    "readonly": true,
+                    "type": "Integer",
                     "precious": false,
                     "options": [],
                     "positional": false
@@ -857,32 +869,56 @@
                 {
                     "text": "Group start",
                     "name": "group_start",
-                    "value": "0",
-                    "defaultValue": "",
-                    "description": "",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Is this node the start of a group?",
                     "readonly": false,
-                    "type": "Unknown",
+                    "type": "Boolean",
                     "precious": false,
                     "options": [],
                     "positional": false
                 },
                 {
-                    "text": "Arg01",
-                    "name": "Arg01",
-                    "value": "sleep 1",
-                    "defaultValue": "",
-                    "description": "The command line to be executed",
+                    "text": "Input error threshold (0 and 100)",
+                    "name": "input_error_threshold",
+                    "value": 0,
+                    "defaultValue": "0",
+                    "description": "Indicates the tolerance to erroneous effective inputs, and after which the application will not be run but moved to the ERROR state",
                     "readonly": false,
-                    "type": "Unknown",
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Number of effective inputs",
+                    "name": "n_effective_inputs",
+                    "value": -1,
+                    "defaultValue": "-1",
+                    "description": "Application will block until this number of inputs have moved to the COMPLETED state. Special value of -1 means that all inputs are considered as effective",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Number of tries",
+                    "name": "n_tries",
+                    "value": 1,
+                    "defaultValue": "1",
+                    "description": "Specifies the number of times the 'run' method will be executed before finally giving up",
+                    "readonly": false,
+                    "type": "Integer",
                     "precious": false,
                     "options": [],
                     "positional": false
                 }
             ],
             "outputAppFields": [],
-            "inputApplicationName": "splitConfig",
-            "inputApplicationType": "BashShellApp",
-            "inputApplicationKey": -15,
+            "inputApplicationName": "SplitConfig",
+            "inputApplicationType": "PythonApp",
+            "inputApplicationKey": -18,
             "outputApplicationName": "",
             "outputApplicationType": "None",
             "outputApplicationKey": null
@@ -896,7 +932,7 @@
             "text": "ClusterAverager",
             "description": "",
             "x": 982.3501805863165,
-            "y": 463.01184523902174,
+            "y": 465.01184523902174,
             "width": 466.11760607881735,
             "height": 195.3873708518595,
             "collapsed": false,
@@ -1024,7 +1060,7 @@
             "text": "AvgChannel",
             "description": "",
             "x": 971.7366216888148,
-            "y": 533.8969906189795,
+            "y": 535.8969906189795,
             "width": 200,
             "height": 72,
             "collapsed": true,
@@ -1220,7 +1256,7 @@
             "text": "MSwrite",
             "description": "An application component in the form of a Python app",
             "x": 1127.6031428346828,
-            "y": 533.3063282013178,
+            "y": 535.3063282013178,
             "width": 200,
             "height": 72,
             "collapsed": true,
@@ -1336,7 +1372,7 @@
             "text": "subMS",
             "description": "",
             "x": 1302.1726763794486,
-            "y": 533.3898278406715,
+            "y": 535.3898278406715,
             "width": 200,
             "height": 72,
             "collapsed": true,
@@ -1431,13 +1467,6 @@
             "loop_aware": "0"
         },
         {
-            "from": -4,
-            "fromPort": "d9692c4d-fee8-4d08-b0e9-977349deb2d1",
-            "to": -2,
-            "toPort": "a0af7d75-fec4-47f5-bd71-0f7c6f2b7174",
-            "loop_aware": "0"
-        },
-        {
             "from": -17,
             "fromPort": "2673898b-86bc-47f3-89a9-d305a957c44c",
             "to": -9,
@@ -1487,8 +1516,15 @@
             "loop_aware": "0"
         },
         {
+            "from": -4,
+            "fromPort": "d9692c4d-fee8-4d08-b0e9-977349deb2d1",
+            "to": -2,
+            "toPort": "a9cdbae5-6a20-4528-9d24-a55e82dd2245",
+            "loop_aware": "1"
+        },
+        {
             "from": -2,
-            "fromPort": "e5930166-7ade-4874-b3a5-37013ebb1f68",
+            "fromPort": "da518b04-0e87-4482-a305-303bc4fbaada",
             "to": -6,
             "toPort": "4a255169-a67b-49b5-b36c-be6048922adc",
             "loop_aware": "0"
