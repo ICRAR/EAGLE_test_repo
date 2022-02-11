@@ -6,8 +6,8 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "leap-master.palette",
-        "sha": "f45e98f",
-        "git_url": "https://gitlab-ci-token:5_k3RzLyLcpbULyrZQvU@gitlab.com/ska-telescope/icrar-leap-accelerate.git"
+        "sha": "c307c92",
+        "git_url": "https://gitlab-ci-token:gha63gGutnHJPV3mThgN@gitlab.com/ska-telescope/icrar-leap-accelerate.git"
     },
     "nodeDataArray": [
         {
@@ -40,16 +40,6 @@
             "inputAppFields": [],
             "outputAppFields": [],
             "fields": [
-                {
-                    "text": "Measurement Set Filename",
-                    "name": "measurementSetFilename",
-                    "value": "",
-                    "default": "",
-                    "description": "The file from which the input measurement set should be loaded",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false
-                },
                 {
                     "text": "Execution time",
                     "name": "execution_time",
@@ -91,8 +81,20 @@
                     "precious": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:5_k3RzLyLcpbULyrZQvU@gitlab.com/ska-telescope/icrar-leap-accelerate.git",
-            "sha": "f45e98f"
+            "applicationArgs": [
+                {
+                    "text": "Measurement Set Filename",
+                    "name": "measurementSetFilename",
+                    "value": "",
+                    "default": "",
+                    "description": "The file from which the input measurement set should be loaded",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false
+                }
+            ],
+            "git_url": "https://gitlab-ci-token:gha63gGutnHJPV3mThgN@gitlab.com/ska-telescope/icrar-leap-accelerate.git",
+            "sha": "c307c92"
         },
         {
             "category": "PythonApp",
@@ -143,16 +145,6 @@
             "outputAppFields": [],
             "fields": [
                 {
-                    "text": "Application Class",
-                    "name": "appclass",
-                    "value": "leap_nodes.LeapGather.LeapGather",
-                    "default": "leap_nodes.LeapGather.LeapGather",
-                    "description": "The path to the class that implements this app",
-                    "readonly": true,
-                    "type": "String",
-                    "precious": false
-                },
-                {
                     "text": "Execution time",
                     "name": "execution_time",
                     "value": 5,
@@ -181,10 +173,32 @@
                     "readonly": false,
                     "type": "Boolean",
                     "precious": false
+                },
+                {
+                    "text": "Appclass",
+                    "name": "appclass",
+                    "value": "dlg.apps.simple.SleepApp",
+                    "default": "dlg.apps.simple.SleepApp",
+                    "description": "Application class",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:5_k3RzLyLcpbULyrZQvU@gitlab.com/ska-telescope/icrar-leap-accelerate.git",
-            "sha": "f45e98f"
+            "applicationArgs": [
+                {
+                    "text": "Application Class",
+                    "name": "appclass",
+                    "value": "leap_nodes.LeapGather.LeapGather",
+                    "default": "leap_nodes.LeapGather.LeapGather",
+                    "description": "The path to the class that implements this app",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false
+                }
+            ],
+            "git_url": "https://gitlab-ci-token:gha63gGutnHJPV3mThgN@gitlab.com/ska-telescope/icrar-leap-accelerate.git",
+            "sha": "c307c92"
         },
         {
             "category": "PythonApp",
@@ -235,6 +249,48 @@
             "outputAppFields": [],
             "fields": [
                 {
+                    "text": "Execution time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "default": 5,
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float",
+                    "precious": false
+                },
+                {
+                    "text": "Num CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "default": 1,
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "false",
+                    "default": "false",
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false
+                },
+                {
+                    "text": "Appclass",
+                    "name": "appclass",
+                    "value": "dlg.apps.simple.SleepApp",
+                    "default": "dlg.apps.simple.SleepApp",
+                    "description": "Application class",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false
+                }
+            ],
+            "applicationArgs": [
+                {
                     "text": "File Path",
                     "name": "filePath",
                     "value": "",
@@ -283,40 +339,10 @@
                     "readonly": true,
                     "type": "String",
                     "precious": false
-                },
-                {
-                    "text": "Execution time",
-                    "name": "execution_time",
-                    "value": 5,
-                    "default": 5,
-                    "description": "Estimated execution time",
-                    "readonly": false,
-                    "type": "Float",
-                    "precious": false
-                },
-                {
-                    "text": "Num CPUs",
-                    "name": "num_cpus",
-                    "value": 1,
-                    "default": 1,
-                    "description": "Number of cores used",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
-                    "value": "false",
-                    "default": "false",
-                    "description": "Component is start of a group",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:5_k3RzLyLcpbULyrZQvU@gitlab.com/ska-telescope/icrar-leap-accelerate.git",
-            "sha": "f45e98f"
+            "git_url": "https://gitlab-ci-token:gha63gGutnHJPV3mThgN@gitlab.com/ska-telescope/icrar-leap-accelerate.git",
+            "sha": "c307c92"
         }
     ],
     "linkDataArray": []
