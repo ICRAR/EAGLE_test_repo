@@ -6,7 +6,7 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "daliuge-master.palette",
-        "sha": "a1f6978",
+        "sha": "cad5916",
         "git_url": "https://github.com/ICRAR/daliuge.git"
     },
     "nodeDataArray": [
@@ -99,21 +99,11 @@
                     "precious": false
                 },
                 {
-                    "text": "Input error threshold (0 and 100)",
+                    "text": "Input error rate (%)",
                     "name": "input_error_threshold",
                     "value": "0",
                     "default": "0",
-                    "description": "Indicates the tolerance to erroneous effective inputs, and after which the application will not be run but moved to the ERROR state",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false
-                },
-                {
-                    "text": "Number of effective inputs",
-                    "name": "n_effective_inputs",
-                    "value": "-1",
-                    "default": "-1",
-                    "description": "Application will block until this number of inputs have moved to the COMPLETED state. Special value of -1 means that all inputs are considered as effective",
+                    "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
                     "readonly": false,
                     "type": "Integer",
                     "precious": false
@@ -142,7 +132,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "a1f6978"
+            "sha": "cad5916"
         },
         {
             "category": "PythonApp",
@@ -185,6 +175,16 @@
                     "precious": false
                 },
                 {
+                    "text": "buffer size",
+                    "name": "bufsize",
+                    "value": "65536",
+                    "default": "65536",
+                    "description": "Application class",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false
+                },
+                {
                     "text": "Execution Time",
                     "name": "execution_time",
                     "value": "5",
@@ -215,21 +215,11 @@
                     "precious": false
                 },
                 {
-                    "text": "Input error threshold (0 and 100)",
+                    "text": "Input error rate (%)",
                     "name": "input_error_threshold",
                     "value": "0",
                     "default": "0",
-                    "description": "Indicates the tolerance to erroneous effective inputs, and after which the application will not be run but moved to the ERROR state",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false
-                },
-                {
-                    "text": "Number of effective inputs",
-                    "name": "n_effective_inputs",
-                    "value": "-1",
-                    "default": "-1",
-                    "description": "Application will block until this number of inputs have moved to the COMPLETED state. Special value of -1 means that all inputs are considered as effective",
+                    "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
                     "readonly": false,
                     "type": "Integer",
                     "precious": false
@@ -245,20 +235,9 @@
                     "precious": false
                 }
             ],
-            "applicationArgs": [
-                {
-                    "text": "buffer size",
-                    "name": "bufsize",
-                    "value": "65536",
-                    "default": "65536",
-                    "description": "Application class",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false
-                }
-            ],
+            "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "a1f6978"
+            "sha": "cad5916"
         },
         {
             "category": "PythonApp",
@@ -340,21 +319,11 @@
                     "precious": false
                 },
                 {
-                    "text": "Input error threshold (0 and 100)",
+                    "text": "Input error rate (%)",
                     "name": "input_error_threshold",
                     "value": "0",
                     "default": "0",
-                    "description": "Indicates the tolerance to erroneous effective inputs, and after which the application will not be run but moved to the ERROR state",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false
-                },
-                {
-                    "text": "Number of effective inputs",
-                    "name": "n_effective_inputs",
-                    "value": "-1",
-                    "default": "-1",
-                    "description": "Application will block until this number of inputs have moved to the COMPLETED state. Special value of -1 means that all inputs are considered as effective",
+                    "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
                     "readonly": false,
                     "type": "Integer",
                     "precious": false
@@ -372,7 +341,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "a1f6978"
+            "sha": "cad5916"
         },
         {
             "category": "PythonApp",
@@ -383,6 +352,139 @@
             "canHaveOutputs": true,
             "drawOrderHint": 0,
             "key": -10,
+            "text": "GenericNpyGatherApp",
+            "description": "A BarrierAppDrop that combines one or more inputs using cummulative operations.",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "exitApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "exitApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "a13c256f-056e-4bdb-9693-cd0318e486ec",
+                    "IdText": "array",
+                    "text": "Array",
+                    "event": false,
+                    "type": "npy",
+                    "description": " Port for the input array(s)"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "14d6a92f-c081-452f-8317-28b901379832",
+                    "IdText": "array",
+                    "text": "Array",
+                    "event": false,
+                    "type": "npy",
+                    "description": " Port carrying the reduced array"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Application Class",
+                    "name": "appclass",
+                    "value": "dlg.apps.simple.GenericNpyGatherApp",
+                    "default": "dlg.apps.simple.GenericNpyGatherApp",
+                    "description": "Application class",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false
+                },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "default": "5",
+                    "description": "Estimated execution time",
+                    "readonly": true,
+                    "type": "Float",
+                    "precious": false
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "default": "1",
+                    "description": "Number of cores used",
+                    "readonly": true,
+                    "type": "Integer",
+                    "precious": false
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "False",
+                    "default": "False",
+                    "description": "Is this node the start of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false
+                },
+                {
+                    "text": "Input error rate (%)",
+                    "name": "input_error_threshold",
+                    "value": "0",
+                    "default": "0",
+                    "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false
+                },
+                {
+                    "text": "Number of tries",
+                    "name": "n_tries",
+                    "value": "1",
+                    "default": "1",
+                    "description": "Specifies the number of times the 'run' method will be executed before finally giving up",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false
+                },
+                {
+                    "text": "Function",
+                    "name": "function",
+                    "value": "sum",
+                    "default": "sum",
+                    "description": "The function used for gathering",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false
+                },
+                {
+                    "text": "reduce_axes",
+                    "name": "function",
+                    "value": "None",
+                    "default": "None",
+                    "description": "The ndarray axes to reduce, None reduces all axes for sum, prod, max, min functions",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false
+                }
+            ],
+            "applicationArgs": [],
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "cad5916"
+        },
+        {
+            "category": "PythonApp",
+            "tag": "daliuge",
+            "isData": false,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "drawOrderHint": 0,
+            "key": -11,
             "text": "GenericNpyScatterApp",
             "description": "An APP that splits about any axis on any npy format data drop into as many parts as the app has outputs, provided that the initially converted numpy array has enough elements. The return will be a numpy array of arrays, where the first axis is of length len(outputs). The modulo remainder of the length of the original array and the number of outputs will be distributed across the first len(outputs)-1 elements of the resulting array.",
             "collapsed": false,
@@ -454,21 +556,11 @@
                     "precious": false
                 },
                 {
-                    "text": "Input error threshold (0 and 100)",
+                    "text": "Input error rate (%)",
                     "name": "input_error_threshold",
                     "value": "0",
                     "default": "0",
-                    "description": "Indicates the tolerance to erroneous effective inputs, and after which the application will not be run but moved to the ERROR state",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false
-                },
-                {
-                    "text": "Number of effective inputs",
-                    "name": "n_effective_inputs",
-                    "value": "-1",
-                    "default": "-1",
-                    "description": "Application will block until this number of inputs have moved to the COMPLETED state. Special value of -1 means that all inputs are considered as effective",
+                    "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
                     "readonly": false,
                     "type": "Integer",
                     "precious": false
@@ -497,7 +589,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "a1f6978"
+            "sha": "cad5916"
         },
         {
             "category": "PythonApp",
@@ -507,7 +599,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -11,
+            "key": -12,
             "text": "GenericScatterApp",
             "description": "An APP that splits about any object that can be converted to a numpy array into as many parts as the app has outputs, provided that the initially converted numpy array has enough elements. The return will be a numpy array of arrays, where the first axis is of length len(outputs). The modulo remainder of the length of the original array and the number of outputs will be distributed across the first len(outputs)-1 elements of the resulting array.",
             "collapsed": false,
@@ -579,21 +671,11 @@
                     "precious": false
                 },
                 {
-                    "text": "Input error threshold (0 and 100)",
+                    "text": "Input error rate (%)",
                     "name": "input_error_threshold",
                     "value": "0",
                     "default": "0",
-                    "description": "Indicates the tolerance to erroneous effective inputs, and after which the application will not be run but moved to the ERROR state",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false
-                },
-                {
-                    "text": "Number of effective inputs",
-                    "name": "n_effective_inputs",
-                    "value": "-1",
-                    "default": "-1",
-                    "description": "Application will block until this number of inputs have moved to the COMPLETED state. Special value of -1 means that all inputs are considered as effective",
+                    "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
                     "readonly": false,
                     "type": "Integer",
                     "precious": false
@@ -611,7 +693,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "a1f6978"
+            "sha": "cad5916"
         },
         {
             "category": "PythonApp",
@@ -621,7 +703,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -12,
+            "key": -13,
             "text": "HelloWorldApp",
             "description": "A simple APP that implements the standard Hello World in DALiuGE. It allows to change 'World' with some other string and it also permits to connect the single output port to multiple sinks, which will all receive the same message. App does not require any input.",
             "collapsed": false,
@@ -693,21 +775,11 @@
                     "precious": false
                 },
                 {
-                    "text": "Input error threshold (0 and 100)",
+                    "text": "Input error rate (%)",
                     "name": "input_error_threshold",
                     "value": "0",
                     "default": "0",
-                    "description": "Indicates the tolerance to erroneous effective inputs, and after which the application will not be run but moved to the ERROR state",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false
-                },
-                {
-                    "text": "Number of effective inputs",
-                    "name": "n_effective_inputs",
-                    "value": "-1",
-                    "default": "-1",
-                    "description": "Application will block until this number of inputs have moved to the COMPLETED state. Special value of -1 means that all inputs are considered as effective",
+                    "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
                     "readonly": false,
                     "type": "Integer",
                     "precious": false
@@ -736,7 +808,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "a1f6978"
+            "sha": "cad5916"
         },
         {
             "category": "PythonApp",
@@ -746,7 +818,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -14,
+            "key": -15,
             "text": "ListAppendThrashingApp",
             "description": "A testing APP that appends a random integer to a list num times. This is a CPU intensive operation and can thus be used to provide a test for application threading since this operation will not yield. The resulting array will be sent to all connected output apps. \nsize: int, number of array elements",
             "collapsed": false,
@@ -818,21 +890,11 @@
                     "precious": false
                 },
                 {
-                    "text": "Input error threshold (0 and 100)",
+                    "text": "Input error rate (%)",
                     "name": "input_error_threshold",
                     "value": "0",
                     "default": "0",
-                    "description": "Indicates the tolerance to erroneous effective inputs, and after which the application will not be run but moved to the ERROR state",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false
-                },
-                {
-                    "text": "Number of effective inputs",
-                    "name": "n_effective_inputs",
-                    "value": "-1",
-                    "default": "-1",
-                    "description": "Application will block until this number of inputs have moved to the COMPLETED state. Special value of -1 means that all inputs are considered as effective",
+                    "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
                     "readonly": false,
                     "type": "Integer",
                     "precious": false
@@ -861,7 +923,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "a1f6978"
+            "sha": "cad5916"
         },
         {
             "category": "PythonApp",
@@ -871,7 +933,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -16,
+            "key": -17,
             "text": "MSPlasmaReader",
             "description": "Batch read entire Measurement Set from Plasma.",
             "collapsed": false,
@@ -952,21 +1014,11 @@
                     "precious": false
                 },
                 {
-                    "text": "Input error threshold (0 and 100)",
+                    "text": "Input error rate (%)",
                     "name": "input_error_threshold",
                     "value": "0",
                     "default": "0",
-                    "description": "Indicates the tolerance to erroneous effective inputs, and after which the application will not be run but moved to the ERROR state",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false
-                },
-                {
-                    "text": "Number of effective inputs",
-                    "name": "n_effective_inputs",
-                    "value": "-1",
-                    "default": "-1",
-                    "description": "Application will block until this number of inputs have moved to the COMPLETED state. Special value of -1 means that all inputs are considered as effective",
+                    "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
                     "readonly": false,
                     "type": "Integer",
                     "precious": false
@@ -984,7 +1036,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "a1f6978"
+            "sha": "cad5916"
         },
         {
             "category": "PythonApp",
@@ -994,7 +1046,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -17,
+            "key": -18,
             "text": "MSPlasmaWriter",
             "description": "Batch write entire Measurement Set to Plasma.",
             "collapsed": false,
@@ -1075,21 +1127,11 @@
                     "precious": false
                 },
                 {
-                    "text": "Input error threshold (0 and 100)",
+                    "text": "Input error rate (%)",
                     "name": "input_error_threshold",
                     "value": "0",
                     "default": "0",
-                    "description": "Indicates the tolerance to erroneous effective inputs, and after which the application will not be run but moved to the ERROR state",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false
-                },
-                {
-                    "text": "Number of effective inputs",
-                    "name": "n_effective_inputs",
-                    "value": "-1",
-                    "default": "-1",
-                    "description": "Application will block until this number of inputs have moved to the COMPLETED state. Special value of -1 means that all inputs are considered as effective",
+                    "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
                     "readonly": false,
                     "type": "Integer",
                     "precious": false
@@ -1107,7 +1149,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "a1f6978"
+            "sha": "cad5916"
         },
         {
             "category": "PythonApp",
@@ -1117,7 +1159,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -18,
+            "key": -19,
             "text": "MSStreamingPlasmaConsumer",
             "description": "Stream Measurement Set one correlator timestep at a time via Plasma.",
             "collapsed": false,
@@ -1198,21 +1240,11 @@
                     "precious": false
                 },
                 {
-                    "text": "Input error threshold (0 and 100)",
+                    "text": "Input error rate (%)",
                     "name": "input_error_threshold",
                     "value": "0",
                     "default": "0",
-                    "description": "Indicates the tolerance to erroneous effective inputs, and after which the application will not be run but moved to the ERROR state",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false
-                },
-                {
-                    "text": "Number of effective inputs",
-                    "name": "n_effective_inputs",
-                    "value": "-1",
-                    "default": "-1",
-                    "description": "Application will block until this number of inputs have moved to the COMPLETED state. Special value of -1 means that all inputs are considered as effective",
+                    "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
                     "readonly": false,
                     "type": "Integer",
                     "precious": false
@@ -1241,7 +1273,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "a1f6978"
+            "sha": "cad5916"
         },
         {
             "category": "PythonApp",
@@ -1251,7 +1283,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -19,
+            "key": -20,
             "text": "MSStreamingPlasmaProducer",
             "description": "Stream Measurement Set one correlator timestep at a time via Plasma.",
             "collapsed": false,
@@ -1332,21 +1364,11 @@
                     "precious": false
                 },
                 {
-                    "text": "Input error threshold (0 and 100)",
+                    "text": "Input error rate (%)",
                     "name": "input_error_threshold",
                     "value": "0",
                     "default": "0",
-                    "description": "Indicates the tolerance to erroneous effective inputs, and after which the application will not be run but moved to the ERROR state",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false
-                },
-                {
-                    "text": "Number of effective inputs",
-                    "name": "n_effective_inputs",
-                    "value": "-1",
-                    "default": "-1",
-                    "description": "Application will block until this number of inputs have moved to the COMPLETED state. Special value of -1 means that all inputs are considered as effective",
+                    "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
                     "readonly": false,
                     "type": "Integer",
                     "precious": false
@@ -1375,7 +1397,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "a1f6978"
+            "sha": "cad5916"
         },
         {
             "category": "PythonApp",
@@ -1385,7 +1407,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -20,
+            "key": -21,
             "text": "NgasArchivingApp",
             "description": "Takes an input and archives it in an NGAS server.",
             "collapsed": false,
@@ -1457,21 +1479,11 @@
                     "precious": false
                 },
                 {
-                    "text": "Input error threshold (0 and 100)",
+                    "text": "Input error rate (%)",
                     "name": "input_error_threshold",
                     "value": "0",
                     "default": "0",
-                    "description": "Indicates the tolerance to erroneous effective inputs, and after which the application will not be run but moved to the ERROR state",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false
-                },
-                {
-                    "text": "Number of effective inputs",
-                    "name": "n_effective_inputs",
-                    "value": "-1",
-                    "default": "-1",
-                    "description": "Application will block until this number of inputs have moved to the COMPLETED state. Special value of -1 means that all inputs are considered as effective",
+                    "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
                     "readonly": false,
                     "type": "Integer",
                     "precious": false
@@ -1540,7 +1552,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "a1f6978"
+            "sha": "cad5916"
         },
         {
             "category": "PythonApp",
@@ -1550,7 +1562,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -26,
+            "key": -27,
             "text": "PyFuncApp",
             "description": "An application that wraps a simple python function. The inputs of the application are treated as the arguments of the function. Conversely, the output of the function is treated as the output of the application. If the application has more than one output, the result of calling the function is treated as an iterable, with each individual object being written to its corresponding output. \nUsers indicate the function to be wrapped via the ``func_name`` parameter. Otherwise, users can also *send* over the python code using the ``func_code`` parameter. The code needs to be base64-encoded and produced with the marshal module of the same Python version used to run DALiuGE.\nBoth inputs and outputs are serialized using the pickle protocol.",
             "collapsed": false,
@@ -1613,21 +1625,11 @@
                     "precious": false
                 },
                 {
-                    "text": "Input error threshold (0 and 100)",
+                    "text": "Input error rate (%)",
                     "name": "input_error_threshold",
                     "value": "0",
                     "default": "0",
-                    "description": "Indicates the tolerance to erroneous effective inputs, and after which the application will not be run but moved to the ERROR state",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false
-                },
-                {
-                    "text": "Number of effective inputs",
-                    "name": "n_effective_inputs",
-                    "value": "-1",
-                    "default": "-1",
-                    "description": "Application will block until this number of inputs have moved to the COMPLETED state. Special value of -1 means that all inputs are considered as effective",
+                    "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
                     "readonly": false,
                     "type": "Integer",
                     "precious": false
@@ -1696,7 +1698,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "a1f6978"
+            "sha": "cad5916"
         },
         {
             "category": "PythonApp",
@@ -1706,7 +1708,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -27,
+            "key": -28,
             "text": "RandomArrayApp",
             "description": "A testing APP that does not take any input and produces a random array of type int64, if integer is set to True, else of type float64. size indicates the number of elements ranging between the values low and high. The resulting array will be send to all connected output apps. \ninteger: bool [True], generate integer array low: float, lower boundary (will be converted to int for integer arrays) high: float, upper boundary (will be converted to int for integer arrays) size: int, number of array elements",
             "collapsed": false,
@@ -1778,21 +1780,11 @@
                     "precious": false
                 },
                 {
-                    "text": "Input error threshold (0 and 100)",
+                    "text": "Input error rate (%)",
                     "name": "input_error_threshold",
                     "value": "0",
                     "default": "0",
-                    "description": "Indicates the tolerance to erroneous effective inputs, and after which the application will not be run but moved to the ERROR state",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false
-                },
-                {
-                    "text": "Number of effective inputs",
-                    "name": "n_effective_inputs",
-                    "value": "-1",
-                    "default": "-1",
-                    "description": "Application will block until this number of inputs have moved to the COMPLETED state. Special value of -1 means that all inputs are considered as effective",
+                    "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
                     "readonly": false,
                     "type": "Integer",
                     "precious": false
@@ -1851,7 +1843,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "a1f6978"
+            "sha": "cad5916"
         },
         {
             "category": "PythonApp",
@@ -1861,7 +1853,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -29,
+            "key": -30,
             "text": "ScpApp",
             "description": "A BarrierAppDROP that copies the content of its single input onto its single output via SSH's scp protocol. \nDepending on the physical location of each DROP (this application, and its input and outputs) this application will copy data FROM another host or TO other host. This application's node must thus coincide with one of the two I/O DROPs.",
             "collapsed": false,
@@ -1942,21 +1934,11 @@
                     "precious": false
                 },
                 {
-                    "text": "Input error threshold (0 and 100)",
+                    "text": "Input error rate (%)",
                     "name": "input_error_threshold",
                     "value": "0",
                     "default": "0",
-                    "description": "Indicates the tolerance to erroneous effective inputs, and after which the application will not be run but moved to the ERROR state",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false
-                },
-                {
-                    "text": "Number of effective inputs",
-                    "name": "n_effective_inputs",
-                    "value": "-1",
-                    "default": "-1",
-                    "description": "Application will block until this number of inputs have moved to the COMPLETED state. Special value of -1 means that all inputs are considered as effective",
+                    "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
                     "readonly": false,
                     "type": "Integer",
                     "precious": false
@@ -2005,7 +1987,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "a1f6978"
+            "sha": "cad5916"
         },
         {
             "category": "PythonApp",
@@ -2015,7 +1997,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -30,
+            "key": -31,
             "text": "SleepAndCopyApp",
             "description": "",
             "collapsed": false,
@@ -2078,21 +2060,11 @@
                     "precious": false
                 },
                 {
-                    "text": "Input error threshold (0 and 100)",
+                    "text": "Input error rate (%)",
                     "name": "input_error_threshold",
                     "value": "0",
                     "default": "0",
-                    "description": "Indicates the tolerance to erroneous effective inputs, and after which the application will not be run but moved to the ERROR state",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false
-                },
-                {
-                    "text": "Number of effective inputs",
-                    "name": "n_effective_inputs",
-                    "value": "-1",
-                    "default": "-1",
-                    "description": "Application will block until this number of inputs have moved to the COMPLETED state. Special value of -1 means that all inputs are considered as effective",
+                    "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
                     "readonly": false,
                     "type": "Integer",
                     "precious": false
@@ -2121,7 +2093,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "a1f6978"
+            "sha": "cad5916"
         },
         {
             "category": "PythonApp",
@@ -2131,7 +2103,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -31,
+            "key": -32,
             "text": "SleepApp",
             "description": "A simple APP that sleeps the specified amount of time (0 by default). This is mainly useful (and used) to test graph translation and structure without executing real algorithms. Very useful for debugging.",
             "collapsed": false,
@@ -2194,21 +2166,11 @@
                     "precious": false
                 },
                 {
-                    "text": "Input error threshold (0 and 100)",
+                    "text": "Input error rate (%)",
                     "name": "input_error_threshold",
                     "value": "0",
                     "default": "0",
-                    "description": "Indicates the tolerance to erroneous effective inputs, and after which the application will not be run but moved to the ERROR state",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false
-                },
-                {
-                    "text": "Number of effective inputs",
-                    "name": "n_effective_inputs",
-                    "value": "-1",
-                    "default": "-1",
-                    "description": "Application will block until this number of inputs have moved to the COMPLETED state. Special value of -1 means that all inputs are considered as effective",
+                    "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
                     "readonly": false,
                     "type": "Integer",
                     "precious": false
@@ -2237,7 +2199,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "a1f6978"
+            "sha": "cad5916"
         },
         {
             "category": "PythonApp",
@@ -2247,7 +2209,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -32,
+            "key": -33,
             "text": "SocketListenerApp",
             "description": "A BarrierAppDROP that listens on a socket for data. The server-side socket expects only one client, and assumes that the client will close the connection after all its data has been sent. This application expects no input DROPs, and therefore raises an exception whenever one is added. On the output side, one or more outputs can be specified with the restriction that they are not ContainerDROPs so data can be written into them through the framework.",
             "collapsed": false,
@@ -2319,21 +2281,11 @@
                     "precious": false
                 },
                 {
-                    "text": "Input error threshold (0 and 100)",
+                    "text": "Input error rate (%)",
                     "name": "input_error_threshold",
                     "value": "0",
                     "default": "0",
-                    "description": "Indicates the tolerance to erroneous effective inputs, and after which the application will not be run but moved to the ERROR state",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false
-                },
-                {
-                    "text": "Number of effective inputs",
-                    "name": "n_effective_inputs",
-                    "value": "-1",
-                    "default": "-1",
-                    "description": "Application will block until this number of inputs have moved to the COMPLETED state. Special value of -1 means that all inputs are considered as effective",
+                    "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
                     "readonly": false,
                     "type": "Integer",
                     "precious": false
@@ -2392,7 +2344,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "a1f6978"
+            "sha": "cad5916"
         },
         {
             "category": "PythonApp",
@@ -2402,7 +2354,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -33,
+            "key": -34,
             "text": "UrlRetrieveApp",
             "description": "A simple APP that retrieves the content of a URL and writes it to all outputs.",
             "collapsed": false,
@@ -2474,21 +2426,11 @@
                     "precious": false
                 },
                 {
-                    "text": "Input error threshold (0 and 100)",
+                    "text": "Input error rate (%)",
                     "name": "input_error_threshold",
                     "value": "0",
                     "default": "0",
-                    "description": "Indicates the tolerance to erroneous effective inputs, and after which the application will not be run but moved to the ERROR state",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false
-                },
-                {
-                    "text": "Number of effective inputs",
-                    "name": "n_effective_inputs",
-                    "value": "-1",
-                    "default": "-1",
-                    "description": "Application will block until this number of inputs have moved to the COMPLETED state. Special value of -1 means that all inputs are considered as effective",
+                    "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
                     "readonly": false,
                     "type": "Integer",
                     "precious": false
@@ -2517,7 +2459,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "a1f6978"
+            "sha": "cad5916"
         }
     ],
     "linkDataArray": []
