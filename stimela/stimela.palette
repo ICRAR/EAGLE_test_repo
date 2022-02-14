@@ -181,7 +181,7 @@
                     "description": "MS(s) to be imaged. If multiple mses are specified, they need to be phase-rotated to the same point on the sky",
                     "readonly": false,
                     "type": "String",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -192,7 +192,7 @@
                     "description": "Prefix for output products. Default is prefix of MS",
                     "readonly": false,
                     "type": "String",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -203,7 +203,7 @@
                     "description": "Specify number of computing threads to use, i.e., number of cpu cores that will be used. None means use all  cores",
                     "readonly": false,
                     "type": "Integer",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -214,7 +214,7 @@
                     "description": "Like 'mem', but this specifies a fixed amount of memory in gigabytes.",
                     "readonly": false,
                     "type": "Float",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -225,7 +225,7 @@
                     "description": "Increase verbosity of output",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -236,7 +236,7 @@
                     "description": "Add date and time to each line in the output.",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -247,7 +247,7 @@
                     "description": "Do not output anything but errors.",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -258,7 +258,7 @@
                     "description": "Force or disable reordering of Measurement Set. This can be faster when the measurement set needs to be iterated several times, such as with many major iterations or in channel imaging mode. If unspecified will only be enabled in channel imaging mode",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -269,7 +269,7 @@
                     "description": "Save model data in model data column after imaging. It can save time not to update the model data column.",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -280,7 +280,7 @@
                     "description": "Do not save the dirty image",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -291,7 +291,7 @@
                     "description": "Save the gridded weights in the a fits file named <image-prefix>-weights.fits.",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -302,7 +302,7 @@
                     "description": "Calculate and apply the primary beam and save images for the Jones components, with weighting identical to the weighting as used by the imager. Only available for LOFAR.",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -313,7 +313,7 @@
                     "description": "If a primary beam image exists on disk, reuse those images (not implemented yet)",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -324,7 +324,7 @@
                     "description": "Save the gridded uv plane, i.e., the FFT of the residual image. The UV plane is complex, hence two images will be output: <prefix>-uv-real.fits and <prefix>-uv-imag.fits",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -335,7 +335,7 @@
                     "description": "Assume the visibilities have already been beam-corrected for the reference direction.",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -346,7 +346,7 @@
                     "description": "Weightmode can be: natural, uniform, briggs. Default: uniform. When using Briggs' weighting, add the robustness parameter, like: 'weight briggs 0.5'",
                     "readonly": false,
                     "type": "String",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -357,7 +357,7 @@
                     "description": "Increase the weight gridding box size, similar to Casa's superuniform weighting scheme. The factor can be rational and can be less than one for subpixel weighting.",
                     "readonly": false,
                     "type": "Float",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -368,7 +368,7 @@
                     "description": "In spectral mode, calculate the weights as if the image was made using MFS. This makes sure that the sum of channel images equals the MFS weights. Otherwise, the channel image will become a bit more naturally weighted. This is only relevant for weighting modes that require gridding (i.e., Uniform, Briggs').",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -379,7 +379,7 @@
                     "description": "Filter the weights and set high weights to the local mean. The level parameter specifies the filter level; any value larger than level*localmean will be set to level*localmean.",
                     "readonly": false,
                     "type": "Float",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -390,7 +390,7 @@
                     "description": "Set size of weighting rank filter",
                     "readonly": false,
                     "type": "Float",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -401,7 +401,7 @@
                     "description": "Taper the weights with a Gaussian function. This will reduce the contribution of long baselines. The beamsize is by default in asec, but a unit can be specified as '2amin'",
                     "readonly": false,
                     "type": "String",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -412,7 +412,7 @@
                     "description": "Taper the outer weights with a Tukey transition. Lambda specifies the size of the transition; use in combination with -maxuv-l.",
                     "readonly": false,
                     "type": "Float",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -423,7 +423,7 @@
                     "description": "aper the weights with a Tukey transition. Lambda specifies the size of the transition; use in combination with 'minuv-l'",
                     "readonly": false,
                     "type": "Float",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -434,7 +434,7 @@
                     "description": "Taper the weights with a rectangle, to keep a space of lambda between the edge and gridded visibilities.",
                     "readonly": false,
                     "type": "Float",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -445,7 +445,7 @@
                     "description": "Taper the edge weights with a Tukey window. Lambda is the size of the Tukey transition. When 'taper-edge' is also specified, the Tukey transition starts inside the inner rectangle.",
                     "readonly": false,
                     "type": "Float",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -456,7 +456,7 @@
                     "description": "Image size in pixels. List of integers (width and height) or a single integer for a square image",
                     "readonly": false,
                     "type": "String",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -467,7 +467,7 @@
                     "description": "After inversion, trim the image to the given size.",
                     "readonly": false,
                     "type": "String",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -478,7 +478,7 @@
                     "description": "Scale of a pixel. Default unit is arcsec, but can be specificied, e.g. 'scale 20asec'",
                     "readonly": false,
                     "type": "String",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -489,7 +489,7 @@
                     "description": "Will continue an earlier WSClean run. Earlier model images will be read and model visibilities will be subtracted to create the first dirty residual. CS should have been used in the earlier run, and model data should have been written to the measurement set for this to work",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -500,7 +500,7 @@
                     "description": "Subtract the model from the data column in the first iteration. This can be used to reimage an already cleaned image, e.g. at a different resolution.",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -511,7 +511,7 @@
                     "description": "Splits the bandwidth and makes count nr. of images",
                     "readonly": false,
                     "type": "Integer",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -522,7 +522,7 @@
                     "description": "Use the minimum suggested w-layers for an image of the given size. Can e.g. be used to increase accuracy when predicting small part of full image.",
                     "readonly": false,
                     "type": "Integer",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -533,7 +533,7 @@
                     "description": "Use the minimum suggested w-layers for an image of the given size. Can e.g. be used to increase accuracy when predicting small part of full image.",
                     "readonly": false,
                     "type": "String",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -544,7 +544,7 @@
                     "description": "Increase the number of w-layers by this factor.",
                     "readonly": false,
                     "type": "Integer",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -555,7 +555,7 @@
                     "description": "Perform inversion at the Nyquist resolution and upscale the image to the requested image size afterwards. This speeds up inversion considerably, but makes aliasing slightly worse. This effect is in most cases <1%",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -566,7 +566,7 @@
                     "description": "Kernel and mode used for gridding: kb = Kaiser-Bessel (default with 7 pixels), nn = nearest neighbour (no kernel), rect = rectangular window.",
                     "readonly": false,
                     "type": "String",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -577,7 +577,7 @@
                     "description": "Gridding antialiasing kernel size",
                     "readonly": false,
                     "type": "Integer",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -588,7 +588,7 @@
                     "description": "Oversampling factor used during gridding",
                     "readonly": false,
                     "type": "Float",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -599,7 +599,7 @@
                     "description": "Always make the psf, even when no cleaning is performed.",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -610,7 +610,7 @@
                     "description": "Only make psf. No other images are made.",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -621,7 +621,7 @@
                     "description": "Save the gridding correction image. This shows the effect of the antialiasing filter",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -632,7 +632,7 @@
                     "description": "Predict via a direct Fourier transform. This is slow, but can account for direction-dependent effects. This has only effect when 'mgain' is set or 'predict' is given.",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -643,7 +643,7 @@
                     "description": "Apply the beam during DFT. Currently only works for LOFAR.",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -654,7 +654,7 @@
                     "description": "Specify visibility weighting modi. Affects how the weights (normally) stored in WEIGHT_SPECTRUM column are applied. Useful for estimating e.g. EoR power spectra errors. Normally one would use this in combination with 'no-normalize-for-weighting'.",
                     "readonly": false,
                     "type": "String",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -665,7 +665,7 @@
                     "description": "Disable the normalization for the weights, which makes the PSF's peak one. See 'visibility-weighting-mode'. Only useful with natural weighting.",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -676,7 +676,7 @@
                     "description": "Enable baseline-dependent averaging. The specified size is in number of wavelengths (i.e., uvw-units). One way to calculate this is with <baseline in nr. of lambdas> * 2pi * <acceptable integration in s> /(24*60*60).",
                     "readonly": false,
                     "type": "Integer",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -687,7 +687,7 @@
                     "description": "Will replace every visibility by a Gaussian distributed value with given standard deviation before imaging.",
                     "readonly": false,
                     "type": "Float",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -698,7 +698,7 @@
                     "description": "Default: 'I'. Possible values: XX, XY, YX, YY, I, Q, U, V, RR, RL, LR or LL (case insensitive). Multiple values can be separated with commas, e.g.: 'xx,xy,yx,yy'. Two or four polarizations can be joinedly cleaned (see '-joinpolarizations'), but this is not the default. I, Q, U and V polarizations will be directly calculated from the visibilities, which is not appropriate for telescopes with non-orthogonal feeds, such as MWA and LOFAR. The 'xy' polarization will output both a real and an imaginary image, which allows calculating true Stokes polarizations for those telescopes.",
                     "readonly": false,
                     "type": "String",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -709,7 +709,7 @@
                     "description": "Only image the given time interval. Indices specify the timesteps, end index is exclusive.",
                     "readonly": false,
                     "type": "String",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -720,7 +720,7 @@
                     "description": "Number of intervals to image inside the selected global interval",
                     "readonly": false,
                     "type": "Integer",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -731,7 +731,7 @@
                     "description": "Only image the given channel range. Indices specify channel indices, end index is exclusive",
                     "readonly": false,
                     "type": "String",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -742,7 +742,7 @@
                     "description": "Image the given field id. Default: first field (id 0)",
                     "readonly": false,
                     "type": "Integer",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -753,7 +753,7 @@
                     "description": "Selects only the spws given in the list. list should be a comma-separated list of integers",
                     "readonly": false,
                     "type": "String",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -764,7 +764,7 @@
                     "description": "CORRECTED_DATA if it exists, otherwise DATA will be used.",
                     "readonly": false,
                     "type": "String",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -775,7 +775,7 @@
                     "description": "Set maximum baseline distance",
                     "readonly": false,
                     "type": "Float",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -786,7 +786,7 @@
                     "description": "Set minimum baseline distance",
                     "readonly": false,
                     "type": "Float",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -797,7 +797,7 @@
                     "description": "Set maximum uv distance",
                     "readonly": false,
                     "type": "Float",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -808,7 +808,7 @@
                     "description": "Set minimum uv distance",
                     "readonly": false,
                     "type": "Float",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -819,7 +819,7 @@
                     "description": "Maximum number of clean iterations to perform",
                     "readonly": false,
                     "type": "Integer",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -830,7 +830,7 @@
                     "description": "Stopping clean thresholding in Jy",
                     "readonly": false,
                     "type": "Float",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -841,7 +841,7 @@
                     "description": "Estimate noise level using a robust estimator and stop at sigma x stddev.",
                     "readonly": false,
                     "type": "Float",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -852,7 +852,7 @@
                     "description": "Construct a mask from found components and when a threshold of sigma is reached, continue cleaning with the mask down to the normal threshold.",
                     "readonly": false,
                     "type": "Float",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -863,7 +863,7 @@
                     "description": "Instead of using a single RMS for auto thresholding/masking, use a spatially varying RMS image",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -874,7 +874,7 @@
                     "description": "Size of window for creating the RMS background map, in number of PSFs.",
                     "readonly": false,
                     "type": "Integer",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -885,7 +885,7 @@
                     "description": "Either 'rms' (default, uses sliding window RMS) or 'rms-with-min' (use max(window rms,1.5/5window min))",
                     "readonly": false,
                     "type": "String",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -896,7 +896,7 @@
                     "description": "Cleaning gain: Ratio of peak that will be subtracted in each iteration",
                     "readonly": false,
                     "type": "Float",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -907,7 +907,7 @@
                     "description": "Cleaning gain for major iterations: Ratio of peak that will be subtracted in each major iteration. To use major iterations, 0.85 is a good value.",
                     "readonly": false,
                     "type": "Float",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -918,7 +918,7 @@
                     "description": "Perform cleaning by searching for peaks in the sum of squares of the polarizations, but subtract components from the individual images. Only possible when imaging two or four Stokes or linear parameters",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -929,7 +929,7 @@
                     "description": "Perform cleaning by searching for peaks in the MFS image, but subtract components from individual channels. This will turn on mfsweighting by default",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -940,7 +940,7 @@
                     "description": "Clean on different scales. This is a new algorithm. This parameter invokes the v1.9 multiscale algorithm, which is slower but more accurate compared to the older algorithm, and therefore the recommended one to use. The older algorithm is now invoked with 'fast-multiscale'.",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -951,7 +951,7 @@
                     "description": "Clean on different scales. This is a new fast experimental algorithm. This method used to be invoked with 'multiscale' before v1.9, but the newer multiscale",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -962,7 +962,7 @@
                     "description": "Parameter to prevent cleaning small scales in the large-scale iterations. A higher bias will give more focus to larger scales",
                     "readonly": false,
                     "type": "Float",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -973,7 +973,7 @@
                     "description": "Sets a list of scales to use in multi-scale cleaning. If unset, WSClean will select the delta (zero) scale, scales starting at four times the synthesized PSF, and increase by a factor of two until the maximum scale is reached. Example: -multiscale-scales 0,5,12.5",
                     "readonly": false,
                     "type": "String",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -984,7 +984,7 @@
                     "description": "Use the IUWT deconvolution algorithm",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -995,7 +995,7 @@
                     "description": "Stop IUWT when the SNR decreases. This might help limitting divergence, but can occasionally also stop the algorithm too early.",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -1006,7 +1006,7 @@
                     "description": "Set the border size in which no cleaning is performed, in percentage of the width/height of the image. With an image size of 1000 and clean border of 1%, each border is 10 pixels.",
                     "readonly": false,
                     "type": "Float",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -1017,7 +1017,7 @@
                     "description": "Use the specified fits-file as mask during cleaning.",
                     "readonly": false,
                     "type": "String",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -1028,7 +1028,7 @@
                     "description": "Use the specified CASA mask as mask during cleaning.",
                     "readonly": false,
                     "type": "String",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -1039,7 +1039,7 @@
                     "description": "Do not allow negative components during cleaning",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -1050,7 +1050,7 @@
                     "description": "Stop on negative components",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -1061,7 +1061,7 @@
                     "description": "Fit a polynomial over frequency to each clean component. This has only effect when the channels are joined with 'joinchannels'",
                     "readonly": false,
                     "type": "Integer",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -1072,7 +1072,7 @@
                     "description": "Decrease the number of channels as specified by 'channelsout' to the given number for deconvolution. Only possible in combination with one of the 'fit-spectral' options. Proper residuals/restored images will only be returned when mgain < 1.",
                     "readonly": false,
                     "type": "Integer",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -1083,7 +1083,7 @@
                     "description": "Use with 'joinchannels' to perform peak finding in the sum of squared values over channels, instead of the normal sum. This is useful for imaging QU polarizations with non-zero rotation measures, for which the normal sum is insensitive.",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -1094,7 +1094,7 @@
                     "description": "Use alternative joined clean algorithm (feature for testing)",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -1105,7 +1105,7 @@
                     "description": "Set a circular beam size (FWHM) in arcsec for restoring the clean components.",
                     "readonly": false,
                     "type": "Float",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -1116,7 +1116,7 @@
                     "description": "Set the FWHM beam shape for restoring the clean components. Defaults units for maj and min are arcsec, and degrees for PA. Can be overriden, e.g. 'beamshape 1amin 1amin 3deg'. Default is use PSF FWHM sizes",
                     "readonly": false,
                     "type": "String",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -1127,7 +1127,7 @@
                     "description": "Determine beam shape by fitting the PSF.",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -1138,7 +1138,7 @@
                     "description": "Write the beam in output fits files as calculated from the longest projected baseline. This method results in slightly less accurate beam size/integrated fluxes, but provides a beam size without making the PSF for quick imaging.",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -1149,7 +1149,7 @@
                     "description": "Do not determine beam shape from the PSF",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -1160,7 +1160,7 @@
                     "description": "Force restoring beam to be circular",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -1171,7 +1171,7 @@
                     "description": "Allow restoring beam to be elliptical",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -1182,7 +1182,7 @@
                     "description": "Factor to increase the image size",
                     "readonly": false,
                     "type": "Float",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -1193,7 +1193,7 @@
                     "description": "Number of major cycles",
                     "readonly": false,
                     "type": "Integer",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -1204,7 +1204,7 @@
                     "description": "list of model components from wsclean",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -1215,7 +1215,7 @@
                     "description": "list of model components from wsclean",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -1226,7 +1226,7 @@
                     "description": "Noise image to compute sigma for stopping threshold (in case specified it will replace threshold)",
                     "readonly": false,
                     "type": "String",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -1237,7 +1237,7 @@
                     "description": "Noise sigma for stopping deconvolution in the case where noise-image is provided (new thresh = sigma*noise_image.std())",
                     "readonly": false,
                     "type": "Float",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -1248,7 +1248,7 @@
                     "description": "Use a mask that avoids cleaning emission beyond the horizon. Distance is an angle (e.g. '5deg') that (when positive) decreases the size of the mask to stay further away from the horizon",
                     "readonly": false,
                     "type": "String",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -1259,7 +1259,7 @@
                     "description": "Enabled direct allocation, which changes memory usage. Not recommended for general usage, but when using extremely large images that barely fit in memory it might improve memory usage in rare cases",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 },
                 {
@@ -1270,7 +1270,7 @@
                     "description": "Deconvolve subimages in parallel. Subimages will be at most of the given size",
                     "readonly": false,
                     "type": "Integer",
-                    "precious": true,
+                    "precious": false,
                     "options": []
                 }
             ],
