@@ -18,7 +18,7 @@
     "nodeDataArray": [
         {
             "category": "PythonApp",
-            "key": -2,
+            "key": -7,
             "text": "CopyApp",
             "description": "A simple APP that copies its inputs into its outputs. All inputs are copied into all outputs in the order they were declared in the graph. If an input is a container (e.g. a directory) it copies the content recursively.",
             "streaming": false,
@@ -121,7 +121,7 @@
         },
         {
             "category": "BashShellApp",
-            "key": -3,
+            "key": -2,
             "text": "unpack",
             "description": "An application component run within the Bash Shell",
             "streaming": false,
@@ -190,7 +190,7 @@
                 {
                     "text": "Command",
                     "name": "command",
-                    "value": "tar --strip 3 -xf %i0 -C $DLG_ROOT/testdata",
+                    "value": "cd $DLG_ROOT/workspace/$DLG_SESSION_ID && tar --strip 3 -xf %i0",
                     "defaultValue": "",
                     "description": "The command to be executed",
                     "readonly": false,
@@ -248,7 +248,7 @@
         },
         {
             "category": "Docker",
-            "key": -6,
+            "key": -5,
             "text": "wsclean",
             "description": "WSClean imaging software",
             "streaming": false,
@@ -1627,7 +1627,7 @@
         },
         {
             "category": "File",
-            "key": -5,
+            "key": -4,
             "text": "MS",
             "description": "A standard file on a filesystem mounted to the deployment machine",
             "streaming": false,
@@ -1696,7 +1696,7 @@
                 {
                     "text": "File path",
                     "name": "filepath",
-                    "value": "$DLG_ROOT/testdata/1197634128-cal_avg32.ms",
+                    "value": "1197634128-cal_avg32.ms",
                     "defaultValue": "",
                     "description": "Path to the file for this node",
                     "readonly": false,
@@ -1730,7 +1730,7 @@
         },
         {
             "category": "NGAS",
-            "key": -7,
+            "key": -1,
             "text": "NGAS",
             "description": "An archive on the Next Generation Archive System (NGAS).",
             "streaming": false,
@@ -1860,7 +1860,7 @@
         },
         {
             "category": "File",
-            "key": -4,
+            "key": -3,
             "text": "content",
             "description": "A standard file on a filesystem mounted to the deployment machine",
             "streaming": false,
