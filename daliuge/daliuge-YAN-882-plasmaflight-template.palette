@@ -6,7 +6,7 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "daliuge-YAN-882-plasmaflight-template.palette",
-        "sha": "e8c60c3",
+        "sha": "1fdd55c",
         "git_url": "https://github.com/ICRAR/daliuge.git"
     },
     "nodeDataArray": [
@@ -131,21 +131,11 @@
                     "precious": false
                 },
                 {
-                    "text": "Input error threshold (0 and 100)",
+                    "text": "Input error rate (%)",
                     "name": "input_error_threshold",
                     "value": "0",
                     "default": "0",
-                    "description": "Indicates the tolerance to erroneous effective inputs, and after which the application will not be run but moved to the ERROR state",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false
-                },
-                {
-                    "text": "Number of effective inputs",
-                    "name": "n_effective_inputs",
-                    "value": "-1",
-                    "default": "-1",
-                    "description": "Application will block until this number of inputs have moved to the COMPLETED state. Special value of -1 means that all inputs are considered as effective",
+                    "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
                     "readonly": false,
                     "type": "Integer",
                     "precious": false
@@ -163,7 +153,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "e8c60c3"
+            "sha": "1fdd55c"
         },
         {
             "category": "Branch",
@@ -236,21 +226,11 @@
                     "precious": false
                 },
                 {
-                    "text": "Input error threshold (0 and 100)",
+                    "text": "Input error rate (%)",
                     "name": "input_error_threshold",
                     "value": "0",
                     "default": "0",
-                    "description": "Indicates the tolerance to erroneous effective inputs, and after which the application will not be run but moved to the ERROR state",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false
-                },
-                {
-                    "text": "Number of effective inputs",
-                    "name": "n_effective_inputs",
-                    "value": "-1",
-                    "default": "-1",
-                    "description": "Application will block until this number of inputs have moved to the COMPLETED state. Special value of -1 means that all inputs are considered as effective",
+                    "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
                     "readonly": false,
                     "type": "Integer",
                     "precious": false
@@ -268,7 +248,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "e8c60c3"
+            "sha": "1fdd55c"
         },
         {
             "category": "Docker",
@@ -421,21 +401,11 @@
                     "precious": false
                 },
                 {
-                    "text": "Input error threshold (0 and 100)",
+                    "text": "Input error rate (%)",
                     "name": "input_error_threshold",
                     "value": "0",
                     "default": "0",
-                    "description": "Indicates the tolerance to erroneous effective inputs, and after which the application will not be run but moved to the ERROR state",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false
-                },
-                {
-                    "text": "Number of effective inputs",
-                    "name": "n_effective_inputs",
-                    "value": "-1",
-                    "default": "-1",
-                    "description": "Application will block until this number of inputs have moved to the COMPLETED state. Special value of -1 means that all inputs are considered as effective",
+                    "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
                     "readonly": false,
                     "type": "Integer",
                     "precious": false
@@ -503,7 +473,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "e8c60c3"
+            "sha": "1fdd55c"
         },
         {
             "category": "DynlibApp",
@@ -576,21 +546,11 @@
                     "precious": false
                 },
                 {
-                    "text": "Input error threshold (0 and 100)",
+                    "text": "Input error rate (%)",
                     "name": "input_error_threshold",
                     "value": "0",
                     "default": "0",
-                    "description": "Indicates the tolerance to erroneous effective inputs, and after which the application will not be run but moved to the ERROR state",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false
-                },
-                {
-                    "text": "Number of effective inputs",
-                    "name": "n_effective_inputs",
-                    "value": "-1",
-                    "default": "-1",
-                    "description": "Application will block until this number of inputs have moved to the COMPLETED state. Special value of -1 means that all inputs are considered as effective",
+                    "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
                     "readonly": false,
                     "type": "Integer",
                     "precious": false
@@ -608,7 +568,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "e8c60c3"
+            "sha": "1fdd55c"
         },
         {
             "category": "File",
@@ -694,7 +654,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "e8c60c3"
+            "sha": "1fdd55c"
         },
         {
             "category": "Memory",
@@ -704,7 +664,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -13,
+            "key": -14,
             "text": "Memory",
             "description": "In-memory storage of intermediate data products",
             "collapsed": false,
@@ -749,7 +709,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "e8c60c3"
+            "sha": "1fdd55c"
         },
         {
             "category": "Mpi",
@@ -759,7 +719,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -15,
+            "key": -16,
             "text": "MPI",
             "description": "An application component using the Message Passing Interface (MPI)",
             "collapsed": false,
@@ -882,21 +842,11 @@
                     "precious": false
                 },
                 {
-                    "text": "Input error threshold (0 and 100)",
+                    "text": "Input error rate (%)",
                     "name": "input_error_threshold",
                     "value": "0",
                     "default": "0",
-                    "description": "Indicates the tolerance to erroneous effective inputs, and after which the application will not be run but moved to the ERROR state",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false
-                },
-                {
-                    "text": "Number of effective inputs",
-                    "name": "n_effective_inputs",
-                    "value": "-1",
-                    "default": "-1",
-                    "description": "Application will block until this number of inputs have moved to the COMPLETED state. Special value of -1 means that all inputs are considered as effective",
+                    "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
                     "readonly": false,
                     "type": "Integer",
                     "precious": false
@@ -914,7 +864,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "e8c60c3"
+            "sha": "1fdd55c"
         },
         {
             "category": "NGAS",
@@ -924,7 +874,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -21,
+            "key": -22,
             "text": "NGAS",
             "description": "An archive on the Next Generation Archive System (NGAS).",
             "collapsed": false,
@@ -1030,7 +980,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "e8c60c3"
+            "sha": "1fdd55c"
         },
         {
             "category": "ParameterSet",
@@ -1040,7 +990,7 @@
             "canHaveInputs": true,
             "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -22,
+            "key": -23,
             "text": "ParameterSet",
             "description": "A set of parameters, wholly specified in EAGLE",
             "collapsed": false,
@@ -1115,92 +1065,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "e8c60c3"
-        },
-        {
-            "category": "ParameterSet",
-            "tag": "template",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
-            "drawOrderHint": 0,
-            "key": -23,
-            "text": "ParameterSet",
-            "description": "A set of parameters, wholly specified in EAGLE",
-            "collapsed": false,
-            "showPorts": false,
-            "streaming": false,
-            "subject": null,
-            "selected": false,
-            "expanded": false,
-            "inputApplicationName": "",
-            "outputApplicationName": "",
-            "exitApplicationName": "",
-            "inputApplicationType": "None",
-            "outputApplicationType": "None",
-            "exitApplicationType": "None",
-            "inputPorts": [],
-            "outputPorts": [
-                {
-                    "Id": "2933e446-488d-4fd0-b0c5-bc274280949e",
-                    "IdText": "Config",
-                    "text": "ConfigFile",
-                    "event": false,
-                    "type": "File",
-                    "description": "The output configuration file"
-                }
-            ],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "fields": [
-                {
-                    "text": "Data volume",
-                    "name": "data_volume",
-                    "value": 5,
-                    "default": 5,
-                    "description": "Estimated size of the data contained in this node",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false
-                },
-                {
-                    "text": "Group end",
-                    "name": "group_end",
-                    "value": "false",
-                    "default": "false",
-                    "description": "Component is end of a group",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false
-                }
-            ],
-            "applicationArgs": [
-                {
-                    "text": "Parset mode",
-                    "name": "mode",
-                    "value": "YANDA",
-                    "default": "YANDA",
-                    "description": "To what standard DALiuGE should filter and serialize the parameters.",
-                    "readonly": true,
-                    "type": "String",
-                    "precious": false
-                },
-                {
-                    "text": "ConfigData",
-                    "name": "config_data",
-                    "value": "",
-                    "default": "",
-                    "description": "Additional configuration information to be mixed in with the initial data",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false
-                }
-            ],
-            "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "e8c60c3"
+            "sha": "1fdd55c"
         },
         {
             "category": "S3",
@@ -1285,7 +1150,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "e8c60c3"
+            "sha": "1fdd55c"
         }
     ],
     "linkDataArray": []
