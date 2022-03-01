@@ -6,17 +6,12 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "daliuge-master.palette",
-        "sha": "682f006",
+        "sha": "7af2ab1",
         "git_url": "https://github.com/ICRAR/daliuge.git"
     },
     "nodeDataArray": [
         {
             "category": "PythonApp",
-            "tag": "daliuge",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
             "drawOrderHint": 0,
             "key": -1,
             "text": "AverageArrays",
@@ -29,10 +24,8 @@
             "expanded": false,
             "inputApplicationName": "",
             "outputApplicationName": "",
-            "exitApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "exitApplicationType": "None",
             "inputPorts": [
                 {
                     "Id": "59d56dc4-6e6e-4830-90b5-52da5ea08abf",
@@ -149,15 +142,10 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "682f006"
+            "sha": "7af2ab1"
         },
         {
             "category": "PythonApp",
-            "tag": "daliuge",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
             "drawOrderHint": 0,
             "key": -4,
             "text": "CopyApp",
@@ -170,10 +158,8 @@
             "expanded": false,
             "inputApplicationName": "",
             "outputApplicationName": "",
-            "exitApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "exitApplicationType": "None",
             "inputPorts": [],
             "outputPorts": [],
             "inputLocalPorts": [],
@@ -268,15 +254,10 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "682f006"
+            "sha": "7af2ab1"
         },
         {
             "category": "PythonApp",
-            "tag": "daliuge",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
             "drawOrderHint": 0,
             "key": -5,
             "text": "CRCStreamApp",
@@ -289,10 +270,8 @@
             "expanded": false,
             "inputApplicationName": "",
             "outputApplicationName": "",
-            "exitApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "exitApplicationType": "None",
             "inputPorts": [],
             "outputPorts": [
                 {
@@ -384,15 +363,10 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "682f006"
+            "sha": "7af2ab1"
         },
         {
             "category": "PythonApp",
-            "tag": "daliuge",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
             "drawOrderHint": 0,
             "key": -10,
             "text": "GenericNpyGatherApp",
@@ -405,10 +379,8 @@
             "expanded": false,
             "inputApplicationName": "",
             "outputApplicationName": "",
-            "exitApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "exitApplicationType": "None",
             "inputPorts": [
                 {
                     "Id": "a13c256f-056e-4bdb-9693-cd0318e486ec",
@@ -542,17 +514,164 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "682f006"
+            "sha": "7af2ab1"
+        },
+        {
+            "category": "Gather",
+            "description": "A default Gather construct for the GenericNpyGatherApp component.",
+            "fields": [],
+            "applicationArgs": [],
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "key": -11,
+            "precious": false,
+            "sha": "7af2ab1",
+            "streaming": false,
+            "text": "Gather/GenericNpyGatherApp",
+            "inputAppFields": [
+                {
+                    "text": "Application Class",
+                    "name": "appclass",
+                    "value": "dlg.apps.simple.GenericNpyGatherApp",
+                    "default": "dlg.apps.simple.GenericNpyGatherApp",
+                    "description": "Application class",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "default": "5",
+                    "description": "Estimated execution time",
+                    "readonly": true,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "default": "1",
+                    "description": "Number of cores used",
+                    "readonly": true,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "False",
+                    "default": "False",
+                    "description": "Is this node the start of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "Input error rate (%)",
+                    "name": "input_error_threshold",
+                    "value": "0",
+                    "default": "0",
+                    "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "Number of tries",
+                    "name": "n_tries",
+                    "value": "1",
+                    "default": "1",
+                    "description": "Specifies the number of times the 'run' method will be executed before finally giving up",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "Function",
+                    "name": "function",
+                    "value": "sum",
+                    "default": "sum",
+                    "description": "The function used for gathering",
+                    "readonly": false,
+                    "type": "Select",
+                    "precious": false,
+                    "options": [
+                        "sum",
+                        "prod",
+                        "min",
+                        "max",
+                        "add",
+                        "multiply",
+                        "maximum",
+                        "minimum"
+                    ],
+                    "positional": "false"
+                },
+                {
+                    "text": "reduce_axes",
+                    "name": "function",
+                    "value": "None",
+                    "default": "None",
+                    "description": "The ndarray axes to reduce, None reduces all axes for sum, prod, max, min functions",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                }
+            ],
+            "inputAppArgs": [],
+            "inputApplicationKey": -10,
+            "inputApplicationName": "GenericNpyGatherApp",
+            "inputApplicationType": "PythonApp",
+            "inputApplicationDescription": "A BarrierAppDrop that combines one or more inputs using cummulative operations.",
+            "inputLocalPorts": [
+                {
+                    "Id": "14d6a92f-c081-452f-8317-28b901379832",
+                    "IdText": "array",
+                    "text": "Array",
+                    "event": false,
+                    "type": "npy",
+                    "description": " Port carrying the reduced array"
+                }
+            ],
+            "inputPorts": [
+                {
+                    "Id": "a13c256f-056e-4bdb-9693-cd0318e486ec",
+                    "IdText": "array",
+                    "text": "Array",
+                    "event": false,
+                    "type": "npy",
+                    "description": " Port for the input array(s)"
+                }
+            ],
+            "outputAppFields": [],
+            "outputAppArgs": [],
+            "outputApplicationKey": null,
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationDescription": "",
+            "outputLocalPorts": [],
+            "outputPorts": []
         },
         {
             "category": "PythonApp",
-            "tag": "daliuge",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -11,
+            "key": -12,
             "text": "GenericNpyScatterApp",
             "description": "An APP that splits about any axis on any npy format data drop into as many parts as the app has outputs, provided that the initially converted numpy array has enough elements. The return will be a numpy array of arrays, where the first axis is of length len(outputs). The modulo remainder of the length of the original array and the number of outputs will be distributed across the first len(outputs)-1 elements of the resulting array.",
             "collapsed": false,
@@ -563,10 +682,8 @@
             "expanded": false,
             "inputApplicationName": "",
             "outputApplicationName": "",
-            "exitApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "exitApplicationType": "None",
             "inputPorts": [],
             "outputPorts": [
                 {
@@ -671,17 +788,135 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "682f006"
+            "sha": "7af2ab1"
+        },
+        {
+            "category": "Scatter",
+            "description": "A default Scatter construct for the GenericNpyScatterApp component.",
+            "fields": [],
+            "applicationArgs": [],
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "key": -13,
+            "precious": false,
+            "sha": "7af2ab1",
+            "streaming": false,
+            "text": "Scatter/GenericNpyScatterApp",
+            "inputAppFields": [
+                {
+                    "text": "Application Class",
+                    "name": "appclass",
+                    "value": "dlg.apps.simple.GenericNpyScatterApp",
+                    "default": "dlg.apps.simple.GenericNpyScatterApp",
+                    "description": "Application class",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "default": "5",
+                    "description": "Estimated execution time",
+                    "readonly": true,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "default": "1",
+                    "description": "Number of cores used",
+                    "readonly": true,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "False",
+                    "default": "False",
+                    "description": "Is this node the start of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "Input error rate (%)",
+                    "name": "input_error_threshold",
+                    "value": "0",
+                    "default": "0",
+                    "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "Number of tries",
+                    "name": "n_tries",
+                    "value": "1",
+                    "default": "1",
+                    "description": "Specifies the number of times the 'run' method will be executed before finally giving up",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                }
+            ],
+            "inputAppArgs": [
+                {
+                    "text": "Scatter Axes",
+                    "name": "scatter_axes",
+                    "value": "",
+                    "default": "",
+                    "description": "The axes to split input ndarrays on, e.g. [0,0,0], length must match the number of input ports",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                }
+            ],
+            "inputApplicationKey": -12,
+            "inputApplicationName": "GenericNpyScatterApp",
+            "inputApplicationType": "PythonApp",
+            "inputApplicationDescription": "An APP that splits about any axis on any npy format data drop into as many parts as the app has outputs, provided that the initially converted numpy array has enough elements. The return will be a numpy array of arrays, where the first axis is of length len(outputs). The modulo remainder of the length of the original array and the number of outputs will be distributed across the first len(outputs)-1 elements of the resulting array.",
+            "inputLocalPorts": [
+                {
+                    "Id": "fb327336-448d-45c9-9f3d-da99023a0827",
+                    "IdText": "array",
+                    "text": "Array",
+                    "event": false,
+                    "type": "npy",
+                    "description": " A numpy array of arrays"
+                }
+            ],
+            "inputPorts": [],
+            "outputAppFields": [],
+            "outputAppArgs": [],
+            "outputApplicationKey": null,
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationDescription": "",
+            "outputLocalPorts": [],
+            "outputPorts": []
         },
         {
             "category": "PythonApp",
-            "tag": "daliuge",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -12,
+            "key": -14,
             "text": "GenericScatterApp",
             "description": "An APP that splits about any object that can be converted to a numpy array into as many parts as the app has outputs, provided that the initially converted numpy array has enough elements. The return will be a numpy array of arrays, where the first axis is of length len(outputs). The modulo remainder of the length of the original array and the number of outputs will be distributed across the first len(outputs)-1 elements of the resulting array.",
             "collapsed": false,
@@ -692,10 +927,8 @@
             "expanded": false,
             "inputApplicationName": "",
             "outputApplicationName": "",
-            "exitApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "exitApplicationType": "None",
             "inputPorts": [],
             "outputPorts": [
                 {
@@ -787,17 +1020,122 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "682f006"
+            "sha": "7af2ab1"
+        },
+        {
+            "category": "Scatter",
+            "description": "A default Scatter construct for the GenericScatterApp component.",
+            "fields": [],
+            "applicationArgs": [],
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "key": -15,
+            "precious": false,
+            "sha": "7af2ab1",
+            "streaming": false,
+            "text": "Scatter/GenericScatterApp",
+            "inputAppFields": [
+                {
+                    "text": "Application Class",
+                    "name": "appclass",
+                    "value": "dlg.apps.simple.GenericScatterApp",
+                    "default": "dlg.apps.simple.GenericScatterApp",
+                    "description": "Application class",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "default": "5",
+                    "description": "Estimated execution time",
+                    "readonly": true,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "default": "1",
+                    "description": "Number of cores used",
+                    "readonly": true,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "False",
+                    "default": "False",
+                    "description": "Is this node the start of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "Input error rate (%)",
+                    "name": "input_error_threshold",
+                    "value": "0",
+                    "default": "0",
+                    "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "Number of tries",
+                    "name": "n_tries",
+                    "value": "1",
+                    "default": "1",
+                    "description": "Specifies the number of times the 'run' method will be executed before finally giving up",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                }
+            ],
+            "inputAppArgs": [],
+            "inputApplicationKey": -14,
+            "inputApplicationName": "GenericScatterApp",
+            "inputApplicationType": "PythonApp",
+            "inputApplicationDescription": "An APP that splits about any object that can be converted to a numpy array into as many parts as the app has outputs, provided that the initially converted numpy array has enough elements. The return will be a numpy array of arrays, where the first axis is of length len(outputs). The modulo remainder of the length of the original array and the number of outputs will be distributed across the first len(outputs)-1 elements of the resulting array.",
+            "inputLocalPorts": [
+                {
+                    "Id": "f01bb1d8-42dd-4a84-8050-648cf98a038f",
+                    "IdText": "array",
+                    "text": "Array",
+                    "event": false,
+                    "type": "Array",
+                    "description": " A numpy array of arrays, where the first axis is of length <numSplit>"
+                }
+            ],
+            "inputPorts": [],
+            "outputAppFields": [],
+            "outputAppArgs": [],
+            "outputApplicationKey": null,
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationDescription": "",
+            "outputLocalPorts": [],
+            "outputPorts": []
         },
         {
             "category": "PythonApp",
-            "tag": "daliuge",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -13,
+            "key": -16,
             "text": "HelloWorldApp",
             "description": "A simple APP that implements the standard Hello World in DALiuGE. It allows to change 'World' with some other string and it also permits to connect the single output port to multiple sinks, which will all receive the same message. App does not require any input.",
             "collapsed": false,
@@ -808,10 +1146,8 @@
             "expanded": false,
             "inputApplicationName": "",
             "outputApplicationName": "",
-            "exitApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "exitApplicationType": "None",
             "inputPorts": [],
             "outputPorts": [
                 {
@@ -916,17 +1252,12 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "682f006"
+            "sha": "7af2ab1"
         },
         {
             "category": "PythonApp",
-            "tag": "daliuge",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -15,
+            "key": -18,
             "text": "ListAppendThrashingApp",
             "description": "A testing APP that appends a random integer to a list num times. This is a CPU intensive operation and can thus be used to provide a test for application threading since this operation will not yield. The resulting array will be sent to all connected output apps. \nsize: int, number of array elements",
             "collapsed": false,
@@ -937,10 +1268,8 @@
             "expanded": false,
             "inputApplicationName": "",
             "outputApplicationName": "",
-            "exitApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "exitApplicationType": "None",
             "inputPorts": [],
             "outputPorts": [
                 {
@@ -1045,17 +1374,12 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "682f006"
+            "sha": "7af2ab1"
         },
         {
             "category": "PythonApp",
-            "tag": "daliuge",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -17,
+            "key": -20,
             "text": "MSPlasmaReader",
             "description": "Batch read entire Measurement Set from Plasma.",
             "collapsed": false,
@@ -1066,10 +1390,8 @@
             "expanded": false,
             "inputApplicationName": "",
             "outputApplicationName": "",
-            "exitApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "exitApplicationType": "None",
             "inputPorts": [
                 {
                     "Id": "d6147716-abcb-4308-a64b-24af0eba9c30",
@@ -1170,17 +1492,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "682f006"
+            "sha": "7af2ab1"
         },
         {
             "category": "PythonApp",
-            "tag": "daliuge",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -18,
+            "key": -21,
             "text": "MSPlasmaWriter",
             "description": "Batch write entire Measurement Set to Plasma.",
             "collapsed": false,
@@ -1191,10 +1508,8 @@
             "expanded": false,
             "inputApplicationName": "",
             "outputApplicationName": "",
-            "exitApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "exitApplicationType": "None",
             "inputPorts": [
                 {
                     "Id": "769ded77-b796-468e-87e6-6a564669ca44",
@@ -1295,17 +1610,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "682f006"
+            "sha": "7af2ab1"
         },
         {
             "category": "PythonApp",
-            "tag": "daliuge",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -19,
+            "key": -22,
             "text": "MSStreamingPlasmaConsumer",
             "description": "Stream Measurement Set one correlator timestep at a time via Plasma.",
             "collapsed": false,
@@ -1316,10 +1626,8 @@
             "expanded": false,
             "inputApplicationName": "",
             "outputApplicationName": "",
-            "exitApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "exitApplicationType": "None",
             "inputPorts": [
                 {
                     "Id": "2d4519ac-ef4f-41b1-b7ae-7dc4496d1636",
@@ -1433,17 +1741,12 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "682f006"
+            "sha": "7af2ab1"
         },
         {
             "category": "PythonApp",
-            "tag": "daliuge",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -20,
+            "key": -23,
             "text": "MSStreamingPlasmaProducer",
             "description": "Stream Measurement Set one correlator timestep at a time via Plasma.",
             "collapsed": false,
@@ -1454,10 +1757,8 @@
             "expanded": false,
             "inputApplicationName": "",
             "outputApplicationName": "",
-            "exitApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "exitApplicationType": "None",
             "inputPorts": [
                 {
                     "Id": "d700360f-2f1c-4589-8b7f-0c7abf07b907",
@@ -1571,17 +1872,12 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "682f006"
+            "sha": "7af2ab1"
         },
         {
             "category": "PythonApp",
-            "tag": "daliuge",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -21,
+            "key": -24,
             "text": "NgasArchivingApp",
             "description": "Takes an input and archives it in an NGAS server.",
             "collapsed": false,
@@ -1592,10 +1888,8 @@
             "expanded": false,
             "inputApplicationName": "",
             "outputApplicationName": "",
-            "exitApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "exitApplicationType": "None",
             "inputPorts": [
                 {
                     "Id": "6a170a2b-ecb7-4da2-b0d3-0d2007fa5fe5",
@@ -1748,17 +2042,12 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "682f006"
+            "sha": "7af2ab1"
         },
         {
             "category": "PythonApp",
-            "tag": "daliuge",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -26,
+            "key": -29,
             "text": "PyFuncApp",
             "description": "An application that wraps a simple python function. The inputs of the application are treated as the arguments of the function. Conversely, the output of the function is treated as the output of the application. If the application has more than one output, the result of calling the function is treated as an iterable, with each individual object being written to its corresponding output. \nUsers indicate the function to be wrapped via the ``func_name`` parameter. In this case func_name needs to specify a funtion in the standard form\n``module.function``\nand the module needs to be accessible on the PYTHONPATH of the DALiuGE engine. Note that the engine is expanding the standard PYTHONPATH with DLG_ROOT/code. That directory is always available, even if the engine is running in a docker container.\nOtherwise, users can also *send* over the python code using the ``func_code`` parameter. The code needs to be base64-encoded and produced with the marshal module of the same Python version used to run DALiuGE.\nBoth inputs and outputs are (de-)serialized using the pickle protocol if the value of the respective boolean component parameter is set to True. This is also applied to func_defaults and func_arg_mappings.\nIn addition to the input mapping the implementation also allows to set defaults both in the function itself and in a logical graph. If set in the logical graph using the func_defaults parameter, the defaults need to be specified as a dictionary of the form\n``{\"kwargs\":{\"kw1_name\":kw1_value, \"kw2_name\":kw2_value}, \"args\":[arg1, arg2]}``\nThe positional args will be used in order of appearance.",
             "collapsed": false,
@@ -1769,10 +2058,8 @@
             "expanded": false,
             "inputApplicationName": "",
             "outputApplicationName": "",
-            "exitApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "exitApplicationType": "None",
             "inputPorts": [],
             "outputPorts": [],
             "inputLocalPorts": [],
@@ -1916,17 +2203,12 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "682f006"
+            "sha": "7af2ab1"
         },
         {
             "category": "PythonApp",
-            "tag": "daliuge",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -27,
+            "key": -30,
             "text": "RandomArrayApp",
             "description": "A testing APP that does not take any input and produces a random array of type int64, if integer is set to True, else of type float64. size indicates the number of elements ranging between the values low and high. The resulting array will be send to all connected output apps. \ninteger: bool [True], generate integer array low: float, lower boundary (will be converted to int for integer arrays) high: float, upper boundary (will be converted to int for integer arrays) size: int, number of array elements",
             "collapsed": false,
@@ -1937,10 +2219,8 @@
             "expanded": false,
             "inputApplicationName": "",
             "outputApplicationName": "",
-            "exitApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "exitApplicationType": "None",
             "inputPorts": [],
             "outputPorts": [
                 {
@@ -2081,17 +2361,12 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "682f006"
+            "sha": "7af2ab1"
         },
         {
             "category": "PythonApp",
-            "tag": "daliuge",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -29,
+            "key": -32,
             "text": "ScpApp",
             "description": "A BarrierAppDROP that copies the content of its single input onto its single output via SSH's scp protocol. \nDepending on the physical location of each DROP (this application, and its input and outputs) this application will copy data FROM another host or TO other host. This application's node must thus coincide with one of the two I/O DROPs.",
             "collapsed": false,
@@ -2102,10 +2377,8 @@
             "expanded": false,
             "inputApplicationName": "",
             "outputApplicationName": "",
-            "exitApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "exitApplicationType": "None",
             "inputPorts": [
                 {
                     "Id": "55c8087b-4ef9-43a9-9d5f-10ad6cabf45a",
@@ -2243,17 +2516,12 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "682f006"
+            "sha": "7af2ab1"
         },
         {
             "category": "PythonApp",
-            "tag": "daliuge",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -30,
+            "key": -33,
             "text": "SleepAndCopyApp",
             "description": "",
             "collapsed": false,
@@ -2264,10 +2532,8 @@
             "expanded": false,
             "inputApplicationName": "",
             "outputApplicationName": "",
-            "exitApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "exitApplicationType": "None",
             "inputPorts": [],
             "outputPorts": [],
             "inputLocalPorts": [],
@@ -2363,17 +2629,12 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "682f006"
+            "sha": "7af2ab1"
         },
         {
             "category": "PythonApp",
-            "tag": "daliuge",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -31,
+            "key": -34,
             "text": "SleepApp",
             "description": "A simple APP that sleeps the specified amount of time (0 by default). This is mainly useful (and used) to test graph translation and structure without executing real algorithms. Very useful for debugging.",
             "collapsed": false,
@@ -2384,10 +2645,8 @@
             "expanded": false,
             "inputApplicationName": "",
             "outputApplicationName": "",
-            "exitApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "exitApplicationType": "None",
             "inputPorts": [],
             "outputPorts": [],
             "inputLocalPorts": [],
@@ -2483,17 +2742,12 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "682f006"
+            "sha": "7af2ab1"
         },
         {
             "category": "PythonApp",
-            "tag": "daliuge",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -32,
+            "key": -35,
             "text": "SocketListenerApp",
             "description": "A BarrierAppDROP that listens on a socket for data. The server-side socket expects only one client, and assumes that the client will close the connection after all its data has been sent. This application expects no input DROPs, and therefore raises an exception whenever one is added. On the output side, one or more outputs can be specified with the restriction that they are not ContainerDROPs so data can be written into them through the framework.",
             "collapsed": false,
@@ -2504,10 +2758,8 @@
             "expanded": false,
             "inputApplicationName": "",
             "outputApplicationName": "",
-            "exitApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "exitApplicationType": "None",
             "inputPorts": [],
             "outputPorts": [
                 {
@@ -2648,17 +2900,12 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "682f006"
+            "sha": "7af2ab1"
         },
         {
             "category": "PythonApp",
-            "tag": "daliuge",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -33,
+            "key": -36,
             "text": "UrlRetrieveApp",
             "description": "A simple APP that retrieves the content of a URL and writes it to all outputs.",
             "collapsed": false,
@@ -2669,10 +2916,8 @@
             "expanded": false,
             "inputApplicationName": "",
             "outputApplicationName": "",
-            "exitApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "exitApplicationType": "None",
             "inputPorts": [],
             "outputPorts": [
                 {
@@ -2777,7 +3022,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "682f006"
+            "sha": "7af2ab1"
         }
     ],
     "linkDataArray": []
