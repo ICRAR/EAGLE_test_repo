@@ -6,17 +6,12 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "daliuge-YAN-882-plasmaflight-template.palette",
-        "sha": "3f8d671",
+        "sha": "4e76df6",
         "git_url": "https://github.com/ICRAR/daliuge.git"
     },
     "nodeDataArray": [
         {
             "category": "BashShellApp",
-            "tag": "template",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
             "drawOrderHint": 0,
             "key": -2,
             "text": "BashShellApp",
@@ -29,10 +24,8 @@
             "expanded": false,
             "inputApplicationName": "",
             "outputApplicationName": "",
-            "exitApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "exitApplicationType": "None",
             "inputPorts": [],
             "outputPorts": [],
             "inputLocalPorts": [],
@@ -48,7 +41,9 @@
                     "description": "The command to be executed",
                     "readonly": false,
                     "type": "String",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Input Redirection",
@@ -58,7 +53,9 @@
                     "description": "The command line argument that specifies the input into this application",
                     "readonly": false,
                     "type": "String",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Output Redirection",
@@ -68,7 +65,9 @@
                     "description": "The command line argument that specifies the output from this application",
                     "readonly": false,
                     "type": "String",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Command Line Arguments",
@@ -78,7 +77,9 @@
                     "description": "Additional command line arguments to be added to the command line to be executed",
                     "readonly": false,
                     "type": "String",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Param value separator",
@@ -88,7 +89,9 @@
                     "description": "Separator character(s) between parameters on the command line",
                     "readonly": false,
                     "type": "String",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Argument prefix",
@@ -98,7 +101,9 @@
                     "description": "Prefix to each keyed argument on the command line",
                     "readonly": false,
                     "type": "String",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Execution Time",
@@ -108,7 +113,9 @@
                     "description": "Estimated execution time",
                     "readonly": true,
                     "type": "Float",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "No. of CPUs",
@@ -118,7 +125,9 @@
                     "description": "Number of cores used",
                     "readonly": true,
                     "type": "Integer",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Group start",
@@ -128,7 +137,9 @@
                     "description": "Is this node the start of a group?",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Input error rate (%)",
@@ -138,7 +149,9 @@
                     "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
                     "readonly": false,
                     "type": "Integer",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Number of tries",
@@ -148,20 +161,17 @@
                     "description": "Specifies the number of times the 'run' method will be executed before finally giving up",
                     "readonly": false,
                     "type": "Integer",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 }
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "3f8d671"
+            "sha": "4e76df6"
         },
         {
             "category": "Branch",
-            "tag": "template",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
             "drawOrderHint": 0,
             "key": -3,
             "text": "Branch",
@@ -174,10 +184,8 @@
             "expanded": false,
             "inputApplicationName": "",
             "outputApplicationName": "",
-            "exitApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "exitApplicationType": "None",
             "inputPorts": [],
             "outputPorts": [],
             "inputLocalPorts": [],
@@ -193,7 +201,9 @@
                     "description": "Application class",
                     "readonly": true,
                     "type": "String",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Execution Time",
@@ -203,7 +213,9 @@
                     "description": "Estimated execution time",
                     "readonly": true,
                     "type": "Float",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "No. of CPUs",
@@ -213,7 +225,9 @@
                     "description": "Number of cores used",
                     "readonly": true,
                     "type": "Integer",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Group start",
@@ -223,7 +237,9 @@
                     "description": "Is this node the start of a group?",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Input error rate (%)",
@@ -233,7 +249,9 @@
                     "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
                     "readonly": false,
                     "type": "Integer",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Number of tries",
@@ -243,20 +261,17 @@
                     "description": "Specifies the number of times the 'run' method will be executed before finally giving up",
                     "readonly": false,
                     "type": "Integer",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 }
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "3f8d671"
+            "sha": "4e76df6"
         },
         {
             "category": "Docker",
-            "tag": "template",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
             "drawOrderHint": 0,
             "key": -6,
             "text": "Docker",
@@ -269,10 +284,8 @@
             "expanded": false,
             "inputApplicationName": "",
             "outputApplicationName": "",
-            "exitApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "exitApplicationType": "None",
             "inputPorts": [],
             "outputPorts": [],
             "inputLocalPorts": [],
@@ -288,7 +301,9 @@
                     "description": "The name of the docker image to be used for this application",
                     "readonly": false,
                     "type": "String",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Tag",
@@ -298,7 +313,9 @@
                     "description": "The tag of the docker image to be used for this application",
                     "readonly": false,
                     "type": "String",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Digest",
@@ -308,7 +325,9 @@
                     "description": "The hexadecimal hash (long version) of the docker image to be used for this application",
                     "readonly": false,
                     "type": "String",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Command",
@@ -318,7 +337,9 @@
                     "description": "The command line to run within the docker instance. The specified command will be executed in a bash shell. That means that images will need a bash shell.",
                     "readonly": false,
                     "type": "String",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Input Redirection",
@@ -328,7 +349,9 @@
                     "description": "The command line argument that specifies the input into this application",
                     "readonly": false,
                     "type": "String",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Output Redirection",
@@ -338,7 +361,9 @@
                     "description": "The command line argument that specifies the output from this application",
                     "readonly": false,
                     "type": "String",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Command Line Arguments",
@@ -348,7 +373,9 @@
                     "description": "Additional command line arguments to be added to the command line to be executed",
                     "readonly": false,
                     "type": "String",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Param value separator",
@@ -358,7 +385,9 @@
                     "description": "Separator character(s) between parameters on the command line",
                     "readonly": false,
                     "type": "String",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Argument prefix",
@@ -368,7 +397,9 @@
                     "description": "Prefix to each keyed argument on the command line",
                     "readonly": false,
                     "type": "String",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Execution Time",
@@ -378,7 +409,9 @@
                     "description": "Estimated execution time",
                     "readonly": true,
                     "type": "Float",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "No. of CPUs",
@@ -388,7 +421,9 @@
                     "description": "Number of cores used",
                     "readonly": true,
                     "type": "Integer",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Group start",
@@ -398,7 +433,9 @@
                     "description": "Is this node the start of a group?",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Input error rate (%)",
@@ -408,7 +445,9 @@
                     "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
                     "readonly": false,
                     "type": "Integer",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Number of tries",
@@ -418,7 +457,9 @@
                     "description": "Specifies the number of times the 'run' method will be executed before finally giving up",
                     "readonly": false,
                     "type": "Integer",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "User",
@@ -428,7 +469,9 @@
                     "description": "Username of the user who will run the application within the docker image",
                     "readonly": false,
                     "type": "String",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Ensure User And Switch",
@@ -438,7 +481,9 @@
                     "description": "Make sure the user specified in the User parameter exists and then run the docker container as that user",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Remove Container",
@@ -448,7 +493,9 @@
                     "description": "Instruct Docker engine to delete the container after execution is complete",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Additional Bindings",
@@ -458,7 +505,9 @@
                     "description": "Directories which will be visible inside the container during run-time. Format is srcdir_on_host:trgtdir_on_container. Multiple entries can be separated by commas.",
                     "readonly": false,
                     "type": "String",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Port Mappings",
@@ -468,20 +517,17 @@
                     "description": "Port mappings on the host machine",
                     "readonly": false,
                     "type": "String",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 }
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "3f8d671"
+            "sha": "4e76df6"
         },
         {
             "category": "DynlibApp",
-            "tag": "template",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
             "drawOrderHint": 0,
             "key": -7,
             "text": "DynlibApp",
@@ -494,10 +540,8 @@
             "expanded": false,
             "inputApplicationName": "",
             "outputApplicationName": "",
-            "exitApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "exitApplicationType": "None",
             "inputPorts": [],
             "outputPorts": [],
             "inputLocalPorts": [],
@@ -513,7 +557,9 @@
                     "description": "DLL that implements this application",
                     "readonly": false,
                     "type": "String",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Execution Time",
@@ -523,7 +569,9 @@
                     "description": "Estimated execution time",
                     "readonly": true,
                     "type": "Float",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "No. of CPUs",
@@ -533,7 +581,9 @@
                     "description": "Number of cores used",
                     "readonly": true,
                     "type": "Integer",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Group start",
@@ -543,7 +593,9 @@
                     "description": "Is this node the start of a group?",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Input error rate (%)",
@@ -553,7 +605,9 @@
                     "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
                     "readonly": false,
                     "type": "Integer",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Number of tries",
@@ -563,20 +617,17 @@
                     "description": "Specifies the number of times the 'run' method will be executed before finally giving up",
                     "readonly": false,
                     "type": "Integer",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 }
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "3f8d671"
+            "sha": "4e76df6"
         },
         {
             "category": "File",
-            "tag": "template",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
             "drawOrderHint": 0,
             "key": -9,
             "text": "File",
@@ -589,10 +640,8 @@
             "expanded": false,
             "inputApplicationName": "",
             "outputApplicationName": "",
-            "exitApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "exitApplicationType": "None",
             "inputPorts": [],
             "outputPorts": [],
             "inputLocalPorts": [],
@@ -608,7 +657,9 @@
                     "description": "Estimated size of the data contained in this node",
                     "readonly": false,
                     "type": "Float",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Group end",
@@ -618,7 +669,9 @@
                     "description": "Is this node the end of a group?",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 }
             ],
             "applicationArgs": [
@@ -630,7 +683,9 @@
                     "description": "Perform a check to make sure the file path exists before proceeding with the application",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "File Path",
@@ -640,7 +695,9 @@
                     "description": "Path to the file for this node",
                     "readonly": false,
                     "type": "String",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Directory name",
@@ -650,21 +707,403 @@
                     "description": "Path to the file for this node",
                     "readonly": false,
                     "type": "String",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "3f8d671"
+            "sha": "4e76df6"
+        },
+        {
+            "category": "Gather",
+            "description": "A default Gather construct for the GenericNpyGatherApp component.",
+            "fields": [],
+            "applicationArgs": [],
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "key": -11,
+            "precious": false,
+            "sha": "4e76df6",
+            "streaming": false,
+            "text": "Gather/GenericNpyGatherApp",
+            "inputAppFields": [
+                {
+                    "text": "Application Class",
+                    "name": "appclass",
+                    "value": "dlg.apps.simple.GenericNpyGatherApp",
+                    "default": "dlg.apps.simple.GenericNpyGatherApp",
+                    "description": "Application class",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "default": "5",
+                    "description": "Estimated execution time",
+                    "readonly": true,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "default": "1",
+                    "description": "Number of cores used",
+                    "readonly": true,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "False",
+                    "default": "False",
+                    "description": "Is this node the start of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "Input error rate (%)",
+                    "name": "input_error_threshold",
+                    "value": "0",
+                    "default": "0",
+                    "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "Number of tries",
+                    "name": "n_tries",
+                    "value": "1",
+                    "default": "1",
+                    "description": "Specifies the number of times the 'run' method will be executed before finally giving up",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "Function",
+                    "name": "function",
+                    "value": "sum",
+                    "default": "sum",
+                    "description": "The function used for gathering",
+                    "readonly": false,
+                    "type": "Select",
+                    "precious": false,
+                    "options": [
+                        "sum",
+                        "prod",
+                        "min",
+                        "max",
+                        "add",
+                        "multiply",
+                        "maximum",
+                        "minimum"
+                    ],
+                    "positional": "false"
+                },
+                {
+                    "text": "reduce_axes",
+                    "name": "function",
+                    "value": "None",
+                    "default": "None",
+                    "description": "The ndarray axes to reduce, None reduces all axes for sum, prod, max, min functions",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                }
+            ],
+            "inputAppArgs": [],
+            "inputApplicationKey": -10,
+            "inputApplicationName": "GenericNpyGatherApp",
+            "inputApplicationType": "PythonApp",
+            "inputApplicationDescription": "A BarrierAppDrop that combines one or more inputs using cummulative operations.",
+            "inputLocalPorts": [
+                {
+                    "Id": "14d6a92f-c081-452f-8317-28b901379832",
+                    "IdText": "array",
+                    "text": "Array",
+                    "event": false,
+                    "type": "npy",
+                    "description": " Port carrying the reduced array"
+                }
+            ],
+            "inputPorts": [
+                {
+                    "Id": "a13c256f-056e-4bdb-9693-cd0318e486ec",
+                    "IdText": "array",
+                    "text": "Array",
+                    "event": false,
+                    "type": "npy",
+                    "description": " Port for the input array(s)"
+                }
+            ],
+            "outputAppFields": [],
+            "outputAppArgs": [],
+            "outputApplicationKey": null,
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationDescription": "",
+            "outputLocalPorts": [],
+            "outputPorts": []
+        },
+        {
+            "category": "Scatter",
+            "description": "A default Scatter construct for the GenericNpyScatterApp component.",
+            "fields": [],
+            "applicationArgs": [],
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "key": -13,
+            "precious": false,
+            "sha": "4e76df6",
+            "streaming": false,
+            "text": "Scatter/GenericNpyScatterApp",
+            "inputAppFields": [
+                {
+                    "text": "Application Class",
+                    "name": "appclass",
+                    "value": "dlg.apps.simple.GenericNpyScatterApp",
+                    "default": "dlg.apps.simple.GenericNpyScatterApp",
+                    "description": "Application class",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "default": "5",
+                    "description": "Estimated execution time",
+                    "readonly": true,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "default": "1",
+                    "description": "Number of cores used",
+                    "readonly": true,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "False",
+                    "default": "False",
+                    "description": "Is this node the start of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "Input error rate (%)",
+                    "name": "input_error_threshold",
+                    "value": "0",
+                    "default": "0",
+                    "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "Number of tries",
+                    "name": "n_tries",
+                    "value": "1",
+                    "default": "1",
+                    "description": "Specifies the number of times the 'run' method will be executed before finally giving up",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                }
+            ],
+            "inputAppArgs": [
+                {
+                    "text": "Scatter Axes",
+                    "name": "scatter_axes",
+                    "value": "",
+                    "default": "",
+                    "description": "The axes to split input ndarrays on, e.g. [0,0,0], length must match the number of input ports",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                }
+            ],
+            "inputApplicationKey": -12,
+            "inputApplicationName": "GenericNpyScatterApp",
+            "inputApplicationType": "PythonApp",
+            "inputApplicationDescription": "An APP that splits about any axis on any npy format data drop into as many parts as the app has outputs, provided that the initially converted numpy array has enough elements. The return will be a numpy array of arrays, where the first axis is of length len(outputs). The modulo remainder of the length of the original array and the number of outputs will be distributed across the first len(outputs)-1 elements of the resulting array.",
+            "inputLocalPorts": [
+                {
+                    "Id": "fb327336-448d-45c9-9f3d-da99023a0827",
+                    "IdText": "array",
+                    "text": "Array",
+                    "event": false,
+                    "type": "npy",
+                    "description": " A numpy array of arrays"
+                }
+            ],
+            "inputPorts": [],
+            "outputAppFields": [],
+            "outputAppArgs": [],
+            "outputApplicationKey": null,
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationDescription": "",
+            "outputLocalPorts": [],
+            "outputPorts": []
+        },
+        {
+            "category": "Scatter",
+            "description": "A default Scatter construct for the GenericScatterApp component.",
+            "fields": [],
+            "applicationArgs": [],
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "key": -15,
+            "precious": false,
+            "sha": "4e76df6",
+            "streaming": false,
+            "text": "Scatter/GenericScatterApp",
+            "inputAppFields": [
+                {
+                    "text": "Application Class",
+                    "name": "appclass",
+                    "value": "dlg.apps.simple.GenericScatterApp",
+                    "default": "dlg.apps.simple.GenericScatterApp",
+                    "description": "Application class",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "default": "5",
+                    "description": "Estimated execution time",
+                    "readonly": true,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "default": "1",
+                    "description": "Number of cores used",
+                    "readonly": true,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "False",
+                    "default": "False",
+                    "description": "Is this node the start of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "Input error rate (%)",
+                    "name": "input_error_threshold",
+                    "value": "0",
+                    "default": "0",
+                    "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "Number of tries",
+                    "name": "n_tries",
+                    "value": "1",
+                    "default": "1",
+                    "description": "Specifies the number of times the 'run' method will be executed before finally giving up",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                }
+            ],
+            "inputAppArgs": [],
+            "inputApplicationKey": -14,
+            "inputApplicationName": "GenericScatterApp",
+            "inputApplicationType": "PythonApp",
+            "inputApplicationDescription": "An APP that splits about any object that can be converted to a numpy array into as many parts as the app has outputs, provided that the initially converted numpy array has enough elements. The return will be a numpy array of arrays, where the first axis is of length len(outputs). The modulo remainder of the length of the original array and the number of outputs will be distributed across the first len(outputs)-1 elements of the resulting array.",
+            "inputLocalPorts": [
+                {
+                    "Id": "f01bb1d8-42dd-4a84-8050-648cf98a038f",
+                    "IdText": "array",
+                    "text": "Array",
+                    "event": false,
+                    "type": "Array",
+                    "description": " A numpy array of arrays, where the first axis is of length <numSplit>"
+                }
+            ],
+            "inputPorts": [],
+            "outputAppFields": [],
+            "outputAppArgs": [],
+            "outputApplicationKey": null,
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationDescription": "",
+            "outputLocalPorts": [],
+            "outputPorts": []
         },
         {
             "category": "Memory",
-            "tag": "template",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -14,
+            "key": -17,
             "text": "Memory",
             "description": "In-memory storage of intermediate data products",
             "collapsed": false,
@@ -675,10 +1114,8 @@
             "expanded": false,
             "inputApplicationName": "",
             "outputApplicationName": "",
-            "exitApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "exitApplicationType": "None",
             "inputPorts": [],
             "outputPorts": [],
             "inputLocalPorts": [],
@@ -694,7 +1131,9 @@
                     "description": "Estimated size of the data contained in this node",
                     "readonly": false,
                     "type": "Float",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Group end",
@@ -704,22 +1143,19 @@
                     "description": "Is this node the end of a group?",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 }
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "3f8d671"
+            "sha": "4e76df6"
         },
         {
             "category": "Mpi",
-            "tag": "template",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -16,
+            "key": -19,
             "text": "MPI",
             "description": "An application component using the Message Passing Interface (MPI)",
             "collapsed": false,
@@ -730,10 +1166,8 @@
             "expanded": false,
             "inputApplicationName": "",
             "outputApplicationName": "",
-            "exitApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "exitApplicationType": "None",
             "inputPorts": [],
             "outputPorts": [],
             "inputLocalPorts": [],
@@ -749,7 +1183,9 @@
                     "description": "Number of processes used for this application",
                     "readonly": false,
                     "type": "Integer",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Command",
@@ -759,7 +1195,9 @@
                     "description": "The command to be executed",
                     "readonly": false,
                     "type": "String",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Input Redirection",
@@ -769,7 +1207,9 @@
                     "description": "The command line argument that specifies the input into this application",
                     "readonly": false,
                     "type": "String",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Output Redirection",
@@ -779,7 +1219,9 @@
                     "description": "The command line argument that specifies the output from this application",
                     "readonly": false,
                     "type": "String",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Command Line Arguments",
@@ -789,7 +1231,9 @@
                     "description": "Additional command line arguments to be added to the command line to be executed",
                     "readonly": false,
                     "type": "String",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Param value separator",
@@ -799,7 +1243,9 @@
                     "description": "Separator character(s) between parameters on the command line",
                     "readonly": false,
                     "type": "String",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Argument prefix",
@@ -809,7 +1255,9 @@
                     "description": "Prefix to each keyed argument on the command line",
                     "readonly": false,
                     "type": "String",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Execution Time",
@@ -819,7 +1267,9 @@
                     "description": "Estimated execution time",
                     "readonly": true,
                     "type": "Float",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "No. of CPUs",
@@ -829,7 +1279,9 @@
                     "description": "Number of cores used",
                     "readonly": true,
                     "type": "Integer",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Group end",
@@ -839,7 +1291,9 @@
                     "description": "Is this node the end of a group?",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Input error rate (%)",
@@ -849,7 +1303,9 @@
                     "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
                     "readonly": false,
                     "type": "Integer",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Number of tries",
@@ -859,22 +1315,19 @@
                     "description": "Specifies the number of times the 'run' method will be executed before finally giving up",
                     "readonly": false,
                     "type": "Integer",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 }
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "3f8d671"
+            "sha": "4e76df6"
         },
         {
             "category": "NGAS",
-            "tag": "template",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -22,
+            "key": -25,
             "text": "NGAS",
             "description": "An archive on the Next Generation Archive System (NGAS).",
             "collapsed": false,
@@ -885,10 +1338,8 @@
             "expanded": false,
             "inputApplicationName": "",
             "outputApplicationName": "",
-            "exitApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "exitApplicationType": "None",
             "inputPorts": [],
             "outputPorts": [],
             "inputLocalPorts": [],
@@ -904,7 +1355,9 @@
                     "description": "Estimated size of the data contained in this node",
                     "readonly": false,
                     "type": "Float",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Group end",
@@ -914,7 +1367,9 @@
                     "description": "Is this node the end of a group?",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 }
             ],
             "applicationArgs": [
@@ -926,7 +1381,9 @@
                     "description": "The URL of the NGAS Server",
                     "readonly": false,
                     "type": "String",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "NGAS Port",
@@ -936,7 +1393,9 @@
                     "description": "The port of the NGAS Server",
                     "readonly": false,
                     "type": "Integer",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "File ID",
@@ -946,7 +1405,9 @@
                     "description": "File ID on NGAS (for retrieval only)",
                     "readonly": false,
                     "type": "String",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Connection timeout",
@@ -956,7 +1417,9 @@
                     "description": "Timeout for connecting to the NGAS server",
                     "readonly": false,
                     "type": "Integer",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "NGAS mime-type",
@@ -966,7 +1429,9 @@
                     "description": "Mime-type to be used for archiving",
                     "readonly": false,
                     "type": "String",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "NGAS timeout",
@@ -976,21 +1441,18 @@
                     "description": "Timeout for receiving responses for NGAS",
                     "readonly": false,
                     "type": "Integer",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "3f8d671"
+            "sha": "4e76df6"
         },
         {
             "category": "ParameterSet",
-            "tag": "template",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -23,
+            "key": -26,
             "text": "ParameterSet",
             "description": "A set of parameters, wholly specified in EAGLE",
             "collapsed": false,
@@ -1001,10 +1463,8 @@
             "expanded": false,
             "inputApplicationName": "",
             "outputApplicationName": "",
-            "exitApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "exitApplicationType": "None",
             "inputPorts": [],
             "outputPorts": [
                 {
@@ -1029,7 +1489,9 @@
                     "description": "Estimated size of the data contained in this node",
                     "readonly": false,
                     "type": "Float",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Group end",
@@ -1039,7 +1501,9 @@
                     "description": "Is this node the end of a group?",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 }
             ],
             "applicationArgs": [
@@ -1051,7 +1515,9 @@
                     "description": "To what standard DALiuGE should filter and serialize the parameters.",
                     "readonly": true,
                     "type": "String",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "ConfigData",
@@ -1061,21 +1527,18 @@
                     "description": "Additional configuration information to be mixed in with the initial data",
                     "readonly": false,
                     "type": "String",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "3f8d671"
+            "sha": "4e76df6"
         },
         {
             "category": "S3",
-            "tag": "template",
-            "isData": false,
-            "isGroup": false,
-            "canHaveInputs": true,
-            "canHaveOutputs": true,
             "drawOrderHint": 0,
-            "key": -28,
+            "key": -31,
             "text": "S3",
             "description": "A 'bucket' object available on Amazon's Simple Storage Service (S3)",
             "collapsed": false,
@@ -1086,10 +1549,8 @@
             "expanded": false,
             "inputApplicationName": "",
             "outputApplicationName": "",
-            "exitApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "exitApplicationType": "None",
             "inputPorts": [],
             "outputPorts": [],
             "inputLocalPorts": [],
@@ -1105,7 +1566,9 @@
                     "description": "Estimated size of the data contained in this node",
                     "readonly": false,
                     "type": "Float",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Group end",
@@ -1115,7 +1578,9 @@
                     "description": "Is this node the end of a group?",
                     "readonly": false,
                     "type": "Boolean",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Bucket",
@@ -1125,7 +1590,9 @@
                     "description": "The S3 Bucket",
                     "readonly": false,
                     "type": "String",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Object Name",
@@ -1135,7 +1602,9 @@
                     "description": "The S3 Object",
                     "readonly": false,
                     "type": "String",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 },
                 {
                     "text": "Profile Name",
@@ -1145,12 +1614,14 @@
                     "description": "The S3 Profile",
                     "readonly": false,
                     "type": "String",
-                    "precious": false
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
                 }
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "3f8d671"
+            "sha": "4e76df6"
         }
     ],
     "linkDataArray": []
