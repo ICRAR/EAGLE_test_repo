@@ -6,7 +6,7 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "daliuge-master.palette",
-        "sha": "63ad05f",
+        "sha": "a9259a1",
         "git_url": "https://github.com/ICRAR/daliuge.git"
     },
     "nodeDataArray": [
@@ -142,7 +142,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "63ad05f"
+            "sha": "a9259a1"
         },
         {
             "category": "PythonApp",
@@ -254,7 +254,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "63ad05f"
+            "sha": "a9259a1"
         },
         {
             "category": "PythonApp",
@@ -363,7 +363,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "63ad05f"
+            "sha": "a9259a1"
         },
         {
             "category": "PythonApp",
@@ -514,7 +514,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "63ad05f"
+            "sha": "a9259a1"
         },
         {
             "category": "Gather",
@@ -524,7 +524,7 @@
             "git_url": "https://github.com/ICRAR/daliuge.git",
             "key": -11,
             "precious": false,
-            "sha": "63ad05f",
+            "sha": "a9259a1",
             "streaming": false,
             "text": "Gather/GenericNpyGatherApp",
             "inputAppFields": [
@@ -788,7 +788,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "63ad05f"
+            "sha": "a9259a1"
         },
         {
             "category": "Scatter",
@@ -798,7 +798,7 @@
             "git_url": "https://github.com/ICRAR/daliuge.git",
             "key": -13,
             "precious": false,
-            "sha": "63ad05f",
+            "sha": "a9259a1",
             "streaming": false,
             "text": "Scatter/GenericNpyScatterApp",
             "inputAppFields": [
@@ -1020,7 +1020,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "63ad05f"
+            "sha": "a9259a1"
         },
         {
             "category": "Scatter",
@@ -1030,7 +1030,7 @@
             "git_url": "https://github.com/ICRAR/daliuge.git",
             "key": -15,
             "precious": false,
-            "sha": "63ad05f",
+            "sha": "a9259a1",
             "streaming": false,
             "text": "Scatter/GenericScatterApp",
             "inputAppFields": [
@@ -1252,7 +1252,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "63ad05f"
+            "sha": "a9259a1"
         },
         {
             "category": "PythonApp",
@@ -1374,510 +1374,12 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "63ad05f"
+            "sha": "a9259a1"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
             "key": -20,
-            "text": "MSPlasmaReader",
-            "description": "Batch read entire Measurement Set from Plasma.",
-            "collapsed": false,
-            "showPorts": false,
-            "streaming": false,
-            "subject": null,
-            "selected": false,
-            "expanded": false,
-            "inputApplicationName": "",
-            "outputApplicationName": "",
-            "inputApplicationType": "None",
-            "outputApplicationType": "None",
-            "inputPorts": [
-                {
-                    "Id": "d6147716-abcb-4308-a64b-24af0eba9c30",
-                    "IdText": "plasma_ms_input",
-                    "text": "Plasma MS Input",
-                    "event": false,
-                    "type": "Measurement Set",
-                    "description": " Plasma MS store input"
-                }
-            ],
-            "outputPorts": [
-                {
-                    "Id": "10b988ec-445f-4586-b06a-8eded6302cc3",
-                    "IdText": "output_ms",
-                    "text": "Output MS",
-                    "event": false,
-                    "type": "Measurement Set",
-                    "description": " Output MS file"
-                }
-            ],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "fields": [
-                {
-                    "text": "Application class",
-                    "name": "appclass",
-                    "value": "dlg.apps.plasma.MSPlasmaReader",
-                    "default": "dlg.apps.plasma.MSPlasmaReader",
-                    "description": "Application class",
-                    "readonly": true,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": "false"
-                },
-                {
-                    "text": "Execution Time",
-                    "name": "execution_time",
-                    "value": "5",
-                    "default": "5",
-                    "description": "Estimated execution time",
-                    "readonly": true,
-                    "type": "Float",
-                    "precious": false,
-                    "options": [],
-                    "positional": "false"
-                },
-                {
-                    "text": "No. of CPUs",
-                    "name": "num_cpus",
-                    "value": "1",
-                    "default": "1",
-                    "description": "Number of cores used",
-                    "readonly": true,
-                    "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": "false"
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
-                    "value": "False",
-                    "default": "False",
-                    "description": "Is this node the start of a group?",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": "false"
-                },
-                {
-                    "text": "Input error rate (%)",
-                    "name": "input_error_threshold",
-                    "value": "0",
-                    "default": "0",
-                    "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": "false"
-                },
-                {
-                    "text": "Number of tries",
-                    "name": "n_tries",
-                    "value": "1",
-                    "default": "1",
-                    "description": "Specifies the number of times the 'run' method will be executed before finally giving up",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": "false"
-                }
-            ],
-            "applicationArgs": [],
-            "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "63ad05f"
-        },
-        {
-            "category": "PythonApp",
-            "drawOrderHint": 0,
-            "key": -21,
-            "text": "MSPlasmaWriter",
-            "description": "Batch write entire Measurement Set to Plasma.",
-            "collapsed": false,
-            "showPorts": false,
-            "streaming": false,
-            "subject": null,
-            "selected": false,
-            "expanded": false,
-            "inputApplicationName": "",
-            "outputApplicationName": "",
-            "inputApplicationType": "None",
-            "outputApplicationType": "None",
-            "inputPorts": [
-                {
-                    "Id": "769ded77-b796-468e-87e6-6a564669ca44",
-                    "IdText": "input_ms",
-                    "text": "Input MS",
-                    "event": false,
-                    "type": "Measurement Set",
-                    "description": " Input MS file"
-                }
-            ],
-            "outputPorts": [
-                {
-                    "Id": "98ac734c-aaa6-4361-9e4f-8eae5d60b441",
-                    "IdText": "plasma_ms_output",
-                    "text": "Plasma MS Output",
-                    "event": false,
-                    "type": "Measurement Set",
-                    "description": " Plasma MS store output"
-                }
-            ],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "fields": [
-                {
-                    "text": "Application class",
-                    "name": "appclass",
-                    "value": "dlg.apps.plasma.MSPlasmaWriter",
-                    "default": "dlg.apps.plasma.MSPlasmaWriter",
-                    "description": "Application class",
-                    "readonly": true,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": "false"
-                },
-                {
-                    "text": "Execution Time",
-                    "name": "execution_time",
-                    "value": "5",
-                    "default": "5",
-                    "description": "Estimated execution time",
-                    "readonly": true,
-                    "type": "Float",
-                    "precious": false,
-                    "options": [],
-                    "positional": "false"
-                },
-                {
-                    "text": "No. of CPUs",
-                    "name": "num_cpus",
-                    "value": "1",
-                    "default": "1",
-                    "description": "Number of cores used",
-                    "readonly": true,
-                    "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": "false"
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
-                    "value": "False",
-                    "default": "False",
-                    "description": "Is this node the start of a group?",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": "false"
-                },
-                {
-                    "text": "Input error rate (%)",
-                    "name": "input_error_threshold",
-                    "value": "0",
-                    "default": "0",
-                    "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": "false"
-                },
-                {
-                    "text": "Number of tries",
-                    "name": "n_tries",
-                    "value": "1",
-                    "default": "1",
-                    "description": "Specifies the number of times the 'run' method will be executed before finally giving up",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": "false"
-                }
-            ],
-            "applicationArgs": [],
-            "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "63ad05f"
-        },
-        {
-            "category": "PythonApp",
-            "drawOrderHint": 0,
-            "key": -22,
-            "text": "MSStreamingPlasmaConsumer",
-            "description": "Stream Measurement Set one correlator timestep at a time via Plasma.",
-            "collapsed": false,
-            "showPorts": false,
-            "streaming": false,
-            "subject": null,
-            "selected": false,
-            "expanded": false,
-            "inputApplicationName": "",
-            "outputApplicationName": "",
-            "inputApplicationType": "None",
-            "outputApplicationType": "None",
-            "inputPorts": [
-                {
-                    "Id": "2d4519ac-ef4f-41b1-b7ae-7dc4496d1636",
-                    "IdText": "plasma_ms_input",
-                    "text": "Plasma MS Input",
-                    "event": false,
-                    "type": "Measurement Set",
-                    "description": " Plasma MS input"
-                }
-            ],
-            "outputPorts": [
-                {
-                    "Id": "4dfaf59c-a448-4c76-8902-3181281511cb",
-                    "IdText": "output_file",
-                    "text": "Output File",
-                    "event": false,
-                    "type": "File",
-                    "description": " MS output file"
-                }
-            ],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "fields": [
-                {
-                    "text": "Application class",
-                    "name": "appclass",
-                    "value": "dlg.apps.plasma.MSStreamingPlasmaConsumer",
-                    "default": "dlg.apps.plasma.MSStreamingPlasmaConsumer",
-                    "description": "Application class",
-                    "readonly": true,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": "false"
-                },
-                {
-                    "text": "Execution Time",
-                    "name": "execution_time",
-                    "value": "5",
-                    "default": "5",
-                    "description": "Estimated execution time",
-                    "readonly": true,
-                    "type": "Float",
-                    "precious": false,
-                    "options": [],
-                    "positional": "false"
-                },
-                {
-                    "text": "No. of CPUs",
-                    "name": "num_cpus",
-                    "value": "1",
-                    "default": "1",
-                    "description": "Number of cores used",
-                    "readonly": true,
-                    "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": "false"
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
-                    "value": "False",
-                    "default": "False",
-                    "description": "Is this node the start of a group?",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": "false"
-                },
-                {
-                    "text": "Input error rate (%)",
-                    "name": "input_error_threshold",
-                    "value": "0",
-                    "default": "0",
-                    "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": "false"
-                },
-                {
-                    "text": "Number of tries",
-                    "name": "n_tries",
-                    "value": "1",
-                    "default": "1",
-                    "description": "Specifies the number of times the 'run' method will be executed before finally giving up",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": "false"
-                }
-            ],
-            "applicationArgs": [
-                {
-                    "text": "Plasma Path",
-                    "name": "plasma_path",
-                    "value": "",
-                    "default": "",
-                    "description": "Path to plasma store.",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": "false"
-                }
-            ],
-            "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "63ad05f"
-        },
-        {
-            "category": "PythonApp",
-            "drawOrderHint": 0,
-            "key": -23,
-            "text": "MSStreamingPlasmaProducer",
-            "description": "Stream Measurement Set one correlator timestep at a time via Plasma.",
-            "collapsed": false,
-            "showPorts": false,
-            "streaming": false,
-            "subject": null,
-            "selected": false,
-            "expanded": false,
-            "inputApplicationName": "",
-            "outputApplicationName": "",
-            "inputApplicationType": "None",
-            "outputApplicationType": "None",
-            "inputPorts": [
-                {
-                    "Id": "d700360f-2f1c-4589-8b7f-0c7abf07b907",
-                    "IdText": "input_file",
-                    "text": "Input File",
-                    "event": false,
-                    "type": "File",
-                    "description": " MS input file"
-                }
-            ],
-            "outputPorts": [
-                {
-                    "Id": "8ad792b5-634d-4ca6-b884-06d40223c0da",
-                    "IdText": "plasma_ms_output",
-                    "text": "Plasma MS Output",
-                    "event": false,
-                    "type": "Measurement Set",
-                    "description": " Plasma MS output"
-                }
-            ],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "fields": [
-                {
-                    "text": "Application class",
-                    "name": "appclass",
-                    "value": "dlg.apps.plasma.MSStreamingPlasmaProducer",
-                    "default": "dlg.apps.plasma.MSStreamingPlasmaProducer",
-                    "description": "Application class",
-                    "readonly": true,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": "false"
-                },
-                {
-                    "text": "Execution Time",
-                    "name": "execution_time",
-                    "value": "5",
-                    "default": "5",
-                    "description": "Estimated execution time",
-                    "readonly": true,
-                    "type": "Float",
-                    "precious": false,
-                    "options": [],
-                    "positional": "false"
-                },
-                {
-                    "text": "No. of CPUs",
-                    "name": "num_cpus",
-                    "value": "1",
-                    "default": "1",
-                    "description": "Number of cores used",
-                    "readonly": true,
-                    "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": "false"
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
-                    "value": "False",
-                    "default": "False",
-                    "description": "Is this node the start of a group?",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": "false"
-                },
-                {
-                    "text": "Input error rate (%)",
-                    "name": "input_error_threshold",
-                    "value": "0",
-                    "default": "0",
-                    "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": "false"
-                },
-                {
-                    "text": "Number of tries",
-                    "name": "n_tries",
-                    "value": "1",
-                    "default": "1",
-                    "description": "Specifies the number of times the 'run' method will be executed before finally giving up",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": "false"
-                }
-            ],
-            "applicationArgs": [
-                {
-                    "text": "Plasma Path",
-                    "name": "plasma_path",
-                    "value": "",
-                    "default": "",
-                    "description": "Path to plasma store",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": "false"
-                }
-            ],
-            "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "63ad05f"
-        },
-        {
-            "category": "PythonApp",
-            "drawOrderHint": 0,
-            "key": -24,
             "text": "NgasArchivingApp",
             "description": "Takes an input and archives it in an NGAS server.",
             "collapsed": false,
@@ -2042,12 +1544,12 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "63ad05f"
+            "sha": "a9259a1"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -29,
+            "key": -25,
             "text": "PyFuncApp",
             "description": "An application that wraps a simple python function. The inputs of the application are treated as the arguments of the function. Conversely, the output of the function is treated as the output of the application. If the application has more than one output, the result of calling the function is treated as an iterable, with each individual object being written to its corresponding output. \nUsers indicate the function to be wrapped via the ``func_name`` parameter. In this case func_name needs to specify a funtion in the standard form\n``module.function``\nand the module needs to be accessible on the PYTHONPATH of the DALiuGE engine. Note that the engine is expanding the standard PYTHONPATH with DLG_ROOT/code. That directory is always available, even if the engine is running in a docker container.\nOtherwise, users can also *send* over the python code using the ``func_code`` parameter. The code needs to be base64-encoded and produced with the marshal module of the same Python version used to run DALiuGE.\nBoth inputs and outputs are (de-)serialized using the pickle protocol if the value of the respective boolean component parameter is set to True. This is also applied to func_defaults and func_arg_mappings.\nIn addition to the input mapping the implementation also allows to set defaults both in the function itself and in a logical graph. If set in the logical graph using the func_defaults parameter, the defaults need to be specified as a dictionary of the form\n``{\"kwargs\":{\"kw1_name\":kw1_value, \"kw2_name\":kw2_value}, \"args\":[arg1, arg2]}``\nThe positional args will be used in order of appearance.",
             "collapsed": false,
@@ -2203,12 +1705,12 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "63ad05f"
+            "sha": "a9259a1"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -30,
+            "key": -26,
             "text": "RandomArrayApp",
             "description": "A testing APP that does not take any input and produces a random array of type int64, if integer is set to True, else of type float64. size indicates the number of elements ranging between the values low and high. The resulting array will be send to all connected output apps. \ninteger: bool [True], generate integer array low: float, lower boundary (will be converted to int for integer arrays) high: float, upper boundary (will be converted to int for integer arrays) size: int, number of array elements",
             "collapsed": false,
@@ -2361,12 +1863,12 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "63ad05f"
+            "sha": "a9259a1"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -32,
+            "key": -28,
             "text": "ScpApp",
             "description": "A BarrierAppDROP that copies the content of its single input onto its single output via SSH's scp protocol. \nDepending on the physical location of each DROP (this application, and its input and outputs) this application will copy data FROM another host or TO other host. This application's node must thus coincide with one of the two I/O DROPs.",
             "collapsed": false,
@@ -2516,12 +2018,12 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "63ad05f"
+            "sha": "a9259a1"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -34,
+            "key": -30,
             "text": "SleepAndCopyApp",
             "description": "",
             "collapsed": false,
@@ -2629,12 +2131,12 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "63ad05f"
+            "sha": "a9259a1"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -35,
+            "key": -31,
             "text": "SleepApp",
             "description": "A simple APP that sleeps the specified amount of time (0 by default). This is mainly useful (and used) to test graph translation and structure without executing real algorithms. Very useful for debugging.",
             "collapsed": false,
@@ -2742,12 +2244,12 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "63ad05f"
+            "sha": "a9259a1"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -36,
+            "key": -32,
             "text": "SocketListenerApp",
             "description": "A BarrierAppDROP that listens on a socket for data. The server-side socket expects only one client, and assumes that the client will close the connection after all its data has been sent. This application expects no input DROPs, and therefore raises an exception whenever one is added. On the output side, one or more outputs can be specified with the restriction that they are not ContainerDROPs so data can be written into them through the framework.",
             "collapsed": false,
@@ -2900,12 +2402,12 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "63ad05f"
+            "sha": "a9259a1"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -37,
+            "key": -33,
             "text": "UrlRetrieveApp",
             "description": "A simple APP that retrieves the content of a URL and writes it to all outputs.",
             "collapsed": false,
@@ -3022,7 +2524,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "63ad05f"
+            "sha": "a9259a1"
         }
     ],
     "linkDataArray": []
