@@ -1,0 +1,513 @@
+{
+    "modelData": {
+        "fileType": "Graph",
+        "repoService": "GitHub",
+        "repoBranch": "master",
+        "repo": "ICRAR/EAGLE_test_repo",
+        "filePath": "examples/rascil_blockvis_roundtrip.graph",
+        "eagleVersion": "v4.2.0",
+        "eagleCommitHash": "b34ff925a5c6883fdba168c073afeffb9a9fc446",
+        "schemaVersion": "OJS",
+        "readonly": true,
+        "sha": "",
+        "gitUrl": "",
+        "lastModifiedName": "",
+        "lastModifiedEmail": "",
+        "lastModifiedDatetime": "",
+        "numLGNodes": 3
+    },
+    "nodeDataArray": [
+        {
+            "category": "PythonApp",
+            "isGroup": false,
+            "color": "#0059a5",
+            "drawOrderHint": 0,
+            "key": -1,
+            "text": "create_blockvisibility_from_ms",
+            "description": "Minimal MS to BlockVisibility converter\n\nThe MS format is much more general than the RASCIL BlockVisibility so we cut many corners.\nThis requires casacore to be installed. If not an exception ModuleNotFoundError is raised.\n\nCreates a list of BlockVisibility's, split by field and spectral window\n\nReading of a subset of channels is possible using either start_chan and end_chan or channnum. Using start_chan\nand end_chan is preferred since it only reads the channels required. Channum is more flexible and can be used to\nread a random list of channels.",
+            "x": 1025.7476753321698,
+            "y": -227.67525370656836,
+            "width": 200,
+            "height": 72,
+            "collapsed": true,
+            "flipPorts": false,
+            "streaming": false,
+            "precious": false,
+            "subject": null,
+            "expanded": false,
+            "readonly": false,
+            "git_url": "",
+            "sha": "1.0",
+            "inputPorts": [],
+            "outputPorts": [
+                {
+                    "Id": "651ba7e4-1ce6-4a80-a0d0-2be338edca89",
+                    "IdText": "vis",
+                    "text": "vis",
+                    "event": false,
+                    "type": "None",
+                    "description": "BlockVis"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "Application Class",
+                    "name": "appclass",
+                    "value": "dlg.apps.pyfunc.PyFuncApp",
+                    "defaultValue": "",
+                    "description": "The python class that implements this application",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "defaultValue": "",
+                    "description": "Estimate of execution time (in seconds) for this application.",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "defaultValue": "",
+                    "description": "Number of CPUs used for this application.",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": false,
+                    "defaultValue": "",
+                    "description": "Is this node the start of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                }
+            ],
+            "applicationArgs": [
+                {
+                    "text": "Function Name",
+                    "name": "func_name",
+                    "value": "rascil.processing_components.visibility.base.create_blockvisibility_from_ms",
+                    "defaultValue": "",
+                    "description": "Python function name",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": "true"
+                },
+                {
+                    "text": "Pickle",
+                    "name": "pickle",
+                    "value": true,
+                    "defaultValue": "",
+                    "description": "Whether the python arguments are pickled.",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "msname",
+                    "name": "msname",
+                    "value": "SNR_G55_10s.calib.ms",
+                    "defaultValue": "",
+                    "description": "File name of MS",
+                    "readonly": false,
+                    "type": "msname",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "channum",
+                    "name": "channum",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "range of channels e.g. range(17,32), default is None meaning all",
+                    "readonly": false,
+                    "type": "Complex",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "start_chan",
+                    "name": "start_chan",
+                    "value": null,
+                    "defaultValue": "",
+                    "description": "Starting channel to read",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "end_chan",
+                    "name": "end_chan",
+                    "value": null,
+                    "defaultValue": "",
+                    "description": "End channel to read",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "ack",
+                    "name": "ack",
+                    "value": false,
+                    "defaultValue": "",
+                    "description": "Ask casacore to acknowledge each table operation",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "datacolumn",
+                    "name": "datacolumn",
+                    "value": "DATA",
+                    "defaultValue": "",
+                    "description": "MS data column to read DATA, CORRECTED_DATA, or MODEL_DATA",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "selected_sources",
+                    "name": "selected_sources",
+                    "value": "['G55.7+3.4']",
+                    "defaultValue": "",
+                    "description": "Sources to select",
+                    "readonly": false,
+                    "type": "Complex",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "selected_dds",
+                    "name": "selected_dds",
+                    "value": "[0]",
+                    "defaultValue": "",
+                    "description": "Data descriptors to select",
+                    "readonly": false,
+                    "type": "Json",
+                    "precious": true,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "average_channels",
+                    "name": "average_channels",
+                    "value": true,
+                    "defaultValue": "",
+                    "description": "Average all channels read",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                }
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputApplicationKey": null,
+            "inputApplicationDescription": "",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
+        },
+        {
+            "category": "Memory",
+            "isGroup": false,
+            "color": "#2c2c2c",
+            "drawOrderHint": 0,
+            "key": -4,
+            "text": "vis",
+            "description": "In-memory storage of intermediate data products",
+            "x": 1145.1537700952808,
+            "y": -169.97015482662957,
+            "width": 200,
+            "height": 72,
+            "collapsed": true,
+            "flipPorts": false,
+            "streaming": false,
+            "precious": false,
+            "subject": null,
+            "expanded": false,
+            "readonly": true,
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "226fab0",
+            "inputPorts": [
+                {
+                    "Id": "2b40b1bd-0d4c-428a-84f7-0805a636a4d6",
+                    "IdText": "vis",
+                    "text": "vis",
+                    "event": false,
+                    "type": "vis",
+                    "description": ""
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "bf1de905-0b94-4e54-915b-4a85c0c9555c",
+                    "IdText": "vis_list",
+                    "text": "vis_list",
+                    "event": false,
+                    "type": "list",
+                    "description": ""
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": 5,
+                    "defaultValue": "",
+                    "description": "Estimated size of the data contained in this node",
+                    "readonly": false,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": false,
+                    "defaultValue": "",
+                    "description": "Is this node the end of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                }
+            ],
+            "applicationArgs": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputApplicationKey": null,
+            "inputApplicationDescription": "",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
+        },
+        {
+            "category": "PythonApp",
+            "isGroup": false,
+            "color": "#0059a5",
+            "drawOrderHint": 0,
+            "key": -5,
+            "text": "export_blockvisibility_to_ms",
+            "description": "Minimal BlockVisibility to MS converter\n\nThe MS format is much more general than the RASCIL BlockVisibility so we cut many corners. This requires casacore to be\ninstalled. If not an exception ModuleNotFoundError is raised.\n\nWrite a list of BlockVisibility's to a MS file, split by field and spectral window",
+            "x": 1279.2823336455956,
+            "y": -215.75488422010085,
+            "width": 200,
+            "height": 72,
+            "collapsed": true,
+            "flipPorts": false,
+            "streaming": false,
+            "precious": false,
+            "subject": null,
+            "expanded": false,
+            "readonly": false,
+            "git_url": "",
+            "sha": "1.0",
+            "inputPorts": [
+                {
+                    "Id": "89e20429-d040-4063-91d3-330d58b0fae0",
+                    "IdText": "vis_list",
+                    "text": "vis_list",
+                    "event": false,
+                    "type": "list",
+                    "description": ""
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "43c205ff-c2c4-421c-a2b8-4ab326b3502b",
+                    "IdText": "output",
+                    "text": "output",
+                    "event": false,
+                    "type": "None",
+                    "description": ""
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "Application Class",
+                    "name": "appclass",
+                    "value": "dlg.apps.pyfunc.PyFuncApp",
+                    "defaultValue": "",
+                    "description": "The python class that implements this application",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "defaultValue": "",
+                    "description": "Estimate of execution time (in seconds) for this application.",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "defaultValue": "",
+                    "description": "Number of CPUs used for this application.",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": false,
+                    "defaultValue": "false",
+                    "description": "Is this node the start of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": true
+                }
+            ],
+            "applicationArgs": [
+                {
+                    "text": "Function Name",
+                    "name": "func_name",
+                    "value": "rascil.processing_components.visibility.base.export_blockvisibility_to_ms",
+                    "defaultValue": "",
+                    "description": "Python function name",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": "true"
+                },
+                {
+                    "text": "Pickle",
+                    "name": "pickle",
+                    "value": true,
+                    "defaultValue": "",
+                    "description": "Whether the python arguments are pickled.",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": "true"
+                },
+                {
+                    "text": "msname",
+                    "name": "msname",
+                    "value": "SNR_G55_10s.ms",
+                    "defaultValue": "",
+                    "description": "File name of MS",
+                    "readonly": false,
+                    "type": "msname",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "vis_list",
+                    "name": "vis_list",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "list of BlockVisibility",
+                    "readonly": false,
+                    "type": "vis_list",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                },
+                {
+                    "text": "source_name",
+                    "name": "source_name",
+                    "value": "G55.7+3.4",
+                    "defaultValue": "",
+                    "description": "Source name to use",
+                    "readonly": false,
+                    "type": "source_name",
+                    "precious": false,
+                    "options": [],
+                    "positional": "false"
+                }
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputApplicationKey": null,
+            "inputApplicationDescription": "",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
+        }
+    ],
+    "linkDataArray": [
+        {
+            "from": -1,
+            "fromPort": "651ba7e4-1ce6-4a80-a0d0-2be338edca89",
+            "to": -4,
+            "toPort": "2b40b1bd-0d4c-428a-84f7-0805a636a4d6",
+            "loop_aware": "0"
+        },
+        {
+            "from": -4,
+            "fromPort": "bf1de905-0b94-4e54-915b-4a85c0c9555c",
+            "to": -5,
+            "toPort": "89e20429-d040-4063-91d3-330d58b0fae0",
+            "loop_aware": "0"
+        }
+    ]
+}
