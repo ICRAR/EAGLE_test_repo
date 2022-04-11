@@ -5,9 +5,9 @@
         "repoBranch": "master",
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
-        "filePath": "/home/awicenec/git/EAGLE_test_repo/daliuge/daliuge-master.palette",
-        "sha": "master",
-        "git_url": "EAGLE_test_repo"
+        "filePath": "daliuge-master.palette",
+        "sha": "68d16c3",
+        "git_url": "https://github.com/ICRAR/daliuge.git"
     },
     "nodeDataArray": [
         {
@@ -15,7 +15,7 @@
             "drawOrderHint": 0,
             "key": -1,
             "text": "AverageArrays",
-            "description": "A testing APP that takes multiple numpy arrays on input and calculates the mean or the median, depending on the value provided in the method parameter. Users can add as many producers to the input array port as required and the resulting array will also be send to all connected output apps.",
+            "description": "A testing APP that takes multiple numpy arrays on input and calculates the mean or the median, depending on the value provided in the method parameter. Users can add as many producers to the input array port as required and the resulting array will also be send to all connected output apps. \nmethod: string <['mean']|'median'>, use mean or median as method.",
             "collapsed": false,
             "showPorts": false,
             "streaming": false,
@@ -141,8 +141,8 @@
                     "positional": "false"
                 }
             ],
-            "git_url": "EAGLE_test_repo",
-            "sha": "master"
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "68d16c3"
         },
         {
             "category": "PythonApp",
@@ -253,8 +253,8 @@
                 }
             ],
             "applicationArgs": [],
-            "git_url": "EAGLE_test_repo",
-            "sha": "master"
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "68d16c3"
         },
         {
             "category": "PythonApp",
@@ -362,8 +362,8 @@
                 }
             ],
             "applicationArgs": [],
-            "git_url": "EAGLE_test_repo",
-            "sha": "master"
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "68d16c3"
         },
         {
             "category": "PythonApp",
@@ -500,8 +500,8 @@
                     "positional": "false"
                 },
                 {
-                    "text": "reduce_axes",
-                    "name": "function",
+                    "text": "Reduce Axes",
+                    "name": "reduce_axes",
                     "value": "None",
                     "default": "None",
                     "description": "The ndarray axes to reduce, None reduces all axes for sum, prod, max, min functions",
@@ -513,18 +513,18 @@
                 }
             ],
             "applicationArgs": [],
-            "git_url": "EAGLE_test_repo",
-            "sha": "master"
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "68d16c3"
         },
         {
             "category": "Gather",
             "description": "A default Gather construct for the GenericNpyGatherApp component.",
             "fields": [],
             "applicationArgs": [],
-            "git_url": "EAGLE_test_repo",
+            "git_url": "https://github.com/ICRAR/daliuge.git",
             "key": -11,
             "precious": false,
-            "sha": "master",
+            "sha": "68d16c3",
             "streaming": false,
             "text": "Gather/GenericNpyGatherApp",
             "inputAppFields": [
@@ -622,8 +622,8 @@
                     "positional": "false"
                 },
                 {
-                    "text": "reduce_axes",
-                    "name": "function",
+                    "text": "Reduce Axes",
+                    "name": "reduce_axes",
                     "value": "None",
                     "default": "None",
                     "description": "The ndarray axes to reduce, None reduces all axes for sum, prod, max, min functions",
@@ -787,18 +787,18 @@
                     "positional": "false"
                 }
             ],
-            "git_url": "EAGLE_test_repo",
-            "sha": "master"
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "68d16c3"
         },
         {
             "category": "Scatter",
             "description": "A default Scatter construct for the GenericNpyScatterApp component.",
             "fields": [],
             "applicationArgs": [],
-            "git_url": "EAGLE_test_repo",
+            "git_url": "https://github.com/ICRAR/daliuge.git",
             "key": -13,
             "precious": false,
-            "sha": "master",
+            "sha": "68d16c3",
             "streaming": false,
             "text": "Scatter/GenericNpyScatterApp",
             "inputAppFields": [
@@ -1019,18 +1019,18 @@
                 }
             ],
             "applicationArgs": [],
-            "git_url": "EAGLE_test_repo",
-            "sha": "master"
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "68d16c3"
         },
         {
             "category": "Scatter",
             "description": "A default Scatter construct for the GenericScatterApp component.",
             "fields": [],
             "applicationArgs": [],
-            "git_url": "EAGLE_test_repo",
+            "git_url": "https://github.com/ICRAR/daliuge.git",
             "key": -15,
             "precious": false,
-            "sha": "master",
+            "sha": "68d16c3",
             "streaming": false,
             "text": "Scatter/GenericScatterApp",
             "inputAppFields": [
@@ -1251,15 +1251,15 @@
                     "positional": "false"
                 }
             ],
-            "git_url": "EAGLE_test_repo",
-            "sha": "master"
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "68d16c3"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
             "key": -18,
             "text": "ListAppendThrashingApp",
-            "description": "A testing APP that appends a random integer to a list num times. This is a CPU intensive operation and can thus be used to provide a test for application threading since this operation will not yield. The resulting array will be sent to all connected output apps.",
+            "description": "A testing APP that appends a random integer to a list num times. This is a CPU intensive operation and can thus be used to provide a test for application threading since this operation will not yield. The resulting array will be sent to all connected output apps. \nsize: int, number of array elements",
             "collapsed": false,
             "showPorts": false,
             "streaming": false,
@@ -1373,8 +1373,8 @@
                     "positional": "false"
                 }
             ],
-            "git_url": "EAGLE_test_repo",
-            "sha": "master"
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "68d16c3"
         },
         {
             "category": "PythonApp",
@@ -1543,15 +1543,15 @@
                     "positional": "false"
                 }
             ],
-            "git_url": "EAGLE_test_repo",
-            "sha": "master"
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "68d16c3"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -26,
+            "key": -25,
             "text": "PyFuncApp",
-            "description": "An application that wraps a simple python function. The inputs of the application are treated as the arguments of the function. Conversely, the output of the function is treated as the output of the application. If the application has more than one output, the result of calling the function is treated as an iterable, with each individual object being written to its corresponding output.",
+            "description": "An application that wraps a simple python function. The inputs of the application are treated as the arguments of the function. Conversely, the output of the function is treated as the output of the application. If the application has more than one output, the result of calling the function is treated as an iterable, with each individual object being written to its corresponding output. \nUsers indicate the function to be wrapped via the ``func_name`` parameter. In this case func_name needs to specify a funtion in the standard form\n``module.function``\nand the module needs to be accessible on the PYTHONPATH of the DALiuGE engine. Note that the engine is expanding the standard PYTHONPATH with DLG_ROOT/code. That directory is always available, even if the engine is running in a docker container.\nOtherwise, users can also *send* over the python code using the ``func_code`` parameter. The code needs to be base64-encoded and produced with the marshal module of the same Python version used to run DALiuGE.\nBoth inputs and outputs are (de-)serialized using the pickle protocol if the value of the respective boolean component parameter is set to True. This is also applied to func_defaults and func_arg_mappings.\nIn addition to the input mapping the implementation also allows to set defaults both in the function itself and in a logical graph. If set in the logical graph using the func_defaults parameter, the defaults need to be specified as a dictionary of the form\n``{\"kwargs\":{\"kw1_name\":kw1_value, \"kw2_name\":kw2_value}, \"args\":[arg1, arg2]}``\nThe positional args will be used in order of appearance.",
             "collapsed": false,
             "showPorts": false,
             "streaming": false,
@@ -1704,15 +1704,15 @@
                     "positional": "false"
                 }
             ],
-            "git_url": "EAGLE_test_repo",
-            "sha": "master"
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "68d16c3"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -27,
+            "key": -26,
             "text": "RandomArrayApp",
-            "description": "A testing APP that does not take any input and produces a random array of type int64, if integer is set to True, else of type float64. size indicates the number of elements ranging between the values low and high. The resulting array will be send to all connected output apps.",
+            "description": "A testing APP that does not take any input and produces a random array of type int64, if integer is set to True, else of type float64. size indicates the number of elements ranging between the values low and high. The resulting array will be send to all connected output apps. \ninteger: bool [True], generate integer array low: float, lower boundary (will be converted to int for integer arrays) high: float, upper boundary (will be converted to int for integer arrays) size: int, number of array elements",
             "collapsed": false,
             "showPorts": false,
             "streaming": false,
@@ -1862,15 +1862,15 @@
                     "positional": "false"
                 }
             ],
-            "git_url": "EAGLE_test_repo",
-            "sha": "master"
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "68d16c3"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -30,
+            "key": -28,
             "text": "ScpApp",
-            "description": "A BarrierAppDROP that copies the content of its single input onto its single output via SSH's scp protocol.",
+            "description": "A BarrierAppDROP that copies the content of its single input onto its single output via SSH's scp protocol. \nDepending on the physical location of each DROP (this application, and its input and outputs) this application will copy data FROM another host or TO other host. This application's node must thus coincide with one of the two I/O DROPs.",
             "collapsed": false,
             "showPorts": false,
             "streaming": false,
@@ -2017,13 +2017,13 @@
                     "positional": "false"
                 }
             ],
-            "git_url": "EAGLE_test_repo",
-            "sha": "master"
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "68d16c3"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -32,
+            "key": -30,
             "text": "SleepAndCopyApp",
             "description": "",
             "collapsed": false,
@@ -2130,13 +2130,13 @@
                     "positional": "false"
                 }
             ],
-            "git_url": "EAGLE_test_repo",
-            "sha": "master"
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "68d16c3"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -33,
+            "key": -31,
             "text": "SleepApp",
             "description": "A simple APP that sleeps the specified amount of time (0 by default). This is mainly useful (and used) to test graph translation and structure without executing real algorithms. Very useful for debugging.",
             "collapsed": false,
@@ -2243,13 +2243,13 @@
                     "positional": "false"
                 }
             ],
-            "git_url": "EAGLE_test_repo",
-            "sha": "master"
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "68d16c3"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -34,
+            "key": -32,
             "text": "SocketListenerApp",
             "description": "A BarrierAppDROP that listens on a socket for data. The server-side socket expects only one client, and assumes that the client will close the connection after all its data has been sent. This application expects no input DROPs, and therefore raises an exception whenever one is added. On the output side, one or more outputs can be specified with the restriction that they are not ContainerDROPs so data can be written into them through the framework.",
             "collapsed": false,
@@ -2401,13 +2401,13 @@
                     "positional": "false"
                 }
             ],
-            "git_url": "EAGLE_test_repo",
-            "sha": "master"
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "68d16c3"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -35,
+            "key": -33,
             "text": "UrlRetrieveApp",
             "description": "A simple APP that retrieves the content of a URL and writes it to all outputs.",
             "collapsed": false,
@@ -2523,8 +2523,8 @@
                     "positional": "false"
                 }
             ],
-            "git_url": "EAGLE_test_repo",
-            "sha": "master"
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "68d16c3"
         }
     ],
     "linkDataArray": []
