@@ -6,8 +6,8 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "jacal-master.palette",
-        "sha": "ba3971c",
-        "git_url": "https://gitlab-ci-token:tJdBs7QmVCuTKu8_8JyM@gitlab.com/ska-telescope/ska-sdp-jacal.git"
+        "sha": "1fb8652",
+        "git_url": "https://gitlab-ci-token:WbY3xBnSgGpRuYhDqn4n@gitlab.com/ska-telescope/ska-sdp-jacal.git"
     },
     "nodeDataArray": [
         {
@@ -85,13 +85,357 @@
                     "positional": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:tJdBs7QmVCuTKu8_8JyM@gitlab.com/ska-telescope/ska-sdp-jacal.git",
-            "sha": "ba3971c"
+            "git_url": "https://gitlab-ci-token:WbY3xBnSgGpRuYhDqn4n@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "1fb8652"
         },
         {
             "category": "DynlibApp",
             "drawOrderHint": 0,
             "key": -2,
+            "text": "GenerateGridData",
+            "description": "Calculates the Normal Equations\nThis class encorporates all of the tasks needed to form imaging Normal Equations: read from a measurement set; degrid model visibilities; subtract model visibilities; grid residual visibilities and FFT the grid",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "e5a76107-5cd7-49aa-9b1d-f6baaaa63313",
+                    "IdText": "Config",
+                    "text": "Config",
+                    "event": false,
+                    "type": "LOFARParameterSet",
+                    "description": " ParameterSet descriptor for the image solver"
+                },
+                {
+                    "Id": "285c510f-cb78-4621-8cba-cb80a2ec6fe0",
+                    "IdText": "VisInfo",
+                    "text": "VisInfo",
+                    "event": false,
+                    "type": "VisInfo",
+                    "description": " Visiblity metadata"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "6bb608a9-d99f-425c-967c-a6fd13bcb518",
+                    "IdText": "GriddingInfo",
+                    "text": "GriddingInfo",
+                    "event": false,
+                    "type": "GriddingInfo",
+                    "description": " Gridding metadata"
+                },
+                {
+                    "Id": "1261d424-1ca8-486a-91ca-8f14b4aece40",
+                    "IdText": "vis",
+                    "text": "vis",
+                    "event": false,
+                    "type": "stdvector<std::vector<std::complex<float> > >",
+                    "description": " Visibility data"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [],
+            "applicationArgs": [
+                {
+                    "text": "Library Path",
+                    "name": "libpath",
+                    "value": "%JACAL_SO%",
+                    "default": "%JACAL_SO%",
+                    "description": "The path to the JACAL librarc",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": "name=GenerateGridData",
+                    "default": "name=GenerateGridData",
+                    "description": "",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                }
+            ],
+            "git_url": "https://gitlab-ci-token:WbY3xBnSgGpRuYhDqn4n@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "1fb8652"
+        },
+        {
+            "category": "DynlibApp",
+            "drawOrderHint": 0,
+            "key": -3,
+            "text": "GridInvert",
+            "description": "Calculates Model Visiblities\nThis class forms a set of model visibilties by degridding a model image",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "0c6856de-6190-4c2c-83ba-94c28b801bff",
+                    "IdText": "Config",
+                    "text": "Config",
+                    "event": false,
+                    "type": "LOFARParameterSet",
+                    "description": " ParameterSet descriptor for the image solver"
+                },
+                {
+                    "Id": "44d49998-edea-4a7b-894f-ad6130319150",
+                    "IdText": "GriddingInfo",
+                    "text": "GriddingInfo",
+                    "event": false,
+                    "type": "GriddingInfo",
+                    "description": " Gridding metadata"
+                },
+                {
+                    "Id": "c54b5710-1443-40b6-bad5-89f7a9eafd2f",
+                    "IdText": "vis",
+                    "text": "vis",
+                    "event": false,
+                    "type": "stdvector<std::vector<std::complex<float> > >",
+                    "description": " Visibility data"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "572b7dfe-4346-4451-bdf6-934afd0f99db",
+                    "IdText": "Normal",
+                    "text": "Normal",
+                    "event": false,
+                    "type": "scimathImagingNormalEquations",
+                    "description": " ImagingNormalEquations to solve"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [],
+            "applicationArgs": [
+                {
+                    "text": "Library Path",
+                    "name": "libpath",
+                    "value": "%JACAL_SO%",
+                    "default": "%JACAL_SO%",
+                    "description": "The path to the JACAL librarc",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": "name=GridInvert",
+                    "default": "name=GridInvert",
+                    "description": "",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                }
+            ],
+            "git_url": "https://gitlab-ci-token:WbY3xBnSgGpRuYhDqn4n@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "1fb8652"
+        },
+        {
+            "category": "DynlibApp",
+            "drawOrderHint": 0,
+            "key": -4,
+            "text": "GridPredict",
+            "description": "Calculates Model Visiblities\nThis class forms a set of model visibilties by degridding a model image",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "eb79e3f9-7b36-4832-a98d-ca0f2dfc4572",
+                    "IdText": "Config",
+                    "text": "Config",
+                    "event": false,
+                    "type": "LOFARParameterSet",
+                    "description": " ParameterSet descriptor for the image solver"
+                },
+                {
+                    "Id": "ee5ed6ce-beef-4214-98ea-3e473f8579d8",
+                    "IdText": "Model",
+                    "text": "Model",
+                    "event": false,
+                    "type": "scimathParams",
+                    "description": " Params of solved normal equations"
+                },
+                {
+                    "Id": "e23f2bda-6833-41b1-b38d-ea497c18db76",
+                    "IdText": "GriddingInfo",
+                    "text": "GriddingInfo",
+                    "event": false,
+                    "type": "GriddingInfo",
+                    "description": " Gridding metadata"
+                },
+                {
+                    "Id": "48532bcd-63b9-4b4c-ae92-c019e9b39ed1",
+                    "IdText": "vis",
+                    "text": "vis",
+                    "event": false,
+                    "type": "stdvector<std::vector<std::complex<float> > >",
+                    "description": " Visibility data"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "d9ddd8b9-1a1f-4c8d-8674-d83dc083641a",
+                    "IdText": "vis",
+                    "text": "vis",
+                    "event": false,
+                    "type": "stdvector<std::vector<std::complex<float> > >",
+                    "description": " Residual visibility data"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [],
+            "applicationArgs": [
+                {
+                    "text": "Library Path",
+                    "name": "libpath",
+                    "value": "%JACAL_SO%",
+                    "default": "%JACAL_SO%",
+                    "description": "The path to the JACAL librarc",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": "name=GridPredict",
+                    "default": "name=GridPredict",
+                    "description": "",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                }
+            ],
+            "git_url": "https://gitlab-ci-token:WbY3xBnSgGpRuYhDqn4n@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "1fb8652"
+        },
+        {
+            "category": "DynlibApp",
+            "drawOrderHint": 0,
+            "key": -5,
+            "text": "Ingest",
+            "description": "Calculates the Normal Equations\nThis class encorporates all of the tasks needed to form imaging Normal Equations: read from a measurement set; degrid model visibilities; subtract model visibilities; grid residual visibilities and FFT the grid",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "52632057-a8db-449e-9f21-5ec3e8677076",
+                    "IdText": "Config",
+                    "text": "Config",
+                    "event": false,
+                    "type": "LOFARParameterSet",
+                    "description": " ParameterSet descriptor for the image solver"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "58d082be-cd3f-4644-89da-81e6b2301039",
+                    "IdText": "visVector",
+                    "text": "visVector",
+                    "event": false,
+                    "type": "stdvector<float>",
+                    "description": " Visiblity data"
+                },
+                {
+                    "Id": "993e0d26-655f-43ea-900d-df617f887c11",
+                    "IdText": "VisInfo",
+                    "text": "VisInfo",
+                    "event": false,
+                    "type": "visibilityData",
+                    "description": " Visiblity metadata"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [],
+            "applicationArgs": [
+                {
+                    "text": "Library Path",
+                    "name": "libpath",
+                    "value": "%JACAL_SO%",
+                    "default": "%JACAL_SO%",
+                    "description": "The path to the JACAL librarc",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Arg01",
+                    "name": "Arg01",
+                    "value": "name=Ingest",
+                    "default": "name=Ingest",
+                    "description": "",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                }
+            ],
+            "git_url": "https://gitlab-ci-token:WbY3xBnSgGpRuYhDqn4n@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "1fb8652"
+        },
+        {
+            "category": "DynlibApp",
+            "drawOrderHint": 0,
+            "key": -6,
             "text": "InitSpectralCube",
             "description": "Build the output image cube\nThis class builds the output cube in the format specified by the parset.",
             "collapsed": false,
@@ -146,13 +490,13 @@
                     "positional": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:tJdBs7QmVCuTKu8_8JyM@gitlab.com/ska-telescope/ska-sdp-jacal.git",
-            "sha": "ba3971c"
+            "git_url": "https://gitlab-ci-token:WbY3xBnSgGpRuYhDqn4n@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "1fb8652"
         },
         {
             "category": "DynlibApp",
             "drawOrderHint": 0,
-            "key": -3,
+            "key": -7,
             "text": "LoadNE",
             "description": "Example class that simply loads Normal Equations from a drop\nImplements a test method that uses the contents of the the parset to load in a measurement set and print a summary of its contents. We will simply load in a NormalEquation from a daliuge drop and output the image. This simply tests the NE interface to the daliuge memory drop.",
             "collapsed": false,
@@ -207,13 +551,13 @@
                     "positional": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:tJdBs7QmVCuTKu8_8JyM@gitlab.com/ska-telescope/ska-sdp-jacal.git",
-            "sha": "ba3971c"
+            "git_url": "https://gitlab-ci-token:WbY3xBnSgGpRuYhDqn4n@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "1fb8652"
         },
         {
             "category": "DynlibApp",
             "drawOrderHint": 0,
-            "key": -4,
+            "key": -8,
             "text": "LoadParset",
             "description": "Load a LOFAR Parameter Set in the DaliugeApplication Framework\nLoads a configuration from a file drop and generates a LOFAR::ParameterSet The first ASKAP example in the Daliuge framework that actually performs an ASKAP related task. We load a parset into memory from either a file or another Daliuge drop_status",
             "collapsed": false,
@@ -277,13 +621,13 @@
                     "positional": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:tJdBs7QmVCuTKu8_8JyM@gitlab.com/ska-telescope/ska-sdp-jacal.git",
-            "sha": "ba3971c"
+            "git_url": "https://gitlab-ci-token:WbY3xBnSgGpRuYhDqn4n@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "1fb8652"
         },
         {
             "category": "DynlibApp",
             "drawOrderHint": 0,
-            "key": -5,
+            "key": -9,
             "text": "LoadVis",
             "description": "Loads a visibility set, grids it onto the UV plane and FFTs the grid\nLoads a configuration from a file drop and a visibility set from a casacore::Measurement Set",
             "collapsed": false,
@@ -347,13 +691,13 @@
                     "positional": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:tJdBs7QmVCuTKu8_8JyM@gitlab.com/ska-telescope/ska-sdp-jacal.git",
-            "sha": "ba3971c"
+            "git_url": "https://gitlab-ci-token:WbY3xBnSgGpRuYhDqn4n@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "1fb8652"
         },
         {
             "category": "DynlibApp",
             "drawOrderHint": 0,
-            "key": -6,
+            "key": -10,
             "text": "MajorCycle",
             "description": "Loads a visibility set, grids it onto the UV plane and FFTs the grid\nLoads a configuration from a file drop and a visibility set from a casacore::Measurement Set",
             "collapsed": false,
@@ -425,13 +769,13 @@
                     "positional": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:tJdBs7QmVCuTKu8_8JyM@gitlab.com/ska-telescope/ska-sdp-jacal.git",
-            "sha": "ba3971c"
+            "git_url": "https://gitlab-ci-token:WbY3xBnSgGpRuYhDqn4n@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "1fb8652"
         },
         {
             "category": "DynlibApp",
             "drawOrderHint": 0,
-            "key": -7,
+            "key": -11,
             "text": "NESpectralCube",
             "description": "Build an output image cube from input NormalEquations\nThis class builds the output cube is whatever format specified by the parset. Generates a cube of NormalEquation slices.",
             "collapsed": false,
@@ -494,13 +838,13 @@
                     "positional": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:tJdBs7QmVCuTKu8_8JyM@gitlab.com/ska-telescope/ska-sdp-jacal.git",
-            "sha": "ba3971c"
+            "git_url": "https://gitlab-ci-token:WbY3xBnSgGpRuYhDqn4n@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "1fb8652"
         },
         {
             "category": "DynlibApp",
             "drawOrderHint": 0,
-            "key": -8,
+            "key": -12,
             "text": "OutputParams",
             "description": "Solves an Normal Equation provided by a Daliuge Drop. Outputs the Params class as images.\nImplements an ASKAPSoft solver. This essentially takes a NormalEquation and generates a a set of \"params\" usually via a minor cycle deconvolution. We will simply load in a NormalEquation from a daliuge drop and solve it via a minor cycle deconvolution. This drop actually generates the output images based upon the contents of the Params object.",
             "collapsed": false,
@@ -571,13 +915,13 @@
                     "positional": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:tJdBs7QmVCuTKu8_8JyM@gitlab.com/ska-telescope/ska-sdp-jacal.git",
-            "sha": "ba3971c"
+            "git_url": "https://gitlab-ci-token:WbY3xBnSgGpRuYhDqn4n@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "1fb8652"
         },
         {
             "category": "DynlibApp",
             "drawOrderHint": 0,
-            "key": -9,
+            "key": -13,
             "text": "ReduceNE",
             "description": "Merge two Normal Equation objects\nUse askap::scimath::ImagingNormalEquations::merge() to merge two NEs",
             "collapsed": false,
@@ -649,13 +993,13 @@
                     "positional": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:tJdBs7QmVCuTKu8_8JyM@gitlab.com/ska-telescope/ska-sdp-jacal.git",
-            "sha": "ba3971c"
+            "git_url": "https://gitlab-ci-token:WbY3xBnSgGpRuYhDqn4n@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "1fb8652"
         },
         {
             "category": "DynlibApp",
             "drawOrderHint": 0,
-            "key": -10,
+            "key": -14,
             "text": "RestoreSolver",
             "description": "Implements an ASKAPSoft Restore solver. This essentially takes a NormalEquation and a set of \"params\" and creates a restored image.\nThis takes a configuration and a set of normal equations and uses the Solver requested in in the ParameterSet to produce an ouput model.",
             "collapsed": false,
@@ -727,13 +1071,13 @@
                     "positional": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:tJdBs7QmVCuTKu8_8JyM@gitlab.com/ska-telescope/ska-sdp-jacal.git",
-            "sha": "ba3971c"
+            "git_url": "https://gitlab-ci-token:WbY3xBnSgGpRuYhDqn4n@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "1fb8652"
         },
         {
             "category": "DynlibApp",
             "drawOrderHint": 0,
-            "key": -11,
+            "key": -15,
             "text": "SolveNE",
             "description": "Implements an ASKAPSoft solver. This essentially takes a NormalEquation and generates a set of params usually via a minor cycle deconvolution.\nThis takes a configuration and a set of normal equations and uses the Solver requested in in the ParameterSet to produce an ouput model.",
             "collapsed": false,
@@ -797,13 +1141,13 @@
                     "positional": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:tJdBs7QmVCuTKu8_8JyM@gitlab.com/ska-telescope/ska-sdp-jacal.git",
-            "sha": "ba3971c"
+            "git_url": "https://gitlab-ci-token:WbY3xBnSgGpRuYhDqn4n@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "1fb8652"
         },
         {
             "category": "DynlibApp",
             "drawOrderHint": 0,
-            "key": -12,
+            "key": -16,
             "text": "SpectralCube",
             "description": "Build the output image cube\nThis class builds the output cube is whatever format specified by the parset.",
             "collapsed": false,
@@ -867,13 +1211,13 @@
                     "positional": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:tJdBs7QmVCuTKu8_8JyM@gitlab.com/ska-telescope/ska-sdp-jacal.git",
-            "sha": "ba3971c"
+            "git_url": "https://gitlab-ci-token:WbY3xBnSgGpRuYhDqn4n@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "1fb8652"
         },
         {
             "category": "ParameterSet",
             "drawOrderHint": 0,
-            "key": -13,
+            "key": -17,
             "text": "YandaParset",
             "description": "A first cut at a complete parameter set template",
             "collapsed": false,
@@ -4485,7 +4829,7 @@
                         "This parameter defines whether the values below cutoff are masked out or not. By default",
                         " the are masked out and so S"
                     ],
-                    "positional": "n-based clean never finds optima among these values. if this parameter is true, the mask is actually sqrt(tolerance), which corresponds to truncation of the diagonal during normalisation. this potentially allows cleaning to happen, if no peak of the s"
+                    "positional": false
                 },
                 {
                     "text": "solver.Clean.algorithm",
@@ -4804,8 +5148,8 @@
                     "positional": false
                 }
             ],
-            "git_url": "https://gitlab-ci-token:tJdBs7QmVCuTKu8_8JyM@gitlab.com/ska-telescope/ska-sdp-jacal.git",
-            "sha": "ba3971c"
+            "git_url": "https://gitlab-ci-token:WbY3xBnSgGpRuYhDqn4n@gitlab.com/ska-telescope/ska-sdp-jacal.git",
+            "sha": "1fb8652"
         }
     ],
     "linkDataArray": []
