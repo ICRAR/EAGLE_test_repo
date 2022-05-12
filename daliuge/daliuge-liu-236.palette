@@ -6,7 +6,7 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "daliuge-liu-236.palette",
-        "sha": "91823b7",
+        "sha": "42d30bd",
         "git_url": "https://github.com/ICRAR/daliuge.git"
     },
     "nodeDataArray": [
@@ -15,7 +15,7 @@
             "drawOrderHint": 0,
             "key": -1,
             "text": "AverageArrays",
-            "description": "A testing APP that takes multiple numpy arrays on input and calculates the mean or the median, depending on the value provided in the method parameter. Users can add as many producers to the input array port as required and the resulting array will also be send to all connected output apps. \nmethod: string <['mean']|'median'>, use mean or median as method.",
+            "description": "A testing APP that takes multiple numpy arrays on input and calculates the mean or the median, depending on the value provided in the method parameter. Users can add as many producers to the input array port as required and the resulting array will also be send to all connected output apps.",
             "collapsed": false,
             "showPorts": false,
             "streaming": false,
@@ -142,7 +142,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "91823b7"
+            "sha": "42d30bd"
         },
         {
             "category": "PythonApp",
@@ -254,7 +254,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "91823b7"
+            "sha": "42d30bd"
         },
         {
             "category": "PythonApp",
@@ -363,7 +363,122 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "91823b7"
+            "sha": "42d30bd"
+        },
+        {
+            "category": "EnvironmentVariables",
+            "drawOrderHint": 0,
+            "key": -8,
+            "text": "Environment variables",
+            "description": "A set of environment variables, wholly specified in EAGLE and accessible to all drops.",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "inputPorts": [],
+            "outputPorts": [],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [],
+            "applicationArgs": [],
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "42d30bd"
+        },
+        {
+            "category": "File",
+            "drawOrderHint": 0,
+            "key": -9,
+            "text": "File",
+            "description": "A standard file on a filesystem mounted to the deployment machine",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "inputPorts": [],
+            "outputPorts": [],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "5",
+                    "default": "5",
+                    "description": "Estimated size of the data contained in this node",
+                    "readonly": false,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "False",
+                    "default": "False",
+                    "description": "Is this node the end of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Check file path exists",
+                    "name": "check_filepath_exists",
+                    "value": "True",
+                    "default": "True",
+                    "description": "Perform a check to make sure the file path exists before proceeding with the application",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "File Path",
+                    "name": "filepath",
+                    "value": "",
+                    "default": "",
+                    "description": "Path to the file for this node",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Directory name",
+                    "name": "dirname",
+                    "value": "",
+                    "default": "",
+                    "description": "Path to the file for this node",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                }
+            ],
+            "applicationArgs": [],
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "42d30bd"
         },
         {
             "category": "PythonApp",
@@ -514,7 +629,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "91823b7"
+            "sha": "42d30bd"
         },
         {
             "category": "Gather",
@@ -524,7 +639,7 @@
             "git_url": "https://github.com/ICRAR/daliuge.git",
             "key": -11,
             "precious": false,
-            "sha": "91823b7",
+            "sha": "42d30bd",
             "streaming": false,
             "text": "Gather/GenericNpyGatherApp",
             "inputAppFields": [
@@ -788,7 +903,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "91823b7"
+            "sha": "42d30bd"
         },
         {
             "category": "Scatter",
@@ -798,7 +913,7 @@
             "git_url": "https://github.com/ICRAR/daliuge.git",
             "key": -13,
             "precious": false,
-            "sha": "91823b7",
+            "sha": "42d30bd",
             "streaming": false,
             "text": "Scatter/GenericNpyScatterApp",
             "inputAppFields": [
@@ -1020,7 +1135,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "91823b7"
+            "sha": "42d30bd"
         },
         {
             "category": "Scatter",
@@ -1030,7 +1145,7 @@
             "git_url": "https://github.com/ICRAR/daliuge.git",
             "key": -15,
             "precious": false,
-            "sha": "91823b7",
+            "sha": "42d30bd",
             "streaming": false,
             "text": "Scatter/GenericScatterApp",
             "inputAppFields": [
@@ -1252,14 +1367,66 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "91823b7"
+            "sha": "42d30bd"
+        },
+        {
+            "category": "Memory",
+            "drawOrderHint": 0,
+            "key": -17,
+            "text": "Memory",
+            "description": "In-memory storage of intermediate data products",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "inputPorts": [],
+            "outputPorts": [],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "5",
+                    "default": "5",
+                    "description": "Estimated size of the data contained in this node",
+                    "readonly": false,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "False",
+                    "default": "False",
+                    "description": "Is this node the end of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                }
+            ],
+            "applicationArgs": [],
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "42d30bd"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
             "key": -18,
             "text": "ListAppendThrashingApp",
-            "description": "A testing APP that appends a random integer to a list num times. This is a CPU intensive operation and can thus be used to provide a test for application threading since this operation will not yield. The resulting array will be sent to all connected output apps. \nsize: int, number of array elements",
+            "description": "A testing APP that appends a random integer to a list num times. This is a CPU intensive operation and can thus be used to provide a test for application threading since this operation will not yield. The resulting array will be sent to all connected output apps.",
             "collapsed": false,
             "showPorts": false,
             "streaming": false,
@@ -1374,7 +1541,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "91823b7"
+            "sha": "42d30bd"
         },
         {
             "category": "PythonApp",
@@ -1544,14 +1711,14 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "91823b7"
+            "sha": "42d30bd"
         },
         {
-            "category": "PythonApp",
+            "category": "NGAS",
             "drawOrderHint": 0,
-            "key": -26,
-            "text": "PyFuncApp",
-            "description": "An application that wraps a simple python function. The inputs of the application are treated as the arguments of the function. Conversely, the output of the function is treated as the output of the application. If the application has more than one output, the result of calling the function is treated as an iterable, with each individual object being written to its corresponding output. \nUsers indicate the function to be wrapped via the ``func_name`` parameter. In this case func_name needs to specify a funtion in the standard form\n``module.function``\nand the module needs to be accessible on the PYTHONPATH of the DALiuGE engine. Note that the engine is expanding the standard PYTHONPATH with DLG_ROOT/code. That directory is always available, even if the engine is running in a docker container.\nOtherwise, users can also *send* over the python code using the ``func_code`` parameter. The code needs to be base64-encoded and produced with the marshal module of the same Python version used to run DALiuGE.\nBoth inputs and outputs are (de-)serialized using the pickle protocol if the value of the respective boolean component parameter is set to True. This is also applied to func_defaults and func_arg_mappings.\nIn addition to the input mapping the implementation also allows to set defaults both in the function itself and in a logical graph. If set in the logical graph using the func_defaults parameter, the defaults need to be specified as a dictionary of the form\n``{\"kwargs\":{\"kw1_name\":kw1_value, \"kw2_name\":kw2_value}, \"args\":[arg1, arg2]}``\nThe positional args will be used in order of appearance.",
+            "key": -21,
+            "text": "NGAS",
+            "description": "An archive on the Next Generation Archive System (NGAS).",
             "collapsed": false,
             "showPorts": false,
             "streaming": false,
@@ -1570,23 +1737,135 @@
             "outputAppFields": [],
             "fields": [
                 {
-                    "text": "Application Class",
-                    "name": "appclass",
-                    "value": "dlg.apps.pyfunc.PyFuncApp",
-                    "default": "dlg.apps.pyfunc.PyFuncApp",
-                    "description": "Application class",
-                    "readonly": true,
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "5",
+                    "default": "5",
+                    "description": "Estimated size of the data contained in this node",
+                    "readonly": false,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "False",
+                    "default": "False",
+                    "description": "Is this node the end of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "NGAS Server",
+                    "name": "ngsSrv",
+                    "value": "localhost",
+                    "default": "localhost",
+                    "description": "The URL of the NGAS Server",
+                    "readonly": false,
                     "type": "String",
                     "precious": false,
                     "options": [],
                     "positional": false
                 },
                 {
-                    "text": "Execution Time",
-                    "name": "execution_time",
-                    "value": "5",
-                    "default": "5",
-                    "description": "Estimated execution time",
+                    "text": "NGAS Port",
+                    "name": "ngasPort",
+                    "value": "7777",
+                    "default": "7777",
+                    "description": "The port of the NGAS Server",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "File ID",
+                    "name": "ngasFileId",
+                    "value": "",
+                    "default": "",
+                    "description": "File ID on NGAS (for retrieval only)",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Connection timeout",
+                    "name": "ngasConnectTimeout",
+                    "value": "2",
+                    "default": "2",
+                    "description": "Timeout for connecting to the NGAS server",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "NGAS mime-type",
+                    "name": "ngasMime",
+                    "value": "text/ascii",
+                    "default": "text/ascii",
+                    "description": "Mime-type to be used for archiving",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "NGAS timeout",
+                    "name": "ngasTimeout",
+                    "value": "2",
+                    "default": "2",
+                    "description": "Timeout for receiving responses for NGAS",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                }
+            ],
+            "applicationArgs": [],
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "42d30bd"
+        },
+        {
+            "category": "Memory",
+            "drawOrderHint": 0,
+            "key": -22,
+            "text": "NULL",
+            "description": "A Drop not storing any data (useful for just passing on events)",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "inputPorts": [],
+            "outputPorts": [],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "0",
+                    "default": "0",
+                    "description": "This never stores any data",
                     "readonly": true,
                     "type": "Float",
                     "precious": false,
@@ -1594,125 +1873,204 @@
                     "positional": false
                 },
                 {
-                    "text": "No. of CPUs",
-                    "name": "num_cpus",
-                    "value": "1",
-                    "default": "1",
-                    "description": "Number of cores used",
-                    "readonly": true,
-                    "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
+                    "text": "Group end",
+                    "name": "group_end",
                     "value": "False",
                     "default": "False",
-                    "description": "Is this node the start of a group?",
+                    "description": "Is this node the end of a group?",
                     "readonly": false,
                     "type": "Boolean",
                     "precious": false,
                     "options": [],
                     "positional": false
-                },
-                {
-                    "text": "Input error rate (%)",
-                    "name": "input_error_threshold",
-                    "value": "0",
-                    "default": "0",
-                    "description": "The allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Number of tries",
-                    "name": "n_tries",
-                    "value": "1",
-                    "default": "1",
-                    "description": "Specifies the number of times the 'run' method will be executed before finally giving up",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
                 }
             ],
-            "applicationArgs": [
-                {
-                    "text": "Function Name",
-                    "name": "func_name",
-                    "value": "",
-                    "default": "",
-                    "description": "Python function name",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Function Code",
-                    "name": "func_code",
-                    "value": "",
-                    "default": "",
-                    "description": "Python function code, e.g. 'def function_name(args): return args'",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Pickle",
-                    "name": "pickle",
-                    "value": "false",
-                    "default": "false",
-                    "description": "Whether the python arguments are pickled.",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Function Defaults",
-                    "name": "func_defaults",
-                    "value": "",
-                    "default": "",
-                    "description": "Mapping from argname to default value. Should match only the last part of the argnames list. Values are interpreted as Python code literals and that means string values need to be quoted.",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Function Arguments Mapping",
-                    "name": "func_arg_mapping",
-                    "value": "",
-                    "default": "",
-                    "description": "Mapping between argument name and input drop uids",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                }
-            ],
+            "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "91823b7"
+            "sha": "42d30bd"
+        },
+        {
+            "category": "Plasma",
+            "drawOrderHint": 0,
+            "key": -24,
+            "text": "Plasma",
+            "description": "An object in a Apache Arrow Plasma in-memory object store",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "inputPorts": [],
+            "outputPorts": [],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "5",
+                    "default": "5",
+                    "description": "Estimated size of the data contained in this node",
+                    "readonly": false,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "False",
+                    "default": "False",
+                    "description": "Is this node the end of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Plasma Path",
+                    "name": "plasma_path",
+                    "value": "",
+                    "default": "",
+                    "description": "Path to the local plasma store",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Object Id",
+                    "name": "object_id",
+                    "value": "",
+                    "default": "",
+                    "description": "PlasmaId of the object for all compute nodes",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Use Staging",
+                    "name": "use_staging",
+                    "value": "False",
+                    "default": "False",
+                    "description": "Enables writing to a dynamically resizeable staging buffer",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                }
+            ],
+            "applicationArgs": [],
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "42d30bd"
+        },
+        {
+            "category": "PlasmaFlight",
+            "drawOrderHint": 0,
+            "key": -25,
+            "text": "PlasmaFlight",
+            "description": "An Apache Arrow Flight server providing distributed access to a Plasma in-memory object store",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "inputPorts": [],
+            "outputPorts": [],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "5",
+                    "default": "5",
+                    "description": "Estimated size of the data contained in this node",
+                    "readonly": false,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "False",
+                    "default": "False",
+                    "description": "Is this node the end of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Plasma Path",
+                    "name": "plasma_path",
+                    "value": "",
+                    "default": "",
+                    "description": "Path to the local plasma store",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Object Id",
+                    "name": "object_id",
+                    "value": "",
+                    "default": "",
+                    "description": "PlasmaId of the object for all compute nodes",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Flight Path",
+                    "name": "flight_path",
+                    "value": "",
+                    "default": "",
+                    "description": "IP and flight port of the drop owner",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                }
+            ],
+            "applicationArgs": [],
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "42d30bd"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -27,
+            "key": -28,
             "text": "RandomArrayApp",
-            "description": "A testing APP that does not take any input and produces a random array of type int64, if integer is set to True, else of type float64. size indicates the number of elements ranging between the values low and high. The resulting array will be send to all connected output apps. \ninteger: bool [True], generate integer array low: float, lower boundary (will be converted to int for integer arrays) high: float, upper boundary (will be converted to int for integer arrays) size: int, number of array elements",
+            "description": "A testing APP that does not take any input and produces a random array of type int64, if integer is set to True, else of type float64. size indicates the number of elements ranging between the values low and high. The resulting array will be send to all connected output apps.",
             "collapsed": false,
             "showPorts": false,
             "streaming": false,
@@ -1863,14 +2221,102 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "91823b7"
+            "sha": "42d30bd"
+        },
+        {
+            "category": "S3",
+            "drawOrderHint": 0,
+            "key": -30,
+            "text": "S3",
+            "description": "A 'bucket' object available on Amazon's Simple Storage Service (S3)",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "inputPorts": [],
+            "outputPorts": [],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "5",
+                    "default": "5",
+                    "description": "Estimated size of the data contained in this node",
+                    "readonly": false,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "False",
+                    "default": "False",
+                    "description": "Is this node the end of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Bucket",
+                    "name": "bucket",
+                    "value": "",
+                    "default": "",
+                    "description": "The S3 Bucket",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Object Name",
+                    "name": "object_name",
+                    "value": "",
+                    "default": "",
+                    "description": "The S3 Object",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Profile Name",
+                    "name": "profile_name",
+                    "value": "",
+                    "default": "",
+                    "description": "The S3 Profile",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                }
+            ],
+            "applicationArgs": [],
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "42d30bd"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -30,
+            "key": -31,
             "text": "ScpApp",
-            "description": "A BarrierAppDROP that copies the content of its single input onto its single output via SSH's scp protocol. \nDepending on the physical location of each DROP (this application, and its input and outputs) this application will copy data FROM another host or TO other host. This application's node must thus coincide with one of the two I/O DROPs.",
+            "description": "A BarrierAppDROP that copies the content of its single input onto its single output via SSH's scp protocol.",
             "collapsed": false,
             "showPorts": false,
             "streaming": false,
@@ -2018,12 +2464,12 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "91823b7"
+            "sha": "42d30bd"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -32,
+            "key": -33,
             "text": "SleepAndCopyApp",
             "description": "",
             "collapsed": false,
@@ -2131,125 +2577,12 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "91823b7"
+            "sha": "42d30bd"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -33,
-            "text": "SleepApp",
-            "description": "A simple APP that sleeps the specified amount of time (0 by default). This is mainly useful (and used) to test graph translation and structure without executing real algorithms. Very useful for debugging.",
-            "collapsed": false,
-            "showPorts": false,
-            "streaming": false,
-            "subject": null,
-            "selected": false,
-            "expanded": false,
-            "inputApplicationName": "",
-            "outputApplicationName": "",
-            "inputApplicationType": "None",
-            "outputApplicationType": "None",
-            "inputPorts": [],
-            "outputPorts": [],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "fields": [
-                {
-                    "text": "Application Class",
-                    "name": "appclass",
-                    "value": "dlg.apps.simple.SleepApp",
-                    "default": "dlg.apps.simple.SleepApp",
-                    "description": "Application class",
-                    "readonly": true,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Execution Time",
-                    "name": "execution_time",
-                    "value": "5",
-                    "default": "5",
-                    "description": "Estimated execution time",
-                    "readonly": true,
-                    "type": "Float",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "No. of CPUs",
-                    "name": "num_cpus",
-                    "value": "1",
-                    "default": "1",
-                    "description": "Number of cores used",
-                    "readonly": true,
-                    "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
-                    "value": "False",
-                    "default": "False",
-                    "description": "Is this node the start of a group?",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Input error rate (%)",
-                    "name": "input_error_threshold",
-                    "value": "0",
-                    "default": "0",
-                    "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Number of tries",
-                    "name": "n_tries",
-                    "value": "1",
-                    "default": "1",
-                    "description": "Specifies the number of times the 'run' method will be executed before finally giving up",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                }
-            ],
-            "applicationArgs": [
-                {
-                    "text": "Sleep Time",
-                    "name": "sleepTime",
-                    "value": "5",
-                    "default": "5",
-                    "description": "The number of seconds to sleep",
-                    "readonly": false,
-                    "type": "Integer",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                }
-            ],
-            "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "91823b7"
-        },
-        {
-            "category": "PythonApp",
-            "drawOrderHint": 0,
-            "key": -34,
+            "key": -35,
             "text": "SocketListenerApp",
             "description": "A BarrierAppDROP that listens on a socket for data. The server-side socket expects only one client, and assumes that the client will close the connection after all its data has been sent. This application expects no input DROPs, and therefore raises an exception whenever one is added. On the output side, one or more outputs can be specified with the restriction that they are not ContainerDROPs so data can be written into them through the framework.",
             "collapsed": false,
@@ -2402,12 +2735,12 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "91823b7"
+            "sha": "42d30bd"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -35,
+            "key": -36,
             "text": "UrlRetrieveApp",
             "description": "A simple APP that retrieves the content of a URL and writes it to all outputs.",
             "collapsed": false,
@@ -2524,7 +2857,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "91823b7"
+            "sha": "42d30bd"
         }
     ],
     "linkDataArray": []
