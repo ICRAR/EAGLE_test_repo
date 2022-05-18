@@ -6,7 +6,7 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "daliuge-LIU-251-extra-template.palette",
-        "sha": "34023e9",
+        "sha": "d5a9d93",
         "git_url": "https://github.com/ICRAR/daliuge.git"
     },
     "nodeDataArray": [
@@ -168,7 +168,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "34023e9"
+            "sha": "d5a9d93"
         },
         {
             "category": "Branch",
@@ -268,7 +268,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "34023e9"
+            "sha": "d5a9d93"
         },
         {
             "category": "Docker",
@@ -524,7 +524,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "34023e9"
+            "sha": "d5a9d93"
         },
         {
             "category": "DynlibApp",
@@ -624,7 +624,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "34023e9"
+            "sha": "d5a9d93"
         },
         {
             "category": "Mpi",
@@ -796,7 +796,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "34023e9"
+            "sha": "d5a9d93"
         },
         {
             "category": "ParameterSet",
@@ -881,7 +881,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "34023e9"
+            "sha": "d5a9d93"
         },
         {
             "category": "PythonApp",
@@ -1005,15 +1005,39 @@
                     "positional": false
                 },
                 {
-                    "text": "Pickle",
-                    "name": "pickle",
-                    "value": "false",
-                    "default": "false",
-                    "description": "Whether the python arguments are pickled.",
+                    "text": "Input Parser",
+                    "name": "input_parser",
+                    "value": "pickle",
+                    "default": "pickle",
+                    "description": "Input port parsing technique",
                     "readonly": false,
-                    "type": "Boolean",
+                    "type": "Select",
                     "precious": false,
-                    "options": [],
+                    "options": [
+                        "pickle",
+                        "ast",
+                        "path",
+                        "dataurl",
+                        "npy"
+                    ],
+                    "positional": false
+                },
+                {
+                    "text": "Output Parser",
+                    "name": "output_parser",
+                    "value": "pickle",
+                    "default": "pickle",
+                    "description": "output port parsing technique",
+                    "readonly": false,
+                    "type": "Select",
+                    "precious": false,
+                    "options": [
+                        "pickle",
+                        "ast",
+                        "path",
+                        "dataurl",
+                        "npy"
+                    ],
                     "positional": false
                 },
                 {
@@ -1042,7 +1066,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "34023e9"
+            "sha": "d5a9d93"
         },
         {
             "category": "PythonApp",
@@ -1118,7 +1142,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "34023e9"
+            "sha": "d5a9d93"
         },
         {
             "category": "File",
@@ -1230,7 +1254,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "34023e9"
+            "sha": "d5a9d93"
         },
         {
             "category": "SharedMemory",
@@ -1282,7 +1306,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "34023e9"
+            "sha": "d5a9d93"
         },
         {
             "category": "PythonApp",
@@ -1359,7 +1383,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "34023e9"
+            "sha": "d5a9d93"
         }
     ],
     "linkDataArray": []
