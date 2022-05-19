@@ -6,7 +6,7 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "daliuge-master-template.palette",
-        "sha": "8005387",
+        "sha": "833f61b",
         "git_url": "https://github.com/ICRAR/daliuge.git"
     },
     "nodeDataArray": [
@@ -168,7 +168,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8005387"
+            "sha": "833f61b"
         },
         {
             "category": "Branch",
@@ -268,7 +268,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8005387"
+            "sha": "833f61b"
         },
         {
             "category": "Docker",
@@ -524,7 +524,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8005387"
+            "sha": "833f61b"
         },
         {
             "category": "DynlibApp",
@@ -624,12 +624,112 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8005387"
+            "sha": "833f61b"
+        },
+        {
+            "category": "DynlibProcApp",
+            "drawOrderHint": 0,
+            "key": -8,
+            "text": "DynlibProcApp",
+            "description": "An application component run from a dynamic library in a different process",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "inputPorts": [],
+            "outputPorts": [],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Library Path",
+                    "name": "libpath",
+                    "value": "",
+                    "default": "",
+                    "description": "DLL that implements this application",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "default": "5",
+                    "description": "Estimated execution time",
+                    "readonly": true,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "default": "1",
+                    "description": "Number of cores used",
+                    "readonly": true,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "False",
+                    "default": "False",
+                    "description": "Is this node the start of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Input error rate (%)",
+                    "name": "input_error_threshold",
+                    "value": "0",
+                    "default": "0",
+                    "description": "the allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Number of tries",
+                    "name": "n_tries",
+                    "value": "1",
+                    "default": "1",
+                    "description": "Specifies the number of times the 'run' method will be executed before finally giving up",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                }
+            ],
+            "applicationArgs": [],
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "833f61b"
         },
         {
             "category": "Mpi",
             "drawOrderHint": 0,
-            "key": -16,
+            "key": -17,
             "text": "MPI",
             "description": "An application component using the Message Passing Interface (MPI)",
             "collapsed": false,
@@ -796,12 +896,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8005387"
+            "sha": "833f61b"
         },
         {
             "category": "ParameterSet",
             "drawOrderHint": 0,
-            "key": -20,
+            "key": -21,
             "text": "ParameterSet",
             "description": "A set of parameters, wholly specified in EAGLE",
             "collapsed": false,
@@ -881,12 +981,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8005387"
+            "sha": "833f61b"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -23,
+            "key": -24,
             "text": "PyFuncApp",
             "description": "An application that wraps a simple python function. The inputs of the application are treated as the arguments of the function. Conversely, the output of the function is treated as the output of the application. If the application has more than one output, the result of calling the function is treated as an iterable, with each individual object being written to its corresponding output.",
             "collapsed": false,
@@ -1042,12 +1142,12 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8005387"
+            "sha": "833f61b"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -24,
+            "key": -25,
             "text": "PythonApp",
             "description": "A placeholder APP to aid construction of new applications. This is mainly useful (and used) when starting a new workflow from scratch.",
             "collapsed": false,
@@ -1118,12 +1218,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8005387"
+            "sha": "833f61b"
         },
         {
             "category": "File",
             "drawOrderHint": 0,
-            "key": -26,
+            "key": -27,
             "text": "RDBMS",
             "description": "A Drop allowing storage and retrieval from a SQL DB.",
             "collapsed": false,
@@ -1230,12 +1330,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8005387"
+            "sha": "833f61b"
         },
         {
             "category": "SharedMemory",
             "drawOrderHint": 0,
-            "key": -29,
+            "key": -30,
             "text": "SharedMemory",
             "description": "Data stored in shared memory",
             "collapsed": false,
@@ -1282,12 +1382,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8005387"
+            "sha": "833f61b"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -31,
+            "key": -32,
             "text": "SleepApp",
             "description": "A simple APP that sleeps the specified amount of time (0 by default). This is mainly useful (and used) to test graph translation and structure without executing real algorithms. Very useful for debugging.",
             "collapsed": false,
@@ -1359,7 +1459,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge.git",
-            "sha": "8005387"
+            "sha": "833f61b"
         }
     ],
     "linkDataArray": []
