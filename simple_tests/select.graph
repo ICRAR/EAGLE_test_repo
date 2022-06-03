@@ -1,0 +1,336 @@
+{
+    "modelData": {
+        "fileType": "Graph",
+        "repoService": "GitHub",
+        "repoBranch": "master",
+        "repo": "ICRAR/EAGLE_test_repo",
+        "filePath": "simple_tests/select.graph",
+        "eagleVersion": "v4.4.0",
+        "eagleCommitHash": "3f9618b94ba7b4331dc0543a07198b918d7eabd4",
+        "schemaVersion": "OJS",
+        "readonly": true,
+        "sha": "",
+        "gitUrl": "",
+        "lastModifiedName": "",
+        "lastModifiedEmail": "",
+        "lastModifiedDatetime": 0,
+        "numLGNodes": 3
+    },
+    "nodeDataArray": [
+        {
+            "category": "PythonApp",
+            "isGroup": false,
+            "color": "#0059a5",
+            "drawOrderHint": 0,
+            "key": -1,
+            "text": "add_image",
+            "description": "Add two images",
+            "x": 1190.1869786325149,
+            "y": -401.3783075403026,
+            "width": 200,
+            "height": 72,
+            "collapsed": true,
+            "flipPorts": false,
+            "streaming": false,
+            "precious": false,
+            "subject": null,
+            "expanded": false,
+            "git_url": "",
+            "sha": "1.0",
+            "inputPorts": [
+                {
+                    "Id": "e38222a4-da88-43e1-92af-9b50359625d9",
+                    "IdText": "im1",
+                    "text": "im1",
+                    "event": false,
+                    "type": "Complex",
+                    "description": "Image"
+                },
+                {
+                    "Id": "466c10e6-31cd-4b19-a1cb-ecbcdbe70b1d",
+                    "IdText": "im2",
+                    "text": "im2",
+                    "event": false,
+                    "type": "Complex",
+                    "description": "Image"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "76dc18c8-621b-4fbb-ae32-14eb5013c8ab",
+                    "IdText": "im",
+                    "text": "im",
+                    "event": false,
+                    "type": "Complex",
+                    "description": "Image"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "Application Class",
+                    "name": "appclass",
+                    "value": "dlg.apps.pyfunc.PyFuncApp",
+                    "defaultValue": "",
+                    "description": "The python class that implements this application",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": 5,
+                    "defaultValue": "",
+                    "description": "Estimate of execution time (in seconds) for this application.",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": 1,
+                    "defaultValue": "",
+                    "description": "Number of CPUs used for this application.",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": false,
+                    "defaultValue": "",
+                    "description": "Is this node the start of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                }
+            ],
+            "applicationArgs": [
+                {
+                    "text": "Function Name",
+                    "name": "func_name",
+                    "value": "rascil.processing_components.image.operations.add_image",
+                    "defaultValue": "",
+                    "description": "Python function name",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": true
+                },
+                {
+                    "text": "Pickle",
+                    "name": "pickle",
+                    "value": false,
+                    "defaultValue": "",
+                    "description": "Whether the python arguments are pickled.",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": true
+                }
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputApplicationKey": null,
+            "inputApplicationDescription": "",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
+        },
+        {
+            "category": "Memory",
+            "isGroup": false,
+            "color": "#2c2c2c",
+            "drawOrderHint": 0,
+            "key": -3,
+            "text": "im1",
+            "description": "In-memory storage of intermediate data products",
+            "x": 1059.6329591088863,
+            "y": -431.144810625036,
+            "width": 200,
+            "height": 72,
+            "collapsed": true,
+            "flipPorts": false,
+            "streaming": false,
+            "precious": false,
+            "subject": null,
+            "expanded": false,
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "26196ea",
+            "inputPorts": [
+                {
+                    "Id": "56b24ab4-c191-48b2-aed4-c1cdb13f6777",
+                    "IdText": "im",
+                    "text": "im",
+                    "event": false,
+                    "type": "Complex",
+                    "description": ""
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "802ef6b2-d1c0-46c3-91e6-3f10d1d6e121",
+                    "IdText": "im1",
+                    "text": "im1",
+                    "event": false,
+                    "type": "Complex",
+                    "description": ""
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": 5,
+                    "defaultValue": "5",
+                    "description": "Estimated size of the data contained in this node",
+                    "readonly": false,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Is this node the end of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                }
+            ],
+            "applicationArgs": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputApplicationKey": null,
+            "inputApplicationDescription": "",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
+        },
+        {
+            "category": "Memory",
+            "isGroup": false,
+            "color": "#2c2c2c",
+            "drawOrderHint": 0,
+            "key": -5,
+            "text": "im2",
+            "description": "In-memory storage of intermediate data products",
+            "x": 1059.0057039741735,
+            "y": -367.6657202697048,
+            "width": 200,
+            "height": 72,
+            "collapsed": true,
+            "flipPorts": false,
+            "streaming": false,
+            "precious": false,
+            "subject": null,
+            "expanded": false,
+            "git_url": "https://github.com/ICRAR/daliuge.git",
+            "sha": "26196ea",
+            "inputPorts": [
+                {
+                    "Id": "d92ad5bd-7c4c-4657-8037-3cb47d2206ae",
+                    "IdText": "im",
+                    "text": "im",
+                    "event": false,
+                    "type": "Complex",
+                    "description": ""
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "f84d9dc1-32df-4034-9c46-4078f1196503",
+                    "IdText": "im2",
+                    "text": "im2",
+                    "event": false,
+                    "type": "Complex",
+                    "description": ""
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": 5,
+                    "defaultValue": "5",
+                    "description": "Estimated size of the data contained in this node",
+                    "readonly": false,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Is this node the end of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                }
+            ],
+            "applicationArgs": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputApplicationKey": null,
+            "inputApplicationDescription": "",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
+        }
+    ],
+    "linkDataArray": [
+        {
+            "from": -3,
+            "fromPort": "802ef6b2-d1c0-46c3-91e6-3f10d1d6e121",
+            "to": -1,
+            "toPort": "e38222a4-da88-43e1-92af-9b50359625d9",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -5,
+            "fromPort": "f84d9dc1-32df-4034-9c46-4078f1196503",
+            "to": -1,
+            "toPort": "466c10e6-31cd-4b19-a1cb-ecbcdbe70b1d",
+            "loop_aware": "0",
+            "closesLoop": false
+        }
+    ]
+}
