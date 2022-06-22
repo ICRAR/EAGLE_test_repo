@@ -1,31 +1,31 @@
 {
     "modelData": {
-        "fileType": "Palette",
+        "fileType": "palette",
         "repoService": "GitHub",
         "repoBranch": "master",
         "repo": "ICRAR/EAGLE_test_repo",
-        "filePath": "daliuge-component-examples/daliuge-component-examples-main.palette",
-        "eagleVersion": "v4.3.0",
-        "eagleCommitHash": "8562e7655820654e447ed750dba8f53dea117481",
-        "schemaVersion": "",
         "readonly": true,
-        "sha": "",
-        "gitUrl": "",
-        "lastModifiedName": "",
-        "lastModifiedEmail": "",
-        "lastModifiedDatetime": 0,
-        "numLGNodes": 9
+        "filePath": "daliuge-component-examples-main.palette",
+        "sha": "6ac0c83",
+        "git_url": "https://github.com/ICRAR/daliuge-component-examples"
     },
     "nodeDataArray": [
         {
             "category": "PythonApp",
+            "drawOrderHint": 0,
             "key": -1,
             "text": "AdvUrlRetrieve",
             "description": "An APP that retrieves the content of a URL and writes it to all outputs. The URL can be specified either completely or partially through the inputs. In that case the urlTempl parameter can use placeholders to construct the final URL.",
+            "collapsed": false,
+            "showPorts": false,
             "streaming": false,
-            "precious": false,
-            "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "e1e2a29",
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
             "inputPorts": [
                 {
                     "Id": "c2187c7e-ba40-4ab3-8152-ecb87a223153",
@@ -48,13 +48,15 @@
             ],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
             "fields": [],
             "applicationArgs": [
                 {
                     "text": "URL Template",
                     "name": "urlTempl",
                     "value": "https://eagle.icrar.org",
-                    "defaultValue": "https://eagle.icrar.org",
+                    "default": "https://eagle.icrar.org",
                     "description": "# noqa: E501 The URL to retrieve",
                     "readonly": false,
                     "type": "String",
@@ -66,7 +68,7 @@
                     "text": "Application Class",
                     "name": "appclass",
                     "value": "dlg_example_cmpts.apps.AdvUrlRetrieve",
-                    "defaultValue": "dlg_example_cmpts.apps.AdvUrlRetrieve",
+                    "default": "dlg_example_cmpts.apps.AdvUrlRetrieve",
                     "description": "# noqa: E501 Application class",
                     "readonly": true,
                     "type": "String",
@@ -75,28 +77,25 @@
                     "positional": false
                 }
             ],
-            "inputAppFields": [],
-            "inputAppArgs": [],
-            "outputAppFields": [],
-            "outputAppArgs": [],
-            "inputApplicationName": "",
-            "inputApplicationType": "None",
-            "inputApplicationKey": null,
-            "inputApplicationDescription": "",
-            "outputApplicationName": "",
-            "outputApplicationType": "None",
-            "outputApplicationKey": null,
-            "outputApplicationDescription": ""
+            "git_url": "https://github.com/ICRAR/daliuge-component-examples",
+            "sha": "6ac0c83"
         },
         {
             "category": "PythonApp",
+            "drawOrderHint": 0,
             "key": -2,
             "text": "ExtractColumn",
             "description": "App that extracts one column of an table-like ndarray. The array is assumed to be row major, i.e. the second index refers to columns. The column is # selected by index counting from 0. If the array is 1-D the result is a 1 element array. The component is passing whatever type is in the selected column.",
+            "collapsed": false,
+            "showPorts": false,
             "streaming": false,
-            "precious": false,
-            "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "e1e2a29",
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
             "inputPorts": [
                 {
                     "Id": "05f12f2e-2115-4880-964d-b76e7da70f50",
@@ -119,13 +118,15 @@
             ],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
             "fields": [],
             "applicationArgs": [
                 {
                     "text": "index",
                     "name": "index",
-                    "value": 0,
-                    "defaultValue": "0",
+                    "value": "0",
+                    "default": "0",
                     "description": "0-base index of column to extract",
                     "readonly": false,
                     "type": "Integer",
@@ -134,28 +135,25 @@
                     "positional": false
                 }
             ],
-            "inputAppFields": [],
-            "inputAppArgs": [],
-            "outputAppFields": [],
-            "outputAppArgs": [],
-            "inputApplicationName": "",
-            "inputApplicationType": "None",
-            "inputApplicationKey": null,
-            "inputApplicationDescription": "",
-            "outputApplicationName": "",
-            "outputApplicationType": "None",
-            "outputApplicationKey": null,
-            "outputApplicationDescription": ""
+            "git_url": "https://github.com/ICRAR/daliuge-component-examples",
+            "sha": "6ac0c83"
         },
         {
             "category": "PythonApp",
+            "drawOrderHint": 0,
             "key": -3,
             "text": "FileGlob",
             "description": "An App that uses glob to find all files matching a template given by a filepath and a wildcard string",
+            "collapsed": false,
+            "showPorts": false,
             "streaming": false,
-            "precious": false,
-            "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "e1e2a29",
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
             "inputPorts": [],
             "outputPorts": [
                 {
@@ -169,13 +167,15 @@
             ],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
             "fields": [],
             "applicationArgs": [
                 {
                     "text": "wildcard",
                     "name": "wildcard",
                     "value": "*",
-                    "defaultValue": "*",
+                    "default": "*",
                     "description": "Wildcard used to search for files",
                     "readonly": false,
                     "type": "String",
@@ -187,7 +187,7 @@
                     "text": "filepath",
                     "name": "filepath",
                     "value": ".",
-                    "defaultValue": ".",
+                    "default": ".",
                     "description": "# noqa: E501 Import path for application class",
                     "readonly": false,
                     "type": "String",
@@ -195,31 +195,28 @@
                     "options": [
                         "appclass Application Class"
                     ],
-                    "positional": "dlg_example_cmpts.apps.fileglob"
+                    "positional": false
                 }
             ],
-            "inputAppFields": [],
-            "inputAppArgs": [],
-            "outputAppFields": [],
-            "outputAppArgs": [],
-            "inputApplicationName": "",
-            "inputApplicationType": "None",
-            "inputApplicationKey": null,
-            "inputApplicationDescription": "",
-            "outputApplicationName": "",
-            "outputApplicationType": "None",
-            "outputApplicationKey": null,
-            "outputApplicationDescription": ""
+            "git_url": "https://github.com/ICRAR/daliuge-component-examples",
+            "sha": "6ac0c83"
         },
         {
             "category": "PythonApp",
+            "drawOrderHint": 0,
             "key": -4,
             "text": "GenericGather",
             "description": "App that reads all its inputs and simply writes them in concatenated to all its outputs. This can be used stand-alone or as part of a Gather. It does not do anything to the data, just passing it on.",
+            "collapsed": false,
+            "showPorts": false,
             "streaming": false,
-            "precious": false,
-            "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "e1e2a29",
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
             "inputPorts": [
                 {
                     "Id": "28293a21-e713-4747-9de6-de99115164ca",
@@ -242,30 +239,29 @@
             ],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
             "fields": [],
             "applicationArgs": [],
-            "inputAppFields": [],
-            "inputAppArgs": [],
-            "outputAppFields": [],
-            "outputAppArgs": [],
-            "inputApplicationName": "",
-            "inputApplicationType": "None",
-            "inputApplicationKey": null,
-            "inputApplicationDescription": "",
-            "outputApplicationName": "",
-            "outputApplicationType": "None",
-            "outputApplicationKey": null,
-            "outputApplicationDescription": ""
+            "git_url": "https://github.com/ICRAR/daliuge-component-examples",
+            "sha": "6ac0c83"
         },
         {
             "category": "PythonApp",
+            "drawOrderHint": 0,
             "key": -5,
             "text": "LengthCheck",
             "description": "This branch returns true if the length of the input array is > 0. It also passes the array on to the output ports (will be an empty array in the case of N==0).",
+            "collapsed": false,
+            "showPorts": false,
             "streaming": false,
-            "precious": false,
-            "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "e1e2a29",
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
             "inputPorts": [
                 {
                     "Id": "f2a2c8c4-8c5e-4dd4-99cb-e9f454ca6c26",
@@ -296,13 +292,15 @@
             ],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
             "fields": [],
             "applicationArgs": [
                 {
                     "text": "Application Class",
                     "name": "appclass",
                     "value": "dlg_example_cmpts.apps.LengthCheck",
-                    "defaultValue": "dlg_example_cmpts.apps.LengthCheck",
+                    "default": "dlg_example_cmpts.apps.LengthCheck",
                     "description": "# noqa: E501 Import direction for application class",
                     "readonly": true,
                     "type": "String",
@@ -311,28 +309,25 @@
                     "positional": false
                 }
             ],
-            "inputAppFields": [],
-            "inputAppArgs": [],
-            "outputAppFields": [],
-            "outputAppArgs": [],
-            "inputApplicationName": "",
-            "inputApplicationType": "None",
-            "inputApplicationKey": null,
-            "inputApplicationDescription": "",
-            "outputApplicationName": "",
-            "outputApplicationType": "None",
-            "outputApplicationKey": null,
-            "outputApplicationDescription": ""
+            "git_url": "https://github.com/ICRAR/daliuge-component-examples",
+            "sha": "6ac0c83"
         },
         {
             "category": "PythonApp",
+            "drawOrderHint": 0,
             "key": -6,
             "text": "MyBranch",
             "description": "Simple app to demonstrate how to write a branch actually making a decision and passing data on. Most of the code is boilerplate and can be copied verbatim. Note that a branch app is allowed to have multiple inputs, but just exactly two outputs. This example is using just a single input. There is an associated logical graph available on github:\nThe application assumes to receive a random floating point array with values in the range [0,1] on input. It will calculate the mean of that array and then branch depending on whether the mean is smaller or larger than 0.5.",
+            "collapsed": false,
+            "showPorts": false,
             "streaming": false,
-            "precious": false,
-            "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "e1e2a29",
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
             "inputPorts": [
                 {
                     "Id": "a39fdb04-ad4c-4618-a139-6df732db9170",
@@ -363,13 +358,15 @@
             ],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
             "fields": [],
             "applicationArgs": [
                 {
                     "text": "Application Class",
                     "name": "appclass",
                     "value": "dlg_example_cmpts.apps.MyBranch",
-                    "defaultValue": "dlg_example_cmpts.apps.MyBranch",
+                    "default": "dlg_example_cmpts.apps.MyBranch",
                     "description": "# noqa: E501 Import direction for application class",
                     "readonly": true,
                     "type": "String",
@@ -378,133 +375,25 @@
                     "positional": false
                 }
             ],
-            "inputAppFields": [],
-            "inputAppArgs": [],
-            "outputAppFields": [],
-            "outputAppArgs": [],
-            "inputApplicationName": "",
-            "inputApplicationType": "None",
-            "inputApplicationKey": null,
-            "inputApplicationDescription": "",
-            "outputApplicationName": "",
-            "outputApplicationType": "None",
-            "outputApplicationKey": null,
-            "outputApplicationDescription": ""
-        },
-        {
-            "category": "PythonApp",
-            "key": -8,
-            "text": "PickOne",
-            "description": "App that picks the first element of an input list, passes that to all outputs, except the first one. The first output is used to pass the remaining array on. This app is useful for a loop.",
-            "streaming": false,
-            "precious": false,
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "e1e2a29",
-            "inputPorts": [
-                {
-                    "Id": "dabfdaf2-f272-4005-84ca-deddbf4ef91f",
-                    "IdText": "rest_array",
-                    "text": "rest_array",
-                    "event": false,
-                    "type": "",
-                    "description": " List of elements"
-                }
-            ],
-            "outputPorts": [
-                {
-                    "Id": "e1b3141c-c2e3-47a9-a205-27b4369fa971",
-                    "IdText": "element",
-                    "text": "element",
-                    "event": false,
-                    "type": "complex",
-                    "description": " Port carrying the first element of input array the type is dependent on the list element type."
-                }
-            ],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "fields": [],
-            "applicationArgs": [
-                {
-                    "text": "Application Class",
-                    "name": "appclass",
-                    "value": "dlg_example_cmpts.apps.PickOne",
-                    "defaultValue": "dlg_example_cmpts.apps.PickOne",
-                    "description": "",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                }
-            ],
-            "inputAppFields": [],
-            "inputAppArgs": [],
-            "outputAppFields": [],
-            "outputAppArgs": [],
-            "inputApplicationName": "",
-            "inputApplicationType": "None",
-            "inputApplicationKey": null,
-            "inputApplicationDescription": "",
-            "outputApplicationName": "",
-            "outputApplicationType": "None",
-            "outputApplicationKey": null,
-            "outputApplicationDescription": ""
-        },
-        {
-            "category": "PythonApp",
-            "key": -9,
-            "text": "String2JSON",
-            "description": "App that reads a string from a single input and tries to convert that to JSON",
-            "streaming": false,
-            "precious": false,
-            "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "e1e2a29",
-            "inputPorts": [
-                {
-                    "Id": "8909a256-7038-4992-a970-cbd6f882f70f",
-                    "IdText": "string",
-                    "text": "string",
-                    "event": false,
-                    "type": "string",
-                    "description": " String to be converted"
-                }
-            ],
-            "outputPorts": [
-                {
-                    "Id": "94cdd51e-ce22-4d69-ab1a-23914a1bb517",
-                    "IdText": "element",
-                    "text": "element",
-                    "event": false,
-                    "type": "complex",
-                    "description": " Port carrying the JSON structure"
-                }
-            ],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "fields": [],
-            "applicationArgs": [],
-            "inputAppFields": [],
-            "inputAppArgs": [],
-            "outputAppFields": [],
-            "outputAppArgs": [],
-            "inputApplicationName": "",
-            "inputApplicationType": "None",
-            "inputApplicationKey": null,
-            "inputApplicationDescription": "",
-            "outputApplicationName": "",
-            "outputApplicationType": "None",
-            "outputApplicationKey": null,
-            "outputApplicationDescription": ""
+            "sha": "6ac0c83"
         },
         {
             "category": "File",
+            "drawOrderHint": 0,
             "key": -7,
             "text": "MyData",
             "description": "Template app for demonstration only! Replace the documentation with whatever you want/need to show in the DALiuGE workflow editor. The dataclass parameter should contain the relative Pythonpath to import MyApp.",
+            "collapsed": false,
+            "showPorts": false,
             "streaming": false,
-            "precious": false,
-            "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "e1e2a29",
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
             "inputPorts": [
                 {
                     "Id": "9b2a1c22-3459-4a75-85ba-ef5ecfc83c7d",
@@ -527,13 +416,15 @@
             ],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
             "fields": [],
             "applicationArgs": [
                 {
                     "text": "DropClass",
                     "name": "appclass",
                     "value": "dlg_example_cmpts.MyData",
-                    "defaultValue": "dlg_example_cmpts.MyData",
+                    "default": "dlg_example_cmpts.MyData",
                     "description": "# noqa: E501 Import direction for application class",
                     "readonly": true,
                     "type": "String",
@@ -545,7 +436,7 @@
                     "text": "Dummy parameter",
                     "name": "dummy",
                     "value": " ",
-                    "defaultValue": " ",
+                    "default": " ",
                     "description": "Dummy modifyable parameter",
                     "readonly": false,
                     "type": "String",
@@ -554,18 +445,98 @@
                     "positional": false
                 }
             ],
-            "inputAppFields": [],
-            "inputAppArgs": [],
-            "outputAppFields": [],
-            "outputAppArgs": [],
+            "git_url": "https://github.com/ICRAR/daliuge-component-examples",
+            "sha": "6ac0c83"
+        },
+        {
+            "category": "PythonApp",
+            "drawOrderHint": 0,
+            "key": -8,
+            "text": "PickOne",
+            "description": "App that picks the first element of an input list, passes that to all outputs, except the first one. The first output is used to pass the remaining array on. This app is useful for a loop.",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
             "inputApplicationName": "",
-            "inputApplicationType": "None",
-            "inputApplicationKey": null,
-            "inputApplicationDescription": "",
             "outputApplicationName": "",
+            "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "outputApplicationKey": null,
-            "outputApplicationDescription": ""
+            "inputPorts": [
+                {
+                    "Id": "dabfdaf2-f272-4005-84ca-deddbf4ef91f",
+                    "IdText": "rest_array",
+                    "text": "rest_array",
+                    "event": false,
+                    "type": "",
+                    "description": " List of elements"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "e1b3141c-c2e3-47a9-a205-27b4369fa971",
+                    "IdText": "element",
+                    "text": "element",
+                    "event": false,
+                    "type": "complex",
+                    "description": " Port carrying the first element of input array the type is dependent on the list element type."
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [],
+            "applicationArgs": [],
+            "git_url": "https://github.com/ICRAR/daliuge-component-examples",
+            "sha": "6ac0c83"
+        },
+        {
+            "category": "PythonApp",
+            "drawOrderHint": 0,
+            "key": -9,
+            "text": "String2JSON",
+            "description": "App that reads a string from a single input and tries to convert that to JSON",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "inputPorts": [
+                {
+                    "Id": "8909a256-7038-4992-a970-cbd6f882f70f",
+                    "IdText": "string",
+                    "text": "string",
+                    "event": false,
+                    "type": "string",
+                    "description": " String to be converted"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "94cdd51e-ce22-4d69-ab1a-23914a1bb517",
+                    "IdText": "element",
+                    "text": "element",
+                    "event": false,
+                    "type": "complex",
+                    "description": " Port carrying the JSON structure"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [],
+            "applicationArgs": [],
+            "git_url": "https://github.com/ICRAR/daliuge-component-examples",
+            "sha": "6ac0c83"
         }
     ],
     "linkDataArray": []
