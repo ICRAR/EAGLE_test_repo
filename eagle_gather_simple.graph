@@ -5,15 +5,16 @@
         "repoBranch": "master",
         "repo": "ICRAR/EAGLE_test_repo",
         "filePath": "eagle_gather_simple.graph",
-        "eagleVersion": "v4.2.0",
-        "eagleCommitHash": "15644664400c7ba9620911e5c920635633e0a566",
+        "eagleVersion": "v4.5.3",
+        "eagleCommitHash": "208f06459457dd2f11165a384a26d706cf7e119e",
         "schemaVersion": "OJS",
         "readonly": true,
         "sha": "",
         "gitUrl": "",
         "lastModifiedName": "",
         "lastModifiedEmail": "",
-        "lastModifiedDatetime": ""
+        "lastModifiedDatetime": 0,
+        "numLGNodes": 14
     },
     "nodeDataArray": [
         {
@@ -34,7 +35,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": true,
             "git_url": "",
             "sha": "",
             "group": -20,
@@ -42,7 +42,7 @@
                 {
                     "Id": "ef57d9fb-a205-4293-9ac1-5ed269abe06e",
                     "IdText": "img",
-                    "text": "",
+                    "text": "img",
                     "event": false,
                     "type": "Complex",
                     "description": ""
@@ -52,7 +52,7 @@
                 {
                     "Id": "5dc292e8-e296-4f8e-b6ce-4b1df256f3ab",
                     "IdText": "img",
-                    "text": "",
+                    "text": "img",
                     "event": false,
                     "type": "Complex",
                     "description": ""
@@ -92,14 +92,16 @@
             "inputApplicationName": "",
             "inputApplicationType": "None",
             "inputApplicationKey": null,
+            "inputApplicationDescription": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
-            "outputApplicationKey": null
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
         },
         {
             "category": "Scatter",
             "isGroup": true,
-            "color": "rgb(221, 173, 0)",
+            "color": "rgb(211 165 0)",
             "drawOrderHint": 0,
             "key": -20,
             "text": "ms-transform",
@@ -114,14 +116,13 @@
             "precious": false,
             "subject": null,
             "expanded": true,
-            "readonly": true,
             "git_url": "",
             "sha": "",
             "inputPorts": [
                 {
                     "Id": "58fb434f-60c5-4bd7-9a06-3d8ea588334c",
                     "IdText": "ms",
-                    "text": "",
+                    "text": "ms",
                     "event": false,
                     "type": "Complex",
                     "description": ""
@@ -132,7 +133,7 @@
                 {
                     "Id": "e9fc2e55-5af7-42fe-8051-19f7e088c299",
                     "IdText": "ms",
-                    "text": "",
+                    "text": "ms",
                     "event": false,
                     "type": "Complex",
                     "description": ""
@@ -226,6 +227,30 @@
                     "precious": false,
                     "options": [],
                     "positional": false
+                },
+                {
+                    "text": "ms",
+                    "name": "ms",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Complex",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "ms",
+                    "name": "ms",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Complex",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
                 }
             ],
             "outputAppFields": [],
@@ -234,7 +259,8 @@
             "inputApplicationKey": -17,
             "outputApplicationName": "",
             "outputApplicationType": "None",
-            "outputApplicationKey": null
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
         },
         {
             "category": "Memory",
@@ -254,7 +280,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": true,
             "git_url": "",
             "sha": "",
             "group": -20,
@@ -262,7 +287,7 @@
                 {
                     "Id": "1edf16b8-aff7-41fd-9cb2-211684eef474",
                     "IdText": "ms",
-                    "text": "",
+                    "text": "ms",
                     "event": false,
                     "type": "Complex",
                     "description": ""
@@ -272,7 +297,7 @@
                 {
                     "Id": "55ce101c-4db1-476f-9e13-541ba7c3c7ad",
                     "IdText": "ms",
-                    "text": "",
+                    "text": "ms",
                     "event": false,
                     "type": "Complex",
                     "description": ""
@@ -312,12 +337,14 @@
             "inputApplicationName": "",
             "inputApplicationType": "None",
             "inputApplicationKey": null,
+            "inputApplicationDescription": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
-            "outputApplicationKey": null
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
         },
         {
-            "category": "Memory",
+            "category": "File",
             "isGroup": false,
             "color": "#2c2c2c",
             "drawOrderHint": 0,
@@ -334,7 +361,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": true,
             "git_url": "",
             "sha": "",
             "group": -20,
@@ -342,7 +368,7 @@
                 {
                     "Id": "d5653abf-b12f-4d97-ac15-d26702b20748",
                     "IdText": "string",
-                    "text": "",
+                    "text": "string",
                     "event": false,
                     "type": "Unknown",
                     "description": ""
@@ -352,7 +378,7 @@
                 {
                     "Id": "39891be9-f800-49fc-8e0c-2b595c921ba3",
                     "IdText": "string",
-                    "text": "",
+                    "text": "string",
                     "event": false,
                     "type": "Unknown",
                     "description": ""
@@ -392,14 +418,16 @@
             "inputApplicationName": "",
             "inputApplicationType": "None",
             "inputApplicationKey": null,
+            "inputApplicationDescription": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
-            "outputApplicationKey": null
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
         },
         {
             "category": "Gather",
             "isGroup": true,
-            "color": "rgb(221, 173, 0)",
+            "color": "rgb(211 165 0)",
             "drawOrderHint": 0,
             "key": -23,
             "text": "ImageConcat",
@@ -414,14 +442,13 @@
             "precious": false,
             "subject": null,
             "expanded": true,
-            "readonly": true,
             "git_url": "",
             "sha": "",
             "inputPorts": [
                 {
                     "Id": "a5bf1055-28cb-4cdc-896b-b4831401c6b9",
                     "IdText": "img",
-                    "text": "",
+                    "text": "img",
                     "event": false,
                     "type": "Complex",
                     "description": ""
@@ -432,7 +459,7 @@
                 {
                     "Id": "7ed2490f-7988-49cb-b7df-702503da2311",
                     "IdText": "img",
-                    "text": "",
+                    "text": "img",
                     "event": false,
                     "type": "Complex",
                     "description": ""
@@ -514,6 +541,30 @@
                     "precious": false,
                     "options": [],
                     "positional": false
+                },
+                {
+                    "text": "img",
+                    "name": "img",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Complex",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "img",
+                    "name": "img",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Complex",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
                 }
             ],
             "outputAppFields": [],
@@ -522,7 +573,8 @@
             "inputApplicationKey": -9,
             "outputApplicationName": "",
             "outputApplicationType": "None",
-            "outputApplicationKey": null
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
         },
         {
             "category": "Memory",
@@ -542,7 +594,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": true,
             "git_url": "",
             "sha": "",
             "group": -23,
@@ -550,7 +601,7 @@
                 {
                     "Id": "ed5bc263-51f1-48d7-89f6-7319d982dd8a",
                     "IdText": "img",
-                    "text": "",
+                    "text": "img",
                     "event": false,
                     "type": "Complex",
                     "description": ""
@@ -560,7 +611,7 @@
                 {
                     "Id": "b117a3be-4f35-4ecd-8b3d-10a013c8d829",
                     "IdText": "img",
-                    "text": "",
+                    "text": "img",
                     "event": false,
                     "type": "Complex",
                     "description": ""
@@ -600,12 +651,14 @@
             "inputApplicationName": "",
             "inputApplicationType": "None",
             "inputApplicationKey": null,
+            "inputApplicationDescription": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
-            "outputApplicationKey": null
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
         },
         {
-            "category": "Memory",
+            "category": "File",
             "isGroup": false,
             "color": "#2c2c2c",
             "drawOrderHint": 0,
@@ -622,7 +675,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": true,
             "git_url": "",
             "sha": "",
             "group": -23,
@@ -630,7 +682,7 @@
                 {
                     "Id": "7cd7efc8-48f6-4f33-9896-5183cea43026",
                     "IdText": "img",
-                    "text": "",
+                    "text": "img",
                     "event": false,
                     "type": "Complex",
                     "description": ""
@@ -640,7 +692,7 @@
                 {
                     "Id": "0aa9a01d-09dd-4364-b648-b488bea398a7",
                     "IdText": "img",
-                    "text": "",
+                    "text": "img",
                     "event": false,
                     "type": "Complex",
                     "description": ""
@@ -680,14 +732,16 @@
             "inputApplicationName": "",
             "inputApplicationType": "None",
             "inputApplicationKey": null,
+            "inputApplicationDescription": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
-            "outputApplicationKey": null
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
         },
         {
             "category": "Gather",
             "isGroup": true,
-            "color": "rgb(221, 173, 0)",
+            "color": "rgb(211 165 0)",
             "drawOrderHint": 0,
             "key": -3,
             "text": "Gather",
@@ -702,14 +756,13 @@
             "precious": false,
             "subject": null,
             "expanded": true,
-            "readonly": false,
             "git_url": "",
             "sha": "",
             "inputPorts": [
                 {
                     "Id": "5959870d-803d-49fa-9faa-d5d85124e8c9",
                     "IdText": "string",
-                    "text": "",
+                    "text": "string",
                     "event": false,
                     "type": "Unknown",
                     "description": ""
@@ -720,7 +773,7 @@
                 {
                     "Id": "24dc87c6-7b35-40a5-acdb-741c949b7909",
                     "IdText": "string",
-                    "text": "",
+                    "text": "string",
                     "event": false,
                     "type": "Unknown",
                     "description": ""
@@ -802,6 +855,30 @@
                     "precious": false,
                     "options": [],
                     "positional": false
+                },
+                {
+                    "text": "string",
+                    "name": "string",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "string",
+                    "name": "string",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
                 }
             ],
             "outputAppFields": [],
@@ -810,7 +887,8 @@
             "inputApplicationKey": -16,
             "outputApplicationName": "",
             "outputApplicationType": "None",
-            "outputApplicationKey": null
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
         },
         {
             "category": "File",
@@ -830,7 +908,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": false,
             "git_url": "",
             "sha": "",
             "group": -3,
@@ -838,7 +915,7 @@
                 {
                     "Id": "1a3462b0-cde3-4746-a526-b4f6c0d59ab3",
                     "IdText": "string",
-                    "text": "",
+                    "text": "string",
                     "event": false,
                     "type": "Unknown",
                     "description": ""
@@ -915,9 +992,11 @@
             "inputApplicationName": "",
             "inputApplicationType": "None",
             "inputApplicationKey": null,
+            "inputApplicationDescription": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
-            "outputApplicationKey": null
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
         },
         {
             "category": "PythonApp",
@@ -937,7 +1016,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": false,
             "git_url": "",
             "sha": "",
             "group": -23,
@@ -945,7 +1023,7 @@
                 {
                     "Id": "c774d44e-1f9c-40bb-90c0-cbfe0b9dff2b",
                     "IdText": "img",
-                    "text": "",
+                    "text": "img",
                     "event": false,
                     "type": "Complex",
                     "description": ""
@@ -955,7 +1033,7 @@
                 {
                     "Id": "5b05908e-66bc-4335-9fad-af3d4417ee09",
                     "IdText": "img",
-                    "text": "",
+                    "text": "img",
                     "event": false,
                     "type": "Complex",
                     "description": ""
@@ -1031,9 +1109,11 @@
             "inputApplicationName": "",
             "inputApplicationType": "None",
             "inputApplicationKey": null,
+            "inputApplicationDescription": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
-            "outputApplicationKey": null
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
         },
         {
             "category": "PythonApp",
@@ -1053,7 +1133,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": false,
             "git_url": "",
             "sha": "",
             "group": -20,
@@ -1061,7 +1140,7 @@
                 {
                     "Id": "58080aec-4bfd-4924-b2ba-e2ce45f77db6",
                     "IdText": "ms",
-                    "text": "",
+                    "text": "ms",
                     "event": false,
                     "type": "Complex",
                     "description": ""
@@ -1071,7 +1150,7 @@
                 {
                     "Id": "cb8581ec-e420-4106-9ad5-c9220558b955",
                     "IdText": "img",
-                    "text": "",
+                    "text": "img",
                     "event": false,
                     "type": "Complex",
                     "description": ""
@@ -1079,7 +1158,7 @@
                 {
                     "Id": "06b2f477-fc2a-4e8c-9082-ea77fd4196da",
                     "IdText": "string",
-                    "text": "",
+                    "text": "string",
                     "event": false,
                     "type": "Unknown",
                     "description": ""
@@ -1155,14 +1234,16 @@
             "inputApplicationName": "",
             "inputApplicationType": "None",
             "inputApplicationKey": null,
+            "inputApplicationDescription": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
-            "outputApplicationKey": null
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
         },
         {
             "category": "Gather",
             "isGroup": true,
-            "color": "rgb(221, 173, 0)",
+            "color": "rgb(211 165 0)",
             "drawOrderHint": 0,
             "key": -13,
             "text": "CubeConcat",
@@ -1177,14 +1258,13 @@
             "precious": false,
             "subject": null,
             "expanded": true,
-            "readonly": false,
             "git_url": "",
             "sha": "",
             "inputPorts": [
                 {
                     "Id": "f97989fb-0c55-4504-8bce-703bb4ff428a",
                     "IdText": "img",
-                    "text": "",
+                    "text": "img",
                     "event": false,
                     "type": "Complex",
                     "description": ""
@@ -1195,7 +1275,7 @@
                 {
                     "Id": "c5dbe8c7-13d9-43e7-bef3-886a9994094a",
                     "IdText": "img",
-                    "text": "",
+                    "text": "img",
                     "event": false,
                     "type": "Complex",
                     "description": ""
@@ -1277,6 +1357,30 @@
                     "precious": false,
                     "options": [],
                     "positional": false
+                },
+                {
+                    "text": "img",
+                    "name": "img",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Complex",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "img",
+                    "name": "img",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Complex",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
                 }
             ],
             "outputAppFields": [],
@@ -1285,7 +1389,8 @@
             "inputApplicationKey": -1,
             "outputApplicationName": "",
             "outputApplicationType": "None",
-            "outputApplicationKey": null
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
         },
         {
             "category": "File",
@@ -1305,7 +1410,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": false,
             "git_url": "",
             "sha": "",
             "group": -13,
@@ -1313,7 +1417,7 @@
                 {
                     "Id": "4c8d1567-4b02-414b-a6b3-5eb61b8945e6",
                     "IdText": "img",
-                    "text": "",
+                    "text": "img",
                     "event": false,
                     "type": "Complex",
                     "description": ""
@@ -1390,9 +1494,11 @@
             "inputApplicationName": "",
             "inputApplicationType": "None",
             "inputApplicationKey": null,
+            "inputApplicationDescription": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
-            "outputApplicationKey": null
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
         },
         {
             "category": "Memory",
@@ -1412,7 +1518,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": false,
             "git_url": "",
             "sha": "",
             "inputPorts": [],
@@ -1420,7 +1525,7 @@
                 {
                     "Id": "3ac52e5d-aba9-4491-8124-868993dd4d32",
                     "IdText": "ms",
-                    "text": "",
+                    "text": "ms",
                     "event": false,
                     "type": "Complex",
                     "description": ""
@@ -1460,9 +1565,11 @@
             "inputApplicationName": "",
             "inputApplicationType": "None",
             "inputApplicationKey": null,
+            "inputApplicationDescription": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
-            "outputApplicationKey": null
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
         }
     ],
     "linkDataArray": [
@@ -1471,91 +1578,104 @@
             "fromPort": "cb8581ec-e420-4106-9ad5-c9220558b955",
             "to": -7,
             "toPort": "ef57d9fb-a205-4293-9ac1-5ed269abe06e",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
         },
         {
             "from": -7,
             "fromPort": "5dc292e8-e296-4f8e-b6ce-4b1df256f3ab",
             "to": -23,
             "toPort": "a5bf1055-28cb-4cdc-896b-b4831401c6b9",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
         },
         {
             "from": -23,
             "fromPort": "7ed2490f-7988-49cb-b7df-702503da2311",
             "to": -14,
             "toPort": "ed5bc263-51f1-48d7-89f6-7319d982dd8a",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
         },
         {
             "from": -14,
             "fromPort": "b117a3be-4f35-4ecd-8b3d-10a013c8d829",
             "to": -11,
             "toPort": "c774d44e-1f9c-40bb-90c0-cbfe0b9dff2b",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
         },
         {
             "from": -11,
             "fromPort": "5b05908e-66bc-4335-9fad-af3d4417ee09",
             "to": -15,
             "toPort": "7cd7efc8-48f6-4f33-9896-5183cea43026",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
         },
         {
             "from": -12,
             "fromPort": "06b2f477-fc2a-4e8c-9082-ea77fd4196da",
             "to": -8,
             "toPort": "d5653abf-b12f-4d97-ac15-d26702b20748",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
         },
         {
             "from": -4,
             "fromPort": "55ce101c-4db1-476f-9e13-541ba7c3c7ad",
             "to": -12,
             "toPort": "58080aec-4bfd-4924-b2ba-e2ce45f77db6",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
         },
         {
             "from": -20,
             "fromPort": "e9fc2e55-5af7-42fe-8051-19f7e088c299",
             "to": -4,
             "toPort": "1edf16b8-aff7-41fd-9cb2-211684eef474",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
         },
         {
             "from": -15,
             "fromPort": "0aa9a01d-09dd-4364-b648-b488bea398a7",
             "to": -13,
             "toPort": "f97989fb-0c55-4504-8bce-703bb4ff428a",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
         },
         {
             "from": -13,
             "fromPort": "c5dbe8c7-13d9-43e7-bef3-886a9994094a",
             "to": -5,
             "toPort": "4c8d1567-4b02-414b-a6b3-5eb61b8945e6",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
         },
         {
             "from": -8,
             "fromPort": "39891be9-f800-49fc-8e0c-2b595c921ba3",
             "to": -3,
             "toPort": "5959870d-803d-49fa-9faa-d5d85124e8c9",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
         },
         {
             "from": -3,
             "fromPort": "24dc87c6-7b35-40a5-acdb-741c949b7909",
             "to": -10,
             "toPort": "1a3462b0-cde3-4746-a526-b4f6c0d59ab3",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
         },
         {
             "from": -2,
             "fromPort": "3ac52e5d-aba9-4491-8124-868993dd4d32",
             "to": -20,
             "toPort": "58fb434f-60c5-4bd7-9a06-3d8ea588334c",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
         }
     ]
 }
