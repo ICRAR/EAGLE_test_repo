@@ -5,15 +5,16 @@
         "repoBranch": "master",
         "repo": "ICRAR/EAGLE_test_repo",
         "filePath": "stimela/wsclean_test.graph",
-        "eagleVersion": "v4.1.0",
-        "eagleCommitHash": "ed86d0d5f49c12f4d09c3440c39b619454ac049e",
+        "eagleVersion": "v4.5.3",
+        "eagleCommitHash": "208f06459457dd2f11165a384a26d706cf7e119e",
         "schemaVersion": "OJS",
         "readonly": true,
         "sha": "",
         "gitUrl": "",
         "lastModifiedName": "",
         "lastModifiedEmail": "",
-        "lastModifiedDatetime": ""
+        "lastModifiedDatetime": 0,
+        "numLGNodes": 8
     },
     "nodeDataArray": [
         {
@@ -34,7 +35,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": false,
             "git_url": "",
             "sha": "",
             "inputPorts": [],
@@ -154,9 +154,11 @@
             "inputApplicationName": "",
             "inputApplicationType": "None",
             "inputApplicationKey": null,
+            "inputApplicationDescription": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
-            "outputApplicationKey": null
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
         },
         {
             "category": "PythonApp",
@@ -176,7 +178,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": false,
             "git_url": "https://github.com/ICRAR/daliuge.git",
             "sha": "dad762c",
             "inputPorts": [
@@ -269,9 +270,11 @@
             "inputApplicationName": "",
             "inputApplicationType": "None",
             "inputApplicationKey": null,
+            "inputApplicationDescription": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
-            "outputApplicationKey": null
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
         },
         {
             "category": "BashShellApp",
@@ -282,7 +285,7 @@
             "text": "unpack",
             "description": "An application component run within the Bash Shell",
             "x": -487.80128328269257,
-            "y": -212.53131454008962,
+            "y": -211.53131454008962,
             "width": 200,
             "height": 72,
             "collapsed": true,
@@ -291,7 +294,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": false,
             "git_url": "",
             "sha": "",
             "inputPorts": [
@@ -310,7 +312,7 @@
                     "IdText": "MS",
                     "text": "MS",
                     "event": false,
-                    "type": "String",
+                    "type": "MS",
                     "description": "Measurement Set"
                 }
             ],
@@ -356,7 +358,7 @@
                 {
                     "text": "Command",
                     "name": "command",
-                    "value": "cd $DLG_ROOT/workspace/$DLG_SESSION_ID && tar --strip 3 -xf %i0 && rm %i0",
+                    "value": "cd $DLG_ROOT/workspace/$DLG_SESSION_ID && tar --strip 3 -xf ",
                     "defaultValue": "",
                     "description": "The command to be executed",
                     "readonly": false,
@@ -402,15 +404,42 @@
                     "positional": false
                 }
             ],
-            "applicationArgs": [],
+            "applicationArgs": [
+                {
+                    "text": "content",
+                    "name": "content",
+                    "value": null,
+                    "defaultValue": "",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": true
+                },
+                {
+                    "text": "MS",
+                    "name": "MS",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "readonly": false,
+                    "type": "MS",
+                    "precious": false,
+                    "options": [],
+                    "positional": true
+                }
+            ],
             "inputAppFields": [],
             "outputAppFields": [],
             "inputApplicationName": "",
             "inputApplicationType": "None",
             "inputApplicationKey": null,
+            "inputApplicationDescription": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
-            "outputApplicationKey": null
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
         },
         {
             "category": "File",
@@ -430,7 +459,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": true,
             "git_url": "",
             "sha": "",
             "inputPorts": [
@@ -439,7 +467,7 @@
                     "IdText": "content",
                     "text": "content",
                     "event": false,
-                    "type": "content",
+                    "type": "String",
                     "description": ""
                 }
             ],
@@ -449,7 +477,7 @@
                     "IdText": "content",
                     "text": "content",
                     "event": false,
-                    "type": "content",
+                    "type": "String",
                     "description": ""
                 }
             ],
@@ -523,9 +551,11 @@
             "inputApplicationName": "",
             "inputApplicationType": "None",
             "inputApplicationKey": null,
+            "inputApplicationDescription": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
-            "outputApplicationKey": null
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
         },
         {
             "category": "File",
@@ -535,8 +565,8 @@
             "key": -4,
             "text": "MS",
             "description": "A standard file on a filesystem mounted to the deployment machine",
-            "x": -369.47751280527376,
-            "y": -293.34824472733584,
+            "x": -199.47751280527376,
+            "y": -353.34824472733584,
             "width": 200,
             "height": 72,
             "collapsed": true,
@@ -545,7 +575,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": true,
             "git_url": "",
             "sha": "",
             "inputPorts": [
@@ -561,7 +590,7 @@
             "outputPorts": [
                 {
                     "Id": "2ebfb10a-fe6f-4856-87ae-85d601bbf2d6",
-                    "IdText": "MS",
+                    "IdText": "msname",
                     "text": "MS",
                     "event": false,
                     "type": "MS",
@@ -638,9 +667,11 @@
             "inputApplicationName": "",
             "inputApplicationType": "None",
             "inputApplicationKey": null,
+            "inputApplicationDescription": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
-            "outputApplicationKey": null
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
         },
         {
             "category": "Docker",
@@ -650,27 +681,34 @@
             "key": -7,
             "text": "wsclean",
             "description": "WSClean imaging software",
-            "x": -234.07915785631394,
-            "y": -343.5946397017292,
+            "x": 4.920842143686059,
+            "y": -327.5946397017292,
             "width": 200,
             "height": 72,
-            "collapsed": true,
+            "collapsed": false,
             "flipPorts": false,
             "streaming": false,
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": false,
             "git_url": "",
             "sha": "",
             "inputPorts": [
                 {
                     "Id": "784ecccb-be47-4c1b-8f24-2948a032a566",
-                    "IdText": "MS",
+                    "IdText": "msname",
                     "text": "MS",
                     "event": false,
-                    "type": "String",
+                    "type": "MS",
                     "description": "Measurement Set"
+                },
+                {
+                    "Id": "5e83dbf1-d600-4253-8158-3d4883200ab3",
+                    "IdText": "dummy",
+                    "text": "dummy",
+                    "event": false,
+                    "type": "String",
+                    "description": ""
                 }
             ],
             "outputPorts": [],
@@ -692,7 +730,7 @@
                 {
                     "text": "Command",
                     "name": "command",
-                    "value": "cd $DLG_ROOT/workspace/$DLG_SESSION_ID ;wsclean",
+                    "value": "wsclean",
                     "defaultValue": "",
                     "description": "Command to execute inside container",
                     "readonly": false,
@@ -814,7 +852,7 @@
                 {
                     "text": "msname",
                     "name": "msname",
-                    "value": "%i0",
+                    "value": "",
                     "defaultValue": "",
                     "description": "MS(s) to be imaged. If multiple mses are specified, they need to be phase-rotated to the same point on the sky",
                     "readonly": false,
@@ -2004,12 +2042,24 @@
                     "name": "parallel-deconvolution",
                     "value": null,
                     "defaultValue": "",
-                    "description": "Deconvolve subimages in parallel. Subimages will be at most of the given size",
+                    "description": "",
                     "readonly": false,
                     "type": "Integer",
                     "precious": false,
                     "options": [],
                     "positional": false
+                },
+                {
+                    "text": "dummy",
+                    "name": "dummy",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": true
                 }
             ],
             "inputAppFields": [],
@@ -2017,9 +2067,141 @@
             "inputApplicationName": "",
             "inputApplicationType": "None",
             "inputApplicationKey": null,
+            "inputApplicationDescription": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
-            "outputApplicationKey": null
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
+        },
+        {
+            "category": "Memory",
+            "isGroup": false,
+            "color": "#2c2c2c",
+            "drawOrderHint": 0,
+            "key": -2,
+            "text": "NULL",
+            "description": "A Drop not storing any data (useful for just passing on events)",
+            "x": -238.0562339113144,
+            "y": -218.26297712090945,
+            "width": 200,
+            "height": 72,
+            "collapsed": true,
+            "flipPorts": false,
+            "streaming": false,
+            "precious": false,
+            "subject": null,
+            "expanded": false,
+            "git_url": "https://github.com/ICRAR/daliuge",
+            "sha": "a7abe4c",
+            "inputPorts": [
+                {
+                    "Id": "e403da13-8c1b-470e-b61c-0a8e9024d2c6",
+                    "IdText": "dummy",
+                    "text": "dummy",
+                    "event": false,
+                    "type": "MS",
+                    "description": "Dummy input port"
+                }
+            ],
+            "outputPorts": [
+                {
+                    "Id": "ea0d0b99-9ab9-4eae-b1cb-0b5613b4d25c",
+                    "IdText": "dummy",
+                    "text": "dummy",
+                    "event": false,
+                    "type": "String",
+                    "description": "Dummy output port"
+                }
+            ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": 0,
+                    "defaultValue": "",
+                    "description": "This never stores any data",
+                    "readonly": true,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": false,
+                    "defaultValue": "",
+                    "description": "Is this node the end of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                }
+            ],
+            "applicationArgs": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputApplicationKey": null,
+            "inputApplicationDescription": "",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
+        },
+        {
+            "category": "Comment",
+            "isGroup": false,
+            "color": "rgb(157 43 96)",
+            "drawOrderHint": 0,
+            "key": -8,
+            "text": "Comment",
+            "description": "A node that places a comment in the graph. The comment can be used to communicate important information or intention",
+            "x": -432.82123391131427,
+            "y": -514.8397796337126,
+            "width": 223,
+            "height": 163,
+            "collapsed": true,
+            "flipPorts": false,
+            "streaming": false,
+            "precious": false,
+            "subject": -2,
+            "expanded": false,
+            "git_url": "",
+            "sha": "",
+            "inputPorts": [],
+            "outputPorts": [],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "",
+                    "name": "",
+                    "value": "This is required, since tar is writing output as a side effect, i.e. it can't be specified on the command line.",
+                    "defaultValue": "",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Unknown",
+                    "precious": false,
+                    "options": [],
+                    "positional": false
+                }
+            ],
+            "applicationArgs": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputApplicationKey": null,
+            "inputApplicationDescription": "",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
         }
     ],
     "linkDataArray": [
@@ -2028,35 +2210,48 @@
             "fromPort": "1bc54b1d-8a68-441b-9029-69b65d3196c2",
             "to": -3,
             "toPort": "d8c71a16-9da4-4a96-959a-e39226d8b9f8",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
         },
         {
             "from": -3,
             "fromPort": "c3a404b3-a4b4-4e78-a259-21db03d8a6fb",
             "to": -6,
             "toPort": "f460973b-8c51-4819-8c15-6dda4bd04c00",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
         },
         {
             "from": -6,
             "fromPort": "02257586-b09c-47a4-a5e0-5626e20334a5",
             "to": -5,
             "toPort": "aeaa1cfa-21b7-4557-abc0-ce7532f8f961",
-            "loop_aware": "0"
-        },
-        {
-            "from": -5,
-            "fromPort": "3bfb0966-1782-4277-8179-147f63f5cbb6",
-            "to": -4,
-            "toPort": "e2806f30-5c43-442a-b834-95afc583a63e",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
         },
         {
             "from": -4,
             "fromPort": "2ebfb10a-fe6f-4856-87ae-85d601bbf2d6",
             "to": -7,
             "toPort": "784ecccb-be47-4c1b-8f24-2948a032a566",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -5,
+            "fromPort": "3bfb0966-1782-4277-8179-147f63f5cbb6",
+            "to": -2,
+            "toPort": "e403da13-8c1b-470e-b61c-0a8e9024d2c6",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": -2,
+            "fromPort": "ea0d0b99-9ab9-4eae-b1cb-0b5613b4d25c",
+            "to": -7,
+            "toPort": "5e83dbf1-d600-4253-8158-3d4883200ab3",
+            "loop_aware": "0",
+            "closesLoop": false
         }
     ]
 }
