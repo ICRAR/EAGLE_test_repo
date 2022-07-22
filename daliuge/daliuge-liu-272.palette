@@ -6,7 +6,7 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "daliuge-liu-272.palette",
-        "sha": "4292967",
+        "sha": "a3dbfd6",
         "git_url": "https://github.com/ICRAR/daliuge"
     },
     "nodeDataArray": [
@@ -142,7 +142,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "4292967"
+            "sha": "a3dbfd6"
         },
         {
             "category": "PythonApp",
@@ -272,7 +272,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "4292967"
+            "sha": "a3dbfd6"
         },
         {
             "category": "PythonApp",
@@ -381,7 +381,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "4292967"
+            "sha": "a3dbfd6"
         },
         {
             "category": "EnvironmentVariables",
@@ -417,7 +417,7 @@
             "fields": [],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "4292967"
+            "sha": "a3dbfd6"
         },
         {
             "category": "File",
@@ -523,7 +523,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "4292967"
+            "sha": "a3dbfd6"
         },
         {
             "category": "PythonApp",
@@ -543,21 +543,21 @@
             "outputApplicationType": "None",
             "inputPorts": [
                 {
-                    "Id": "5052c842-ee4e-4cb5-b77c-1aec46615308",
+                    "Id": "7c0ffd19-279a-4cb9-84f4-ee5b53ecff3f",
                     "IdText": "array",
                     "text": "Array",
                     "event": false,
-                    "type": "Python",
+                    "type": "Object.Array",
                     "description": " Port for the input array(s)"
                 }
             ],
             "outputPorts": [
                 {
-                    "Id": "7c0da634-80a3-4fc1-b360-f90e7a518cad",
+                    "Id": "7ab4d9c4-980e-4678-9201-49f3919fb248",
                     "IdText": "array",
                     "text": "Array",
                     "event": false,
-                    "type": "Python",
+                    "type": "Object.Array",
                     "description": " Port carrying the reduced array"
                 }
             ],
@@ -674,7 +674,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "4292967"
+            "sha": "a3dbfd6"
         },
         {
             "category": "Gather",
@@ -684,7 +684,7 @@
             "git_url": "https://github.com/ICRAR/daliuge",
             "key": -12,
             "precious": false,
-            "sha": "4292967",
+            "sha": "a3dbfd6",
             "streaming": false,
             "text": "Gather/GenericNpyGatherApp",
             "inputAppFields": [
@@ -801,21 +801,21 @@
             "inputApplicationDescription": "A BarrierAppDrop that combines one or more inputs using cummulative operations.",
             "inputLocalPorts": [
                 {
-                    "Id": "7c0da634-80a3-4fc1-b360-f90e7a518cad",
+                    "Id": "7ab4d9c4-980e-4678-9201-49f3919fb248",
                     "IdText": "array",
                     "text": "Array",
                     "event": false,
-                    "type": "Python",
+                    "type": "Object.Array",
                     "description": " Port carrying the reduced array"
                 }
             ],
             "inputPorts": [
                 {
-                    "Id": "5052c842-ee4e-4cb5-b77c-1aec46615308",
+                    "Id": "7c0ffd19-279a-4cb9-84f4-ee5b53ecff3f",
                     "IdText": "array",
                     "text": "Array",
                     "event": false,
-                    "type": "Python",
+                    "type": "Object.Array",
                     "description": " Port for the input array(s)"
                 }
             ],
@@ -847,11 +847,11 @@
             "inputPorts": [],
             "outputPorts": [
                 {
-                    "Id": "fb327336-448d-45c9-9f3d-da99023a0827",
+                    "Id": "581bff6f-6b6f-4f8e-9cc4-bea42b633052",
                     "IdText": "array",
                     "text": "Array",
                     "event": false,
-                    "type": "npy",
+                    "type": "Object.Array",
                     "description": " A numpy array of arrays"
                 }
             ],
@@ -948,7 +948,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "4292967"
+            "sha": "a3dbfd6"
         },
         {
             "category": "Scatter",
@@ -958,7 +958,7 @@
             "git_url": "https://github.com/ICRAR/daliuge",
             "key": -14,
             "precious": false,
-            "sha": "4292967",
+            "sha": "a3dbfd6",
             "streaming": false,
             "text": "Scatter/GenericNpyScatterApp",
             "inputAppFields": [
@@ -1055,11 +1055,11 @@
             "inputApplicationDescription": "An APP that splits about any axis on any npy format data drop into as many parts as the app has outputs, provided that the initially converted numpy array has enough elements. The return will be a numpy array of arrays, where the first axis is of length len(outputs). The modulo remainder of the length of the original array and the number of outputs will be distributed across the first len(outputs)-1 elements of the resulting array.",
             "inputLocalPorts": [
                 {
-                    "Id": "fb327336-448d-45c9-9f3d-da99023a0827",
+                    "Id": "581bff6f-6b6f-4f8e-9cc4-bea42b633052",
                     "IdText": "array",
                     "text": "Array",
                     "event": false,
-                    "type": "npy",
+                    "type": "Object.Array",
                     "description": " A numpy array of arrays"
                 }
             ],
@@ -1092,11 +1092,11 @@
             "inputPorts": [],
             "outputPorts": [
                 {
-                    "Id": "f01bb1d8-42dd-4a84-8050-648cf98a038f",
+                    "Id": "a649a77e-210c-4954-9b14-b3ca7d70f7c0",
                     "IdText": "array",
                     "text": "Array",
                     "event": false,
-                    "type": "Array",
+                    "type": "Object.Array",
                     "description": " A numpy array of arrays, where the first axis is of length <numSplit>"
                 }
             ],
@@ -1180,7 +1180,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "4292967"
+            "sha": "a3dbfd6"
         },
         {
             "category": "Scatter",
@@ -1190,7 +1190,7 @@
             "git_url": "https://github.com/ICRAR/daliuge",
             "key": -16,
             "precious": false,
-            "sha": "4292967",
+            "sha": "a3dbfd6",
             "streaming": false,
             "text": "Scatter/GenericScatterApp",
             "inputAppFields": [
@@ -1274,11 +1274,11 @@
             "inputApplicationDescription": "An APP that splits about any object that can be converted to a numpy array into as many parts as the app has outputs, provided that the initially converted numpy array has enough elements. The return will be a numpy array of arrays, where the first axis is of length len(outputs). The modulo remainder of the length of the original array and the number of outputs will be distributed across the first len(outputs)-1 elements of the resulting array.",
             "inputLocalPorts": [
                 {
-                    "Id": "f01bb1d8-42dd-4a84-8050-648cf98a038f",
+                    "Id": "a649a77e-210c-4954-9b14-b3ca7d70f7c0",
                     "IdText": "array",
                     "text": "Array",
                     "event": false,
-                    "type": "Array",
+                    "type": "Object.Array",
                     "description": " A numpy array of arrays, where the first axis is of length <numSplit>"
                 }
             ],
@@ -1412,7 +1412,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "4292967"
+            "sha": "a3dbfd6"
         },
         {
             "category": "Memory",
@@ -1482,7 +1482,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "4292967"
+            "sha": "a3dbfd6"
         },
         {
             "category": "PythonApp",
@@ -1503,11 +1503,11 @@
             "inputPorts": [],
             "outputPorts": [
                 {
-                    "Id": "53273be8-72c1-4ac0-bdd8-628e0bf21733",
+                    "Id": "bdbec023-5925-47db-9660-d37743a82821",
                     "IdText": "array",
                     "text": "Array",
                     "event": false,
-                    "type": "array",
+                    "type": "Object.Array",
                     "description": " Port carrying the random array."
                 }
             ],
@@ -1604,7 +1604,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "4292967"
+            "sha": "a3dbfd6"
         },
         {
             "category": "PythonApp",
@@ -1774,7 +1774,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "4292967"
+            "sha": "a3dbfd6"
         },
         {
             "category": "NGAS",
@@ -1916,7 +1916,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "4292967"
+            "sha": "a3dbfd6"
         },
         {
             "category": "Memory",
@@ -1986,7 +1986,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "4292967"
+            "sha": "a3dbfd6"
         },
         {
             "category": "Plasma",
@@ -2092,7 +2092,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "4292967"
+            "sha": "a3dbfd6"
         },
         {
             "category": "PlasmaFlight",
@@ -2198,7 +2198,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "4292967"
+            "sha": "a3dbfd6"
         },
         {
             "category": "PythonApp",
@@ -2219,11 +2219,11 @@
             "inputPorts": [],
             "outputPorts": [
                 {
-                    "Id": "314f35ee-59f6-40d2-b1d0-fdbfd96a1237",
+                    "Id": "359ab93c-b751-49eb-a597-9556fc66e653",
                     "IdText": "array",
                     "text": "Array",
                     "event": false,
-                    "type": "Array",
+                    "type": "Object.Array",
                     "description": " Port carrying the averaged array"
                 }
             ],
@@ -2356,7 +2356,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "4292967"
+            "sha": "a3dbfd6"
         },
         {
             "category": "S3",
@@ -2462,7 +2462,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "4292967"
+            "sha": "a3dbfd6"
         },
         {
             "category": "PythonApp",
@@ -2617,7 +2617,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "4292967"
+            "sha": "a3dbfd6"
         },
         {
             "category": "PythonApp",
@@ -2730,7 +2730,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "4292967"
+            "sha": "a3dbfd6"
         },
         {
             "category": "PythonApp",
@@ -2888,7 +2888,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "4292967"
+            "sha": "a3dbfd6"
         },
         {
             "category": "PythonApp",
@@ -3010,7 +3010,7 @@
                 }
             ],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "4292967"
+            "sha": "a3dbfd6"
         }
     ],
     "linkDataArray": []
