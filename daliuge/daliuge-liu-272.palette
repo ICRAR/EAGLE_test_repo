@@ -6,7 +6,7 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "daliuge-liu-272.palette",
-        "sha": "1f3c41f",
+        "sha": "310b168",
         "git_url": "https://github.com/ICRAR/daliuge"
     },
     "nodeDataArray": [
@@ -26,8 +26,36 @@
             "outputApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "inputPorts": [],
-            "outputPorts": [],
+            "inputPorts": [
+                {
+                    "text": "Array",
+                    "name": "array",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "Object.Array",
+                    "fieldType": "InputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
+            "outputPorts": [
+                {
+                    "text": "Array",
+                    "name": "array",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "Object.Array",
+                    "fieldType": "OutputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
             "inputAppFields": [],
@@ -40,7 +68,7 @@
                     "defaultValue": "mean",
                     "description": "",
                     "type": "Select",
-                    "fieldType": "aparam",
+                    "fieldType": "ApplicationArgument",
                     "readonly": false,
                     "options": [
                         "mean",
@@ -126,37 +154,11 @@
                     "options": [],
                     "precious": false,
                     "positional": false
-                },
-                {
-                    "text": "Array",
-                    "name": "array",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "type": "Object.Array",
-                    "fieldType": "InputPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "text": "Array",
-                    "name": "array",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "type": "Object.Array",
-                    "fieldType": "OutputPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
                 }
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "1f3c41f"
+            "sha": "310b168"
         },
         {
             "category": "PythonApp",
@@ -174,8 +176,36 @@
             "outputApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "inputPorts": [],
-            "outputPorts": [],
+            "inputPorts": [
+                {
+                    "text": "Dummy",
+                    "name": "dummy",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "Object",
+                    "fieldType": "InputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
+            "outputPorts": [
+                {
+                    "text": "Dummy",
+                    "name": "dummy",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "Object",
+                    "fieldType": "OutputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
             "inputAppFields": [],
@@ -271,37 +301,11 @@
                     "options": [],
                     "precious": false,
                     "positional": false
-                },
-                {
-                    "text": "Dummy",
-                    "name": "dummy",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "type": "Object",
-                    "fieldType": "InputPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "text": "Dummy",
-                    "name": "dummy",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "type": "Object",
-                    "fieldType": "OutputPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
                 }
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "1f3c41f"
+            "sha": "310b168"
         },
         {
             "category": "PythonApp",
@@ -320,7 +324,21 @@
             "inputApplicationType": "None",
             "outputApplicationType": "None",
             "inputPorts": [],
-            "outputPorts": [],
+            "outputPorts": [
+                {
+                    "text": "Data",
+                    "name": "data",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "String",
+                    "fieldType": "OutputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
             "inputAppFields": [],
@@ -371,8 +389,8 @@
                     "value": "False",
                     "defaultValue": "False",
                     "description": "",
-                    "type": "ComponentParameter",
-                    "fieldType": "Boolean",
+                    "type": "Boolean",
+                    "fieldType": "ComponentParameter",
                     "readonly": false,
                     "options": [],
                     "precious": false,
@@ -403,24 +421,11 @@
                     "options": [],
                     "precious": false,
                     "positional": false
-                },
-                {
-                    "text": "Data",
-                    "name": "data",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "type": "String",
-                    "fieldType": "OutputPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
                 }
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "1f3c41f"
+            "sha": "310b168"
         },
         {
             "category": "EnvironmentVariables",
@@ -439,12 +444,7 @@
             "inputApplicationType": "None",
             "outputApplicationType": "None",
             "inputPorts": [],
-            "outputPorts": [],
-            "inputLocalPorts": [],
-            "outputLocalPorts": [],
-            "inputAppFields": [],
-            "outputAppFields": [],
-            "fields": [
+            "outputPorts": [
                 {
                     "text": "dummy",
                     "name": "dummy",
@@ -459,9 +459,14 @@
                     "positional": false
                 }
             ],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "1f3c41f"
+            "sha": "310b168"
         },
         {
             "category": "File",
@@ -479,8 +484,36 @@
             "outputApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "inputPorts": [],
-            "outputPorts": [],
+            "inputPorts": [
+                {
+                    "text": "dummy",
+                    "name": "dummy",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "Object",
+                    "fieldType": "InputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
+            "outputPorts": [
+                {
+                    "text": "dummy",
+                    "name": "dummy",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "Object",
+                    "fieldType": "OutputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
             "inputAppFields": [],
@@ -550,37 +583,11 @@
                     "options": [],
                     "precious": false,
                     "positional": false
-                },
-                {
-                    "text": "dummy",
-                    "name": "dummy",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "type": "Object",
-                    "fieldType": "InputPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "text": "dummy",
-                    "name": "dummy",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "type": "Object",
-                    "fieldType": "OutputPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
                 }
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "1f3c41f"
+            "sha": "310b168"
         },
         {
             "category": "PythonApp",
@@ -598,8 +605,36 @@
             "outputApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "inputPorts": [],
-            "outputPorts": [],
+            "inputPorts": [
+                {
+                    "text": "Array",
+                    "name": "array",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "Object.Array",
+                    "fieldType": "InputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
+            "outputPorts": [
+                {
+                    "text": "Array",
+                    "name": "array",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "Object.Array",
+                    "fieldType": "OutputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
             "inputAppFields": [],
@@ -717,37 +752,11 @@
                     "options": [],
                     "precious": false,
                     "positional": false
-                },
-                {
-                    "text": "Array",
-                    "name": "array",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "type": "Object.Array",
-                    "fieldType": "InputPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "text": "Array",
-                    "name": "array",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "type": "Object.Array",
-                    "fieldType": "OutputPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
                 }
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "1f3c41f"
+            "sha": "310b168"
         },
         {
             "category": "Gather",
@@ -757,7 +766,7 @@
             "git_url": "https://github.com/ICRAR/daliuge",
             "key": -12,
             "precious": false,
-            "sha": "1f3c41f",
+            "sha": "310b168",
             "streaming": false,
             "text": "Gather/GenericNpyGatherApp",
             "inputAppFields": [
@@ -873,20 +882,14 @@
                     "options": [],
                     "precious": false,
                     "positional": false
-                },
-                {
-                    "text": "Array",
-                    "name": "array",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "type": "Object.Array",
-                    "fieldType": "InputPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
+                }
+            ],
+            "inputAppArgs": [],
+            "inputApplicationKey": -11,
+            "inputApplicationName": "GenericNpyGatherApp",
+            "inputApplicationType": "PythonApp",
+            "inputApplicationDescription": "",
+            "inputLocalPorts": [
                 {
                     "text": "Array",
                     "name": "array",
@@ -901,13 +904,21 @@
                     "positional": false
                 }
             ],
-            "inputAppArgs": [],
-            "inputApplicationKey": -11,
-            "inputApplicationName": "GenericNpyGatherApp",
-            "inputApplicationType": "PythonApp",
-            "inputApplicationDescription": "",
-            "inputLocalPorts": [],
-            "inputPorts": [],
+            "inputPorts": [
+                {
+                    "text": "Array",
+                    "name": "array",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "Object.Array",
+                    "fieldType": "InputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
             "outputAppFields": [],
             "outputAppArgs": [],
             "outputApplicationKey": null,
@@ -933,7 +944,21 @@
             "outputApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "inputPorts": [],
+            "inputPorts": [
+                {
+                    "text": "Object.Array",
+                    "name": "array",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "Object.Array",
+                    "fieldType": "InputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
             "outputPorts": [],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
@@ -1030,24 +1055,11 @@
                     "options": [],
                     "precious": false,
                     "positional": false
-                },
-                {
-                    "text": "Object.Array",
-                    "name": "array",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "type": "Object.Array",
-                    "fieldType": "InputPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
                 }
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "1f3c41f"
+            "sha": "310b168"
         },
         {
             "category": "Scatter",
@@ -1057,7 +1069,7 @@
             "git_url": "https://github.com/ICRAR/daliuge",
             "key": -14,
             "precious": false,
-            "sha": "1f3c41f",
+            "sha": "310b168",
             "streaming": false,
             "text": "Scatter/GenericNpyScatterApp",
             "inputAppFields": [
@@ -1151,7 +1163,15 @@
                     "options": [],
                     "precious": false,
                     "positional": false
-                },
+                }
+            ],
+            "inputAppArgs": [],
+            "inputApplicationKey": -13,
+            "inputApplicationName": "GenericNpyScatterApp",
+            "inputApplicationType": "PythonApp",
+            "inputApplicationDescription": "",
+            "inputLocalPorts": [],
+            "inputPorts": [
                 {
                     "text": "Object.Array",
                     "name": "array",
@@ -1166,13 +1186,6 @@
                     "positional": false
                 }
             ],
-            "inputAppArgs": [],
-            "inputApplicationKey": -13,
-            "inputApplicationName": "GenericNpyScatterApp",
-            "inputApplicationType": "PythonApp",
-            "inputApplicationDescription": "",
-            "inputLocalPorts": [],
-            "inputPorts": [],
             "outputAppFields": [],
             "outputAppArgs": [],
             "outputApplicationKey": null,
@@ -1199,7 +1212,21 @@
             "inputApplicationType": "None",
             "outputApplicationType": "None",
             "inputPorts": [],
-            "outputPorts": [],
+            "outputPorts": [
+                {
+                    "text": "Array",
+                    "name": "array",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "Object.Array",
+                    "fieldType": "OutputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
             "inputAppFields": [],
@@ -1282,24 +1309,11 @@
                     "options": [],
                     "precious": false,
                     "positional": false
-                },
-                {
-                    "text": "Array",
-                    "name": "array",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "type": "Object.Array",
-                    "fieldType": "OutputPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
                 }
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "1f3c41f"
+            "sha": "310b168"
         },
         {
             "category": "Scatter",
@@ -1309,7 +1323,7 @@
             "git_url": "https://github.com/ICRAR/daliuge",
             "key": -16,
             "precious": false,
-            "sha": "1f3c41f",
+            "sha": "310b168",
             "streaming": false,
             "text": "Scatter/GenericScatterApp",
             "inputAppFields": [
@@ -1390,7 +1404,14 @@
                     "options": [],
                     "precious": false,
                     "positional": false
-                },
+                }
+            ],
+            "inputAppArgs": [],
+            "inputApplicationKey": -15,
+            "inputApplicationName": "GenericScatterApp",
+            "inputApplicationType": "PythonApp",
+            "inputApplicationDescription": "",
+            "inputLocalPorts": [
                 {
                     "text": "Array",
                     "name": "array",
@@ -1405,12 +1426,6 @@
                     "positional": false
                 }
             ],
-            "inputAppArgs": [],
-            "inputApplicationKey": -15,
-            "inputApplicationName": "GenericScatterApp",
-            "inputApplicationType": "PythonApp",
-            "inputApplicationDescription": "",
-            "inputLocalPorts": [],
             "inputPorts": [],
             "outputAppFields": [],
             "outputAppArgs": [],
@@ -1437,7 +1452,21 @@
             "outputApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "inputPorts": [],
+            "inputPorts": [
+                {
+                    "text": "Hello",
+                    "name": "hello",
+                    "value": "world",
+                    "defaultValue": "world",
+                    "description": "",
+                    "type": "String",
+                    "fieldType": "InputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
             "outputPorts": [],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
@@ -1534,24 +1563,11 @@
                     "options": [],
                     "precious": false,
                     "positional": false
-                },
-                {
-                    "text": "Hello",
-                    "name": "hello",
-                    "value": "world",
-                    "defaultValue": "world",
-                    "description": "",
-                    "type": "String",
-                    "fieldType": "InputPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
                 }
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "1f3c41f"
+            "sha": "310b168"
         },
         {
             "category": "Memory",
@@ -1569,8 +1585,36 @@
             "outputApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "inputPorts": [],
-            "outputPorts": [],
+            "inputPorts": [
+                {
+                    "text": "dummy",
+                    "name": "dummy",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "Object",
+                    "fieldType": "InputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
+            "outputPorts": [
+                {
+                    "text": "dummy",
+                    "name": "dummy",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "Object",
+                    "fieldType": "OutputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
             "inputAppFields": [],
@@ -1601,37 +1645,11 @@
                     "options": [],
                     "precious": false,
                     "positional": false
-                },
-                {
-                    "text": "dummy",
-                    "name": "dummy",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "type": "Object",
-                    "fieldType": "InputPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "text": "dummy",
-                    "name": "dummy",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "type": "Object",
-                    "fieldType": "OutputPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
                 }
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "1f3c41f"
+            "sha": "310b168"
         },
         {
             "category": "PythonApp",
@@ -1650,7 +1668,21 @@
             "inputApplicationType": "None",
             "outputApplicationType": "None",
             "inputPorts": [],
-            "outputPorts": [],
+            "outputPorts": [
+                {
+                    "text": "Array",
+                    "name": "array",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "Object.Array",
+                    "fieldType": "OutputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
             "inputAppFields": [],
@@ -1746,24 +1778,11 @@
                     "options": [],
                     "precious": false,
                     "positional": false
-                },
-                {
-                    "text": "Array",
-                    "name": "array",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "type": "Object.Array",
-                    "fieldType": "OutputPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
                 }
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "1f3c41f"
+            "sha": "310b168"
         },
         {
             "category": "PythonApp",
@@ -1781,7 +1800,21 @@
             "outputApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "inputPorts": [],
+            "inputPorts": [
+                {
+                    "text": "File Object",
+                    "name": "fileObject",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "Object.File",
+                    "fieldType": "InputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
             "outputPorts": [],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
@@ -1930,24 +1963,11 @@
                     "options": [],
                     "precious": false,
                     "positional": false
-                },
-                {
-                    "text": "File Object",
-                    "name": "fileObject",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "type": "Object.File",
-                    "fieldType": "InputPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
                 }
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "1f3c41f"
+            "sha": "310b168"
         },
         {
             "category": "NGAS",
@@ -1965,8 +1985,36 @@
             "outputApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "inputPorts": [],
-            "outputPorts": [],
+            "inputPorts": [
+                {
+                    "text": "dummy",
+                    "name": "dummy",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "Object",
+                    "fieldType": "InputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
+            "outputPorts": [
+                {
+                    "text": "dummy",
+                    "name": "dummy",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "Object",
+                    "fieldType": "OutputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
             "inputAppFields": [],
@@ -2075,37 +2123,11 @@
                     "options": [],
                     "precious": false,
                     "positional": false
-                },
-                {
-                    "text": "dummy",
-                    "name": "dummy",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "type": "Object",
-                    "fieldType": "InputPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "text": "dummy",
-                    "name": "dummy",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "type": "Object",
-                    "fieldType": "OutputPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
                 }
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "1f3c41f"
+            "sha": "310b168"
         },
         {
             "category": "Memory",
@@ -2123,8 +2145,36 @@
             "outputApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "inputPorts": [],
-            "outputPorts": [],
+            "inputPorts": [
+                {
+                    "text": "dummy",
+                    "name": "dummy",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "Object",
+                    "fieldType": "InputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
+            "outputPorts": [
+                {
+                    "text": "dummy",
+                    "name": "dummy",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "Object",
+                    "fieldType": "OutputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
             "inputAppFields": [],
@@ -2155,37 +2205,11 @@
                     "options": [],
                     "precious": false,
                     "positional": false
-                },
-                {
-                    "text": "dummy",
-                    "name": "dummy",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "type": "Object",
-                    "fieldType": "InputPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "text": "dummy",
-                    "name": "dummy",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "type": "Object",
-                    "fieldType": "OutputPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
                 }
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "1f3c41f"
+            "sha": "310b168"
         },
         {
             "category": "Plasma",
@@ -2203,8 +2227,36 @@
             "outputApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "inputPorts": [],
-            "outputPorts": [],
+            "inputPorts": [
+                {
+                    "text": "dummy",
+                    "name": "dummy",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "Object",
+                    "fieldType": "InputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
+            "outputPorts": [
+                {
+                    "text": "dummy",
+                    "name": "dummy",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "Object",
+                    "fieldType": "OutputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
             "inputAppFields": [],
@@ -2274,37 +2326,11 @@
                     "options": [],
                     "precious": false,
                     "positional": false
-                },
-                {
-                    "text": "dummy",
-                    "name": "dummy",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "type": "Object",
-                    "fieldType": "InputPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "text": "dummy",
-                    "name": "dummy",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "type": "Object",
-                    "fieldType": "OutputPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
                 }
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "1f3c41f"
+            "sha": "310b168"
         },
         {
             "category": "PlasmaFlight",
@@ -2322,8 +2348,36 @@
             "outputApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "inputPorts": [],
-            "outputPorts": [],
+            "inputPorts": [
+                {
+                    "text": "dummy",
+                    "name": "dummy",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "Object",
+                    "fieldType": "InputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
+            "outputPorts": [
+                {
+                    "text": "dummy",
+                    "name": "dummy",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "Object",
+                    "fieldType": "OutputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
             "inputAppFields": [],
@@ -2393,37 +2447,11 @@
                     "options": [],
                     "precious": false,
                     "positional": false
-                },
-                {
-                    "text": "dummy",
-                    "name": "dummy",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "type": "Object",
-                    "fieldType": "InputPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "text": "dummy",
-                    "name": "dummy",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "type": "Object",
-                    "fieldType": "OutputPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
                 }
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "1f3c41f"
+            "sha": "310b168"
         },
         {
             "category": "PythonApp",
@@ -2442,7 +2470,21 @@
             "inputApplicationType": "None",
             "outputApplicationType": "None",
             "inputPorts": [],
-            "outputPorts": [],
+            "outputPorts": [
+                {
+                    "text": "Array",
+                    "name": "array",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "Object.Array",
+                    "fieldType": "OutputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
             "inputAppFields": [],
@@ -2577,24 +2619,11 @@
                     "options": [],
                     "precious": false,
                     "positional": false
-                },
-                {
-                    "text": "Array",
-                    "name": "array",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "type": "Object.Array",
-                    "fieldType": "OutputPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
                 }
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "1f3c41f"
+            "sha": "310b168"
         },
         {
             "category": "S3",
@@ -2612,8 +2641,36 @@
             "outputApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "inputPorts": [],
-            "outputPorts": [],
+            "inputPorts": [
+                {
+                    "text": "dummy",
+                    "name": "dummy",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "Object",
+                    "fieldType": "InputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
+            "outputPorts": [
+                {
+                    "text": "dummy",
+                    "name": "dummy",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "Object",
+                    "fieldType": "OutputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
             "inputAppFields": [],
@@ -2683,37 +2740,11 @@
                     "options": [],
                     "precious": false,
                     "positional": false
-                },
-                {
-                    "text": "dummy",
-                    "name": "dummy",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "type": "Object",
-                    "fieldType": "InputPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "text": "dummy",
-                    "name": "dummy",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "type": "Object",
-                    "fieldType": "OutputPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
                 }
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "1f3c41f"
+            "sha": "310b168"
         },
         {
             "category": "PythonApp",
@@ -2731,8 +2762,36 @@
             "outputApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "inputPorts": [],
-            "outputPorts": [],
+            "inputPorts": [
+                {
+                    "text": "File",
+                    "name": "file",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "Object.PathBasedDrop",
+                    "fieldType": "InputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
+            "outputPorts": [
+                {
+                    "text": "File",
+                    "name": "file",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "Object.PathBasedDrop",
+                    "fieldType": "OutputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
             "inputAppFields": [],
@@ -2854,37 +2913,11 @@
                     "options": [],
                     "precious": false,
                     "positional": false
-                },
-                {
-                    "text": "File",
-                    "name": "file",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "type": "Object.PathBasedDrop",
-                    "fieldType": "InputPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "text": "File",
-                    "name": "file",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "type": "Object.PathBasedDrop",
-                    "fieldType": "OutputPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
                 }
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "1f3c41f"
+            "sha": "310b168"
         },
         {
             "category": "PythonApp",
@@ -3003,7 +3036,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "1f3c41f"
+            "sha": "310b168"
         },
         {
             "category": "PythonApp",
@@ -3022,7 +3055,21 @@
             "inputApplicationType": "None",
             "outputApplicationType": "None",
             "inputPorts": [],
-            "outputPorts": [],
+            "outputPorts": [
+                {
+                    "text": "Data",
+                    "name": "data",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "String",
+                    "fieldType": "OutputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
             "inputAppFields": [],
@@ -3157,24 +3204,11 @@
                     "options": [],
                     "precious": false,
                     "positional": false
-                },
-                {
-                    "text": "Data",
-                    "name": "data",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "type": "String",
-                    "fieldType": "OutputPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
                 }
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "1f3c41f"
+            "sha": "310b168"
         },
         {
             "category": "PythonApp",
@@ -3193,7 +3227,21 @@
             "inputApplicationType": "None",
             "outputApplicationType": "None",
             "inputPorts": [],
-            "outputPorts": [],
+            "outputPorts": [
+                {
+                    "text": "Content",
+                    "name": "content",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "String",
+                    "fieldType": "OutputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
             "inputAppFields": [],
@@ -3289,24 +3337,11 @@
                     "options": [],
                     "precious": false,
                     "positional": false
-                },
-                {
-                    "text": "Content",
-                    "name": "content",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "type": "String",
-                    "fieldType": "OutputPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
                 }
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "1f3c41f"
+            "sha": "310b168"
         }
     ],
     "linkDataArray": []
