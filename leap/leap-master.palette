@@ -7,7 +7,7 @@
         "readonly": true,
         "filePath": "leap-master.palette",
         "sha": "2dc1084",
-        "git_url": "https://gitlab-ci-token:P5gNd_sA-RUyX4ZXgDYw@gitlab.com/ska-telescope/icrar-leap-accelerate.git"
+        "git_url": "https://gitlab-ci-token:pM6mzTJsBmRyUXXtFs9v@gitlab.com/ska-telescope/icrar-leap-accelerate.git"
     },
     "nodeDataArray": [
         {
@@ -15,7 +15,7 @@
             "drawOrderHint": 0,
             "key": -1,
             "text": "Call Leap",
-            "description": "Call Leap\nA BarrierAppDrop that reads a config file, generates a command line for the LeapAccelerateCLI application, and then executes the application",
+            "description": "",
             "collapsed": false,
             "showPorts": false,
             "streaming": false,
@@ -33,21 +33,8 @@
             "inputAppFields": [],
             "outputAppFields": [],
             "fields": [],
-            "applicationArgs": [
-                {
-                    "text": "Measurement Set Filename",
-                    "name": "measurementSetFilename",
-                    "value": "",
-                    "default": "",
-                    "description": "The file from which the input measurement set should be loaded",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                }
-            ],
-            "git_url": "https://gitlab-ci-token:P5gNd_sA-RUyX4ZXgDYw@gitlab.com/ska-telescope/icrar-leap-accelerate.git",
+            "applicationArgs": [],
+            "git_url": "https://gitlab-ci-token:pM6mzTJsBmRyUXXtFs9v@gitlab.com/ska-telescope/icrar-leap-accelerate.git",
             "sha": "2dc1084"
         },
         {
@@ -55,7 +42,7 @@
             "drawOrderHint": 0,
             "key": -2,
             "text": "Leap Gather",
-            "description": "Leap Gather\nA BarrierAppDrop that gathers output from multiple instances of the LeapAccelerateCLI application, sorts it, and outputs it",
+            "description": "",
             "collapsed": false,
             "showPorts": false,
             "streaming": false,
@@ -66,46 +53,15 @@
             "outputApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "inputPorts": [
-                {
-                    "Id": "3b6e0601-dbf7-4699-a612-edfbf80f1704",
-                    "IdText": "Result",
-                    "text": "Result",
-                    "event": false,
-                    "type": "File",
-                    "description": " The JSON output from an instance of LeapAccelerateCLI"
-                }
-            ],
-            "outputPorts": [
-                {
-                    "Id": "83328053-eabf-4628-9d7e-79bc20646d1d",
-                    "IdText": "Result",
-                    "text": "Result",
-                    "event": false,
-                    "type": "File",
-                    "description": " The combined output from many instances the LeapAccelerateCLI application (JSON)"
-                }
-            ],
+            "inputPorts": [],
+            "outputPorts": [],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
             "inputAppFields": [],
             "outputAppFields": [],
             "fields": [],
-            "applicationArgs": [
-                {
-                    "text": "Application Class",
-                    "name": "appclass",
-                    "value": "leap_nodes.LeapGather.LeapGather",
-                    "default": "leap_nodes.LeapGather.LeapGather",
-                    "description": "The path to the class that implements this app",
-                    "readonly": true,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                }
-            ],
-            "git_url": "https://gitlab-ci-token:P5gNd_sA-RUyX4ZXgDYw@gitlab.com/ska-telescope/icrar-leap-accelerate.git",
+            "applicationArgs": [],
+            "git_url": "https://gitlab-ci-token:pM6mzTJsBmRyUXXtFs9v@gitlab.com/ska-telescope/icrar-leap-accelerate.git",
             "sha": "2dc1084"
         },
         {
@@ -113,7 +69,7 @@
             "drawOrderHint": 0,
             "key": -3,
             "text": "Produce Config",
-            "description": "Produce Config\nA BarrierAppDrop that produces multiple config files suitable for the CallLeap BarrierAppDrop",
+            "description": "",
             "collapsed": false,
             "showPorts": false,
             "streaming": false,
@@ -124,101 +80,15 @@
             "outputApplicationName": "",
             "inputApplicationType": "None",
             "outputApplicationType": "None",
-            "inputPorts": [
-                {
-                    "Id": "b6d0144a-32d2-4c39-9e6a-4626db8b4386",
-                    "IdText": "Directions",
-                    "text": "Directions",
-                    "event": false,
-                    "type": "File",
-                    "description": " A CSV file containing directions for calibration"
-                }
-            ],
-            "outputPorts": [
-                {
-                    "Id": "db9f5194-df25-442d-a37b-a957a457edfb",
-                    "IdText": "Config",
-                    "text": "Config",
-                    "event": false,
-                    "type": "File",
-                    "description": " A JSON config containing the specification for running an instance of LeapAccelerateCLI"
-                }
-            ],
+            "inputPorts": [],
+            "outputPorts": [],
             "inputLocalPorts": [],
             "outputLocalPorts": [],
             "inputAppFields": [],
             "outputAppFields": [],
-            "fields": [
-                {
-                    "text": "Application Class",
-                    "name": "appclass",
-                    "value": "leap_nodes.ProduceConfig.ProduceConfig",
-                    "default": "leap_nodes.ProduceConfig.ProduceConfig",
-                    "description": "The path to the class that implements this app",
-                    "readonly": true,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                }
-            ],
-            "applicationArgs": [
-                {
-                    "text": "File Path",
-                    "name": "filePath",
-                    "value": "",
-                    "default": "",
-                    "description": "Path to the MS",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Output File Path",
-                    "name": "outputFilePath",
-                    "value": "",
-                    "default": "",
-                    "description": "Path for output file",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false
-                },
-                {
-                    "text": "Implementation",
-                    "name": "implementation",
-                    "value": "cpu",
-                    "default": "cpu",
-                    "description": "The implementation of the LEAP algorithm to use (cpu, cuda)",
-                    "readonly": false,
-                    "type": "Select",
-                    "precious": false,
-                    "options": [
-                        "cpu",
-                        "cuda"
-                    ],
-                    "positional": false
-                },
-                {
-                    "text": "verbosity",
-                    "name": "verbosity",
-                    "value": "info",
-                    "default": "info",
-                    "description": "The verbosity of the LEAP logging output (info|debug)",
-                    "readonly": false,
-                    "type": "Select",
-                    "precious": false,
-                    "options": [
-                        "info",
-                        "debug"
-                    ],
-                    "positional": false
-                }
-            ],
-            "git_url": "https://gitlab-ci-token:P5gNd_sA-RUyX4ZXgDYw@gitlab.com/ska-telescope/icrar-leap-accelerate.git",
+            "fields": [],
+            "applicationArgs": [],
+            "git_url": "https://gitlab-ci-token:pM6mzTJsBmRyUXXtFs9v@gitlab.com/ska-telescope/icrar-leap-accelerate.git",
             "sha": "2dc1084"
         }
     ],
