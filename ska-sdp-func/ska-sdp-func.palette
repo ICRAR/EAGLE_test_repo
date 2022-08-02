@@ -6,7 +6,7 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "ska-sdp-func.palette",
-        "sha": "fbe6a3a",
+        "sha": "fce7c4e",
         "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git"
     },
     "nodeDataArray": [
@@ -127,7 +127,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
@@ -246,7 +246,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
@@ -378,7 +378,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
@@ -484,7 +484,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
@@ -642,7 +642,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
@@ -826,7 +826,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
@@ -984,7 +984,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
@@ -1181,7 +1181,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
@@ -1339,12 +1339,170 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
             "key": -11,
+            "text": "twosm_rfi_flagger",
+            "description": "Basic RFI flagger based on sum-threshold algorithm.\n\nArray dimensions are as follows, from slowest to fastest varying:\n\n* ``vis`` is 4D and complex-valued, with shape:\n\n  * [ num_timesamples, num_baselines, num_channels, num_polarisations ]\n\n* ``thresholds`` is 1D and real-valued.\n\n  * The size of the array is 2``.\n\n* ``antennas`` is 1D and integer.\n\n  * The size of the array is 2``.\n\n* ``flags`` is 4D and integer-valued, with the same shape as ``vis``.",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "inputPorts": [],
+            "outputPorts": [],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Application Class",
+                    "name": "appclass",
+                    "value": "dlg.apps.pyfunc.PyFuncApp",
+                    "defaultValue": "dlg.apps.pyfunc.PyFuncApp",
+                    "description": "",
+                    "type": "String",
+                    "fieldType": "ComponentParameter",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "defaultValue": "5",
+                    "description": "",
+                    "type": "Integer",
+                    "fieldType": "ComponentParameter",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "defaultValue": "1",
+                    "description": "",
+                    "type": "Integer",
+                    "fieldType": "ComponentParameter",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "false",
+                    "defaultValue": "false",
+                    "description": "",
+                    "type": "Boolean",
+                    "fieldType": "ComponentParameter",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "Function Name",
+                    "name": "func_name",
+                    "value": "ska_sdp_func.twosm_rfi_flagger.twosm_rfi_flagger",
+                    "defaultValue": "ska_sdp_func.twosm_rfi_flagger.twosm_rfi_flagger",
+                    "description": "",
+                    "type": "String",
+                    "fieldType": "ApplicationArgument",
+                    "readonly": true,
+                    "options": [],
+                    "precious": false,
+                    "positional": true
+                },
+                {
+                    "text": "Pickle",
+                    "name": "pickle",
+                    "value": "false",
+                    "defaultValue": "false",
+                    "description": "",
+                    "type": "Boolean",
+                    "fieldType": "ApplicationArgument",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": true
+                },
+                {
+                    "text": "vis",
+                    "name": "vis",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "vis",
+                    "fieldType": "ApplicationArgument",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "thresholds",
+                    "name": "thresholds",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "thresholds",
+                    "fieldType": "ApplicationArgument",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "antennas",
+                    "name": "antennas",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "antennas",
+                    "fieldType": "ApplicationArgument",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "flags",
+                    "name": "flags",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "flags",
+                    "fieldType": "ApplicationArgument",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
+            "applicationArgs": [],
+            "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
+            "sha": "fce7c4e"
+        },
+        {
+            "category": "PythonApp",
+            "drawOrderHint": 0,
+            "key": -12,
             "text": "vector_add",
             "description": "Simple example to add two vectors, element_wise.\n\nParameters can be either numpy or cupy arrays, but must all be consistent,\nand with the same length and data type.\nComputation is performed either on the CPU or GPU as appropriate.",
             "collapsed": false,
@@ -1484,12 +1642,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -12,
+            "key": -13,
             "text": "reference_dft_v00",
             "description": "Generate reference data for DFT comparison",
             "collapsed": false,
@@ -1629,12 +1787,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -13,
+            "key": -14,
             "text": "test_dft_v00",
             "description": "Test DFT function",
             "collapsed": false,
@@ -1735,12 +1893,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -14,
+            "key": -15,
             "text": "reference_dft_v01",
             "description": "Generate reference data for DFT comparison",
             "collapsed": false,
@@ -1906,12 +2064,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -15,
+            "key": -16,
             "text": "test_dft_v01",
             "description": "Test DFT function",
             "collapsed": false,
@@ -2012,12 +2170,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -16,
+            "key": -17,
             "text": "test_fft_1d",
             "description": "Test 1D FFT for consistency with numpy",
             "collapsed": false,
@@ -2118,12 +2276,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -17,
+            "key": -18,
             "text": "test_fft_2d_ones",
             "description": "Test 2D FFT with input all 1.0",
             "collapsed": false,
@@ -2224,12 +2382,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -18,
+            "key": -19,
             "text": "test_fft_2d",
             "description": "Test 2D FFT for consistency with numpy",
             "collapsed": false,
@@ -2330,12 +2488,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -19,
+            "key": -20,
             "text": "test_fft_2d_stack",
             "description": "Test multiple stacked 2D FFTs for consistency with numpy",
             "collapsed": false,
@@ -2436,12 +2594,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -20,
+            "key": -21,
             "text": "test_function_example_a",
             "description": "Test FunctionExampleA",
             "collapsed": false,
@@ -2542,12 +2700,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -21,
+            "key": -22,
             "text": "test_phase_rotate",
             "description": "Test phase centre rotation",
             "collapsed": false,
@@ -2648,12 +2806,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -22,
+            "key": -23,
             "text": "threshold_calc",
             "description": "Threshold calculation",
             "collapsed": false,
@@ -2793,12 +2951,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -23,
+            "key": -24,
             "text": "data_preparation",
             "description": "Prepare test data",
             "collapsed": false,
@@ -2990,12 +3148,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -24,
+            "key": -25,
             "text": "test_rfi_flagger",
             "description": "Test for RFI flagger",
             "collapsed": false,
@@ -3096,12 +3254,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -25,
+            "key": -26,
             "text": "test_sky_coord",
             "description": "Test basic usage",
             "collapsed": false,
@@ -3202,12 +3360,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -26,
+            "key": -27,
             "text": "test_sky_coord_copy",
             "description": "Test making a copy of an existing SkyCoord",
             "collapsed": false,
@@ -3308,12 +3466,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -27,
+            "key": -28,
             "text": "test_astropy_coord",
             "description": "Test creation from astropy SkyCoord class",
             "collapsed": false,
@@ -3414,12 +3572,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -28,
+            "key": -31,
             "text": "test_vector_add",
             "description": "Test vector addition function",
             "collapsed": false,
@@ -3520,12 +3678,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -30,
+            "key": -33,
             "text": "check_params_v00",
             "description": "",
             "collapsed": false,
@@ -3691,12 +3849,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -31,
+            "key": -34,
             "text": "sdp_dft_point_v00",
             "description": "",
             "collapsed": false,
@@ -3862,12 +4020,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -33,
+            "key": -36,
             "text": "check_params_v01",
             "description": "",
             "collapsed": false,
@@ -4033,12 +4191,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -34,
+            "key": -37,
             "text": "sdp_dft_point_v01",
             "description": "source_direction",
             "collapsed": false,
@@ -4230,12 +4388,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -37,
+            "key": -40,
             "text": "check_params",
             "description": "",
             "collapsed": false,
@@ -4388,12 +4546,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -38,
+            "key": -41,
             "text": "sdp_fft_create",
             "description": "num_dims_ff",
             "collapsed": false,
@@ -4559,12 +4717,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -39,
+            "key": -42,
             "text": "sdp_fft_exec",
             "description": "",
             "collapsed": false,
@@ -4717,12 +4875,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -40,
+            "key": -43,
             "text": "sdp_fft_free",
             "description": "",
             "collapsed": false,
@@ -4836,12 +4994,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -44,
+            "key": -47,
             "text": "sdp_function_example_a_create_plan",
             "description": "",
             "collapsed": false,
@@ -4994,12 +5152,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -45,
+            "key": -48,
             "text": "sdp_function_example_a_exec",
             "description": "",
             "collapsed": false,
@@ -5139,12 +5297,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -46,
+            "key": -49,
             "text": "sdp_function_example_a_free_plan",
             "description": "",
             "collapsed": false,
@@ -5258,12 +5416,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -50,
+            "key": -53,
             "text": "rotate_uvw",
             "description": "",
             "collapsed": false,
@@ -5416,12 +5574,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -51,
+            "key": -54,
             "text": "rotate_vis",
             "description": "",
             "collapsed": false,
@@ -5678,12 +5836,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -52,
+            "key": -55,
             "text": "sdp_phase_rotate_uvw",
             "description": "uvw_i",
             "collapsed": false,
@@ -5849,12 +6007,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -53,
+            "key": -56,
             "text": "sdp_phase_rotate_vis",
             "description": "uv",
             "collapsed": false,
@@ -6059,12 +6217,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -57,
+            "key": -60,
             "text": "sum_threshold_on_block",
             "description": "",
             "collapsed": false,
@@ -6256,12 +6414,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -59,
+            "key": -62,
             "text": "sdp_sum_threshold_rfi_flagger",
             "description": "",
             "collapsed": false,
@@ -6427,12 +6585,183 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -61,
+            "key": -66,
+            "text": "sdp_twosm_algo_flagger",
+            "description": "",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "inputPorts": [],
+            "outputPorts": [],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Application Class",
+                    "name": "appclass",
+                    "value": "dlg.apps.pyfunc.PyFuncApp",
+                    "defaultValue": "dlg.apps.pyfunc.PyFuncApp",
+                    "description": "",
+                    "type": "String",
+                    "fieldType": "ComponentParameter",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "defaultValue": "5",
+                    "description": "",
+                    "type": "Integer",
+                    "fieldType": "ComponentParameter",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "defaultValue": "1",
+                    "description": "",
+                    "type": "Integer",
+                    "fieldType": "ComponentParameter",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "false",
+                    "defaultValue": "false",
+                    "description": "",
+                    "type": "Boolean",
+                    "fieldType": "ComponentParameter",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "Function Name",
+                    "name": "func_name",
+                    "value": "sdp_twosm_algo_flagger",
+                    "defaultValue": "sdp_twosm_algo_flagger",
+                    "description": "",
+                    "type": "String",
+                    "fieldType": "ApplicationArgument",
+                    "readonly": true,
+                    "options": [],
+                    "precious": false,
+                    "positional": true
+                },
+                {
+                    "text": "Pickle",
+                    "name": "pickle",
+                    "value": "false",
+                    "defaultValue": "false",
+                    "description": "",
+                    "type": "Boolean",
+                    "fieldType": "ApplicationArgument",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": true
+                },
+                {
+                    "text": "vis",
+                    "name": "vis",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "sdp_Mem",
+                    "fieldType": "ApplicationArgument",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "thresholds",
+                    "name": "thresholds",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "sdp_Mem",
+                    "fieldType": "ApplicationArgument",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "antennas",
+                    "name": "antennas",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "sdp_Mem",
+                    "fieldType": "ApplicationArgument",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "flags",
+                    "name": "flags",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "sdp_Mem",
+                    "fieldType": "ApplicationArgument",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "status",
+                    "name": "status",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "sdp_Error",
+                    "fieldType": "ApplicationArgument",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
+            "applicationArgs": [],
+            "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
+            "sha": "fce7c4e"
+        },
+        {
+            "category": "PythonApp",
+            "drawOrderHint": 0,
+            "key": -68,
             "text": "sdp_launch_cuda_kernel",
             "description": "",
             "collapsed": false,
@@ -6624,12 +6953,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -63,
+            "key": -70,
             "text": "sdp_log_message",
             "description": "",
             "collapsed": false,
@@ -6821,12 +7150,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -65,
+            "key": -72,
             "text": "sdp_mem_alloc",
             "description": "",
             "collapsed": false,
@@ -6953,12 +7282,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -66,
+            "key": -73,
             "text": "sdp_mem_create",
             "description": "shap",
             "collapsed": false,
@@ -7124,12 +7453,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -67,
+            "key": -74,
             "text": "sdp_mem_create_wrapper",
             "description": "",
             "collapsed": false,
@@ -7321,12 +7650,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -68,
+            "key": -75,
             "text": "sdp_mem_create_alias",
             "description": "",
             "collapsed": false,
@@ -7440,12 +7769,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -69,
+            "key": -76,
             "text": "sdp_mem_create_copy",
             "description": "",
             "collapsed": false,
@@ -7585,12 +7914,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -70,
+            "key": -77,
             "text": "sdp_mem_clear_contents",
             "description": "",
             "collapsed": false,
@@ -7717,12 +8046,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -71,
+            "key": -78,
             "text": "sdp_mem_copy_contents",
             "description": "",
             "collapsed": false,
@@ -7901,12 +8230,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -72,
+            "key": -79,
             "text": "sdp_mem_data",
             "description": "",
             "collapsed": false,
@@ -8020,12 +8349,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -73,
+            "key": -80,
             "text": "sdp_mem_data_const",
             "description": "",
             "collapsed": false,
@@ -8139,12 +8468,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -74,
+            "key": -81,
             "text": "sdp_mem_gpu_buffer",
             "description": "",
             "collapsed": false,
@@ -8271,12 +8600,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -75,
+            "key": -82,
             "text": "sdp_mem_gpu_buffer_const",
             "description": "",
             "collapsed": false,
@@ -8403,12 +8732,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -76,
+            "key": -83,
             "text": "sdp_mem_free",
             "description": "",
             "collapsed": false,
@@ -8522,12 +8851,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -77,
+            "key": -84,
             "text": "sdp_mem_is_c_contiguous",
             "description": "",
             "collapsed": false,
@@ -8641,12 +8970,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -78,
+            "key": -85,
             "text": "sdp_mem_is_complex",
             "description": "",
             "collapsed": false,
@@ -8760,12 +9089,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -79,
+            "key": -86,
             "text": "sdp_mem_is_matching",
             "description": "",
             "collapsed": false,
@@ -8905,12 +9234,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -80,
+            "key": -87,
             "text": "sdp_mem_is_read_only",
             "description": "",
             "collapsed": false,
@@ -9024,12 +9353,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -81,
+            "key": -88,
             "text": "sdp_mem_location",
             "description": "",
             "collapsed": false,
@@ -9143,12 +9472,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -82,
+            "key": -89,
             "text": "sdp_mem_num_dims",
             "description": "",
             "collapsed": false,
@@ -9262,12 +9591,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -83,
+            "key": -90,
             "text": "sdp_mem_num_elements",
             "description": "",
             "collapsed": false,
@@ -9381,12 +9710,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -84,
+            "key": -91,
             "text": "sdp_mem_random_fill",
             "description": "",
             "collapsed": false,
@@ -9513,12 +9842,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -85,
+            "key": -92,
             "text": "sdp_mem_ref_dec",
             "description": "",
             "collapsed": false,
@@ -9632,12 +9961,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -86,
+            "key": -93,
             "text": "sdp_mem_ref_inc",
             "description": "",
             "collapsed": false,
@@ -9751,12 +10080,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -87,
+            "key": -94,
             "text": "sdp_mem_set_read_only",
             "description": "",
             "collapsed": false,
@@ -9883,12 +10212,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -88,
+            "key": -95,
             "text": "sdp_mem_shape_dim",
             "description": "",
             "collapsed": false,
@@ -10015,12 +10344,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -89,
+            "key": -96,
             "text": "sdp_mem_stride_bytes_dim",
             "description": "",
             "collapsed": false,
@@ -10147,12 +10476,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -90,
+            "key": -97,
             "text": "sdp_mem_stride_elements_dim",
             "description": "",
             "collapsed": false,
@@ -10279,12 +10608,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -91,
+            "key": -98,
             "text": "sdp_mem_type",
             "description": "",
             "collapsed": false,
@@ -10398,12 +10727,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -92,
+            "key": -99,
             "text": "sdp_mem_type_size",
             "description": "",
             "collapsed": false,
@@ -10517,12 +10846,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -120,
+            "key": -127,
             "text": "sdp_sky_coord_create",
             "description": "",
             "collapsed": false,
@@ -10675,12 +11004,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -121,
+            "key": -128,
             "text": "sdp_sky_coord_free",
             "description": "",
             "collapsed": false,
@@ -10794,12 +11123,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -122,
+            "key": -129,
             "text": "sdp_sky_coord_epoch",
             "description": "",
             "collapsed": false,
@@ -10913,12 +11242,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -123,
+            "key": -130,
             "text": "sdp_sky_coord_set_epoch",
             "description": "",
             "collapsed": false,
@@ -11045,12 +11374,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -124,
+            "key": -131,
             "text": "sdp_sky_coord_type",
             "description": "",
             "collapsed": false,
@@ -11164,12 +11493,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -125,
+            "key": -132,
             "text": "sdp_sky_coord_value",
             "description": "",
             "collapsed": false,
@@ -11296,12 +11625,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -132,
+            "key": -139,
             "text": "sdp_vector_add",
             "description": "",
             "collapsed": false,
@@ -11454,12 +11783,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -135,
+            "key": -142,
             "text": "check_results_v00",
             "description": "",
             "collapsed": false,
@@ -11703,12 +12032,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -136,
+            "key": -143,
             "text": "run_and_check_v00",
             "description": "",
             "collapsed": false,
@@ -11939,12 +12268,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -137,
+            "key": -144,
             "text": "check_results_v01",
             "description": "",
             "collapsed": false,
@@ -12214,12 +12543,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -138,
+            "key": -145,
             "text": "run_and_check_v01",
             "description": "",
             "collapsed": false,
@@ -12450,12 +12779,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -140,
+            "key": -147,
             "text": "run_and_check",
             "description": "",
             "collapsed": false,
@@ -12660,12 +12989,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -144,
+            "key": -151,
             "text": "check_results_rotate_uvw",
             "description": "",
             "collapsed": false,
@@ -12857,12 +13186,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -145,
+            "key": -152,
             "text": "check_results_rotate_vis",
             "description": "",
             "collapsed": false,
@@ -13132,12 +13461,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -146,
+            "key": -153,
             "text": "run_and_check_rotate_uvw",
             "description": "",
             "collapsed": false,
@@ -13329,12 +13658,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -147,
+            "key": -154,
             "text": "run_and_check_rotate_vis",
             "description": "",
             "collapsed": false,
@@ -13539,12 +13868,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -149,
+            "key": -156,
             "text": "check_results",
             "description": "",
             "collapsed": false,
@@ -13710,7 +14039,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://gitlab.com/ska-telescope/sdp/ska-sdp-func.git",
-            "sha": "fbe6a3a"
+            "sha": "fce7c4e"
         }
     ],
     "linkDataArray": []
