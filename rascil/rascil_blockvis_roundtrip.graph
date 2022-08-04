@@ -4,16 +4,16 @@
         "repoService": "GitHub",
         "repoBranch": "master",
         "repo": "ICRAR/EAGLE_test_repo",
-        "filePath": "examples/rascil_blockvis_roundtrip.graph",
-        "eagleVersion": "v4.2.0",
-        "eagleCommitHash": "b34ff925a5c6883fdba168c073afeffb9a9fc446",
+        "filePath": "rascil/rascil_blockvis_roundtrip.graph",
+        "eagleVersion": "v4.5.5",
+        "eagleCommitHash": "33c76f928cb1ba8317f079f74a48af13e50df702",
         "schemaVersion": "OJS",
         "readonly": true,
         "sha": "",
         "gitUrl": "",
         "lastModifiedName": "",
         "lastModifiedEmail": "",
-        "lastModifiedDatetime": "",
+        "lastModifiedDatetime": 0,
         "numLGNodes": 3
     },
     "nodeDataArray": [
@@ -35,7 +35,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": false,
             "git_url": "",
             "sha": "1.0",
             "inputPorts": [],
@@ -45,7 +44,7 @@
                     "IdText": "vis",
                     "text": "vis",
                     "event": false,
-                    "type": "None",
+                    "type": "vis",
                     "description": "BlockVis"
                 }
             ],
@@ -264,7 +263,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": true,
             "git_url": "https://github.com/ICRAR/daliuge.git",
             "sha": "226fab0",
             "inputPorts": [
@@ -345,7 +343,6 @@
             "precious": false,
             "subject": null,
             "expanded": false,
-            "readonly": false,
             "git_url": "",
             "sha": "1.0",
             "inputPorts": [
@@ -500,14 +497,16 @@
             "fromPort": "651ba7e4-1ce6-4a80-a0d0-2be338edca89",
             "to": -4,
             "toPort": "2b40b1bd-0d4c-428a-84f7-0805a636a4d6",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
         },
         {
             "from": -4,
             "fromPort": "bf1de905-0b94-4e54-915b-4a85c0c9555c",
             "to": -5,
             "toPort": "89e20429-d040-4063-91d3-330d58b0fae0",
-            "loop_aware": "0"
+            "loop_aware": "0",
+            "closesLoop": false
         }
     ]
 }
