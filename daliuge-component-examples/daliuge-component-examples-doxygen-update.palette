@@ -6,7 +6,7 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "daliuge-component-examples-doxygen-update.palette",
-        "sha": "b8a3bbb",
+        "sha": "9293545",
         "git_url": "https://github.com/ICRAR/daliuge-component-examples"
     },
     "nodeDataArray": [
@@ -32,10 +32,63 @@
             "outputLocalPorts": [],
             "inputAppFields": [],
             "outputAppFields": [],
-            "fields": [],
+            "fields": [
+                {
+                    "text": "Application Class",
+                    "name": "param/appclass",
+                    "value": "dlg_example_cmpts.apps.AdvUrlRetrieve",
+                    "defaultValue": "dlg_example_cmpts.apps.AdvUrlRetrieve",
+                    "description": "",
+                    "type": "String",
+                    "fieldType": "ComponentParameter",
+                    "readonly": true,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "defaultValue": "5",
+                    "description": "",
+                    "type": "Float",
+                    "fieldType": "ComponentParameter",
+                    "readonly": true,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "defaultValue": "1",
+                    "description": "",
+                    "type": "Integer",
+                    "fieldType": "ComponentParameter",
+                    "readonly": true,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "URL Template",
+                    "name": "urlTempl",
+                    "value": "https://eagle.icrar.org",
+                    "defaultValue": "https://eagle.icrar.org",
+                    "description": "",
+                    "type": "String",
+                    "fieldType": "ApplicationArgument",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "b8a3bbb"
+            "sha": "9293545"
         },
         {
             "category": "PythonApp",
@@ -69,9 +122,33 @@
                     "type": "String",
                     "fieldType": "ComponentParameter",
                     "readonly": true,
-                    "options": [
-                        "Import path for application class"
-                    ],
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "defaultValue": "5",
+                    "description": "",
+                    "type": "Float",
+                    "fieldType": "ComponentParameter",
+                    "readonly": true,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "defaultValue": "1",
+                    "description": "",
+                    "type": "Integer",
+                    "fieldType": "ComponentParameter",
+                    "readonly": true,
+                    "options": [],
                     "precious": false,
                     "positional": false
                 },
@@ -84,16 +161,14 @@
                     "type": "Integer",
                     "fieldType": "ApplicationArgument",
                     "readonly": false,
-                    "options": [
-                        "0-base index of column to extract"
-                    ],
+                    "options": [],
                     "precious": false,
                     "positional": false
                 }
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "b8a3bbb"
+            "sha": "9293545"
         },
         {
             "category": "PythonApp",
@@ -199,7 +274,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "b8a3bbb"
+            "sha": "9293545"
         },
         {
             "category": "PythonApp",
@@ -223,10 +298,50 @@
             "outputLocalPorts": [],
             "inputAppFields": [],
             "outputAppFields": [],
-            "fields": [],
+            "fields": [
+                {
+                    "text": "Application Class",
+                    "name": "appclass",
+                    "value": "dlg_example_cmpts.apps.GenericGather",
+                    "defaultValue": "dlg_example_cmpts.apps.GenericGather",
+                    "description": "",
+                    "type": "String",
+                    "fieldType": "ComponentParameter",
+                    "readonly": true,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "defaultValue": "5",
+                    "description": "",
+                    "type": "Float",
+                    "fieldType": "ComponentParameter",
+                    "readonly": true,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "defaultValue": "1",
+                    "description": "",
+                    "type": "Integer",
+                    "fieldType": "ComponentParameter",
+                    "readonly": true,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "b8a3bbb"
+            "sha": "9293545"
         },
         {
             "category": "PythonApp",
@@ -332,7 +447,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "b8a3bbb"
+            "sha": "9293545"
         },
         {
             "category": "PythonApp",
@@ -438,7 +553,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "b8a3bbb"
+            "sha": "9293545"
         },
         {
             "category": "File",
@@ -465,7 +580,7 @@
             "fields": [],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "b8a3bbb"
+            "sha": "9293545"
         },
         {
             "category": "PythonApp",
@@ -499,9 +614,33 @@
                     "type": "String",
                     "fieldType": "ComponentParameter",
                     "readonly": true,
-                    "options": [
-                        "Import path for application class"
-                    ],
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "defaultValue": "5",
+                    "description": "",
+                    "type": "Float",
+                    "fieldType": "ComponentParameter",
+                    "readonly": true,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "defaultValue": "1",
+                    "description": "",
+                    "type": "Integer",
+                    "fieldType": "ComponentParameter",
+                    "readonly": true,
+                    "options": [],
                     "precious": false,
                     "positional": false
                 },
@@ -514,9 +653,7 @@
                     "type": "Object.array",
                     "fieldType": "InputPort",
                     "readonly": false,
-                    "options": [
-                        "List of elements"
-                    ],
+                    "options": [],
                     "precious": false,
                     "positional": false
                 },
@@ -536,7 +673,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "b8a3bbb"
+            "sha": "9293545"
         },
         {
             "category": "PythonApp",
@@ -560,10 +697,50 @@
             "outputLocalPorts": [],
             "inputAppFields": [],
             "outputAppFields": [],
-            "fields": [],
+            "fields": [
+                {
+                    "text": "Application Class",
+                    "name": "appclass",
+                    "value": "dlg_example_cmpts.apps.String2JSON",
+                    "defaultValue": "dlg_example_cmpts.apps.String2JSON",
+                    "description": "",
+                    "type": "String",
+                    "fieldType": "ComponentParameter",
+                    "readonly": true,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "defaultValue": "5",
+                    "description": "",
+                    "type": "Float",
+                    "fieldType": "ComponentParameter",
+                    "readonly": true,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "defaultValue": "1",
+                    "description": "",
+                    "type": "Integer",
+                    "fieldType": "ComponentParameter",
+                    "readonly": true,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "b8a3bbb"
+            "sha": "9293545"
         }
     ],
     "linkDataArray": []
