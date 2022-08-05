@@ -6,7 +6,7 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "daliuge-component-examples-doxygen-update.palette",
-        "sha": "67012bf",
+        "sha": "b8a3bbb",
         "git_url": "https://github.com/ICRAR/daliuge-component-examples"
     },
     "nodeDataArray": [
@@ -35,7 +35,7 @@
             "fields": [],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "67012bf"
+            "sha": "b8a3bbb"
         },
         {
             "category": "PythonApp",
@@ -59,10 +59,41 @@
             "outputLocalPorts": [],
             "inputAppFields": [],
             "outputAppFields": [],
-            "fields": [],
+            "fields": [
+                {
+                    "text": "Application Class",
+                    "name": "appclass",
+                    "value": "dlg_example_cmpts.apps.ExtractColumn",
+                    "defaultValue": "dlg_example_cmpts.apps.ExtractColumn",
+                    "description": "",
+                    "type": "String",
+                    "fieldType": "ComponentParameter",
+                    "readonly": true,
+                    "options": [
+                        "Import path for application class"
+                    ],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "index",
+                    "name": "index",
+                    "value": "0",
+                    "defaultValue": "0",
+                    "description": "",
+                    "type": "Integer",
+                    "fieldType": "ApplicationArgument",
+                    "readonly": false,
+                    "options": [
+                        "0-base index of column to extract"
+                    ],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "67012bf"
+            "sha": "b8a3bbb"
         },
         {
             "category": "PythonApp",
@@ -86,10 +117,89 @@
             "outputLocalPorts": [],
             "inputAppFields": [],
             "outputAppFields": [],
-            "fields": [],
+            "fields": [
+                {
+                    "text": "Application class",
+                    "name": "appclass",
+                    "value": "dlg_example_cmpts.apps.FileGlob",
+                    "defaultValue": "dlg_example_cmpts.apps.FileGlob",
+                    "description": "",
+                    "type": "String",
+                    "fieldType": "ComponentParameter",
+                    "readonly": true,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "defaultValue": "5",
+                    "description": "",
+                    "type": "Float",
+                    "fieldType": "ComponentParameter",
+                    "readonly": true,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "defaultValue": "1",
+                    "description": "",
+                    "type": "Integer",
+                    "fieldType": "ComponentParameter",
+                    "readonly": true,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "wildcard",
+                    "name": "wildcard",
+                    "value": "*",
+                    "defaultValue": "*",
+                    "description": "",
+                    "type": "String",
+                    "fieldType": "InputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "filepath",
+                    "name": "filepath",
+                    "value": ".",
+                    "defaultValue": ".",
+                    "description": "",
+                    "type": "String",
+                    "fieldType": "InputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "file_list",
+                    "name": "file_list",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "Object.array",
+                    "fieldType": "OutputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "67012bf"
+            "sha": "b8a3bbb"
         },
         {
             "category": "PythonApp",
@@ -116,7 +226,7 @@
             "fields": [],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "67012bf"
+            "sha": "b8a3bbb"
         },
         {
             "category": "PythonApp",
@@ -140,10 +250,89 @@
             "outputLocalPorts": [],
             "inputAppFields": [],
             "outputAppFields": [],
-            "fields": [],
+            "fields": [
+                {
+                    "text": "Application class",
+                    "name": "appclass",
+                    "value": "dlg_example_cmpts.apps.MyBranch",
+                    "defaultValue": "dlg_example_cmpts.apps.MyBranch",
+                    "description": "",
+                    "type": "String",
+                    "fieldType": "ComponentParameter",
+                    "readonly": true,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "defaultValue": "5",
+                    "description": "",
+                    "type": "Float",
+                    "fieldType": "ComponentParameter",
+                    "readonly": true,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "defaultValue": "1",
+                    "description": "",
+                    "type": "Integer",
+                    "fieldType": "ComponentParameter",
+                    "readonly": true,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "Array",
+                    "name": "array",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "Object.Array",
+                    "fieldType": "InputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "Y",
+                    "name": "Y",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "float",
+                    "fieldType": "OutputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "N",
+                    "name": "N",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "float",
+                    "fieldType": "OutputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "67012bf"
+            "sha": "b8a3bbb"
         },
         {
             "category": "PythonApp",
@@ -249,7 +438,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "67012bf"
+            "sha": "b8a3bbb"
         },
         {
             "category": "File",
@@ -276,7 +465,7 @@
             "fields": [],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "67012bf"
+            "sha": "b8a3bbb"
         },
         {
             "category": "PythonApp",
@@ -300,10 +489,54 @@
             "outputLocalPorts": [],
             "inputAppFields": [],
             "outputAppFields": [],
-            "fields": [],
+            "fields": [
+                {
+                    "text": "Application Class",
+                    "name": "/appclass",
+                    "value": "dlg_example_cmpts.apps.PickOne",
+                    "defaultValue": "dlg_example_cmpts.apps.PickOne",
+                    "description": "",
+                    "type": "String",
+                    "fieldType": "ComponentParameter",
+                    "readonly": true,
+                    "options": [
+                        "Import path for application class"
+                    ],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "rest_array",
+                    "name": "/rest_array",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "Object.array",
+                    "fieldType": "InputPort",
+                    "readonly": false,
+                    "options": [
+                        "List of elements"
+                    ],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "element",
+                    "name": "/element",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "Object.element",
+                    "fieldType": "OutputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "67012bf"
+            "sha": "b8a3bbb"
         },
         {
             "category": "PythonApp",
@@ -330,7 +563,7 @@
             "fields": [],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge-component-examples",
-            "sha": "67012bf"
+            "sha": "b8a3bbb"
         }
     ],
     "linkDataArray": []
