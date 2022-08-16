@@ -6,7 +6,7 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "daliuge-master-template.palette",
-        "sha": "1127ae4",
+        "sha": "cc1bfc9",
         "git_url": "https://github.com/ICRAR/daliuge"
     },
     "nodeDataArray": [
@@ -179,7 +179,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "1127ae4"
+            "sha": "cc1bfc9"
         },
         {
             "category": "Branch",
@@ -311,7 +311,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "1127ae4"
+            "sha": "cc1bfc9"
         },
         {
             "category": "Docker",
@@ -586,7 +586,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "1127ae4"
+            "sha": "cc1bfc9"
         },
         {
             "category": "DynlibApp",
@@ -692,7 +692,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "1127ae4"
+            "sha": "cc1bfc9"
         },
         {
             "category": "DynlibProcApp",
@@ -798,7 +798,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "1127ae4"
+            "sha": "cc1bfc9"
         },
         {
             "category": "Mpi",
@@ -982,12 +982,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "1127ae4"
+            "sha": "cc1bfc9"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -24,
+            "key": -25,
             "text": "PyFuncApp",
             "description": "An application that wraps a simple python function. The inputs of the application are treated as the arguments of the function. Conversely, the output of the function is treated as the output of the application. If the application has more than one output, the result of calling the function is treated as an iterable, with each individual object being written to its corresponding output.",
             "collapsed": false,
@@ -1176,12 +1176,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "1127ae4"
+            "sha": "cc1bfc9"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -25,
+            "key": -26,
             "text": "PythonApp",
             "description": "A placeholder APP to aid construction of new applications. This is mainly useful (and used) when starting a new workflow from scratch.",
             "collapsed": false,
@@ -1256,7 +1256,87 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "1127ae4"
+            "sha": "cc1bfc9"
+        },
+        {
+            "category": "SharedMemory",
+            "drawOrderHint": 0,
+            "key": -31,
+            "text": "SharedMemory",
+            "description": "Data stored in shared memory",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "inputPorts": [],
+            "outputPorts": [],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "5",
+                    "defaultValue": "5",
+                    "description": "Estimated size of the data contained in this node",
+                    "type": "Float",
+                    "fieldType": "ComponentParameter",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "False",
+                    "defaultValue": "False",
+                    "description": "Is this node the end of a group?",
+                    "type": "Boolean",
+                    "fieldType": "ComponentParameter",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "dummy",
+                    "name": "dummy",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "Dummy input port",
+                    "type": "Object",
+                    "fieldType": "InputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "dummy",
+                    "name": "dummy",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "Dummy output port",
+                    "type": "Object",
+                    "fieldType": "OutputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
+            "applicationArgs": [],
+            "git_url": "https://github.com/ICRAR/daliuge",
+            "sha": "cc1bfc9"
         }
     ],
     "linkDataArray": []
