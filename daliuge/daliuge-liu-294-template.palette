@@ -6,7 +6,7 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "daliuge-liu-294-template.palette",
-        "sha": "96174db",
+        "sha": "314d2aa",
         "git_url": "https://github.com/ICRAR/daliuge"
     },
     "nodeDataArray": [
@@ -179,7 +179,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "96174db"
+            "sha": "314d2aa"
         },
         {
             "category": "Branch",
@@ -311,12 +311,105 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "96174db"
+            "sha": "314d2aa"
+        },
+        {
+            "category": "File",
+            "drawOrderHint": 0,
+            "key": -6,
+            "text": "DataDummyDROP",
+            "description": "A placeholder Data Component to aid construction of new data components. This is mainly useful (and used) when starting a new workflow from scratch.",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "inputPorts": [],
+            "outputPorts": [],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Application Class",
+                    "name": "dataclass",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "Data class",
+                    "type": "String",
+                    "fieldType": "ComponentParameter",
+                    "readonly": true,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": "5",
+                    "defaultValue": "5",
+                    "description": "Estimated size of the data contained in this node",
+                    "type": "Float",
+                    "fieldType": "ComponentParameter",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": "False",
+                    "defaultValue": "False",
+                    "description": "Is this node the end of a group?",
+                    "type": "Boolean",
+                    "fieldType": "ComponentParameter",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "dummy",
+                    "name": "dummy",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "Dummy input port",
+                    "type": "Object",
+                    "fieldType": "InputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "dummy",
+                    "name": "dummy",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "Dummy output port",
+                    "type": "Object",
+                    "fieldType": "OutputPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
+            "applicationArgs": [],
+            "git_url": "https://github.com/ICRAR/daliuge",
+            "sha": "314d2aa"
         },
         {
             "category": "Docker",
             "drawOrderHint": 0,
-            "key": -7,
+            "key": -8,
             "text": "Docker",
             "description": "A component wrapping docker based applications.",
             "collapsed": false,
@@ -586,12 +679,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "96174db"
+            "sha": "314d2aa"
         },
         {
             "category": "DynlibApp",
             "drawOrderHint": 0,
-            "key": -8,
+            "key": -9,
             "text": "DynlibApp",
             "description": "An application component run from a dynamic library",
             "collapsed": false,
@@ -692,12 +785,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "96174db"
+            "sha": "314d2aa"
         },
         {
             "category": "DynlibProcApp",
             "drawOrderHint": 0,
-            "key": -9,
+            "key": -10,
             "text": "DynlibProcApp",
             "description": "An application component run from a dynamic library in a different process",
             "collapsed": false,
@@ -798,12 +891,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "96174db"
+            "sha": "314d2aa"
         },
         {
             "category": "Mpi",
             "drawOrderHint": 0,
-            "key": -18,
+            "key": -19,
             "text": "MPI",
             "description": "An application component using the Message Passing Interface (MPI)",
             "collapsed": false,
@@ -982,12 +1075,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "96174db"
+            "sha": "314d2aa"
         },
         {
             "category": "PyFuncApp",
             "drawOrderHint": 0,
-            "key": -26,
+            "key": -27,
             "text": "PyFuncApp",
             "description": "An application that wraps a simple python function. The inputs of the application are treated as the arguments of the function. Conversely, the output of the function is treated as the output of the application. If the application has more than one output, the result of calling the function is treated as an iterable, with each individual object being written to its corresponding output.",
             "collapsed": false,
@@ -1176,12 +1269,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "96174db"
+            "sha": "314d2aa"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -27,
+            "key": -28,
             "text": "PythonApp",
             "description": "A placeholder APP to aid construction of new applications. This is mainly useful (and used) when starting a new workflow from scratch.",
             "collapsed": false,
@@ -1256,7 +1349,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://github.com/ICRAR/daliuge",
-            "sha": "96174db"
+            "sha": "314d2aa"
         }
     ],
     "linkDataArray": []
