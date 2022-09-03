@@ -6,7 +6,7 @@
         "repo": "ICRAR/EAGLE_test_repo",
         "readonly": true,
         "filePath": "radler.palette",
-        "sha": "feb67a6",
+        "sha": "76cfe6a",
         "git_url": "https://git.astron.nl/RD/radler"
     },
     "nodeDataArray": [
@@ -152,7 +152,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
@@ -296,7 +296,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
@@ -453,12 +453,156 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
             "key": -4,
+            "text": "build_extension",
+            "description": "",
+            "collapsed": false,
+            "showPorts": false,
+            "streaming": false,
+            "subject": null,
+            "selected": false,
+            "expanded": false,
+            "inputApplicationName": "",
+            "outputApplicationName": "",
+            "inputApplicationType": "None",
+            "outputApplicationType": "None",
+            "inputPorts": [],
+            "outputPorts": [],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "fields": [
+                {
+                    "text": "Application Class",
+                    "name": "appclass",
+                    "value": "dlg.apps.pyfunc.PyFuncApp",
+                    "defaultValue": "dlg.apps.pyfunc.PyFuncApp",
+                    "description": "The python class that implements this application",
+                    "type": "String",
+                    "fieldType": "ComponentParameter",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "Execution Time",
+                    "name": "execution_time",
+                    "value": "5",
+                    "defaultValue": "5",
+                    "description": "Estimate of execution time (in seconds) for this application.",
+                    "type": "Integer",
+                    "fieldType": "ComponentParameter",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "No. of CPUs",
+                    "name": "num_cpus",
+                    "value": "1",
+                    "defaultValue": "1",
+                    "description": "Number of CPUs used for this application.",
+                    "type": "Integer",
+                    "fieldType": "ComponentParameter",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "Group start",
+                    "name": "group_start",
+                    "value": "false",
+                    "defaultValue": "false",
+                    "description": "Is this node the start of a group?",
+                    "type": "Boolean",
+                    "fieldType": "ComponentParameter",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "Function Name",
+                    "name": "func_name",
+                    "value": "setup.CMakeBuild.build_extension",
+                    "defaultValue": "setup.CMakeBuild.build_extension",
+                    "description": "Python function name",
+                    "type": "String",
+                    "fieldType": "ApplicationArgument",
+                    "readonly": true,
+                    "options": [],
+                    "precious": false,
+                    "positional": true
+                },
+                {
+                    "text": "Input Parser",
+                    "name": "input_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Input port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ApplicationArgument",
+                    "readonly": false,
+                    "options": [
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "Output Parser",
+                    "name": "output_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Output port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ApplicationArgument",
+                    "readonly": false,
+                    "options": [
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "text": "ext",
+                    "name": "ext",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "type": "ext",
+                    "fieldType": "ApplicationArgument",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
+            "applicationArgs": [],
+            "git_url": "https://git.astron.nl/RD/radler",
+            "sha": "76cfe6a"
+        },
+        {
+            "category": "PythonApp",
+            "drawOrderHint": 0,
+            "key": -5,
             "text": "run",
             "description": "",
             "collapsed": false,
@@ -610,12 +754,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -5,
+            "key": -6,
             "text": "test_component_list",
             "description": "",
             "collapsed": false,
@@ -741,12 +885,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -6,
+            "key": -7,
             "text": "test_multiscale_component_list",
             "description": "",
             "collapsed": false,
@@ -872,12 +1016,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -7,
+            "key": -8,
             "text": "test_vector_unique_ptr_image_accessor_append",
             "description": "",
             "collapsed": false,
@@ -1003,12 +1147,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -8,
+            "key": -9,
             "text": "get_psf_rectangular",
             "description": "Define a PSF with a rectangular shap",
             "collapsed": false,
@@ -1173,12 +1317,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -9,
+            "key": -10,
             "text": "get_psf_cross",
             "description": "Define a PSF with a cross shap",
             "collapsed": false,
@@ -1343,12 +1487,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -10,
+            "key": -11,
             "text": "get_subimage",
             "description": "Returns a square from the input image img, with center in (center_point_x, center_point_y) and width/height = 2 * interva",
             "collapsed": false,
@@ -1526,12 +1670,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -11,
+            "key": -12,
             "text": "check_values",
             "description": "Asserts that the residual and PSF have the same shap",
             "collapsed": false,
@@ -1709,12 +1853,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -12,
+            "key": -13,
             "text": "test_direction_dependent_psfs",
             "description": "This test checks that each point is deconvolved with the closest PSF:\n1. Place 9 PSF on a regular 3x3 grid.\n2. Place 9 point sources on a semi-regular grid.\n3. Run one iteration of deconvolution with multiple PSFs and parallel deconvolution.\n4. Check in the residual that the correct PSF has been subtracted.\n\nThis test is also documented at https://confluence.skatelescope.org/display/SE/Test+DD+PSFs",
             "collapsed": false,
@@ -1840,12 +1984,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -13,
+            "key": -14,
             "text": "radler_perform",
             "description": "",
             "collapsed": false,
@@ -1997,12 +2141,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -14,
+            "key": -15,
             "text": "check_model_image_point_source",
             "description": "",
             "collapsed": false,
@@ -2180,12 +2324,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -15,
+            "key": -16,
             "text": "get_settings",
             "description": "",
             "collapsed": false,
@@ -2311,12 +2455,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -16,
+            "key": -17,
             "text": "get_point_source",
             "description": "",
             "collapsed": false,
@@ -2442,12 +2586,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -17,
+            "key": -18,
             "text": "get_psf",
             "description": "",
             "collapsed": false,
@@ -2573,12 +2717,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -18,
+            "key": -19,
             "text": "get_residual",
             "description": "",
             "collapsed": false,
@@ -2743,12 +2887,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -19,
+            "key": -20,
             "text": "test_num_threads",
             "description": "Check that only positive, non-zero number of threads are accepted.",
             "collapsed": false,
@@ -2887,12 +3031,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -20,
+            "key": -21,
             "text": "test_input_dtype",
             "description": "Check that Radler constructor only accepts numpy arrays of dtype=np.float32",
             "collapsed": false,
@@ -3031,12 +3175,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -21,
+            "key": -22,
             "text": "test_matching_arrays",
             "description": "Check that the Radler constructor only accepts valid numpy arrays that match.",
             "collapsed": false,
@@ -3175,12 +3319,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -22,
+            "key": -23,
             "text": "test_require_frequencies",
             "description": "Check that Radler requires frequencies when spectral fitting is enabled.",
             "collapsed": false,
@@ -3319,12 +3463,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -23,
+            "key": -24,
             "text": "test_default_args",
             "description": "Test calling the Radler constructor without providing optional arguments.",
             "collapsed": false,
@@ -3463,12 +3607,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -24,
+            "key": -25,
             "text": "test_point_source",
             "description": "Check that a point source is properly deconvolved (and input numpy images are\nupdated in-place)\n\nParameters\n----------\nsettings :\n    _description_\nalgorithm : rd.AlgorithmType\n    Which deconvolution algorithm should be used?\nscale : float\n    _description_\nsource_shift : tuple\n    Shift of point source in (width, height) direction",
             "collapsed": false,
@@ -3646,12 +3790,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -25,
+            "key": -26,
             "text": "test_write_component_list",
             "description": "Check writing of component list",
             "collapsed": false,
@@ -3790,12 +3934,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -26,
+            "key": -27,
             "text": "test_one_entry_worktable",
             "description": "Check Radler when a one entry work table is provided.",
             "collapsed": false,
@@ -3973,12 +4117,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -27,
+            "key": -28,
             "text": "test_ndeconvolution_is_noriginal",
             "description": "Test radler by providing a WorkTable with the number of deconvolution groups equal\nto number of original groups.",
             "collapsed": false,
@@ -4130,12 +4274,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -28,
+            "key": -29,
             "text": "test_image_cube_non_joined",
             "description": "Test radler by providing numpy arrays with three dimensions.\nThe pybind11 bindings should generate a similar worktable as\ntest_ndeconvolution_is_noriginal, and Radler should produce the same result.",
             "collapsed": false,
@@ -4287,12 +4431,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -29,
+            "key": -30,
             "text": "test_ndeconvolution_lt_noriginal",
             "description": "Test radler by providing a WorkTable with two original groups and\none deconvolution group. Output should be two identical\nmodel images, containing the (weighted) point source values.",
             "collapsed": false,
@@ -4444,12 +4588,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -30,
+            "key": -31,
             "text": "test_image_cube_joined",
             "description": "Test radler by providing numpy arrays with three dimensions.\nThe pybind11 bindings should generate a similar worktable as\ntest_ndeconvolution_lt_noriginal, and Radler should produce the same result.",
             "collapsed": false,
@@ -4601,12 +4745,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -31,
+            "key": -32,
             "text": "test_layout",
             "description": "",
             "collapsed": false,
@@ -4732,12 +4876,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -32,
+            "key": -33,
             "text": "test_default",
             "description": "",
             "collapsed": false,
@@ -4863,12 +5007,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -33,
+            "key": -34,
             "text": "test_readwrite",
             "description": "",
             "collapsed": false,
@@ -4994,12 +5138,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -34,
+            "key": -35,
             "text": "test_work_table_entry",
             "description": "",
             "collapsed": false,
@@ -5125,12 +5269,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -35,
+            "key": -36,
             "text": "test_zero_groups",
             "description": "Check WorkTable constructor with zero original / deconvolution groups.",
             "collapsed": false,
@@ -5256,12 +5400,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -36,
+            "key": -37,
             "text": "test_negative_original_groups",
             "description": "Check WorkTable constructor for negative number\nof original groups.",
             "collapsed": false,
@@ -5387,12 +5531,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -37,
+            "key": -38,
             "text": "test_negative_deconvolution_groups",
             "description": "Check WorkTable constructor for negative number\nof deconvolution groups.",
             "collapsed": false,
@@ -5518,12 +5662,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -38,
+            "key": -39,
             "text": "test_multiple_deconvolution_groups",
             "description": "Test the WorkTable constructor for (combinations of) multiple deconvolution groups.",
             "collapsed": false,
@@ -5675,12 +5819,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -39,
+            "key": -40,
             "text": "test_channel_index_offset",
             "description": "Test the value of channel_index_offset in the constructor.",
             "collapsed": false,
@@ -5819,12 +5963,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -40,
+            "key": -41,
             "text": "test_psfs_wrong_shape",
             "description": "Check that invalid PSF entries throw an exception.",
             "collapsed": false,
@@ -5950,12 +6094,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -41,
+            "key": -42,
             "text": "test_add_entries_wrong_type",
             "description": "Check that TypeErrors are thrown in case provided\nimages are not np.float32",
             "collapsed": false,
@@ -6081,12 +6225,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -42,
+            "key": -43,
             "text": "test_add_entries",
             "description": "Check the add_entry member function.\nLargely following the add_entries test in test_work_table.cc.\n\nNOTE: just checking whether the interface behaves correctly.",
             "collapsed": false,
@@ -6212,12 +6356,12 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         },
         {
             "category": "PythonApp",
             "drawOrderHint": 0,
-            "key": -43,
+            "key": -44,
             "text": "test_str",
             "description": "Check the WorkTable.__str__().\n\nBoth str(WorkTable) and print(WorkTable) use the __str__ member function\nand are tested to validate they work as intended.",
             "collapsed": false,
@@ -6356,7 +6500,7 @@
             ],
             "applicationArgs": [],
             "git_url": "https://git.astron.nl/RD/radler",
-            "sha": "feb67a6"
+            "sha": "76cfe6a"
         }
     ],
     "linkDataArray": []
