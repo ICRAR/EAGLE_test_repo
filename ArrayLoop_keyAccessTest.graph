@@ -5,8 +5,8 @@
         "repoBranch": "master",
         "repo": "ICRAR/EAGLE_test_repo",
         "filePath": "ArrayLoop_keyAccessTest.graph",
-        "eagleVersion": "v4.5.5",
-        "eagleCommitHash": "aed865a158119e018744be51b30add625f40b7dc",
+        "eagleVersion": "v4.5.5:eagle-841",
+        "eagleCommitHash": "63de787eef6a822699ab09911980fe089fdcb0db",
         "schemaVersion": "OJS",
         "readonly": true,
         "sha": "",
@@ -939,6 +939,32 @@
                     "options": [],
                     "positional": false,
                     "keyAttribute": false
+                },
+                {
+                    "text": "array",
+                    "name": "array",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "Input array",
+                    "readonly": false,
+                    "type": "Object",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
+                },
+                {
+                    "text": "rest_array",
+                    "name": "rest_array",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Complex",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false
                 }
             ],
             "outputAppFields": [],
@@ -1016,6 +1042,7 @@
             "fromPort": "bd47bacb-cfcc-48c7-8f72-c32e02d631da",
             "to": -4,
             "toPort": "2bc074ad-386d-40a6-a997-69668774646e",
+            "dataType": "String",
             "loop_aware": "0",
             "closesLoop": false
         },
@@ -1024,6 +1051,7 @@
             "fromPort": "0872a97e-076f-458e-85f2-fdd4cd3e75a5",
             "to": -6,
             "toPort": "19fe74fd-827a-4c43-b1be-a48dcd2b75d2",
+            "dataType": "Object",
             "loop_aware": "0",
             "closesLoop": false
         },
@@ -1032,6 +1060,7 @@
             "fromPort": "fb4ad016-a5cc-43e0-8272-9cf894ea4687",
             "to": -5,
             "toPort": "81c00bd2-7403-4b6b-85c9-bfc1d308eeda",
+            "dataType": "Object",
             "loop_aware": "0",
             "closesLoop": false
         },
@@ -1040,6 +1069,7 @@
             "fromPort": "ac25b2d6-954d-4348-a85e-f4b056c62623",
             "to": -3,
             "toPort": "055cdf24-e209-408c-86ac-cf769737a366",
+            "dataType": "Object",
             "loop_aware": "1",
             "closesLoop": false
         },
@@ -1048,6 +1078,7 @@
             "fromPort": "6c0b1c42-556a-4651-b05b-2d6fbdd7c692",
             "to": -7,
             "toPort": "da3a2cdc-a73b-4055-a7c9-398b0101a586",
+            "dataType": "Object",
             "loop_aware": "0",
             "closesLoop": false
         },
@@ -1056,6 +1087,7 @@
             "fromPort": "46ebbd1a-a092-442a-b096-ad025df480b9",
             "to": -3,
             "toPort": "055cdf24-e209-408c-86ac-cf769737a366",
+            "dataType": "Object",
             "loop_aware": "0",
             "closesLoop": true
         },
@@ -1064,6 +1096,7 @@
             "fromPort": "ef7bb4e2-e75b-493d-938b-81215fa10256",
             "to": -9,
             "toPort": "5cabc52e-ead6-4b92-8987-0b4bd7ba8f3e",
+            "dataType": "Complex",
             "loop_aware": "1",
             "closesLoop": false
         }
