@@ -7,9 +7,9 @@
         "readonly": true,
         "filePath": "daliuge-master-template.palette",
         "repositoryUrl": "https://github.com/ICRAR/daliuge",
-        "commitHash": "7b4a793",
+        "commitHash": "47c45ec",
         "downloadUrl": "",
-        "signature": "745508515fd2d998898943d8924f01013752ca90a6eb68fb6ab45ad27880d586"
+        "signature": "807d48ba890090fb0d99b9fa07f58c47d201ea42baac2406fe05b7578e7aa435"
     },
     "nodeDataArray": [
         {
@@ -180,7 +180,7 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "7b4a793",
+            "commitHash": "47c45ec",
             "paletteDownloadUrl": "",
             "dataHash": "4429aa1701628f18e700d0069a6365efa4441ac1bd204b82b5904d0d9364d2bc"
         },
@@ -313,7 +313,7 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "7b4a793",
+            "commitHash": "47c45ec",
             "paletteDownloadUrl": "",
             "dataHash": "91f919ffaed83265dda87eca82b8c6dc841a8666485cca7ca14142e7eff7a306"
         },
@@ -341,7 +341,7 @@
             "fields": [],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "7b4a793",
+            "commitHash": "47c45ec",
             "paletteDownloadUrl": "",
             "dataHash": "566cbefdc77a4e84e6de9baaa7f204f0de3c5fbf7447934b181be57f3dc56a82"
         },
@@ -461,7 +461,7 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "7b4a793",
+            "commitHash": "47c45ec",
             "paletteDownloadUrl": "",
             "dataHash": "85bb81f23f8dca765ef1b950a2522d5ddaed0036ac7eba7796e3cb17abe6df07"
         },
@@ -489,7 +489,7 @@
             "fields": [],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "7b4a793",
+            "commitHash": "47c45ec",
             "paletteDownloadUrl": "",
             "dataHash": "d798064c4e5312c1ed726a8cb7deee0786dbfd61347fd0a46fee3edbfb6ee2d2"
         },
@@ -765,7 +765,7 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "7b4a793",
+            "commitHash": "47c45ec",
             "paletteDownloadUrl": "",
             "dataHash": "b73c31b9d1efd5667b0bf4693be43c502c760bff875a1f70ed28083959e414f0"
         },
@@ -872,7 +872,7 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "7b4a793",
+            "commitHash": "47c45ec",
             "paletteDownloadUrl": "",
             "dataHash": "27a11e7fd9e0340e8436463ff5b36c97befba50df488cba5ae31bb6ba1542086"
         },
@@ -979,7 +979,7 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "7b4a793",
+            "commitHash": "47c45ec",
             "paletteDownloadUrl": "",
             "dataHash": "90431c70c7277b9295f5b83ee22cfde6d02e255fd7586a5ac99183c54d4a29f0"
         },
@@ -1007,7 +1007,7 @@
             "fields": [],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "7b4a793",
+            "commitHash": "47c45ec",
             "paletteDownloadUrl": "",
             "dataHash": "ce06daa2f64a11286f82251d6eaf814e4330502c3571d8677bb07776068eea1d"
         },
@@ -1034,65 +1034,13 @@
             "outputAppFields": [],
             "fields": [
                 {
-                    "text": "Application Class",
-                    "name": "appclass",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "Application class",
-                    "type": "String",
-                    "fieldType": "ComponentParameter",
-                    "readonly": true,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "text": "Execution Time",
-                    "name": "execution_time",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "Estimated execution time",
-                    "type": "Float",
-                    "fieldType": "ComponentParameter",
-                    "readonly": true,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "text": "No. of CPUs",
-                    "name": "num_cpus",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "Number of cores used",
-                    "type": "Integer",
-                    "fieldType": "ComponentParameter",
-                    "readonly": true,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
-                    "value": "False",
-                    "defaultValue": "False",
-                    "description": "Is this node the start of a group?",
-                    "type": "Boolean",
-                    "fieldType": "ComponentParameter",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
                     "text": "No. of inputs",
                     "name": "num_of_inputs",
                     "value": "2",
                     "defaultValue": "2",
                     "description": "Number of inputs",
                     "type": "Integer",
-                    "fieldType": "ComponentParameter",
+                    "fieldType": "ApplicationArgument",
                     "readonly": false,
                     "options": [],
                     "precious": false,
@@ -1105,7 +1053,7 @@
                     "defaultValue": "0",
                     "description": "Index of gather axis",
                     "type": "Integer",
-                    "fieldType": "ComponentParameter",
+                    "fieldType": "ApplicationArgument",
                     "readonly": false,
                     "options": [],
                     "precious": false,
@@ -1114,9 +1062,9 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "7b4a793",
+            "commitHash": "47c45ec",
             "paletteDownloadUrl": "",
-            "dataHash": "4a32ca83b0c2a9a9de17dda980f587ba7a48debd0d6787398467b95327b999a2"
+            "dataHash": "374d9a7a718d528b5e82e05ea1d7082568df7b6bc8144886b99366a74a607e62"
         },
         {
             "category": "GroupBy",
@@ -1141,65 +1089,13 @@
             "outputAppFields": [],
             "fields": [
                 {
-                    "text": "Application Class",
-                    "name": "appclass",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "Application class",
-                    "type": "String",
-                    "fieldType": "ComponentParameter",
-                    "readonly": true,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "text": "Execution Time",
-                    "name": "execution_time",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "Estimated execution time",
-                    "type": "Float",
-                    "fieldType": "ComponentParameter",
-                    "readonly": true,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "text": "No. of CPUs",
-                    "name": "num_cpus",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "Number of cores used",
-                    "type": "Integer",
-                    "fieldType": "ComponentParameter",
-                    "readonly": true,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
-                    "value": "False",
-                    "defaultValue": "False",
-                    "description": "Is this node the start of a group?",
-                    "type": "Boolean",
-                    "fieldType": "ComponentParameter",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
                     "text": "No. of inputs",
                     "name": "num_of_inputs",
                     "value": "2",
                     "defaultValue": "2",
                     "description": "Number of inputs",
                     "type": "Integer",
-                    "fieldType": "ComponentParameter",
+                    "fieldType": "ApplicationArgument",
                     "readonly": false,
                     "options": [],
                     "precious": false,
@@ -1212,7 +1108,7 @@
                     "defaultValue": "0",
                     "description": "Index of gather axis",
                     "type": "Integer",
-                    "fieldType": "ComponentParameter",
+                    "fieldType": "ApplicationArgument",
                     "readonly": false,
                     "options": [],
                     "precious": false,
@@ -1221,9 +1117,9 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "7b4a793",
+            "commitHash": "47c45ec",
             "paletteDownloadUrl": "",
-            "dataHash": "fd6bfbcb2e519fa3857dd673cd748963904cd5f0b729ee645beed4e148eb835e"
+            "dataHash": "76ba5969a4dcc6fc8641ec5fa4975c4b7fa3d0f4faa55769ace95dc04732c5f5"
         },
         {
             "category": "Loop",
@@ -1246,78 +1142,12 @@
             "outputLocalPorts": [],
             "inputAppFields": [],
             "outputAppFields": [],
-            "fields": [
-                {
-                    "text": "Application Class",
-                    "name": "appclass",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "Application class",
-                    "type": "String",
-                    "fieldType": "ComponentParameter",
-                    "readonly": true,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "text": "Execution Time",
-                    "name": "execution_time",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "Estimated execution time",
-                    "type": "Float",
-                    "fieldType": "ComponentParameter",
-                    "readonly": true,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "text": "No. of CPUs",
-                    "name": "num_cpus",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "Number of cores used",
-                    "type": "Integer",
-                    "fieldType": "ComponentParameter",
-                    "readonly": true,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
-                    "value": "False",
-                    "defaultValue": "False",
-                    "description": "Is this node the start of a group?",
-                    "type": "Boolean",
-                    "fieldType": "ComponentParameter",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "text": "No. of iterations",
-                    "name": "num_of_iter",
-                    "value": "2",
-                    "defaultValue": "2",
-                    "description": "Number of iterations",
-                    "type": "Integer",
-                    "fieldType": "ComponentParameter",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                }
-            ],
+            "fields": [],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "7b4a793",
+            "commitHash": "47c45ec",
             "paletteDownloadUrl": "",
-            "dataHash": "450dfa4eaab8d42e697aa27322ae1f4ce056c34b92d0cc9bfae460722eae3337"
+            "dataHash": "8567c3dd20d56729bc90bdc637fec5aa9e4be47ea424a79ef2b6233d846cba95"
         },
         {
             "category": "MKN",
@@ -1340,65 +1170,12 @@
             "outputLocalPorts": [],
             "inputAppFields": [],
             "outputAppFields": [],
-            "fields": [
-                {
-                    "text": "Application Class",
-                    "name": "appclass",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "Application class",
-                    "type": "String",
-                    "fieldType": "ComponentParameter",
-                    "readonly": true,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "text": "Execution Time",
-                    "name": "execution_time",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "Estimated execution time",
-                    "type": "Float",
-                    "fieldType": "ComponentParameter",
-                    "readonly": true,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "text": "No. of CPUs",
-                    "name": "num_cpus",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "Number of cores used",
-                    "type": "Integer",
-                    "fieldType": "ComponentParameter",
-                    "readonly": true,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
-                    "value": "False",
-                    "defaultValue": "False",
-                    "description": "Is this node the start of a group?",
-                    "type": "Boolean",
-                    "fieldType": "ComponentParameter",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                }
-            ],
+            "fields": [],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "7b4a793",
+            "commitHash": "47c45ec",
             "paletteDownloadUrl": "",
-            "dataHash": "f4727a58cc9b8569d7e45021db7d135f80db22d7c23c9b38ddf14db6ee25f40a"
+            "dataHash": "bfe57493bdcc982aa0b55b8c2c0760b7effca508ca66534e5af52ca70b79e08d"
         },
         {
             "category": "Mpi",
@@ -1581,7 +1358,7 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "7b4a793",
+            "commitHash": "47c45ec",
             "paletteDownloadUrl": "",
             "dataHash": "da1addf624e5d6fe7fdbf8059578e1062f8901e959813b9faad10f5590f6aeb3"
         },
@@ -1776,7 +1553,7 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "7b4a793",
+            "commitHash": "47c45ec",
             "paletteDownloadUrl": "",
             "dataHash": "dd4f9b3e8d02e105482a5d56cefe45e2173cda709b9b160eafc96b06c693364d"
         },
@@ -1857,7 +1634,7 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "7b4a793",
+            "commitHash": "47c45ec",
             "paletteDownloadUrl": "",
             "dataHash": "0a192d829b1cf1304605eaf3c87444df063eee0299761a194420a8ae93dcfd11"
         },
@@ -1884,65 +1661,13 @@
             "outputAppFields": [],
             "fields": [
                 {
-                    "text": "Application Class",
-                    "name": "appclass",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "Application class",
-                    "type": "String",
-                    "fieldType": "ComponentParameter",
-                    "readonly": true,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "text": "Execution Time",
-                    "name": "execution_time",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "Estimated execution time",
-                    "type": "Float",
-                    "fieldType": "ComponentParameter",
-                    "readonly": true,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "text": "No. of CPUs",
-                    "name": "num_cpus",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "Number of cores used",
-                    "type": "Integer",
-                    "fieldType": "ComponentParameter",
-                    "readonly": true,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "text": "Group start",
-                    "name": "group_start",
-                    "value": "False",
-                    "defaultValue": "False",
-                    "description": "Is this node the start of a group?",
-                    "type": "Boolean",
-                    "fieldType": "ComponentParameter",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
                     "text": "No. of splits",
                     "name": "num_of_splits",
                     "value": "2",
                     "defaultValue": "2",
                     "description": "Number of splits",
                     "type": "Integer",
-                    "fieldType": "ComponentParameter",
+                    "fieldType": "ApplicationArgument",
                     "readonly": false,
                     "options": [],
                     "precious": false,
@@ -1951,9 +1676,9 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "7b4a793",
+            "commitHash": "47c45ec",
             "paletteDownloadUrl": "",
-            "dataHash": "35ee0dae422e0b17b740eaf63013b9f7e2f42282be11a6a1a248740049cd0ab3"
+            "dataHash": "d1487729d97d145ab15ee63a80bd5c6529031e65d729062841212f9fc9d72a66"
         },
         {
             "category": "SubGraph",
@@ -1976,52 +1701,12 @@
             "outputLocalPorts": [],
             "inputAppFields": [],
             "outputAppFields": [],
-            "fields": [
-                {
-                    "text": "Application Class",
-                    "name": "appclass",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "Application class",
-                    "type": "String",
-                    "fieldType": "ComponentParameter",
-                    "readonly": true,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "text": "Execution Time",
-                    "name": "execution_time",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "Estimated execution time",
-                    "type": "Float",
-                    "fieldType": "ComponentParameter",
-                    "readonly": true,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "text": "No. of CPUs",
-                    "name": "num_cpus",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "Number of cores used",
-                    "type": "Integer",
-                    "fieldType": "ComponentParameter",
-                    "readonly": true,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                }
-            ],
+            "fields": [],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "7b4a793",
+            "commitHash": "47c45ec",
             "paletteDownloadUrl": "",
-            "dataHash": "9d411a9991cc189e82b58d0a02a9e654d360b1e64e9473cd57c65bad0fef8416"
+            "dataHash": "431d5527b1f4cb5ffbe05a305deaa5695fed48427ad2aab61d26598f4480db57"
         }
     ],
     "linkDataArray": []
