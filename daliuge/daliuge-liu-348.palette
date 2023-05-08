@@ -7,9 +7,9 @@
         "readonly": true,
         "filePath": "daliuge-liu-348.palette",
         "repositoryUrl": "https://github.com/ICRAR/daliuge",
-        "commitHash": "e48989c",
+        "commitHash": "397111d",
         "downloadUrl": "",
-        "signature": "284b06325400ae6403c1063232dbd33297f1dbdb9e4588abf3bc65da4547ee0a"
+        "signature": "affb5ee5a56ca66544d5cf7558334c1761972f543ae9648f76b80f068f7e9216"
     },
     "nodeDataArray": [
         {
@@ -50,9 +50,9 @@
                     "positional": false
                 },
                 {
-                    "name": "appclass",
-                    "value": "dlg.apps.simple.RandomArrayApp",
-                    "defaultValue": "dlg.apps.simple.RandomArrayApp",
+                    "name": "dropclass",
+                    "value": "dlg.apps.simple.AverageArraysApp",
+                    "defaultValue": "dlg.apps.simple.AverageArraysApp",
                     "description": "Application class",
                     "type": "String",
                     "fieldType": "ComponentParameter",
@@ -162,9 +162,9 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "e48989c",
+            "commitHash": "397111d",
             "paletteDownloadUrl": "",
-            "dataHash": "3af9672ce75848276d337cd80ef1adc59ef0500fa684c211b15a354aceee1eeb"
+            "dataHash": "c85db32e83486297f9a2274fc106506cdbc273fe26603fb4b23b928ecfe6bf43"
         },
         {
             "category": "PythonApp",
@@ -201,9 +201,9 @@
                     "positional": false
                 },
                 {
-                    "name": "appclass",
-                    "value": "dlg.apps.simple.RandomArrayApp",
-                    "defaultValue": "dlg.apps.simple.RandomArrayApp",
+                    "name": "dropclass",
+                    "value": "dlg.apps.simple.CopyApp",
+                    "defaultValue": "dlg.apps.simple.CopyApp",
                     "description": "Application class",
                     "type": "String",
                     "fieldType": "ComponentParameter",
@@ -325,9 +325,9 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "e48989c",
+            "commitHash": "397111d",
             "paletteDownloadUrl": "",
-            "dataHash": "b5bd3f1bed096a9cbfd7181c7bb89769cf828809dc3c3d0933a1335d2e4a7557"
+            "dataHash": "eb2f978bcb36d79168811eb6c4214d33d34381cf5474c7bfef25273d4161c815"
         },
         {
             "category": "PythonApp",
@@ -352,7 +352,7 @@
             "outputAppFields": [],
             "fields": [
                 {
-                    "name": "appclass",
+                    "name": "dropclass",
                     "value": "dlg.apps.crc.CRCStreamApp",
                     "defaultValue": "dlg.apps.crc.CRCStreamApp",
                     "description": "Application class",
@@ -476,9 +476,9 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "e48989c",
+            "commitHash": "397111d",
             "paletteDownloadUrl": "",
-            "dataHash": "e0d95d452379f7baff9d24cfbde77994b594ce132b5ca927d29585740e84fe54"
+            "dataHash": "4095eadf2b06e5a3d6e0b0c8c32e57309b5e719e5ed4ec56700e77d45660e9ea"
         },
         {
             "category": "EnvironmentVariables",
@@ -502,6 +502,18 @@
             "inputAppFields": [],
             "outputAppFields": [],
             "fields": [
+                {
+                    "name": "dropclass",
+                    "value": "dlg.data.drops.environmentvar_drop.EnvironmentVarDROP",
+                    "defaultValue": "dlg.data.drops.environmentvar_drop.EnvironmentVarDROP",
+                    "description": "Drop class",
+                    "type": "String",
+                    "fieldType": "ComponentParameter",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
                 {
                     "name": "streaming",
                     "value": "False",
@@ -541,9 +553,9 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "e48989c",
+            "commitHash": "397111d",
             "paletteDownloadUrl": "",
-            "dataHash": "0972b77db949aae0b0e3934922588ebd1abfd6f7b01b5b5d44459add8ee3968d"
+            "dataHash": "af337204ff7adc8959adff04d492b30105a6c91d171f5c7095b2048e968cb550"
         },
         {
             "category": "File",
@@ -585,6 +597,18 @@
                     "defaultValue": "False",
                     "description": "Perform a check to make sure the file path exists before proceeding with the application",
                     "type": "Boolean",
+                    "fieldType": "ComponentParameter",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "dropclass",
+                    "value": "dlg.data.drops.file.FileDROP",
+                    "defaultValue": "dlg.data.drops.file.FileDROP",
+                    "description": "Drop class",
+                    "type": "String",
                     "fieldType": "ComponentParameter",
                     "readonly": false,
                     "options": [],
@@ -666,9 +690,9 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "e48989c",
+            "commitHash": "397111d",
             "paletteDownloadUrl": "",
-            "dataHash": "6b1096a94566acad8895a2e1f6f846f07496f77a0affe0a5bc2f8c731b7bfe31"
+            "dataHash": "d4ffd5254f6435723c3783590bf7fe92ef487c27fcd0b9b690af3e6ca214b5ac"
         },
         {
             "category": "PythonApp",
@@ -693,9 +717,9 @@
             "outputAppFields": [],
             "fields": [
                 {
-                    "name": "appclass",
-                    "value": "dlg.apps.simple.RandomArrayApp",
-                    "defaultValue": "dlg.apps.simple.RandomArrayApp",
+                    "name": "dropclass",
+                    "value": "dlg.apps.simple.GenericGatherApp",
+                    "defaultValue": "dlg.apps.simple.GenericGatherApp",
                     "description": "Application class",
                     "type": "String",
                     "fieldType": "ComponentParameter",
@@ -805,9 +829,9 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "e48989c",
+            "commitHash": "397111d",
             "paletteDownloadUrl": "",
-            "dataHash": "bad7ff1ff7f83dabd15f5d86d4c1d4fdf0d5d97ee3ff5158cee30c26aff368a2"
+            "dataHash": "9bcb5b78b761931131127eb6e279df98d390f86671dfa6f34eef471a01146975"
         },
         {
             "category": "Gather",
@@ -828,16 +852,16 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "e48989c",
+            "commitHash": "397111d",
             "paletteDownloadUrl": "",
             "dataHash": "f49e1b9503c9e54a95cc87880cd21983c933d0a090067bc6a62343b1443ddc3a",
             "key": -18,
             "name": "Gather/GenericGatherApp",
             "inputAppFields": [
                 {
-                    "name": "appclass",
-                    "value": "dlg.apps.simple.RandomArrayApp",
-                    "defaultValue": "dlg.apps.simple.RandomArrayApp",
+                    "name": "dropclass",
+                    "value": "dlg.apps.simple.GenericGatherApp",
+                    "defaultValue": "dlg.apps.simple.GenericGatherApp",
                     "description": "Application class",
                     "type": "String",
                     "fieldType": "ComponentParameter",
@@ -1017,9 +1041,9 @@
                     "positional": false
                 },
                 {
-                    "name": "appclass",
-                    "value": "dlg.apps.simple.RandomArrayApp",
-                    "defaultValue": "dlg.apps.simple.RandomArrayApp",
+                    "name": "dropclass",
+                    "value": "dlg.apps.simple.GenericNpyGatherApp",
+                    "defaultValue": "dlg.apps.simple.GenericNpyGatherApp",
                     "description": "Application class",
                     "type": "String",
                     "fieldType": "ComponentParameter",
@@ -1129,9 +1153,9 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "e48989c",
+            "commitHash": "397111d",
             "paletteDownloadUrl": "",
-            "dataHash": "a6eb2aa7b240cd088e2146d4a0d4ceafcb1ec604db7e9aec4ef7a8916e798cd1"
+            "dataHash": "1612cd3e4f2264718707f95d5701914955ca3aeceb90148a6f7f89f3abcddc8c"
         },
         {
             "category": "Gather",
@@ -1152,7 +1176,7 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "e48989c",
+            "commitHash": "397111d",
             "paletteDownloadUrl": "",
             "dataHash": "f49e1b9503c9e54a95cc87880cd21983c933d0a090067bc6a62343b1443ddc3a",
             "key": -20,
@@ -1192,9 +1216,9 @@
                     "positional": false
                 },
                 {
-                    "name": "appclass",
-                    "value": "dlg.apps.simple.RandomArrayApp",
-                    "defaultValue": "dlg.apps.simple.RandomArrayApp",
+                    "name": "dropclass",
+                    "value": "dlg.apps.simple.GenericNpyGatherApp",
+                    "defaultValue": "dlg.apps.simple.GenericNpyGatherApp",
                     "description": "Application class",
                     "type": "String",
                     "fieldType": "ComponentParameter",
@@ -1365,7 +1389,7 @@
                     "positional": false
                 },
                 {
-                    "name": "appclass",
+                    "name": "dropclass",
                     "value": "dlg.apps.simple.GenericNpyScatterApp",
                     "defaultValue": "dlg.apps.simple.GenericNpyScatterApp",
                     "description": "Application class",
@@ -1465,9 +1489,9 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "e48989c",
+            "commitHash": "397111d",
             "paletteDownloadUrl": "",
-            "dataHash": "772e2d21a8fef644b16ca38cb77b9278517b7884960210bbe681b7bf43f892d7"
+            "dataHash": "9d68e7fa16dd158f374e63737dc52253de52128316f3a25324893d78656c0f0e"
         },
         {
             "category": "Scatter",
@@ -1488,7 +1512,7 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "e48989c",
+            "commitHash": "397111d",
             "paletteDownloadUrl": "",
             "dataHash": "70dbd123b527b835140fe66feb166090e47d7b8cd4f66071325e32bb458d351b",
             "key": -22,
@@ -1519,7 +1543,7 @@
                     "positional": false
                 },
                 {
-                    "name": "appclass",
+                    "name": "dropclass",
                     "value": "dlg.apps.simple.GenericNpyScatterApp",
                     "defaultValue": "dlg.apps.simple.GenericNpyScatterApp",
                     "description": "Application class",
@@ -1680,7 +1704,7 @@
                     "positional": false
                 },
                 {
-                    "name": "appclass",
+                    "name": "dropclass",
                     "value": "dlg.apps.simple.GenericScatterApp",
                     "defaultValue": "dlg.apps.simple.GenericScatterApp",
                     "description": "Application class",
@@ -1780,9 +1804,9 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "e48989c",
+            "commitHash": "397111d",
             "paletteDownloadUrl": "",
-            "dataHash": "3f122bf671379c3c2f66cdcd03af0db6c38d88178ca8de96c6be35394e71190e"
+            "dataHash": "96f5f4c69951d9ac51e1efbd00788891ae44e26777a323b93da98c7f644b3bec"
         },
         {
             "category": "Scatter",
@@ -1803,7 +1827,7 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "e48989c",
+            "commitHash": "397111d",
             "paletteDownloadUrl": "",
             "dataHash": "70dbd123b527b835140fe66feb166090e47d7b8cd4f66071325e32bb458d351b",
             "key": -24,
@@ -1834,7 +1858,7 @@
                     "positional": false
                 },
                 {
-                    "name": "appclass",
+                    "name": "dropclass",
                     "value": "dlg.apps.simple.GenericScatterApp",
                     "defaultValue": "dlg.apps.simple.GenericScatterApp",
                     "description": "Application class",
@@ -1983,9 +2007,9 @@
                     "positional": false
                 },
                 {
-                    "name": "appclass",
-                    "value": "dlg.apps.simple.RandomArrayApp",
-                    "defaultValue": "dlg.apps.simple.RandomArrayApp",
+                    "name": "dropclass",
+                    "value": "dlg.apps.simple.HelloWorldApp",
+                    "defaultValue": "dlg.apps.simple.HelloWorldApp",
                     "description": "Application class",
                     "type": "String",
                     "fieldType": "ComponentParameter",
@@ -2083,9 +2107,9 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "e48989c",
+            "commitHash": "397111d",
             "paletteDownloadUrl": "",
-            "dataHash": "9f9c5a7ca3b9fd69c113f3d687cc95b5135d77434fcd367c7b8993a3756f85fd"
+            "dataHash": "2a7b427757055708610ee4693057afd14b76dfd13db4f2ad95bada66189f2050"
         },
         {
             "category": "Memory",
@@ -2109,6 +2133,18 @@
             "inputAppFields": [],
             "outputAppFields": [],
             "fields": [
+                {
+                    "name": "dropclass",
+                    "value": "dlg.data.drops.memory.InMemoryDROP",
+                    "defaultValue": "dlg.data.drops.memory.InMemoryDROP",
+                    "description": "Drop class",
+                    "type": "String",
+                    "fieldType": "ComponentParameter",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
                 {
                     "name": "data_volume",
                     "value": "5",
@@ -2184,9 +2220,9 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "e48989c",
+            "commitHash": "397111d",
             "paletteDownloadUrl": "",
-            "dataHash": "4e2d9483df24908ae0d345e4a095d23725af8dec6c5dce5ef62f85b7ac94f1db"
+            "dataHash": "cdb6a067f48922c106ebd2fb1254d2d4997b8d74ba7476f98bbde68da163fb20"
         },
         {
             "category": "PythonApp",
@@ -2223,9 +2259,9 @@
                     "positional": false
                 },
                 {
-                    "name": "appclass",
-                    "value": "dlg.apps.simple.RandomArrayApp",
-                    "defaultValue": "dlg.apps.simple.RandomArrayApp",
+                    "name": "dropclass",
+                    "value": "dlg.apps.simple.ListAppendThrashingApp",
+                    "defaultValue": "dlg.apps.simple.ListAppendThrashingApp",
                     "description": "Application class",
                     "type": "String",
                     "fieldType": "ComponentParameter",
@@ -2323,9 +2359,9 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "e48989c",
+            "commitHash": "397111d",
             "paletteDownloadUrl": "",
-            "dataHash": "624c23aa89ab01b2b436fbd48fc050098bb3ef0dd60aa7306755b480afd03a7c"
+            "dataHash": "fcffbbe9558bafe653d7cbf3abf4a8f602857d7bab3340b23b317c8369663350"
         },
         {
             "category": "PythonApp",
@@ -2350,7 +2386,7 @@
             "outputAppFields": [],
             "fields": [
                 {
-                    "name": "appclass",
+                    "name": "dropclass",
                     "value": "dlg.apps.archiving.NgasArchivingApp",
                     "defaultValue": "dlg.apps.archiving.NgasArchivingApp",
                     "description": "Application class",
@@ -2534,9 +2570,9 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "e48989c",
+            "commitHash": "397111d",
             "paletteDownloadUrl": "",
-            "dataHash": "e7f6a3e2686d672682a50ff8a5b7207ecf7162c82af53485eae5dc68400d1693"
+            "dataHash": "d1e64870f3f8071bd02d0b21f063e2215980f728e1cf7d3aeeb4dfb432ef3216"
         },
         {
             "category": "NGAS",
@@ -2560,30 +2596,6 @@
             "inputAppFields": [],
             "outputAppFields": [],
             "fields": [
-                {
-                    "name": "data_volume",
-                    "value": "5",
-                    "defaultValue": "5",
-                    "description": "Estimated size of the data contained in this node",
-                    "type": "Float",
-                    "fieldType": "ComponentParameter",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "name": "group_end",
-                    "value": "False",
-                    "defaultValue": "False",
-                    "description": "Is this node the end of a group?",
-                    "type": "Boolean",
-                    "fieldType": "ComponentParameter",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
                 {
                     "name": "ngasSrv",
                     "value": "localhost",
@@ -2657,6 +2669,42 @@
                     "positional": false
                 },
                 {
+                    "name": "dropclass",
+                    "value": "dlg.data.drops.ngas.NgasDROP",
+                    "defaultValue": "dlg.data.drops.ngas.NgasDROP",
+                    "description": "Drop class",
+                    "type": "String",
+                    "fieldType": "ComponentParameter",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "data_volume",
+                    "value": "5",
+                    "defaultValue": "5",
+                    "description": "Estimated size of the data contained in this node",
+                    "type": "Float",
+                    "fieldType": "ComponentParameter",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "group_end",
+                    "value": "False",
+                    "defaultValue": "False",
+                    "description": "Is this node the end of a group?",
+                    "type": "Boolean",
+                    "fieldType": "ComponentParameter",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
                     "name": "streaming",
                     "value": "False",
                     "defaultValue": "False",
@@ -2707,9 +2755,9 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "e48989c",
+            "commitHash": "397111d",
             "paletteDownloadUrl": "",
-            "dataHash": "6a61f3f58a2092086a9082ae84a8b5b1451d382e8a98712bec1fecfe14cc95b8"
+            "dataHash": "8c5f748d5b6caad8e2d92466bc85e2f01029770d9355d791b627b82d6e0c9731"
         },
         {
             "category": "Memory",
@@ -2734,13 +2782,13 @@
             "outputAppFields": [],
             "fields": [
                 {
-                    "name": "data_volume",
-                    "value": "0",
-                    "defaultValue": "0",
-                    "description": "This never stores any data",
-                    "type": "Float",
+                    "name": "dropclass",
+                    "value": "dlg.data.drops.data_base.NullDROP",
+                    "defaultValue": "dlg.data.drops.data_base.NullDROP",
+                    "description": "Drop class",
+                    "type": "String",
                     "fieldType": "ComponentParameter",
-                    "readonly": true,
+                    "readonly": false,
                     "options": [],
                     "precious": false,
                     "positional": false
@@ -2784,9 +2832,9 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "e48989c",
+            "commitHash": "397111d",
             "paletteDownloadUrl": "",
-            "dataHash": "faa3ba19096dc240b732c98f6b1c1e0e83145e4684d877c7555ffd211c98dc96"
+            "dataHash": "c49e161e2c188c4b7cf1323bb38a6aa76e11739db56028945cbc726647bf1f38"
         },
         {
             "category": "ParameterSet",
@@ -2859,6 +2907,18 @@
                     "positional": false
                 },
                 {
+                    "name": "dropclass",
+                    "value": "dlg.data.drops.parset_drop.ParameterSetDROP",
+                    "defaultValue": "dlg.data.drops.parset_drop.ParameterSetDROP",
+                    "description": "Drop class",
+                    "type": "String",
+                    "fieldType": "ComponentParameter",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
                     "name": "streaming",
                     "value": "False",
                     "defaultValue": "False",
@@ -2897,9 +2957,9 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "e48989c",
+            "commitHash": "397111d",
             "paletteDownloadUrl": "",
-            "dataHash": "f74ea2408c64b47ecc40fb362e9ba7108482e40742ac9801ed4ab597e2cec02c"
+            "dataHash": "05893211c73cc5d47e18b3006310872eb6a8b272a8e66d349d0e72c6ddd885ef"
         },
         {
             "category": "PythonApp",
@@ -2924,9 +2984,9 @@
             "outputAppFields": [],
             "fields": [
                 {
-                    "name": "appclass",
-                    "value": "dlg.apps.simple.RandomArrayApp",
-                    "defaultValue": "dlg.apps.simple.RandomArrayApp",
+                    "name": "dropclass",
+                    "value": "dlg.apps.simple.PickOne",
+                    "defaultValue": "dlg.apps.simple.PickOne",
                     "description": "Application class",
                     "type": "String",
                     "fieldType": "ComponentParameter",
@@ -3048,9 +3108,9 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "e48989c",
+            "commitHash": "397111d",
             "paletteDownloadUrl": "",
-            "dataHash": "be6fe3b66c6c1f3c73cf5d1a7e8d597af164ed4f0e8fe7f88664f4e140322b0d"
+            "dataHash": "52adf4d50e3144570f47c4406eec0d59d9986e8208b6b6de9e8002558c89c6d6"
         },
         {
             "category": "Plasma",
@@ -3074,6 +3134,42 @@
             "inputAppFields": [],
             "outputAppFields": [],
             "fields": [
+                {
+                    "name": "plasma_path",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "Path to the local plasma store",
+                    "type": "String",
+                    "fieldType": "ApplicationArgument",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "object_id",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "PlasmaId of the object for all compute nodes",
+                    "type": "String",
+                    "fieldType": "ApplicationArgument",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "dropclass",
+                    "value": "dlg.data.drops.plasma.PlasmaDROP",
+                    "defaultValue": "dlg.data.drops.plasma.PlasmaDROP",
+                    "description": "Drop class",
+                    "type": "String",
+                    "fieldType": "ComponentParameter",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
                 {
                     "name": "data_volume",
                     "value": "5",
@@ -3099,35 +3195,23 @@
                     "positional": false
                 },
                 {
-                    "name": "plasma_path",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "Path to the local plasma store",
-                    "type": "String",
-                    "fieldType": "ComponentParameter",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "name": "object_id",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "PlasmaId of the object for all compute nodes",
-                    "type": "String",
-                    "fieldType": "ComponentParameter",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
                     "name": "use_staging",
                     "value": "False",
                     "defaultValue": "False",
                     "description": "Enables writing to a dynamically resizeable staging buffer",
                     "type": "Boolean",
+                    "fieldType": "ComponentParameter",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "dropclass",
+                    "value": "dlg.data.drops.plasma.PlasmaDROP",
+                    "defaultValue": "dlg.data.drops.plasma.PlasmaDROP",
+                    "description": "Drop class",
+                    "type": "String",
                     "fieldType": "ComponentParameter",
                     "readonly": false,
                     "options": [],
@@ -3161,9 +3245,9 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "e48989c",
+            "commitHash": "397111d",
             "paletteDownloadUrl": "",
-            "dataHash": "24c592bed15837d16b302d827ee80d768651eb1e7a580f553013231d9487e008"
+            "dataHash": "94cdd8130bd53f53ceebce66fe6a289cd4d383db234d7e963f5a20584d471852"
         },
         {
             "category": "PlasmaFlight",
@@ -3188,6 +3272,42 @@
             "outputAppFields": [],
             "fields": [
                 {
+                    "name": "plasma_path",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "Path to the local plasma store",
+                    "type": "String",
+                    "fieldType": "ApplicationArgument",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "object_id",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "PlasmaId of the object for all compute nodes",
+                    "type": "String",
+                    "fieldType": "ApplicationArgument",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "dropclass",
+                    "value": "dlg.data.drops.plasma.PlasmaFlightDROP",
+                    "defaultValue": "dlg.data.drops.plasma.PlasmaFlightDROP",
+                    "description": "Drop class",
+                    "type": "String",
+                    "fieldType": "ComponentParameter",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
                     "name": "data_volume",
                     "value": "5",
                     "defaultValue": "5",
@@ -3205,30 +3325,6 @@
                     "defaultValue": "False",
                     "description": "Is this node the end of a group?",
                     "type": "Boolean",
-                    "fieldType": "ComponentParameter",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "name": "plasma_path",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "Path to the local plasma store",
-                    "type": "String",
-                    "fieldType": "ComponentParameter",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "name": "object_id",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "PlasmaId of the object for all compute nodes",
-                    "type": "String",
                     "fieldType": "ComponentParameter",
                     "readonly": false,
                     "options": [],
@@ -3274,9 +3370,9 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "e48989c",
+            "commitHash": "397111d",
             "paletteDownloadUrl": "",
-            "dataHash": "0f6afc73e720a825a18801c7f5ac760eef43c3524c14e29fff488ecec3ea7c11"
+            "dataHash": "cd18c833c8d4e783a8afd129f81c54d61f2a49677e877a58074c86d8559d2eb7"
         },
         {
             "category": "PythonApp",
@@ -3349,7 +3445,7 @@
                     "positional": false
                 },
                 {
-                    "name": "appclass",
+                    "name": "dropclass",
                     "value": "dlg.apps.simple.RandomArrayApp",
                     "defaultValue": "dlg.apps.simple.RandomArrayApp",
                     "description": "Application class",
@@ -3449,9 +3545,9 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "e48989c",
+            "commitHash": "397111d",
             "paletteDownloadUrl": "",
-            "dataHash": "c05f4f8888c8ff20f5a7af96b5acb73ef7b3dabe668b68c37ba73b8ba455b82e"
+            "dataHash": "f973a747253c58ecaa28059f04309846e882098146857332827a79069a974a2f"
         },
         {
             "category": "RDBMS",
@@ -3560,6 +3656,18 @@
                     "positional": false
                 },
                 {
+                    "name": "dropclass",
+                    "value": "dlg.data.drops.rdbms.RDBMSDrop",
+                    "defaultValue": "dlg.data.drops.rdbms.RDBMSDrop",
+                    "description": "Drop class",
+                    "type": "String",
+                    "fieldType": "ComponentParameter",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
                     "name": "dummy",
                     "value": "",
                     "defaultValue": "",
@@ -3586,9 +3694,9 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "e48989c",
+            "commitHash": "397111d",
             "paletteDownloadUrl": "",
-            "dataHash": "b95dffed9035a5ecb5b2b7f830c79b6b887b2c9817a873be4582aa82c39dbbcc"
+            "dataHash": "b9447d7ec43e79170903b23595376171708dbf6dba69424a9e2f6fbc131c2ff5"
         },
         {
             "category": "S3",
@@ -3637,7 +3745,7 @@
                     "positional": false
                 },
                 {
-                    "name": "bucket",
+                    "name": "Bucket",
                     "value": "",
                     "defaultValue": "",
                     "description": "The S3 Bucket",
@@ -3649,7 +3757,7 @@
                     "positional": false
                 },
                 {
-                    "name": "object_name",
+                    "name": "Key",
                     "value": "",
                     "defaultValue": "",
                     "description": "The S3 object key",
@@ -3676,6 +3784,18 @@
                     "name": "endpoint_url",
                     "value": "",
                     "defaultValue": "",
+                    "description": "The URL exposing the S3 REST API",
+                    "type": "String",
+                    "fieldType": "ComponentParameter",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "dropclass",
+                    "value": "dlg.data.drops.s3_drop.S3DROP",
+                    "defaultValue": "dlg.data.drops.s3_drop.S3DROP",
                     "description": "The URL exposing the S3 REST API",
                     "type": "String",
                     "fieldType": "ComponentParameter",
@@ -3735,9 +3855,9 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "e48989c",
+            "commitHash": "397111d",
             "paletteDownloadUrl": "",
-            "dataHash": "30ccff4daff209adde811db8384dd09002c777e3f471153060f72507d1e06065"
+            "dataHash": "63c221d6242cf3858846e8c3f86d1ddd654c5b4ffa84c0affdc6521c7ac82227"
         },
         {
             "category": "PythonApp",
@@ -3762,7 +3882,7 @@
             "outputAppFields": [],
             "fields": [
                 {
-                    "name": "appclass",
+                    "name": "dropclass",
                     "value": "dlg.apps.scp.ScpApp",
                     "defaultValue": "dlg.apps.scp.ScpApp",
                     "description": "Application class",
@@ -3934,9 +4054,9 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "e48989c",
+            "commitHash": "397111d",
             "paletteDownloadUrl": "",
-            "dataHash": "99053e36fe36bbe3ca8785b6bfaffc8cc345b7fe3c78874bc63f9442929c360d"
+            "dataHash": "f971273a474dce2d5d3de3506a483933b36ac91687babc4da8f81613502ef123"
         },
         {
             "category": "SharedMemory",
@@ -3960,6 +4080,18 @@
             "inputAppFields": [],
             "outputAppFields": [],
             "fields": [
+                {
+                    "name": "dropclass",
+                    "value": "dlg.data.drops.memory.SharedMemoryDROP",
+                    "defaultValue": "dlg.data.drops.memory.SharedMemoryDROP",
+                    "description": "Drop class",
+                    "type": "String",
+                    "fieldType": "ComponentParameter",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
                 {
                     "name": "data_volume",
                     "value": "5",
@@ -4035,9 +4167,9 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "e48989c",
+            "commitHash": "397111d",
             "paletteDownloadUrl": "",
-            "dataHash": "4d55a9060bd5f0793e4590a68ade9d179a217c9821eda0927884e51015be6d5a"
+            "dataHash": "25495b9791cb09967a4fadb3f8c0f3560df63b5313362c9ab36bf6eef1a79c4d"
         },
         {
             "category": "PythonApp",
@@ -4112,9 +4244,9 @@
                     "positional": false
                 },
                 {
-                    "name": "appclass",
-                    "value": "dlg.apps.simple.RandomArrayApp",
-                    "defaultValue": "dlg.apps.simple.RandomArrayApp",
+                    "name": "dropclass",
+                    "value": "dlg.apps.simple.SleepAndCopyApp",
+                    "defaultValue": "dlg.apps.simple.SleepAndCopyApp",
                     "description": "Application class",
                     "type": "String",
                     "fieldType": "ComponentParameter",
@@ -4162,9 +4294,9 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "e48989c",
+            "commitHash": "397111d",
             "paletteDownloadUrl": "",
-            "dataHash": "080222ec1f16530856dd4070499ae960d00c21fafebfa32061a969d8683b945f"
+            "dataHash": "ee384d0a93a9e8fb023f7819f17295e9655c51a4d8c7431f947ffd35c80a4510"
         },
         {
             "category": "PythonApp",
@@ -4201,9 +4333,9 @@
                     "positional": false
                 },
                 {
-                    "name": "appclass",
-                    "value": "dlg.apps.simple.RandomArrayApp",
-                    "defaultValue": "dlg.apps.simple.RandomArrayApp",
+                    "name": "dropclass",
+                    "value": "dlg.apps.simple.SleepApp",
+                    "defaultValue": "dlg.apps.simple.SleepApp",
                     "description": "Application class",
                     "type": "String",
                     "fieldType": "ComponentParameter",
@@ -4251,9 +4383,9 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "e48989c",
+            "commitHash": "397111d",
             "paletteDownloadUrl": "",
-            "dataHash": "1592385fd01256a8e7993fec0852e4284be20850264d4826348f96657c630848"
+            "dataHash": "3a3eb88be4f20eed45b8a17a43c842b8da8e7b311256752f68fa7c7465bb90a6"
         },
         {
             "category": "PythonApp",
@@ -4278,7 +4410,7 @@
             "outputAppFields": [],
             "fields": [
                 {
-                    "name": "appclass",
+                    "name": "dropclass",
                     "value": "dlg.apps.socket_listener.SocketListener",
                     "defaultValue": "dlg.apps.socket_listener.SocketListener",
                     "description": "Application class",
@@ -4412,9 +4544,9 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "e48989c",
+            "commitHash": "397111d",
             "paletteDownloadUrl": "",
-            "dataHash": "90417bd5c48c820b2332b45fbebde287a4be9b057991a6e509c4ad9e8f326da4"
+            "dataHash": "821c153ecf0ab1649be7e80ea3af0b04f8854b0ed5f682d49883a1ccf539db06"
         },
         {
             "category": "PythonApp",
@@ -4451,9 +4583,9 @@
                     "positional": false
                 },
                 {
-                    "name": "appclass",
-                    "value": "dlg.apps.simple.RandomArrayApp",
-                    "defaultValue": "dlg.apps.simple.RandomArrayApp",
+                    "name": "dropclass",
+                    "value": "dlg.apps.simple.UrlRetrieveApp",
+                    "defaultValue": "dlg.apps.simple.UrlRetrieveApp",
                     "description": "Application class",
                     "type": "String",
                     "fieldType": "ComponentParameter",
@@ -4551,9 +4683,9 @@
             ],
             "applicationArgs": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "e48989c",
+            "commitHash": "397111d",
             "paletteDownloadUrl": "",
-            "dataHash": "aa492cf2a9c057aea978eb10f61f53988545d56f21e53310faa1ae52f6e4f07e"
+            "dataHash": "b736a6dd41674296a00677ba088f144c5abaa0cff54be22535fe4fd82d4cbaf7"
         }
     ],
     "linkDataArray": []
