@@ -12,12 +12,13 @@
         "schemaVersion": "AppRef",
         "readonly": true,
         "repositoryUrl": "https://github.com/ICRAR/daliuge",
-        "commitHash": "c205a0a",
+        "commitHash": "ebe5789",
         "downloadUrl": "",
-        "signature": "0574b576e149cd83e990639e11cb960fe6bcd8987862f8e4e6a90c3d212221ab",
-        "lastModifiedName": "",
+        "signature": "94affa7e6819dfe57ba88c4ad298d99e041c4feaf22a08afd4eda3170db94932",
+        "lastModifiedName": "wici",
         "lastModifiedEmail": "",
-        "lastModifiedDatetime": 1692945792674.341
+        "lastModifiedDatetime": 1695288101.271044,
+        "numLGNodes": 32
     },
     "nodeDataArray": [
         {
@@ -109,7 +110,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "c205a0a",
+            "commitHash": "ebe5789",
             "paletteDownloadUrl": "",
             "dataHash": "1ab0ff7d3cb40ee20ac5195b023aa2e2a1caa5a07ef87d69a85d423230af5098"
         },
@@ -212,7 +213,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "c205a0a",
+            "commitHash": "ebe5789",
             "paletteDownloadUrl": "",
             "dataHash": "2cb61cb6c63ea3130f5060f6541c7514d4807e46e93e1fef15219c08abf92a06"
         },
@@ -335,7 +336,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "c205a0a",
+            "commitHash": "ebe5789",
             "paletteDownloadUrl": "",
             "dataHash": "ea85b7ffb4ec87cfeaeec41e08b25495ff145e0a19f8132756a96b172c7de4c2"
         },
@@ -399,7 +400,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "c205a0a",
+            "commitHash": "ebe5789",
             "paletteDownloadUrl": "",
             "dataHash": "c3e1e92dedb1c4620bbeead37be660de335a08cf4ca5b42c845ba5702d99b468"
         },
@@ -515,7 +516,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "c205a0a",
+            "commitHash": "ebe5789",
             "paletteDownloadUrl": "",
             "dataHash": "f40f919804d78c6b8e2674e3089e84fcb9a43bd732aec6bd8e29ddffb724de4a"
         },
@@ -529,7 +530,7 @@
                     "name": "num_of_inputs",
                     "value": "4",
                     "defaultValue": "4",
-                    "description": "The Gather \u201cwidth\u201d, stating how many inputs each Gather instance will handle",
+                    "description": "The Gather width, stating how many inputs each Gather instance will handle",
                     "type": "Integer",
                     "fieldType": "ConstructParameter",
                     "usage": "NoPort",
@@ -618,9 +619,9 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "c205a0a",
+            "commitHash": "ebe5789",
             "paletteDownloadUrl": "",
-            "dataHash": "c3b32657a4ab9e405d4fa90678fc66e2fe93078be3d6df74cabfe898b860c6bc"
+            "dataHash": "fd2c146030b65fd6b6b9933bacf9b9c8ac59eb44d817d590624449c78466a46c"
         },
         {
             "category": "Gather",
@@ -638,28 +639,101 @@
                     "options": [],
                     "precious": false,
                     "positional": false
-                },
-                {
-                    "name": "dlg.apps.constructs.GatherDrop",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "Drop class",
-                    "type": "String",
-                    "fieldType": "ComponentParameter",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
                 }
             ],
             "applicationArgs": [],
             "repositoryUrl": "",
             "commitHash": "",
             "paletteDownloadUrl": "",
-            "dataHash": "ae0e045125024c9af8d71fe58a235883a4de2f469c3343c88ad48153831bab88",
+            "dataHash": "e1a86bc05f1f395b174eee3ce75f2a5776e29ed72746c4dcd4f0f8910d38dd02",
             "key": -18,
-            "text": "Gather/GenericGatherApp"
+            "text": "Gather/GenericGatherApp",
+            "inputAppFields": [
+                {
+                    "name": "dropclass",
+                    "value": "dlg.apps.simple.GenericGatherApp",
+                    "defaultValue": "",
+                    "description": "Application class",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false,
+                    "id": "bfa5f33a-9d22-4545-b9cb-cd5928e2b631",
+                    "parameterType": "ComponentParameter",
+                    "usage": "NoPort"
+                },
+                {
+                    "name": "execution_time",
+                    "value": 5,
+                    "defaultValue": "0",
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false,
+                    "id": "5f4903b8-8d93-44d2-b150-17cb09006b50",
+                    "parameterType": "ConstraintParameter",
+                    "usage": "NoPort"
+                },
+                {
+                    "name": "num_cpus",
+                    "value": 1,
+                    "defaultValue": "0",
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false,
+                    "id": "a8dae26d-51e9-4b70-b704-873fc6ac4fa9",
+                    "parameterType": "ConstraintParameter",
+                    "usage": "NoPort"
+                },
+                {
+                    "name": "group_start",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false,
+                    "id": "f6d75b30-75b6-4220-b7cb-63c2d40ad316",
+                    "parameterType": "ComponentParameter",
+                    "usage": "NoPort"
+                },
+                {
+                    "name": "content",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false,
+                    "id": "72ffa437-b65c-4295-a839-94e9c5a9a68e",
+                    "parameterType": "ApplicationArgument",
+                    "usage": "InputOutput"
+                }
+            ],
+            "outputAppFields": [],
+            "inputApplicationName": "GenericGatherApp",
+            "inputApplicationType": "PythonApp",
+            "inputApplicationKey": null,
+            "inputApplicationDescription": "",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
         },
         {
             "category": "PythonApp",
@@ -671,7 +745,7 @@
                     "name": "num_of_inputs",
                     "value": "4",
                     "defaultValue": "4",
-                    "description": "The Gather \u201cwidth\u201d, stating how many inputs each Gather instance will handle",
+                    "description": "The Gather width, stating how many inputs each Gather instance will handle",
                     "type": "Integer",
                     "fieldType": "ConstructParameter",
                     "usage": "NoPort",
@@ -795,9 +869,9 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "c205a0a",
+            "commitHash": "ebe5789",
             "paletteDownloadUrl": "",
-            "dataHash": "363fea58941e94f0f60f8069dda1c711bfc9c8a61bd3046c6456b21c701ec861"
+            "dataHash": "122de38a7f0df3332b50dd15707194710505611a2a326ec4a088efe89b4f2499"
         },
         {
             "category": "Gather",
@@ -815,28 +889,101 @@
                     "options": [],
                     "precious": false,
                     "positional": false
-                },
-                {
-                    "name": "dlg.apps.constructs.GatherDrop",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "Drop class",
-                    "type": "String",
-                    "fieldType": "ComponentParameter",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
                 }
             ],
             "applicationArgs": [],
             "repositoryUrl": "",
             "commitHash": "",
             "paletteDownloadUrl": "",
-            "dataHash": "ae0e045125024c9af8d71fe58a235883a4de2f469c3343c88ad48153831bab88",
+            "dataHash": "e1a86bc05f1f395b174eee3ce75f2a5776e29ed72746c4dcd4f0f8910d38dd02",
             "key": -20,
-            "text": "Gather/GenericNpyGatherApp"
+            "text": "Gather/GenericNpyGatherApp",
+            "inputAppFields": [
+                {
+                    "name": "dropclass",
+                    "value": "dlg.apps.simple.GenericNpyGatherApp",
+                    "defaultValue": "",
+                    "description": "Application class",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false,
+                    "id": "7a89f42b-84ba-4d6d-b0eb-7b10bda644c4",
+                    "parameterType": "ComponentParameter",
+                    "usage": "NoPort"
+                },
+                {
+                    "name": "execution_time",
+                    "value": 5,
+                    "defaultValue": "0",
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false,
+                    "id": "04f93e9d-1d84-4aaa-ab05-ff6ed4dc3d96",
+                    "parameterType": "ConstraintParameter",
+                    "usage": "NoPort"
+                },
+                {
+                    "name": "num_cpus",
+                    "value": 1,
+                    "defaultValue": "0",
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false,
+                    "id": "271da82a-016e-4157-a390-578d2ae1a40f",
+                    "parameterType": "ConstraintParameter",
+                    "usage": "NoPort"
+                },
+                {
+                    "name": "group_start",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false,
+                    "id": "7da6b80f-51d2-40ae-bdec-d4ee34fa6a71",
+                    "parameterType": "ComponentParameter",
+                    "usage": "NoPort"
+                },
+                {
+                    "name": "content",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false,
+                    "id": "1a7fe2d5-a915-439d-a749-f12136af00fe",
+                    "parameterType": "ApplicationArgument",
+                    "usage": "InputOutput"
+                }
+            ],
+            "outputAppFields": [],
+            "inputApplicationName": "GenericNpyGatherApp",
+            "inputApplicationType": "PythonApp",
+            "inputApplicationKey": null,
+            "inputApplicationDescription": "",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
         },
         {
             "category": "PythonApp",
@@ -950,7 +1097,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "c205a0a",
+            "commitHash": "ebe5789",
             "paletteDownloadUrl": "",
             "dataHash": "0849065002d8f964f2c8b40b9bea59816247b96dc0f4ea158f3e199f153894ed"
         },
@@ -970,28 +1117,116 @@
                     "options": [],
                     "precious": false,
                     "positional": false
-                },
-                {
-                    "name": "dropclass",
-                    "value": "dlg.apps.constructs.ScatterDrop",
-                    "defaultValue": "dlg.apps.constructs.ScatterDrop",
-                    "description": "Drop class",
-                    "type": "String",
-                    "fieldType": "ComponentParameter",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
                 }
             ],
             "applicationArgs": [],
             "repositoryUrl": "",
             "commitHash": "",
             "paletteDownloadUrl": "",
-            "dataHash": "89328904851744addae66eedd9288539faf704b1c19c729763c1158566b7d24e",
+            "dataHash": "c868ad4cf7149a40e25478337ff6a47c6d5998e8c740d6b0a791158d3550acc4",
             "key": -22,
-            "text": "Scatter/GenericNpyScatterApp"
+            "text": "Scatter/GenericNpyScatterApp",
+            "inputAppFields": [
+                {
+                    "name": "dropclass",
+                    "value": "dlg.apps.simple.GenericNpyScatterApp",
+                    "defaultValue": "",
+                    "description": "Application class",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false,
+                    "id": "baff1ae0-23b4-4b92-a857-b88c4644f6c7",
+                    "parameterType": "ComponentParameter",
+                    "usage": "NoPort"
+                },
+                {
+                    "name": "execution_time",
+                    "value": 5,
+                    "defaultValue": "0",
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false,
+                    "id": "31d94c89-870c-401b-8e16-d3cd5b851e2d",
+                    "parameterType": "ConstraintParameter",
+                    "usage": "NoPort"
+                },
+                {
+                    "name": "num_cpus",
+                    "value": 1,
+                    "defaultValue": "0",
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false,
+                    "id": "b7773422-0806-4a4e-a541-54bec9003d97",
+                    "parameterType": "ConstraintParameter",
+                    "usage": "NoPort"
+                },
+                {
+                    "name": "group_start",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false,
+                    "id": "a11edf05-3e36-454c-907e-2b891561f3bb",
+                    "parameterType": "ComponentParameter",
+                    "usage": "NoPort"
+                },
+                {
+                    "name": "array",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "Input array",
+                    "readonly": false,
+                    "type": "Object",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false,
+                    "id": "c87739be-9226-465d-bae3-58a0cf202c0d",
+                    "parameterType": "ApplicationArgument",
+                    "usage": "InputPort"
+                },
+                {
+                    "name": "split_array",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Object",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false,
+                    "id": "d6aba760-3fd0-4e57-8efd-bc1c9729278b",
+                    "parameterType": "ApplicationArgument",
+                    "usage": "OutputPort"
+                }
+            ],
+            "outputAppFields": [],
+            "inputApplicationName": "GenericNpyScatterApp",
+            "inputApplicationType": "PythonApp",
+            "inputApplicationKey": null,
+            "inputApplicationDescription": "",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
         },
         {
             "category": "PythonApp",
@@ -1105,7 +1340,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "c205a0a",
+            "commitHash": "ebe5789",
             "paletteDownloadUrl": "",
             "dataHash": "fbc3fc7f2c6f70e84840b8ccb1320030038e44456a5ffd01d57afadd86041e04"
         },
@@ -1125,28 +1360,116 @@
                     "options": [],
                     "precious": false,
                     "positional": false
-                },
-                {
-                    "name": "dropclass",
-                    "value": "dlg.apps.constructs.ScatterDrop",
-                    "defaultValue": "dlg.apps.constructs.ScatterDrop",
-                    "description": "Drop class",
-                    "type": "String",
-                    "fieldType": "ComponentParameter",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
                 }
             ],
             "applicationArgs": [],
             "repositoryUrl": "",
             "commitHash": "",
             "paletteDownloadUrl": "",
-            "dataHash": "89328904851744addae66eedd9288539faf704b1c19c729763c1158566b7d24e",
+            "dataHash": "c868ad4cf7149a40e25478337ff6a47c6d5998e8c740d6b0a791158d3550acc4",
             "key": -24,
-            "text": "Scatter/GenericScatterApp"
+            "text": "Scatter/GenericScatterApp",
+            "inputAppFields": [
+                {
+                    "name": "dropclass",
+                    "value": "dlg.apps.simple.GenericScatterApp",
+                    "defaultValue": "",
+                    "description": "Application class",
+                    "readonly": true,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false,
+                    "id": "30ff3676-33e8-4404-8df8-714d1e17c76c",
+                    "parameterType": "ComponentParameter",
+                    "usage": "NoPort"
+                },
+                {
+                    "name": "execution_time",
+                    "value": 5,
+                    "defaultValue": "0",
+                    "description": "Estimated execution time",
+                    "readonly": false,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false,
+                    "id": "f75ca445-26f1-4bbb-99c9-1cb7509bfb33",
+                    "parameterType": "ConstraintParameter",
+                    "usage": "NoPort"
+                },
+                {
+                    "name": "num_cpus",
+                    "value": 1,
+                    "defaultValue": "0",
+                    "description": "Number of cores used",
+                    "readonly": false,
+                    "type": "Integer",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false,
+                    "id": "2023bb59-b72e-46d4-a270-0aeda74c54ba",
+                    "parameterType": "ConstraintParameter",
+                    "usage": "NoPort"
+                },
+                {
+                    "name": "group_start",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Component is start of a group",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false,
+                    "id": "e20b0d82-c78f-46c3-b5d4-1aff4194fee1",
+                    "parameterType": "ComponentParameter",
+                    "usage": "NoPort"
+                },
+                {
+                    "name": "array",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "Input array",
+                    "readonly": false,
+                    "type": "Object",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false,
+                    "id": "984fcd40-3ff8-4a2a-946a-c0f7c853951f",
+                    "parameterType": "ApplicationArgument",
+                    "usage": "InputPort"
+                },
+                {
+                    "name": "split_array",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "readonly": false,
+                    "type": "Object",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "keyAttribute": false,
+                    "id": "62e621d0-f4a0-4bd5-9c29-0ba037d95f4c",
+                    "parameterType": "ApplicationArgument",
+                    "usage": "OutputPort"
+                }
+            ],
+            "outputAppFields": [],
+            "inputApplicationName": "GenericScatterApp",
+            "inputApplicationType": "PythonApp",
+            "inputApplicationKey": null,
+            "inputApplicationDescription": "",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "outputApplicationDescription": ""
         },
         {
             "category": "PythonApp",
@@ -1234,7 +1557,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "c205a0a",
+            "commitHash": "ebe5789",
             "paletteDownloadUrl": "",
             "dataHash": "820a054e6b0850440804f2814cff453fc4f524e0a2a2bc82d04f4ddb0f787138"
         },
@@ -1337,7 +1660,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "c205a0a",
+            "commitHash": "ebe5789",
             "paletteDownloadUrl": "",
             "dataHash": "873ce6c790cb64be2864594771375b32c5daf2898ee0cf988bac66b5268c0948"
         },
@@ -1427,7 +1750,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "c205a0a",
+            "commitHash": "ebe5789",
             "paletteDownloadUrl": "",
             "dataHash": "4edddf5ace0d5dca5ce13643c30e2d423cd8e8fa5c78282613b3fedbd1ea06ef"
         },
@@ -1595,7 +1918,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "c205a0a",
+            "commitHash": "ebe5789",
             "paletteDownloadUrl": "",
             "dataHash": "3f872a137195f1bf0dd5bbecc91ee5b5723ce3e49ce1cc6d2c24452a71d36364"
         },
@@ -1763,7 +2086,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "c205a0a",
+            "commitHash": "ebe5789",
             "paletteDownloadUrl": "",
             "dataHash": "912864bbc4479cd69f8a7cc9dff8b7d4aebe81c131104cebffa3363fbc641d5c"
         },
@@ -1827,7 +2150,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "c205a0a",
+            "commitHash": "ebe5789",
             "paletteDownloadUrl": "",
             "dataHash": "8f786fe0d8742fd0b9f905a8c5405ca6b4674e97447c5cfc0150a7a56ab66964"
         },
@@ -1943,7 +2266,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "c205a0a",
+            "commitHash": "ebe5789",
             "paletteDownloadUrl": "",
             "dataHash": "50c459de8b331f3ae5e90320f50aa00129bfb1892531ed04806f7af95086adbb"
         },
@@ -2033,7 +2356,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "c205a0a",
+            "commitHash": "ebe5789",
             "paletteDownloadUrl": "",
             "dataHash": "64b080a4a68df195d1eaec2a293d4e4221241fad85079ce1f92e9a5ab88ccc52"
         },
@@ -2136,7 +2459,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "c205a0a",
+            "commitHash": "ebe5789",
             "paletteDownloadUrl": "",
             "dataHash": "cbde43c701f44757b27178b7acf293576c1011399f361348fa4bb3985692a1ae"
         },
@@ -2239,7 +2562,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "c205a0a",
+            "commitHash": "ebe5789",
             "paletteDownloadUrl": "",
             "dataHash": "1e3f01f0d21765f3f6b1f20a12520b95374fa72a4f5ceb78f8da531103a0bed3"
         },
@@ -2368,7 +2691,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "c205a0a",
+            "commitHash": "ebe5789",
             "paletteDownloadUrl": "",
             "dataHash": "99d4b624a93b12ccb9e44ea5ed29602bb9cb25f14642fb93430a16f0dbd8d99b"
         },
@@ -2497,7 +2820,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "c205a0a",
+            "commitHash": "ebe5789",
             "paletteDownloadUrl": "",
             "dataHash": "3d3aa095e6f74daeb95cc31223a050b454ab8406a74df89c594d87e01754498c"
         },
@@ -2639,7 +2962,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "c205a0a",
+            "commitHash": "ebe5789",
             "paletteDownloadUrl": "",
             "dataHash": "84e6753e8337eb16a66ce24516645407f39a8b3093c40aa765f76cad9cb133e3"
         },
@@ -2781,7 +3104,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "c205a0a",
+            "commitHash": "ebe5789",
             "paletteDownloadUrl": "",
             "dataHash": "865976a5a37803a33de46e5a10292cc6f2793e564134081049a677abdbda08f2"
         },
@@ -2884,7 +3207,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "c205a0a",
+            "commitHash": "ebe5789",
             "paletteDownloadUrl": "",
             "dataHash": "2653521bca17a8f38a098e40b075b00541f84dc3f00b2e927cb5afe4bdd8f8be"
         },
@@ -2961,7 +3284,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "c205a0a",
+            "commitHash": "ebe5789",
             "paletteDownloadUrl": "",
             "dataHash": "485cd5fbee68c9a6f41dccb02bc1bbd20effbecd03c387e44f49c40ca532a0cc"
         },
@@ -3038,7 +3361,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "c205a0a",
+            "commitHash": "ebe5789",
             "paletteDownloadUrl": "",
             "dataHash": "3b9e0fd80ef3b2d2f5b843f3415beb8753f84d0cb2a7ce1a974043d0fe9eea8e"
         },
@@ -3193,7 +3516,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "c205a0a",
+            "commitHash": "ebe5789",
             "paletteDownloadUrl": "",
             "dataHash": "7c3791533b5c0453d7671b72efbf7e6206645c8155ebe9c9e43c17825cfcf4b5"
         },
@@ -3283,7 +3606,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "c205a0a",
+            "commitHash": "ebe5789",
             "paletteDownloadUrl": "",
             "dataHash": "dd45d689ac772f88eef669250bd500d4da6cd34007d5a13637367b81e60ac23b"
         }
