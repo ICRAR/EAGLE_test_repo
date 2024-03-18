@@ -12,12 +12,12 @@
         "schemaVersion": "AppRef",
         "readonly": true,
         "repositoryUrl": "https://github.com/ICRAR/daliuge",
-        "commitHash": "671d6e3",
+        "commitHash": "d40827e",
         "downloadUrl": "",
-        "signature": "936c10ea7b038e760d52df0647ec44cdd3b0340aa58e6e3973784abb337ddc73",
+        "signature": "6cf5c8b37dbb62c36e381809347353e61523aa17cb1d6a2b3493f588f541b7ca",
         "lastModifiedName": "wici",
         "lastModifiedEmail": "",
-        "lastModifiedDatetime": 1710747869.574717,
+        "lastModifiedDatetime": 1710776679.140475,
         "numLGNodes": 18
     },
     "nodeDataArray": [
@@ -119,46 +119,6 @@
                     "positional": false
                 },
                 {
-                    "name": "input_parser",
-                    "value": "pickle",
-                    "defaultValue": "pickle",
-                    "description": "Input port parsing technique",
-                    "type": "Select",
-                    "fieldType": "ApplicationArgument",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [
-                        "raw",
-                        "pickle",
-                        "eval",
-                        "npy",
-                        "path",
-                        "dataurl"
-                    ],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "name": "output_parser",
-                    "value": "pickle",
-                    "defaultValue": "pickle",
-                    "description": "Output port parsing technique",
-                    "type": "Select",
-                    "fieldType": "ApplicationArgument",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [
-                        "raw",
-                        "pickle",
-                        "eval",
-                        "npy",
-                        "path",
-                        "dataurl"
-                    ],
-                    "precious": false,
-                    "positional": false
-                },
-                {
                     "name": "execution_time",
                     "value": "5",
                     "defaultValue": "5",
@@ -222,31 +182,6 @@
                     "options": [],
                     "precious": false,
                     "positional": false
-                }
-            ],
-            "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
-            "paletteDownloadUrl": "",
-            "dataHash": "5238c6f0fd0073831786e8285aa4e3ea70ac602e3c1d390f39474bb7ec56c284"
-        },
-        {
-            "category": "Branch",
-            "key": -3,
-            "text": "Branch",
-            "description": "A conditional branch to control flow",
-            "fields": [
-                {
-                    "name": "dropclass",
-                    "value": "dlg.apps.simple.SimpleBranch",
-                    "defaultValue": "dlg.apps.simple.SimpleBranch",
-                    "description": "Application class",
-                    "type": "String",
-                    "fieldType": "ComponentParameter",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
                 },
                 {
                     "name": "input_parser",
@@ -254,7 +189,7 @@
                     "defaultValue": "pickle",
                     "description": "Input port parsing technique",
                     "type": "Select",
-                    "fieldType": "ApplicationArgument",
+                    "fieldType": "ComponentParameter",
                     "usage": "NoPort",
                     "readonly": false,
                     "options": [
@@ -274,7 +209,7 @@
                     "defaultValue": "pickle",
                     "description": "Output port parsing technique",
                     "type": "Select",
-                    "fieldType": "ApplicationArgument",
+                    "fieldType": "ComponentParameter",
                     "usage": "NoPort",
                     "readonly": false,
                     "options": [
@@ -285,6 +220,31 @@
                         "path",
                         "dataurl"
                     ],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
+            "repositoryUrl": "https://github.com/ICRAR/daliuge",
+            "commitHash": "d40827e",
+            "paletteDownloadUrl": "",
+            "dataHash": "6cdb06fdddca0b86db67f6c06cda516083f77f91dfefa94c3002514b736735ad"
+        },
+        {
+            "category": "Branch",
+            "key": -3,
+            "text": "Branch",
+            "description": "A conditional branch to control flow",
+            "fields": [
+                {
+                    "name": "dropclass",
+                    "value": "dlg.apps.simple.SimpleBranch",
+                    "defaultValue": "dlg.apps.simple.SimpleBranch",
+                    "description": "Application class",
+                    "type": "String",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [],
                     "precious": false,
                     "positional": false
                 },
@@ -391,12 +351,52 @@
                     "options": [],
                     "precious": false,
                     "positional": false
+                },
+                {
+                    "name": "input_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Input port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "output_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Output port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
-            "dataHash": "cb740fb379bc28a1d9d9ec018da8ca07a4a448ed309bf5bfc079e6c1696d570e"
+            "dataHash": "d6b56d8fc3b7180b2d9bba70768e0457ca96041183a63b0f86a2125d351b8389"
         },
         {
             "category": "Comment",
@@ -419,7 +419,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
             "dataHash": "834a16fcbcac60158028591d114691b21bc66df65f0beddefbc2a74f233364f0"
         },
@@ -509,7 +509,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
             "dataHash": "8ed9e1fd1d0123f23ff50820baeb30804cf0a4173e48dcda189638532f7475c1"
         },
@@ -534,7 +534,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
             "dataHash": "3fa077b8b8e5481a6837caa11de4f9bdbe930f171c62c8545c3819b8c54852bc"
         },
@@ -675,46 +675,6 @@
                     "positional": false
                 },
                 {
-                    "name": "input_parser",
-                    "value": "pickle",
-                    "defaultValue": "pickle",
-                    "description": "Input port parsing technique",
-                    "type": "Select",
-                    "fieldType": "ApplicationArgument",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [
-                        "raw",
-                        "pickle",
-                        "eval",
-                        "npy",
-                        "path",
-                        "dataurl"
-                    ],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "name": "output_parser",
-                    "value": "pickle",
-                    "defaultValue": "pickle",
-                    "description": "Output port parsing technique",
-                    "type": "Select",
-                    "fieldType": "ApplicationArgument",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [
-                        "raw",
-                        "pickle",
-                        "eval",
-                        "npy",
-                        "path",
-                        "dataurl"
-                    ],
-                    "precious": false,
-                    "positional": false
-                },
-                {
                     "name": "execution_time",
                     "value": "5",
                     "defaultValue": "5",
@@ -843,12 +803,52 @@
                     "options": [],
                     "precious": false,
                     "positional": false
+                },
+                {
+                    "name": "input_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Input port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "output_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Output port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
-            "dataHash": "00f027b01c9cd1d957c417674d2871874f2329741478a14dca9bb6fd3b019cd0"
+            "dataHash": "173db865039321d89a824224eeec81b9f40e284a796e687741a5a18177d831df"
         },
         {
             "category": "DynlibApp",
@@ -946,12 +946,52 @@
                     "options": [],
                     "precious": false,
                     "positional": false
+                },
+                {
+                    "name": "input_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Input port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "output_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Output port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
-            "dataHash": "3737a630ce291dcf8219f9d05f2f1f6d051802da3badf8ad967d6e7c6664f793"
+            "dataHash": "31b1a3378f5ebbeaf6e386fd95ef1a38363f49534222e6ff99f03cb76c9f101d"
         },
         {
             "category": "DynlibProcApp",
@@ -1049,12 +1089,52 @@
                     "options": [],
                     "precious": false,
                     "positional": false
+                },
+                {
+                    "name": "input_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Input port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "output_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Output port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
-            "dataHash": "9df87e163e8d8d96f1ede17c9759551637f0a634675e5cdd23b90dfd7c1f863a"
+            "dataHash": "3583663d5d0483616e592856ff62ec1108e72bb6d1e865d3cf19373976afc871"
         },
         {
             "category": "ExclusiveForceNode",
@@ -1077,7 +1157,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
             "dataHash": "4d6e6c4b21ba65cfdae8e1e242ed84ae00d364f68eb451a6a65e9975bb709852"
         },
@@ -1112,25 +1192,12 @@
                     "options": [],
                     "precious": false,
                     "positional": false
-                },
-                {
-                    "name": "dropclass",
-                    "value": "dlg.apps.constructs.GatherDrop",
-                    "defaultValue": "dlg.apps.constructs.GatherDrop",
-                    "description": "Drop class",
-                    "type": "String",
-                    "fieldType": "ComponentParameter",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
-            "dataHash": "7128799b1f29abd2715cdf460ac11d71878af9c1db26c2d137f28b95b7f72343"
+            "dataHash": "532299fd2101cc8abc6645b5c92326ec6cf89e2996e801f2f4a0d3b8aa93fd8b"
         },
         {
             "category": "GroupBy",
@@ -1163,25 +1230,12 @@
                     "options": [],
                     "precious": false,
                     "positional": false
-                },
-                {
-                    "name": "dropclass",
-                    "value": "dlg.apps.constructs.GroupByDrop",
-                    "defaultValue": "dlg.apps.constructs.GroupByDrop",
-                    "description": "Drop class",
-                    "type": "String",
-                    "fieldType": "ComponentParameter",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
-            "dataHash": "bbae22e5eddeb4324c2be8bea4b685a145a07b9e077264c1f3436f8fd426bd3f"
+            "dataHash": "5b837a24ecb59192eea42cf8ccdc37fc7b3b631c6d85d05e819ecbced0ea0369"
         },
         {
             "category": "Loop",
@@ -1201,25 +1255,12 @@
                     "options": [],
                     "precious": false,
                     "positional": false
-                },
-                {
-                    "name": "dropclass",
-                    "value": "dlg.apps.constructs.LoopDrop",
-                    "defaultValue": "dlg.apps.constructs.LoopDrop",
-                    "description": "Drop class",
-                    "type": "String",
-                    "fieldType": "ComponentParameter",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
-            "dataHash": "33088f01e00f86965a5a0e7b8baa6ce35e0af3a6d13cedc96b17d14631dbb34f"
+            "dataHash": "99c12f037480fec7a0dced9ca4005ec59c1700e980ce260fdc3397c3c8d30180"
         },
         {
             "category": "MKN",
@@ -1239,25 +1280,12 @@
                     "options": [],
                     "precious": false,
                     "positional": false
-                },
-                {
-                    "name": "dropclass",
-                    "value": "dlg.apps.constructs.MKNDrop",
-                    "defaultValue": "dlg.apps.constructs.MKNDrop",
-                    "description": "Drop class",
-                    "type": "String",
-                    "fieldType": "ComponentParameter",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
-            "dataHash": "6ef1641f1bf3f52d20a4067d2d722de00f159be7e6173ceea87a63be749cf09f"
+            "dataHash": "078f8a3a04e2c4e58fa8ce7571c0dcb2e97d4cf8b0fe01e5a6f05f1be42ae6af"
         },
         {
             "category": "Mpi",
@@ -1370,46 +1398,6 @@
                     "positional": false
                 },
                 {
-                    "name": "input_parser",
-                    "value": "pickle",
-                    "defaultValue": "pickle",
-                    "description": "Input port parsing technique",
-                    "type": "Select",
-                    "fieldType": "ApplicationArgument",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [
-                        "raw",
-                        "pickle",
-                        "eval",
-                        "npy",
-                        "path",
-                        "dataurl"
-                    ],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "name": "output_parser",
-                    "value": "pickle",
-                    "defaultValue": "pickle",
-                    "description": "Output port parsing technique",
-                    "type": "Select",
-                    "fieldType": "ApplicationArgument",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [
-                        "raw",
-                        "pickle",
-                        "eval",
-                        "npy",
-                        "path",
-                        "dataurl"
-                    ],
-                    "precious": false,
-                    "positional": false
-                },
-                {
                     "name": "execution_time",
                     "value": "5",
                     "defaultValue": "5",
@@ -1473,12 +1461,52 @@
                     "options": [],
                     "precious": false,
                     "positional": false
+                },
+                {
+                    "name": "input_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Input port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "output_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Output port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
-            "dataHash": "009df0107e8932a634d6c2c769e00a976aa1c87c15cfe9a5445719b7af2e979b"
+            "dataHash": "544cd6703009865e2a5a50e4f3247ddfffe0e35d4eb9cc53e38cc2de06a57f07"
         },
         {
             "category": "PythonApp",
@@ -1492,7 +1520,7 @@
                     "defaultValue": "",
                     "description": "Python function name",
                     "type": "String",
-                    "fieldType": "ApplicationArgument",
+                    "fieldType": "ComponentParameter",
                     "usage": "NoPort",
                     "readonly": false,
                     "options": [],
@@ -1505,7 +1533,7 @@
                     "defaultValue": "",
                     "description": "Python function code, e.g. 'def function_name(args): return args'",
                     "type": "String",
-                    "fieldType": "ApplicationArgument",
+                    "fieldType": "ComponentParameter",
                     "usage": "NoPort",
                     "readonly": false,
                     "options": [],
@@ -1596,7 +1624,7 @@
                     "defaultValue": "pickle",
                     "description": "Input port parsing technique",
                     "type": "Select",
-                    "fieldType": "ApplicationArgument",
+                    "fieldType": "ComponentParameter",
                     "usage": "NoPort",
                     "readonly": false,
                     "options": [
@@ -1616,7 +1644,7 @@
                     "defaultValue": "pickle",
                     "description": "Output port parsing technique Mapping from argname to default value. Should match only the last part of the argnames list. Values are interpreted as Python code literals and that means string values need to be quoted.",
                     "type": "Select",
-                    "fieldType": "ApplicationArgument",
+                    "fieldType": "ComponentParameter",
                     "usage": "NoPort",
                     "readonly": false,
                     "options": [
@@ -1629,25 +1657,12 @@
                     ],
                     "precious": false,
                     "positional": false
-                },
-                {
-                    "name": "func_arg_mapping",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": " Mapping between argument name and input drop uids",
-                    "type": "String",
-                    "fieldType": "ApplicationArgument",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
-            "dataHash": "deea3124ecb065724939d4702d8ae3b44cddcfc40e806c5cf5cf4d83c38e9580"
+            "dataHash": "96ed72a6048391e13d61f79f640d0a4fc3371f96497f6fb8d0e5086aea0c2cb5"
         },
         {
             "category": "PythonApp",
@@ -1709,7 +1724,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
             "dataHash": "c83ef987b15b86c59502c8e631d404b3a9c0d7360b79be46f15c65affa9582e9"
         },
@@ -1731,50 +1746,23 @@
                     "options": [],
                     "precious": false,
                     "positional": false
-                },
-                {
-                    "name": "dropclass",
-                    "value": "dlg.apps.constructs.ScatterDrop",
-                    "defaultValue": "dlg.apps.constructs.ScatterDrop",
-                    "description": "Drop class",
-                    "type": "String",
-                    "fieldType": "ComponentParameter",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
-            "dataHash": "2073f85b1038be6eb30ac7956d4c38917e7bdae7d77dcaf54af93e7a4c5fe420"
+            "dataHash": "03d205c003fce8d2f2090931aeb11acd11ae1ba8358add4b8cc92227ebeb82f2"
         },
         {
             "category": "SubGraph",
             "key": -46,
             "text": "SubGraph",
             "description": "A SubGraph template drop",
-            "fields": [
-                {
-                    "name": "dropclass",
-                    "value": "dlg.apps.constructs.SubGraphDrop",
-                    "defaultValue": "dlg.apps.constructs.SubGraphDrop",
-                    "description": "Drop class",
-                    "type": "String",
-                    "fieldType": "ComponentParameter",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                }
-            ],
+            "fields": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
-            "dataHash": "8bcc66b4335c3121bb1c68b6ea3dc27b7efedaa2a8df193730e46d21c52f7f08"
+            "dataHash": "e934cadca04a76813434892ea7ef3962c1d4df9415c442ca29fc61a20c16ad35"
         }
     ],
     "linkDataArray": []

@@ -12,12 +12,12 @@
         "schemaVersion": "AppRef",
         "readonly": true,
         "repositoryUrl": "https://github.com/ICRAR/daliuge",
-        "commitHash": "671d6e3",
+        "commitHash": "d40827e",
         "downloadUrl": "",
-        "signature": "8d5d25ec68f05034fc461706203885cd8bafdadb2e0ae0e2ccad73cb8f1fcf32",
+        "signature": "acc67bd6146a4d440a4fe92f2fe4b116164f929fbb0deb8bcceb1ab171f1a113",
         "lastModifiedName": "wici",
         "lastModifiedEmail": "",
-        "lastModifiedDatetime": 1710747868.013096,
+        "lastModifiedDatetime": 1710776677.611719,
         "numLGNodes": 32
     },
     "nodeDataArray": [
@@ -53,46 +53,6 @@
                     "usage": "NoPort",
                     "readonly": false,
                     "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "name": "input_parser",
-                    "value": "pickle",
-                    "defaultValue": "pickle",
-                    "description": "Input port parsing technique",
-                    "type": "Select",
-                    "fieldType": "ApplicationArgument",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [
-                        "raw",
-                        "pickle",
-                        "eval",
-                        "npy",
-                        "path",
-                        "dataurl"
-                    ],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "name": "output_parser",
-                    "value": "pickle",
-                    "defaultValue": "pickle",
-                    "description": "Output port parsing technique",
-                    "type": "Select",
-                    "fieldType": "ApplicationArgument",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [
-                        "raw",
-                        "pickle",
-                        "eval",
-                        "npy",
-                        "path",
-                        "dataurl"
-                    ],
                     "precious": false,
                     "positional": false
                 },
@@ -147,12 +107,52 @@
                     "options": [],
                     "precious": false,
                     "positional": false
+                },
+                {
+                    "name": "input_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Input port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "output_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Output port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
-            "dataHash": "829802bc304465f319fae1565c0ebd1270ccb45c29900f9c3770d2869670bce1"
+            "dataHash": "54de6a862eb1947e8dff7e36f3d55dbcf44a96f5718a2013533c5aca13401fed"
         },
         {
             "category": "PythonApp",
@@ -257,7 +257,7 @@
                     "defaultValue": "pickle",
                     "description": "Input port parsing technique",
                     "type": "Select",
-                    "fieldType": "ApplicationArgument",
+                    "fieldType": "ComponentParameter",
                     "usage": "NoPort",
                     "readonly": false,
                     "options": [
@@ -277,7 +277,7 @@
                     "defaultValue": "pickle",
                     "description": "Output port parsing technique",
                     "type": "Select",
-                    "fieldType": "ApplicationArgument",
+                    "fieldType": "ComponentParameter",
                     "usage": "NoPort",
                     "readonly": false,
                     "options": [
@@ -293,9 +293,9 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
-            "dataHash": "c6fcf2812843df165eeff0b8ceba69c3cc81b92822e11654dbdad385627d38ef"
+            "dataHash": "d3133e45e28a7944c18ee04f5631f49d1707d54764a385d35fc7d51defeeebfe"
         },
         {
             "category": "PythonApp",
@@ -317,32 +317,12 @@
                     "positional": false
                 },
                 {
-                    "name": "input_parser",
-                    "value": "pickle",
-                    "defaultValue": "pickle",
-                    "description": "Input port parsing technique",
-                    "type": "Select",
-                    "fieldType": "ApplicationArgument",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [
-                        "raw",
-                        "pickle",
-                        "eval",
-                        "npy",
-                        "path",
-                        "dataurl"
-                    ],
-                    "precious": false,
-                    "positional": false
-                },
-                {
                     "name": "output_parser",
                     "value": "pickle",
                     "defaultValue": "pickle",
                     "description": "Output port parsing technique",
                     "type": "Select",
-                    "fieldType": "ApplicationArgument",
+                    "fieldType": "ComponentParameter",
                     "usage": "NoPort",
                     "readonly": false,
                     "options": [
@@ -433,12 +413,32 @@
                     "options": [],
                     "precious": false,
                     "positional": false
+                },
+                {
+                    "name": "input_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Input port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
-            "dataHash": "52b1de23ba0bac3f0bccad4a2237883db63511e4c6baaddc4185781181d36f3f"
+            "dataHash": "9baaf9f65b5033ca17701666c769dc3a40c8620eb81629d0300694f788e9535c"
         },
         {
             "category": "EnvironmentVariables",
@@ -500,7 +500,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
             "dataHash": "c3e1e92dedb1c4620bbeead37be660de335a08cf4ca5b42c845ba5702d99b468"
         },
@@ -616,7 +616,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
             "dataHash": "f40f919804d78c6b8e2674e3089e84fcb9a43bd732aec6bd8e29ddffb724de4a"
         },
@@ -630,7 +630,7 @@
                     "name": "num_of_inputs",
                     "value": "4",
                     "defaultValue": "4",
-                    "description": "The Gather \u201cwidth\u201d, stating how many inputs each Gather instance will handle",
+                    "description": "The Gather width, stating how many inputs each Gather instance will handle",
                     "type": "Integer",
                     "fieldType": "ConstructParameter",
                     "usage": "NoPort",
@@ -649,46 +649,6 @@
                     "usage": "NoPort",
                     "readonly": false,
                     "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "name": "input_parser",
-                    "value": "pickle",
-                    "defaultValue": "pickle",
-                    "description": "Input port parsing technique",
-                    "type": "Select",
-                    "fieldType": "ApplicationArgument",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [
-                        "raw",
-                        "pickle",
-                        "eval",
-                        "npy",
-                        "path",
-                        "dataurl"
-                    ],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "name": "output_parser",
-                    "value": "pickle",
-                    "defaultValue": "pickle",
-                    "description": "Output port parsing technique",
-                    "type": "Select",
-                    "fieldType": "ApplicationArgument",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [
-                        "raw",
-                        "pickle",
-                        "eval",
-                        "npy",
-                        "path",
-                        "dataurl"
-                    ],
                     "precious": false,
                     "positional": false
                 },
@@ -756,12 +716,52 @@
                     "options": [],
                     "precious": false,
                     "positional": false
+                },
+                {
+                    "name": "input_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Input port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "output_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Output port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
-            "dataHash": "004f387967689d53fcbe330e1d2dcc09405ca6630c2740fe1b3071c338f2779f"
+            "dataHash": "a99a2b33ec683cb1ebd75da7f28f775302f4290129b5437bfd39961110200a42"
         },
         {
             "category": "Gather",
@@ -800,7 +800,7 @@
                     "options": [],
                     "positional": false,
                     "keyAttribute": false,
-                    "id": "41d8ec70-067a-4961-899f-79f2829b267b",
+                    "id": "f7766a32-d5ae-42cf-a224-570b15c053d6",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
                 },
@@ -815,7 +815,7 @@
                     "options": [],
                     "positional": false,
                     "keyAttribute": false,
-                    "id": "211ee698-495b-4a3f-a9f4-99d7d3edef71",
+                    "id": "3f99d188-24bd-42a1-85d6-55b38e3a0d93",
                     "parameterType": "ConstraintParameter",
                     "usage": "NoPort"
                 },
@@ -830,7 +830,7 @@
                     "options": [],
                     "positional": false,
                     "keyAttribute": false,
-                    "id": "a68ac711-e102-4bd9-b4e4-03c4d8175336",
+                    "id": "71242c2f-8892-4fe2-9c7d-0152795e87f4",
                     "parameterType": "ConstraintParameter",
                     "usage": "NoPort"
                 },
@@ -845,7 +845,7 @@
                     "options": [],
                     "positional": false,
                     "keyAttribute": false,
-                    "id": "a9e8213a-e166-4955-9915-eb64ab856092",
+                    "id": "ba044f87-0813-4622-9bf4-81734e3a8c55",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
                 },
@@ -860,7 +860,7 @@
                     "options": [],
                     "positional": false,
                     "keyAttribute": false,
-                    "id": "c2fdf74f-0786-4376-b5ca-a924eec9c303",
+                    "id": "56196458-2503-4d26-beaa-881b68c0e9bc",
                     "parameterType": "ApplicationArgument",
                     "usage": "InputOutput"
                 }
@@ -885,7 +885,7 @@
                     "name": "num_of_inputs",
                     "value": "4",
                     "defaultValue": "4",
-                    "description": "The Gather \u201cwidth\u201d, stating how many inputs each Gather instance will handle",
+                    "description": "The Gather width, stating how many inputs each Gather instance will handle",
                     "type": "Integer",
                     "fieldType": "ConstructParameter",
                     "usage": "NoPort",
@@ -939,46 +939,6 @@
                     "usage": "NoPort",
                     "readonly": false,
                     "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "name": "input_parser",
-                    "value": "pickle",
-                    "defaultValue": "pickle",
-                    "description": "Input port parsing technique",
-                    "type": "Select",
-                    "fieldType": "ApplicationArgument",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [
-                        "raw",
-                        "pickle",
-                        "eval",
-                        "npy",
-                        "path",
-                        "dataurl"
-                    ],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "name": "output_parser",
-                    "value": "pickle",
-                    "defaultValue": "pickle",
-                    "description": "Output port parsing technique",
-                    "type": "Select",
-                    "fieldType": "ApplicationArgument",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [
-                        "raw",
-                        "pickle",
-                        "eval",
-                        "npy",
-                        "path",
-                        "dataurl"
-                    ],
                     "precious": false,
                     "positional": false
                 },
@@ -1046,12 +1006,52 @@
                     "options": [],
                     "precious": false,
                     "positional": false
+                },
+                {
+                    "name": "input_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Input port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "output_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Output port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
-            "dataHash": "ead1d211aa9e892a6e6ace73dbae4d6ef42700ad9bacd7f489e894e42f28935c"
+            "dataHash": "24981d2f391880f42d9e2d0a1ef95bf870ebdf39da072a78b7c97e6c519d180c"
         },
         {
             "category": "Gather",
@@ -1090,7 +1090,7 @@
                     "options": [],
                     "positional": false,
                     "keyAttribute": false,
-                    "id": "470af5fb-399f-4ce7-b6e2-4360a62de5a2",
+                    "id": "4ab46812-7f88-4ff0-9d7d-73618b94a6d7",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
                 },
@@ -1105,7 +1105,7 @@
                     "options": [],
                     "positional": false,
                     "keyAttribute": false,
-                    "id": "85a0cfde-f35f-43b3-ba26-5b3478b60134",
+                    "id": "8ac5f72f-d3c5-4b63-9e00-089c99a9761e",
                     "parameterType": "ConstraintParameter",
                     "usage": "NoPort"
                 },
@@ -1120,7 +1120,7 @@
                     "options": [],
                     "positional": false,
                     "keyAttribute": false,
-                    "id": "06ed0bae-298a-4870-8e1e-79d8b28c0633",
+                    "id": "57b04e50-4b6d-413e-8ff2-1873c5c53c91",
                     "parameterType": "ConstraintParameter",
                     "usage": "NoPort"
                 },
@@ -1135,7 +1135,7 @@
                     "options": [],
                     "positional": false,
                     "keyAttribute": false,
-                    "id": "8ce0315b-0bfb-4a0d-82eb-d2173a39e703",
+                    "id": "368c7dee-9e1c-41ec-a4e8-b5e081d55901",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
                 },
@@ -1150,7 +1150,7 @@
                     "options": [],
                     "positional": false,
                     "keyAttribute": false,
-                    "id": "fe199234-dbea-42cc-8a8c-85e6b63d2432",
+                    "id": "3fd816d9-d6e5-4f2c-8730-3bf09eb1799d",
                     "parameterType": "ApplicationArgument",
                     "usage": "InputOutput"
                 }
@@ -1224,46 +1224,6 @@
                     "positional": false
                 },
                 {
-                    "name": "input_parser",
-                    "value": "pickle",
-                    "defaultValue": "pickle",
-                    "description": "Input port parsing technique",
-                    "type": "Select",
-                    "fieldType": "ApplicationArgument",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [
-                        "raw",
-                        "pickle",
-                        "eval",
-                        "npy",
-                        "path",
-                        "dataurl"
-                    ],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "name": "output_parser",
-                    "value": "pickle",
-                    "defaultValue": "pickle",
-                    "description": "Output port parsing technique",
-                    "type": "Select",
-                    "fieldType": "ApplicationArgument",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [
-                        "raw",
-                        "pickle",
-                        "eval",
-                        "npy",
-                        "path",
-                        "dataurl"
-                    ],
-                    "precious": false,
-                    "positional": false
-                },
-                {
                     "name": "execution_time",
                     "value": "5",
                     "defaultValue": "5",
@@ -1314,12 +1274,52 @@
                     "options": [],
                     "precious": false,
                     "positional": false
+                },
+                {
+                    "name": "input_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Input port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "output_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Output port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
-            "dataHash": "8564df5203a2e9ca93751d630dbf2c64769a7a52589be49bc34d115b48a397b3"
+            "dataHash": "d4ce79102b61a67a3c62a78c697904ca0a4a94a0f7632aaa1cb19b9315c7c97c"
         },
         {
             "category": "Scatter",
@@ -1358,7 +1358,7 @@
                     "options": [],
                     "positional": false,
                     "keyAttribute": false,
-                    "id": "50b56ef5-08b8-4b64-9d37-1743697c27e0",
+                    "id": "0d5b22b8-8a3a-438a-bee6-96c70d23427b",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
                 },
@@ -1373,7 +1373,7 @@
                     "options": [],
                     "positional": false,
                     "keyAttribute": false,
-                    "id": "a40d8c4e-2540-4d86-b806-4e9a1d0e7953",
+                    "id": "a35430eb-cf59-486e-82d4-7dd1c207c076",
                     "parameterType": "ConstraintParameter",
                     "usage": "NoPort"
                 },
@@ -1388,7 +1388,7 @@
                     "options": [],
                     "positional": false,
                     "keyAttribute": false,
-                    "id": "8c589b77-76e5-4c37-91c4-1efd393503d3",
+                    "id": "a05ce5c3-a431-4567-bc35-dbe38c69ca85",
                     "parameterType": "ConstraintParameter",
                     "usage": "NoPort"
                 },
@@ -1403,7 +1403,7 @@
                     "options": [],
                     "positional": false,
                     "keyAttribute": false,
-                    "id": "b01fa8c8-4024-4487-8d71-c3ed6b637417",
+                    "id": "fd58ec3f-0baa-4e9d-aa39-2acd997ec440",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
                 },
@@ -1418,7 +1418,7 @@
                     "options": [],
                     "positional": false,
                     "keyAttribute": false,
-                    "id": "2202f772-2ad5-4870-9e3c-e85d04838018",
+                    "id": "55b3be37-d530-435c-8cf1-a68546b43f2c",
                     "parameterType": "ApplicationArgument",
                     "usage": "InputPort"
                 },
@@ -1433,7 +1433,7 @@
                     "options": [],
                     "positional": false,
                     "keyAttribute": false,
-                    "id": "42cc8e2a-7ee2-4702-a032-cfd23fb44705",
+                    "id": "c254cae9-270f-481c-ae83-d92d8ddb36fd",
                     "parameterType": "ApplicationArgument",
                     "usage": "OutputPort"
                 }
@@ -1507,46 +1507,6 @@
                     "positional": false
                 },
                 {
-                    "name": "input_parser",
-                    "value": "pickle",
-                    "defaultValue": "pickle",
-                    "description": "Input port parsing technique",
-                    "type": "Select",
-                    "fieldType": "ApplicationArgument",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [
-                        "raw",
-                        "pickle",
-                        "eval",
-                        "npy",
-                        "path",
-                        "dataurl"
-                    ],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "name": "output_parser",
-                    "value": "pickle",
-                    "defaultValue": "pickle",
-                    "description": "Output port parsing technique",
-                    "type": "Select",
-                    "fieldType": "ApplicationArgument",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [
-                        "raw",
-                        "pickle",
-                        "eval",
-                        "npy",
-                        "path",
-                        "dataurl"
-                    ],
-                    "precious": false,
-                    "positional": false
-                },
-                {
                     "name": "execution_time",
                     "value": "5",
                     "defaultValue": "5",
@@ -1597,12 +1557,52 @@
                     "options": [],
                     "precious": false,
                     "positional": false
+                },
+                {
+                    "name": "input_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Input port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "output_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Output port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
-            "dataHash": "ec3ccc8a446e4e74bc7f8c5bbb88d0dfbc56f1bcd284cdd79bc7ddf6350c5476"
+            "dataHash": "f53b1293645b621e9d3b34b056c4d0bd91fecc59ab01c269d18da9d2b06d44c0"
         },
         {
             "category": "Scatter",
@@ -1641,7 +1641,7 @@
                     "options": [],
                     "positional": false,
                     "keyAttribute": false,
-                    "id": "b64e0728-ba20-446a-b24c-78aa64be103b",
+                    "id": "21c1d22d-da70-4627-9faa-d3d65918b9e0",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
                 },
@@ -1656,7 +1656,7 @@
                     "options": [],
                     "positional": false,
                     "keyAttribute": false,
-                    "id": "874c64ce-c4f3-432f-af4c-236694c81028",
+                    "id": "11fe7178-b690-4916-b686-22ec14950aea",
                     "parameterType": "ConstraintParameter",
                     "usage": "NoPort"
                 },
@@ -1671,7 +1671,7 @@
                     "options": [],
                     "positional": false,
                     "keyAttribute": false,
-                    "id": "6be1b4e2-d633-4146-80ba-90c441863200",
+                    "id": "e511d250-c1a9-4ae2-b982-3c292abbf59c",
                     "parameterType": "ConstraintParameter",
                     "usage": "NoPort"
                 },
@@ -1686,7 +1686,7 @@
                     "options": [],
                     "positional": false,
                     "keyAttribute": false,
-                    "id": "8ca44bc4-394b-4bdc-816f-1bb2911606ee",
+                    "id": "5671a460-afba-423b-91ef-d8a31bd11a73",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
                 },
@@ -1701,7 +1701,7 @@
                     "options": [],
                     "positional": false,
                     "keyAttribute": false,
-                    "id": "8a96bf79-5305-4f04-88fb-eb3642444056",
+                    "id": "4ebd11e5-edf9-4567-9418-df7f678efd5f",
                     "parameterType": "ApplicationArgument",
                     "usage": "InputPort"
                 },
@@ -1716,7 +1716,7 @@
                     "options": [],
                     "positional": false,
                     "keyAttribute": false,
-                    "id": "0440ead0-5e7b-43a7-92c9-2569895ae8ba",
+                    "id": "6d1080e8-1db8-4888-abc1-d3c7b3f02dec",
                     "parameterType": "ApplicationArgument",
                     "usage": "OutputPort"
                 }
@@ -1777,46 +1777,6 @@
                     "positional": false
                 },
                 {
-                    "name": "input_parser",
-                    "value": "pickle",
-                    "defaultValue": "pickle",
-                    "description": "Input port parsing technique",
-                    "type": "Select",
-                    "fieldType": "ApplicationArgument",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [
-                        "raw",
-                        "pickle",
-                        "eval",
-                        "npy",
-                        "path",
-                        "dataurl"
-                    ],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "name": "output_parser",
-                    "value": "pickle",
-                    "defaultValue": "pickle",
-                    "description": "Output port parsing technique",
-                    "type": "Select",
-                    "fieldType": "ApplicationArgument",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [
-                        "raw",
-                        "pickle",
-                        "eval",
-                        "npy",
-                        "path",
-                        "dataurl"
-                    ],
-                    "precious": false,
-                    "positional": false
-                },
-                {
                     "name": "num_cpus",
                     "value": "1",
                     "defaultValue": "1",
@@ -1854,12 +1814,52 @@
                     "options": [],
                     "precious": false,
                     "positional": false
+                },
+                {
+                    "name": "input_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Input port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "output_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Output port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
-            "dataHash": "64669a8c3b9edec69f6aa57e94514c764f736ad1a23d6a4788de1ce3eb6f6c11"
+            "dataHash": "2ab5a6534525cc2550622e3fc5580817d0983e50ed30a6c14997f4ef204268bf"
         },
         {
             "category": "Memory",
@@ -1868,11 +1868,37 @@
             "description": "In-memory storage of intermediate data products",
             "fields": [
                 {
-                    "name": "dropclass",
-                    "value": "dlg.data.drops.memory.InMemoryDROP",
-                    "defaultValue": "dlg.data.drops.memory.InMemoryDROP",
-                    "description": "Drop class",
+                    "name": "pydata",
+                    "value": "None",
+                    "defaultValue": "None",
+                    "description": "Data to be loaded into memory",
                     "type": "String",
+                    "fieldType": "ApplicationArgument",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "dummy",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "Dummy port",
+                    "type": "Object",
+                    "fieldType": "ApplicationArgument",
+                    "usage": "InputOutput",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "persist",
+                    "value": "False",
+                    "defaultValue": "False",
+                    "description": "Specifies whether this data component contains data that should not be deleted after execution",
+                    "type": "Boolean",
                     "fieldType": "ComponentParameter",
                     "usage": "NoPort",
                     "readonly": false,
@@ -1920,26 +1946,13 @@
                     "positional": false
                 },
                 {
-                    "name": "persist",
-                    "value": "False",
-                    "defaultValue": "False",
-                    "description": "Specifies whether this data component contains data that should not be deleted after execution",
-                    "type": "Boolean",
+                    "name": "dropclass",
+                    "value": "dlg.data.drops.memory.InMemoryDROP",
+                    "defaultValue": "dlg.data.drops.memory.InMemoryDROP",
+                    "description": "Drop class",
+                    "type": "String",
                     "fieldType": "ComponentParameter",
                     "usage": "NoPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "name": "dummy",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "Dummy port",
-                    "type": "Object",
-                    "fieldType": "ApplicationArgument",
-                    "usage": "InputOutput",
                     "readonly": false,
                     "options": [],
                     "precious": false,
@@ -1947,9 +1960,9 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
-            "dataHash": "99562ee043ee082bb2633032ff1c7970a2ea33053d30d6fd46d4a596c5deab69"
+            "dataHash": "e511f15a21ca6488a37aafa150fea143ee75f445eef862a3fb921d9ff709bab7"
         },
         {
             "category": "PythonApp",
@@ -1980,46 +1993,6 @@
                     "usage": "NoPort",
                     "readonly": false,
                     "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "name": "input_parser",
-                    "value": "pickle",
-                    "defaultValue": "pickle",
-                    "description": "Input port parsing technique",
-                    "type": "Select",
-                    "fieldType": "ApplicationArgument",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [
-                        "raw",
-                        "pickle",
-                        "eval",
-                        "npy",
-                        "path",
-                        "dataurl"
-                    ],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "name": "output_parser",
-                    "value": "pickle",
-                    "defaultValue": "pickle",
-                    "description": "Output port parsing technique",
-                    "type": "Select",
-                    "fieldType": "ApplicationArgument",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [
-                        "raw",
-                        "pickle",
-                        "eval",
-                        "npy",
-                        "path",
-                        "dataurl"
-                    ],
                     "precious": false,
                     "positional": false
                 },
@@ -2074,31 +2047,6 @@
                     "options": [],
                     "precious": false,
                     "positional": false
-                }
-            ],
-            "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
-            "paletteDownloadUrl": "",
-            "dataHash": "9b5b7d81920130b943e2928fa5d42992e31c2e3aa8f565959059f8444960c73a"
-        },
-        {
-            "category": "PythonApp",
-            "key": -32,
-            "text": "NgasArchivingApp",
-            "description": "Takes an input and archives it in an NGAS server.",
-            "fields": [
-                {
-                    "name": "dropclass",
-                    "value": "dlg.apps.archiving.NgasArchivingApp",
-                    "defaultValue": "dlg.apps.archiving.NgasArchivingApp",
-                    "description": "Application class",
-                    "type": "String",
-                    "fieldType": "ComponentParameter",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
                 },
                 {
                     "name": "input_parser",
@@ -2106,7 +2054,7 @@
                     "defaultValue": "pickle",
                     "description": "Input port parsing technique",
                     "type": "Select",
-                    "fieldType": "ApplicationArgument",
+                    "fieldType": "ComponentParameter",
                     "usage": "NoPort",
                     "readonly": false,
                     "options": [
@@ -2126,7 +2074,7 @@
                     "defaultValue": "pickle",
                     "description": "Output port parsing technique",
                     "type": "Select",
-                    "fieldType": "ApplicationArgument",
+                    "fieldType": "ComponentParameter",
                     "usage": "NoPort",
                     "readonly": false,
                     "options": [
@@ -2137,6 +2085,31 @@
                         "path",
                         "dataurl"
                     ],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
+            "repositoryUrl": "https://github.com/ICRAR/daliuge",
+            "commitHash": "d40827e",
+            "paletteDownloadUrl": "",
+            "dataHash": "7ec69265b50fcaf2dea4dca631671ba28b9c56f5d4d57df86805a98cf57d123a"
+        },
+        {
+            "category": "PythonApp",
+            "key": -32,
+            "text": "NgasArchivingApp",
+            "description": "Takes an input and archives it in an NGAS server.",
+            "fields": [
+                {
+                    "name": "dropclass",
+                    "value": "dlg.apps.archiving.NgasArchivingApp",
+                    "defaultValue": "dlg.apps.archiving.NgasArchivingApp",
+                    "description": "Application class",
+                    "type": "String",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [],
                     "precious": false,
                     "positional": false
                 },
@@ -2282,12 +2255,52 @@
                     "options": [],
                     "precious": false,
                     "positional": false
+                },
+                {
+                    "name": "input_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Input port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "output_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Output port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
-            "dataHash": "050be8bb5a86cd1293990019d68443f580d1bb227aaa8150fc0b061208e592b6"
+            "dataHash": "a5f4dc5e5a7353e9a0bd29ea4c127558971e8230a0bdefcb2de040cd3760aada"
         },
         {
             "category": "NGAS",
@@ -2453,7 +2466,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
             "dataHash": "912864bbc4479cd69f8a7cc9dff8b7d4aebe81c131104cebffa3363fbc641d5c"
         },
@@ -2517,7 +2530,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
             "dataHash": "8f786fe0d8742fd0b9f905a8c5405ca6b4674e97447c5cfc0150a7a56ab66964"
         },
@@ -2525,7 +2538,7 @@
             "category": "ParameterSet",
             "key": -35,
             "text": "ParameterSet",
-            "description": "A set of parameters, wholly specified in EAGLE",
+            "description": "A set of parameters, which can be set and modified in EAGLE and thus is part of the graph. Multiple serialisation formats are available.",
             "fields": [
                 {
                     "name": "data_volume",
@@ -2557,12 +2570,19 @@
                     "name": "mode",
                     "value": "YANDA",
                     "defaultValue": "YANDA",
-                    "description": "To what standard DALiuGE should filter and serialize the parameters.",
-                    "type": "String",
+                    "description": "Serialisation method.",
+                    "type": "Select",
                     "fieldType": "ComponentParameter",
                     "usage": "NoPort",
                     "readonly": false,
-                    "options": [],
+                    "options": [
+                        "YANDA",
+                        "ini",
+                        "yaml",
+                        "json",
+                        "toml",
+                        "pickle"
+                    ],
                     "precious": false,
                     "positional": false
                 },
@@ -2633,9 +2653,9 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
-            "dataHash": "50c459de8b331f3ae5e90320f50aa00129bfb1892531ed04806f7af95086adbb"
+            "dataHash": "057c6a8ea53a5d04ce07c2e26ef25cfca59504053407289c5309f81cc44556fc"
         },
         {
             "category": "PythonApp",
@@ -2653,46 +2673,6 @@
                     "usage": "NoPort",
                     "readonly": false,
                     "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "name": "input_parser",
-                    "value": "pickle",
-                    "defaultValue": "pickle",
-                    "description": "Input port parsing technique",
-                    "type": "Select",
-                    "fieldType": "ApplicationArgument",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [
-                        "raw",
-                        "pickle",
-                        "eval",
-                        "npy",
-                        "path",
-                        "dataurl"
-                    ],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "name": "output_parser",
-                    "value": "pickle",
-                    "defaultValue": "pickle",
-                    "description": "Output port parsing technique",
-                    "type": "Select",
-                    "fieldType": "ApplicationArgument",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [
-                        "raw",
-                        "pickle",
-                        "eval",
-                        "npy",
-                        "path",
-                        "dataurl"
-                    ],
                     "precious": false,
                     "positional": false
                 },
@@ -2760,12 +2740,52 @@
                     "options": [],
                     "precious": false,
                     "positional": false
+                },
+                {
+                    "name": "input_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Input port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "output_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Output port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
-            "dataHash": "36a9da0c14f557690aacbe44b6611aec55b2bd132c52e19d676b44dfe5e36a64"
+            "dataHash": "b11034a419200d8c0a29347b4cd488907ad524fbd6b02003e4462612409d7867"
         },
         {
             "category": "Plasma",
@@ -2866,7 +2886,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
             "dataHash": "cbde43c701f44757b27178b7acf293576c1011399f361348fa4bb3985692a1ae"
         },
@@ -2969,7 +2989,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
             "dataHash": "1e3f01f0d21765f3f6b1f20a12520b95374fa72a4f5ceb78f8da531103a0bed3"
         },
@@ -3045,46 +3065,6 @@
                     "positional": false
                 },
                 {
-                    "name": "input_parser",
-                    "value": "pickle",
-                    "defaultValue": "pickle",
-                    "description": "Input port parsing technique",
-                    "type": "Select",
-                    "fieldType": "ApplicationArgument",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [
-                        "raw",
-                        "pickle",
-                        "eval",
-                        "npy",
-                        "path",
-                        "dataurl"
-                    ],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "name": "output_parser",
-                    "value": "pickle",
-                    "defaultValue": "pickle",
-                    "description": "Output port parsing technique",
-                    "type": "Select",
-                    "fieldType": "ApplicationArgument",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [
-                        "raw",
-                        "pickle",
-                        "eval",
-                        "npy",
-                        "path",
-                        "dataurl"
-                    ],
-                    "precious": false,
-                    "positional": false
-                },
-                {
                     "name": "execution_time",
                     "value": "5",
                     "defaultValue": "5",
@@ -3135,12 +3115,52 @@
                     "options": [],
                     "precious": false,
                     "positional": false
+                },
+                {
+                    "name": "input_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Input port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "output_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Output port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
-            "dataHash": "6f15cb878a6c9791668ccd144e38d1bdd93bd0fbf11e14c485f83846a97d7969"
+            "dataHash": "4b277eecab30de95c5ad2ec7cee3fb7f455ae775d38359d0d93f81da73a00e4f"
         },
         {
             "category": "RDBMS",
@@ -3267,7 +3287,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
             "dataHash": "3d3aa095e6f74daeb95cc31223a050b454ab8406a74df89c594d87e01754498c"
         },
@@ -3409,7 +3429,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
             "dataHash": "84e6753e8337eb16a66ce24516645407f39a8b3093c40aa765f76cad9cb133e3"
         },
@@ -3429,46 +3449,6 @@
                     "usage": "NoPort",
                     "readonly": false,
                     "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "name": "input_parser",
-                    "value": "pickle",
-                    "defaultValue": "pickle",
-                    "description": "Input port parsing technique",
-                    "type": "Select",
-                    "fieldType": "ApplicationArgument",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [
-                        "raw",
-                        "pickle",
-                        "eval",
-                        "npy",
-                        "path",
-                        "dataurl"
-                    ],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "name": "output_parser",
-                    "value": "pickle",
-                    "defaultValue": "pickle",
-                    "description": "Output port parsing technique",
-                    "type": "Select",
-                    "fieldType": "ApplicationArgument",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [
-                        "raw",
-                        "pickle",
-                        "eval",
-                        "npy",
-                        "path",
-                        "dataurl"
-                    ],
                     "precious": false,
                     "positional": false
                 },
@@ -3588,12 +3568,52 @@
                     "options": [],
                     "precious": false,
                     "positional": false
+                },
+                {
+                    "name": "input_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Input port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "output_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Output port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
-            "dataHash": "836437ff4a04364029e44bc42b90afa0b9abac60e47ec8f50d243ed0686fb359"
+            "dataHash": "8e0a7040e574b3c6960eeb4c50c41138fd0ba60b19b2d6cd93af7d4133b9ef26"
         },
         {
             "category": "SharedMemory",
@@ -3602,11 +3622,37 @@
             "description": "Data stored in shared memory",
             "fields": [
                 {
-                    "name": "dropclass",
-                    "value": "dlg.data.drops.memory.SharedMemoryDROP",
-                    "defaultValue": "dlg.data.drops.memory.SharedMemoryDROP",
-                    "description": "Drop class",
+                    "name": "pydata",
+                    "value": "None",
+                    "defaultValue": "None",
+                    "description": "Data to be loaded into memory",
                     "type": "String",
+                    "fieldType": "ApplicationArgument",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "dummy",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "Dummy port",
+                    "type": "Object",
+                    "fieldType": "ApplicationArgument",
+                    "usage": "InputOutput",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "persist",
+                    "value": "False",
+                    "defaultValue": "False",
+                    "description": "Specifies whether this data component contains data that should not be deleted after execution",
+                    "type": "Boolean",
                     "fieldType": "ComponentParameter",
                     "usage": "NoPort",
                     "readonly": false,
@@ -3654,26 +3700,13 @@
                     "positional": false
                 },
                 {
-                    "name": "persist",
-                    "value": "False",
-                    "defaultValue": "False",
-                    "description": "Specifies whether this data component contains data that should not be deleted after execution",
-                    "type": "Boolean",
+                    "name": "dropclass",
+                    "value": "dlg.data.drops.memory.SharedMemoryDROP",
+                    "defaultValue": "dlg.data.drops.memory.SharedMemoryDROP",
+                    "description": "Drop class",
+                    "type": "String",
                     "fieldType": "ComponentParameter",
                     "usage": "NoPort",
-                    "readonly": false,
-                    "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "name": "dummy",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "Dummy port",
-                    "type": "Object",
-                    "fieldType": "ApplicationArgument",
-                    "usage": "InputOutput",
                     "readonly": false,
                     "options": [],
                     "precious": false,
@@ -3681,9 +3714,9 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
-            "dataHash": "b35fd5cd447dc9a175bf0352c0dfa04cd2640df3070d09514411e7b66b77d9c3"
+            "dataHash": "2653521bca17a8f38a098e40b075b00541f84dc3f00b2e927cb5afe4bdd8f8be"
         },
         {
             "category": "PythonApp",
@@ -3701,46 +3734,6 @@
                     "usage": "NoPort",
                     "readonly": false,
                     "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "name": "input_parser",
-                    "value": "pickle",
-                    "defaultValue": "pickle",
-                    "description": "Input port parsing technique",
-                    "type": "Select",
-                    "fieldType": "ApplicationArgument",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [
-                        "raw",
-                        "pickle",
-                        "eval",
-                        "npy",
-                        "path",
-                        "dataurl"
-                    ],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "name": "output_parser",
-                    "value": "pickle",
-                    "defaultValue": "pickle",
-                    "description": "Output port parsing technique",
-                    "type": "Select",
-                    "fieldType": "ApplicationArgument",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [
-                        "raw",
-                        "pickle",
-                        "eval",
-                        "npy",
-                        "path",
-                        "dataurl"
-                    ],
                     "precious": false,
                     "positional": false
                 },
@@ -3795,12 +3788,52 @@
                     "options": [],
                     "precious": false,
                     "positional": false
+                },
+                {
+                    "name": "input_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Input port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "output_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Output port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
-            "dataHash": "f60c76dd6836422f4fd93ddd4516f604341426ecfb90d55361a674ed4752fe17"
+            "dataHash": "c5ddb7b9b515d7c24cbb87b864c7e31d53288a69108b626ea32bacf7af8da5b0"
         },
         {
             "category": "PythonApp",
@@ -3872,12 +3905,52 @@
                     "options": [],
                     "precious": false,
                     "positional": false
+                },
+                {
+                    "name": "input_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Input port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "output_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Output port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
-            "dataHash": "3b9e0fd80ef3b2d2f5b843f3415beb8753f84d0cb2a7ce1a974043d0fe9eea8e"
+            "dataHash": "e095efc024f8137624fa083f052f16d15c112e67a8bc8f68ee564149bd58dc0f"
         },
         {
             "category": "PythonApp",
@@ -4027,12 +4100,52 @@
                     "options": [],
                     "precious": false,
                     "positional": false
+                },
+                {
+                    "name": "input_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Input port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "output_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Output port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
-            "dataHash": "7c3791533b5c0453d7671b72efbf7e6206645c8155ebe9c9e43c17825cfcf4b5"
+            "dataHash": "4c8c83cf175a3799db8bcca32e3f258f35cf55dad996497173ec78e2a1134e05"
         },
         {
             "category": "PythonApp",
@@ -4042,8 +4155,8 @@
             "fields": [
                 {
                     "name": "url",
-                    "value": "https://eagle.icrar.org",
-                    "defaultValue": "https://eagle.icrar.org",
+                    "value": "None",
+                    "defaultValue": "None",
                     "description": "The URL to retrieve",
                     "type": "String",
                     "fieldType": "ApplicationArgument",
@@ -4076,46 +4189,6 @@
                     "usage": "NoPort",
                     "readonly": false,
                     "options": [],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "name": "input_parser",
-                    "value": "pickle",
-                    "defaultValue": "pickle",
-                    "description": "Input port parsing technique",
-                    "type": "Select",
-                    "fieldType": "ApplicationArgument",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [
-                        "raw",
-                        "pickle",
-                        "eval",
-                        "npy",
-                        "path",
-                        "dataurl"
-                    ],
-                    "precious": false,
-                    "positional": false
-                },
-                {
-                    "name": "output_parser",
-                    "value": "pickle",
-                    "defaultValue": "pickle",
-                    "description": "Output port parsing technique",
-                    "type": "Select",
-                    "fieldType": "ApplicationArgument",
-                    "usage": "NoPort",
-                    "readonly": false,
-                    "options": [
-                        "raw",
-                        "pickle",
-                        "eval",
-                        "npy",
-                        "path",
-                        "dataurl"
-                    ],
                     "precious": false,
                     "positional": false
                 },
@@ -4157,12 +4230,52 @@
                     "options": [],
                     "precious": false,
                     "positional": false
+                },
+                {
+                    "name": "input_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Input port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "output_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Output port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "671d6e3",
+            "commitHash": "d40827e",
             "paletteDownloadUrl": "",
-            "dataHash": "7175f1d4ab71115f928b888dc3914dbc17b59de46a476b69a2fa077721597b4c"
+            "dataHash": "752d1ffa908cbb28f504cdb78c92f72c750b66c655d3e00373f4104ab9041bec"
         }
     ],
     "linkDataArray": []
