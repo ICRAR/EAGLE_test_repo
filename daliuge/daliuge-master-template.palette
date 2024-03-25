@@ -1,6 +1,6 @@
 {
     "modelData": {
-        "filePath": "daliuge-master-template.palette",
+        "filePath": "/home/awicenec/tmp/daliuge.template.palette",
         "fileType": "palette",
         "shortDescription": "",
         "detailedDescription": "",
@@ -18,7 +18,7 @@
         "lastModifiedName": "wici",
         "lastModifiedEmail": "",
         "lastModifiedDatetime": 1710777578.546373,
-        "numLGNodes": 18
+        "numLGNodes": 19
     },
     "nodeDataArray": [
         {
@@ -990,7 +990,6 @@
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
             "commitHash": "04777bc",
-            "paletteDownloadUrl": "",
             "dataHash": "31b1a3378f5ebbeaf6e386fd95ef1a38363f49534222e6ff99f03cb76c9f101d"
         },
         {
@@ -1201,7 +1200,7 @@
         },
         {
             "category": "GroupBy",
-            "key": -21,
+            "key": -18,
             "text": "GroupBy",
             "description": "A GroupBy template drop",
             "fields": [
@@ -1239,7 +1238,7 @@
         },
         {
             "category": "Loop",
-            "key": -25,
+            "key": -20,
             "text": "Loop",
             "description": "A loop template drop",
             "fields": [
@@ -1264,7 +1263,7 @@
         },
         {
             "category": "MKN",
-            "key": -26,
+            "key": -21,
             "text": "MKN",
             "description": "A MKN template drop",
             "fields": [
@@ -1289,7 +1288,7 @@
         },
         {
             "category": "Mpi",
-            "key": -27,
+            "key": -22,
             "text": "MPI",
             "description": "An application component using the Message Passing Interface (MPI)",
             "fields": [
@@ -1510,7 +1509,7 @@
         },
         {
             "category": "PythonApp",
-            "key": -35,
+            "key": -29,
             "text": "PyFuncApp",
             "description": "An application that wraps a simple python function. The inputs of the application are treated as the arguments of the function. Conversely, the output of the function is treated as the output of the application. If the application has more than one output, the result of calling the function is treated as an iterable, with each individual object being written to its corresponding output.",
             "fields": [
@@ -1666,7 +1665,7 @@
         },
         {
             "category": "PythonApp",
-            "key": -36,
+            "key": -30,
             "text": "PythonApp",
             "description": "A placeholder APP to aid construction of new applications. This is mainly useful (and used) when starting a new workflow from scratch.",
             "fields": [
@@ -1729,8 +1728,72 @@
             "dataHash": "c83ef987b15b86c59502c8e631d404b3a9c0d7360b79be46f15c65affa9582e9"
         },
         {
+            "category": "PythonObject",
+            "key": -31,
+            "text": "PythonObject",
+            "description": "A Python object stored in memory",
+            "fields": [
+                {
+                    "name": "object",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "object port",
+                    "type": "Object",
+                    "fieldType": "ApplicationArgument",
+                    "usage": "InputOutput",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "persist",
+                    "value": "False",
+                    "defaultValue": "False",
+                    "description": "Object should be serialized",
+                    "type": "Boolean",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "data_volume",
+                    "value": "5",
+                    "defaultValue": "5",
+                    "description": "Estimated size of the data contained in the object",
+                    "type": "Float",
+                    "fieldType": "ConstraintParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "dropclass",
+                    "value": "dlg.data.drops.memory.PythonObjectDROP",
+                    "defaultValue": "dlg.data.drops.memory.PythonObjectDROP",
+                    "description": "Drop class",
+                    "type": "String",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
+            "repositoryUrl": "daliuge-engine",
+            "commitHash": "0.1",
+            "paletteDownloadUrl": "",
+            "dataHash": "9bc7867bfc782bbb83eb58e9214ff9e0d8b61f928a2d8e0b3ededeb8f8b47700"
+        },
+        {
             "category": "Scatter",
-            "key": -40,
+            "key": -34,
             "text": "Scatter",
             "description": "A Scatter template drop",
             "fields": [
@@ -1755,7 +1818,7 @@
         },
         {
             "category": "SubGraph",
-            "key": -46,
+            "key": -40,
             "text": "SubGraph",
             "description": "A SubGraph template drop",
             "fields": [],
