@@ -18,7 +18,7 @@
         "lastModifiedName": "wici",
         "lastModifiedEmail": "",
         "lastModifiedDatetime": 1710777578.546373,
-        "numLGNodes": 19
+        "numLGNodes": 20
     },
     "nodeDataArray": [
         {
@@ -1664,8 +1664,177 @@
             "dataHash": "96ed72a6048391e13d61f79f640d0a4fc3371f96497f6fb8d0e5086aea0c2cb5"
         },
         {
-            "category": "PythonApp",
+            "category": "PythonMemberFunction",
             "key": -30,
+            "text": "PythonMemberFunction",
+            "description": "A placeholder APP to aid construction of new class member function applications. This is mainly useful (and used) when starting a new workflow from scratch.",
+            "fields": [
+                {
+                    "name": "func_name",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "Python function name",
+                    "type": "String",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "func_code",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "Python function code, e.g. 'def function_name(args): return args'",
+                    "type": "String",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "dropclass",
+                    "value": "dlg.apps.pyfunc.PyFuncApp",
+                    "defaultValue": "dlg.apps.pyfunc.PyFuncApp",
+                    "description": "Application class",
+                    "type": "String",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "object",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "object port",
+                    "type": "Object",
+                    "fieldType": "ApplicationArgument",
+                    "usage": "InputOutput",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "execution_time",
+                    "value": "5",
+                    "defaultValue": "5",
+                    "description": "Estimated execution time",
+                    "type": "Float",
+                    "fieldType": "ConstraintParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "num_cpus",
+                    "value": "1",
+                    "defaultValue": "1",
+                    "description": "Number of cores used",
+                    "type": "Integer",
+                    "fieldType": "ConstraintParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "group_start",
+                    "value": "False",
+                    "defaultValue": "False",
+                    "description": "Is this node the start of a group?",
+                    "type": "Boolean",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "input_error_threshold",
+                    "value": "0",
+                    "defaultValue": "0",
+                    "description": "The allowed failure rate of the inputs (in percent), before this component goes to ERROR state and is not executed",
+                    "type": "Integer",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "n_tries",
+                    "value": "1",
+                    "defaultValue": "1",
+                    "description": "Specifies the number of times the 'run' method will be executed before finally giving up",
+                    "type": "Integer",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "input_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Input port parsing technique",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "output_parser",
+                    "value": "pickle",
+                    "defaultValue": "pickle",
+                    "description": "Output port parsing technique Mapping from argname to default value. Should match only the last part of the argnames list. Values are interpreted as Python code literals and that means string values need to be quoted.",
+                    "type": "Select",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [
+                        "raw",
+                        "pickle",
+                        "eval",
+                        "npy",
+                        "path",
+                        "dataurl"
+                    ],
+                    "precious": false,
+                    "positional": false
+                }
+            ],
+            "repositoryUrl": "daliuge-engine",
+            "commitHash": "0.1",
+            "paletteDownloadUrl": "",
+            "dataHash": "541a010630f541cef814081228b835bfdf85e54679e954a07537a8b5584c7da8"
+        },
+        {
+            "category": "PythonApp",
+            "key": -31,
             "text": "PythonApp",
             "description": "A placeholder APP to aid construction of new applications. This is mainly useful (and used) when starting a new workflow from scratch.",
             "fields": [
@@ -1729,7 +1898,7 @@
         },
         {
             "category": "PythonObject",
-            "key": -31,
+            "key": -32,
             "text": "PythonObject",
             "description": "A Python object stored in memory",
             "fields": [
@@ -1793,7 +1962,7 @@
         },
         {
             "category": "Scatter",
-            "key": -34,
+            "key": -35,
             "text": "Scatter",
             "description": "A Scatter template drop",
             "fields": [
@@ -1818,7 +1987,7 @@
         },
         {
             "category": "SubGraph",
-            "key": -40,
+            "key": -41,
             "text": "SubGraph",
             "description": "A SubGraph template drop",
             "fields": [],
