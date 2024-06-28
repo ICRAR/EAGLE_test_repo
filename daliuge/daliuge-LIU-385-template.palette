@@ -12,12 +12,12 @@
         "schemaVersion": "AppRef",
         "readonly": true,
         "repositoryUrl": "https://github.com/ICRAR/daliuge",
-        "commitHash": "13243ad",
+        "commitHash": "a2d5ae5",
         "downloadUrl": "",
-        "signature": "e0a8f8073b3514a29430de397b568a511771101964a63822e730fa3fdbcee04e",
+        "signature": "95a43238c712df9ab2e9965c7268e1eb73e1cd3dcae6b533bdd8f1e624839357",
         "lastModifiedName": "wici",
         "lastModifiedEmail": "",
-        "lastModifiedDatetime": 1719495148.782283,
+        "lastModifiedDatetime": 1719557162.67048,
         "numLGNodes": 17
     },
     "nodeDataArray": [
@@ -110,6 +110,19 @@
                     "value": "dlg.apps.bash_shell_app.BashShellApp",
                     "defaultValue": "dlg.apps.bash_shell_app.BashShellApp",
                     "description": "Drop class",
+                    "type": "String",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "base_name",
+                    "value": "bash_shell_app",
+                    "defaultValue": "bash_shell_app",
+                    "description": "Base name of application class",
                     "type": "String",
                     "fieldType": "ComponentParameter",
                     "usage": "NoPort",
@@ -225,9 +238,9 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "13243ad",
+            "commitHash": "a2d5ae5",
             "paletteDownloadUrl": "",
-            "dataHash": "6cdb06fdddca0b86db67f6c06cda516083f77f91dfefa94c3002514b736735ad"
+            "dataHash": "16a43763b16d3be49c954599606eb1d80d6fe9df8480e225baa65db50d1799eb"
         },
         {
             "category": "Branch",
@@ -240,6 +253,19 @@
                     "value": "dlg.apps.simple.SimpleBranch",
                     "defaultValue": "dlg.apps.simple.SimpleBranch",
                     "description": "Application class",
+                    "type": "String",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "base_name",
+                    "value": "simple",
+                    "defaultValue": "simple",
+                    "description": "Base name of application class",
                     "type": "String",
                     "fieldType": "ComponentParameter",
                     "usage": "NoPort",
@@ -394,9 +420,9 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "13243ad",
+            "commitHash": "a2d5ae5",
             "paletteDownloadUrl": "",
-            "dataHash": "d6b56d8fc3b7180b2d9bba70768e0457ca96041183a63b0f86a2125d351b8389"
+            "dataHash": "d0132a1fddc91d77305d62560005cd015170ad9bd7895d3156ec4d8d6f10bc0e"
         },
         {
             "category": "Comment",
@@ -416,12 +442,25 @@
                     "options": [],
                     "precious": false,
                     "positional": false
+                },
+                {
+                    "name": "base_name",
+                    "value": "constructs",
+                    "defaultValue": "constructs",
+                    "description": "Base name of application class",
+                    "type": "String",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "13243ad",
+            "commitHash": "a2d5ae5",
             "paletteDownloadUrl": "",
-            "dataHash": "834a16fcbcac60158028591d114691b21bc66df65f0beddefbc2a74f233364f0"
+            "dataHash": "f76f31b1c70e9a7e91837106a10b929a596d230f4b65009f3e062a89e80fc1ef"
         },
         {
             "category": "Data",
@@ -431,9 +470,22 @@
             "fields": [
                 {
                     "name": "dropclass",
-                    "value": "my.awesome.data.Component",
-                    "defaultValue": "my.awesome.data.Component",
+                    "value": "dlg.data.drops.data_base.DataDROP",
+                    "defaultValue": "dlg.data.drops.data_base.DataDROP",
                     "description": "The python class that implements this data component",
+                    "type": "String",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "base_name",
+                    "value": "data_base",
+                    "defaultValue": "data_base",
+                    "description": "Base name of application class",
                     "type": "String",
                     "fieldType": "ComponentParameter",
                     "usage": "NoPort",
@@ -509,9 +561,9 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "13243ad",
+            "commitHash": "a2d5ae5",
             "paletteDownloadUrl": "",
-            "dataHash": "8ed9e1fd1d0123f23ff50820baeb30804cf0a4173e48dcda189638532f7475c1"
+            "dataHash": "675b397e7e44274e3f85633203444372fbcb1d99016b6b904c5e4b68ddf859f7"
         },
         {
             "category": "Docker",
@@ -654,6 +706,19 @@
                     "value": "dlg.apps.dockerapp.DockerApp",
                     "defaultValue": "dlg.apps.dockerapp.DockerApp",
                     "description": "Drop class",
+                    "type": "String",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "base_name",
+                    "value": "dockerapp",
+                    "defaultValue": "dockerapp",
+                    "description": "Base name of application class",
                     "type": "String",
                     "fieldType": "ComponentParameter",
                     "usage": "NoPort",
@@ -834,9 +899,9 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "13243ad",
+            "commitHash": "a2d5ae5",
             "paletteDownloadUrl": "",
-            "dataHash": "16af4681e72a36c20d51165d07d97559fda0ff4f87f4c4be25f2e56177c024fa"
+            "dataHash": "63b637f67603d80fe4cf8fa31126e95b734cfdb8bb39a94e549b992a4a0e45e9"
         },
         {
             "category": "DynlibApp",
@@ -862,6 +927,19 @@
                     "value": "dlg.apps.dynlib.DynlibApp",
                     "defaultValue": "dlg.apps.dynlib.DynlibApp",
                     "description": "Drop class",
+                    "type": "String",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "base_name",
+                    "value": "dynlib",
+                    "defaultValue": "dynlib",
+                    "description": "Base name of application class",
                     "type": "String",
                     "fieldType": "ComponentParameter",
                     "usage": "NoPort",
@@ -977,9 +1055,9 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "13243ad",
+            "commitHash": "a2d5ae5",
             "paletteDownloadUrl": "",
-            "dataHash": "31b1a3378f5ebbeaf6e386fd95ef1a38363f49534222e6ff99f03cb76c9f101d"
+            "dataHash": "5ddc35f1c5885a05fed1a3662b138f2874cc118e8177440c7e3fc18e6f50b767"
         },
         {
             "category": "DynlibProcApp",
@@ -1079,6 +1157,19 @@
                     "positional": false
                 },
                 {
+                    "name": "base_name",
+                    "value": "dynlib",
+                    "defaultValue": "dynlib",
+                    "description": "Base name of application class",
+                    "type": "String",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
                     "name": "input_parser",
                     "value": "pickle",
                     "defaultValue": "pickle",
@@ -1120,9 +1211,9 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "13243ad",
+            "commitHash": "a2d5ae5",
             "paletteDownloadUrl": "",
-            "dataHash": "3583663d5d0483616e592856ff62ec1108e72bb6d1e865d3cf19373976afc871"
+            "dataHash": "3304a0b8ebfa6af4965ed744f1a454291468e3bc965d260c128a644cb3af3cc4"
         },
         {
             "category": "ExclusiveForceNode",
@@ -1142,12 +1233,25 @@
                     "options": [],
                     "precious": false,
                     "positional": false
+                },
+                {
+                    "name": "base_name",
+                    "value": "construct",
+                    "defaultValue": "construct",
+                    "description": "Base name of application class",
+                    "type": "String",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "13243ad",
+            "commitHash": "a2d5ae5",
             "paletteDownloadUrl": "",
-            "dataHash": "4d6e6c4b21ba65cfdae8e1e242ed84ae00d364f68eb451a6a65e9975bb709852"
+            "dataHash": "a9f274e589e514acb0daa36eb63d93f6a9d9778ebe6e85501c60d210292374eb"
         },
         {
             "category": "Gather",
@@ -1183,7 +1287,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "13243ad",
+            "commitHash": "a2d5ae5",
             "paletteDownloadUrl": "",
             "dataHash": "532299fd2101cc8abc6645b5c92326ec6cf89e2996e801f2f4a0d3b8aa93fd8b"
         },
@@ -1221,7 +1325,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "13243ad",
+            "commitHash": "a2d5ae5",
             "paletteDownloadUrl": "",
             "dataHash": "5b837a24ecb59192eea42cf8ccdc37fc7b3b631c6d85d05e819ecbced0ea0369"
         },
@@ -1246,7 +1350,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "13243ad",
+            "commitHash": "a2d5ae5",
             "paletteDownloadUrl": "",
             "dataHash": "99c12f037480fec7a0dced9ca4005ec59c1700e980ce260fdc3397c3c8d30180"
         },
@@ -1271,7 +1375,7 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "13243ad",
+            "commitHash": "a2d5ae5",
             "paletteDownloadUrl": "",
             "dataHash": "078f8a3a04e2c4e58fa8ce7571c0dcb2e97d4cf8b0fe01e5a6f05f1be42ae6af"
         },
@@ -1377,6 +1481,19 @@
                     "value": "dlg.apps.mpi.MPIApp",
                     "defaultValue": "dlg.apps.mpi.MPIApp",
                     "description": "Drop class",
+                    "type": "String",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "mpi",
+                    "value": "construct",
+                    "defaultValue": "construct",
+                    "description": "Base name of application class",
                     "type": "String",
                     "fieldType": "ComponentParameter",
                     "usage": "NoPort",
@@ -1492,13 +1609,13 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "13243ad",
+            "commitHash": "a2d5ae5",
             "paletteDownloadUrl": "",
-            "dataHash": "544cd6703009865e2a5a50e4f3247ddfffe0e35d4eb9cc53e38cc2de06a57f07"
+            "dataHash": "db63ecc3d9887a1aea58509e52deeaea80c8cdeac413a169d89f17a9966eb4a1"
         },
         {
             "category": "PythonApp",
-            "key": -35,
+            "key": -33,
             "text": "PyFuncApp",
             "description": "An application that wraps a simple python function. The inputs of the application are treated as the arguments of the function. Conversely, the output of the function is treated as the output of the application. If the application has more than one output, the result of calling the function is treated as an iterable, with each individual object being written to its corresponding output.",
             "fields": [
@@ -1533,6 +1650,19 @@
                     "value": "dlg.apps.pyfunc.PyFuncApp",
                     "defaultValue": "dlg.apps.pyfunc.PyFuncApp",
                     "description": "Application class",
+                    "type": "String",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "base_name",
+                    "value": "pyfunc",
+                    "defaultValue": "pyfunc",
+                    "description": "Base name of application class",
                     "type": "String",
                     "fieldType": "ComponentParameter",
                     "usage": "NoPort",
@@ -1648,21 +1778,34 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "13243ad",
+            "commitHash": "a2d5ae5",
             "paletteDownloadUrl": "",
-            "dataHash": "96ed72a6048391e13d61f79f640d0a4fc3371f96497f6fb8d0e5086aea0c2cb5"
+            "dataHash": "8ebeeb4296265146339c8269192c3039c213a4153e96a4a91b037904864403af"
         },
         {
             "category": "PythonApp",
-            "key": -37,
+            "key": -35,
             "text": "PythonApp",
             "description": "A placeholder APP to aid construction of new applications. This is mainly useful (and used) when starting a new workflow from scratch.",
             "fields": [
                 {
                     "name": "dropclass",
-                    "value": "PythonApp",
-                    "defaultValue": "PythonApp",
+                    "value": "dlg.apps.simple.PythonApp",
+                    "defaultValue": "dlg.apps.simple.PythonApp",
                     "description": "Application class",
+                    "type": "String",
+                    "fieldType": "ComponentParameter",
+                    "usage": "NoPort",
+                    "readonly": false,
+                    "options": [],
+                    "precious": false,
+                    "positional": false
+                },
+                {
+                    "name": "base_name",
+                    "value": "simple",
+                    "defaultValue": "simple",
+                    "description": "Base name of application class",
                     "type": "String",
                     "fieldType": "ComponentParameter",
                     "usage": "NoPort",
@@ -1712,13 +1855,13 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "13243ad",
+            "commitHash": "a2d5ae5",
             "paletteDownloadUrl": "",
-            "dataHash": "c83ef987b15b86c59502c8e631d404b3a9c0d7360b79be46f15c65affa9582e9"
+            "dataHash": "df1e5da5fe008ab20a43711b2cdfeaec18e3dd10e1342b08bf8386d11499ecaf"
         },
         {
             "category": "Scatter",
-            "key": -42,
+            "key": -40,
             "text": "Scatter",
             "description": "A Scatter template drop",
             "fields": [
@@ -1737,18 +1880,18 @@
                 }
             ],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "13243ad",
+            "commitHash": "a2d5ae5",
             "paletteDownloadUrl": "",
             "dataHash": "03d205c003fce8d2f2090931aeb11acd11ae1ba8358add4b8cc92227ebeb82f2"
         },
         {
             "category": "SubGraph",
-            "key": -48,
+            "key": -46,
             "text": "SubGraph",
             "description": "A SubGraph template drop",
             "fields": [],
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
-            "commitHash": "13243ad",
+            "commitHash": "a2d5ae5",
             "paletteDownloadUrl": "",
             "dataHash": "e934cadca04a76813434892ea7ef3962c1d4df9415c442ca29fc61a20c16ad35"
         }
