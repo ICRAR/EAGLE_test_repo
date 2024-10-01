@@ -5,8 +5,9 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "eagle_test_graphs"
 version = "0.0.1" 
-[tool.setuptools.package-dir]
-eagle_test_graphs = "graphs"
+
+[tool.setuptools.packages.find]
+where=["graphs"]
 
 [tool.setuptools.package-data]
 eagle_test_graphs = ["*.pkl", "*.json", "*.graph"]
