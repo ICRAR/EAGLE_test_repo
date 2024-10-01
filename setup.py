@@ -7,5 +7,6 @@ setup(
     version="0.0.1",
     packages=find_packages(where="graphs"),
     package_dir={"": "graphs"},
-    package_data={"eagle-test-graphs" :["*.graph", "*.pkl", "*.json"]}
+    package_data={
+        "" :["*.graph", "*.pkl", "*.json"]}
 )
