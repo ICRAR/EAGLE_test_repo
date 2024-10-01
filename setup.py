@@ -5,8 +5,7 @@ from setuptools.command.install import install
 setup(
     name="eagle-test-graphs",
     version="0.0.1",
-    packages=["graphs"],
-    package_data={
-        "graphs.daliuge_tests": ["*.pkl"],
-    }
+    packages=find_packages(where="graphs"),
+    package_dir={"": "graphs"},
+    include_package_data=True
 )
