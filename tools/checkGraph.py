@@ -13,6 +13,14 @@ from jsonschema import validate, ValidationError
 
 LG_SCHEMA_FILENAME = "lg.graph.schema"
 
+logger = logging.getLogger(__name__)
+FORMAT = "%(asctime)s [  %(filename)s  ] [  %(lineno)s  ] [  %(funcName)s  ] || %(message)s ||"
+logging.basicConfig(
+    format=FORMAT,
+    datefmt="%d-%b-%yT%H:%M:%S",
+    level=logging.INFO,
+)
+
 def get_args():
     """
     Deal with the command line arguments
@@ -33,21 +41,8 @@ def get_args():
 
 
 if __name__ == "__main__":
-    """
-    Main method
-    
-    """
-    logger = logging.getLogger(__name__)
-    FORMAT = "%(asctime)s [  %(filename)s  ] [  %(lineno)s  ] [  %(funcName)s  ] || %(message)s ||"
-    logging.basicConfig(
-        format=FORMAT,
-        datefmt="%d-%b-%yT%H:%M:%S",
-        level=logging.INFO,
-    )
-
-    # read command line arguments
     input_filename = get_args()
-    logger.info("Input Filename:" + input_filename)
+    logger.info("Input Filename %s:", input_filename)
 
     # load graph
     with open(input_filename, "r") as file:
