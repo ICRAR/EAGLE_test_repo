@@ -7,8 +7,8 @@
         "repoService": "GitHub",
         "repoBranch": "master",
         "repo": "ICRAR/EAGLE_test_repo",
-        "eagleVersion": "Unknown",
-        "eagleCommitHash": "Unknown",
+        "generatorVersion": "Unknown",
+        "generatorCommitHash": "Unknown",
         "schemaVersion": "OJS",
         "readonly": true,
         "repositoryUrl": "",
@@ -27,7 +27,7 @@
             "isGroup": false,
             "color": "rgb(157 43 96)",
             "drawOrderHint": 0,
-            "key": -1,
+            "oid": -1,
             "name": "Description",
             "description": "",
             "x": -180.31869764591684,
@@ -51,7 +51,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "396883ff-80bb-4447-b415-801cb52304d0",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -61,11 +60,11 @@
             "outputAppFields": [],
             "inputApplicationName": "",
             "inputApplicationType": "None",
-            "inputApplicationKey": null,
+            "inputApplicationId": null,
             "inputApplicationDescription": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
-            "outputApplicationKey": null,
+            "outputApplicationId": null,
             "outputApplicationDescription": ""
         },
         {
@@ -74,7 +73,7 @@
             "isGroup": true,
             "color": "rgb(211 165 0)",
             "drawOrderHint": 0,
-            "key": -4,
+            "oid": -4,
             "name": "Scatter",
             "description": "A construction that splits the inputs into multiple parallel processing inputs",
             "x": 399.28536837659806,
@@ -98,7 +97,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "9ac0160e-5904-467c-a58f-2e88420392e0",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -115,7 +113,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "1f73c596-541f-4721-a9b8-48c2be9e403a",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -130,7 +127,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "a081dde7-3445-4d5e-bea9-5e1465431738",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -145,7 +141,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "0e5c555d-06b2-442e-ade6-32892102b55a",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -160,7 +155,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "1511bcd8-8128-4a88-a406-85d895762e04",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -175,7 +169,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "0bb1959d-b9c3-47aa-bb37-2f8d80de6d2f",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -190,7 +183,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "f1ac0fcf-fed3-4afa-9918-da24bc1017bc",
                     "parameterType": "ApplicationArgument",
                     "usage": "InputPort"
@@ -205,7 +197,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "cffdb92f-c54c-499f-81f6-3eb0d87d7d03",
                     "parameterType": "ApplicationArgument",
                     "usage": "OutputPort"
@@ -214,11 +205,11 @@
             "outputAppFields": [],
             "inputApplicationName": "GenericScatterApp",
             "inputApplicationType": "PythonApp",
-            "inputApplicationKey": -9,
+            "inputApplicationId": -9,
             "inputApplicationDescription": "An APP that splits about any object that can be converted to a numpy array into as many parts as the app has outputs, provided that the initially converted numpy array has enough elements. The return will be a numpy array of arrays, where the first axis is of length len(outputs). The modulo remainder of the length of the original array and the number of outputs will be distributed across the first len(outputs)-1 elements of the resulting array.",
             "outputApplicationName": "",
             "outputApplicationType": "None",
-            "outputApplicationKey": null,
+            "outputApplicationId": null,
             "outputApplicationDescription": ""
         },
         {
@@ -227,7 +218,7 @@
             "isGroup": true,
             "color": "rgb(211 165 0)",
             "drawOrderHint": 0,
-            "key": -7,
+            "oid": -7,
             "name": "Loop",
             "description": "Components inside a Loop will be repeatedly executed for a fixed number of times",
             "x": 485.65898702555796,
@@ -252,7 +243,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "2d5dfde9-0c0f-440a-bd41-ff16dd5c6bc3",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -262,11 +252,11 @@
             "outputAppFields": [],
             "inputApplicationName": "",
             "inputApplicationType": "None",
-            "inputApplicationKey": null,
+            "inputApplicationId": null,
             "inputApplicationDescription": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
-            "outputApplicationKey": null,
+            "outputApplicationId": null,
             "outputApplicationDescription": ""
         },
         {
@@ -275,7 +265,7 @@
             "isGroup": false,
             "color": "#2c2c2c",
             "drawOrderHint": 0,
-            "key": -11,
+            "oid": -11,
             "name": "MS Name",
             "description": "In-memory storage of intermediate data products",
             "x": 352.4522540618037,
@@ -300,7 +290,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "362b1181-5d3a-44e0-a2ab-3a1a40005be8",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -315,7 +304,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "01fa701e-1233-492b-8d0c-6746a3f141f2",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -330,7 +318,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "801327a1-e98b-46da-bae9-4ff0edd023a7",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -345,7 +332,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "6c3ec60b-785b-4b1c-beb5-a3ae001967d9",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -360,7 +346,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "2f7018cf-25ab-4fc9-922e-52a55138baf1",
                     "parameterType": "ApplicationArgument",
                     "usage": "InputPort"
@@ -375,7 +360,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "43610c2b-ecd4-487f-8828-a2605b1bafe5",
                     "parameterType": "ApplicationArgument",
                     "usage": "OutputPort"
@@ -385,11 +369,11 @@
             "outputAppFields": [],
             "inputApplicationName": "",
             "inputApplicationType": "None",
-            "inputApplicationKey": null,
+            "inputApplicationId": null,
             "inputApplicationDescription": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
-            "outputApplicationKey": null,
+            "outputApplicationId": null,
             "outputApplicationDescription": ""
         },
         {
@@ -398,7 +382,7 @@
             "isGroup": false,
             "color": "#2c2c2c",
             "drawOrderHint": 0,
-            "key": -3,
+            "oid": -3,
             "name": "MS Name Array",
             "description": "In-memory storage of intermediate data products",
             "x": -253.38390527711695,
@@ -422,7 +406,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "1a53e5e3-44cf-4df8-a88a-25a3e75add1d",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -437,7 +420,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "3a118ca5-d9f2-4782-b663-0d8f7dbe7971",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -452,7 +434,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "7b09a150-5a76-48ed-95d7-cafd0d94e473",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -467,7 +448,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "61d6c7fe-3f61-4392-88ca-17daf91080cf",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -482,7 +462,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "c2b73f4c-6d46-473a-8db2-cc18d4776f3d",
                     "parameterType": "ApplicationArgument",
                     "usage": "InputPort"
@@ -497,7 +476,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "4ec98d7a-2980-48a6-95c3-33f0dffdb830",
                     "parameterType": "ApplicationArgument",
                     "usage": "OutputPort"
@@ -507,11 +485,11 @@
             "outputAppFields": [],
             "inputApplicationName": "",
             "inputApplicationType": "None",
-            "inputApplicationKey": null,
+            "inputApplicationId": null,
             "inputApplicationDescription": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
-            "outputApplicationKey": null,
+            "outputApplicationId": null,
             "outputApplicationDescription": ""
         },
         {
@@ -520,7 +498,7 @@
             "isGroup": false,
             "color": "#2c2c2c",
             "drawOrderHint": 0,
-            "key": -5,
+            "oid": -5,
             "name": "split array",
             "description": "In-memory storage of intermediate data products",
             "x": 7.881426940149859,
@@ -545,7 +523,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "0dbf205b-7ef2-4291-bd09-b552d8f7b899",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -560,7 +537,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "e8ceca72-b150-48f8-8b3b-a63d6d70d7e0",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -575,7 +551,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "96b355ab-0a22-487a-be42-9e348d06f411",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -590,7 +565,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "acfb9e5b-1dec-489d-9e83-58bdd0baebba",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -605,7 +579,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "a7e220a8-15a4-4b25-9636-45152bd0b1f1",
                     "parameterType": "ApplicationArgument",
                     "usage": "InputPort"
@@ -620,7 +593,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "2d02daa9-ce09-4288-8614-11093e4abe05",
                     "parameterType": "ApplicationArgument",
                     "usage": "OutputPort"
@@ -630,11 +602,11 @@
             "outputAppFields": [],
             "inputApplicationName": "",
             "inputApplicationType": "None",
-            "inputApplicationKey": null,
+            "inputApplicationId": null,
             "inputApplicationDescription": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
-            "outputApplicationKey": null,
+            "outputApplicationId": null,
             "outputApplicationDescription": ""
         },
         {
@@ -643,7 +615,7 @@
             "isGroup": false,
             "color": "#2c2c2c",
             "drawOrderHint": 0,
-            "key": -10,
+            "oid": -10,
             "name": "MS Name Array",
             "description": "In-memory storage of intermediate data products",
             "x": 155.33581875529075,
@@ -668,7 +640,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "3b206b00-cb46-4d74-9893-0d767cd0813f",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -683,7 +654,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "ec018d17-66bb-476c-8744-4e1986ddb679",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -698,7 +668,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "30b535df-b889-4b64-8b4a-8a5611ef7abb",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -713,7 +682,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "d0395de7-e860-4b7f-ac38-e0ac2c74ce76",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -728,7 +696,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "8e6d098e-4fe2-4084-a4f8-50c5dc05792e",
                     "parameterType": "ApplicationArgument",
                     "usage": "InputOutput"
@@ -743,7 +710,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "63c3d182-c378-4595-bfb4-9d2367d96d91",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -753,11 +719,11 @@
             "outputAppFields": [],
             "inputApplicationName": "",
             "inputApplicationType": "None",
-            "inputApplicationKey": null,
+            "inputApplicationId": null,
             "inputApplicationDescription": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
-            "outputApplicationKey": null,
+            "outputApplicationId": null,
             "outputApplicationDescription": ""
         },
         {
@@ -766,7 +732,7 @@
             "isGroup": false,
             "color": "#FF66CC",
             "drawOrderHint": 0,
-            "key": -15,
+            "oid": -15,
             "name": "mstransform",
             "description": "Hidden parameter for use in the pipeline context only",
             "x": 686.1062531546285,
@@ -791,7 +757,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "ba5f27eb-9bec-4c0b-a15d-bb7e75773b74",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -806,7 +771,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "8b3b4fe0-2468-47cf-83bc-52a1ab3e9047",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -821,7 +785,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "6ab8f6b9-a537-4d31-9a92-b41ed73e5ef8",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -836,7 +799,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "82e410e4-1d9f-4a65-a703-9ad6ddc80d54",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -851,7 +813,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "54c640d3-746a-46fa-8707-b7f2a13bc13e",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -866,7 +827,6 @@
                     "precious": false,
                     "options": [],
                     "positional": true,
-                    "keyAttribute": false,
                     "id": "eb2a85b6-67ef-415b-808d-fc93dbbc91e7",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -887,7 +847,6 @@
                         "dataurl"
                     ],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "ee04e722-bd69-46d3-8c16-320faff9b5ea",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -908,7 +867,6 @@
                         "dataurl"
                     ],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "6a5533df-4b63-438d-9417-508ec3f02f3d",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -923,7 +881,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "bf149b27-7917-4d66-b764-d08535966336",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -938,7 +895,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "c5f6cccd-1532-448a-9da3-29ef0b9412c3",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -953,7 +909,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "540dae2b-f3b3-48f8-9dec-f0406734b95f",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -968,7 +923,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "05d0f3bc-25f6-45bf-9899-32ca06052773",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -983,7 +937,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "ace45568-30f9-4d71-9e9a-27539cd7ceaa",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -998,7 +951,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "56f99825-303c-4ea7-84db-d0d5024a716a",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1013,7 +965,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "4103fb61-39b5-4775-bd7c-e1ec48910abf",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1028,7 +979,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "fe352aec-d6aa-4202-962c-8a4639797c20",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1043,7 +993,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "eddcca5b-fa61-4517-b7da-78d56a38971d",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1058,7 +1007,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "75f22f39-2995-497f-9e78-58445adc561f",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1073,7 +1021,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "6dd47867-0982-4f20-aee3-7bc5f31c63e9",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1088,7 +1035,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": true,
                     "id": "d161820a-334d-4f26-86db-8e40076febe2",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1103,7 +1049,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": true,
                     "id": "39046a27-304d-438d-a6be-035247e33bb7",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1118,7 +1063,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "d75d7e1a-bd0e-4487-a625-49f0caf36105",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1133,7 +1077,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "06d44e45-1c23-4ae4-a15c-83b733b66971",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1148,7 +1091,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "eb45fc2a-ef2b-4051-ad05-78cdb254998c",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1163,7 +1105,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "dcbd295a-a4c4-4632-9699-1683db4160d2",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1178,7 +1119,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "749238ac-b3bb-4f9e-a150-8b273748deab",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1193,7 +1133,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "4c820b7a-4c49-4b38-a216-03708c1ab67e",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1208,7 +1147,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "c2640219-7694-42a4-9047-fbf429e0e072",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1223,7 +1161,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "0e0eebf6-51c2-4c9f-9656-2a76144abfce",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1238,7 +1175,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "b87f1159-cba3-4547-8a27-1079913908e0",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1253,7 +1189,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "df9d1a10-246f-4faa-ae7a-ab6e58d1f548",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1268,7 +1203,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "105f16e9-e2b2-4f9b-9e17-4f15926e4e5f",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1283,7 +1217,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "79519bd4-8cc1-44ab-a199-b5f606162aaa",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1298,7 +1231,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "11ebc6f2-59f2-4e99-ba26-d5b15d1de170",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1313,7 +1245,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "10affd48-b373-47cd-9fad-18d33cb61b48",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1328,7 +1259,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "6c48bf59-750e-4ba3-8215-9cb3cd0fb8eb",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1343,7 +1273,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "51ff3250-5a51-43fb-a19c-15c5c0881f6a",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1358,7 +1287,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "3b8a6c53-9f98-4634-9b5f-aefe79822692",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1373,7 +1301,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "bf1fb919-63b4-477e-bfe6-a692b9e25abd",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1388,7 +1315,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "c7979c6d-f593-4f7e-b842-c66655f11247",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1403,7 +1329,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "21b18a1d-e1d1-4e0b-8475-5b18039b5107",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1418,7 +1343,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "587243e1-c155-45e3-b501-f8017a69cad1",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1433,7 +1357,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "13b2423a-f15f-4e35-ab12-ba9973fce172",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1448,7 +1371,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "2b60495c-0101-46c9-9fe5-c536eb351219",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1463,7 +1385,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "04310efb-1c5a-4838-8739-4ba89f3e9bae",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1478,7 +1399,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "5aa7f299-c2d1-4833-bfbf-fc9e66ead101",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1493,7 +1413,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "8c7895a1-19f6-40e3-81fc-81f2498582c0",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1508,7 +1427,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "05f7a737-b3b7-48ff-8987-c4bdb262ef1a",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1523,7 +1441,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "9e34dfe2-1092-42fb-8f22-6766ead0a751",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1538,7 +1455,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "c146e9ad-279d-46b7-8519-e27cf8100bf4",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1553,7 +1469,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "610862ed-b3ec-4c3c-aafc-7ba1dd394cd8",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1568,7 +1483,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "7f43d430-a8ce-44b4-b80b-57d6789f6676",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1583,7 +1497,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "1c799d0b-9202-4fe8-bda8-71399a48ee11",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1598,7 +1511,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "b305f9bf-4185-497f-b512-99e7b0c32941",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1613,7 +1525,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "73da0936-3977-4b15-a8e4-1f204979d025",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1628,7 +1539,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "5994a6da-e078-42b6-8cd2-206216e0d5fc",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1643,7 +1553,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "bb720f3c-aa51-4f59-81f0-1e0e61434035",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1658,7 +1567,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "4a4c042b-8e31-4609-aecf-c02c152a1ef2",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1673,7 +1581,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "8bfa84da-5b27-40d2-9619-f178b3221192",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1688,7 +1595,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "c0f368a4-e1a7-4c24-88a8-08de6d0f1bc4",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -1703,7 +1609,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "904e8cb3-d058-46b7-92ec-e503ee9c4aa2",
                     "parameterType": "ApplicationArgument",
                     "usage": "InputPort"
@@ -1718,7 +1623,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "8c9fbcd8-691f-47b3-954c-e2375799bffb",
                     "parameterType": "ApplicationArgument",
                     "usage": "InputPort"
@@ -1733,7 +1637,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "ddd3258a-1ff2-4cb8-955c-87b2648b8a86",
                     "parameterType": "ApplicationArgument",
                     "usage": "InputOutput"
@@ -1743,11 +1646,11 @@
             "outputAppFields": [],
             "inputApplicationName": "",
             "inputApplicationType": "None",
-            "inputApplicationKey": null,
+            "inputApplicationId": null,
             "inputApplicationDescription": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
-            "outputApplicationKey": null,
+            "outputApplicationId": null,
             "outputApplicationDescription": ""
         },
         {
@@ -1756,7 +1659,7 @@
             "isGroup": false,
             "color": "#FF66CC",
             "drawOrderHint": 0,
-            "key": -16,
+            "oid": -16,
             "name": "SpwDetails",
             "description": "A placeholder APP to aid construction of new applications. This is mainly useful (and used) when starting a new workflow from scratch.",
             "x": 404.0339271129081,
@@ -1781,7 +1684,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "c2db84e5-d564-4eb3-8d33-55060ceb7394",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -1796,7 +1698,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "01a918e1-311f-4a5d-8d0a-48479e9c301b",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -1811,7 +1712,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "918272d6-2e93-4a4f-b422-794bc7741ba0",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -1826,7 +1726,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "579b16ac-d606-47c2-8bc1-bb5afb11c73b",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -1841,7 +1740,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "8bba7d9a-403f-40d3-9c28-b765745f6125",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -1856,7 +1754,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "c13e0235-a966-4afb-ac60-f07c34ebe304",
                     "parameterType": "ApplicationArgument",
                     "usage": "InputPort"
@@ -1871,7 +1768,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "ebf91462-44f5-4fa7-88ff-b19445cfbdfb",
                     "parameterType": "ApplicationArgument",
                     "usage": "InputPort"
@@ -1886,7 +1782,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "a2f4dd24-e161-4690-8c81-09fd52dc4b0f",
                     "parameterType": "ApplicationArgument",
                     "usage": "OutputPort"
@@ -1901,7 +1796,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "222047e4-38e6-4417-bb08-bf3c31d8ad99",
                     "parameterType": "ApplicationArgument",
                     "usage": "OutputPort"
@@ -1911,11 +1805,11 @@
             "outputAppFields": [],
             "inputApplicationName": "",
             "inputApplicationType": "None",
-            "inputApplicationKey": null,
+            "inputApplicationId": null,
             "inputApplicationDescription": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
-            "outputApplicationKey": null,
+            "outputApplicationId": null,
             "outputApplicationDescription": ""
         },
         {
@@ -1924,7 +1818,7 @@
             "isGroup": false,
             "color": "#2c2c2c",
             "drawOrderHint": 0,
-            "key": -17,
+            "oid": -17,
             "name": "spw",
             "description": "In-memory storage of intermediate data products",
             "x": 535.4175700653956,
@@ -1949,7 +1843,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "611303bc-6925-4ae0-9e66-aa60fcf181c0",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -1964,7 +1857,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "8ef1ad9c-5bb7-44dd-9486-04a53d08ca30",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -1979,7 +1871,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "154f9471-eeb4-42fa-8f78-272b104823d5",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -1994,7 +1885,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "852b00a0-138f-45ae-8472-7bb6e6ef9293",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -2009,7 +1899,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "be0a9cb2-fe6c-45e5-b23a-30724fd1dd6b",
                     "parameterType": "ApplicationArgument",
                     "usage": "InputOutput"
@@ -2019,11 +1908,11 @@
             "outputAppFields": [],
             "inputApplicationName": "",
             "inputApplicationType": "None",
-            "inputApplicationKey": null,
+            "inputApplicationId": null,
             "inputApplicationDescription": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
-            "outputApplicationKey": null,
+            "outputApplicationId": null,
             "outputApplicationDescription": ""
         },
         {
@@ -2032,7 +1921,7 @@
             "isGroup": false,
             "color": "#2c2c2c",
             "drawOrderHint": 0,
-            "key": -20,
+            "oid": -20,
             "name": "Freq. array",
             "description": "Frequency range array",
             "x": -263.1539546345144,
@@ -2056,7 +1945,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "30458d72-4c4f-4198-b63d-ce9a36381780",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -2071,7 +1959,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "53adce67-9408-44d4-b388-3dd774a78065",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -2086,7 +1973,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "f8a7283d-6c2e-45f7-97ee-c13c01784cab",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -2101,7 +1987,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "22e2d625-a224-4fdd-ba56-2c2498962406",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -2116,7 +2001,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "e5cc04ee-e435-4206-a2da-1f2f73df7460",
                     "parameterType": "ApplicationArgument",
                     "usage": "InputPort"
@@ -2131,7 +2015,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "b13616a3-05a1-4e26-9fcb-7c65d33d7fea",
                     "parameterType": "ApplicationArgument",
                     "usage": "OutputPort"
@@ -2141,11 +2024,11 @@
             "outputAppFields": [],
             "inputApplicationName": "",
             "inputApplicationType": "None",
-            "inputApplicationKey": null,
+            "inputApplicationId": null,
             "inputApplicationDescription": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
-            "outputApplicationKey": null,
+            "outputApplicationId": null,
             "outputApplicationDescription": ""
         },
         {
@@ -2154,7 +2037,7 @@
             "isGroup": false,
             "color": "#FF66CC",
             "drawOrderHint": 0,
-            "key": -21,
+            "oid": -21,
             "name": "PickOne",
             "description": "App that picks the first element of an input list, passes that to all outputs, except the first one. The first output is used to pass the remaining array on. This app is useful for a loop.",
             "x": 190.01142852274424,
@@ -2179,7 +2062,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "d8e2e5f1-d737-4784-a315-4b8bc87c9826",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -2194,7 +2076,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "0c053967-a124-495c-9adb-edc673a4301f",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -2209,7 +2090,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "0b6bf29c-362d-4ccb-b92d-79191e1744c3",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -2224,7 +2104,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "9e93766f-c380-4ffb-8b08-366f10f41c00",
                     "parameterType": "ApplicationArgument",
                     "usage": "InputOutput"
@@ -2239,7 +2118,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "7d0a17bd-476e-44f5-a369-be720ad93baa",
                     "parameterType": "ApplicationArgument",
                     "usage": "OutputPort"
@@ -2254,7 +2132,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "f031c815-3278-428f-a121-86f70dbca819",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -2264,11 +2141,11 @@
             "outputAppFields": [],
             "inputApplicationName": "",
             "inputApplicationType": "None",
-            "inputApplicationKey": null,
+            "inputApplicationId": null,
             "inputApplicationDescription": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
-            "outputApplicationKey": null,
+            "outputApplicationId": null,
             "outputApplicationDescription": ""
         },
         {
@@ -2277,7 +2154,7 @@
             "isGroup": false,
             "color": "#FF66CC",
             "drawOrderHint": 0,
-            "key": -8,
+            "oid": -8,
             "name": "PickOne",
             "description": "App that picks the first element of an input list, passes that to all outputs, except the first one. The first output is used to pass the remaining array on. This app is useful for a loop.",
             "x": 272.0722031452435,
@@ -2302,7 +2179,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "a887f5a7-f559-4c46-9510-c73ab7460bec",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -2317,7 +2193,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "3f1c0980-b9c0-48e4-8b19-991524f1ffe8",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -2332,7 +2207,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "26766cb3-d2be-435f-818a-911e238eeb28",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -2347,7 +2221,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "dd250aa3-634f-481c-ba77-241326c05462",
                     "parameterType": "ApplicationArgument",
                     "usage": "InputOutput"
@@ -2362,7 +2235,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "acf215c2-df6e-4f5f-8451-acb79bfe49f3",
                     "parameterType": "ApplicationArgument",
                     "usage": "OutputPort"
@@ -2377,7 +2249,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "759c010b-6683-47cf-96a8-a72bb5c6cc26",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -2387,11 +2258,11 @@
             "outputAppFields": [],
             "inputApplicationName": "",
             "inputApplicationType": "None",
-            "inputApplicationKey": null,
+            "inputApplicationId": null,
             "inputApplicationDescription": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
-            "outputApplicationKey": null,
+            "outputApplicationId": null,
             "outputApplicationDescription": ""
         },
         {
@@ -2400,7 +2271,7 @@
             "isGroup": true,
             "color": "rgb(211 165 0)",
             "drawOrderHint": 0,
-            "key": -13,
+            "oid": -13,
             "name": "Loop",
             "description": "A loop placeholder drop",
             "x": 514.7410792216349,
@@ -2425,7 +2296,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "f8de8d3c-47ee-493a-97a0-7fa5e758f015",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -2435,11 +2305,11 @@
             "outputAppFields": [],
             "inputApplicationName": "",
             "inputApplicationType": "None",
-            "inputApplicationKey": null,
+            "inputApplicationId": null,
             "inputApplicationDescription": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
-            "outputApplicationKey": null,
+            "outputApplicationId": null,
             "outputApplicationDescription": ""
         },
         {
@@ -2448,7 +2318,7 @@
             "isGroup": false,
             "color": "#2c2c2c",
             "drawOrderHint": 0,
-            "key": -14,
+            "oid": -14,
             "name": "freq. range",
             "description": "In-memory storage of intermediate data products",
             "x": 301.96476570879463,
@@ -2473,7 +2343,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "05eb83b6-c779-461c-b74b-acce077cdd31",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -2488,7 +2357,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "523fb6ae-93f6-42ae-be5d-2454e13b55aa",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -2503,7 +2371,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "7bf072e9-cab5-4d6a-b56c-851515951416",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -2518,7 +2385,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "44c85280-ae2f-49ce-8f9a-b1a003315d12",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -2533,7 +2399,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "c1f8911b-8f0e-4eea-b928-1071d786cefb",
                     "parameterType": "ApplicationArgument",
                     "usage": "InputOutput"
@@ -2543,11 +2408,11 @@
             "outputAppFields": [],
             "inputApplicationName": "",
             "inputApplicationType": "None",
-            "inputApplicationKey": null,
+            "inputApplicationId": null,
             "inputApplicationDescription": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
-            "outputApplicationKey": null,
+            "outputApplicationId": null,
             "outputApplicationDescription": ""
         },
         {
@@ -2556,7 +2421,7 @@
             "isGroup": false,
             "color": "#2c2c2c",
             "drawOrderHint": 0,
-            "key": -18,
+            "oid": -18,
             "name": "Memory",
             "description": "In-memory storage of intermediate data products",
             "x": 490.71295131191494,
@@ -2581,7 +2446,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "0d44d114-5032-4a5b-b671-ab569d6c6e5c",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -2596,7 +2460,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "0676d89d-4465-415f-b823-fd4738a5c290",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -2611,7 +2474,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "dada956f-32b5-4ae4-9c85-ff153fea737f",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -2626,7 +2488,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "4c7d9756-3ea3-4f9d-9cb6-1f5a8048a1a0",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -2641,7 +2502,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "37328910-4710-47b2-9a3d-25df223e57a4",
                     "parameterType": "ApplicationArgument",
                     "usage": "InputOutput"
@@ -2651,11 +2511,11 @@
             "outputAppFields": [],
             "inputApplicationName": "",
             "inputApplicationType": "None",
-            "inputApplicationKey": null,
+            "inputApplicationId": null,
             "inputApplicationDescription": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
-            "outputApplicationKey": null,
+            "outputApplicationId": null,
             "outputApplicationDescription": ""
         },
         {
@@ -2664,7 +2524,7 @@
             "isGroup": false,
             "color": "#FF66CC",
             "drawOrderHint": 0,
-            "key": -22,
+            "oid": -22,
             "name": "Gen. Freq. Array",
             "description": "TODO!!",
             "x": -419.8708642815513,
@@ -2688,7 +2548,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "c157085c-ab0f-4672-8bb0-4e6f17dc6ad9",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -2703,7 +2562,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "86b97560-4fd9-400f-8ee9-af153c863f36",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -2718,7 +2576,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "f11fe41c-e2d2-490e-a90b-8344a21123ba",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -2733,7 +2590,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "c466f403-f2cb-45d0-9b7d-5bcb3ca9bb5a",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -2748,7 +2604,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "0fa966ee-e142-431b-99bb-dd3482bcc578",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -2763,7 +2618,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "77a4c49f-e6dc-4b4b-a764-649000b1be9e",
                     "parameterType": "ApplicationArgument",
                     "usage": "OutputPort"
@@ -2773,11 +2627,11 @@
             "outputAppFields": [],
             "inputApplicationName": "",
             "inputApplicationType": "None",
-            "inputApplicationKey": null,
+            "inputApplicationId": null,
             "inputApplicationDescription": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
-            "outputApplicationKey": null,
+            "outputApplicationId": null,
             "outputApplicationDescription": ""
         },
         {
@@ -2786,7 +2640,7 @@
             "isGroup": false,
             "color": "#FF66CC",
             "drawOrderHint": 0,
-            "key": -19,
+            "oid": -19,
             "name": "Get MS Names",
             "description": "An App that uses glob to find all files matching a template given by a filepath and a wildcard string",
             "x": -429.93612361284426,
@@ -2810,7 +2664,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "af1725cb-5e98-430e-a466-70efb30acf81",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -2825,7 +2678,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "4d1c51cf-cac2-49cf-8be8-d67d81acd727",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -2840,7 +2692,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "3de2ba6f-7821-4954-b7ce-83bf9c047cbf",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -2855,7 +2706,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": true,
                     "id": "ced1adbd-fefc-4646-b434-2fc2dc323cee",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -2870,7 +2720,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": true,
                     "id": "5c581a18-65ae-4cba-8e91-15ac1282e5a0",
                     "parameterType": "ApplicationArgument",
                     "usage": "NoPort"
@@ -2885,7 +2734,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "d9292dcc-2d8f-4cd7-a7ff-035113fbae52",
                     "parameterType": "ApplicationArgument",
                     "usage": "OutputPort"
@@ -2895,11 +2743,11 @@
             "outputAppFields": [],
             "inputApplicationName": "",
             "inputApplicationType": "None",
-            "inputApplicationKey": null,
+            "inputApplicationId": null,
             "inputApplicationDescription": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
-            "outputApplicationKey": null,
+            "outputApplicationId": null,
             "outputApplicationDescription": ""
         },
         {
@@ -2908,7 +2756,7 @@
             "isGroup": false,
             "color": "#2c2c2c",
             "drawOrderHint": 0,
-            "key": -2,
+            "oid": -2,
             "name": "File",
             "description": "A standard file on a filesystem mounted to the deployment machine",
             "x": 749.2866814885489,
@@ -2933,7 +2781,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "26b9cf83-a30d-4b6c-a38d-8dbebf12b9cf",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -2948,7 +2795,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "faa2346f-bc3f-4681-98de-f480be18796d",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -2963,7 +2809,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "5292d067-7b97-4766-89ae-247b518d35b1",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -2978,7 +2823,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "943e23d4-438c-4887-9e73-1234fb4177e7",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -2993,7 +2837,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "cab4f81e-b387-451d-a14f-2ac385008c22",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -3008,7 +2851,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "24c9709a-6a53-47da-a472-1820ba1804a8",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -3023,7 +2865,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "bb51c06c-2ac7-4660-a7cd-1292a762acc3",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -3038,7 +2879,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "cfb84714-7aa8-4340-8997-2633fe756b08",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
@@ -3053,7 +2893,6 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "keyAttribute": false,
                     "id": "550364a3-f570-4dc3-9d1b-338fde0a8167",
                     "parameterType": "ApplicationArgument",
                     "usage": "InputPort"
@@ -3063,11 +2902,11 @@
             "outputAppFields": [],
             "inputApplicationName": "",
             "inputApplicationType": "None",
-            "inputApplicationKey": null,
+            "inputApplicationId": null,
             "inputApplicationDescription": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
-            "outputApplicationKey": null,
+            "outputApplicationId": null,
             "outputApplicationDescription": ""
         }
     ],
