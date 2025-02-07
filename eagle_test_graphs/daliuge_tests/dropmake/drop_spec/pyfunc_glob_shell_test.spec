@@ -854,7 +854,23 @@
     "loop_ctx": null,
     "weight": 5,
     "num_cpus": 1,
-    "applicationArgs": {},
+    "applicationArgs": {
+      "recursive": {
+        "defaultValue": "false",
+        "description": "",
+        "encoding": "path",
+        "id": "84777fe6-f52c-4dac-a270-e602d7e91258",
+        "name": "recursive",
+        "options": [],
+        "parameterType": "ApplicationArgument",
+        "positional": true,
+        "precious": false,
+        "readonly": false,
+        "type": "Boolean",
+        "usage": "OutputPort",
+        "value": false
+      }
+    },
     "constraintParams": {
       "execution_time": {
         "defaultValue": "0",
@@ -931,22 +947,7 @@
         "readonly": false,
         "type": "String",
         "usage": "NoPort",
-        "value": "echo \"True\" > %o0"
-      },
-      "recursive": {
-        "defaultValue": "false",
-        "description": "",
-        "encoding": "utf-8",
-        "id": "84777fe6-f52c-4dac-a270-e602d7e91258",
-        "name": "recursive",
-        "options": [],
-        "parameterType": "ComponentParameter",
-        "positional": true,
-        "precious": false,
-        "readonly": false,
-        "type": "Boolean",
-        "usage": "OutputPort",
-        "value": false
+        "value": "echo \"True\" > %recursive%"
       },
       "input_redirection": {
         "defaultValue": "",
@@ -1098,16 +1099,16 @@
         "readonly": false,
         "type": "String",
         "usage": "NoPort",
-        "value": "echo \"True\" > %o0"
+        "value": "echo \"True\" > %recursive%"
       },
       {
         "defaultValue": "false",
         "description": "",
-        "encoding": "utf-8",
+        "encoding": "path",
         "id": "84777fe6-f52c-4dac-a270-e602d7e91258",
         "name": "recursive",
         "options": [],
-        "parameterType": "ComponentParameter",
+        "parameterType": "ApplicationArgument",
         "positional": true,
         "precious": false,
         "readonly": false,
@@ -1253,7 +1254,7 @@
     ],
     "persist": false,
     "streaming": false,
-    "command": "echo \"True\" > %o0",
+    "command": "echo \"True\" > %recursive%",
     "recursive": false,
     "input_redirection": "",
     "output_redirection": "",
@@ -1301,6 +1302,21 @@
         "readonly": false,
         "type": "String",
         "usage": "NoPort",
+        "value": ""
+      },
+      "content": {
+        "defaultValue": "",
+        "description": "",
+        "encoding": "path",
+        "id": "3a2e3ac4-f343-46bb-ad65-9e87fe22c88e",
+        "name": "content",
+        "options": [],
+        "parameterType": "ApplicationArgument",
+        "positional": true,
+        "precious": false,
+        "readonly": false,
+        "type": "String",
+        "usage": "InputOutput",
         "value": ""
       }
     },
@@ -1380,7 +1396,7 @@
         "readonly": false,
         "type": "String",
         "usage": "NoPort",
-        "value": "cat %i0"
+        "value": "cat %content%"
       },
       "output_redirection": {
         "defaultValue": "",
@@ -1487,21 +1503,6 @@
         "usage": "NoPort",
         "value": 1
       },
-      "content": {
-        "defaultValue": "",
-        "description": "",
-        "encoding": "utf-8",
-        "id": "3a2e3ac4-f343-46bb-ad65-9e87fe22c88e",
-        "name": "content",
-        "options": [],
-        "parameterType": "ComponentParameter",
-        "positional": true,
-        "precious": false,
-        "readonly": false,
-        "type": "String",
-        "usage": "InputOutput",
-        "value": ""
-      },
       "dropclass": {
         "defaultValue": "",
         "description": "",
@@ -1562,7 +1563,7 @@
         "readonly": false,
         "type": "String",
         "usage": "NoPort",
-        "value": "cat %i0"
+        "value": "cat %content%"
       },
       {
         "defaultValue": "",
@@ -1717,11 +1718,11 @@
       {
         "defaultValue": "",
         "description": "",
-        "encoding": "utf-8",
+        "encoding": "path",
         "id": "3a2e3ac4-f343-46bb-ad65-9e87fe22c88e",
         "name": "content",
         "options": [],
-        "parameterType": "ComponentParameter",
+        "parameterType": "ApplicationArgument",
         "positional": true,
         "precious": false,
         "readonly": false,
@@ -1747,7 +1748,7 @@
     ],
     "persist": false,
     "streaming": false,
-    "command": "cat %i0",
+    "command": "cat %content%",
     "input_redirection": "",
     "output_redirection": "",
     "command_line_arguments": "",
@@ -2036,7 +2037,23 @@
     "loop_ctx": null,
     "weight": 5,
     "num_cpus": 1,
-    "applicationArgs": {},
+    "applicationArgs": {
+      "content": {
+        "defaultValue": "",
+        "description": " The port carrying the content read from the URL.",
+        "encoding": "path",
+        "id": "41b66724-e51b-43d2-8c5b-1dd58dc97cfd",
+        "name": "content",
+        "options": [],
+        "parameterType": "ApplicationArgument",
+        "positional": true,
+        "precious": false,
+        "readonly": false,
+        "type": "String",
+        "usage": "OutputPort",
+        "value": ""
+      }
+    },
     "constraintParams": {
       "execution_time": {
         "defaultValue": "0",
@@ -2113,7 +2130,7 @@
         "readonly": false,
         "type": "String",
         "usage": "NoPort",
-        "value": "echo \"'**'\" > %o0"
+        "value": "echo \"'**'\" > %content%"
       },
       "input_redirection": {
         "defaultValue": "",
@@ -2235,21 +2252,6 @@
         "usage": "NoPort",
         "value": 1
       },
-      "content": {
-        "defaultValue": "",
-        "description": " The port carrying the content read from the URL.",
-        "encoding": "utf-8",
-        "id": "41b66724-e51b-43d2-8c5b-1dd58dc97cfd",
-        "name": "content",
-        "options": [],
-        "parameterType": "ComponentParameter",
-        "positional": true,
-        "precious": false,
-        "readonly": false,
-        "type": "String",
-        "usage": "OutputPort",
-        "value": ""
-      },
       "dropclass": {
         "defaultValue": "",
         "description": "",
@@ -2264,6 +2266,21 @@
         "type": "String",
         "usage": "NoPort",
         "value": "dlg.apps.bash_shell_app.BashShellApp"
+      },
+      "New Parameter": {
+        "defaultValue": "",
+        "description": "",
+        "encoding": "pickle",
+        "id": "bd0085cc-a805-4eff-bd8c-240be2c6761e",
+        "name": "New Parameter",
+        "options": [],
+        "parameterType": "ComponentParameter",
+        "positional": false,
+        "precious": false,
+        "readonly": false,
+        "type": "String",
+        "usage": "NoPort",
+        "value": ""
       }
     },
     "fields": [
@@ -2310,7 +2327,7 @@
         "readonly": false,
         "type": "String",
         "usage": "NoPort",
-        "value": "echo \"'**'\" > %o0"
+        "value": "echo \"'**'\" > %content%"
       },
       {
         "defaultValue": "",
@@ -2465,11 +2482,11 @@
       {
         "defaultValue": "",
         "description": " The port carrying the content read from the URL.",
-        "encoding": "utf-8",
+        "encoding": "path",
         "id": "41b66724-e51b-43d2-8c5b-1dd58dc97cfd",
         "name": "content",
         "options": [],
-        "parameterType": "ComponentParameter",
+        "parameterType": "ApplicationArgument",
         "positional": true,
         "precious": false,
         "readonly": false,
@@ -2491,11 +2508,26 @@
         "type": "String",
         "usage": "NoPort",
         "value": "dlg.apps.bash_shell_app.BashShellApp"
+      },
+      {
+        "defaultValue": "",
+        "description": "",
+        "encoding": "pickle",
+        "id": "bd0085cc-a805-4eff-bd8c-240be2c6761e",
+        "name": "New Parameter",
+        "options": [],
+        "parameterType": "ComponentParameter",
+        "positional": false,
+        "precious": false,
+        "readonly": false,
+        "type": "String",
+        "usage": "NoPort",
+        "value": ""
       }
     ],
     "persist": false,
     "streaming": false,
-    "command": "echo \"'**'\" > %o0",
+    "command": "echo \"'**'\" > %content%",
     "input_redirection": "",
     "output_redirection": "",
     "command_line_arguments": "",
@@ -2506,6 +2538,7 @@
     "input_error_threshold": 0,
     "n_tries": 1,
     "content": "",
+    "New Parameter": "",
     "iid": "0",
     "lg_key": "d82796af-40ef-4d07-b5c8-423714511c73",
     "outputs": [
