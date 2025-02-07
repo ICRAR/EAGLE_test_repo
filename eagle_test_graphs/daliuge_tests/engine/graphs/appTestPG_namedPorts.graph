@@ -129,7 +129,7 @@
     },
     {
         "oid": "2023-07-04T00:13:32_-1_0",
-        "name": "createMulti",
+        "name": "getMax",
         "categoryType": "Application",
         "category": "PythonApp",
         "dropclass": "dlg.apps.pyfunc.PyFuncApp",
@@ -157,7 +157,7 @@
         "nodeAttributes": {
             "func_name": {
                 "name": "func_name",
-                "value": "simple_functions.createMultiOut",
+                "value": "simple_functions.getMax",
                 "defaultValue": "",
                 "description": "Python function name",
                 "readonly": false,
@@ -183,24 +183,10 @@
                 "parameterType": "ApplicationArgument",
                 "usage": "OutputPort"
             },
-            "out2": {
-                "name": "out2",
-                "value": null,
-                "defaultValue": "0",
-                "description": "",
-                "readonly": false,
-                "type": "Integer",
-                "precious": false,
-                "options": [],
-                "positional": false,
-                "id": "cfe583b6-a7f2-4bea-bcaa-e5d9e46202c6",
-                "parameterType": "ApplicationArgument",
-                "usage": "OutputPort"
-            },
             "v1": {
                 "name": "v1",
                 "value": 2,
-                "defaultValue": "2",
+                 "defaultValue": "2",
                 "description": "",
                 "readonly": false,
                 "type": "Integer",
@@ -366,9 +352,8 @@
                 "usage": "NoPort"
             }
         },
-        "func_name": "dlg.apps.simple_functions.createMultiOut",
+        "func_name": "dlg.apps.simple_functions.getMax",
         "out1": null,
-        "out2": null,
         "v1": 0.5,
         "v2": 0.5,
         "execution_time": 5,
@@ -381,7 +366,7 @@
         "applicationArgs": {
             "func_name": {
                 "name": "func_name",
-                "value": "dlg.apps.simple_functions.createMultiOut",
+                "value": "dlg.apps.simple_functions.getMax",
                 "defaultValue": "",
                 "description": "Python function name",
                 "readonly": false,
@@ -404,20 +389,6 @@
                 "options": [],
                 "positional": false,
                 "id": "3df116c1-69e5-49b9-b1e0-9f043d872343",
-                "parameterType": "ApplicationArgument",
-                "usage": "OutputPort"
-            },
-            "out2": {
-                "name": "out2",
-                "value": null,
-                "defaultValue": "0",
-                "description": "",
-                "readonly": false,
-                "type": "Integer",
-                "precious": false,
-                "options": [],
-                "positional": false,
-                "id": "cfe583b6-a7f2-4bea-bcaa-e5d9e46202c6",
                 "parameterType": "ApplicationArgument",
                 "usage": "OutputPort"
             },
