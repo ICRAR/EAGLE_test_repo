@@ -4,7 +4,7 @@ from setuptools.command.install import install
 
 setup(
     name="eagle-test-graphs",
-    version="0.0.1",
+    version="0.1.0",
     packages=find_packages(where="eagle_test_graphs"),
     package_dir={"": "eagle_test_graphs"},
     package_data={
