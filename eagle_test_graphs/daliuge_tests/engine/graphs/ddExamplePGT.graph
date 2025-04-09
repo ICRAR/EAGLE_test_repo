@@ -135,7 +135,7 @@
         "readonly": false,
         "type": "String",
         "usage": "NoPort",
-        "value": "dd if=%if% of=%of% count=%count% bs=%bs%"
+        "value": "dd if={if} of={of} count={count} bs={bs}"
       },
       "argumentPrefix": {
         "defaultValue": "",
@@ -257,7 +257,7 @@
         "readonly": false,
         "type": "String",
         "usage": "NoPort",
-        "value": "dd if=%if% of=%of% count=%count% bs=%bs%"
+        "value": "dd if={if} of={of} count={count} bs={bs}"
       },
       {
         "defaultValue": "",
@@ -382,7 +382,7 @@
     ],
     "execution_time": 5,
     "group_start": false,
-    "command": "dd if=%if% of=%of% count=%count% bs=%bs%",
+    "command": "dd if={if} of={of} count={count} bs={bs}",
     "argumentPrefix": " ",
     "paramValueSeparator": "=",
     "bs": 2048,
