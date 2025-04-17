@@ -1,9 +1,11 @@
 {
+    "activeGraphConfigId": null,
+    "graphConfigurations": {},
     "linkDataArray": [
         {
             "closesLoop": false,
             "from": "902765fb-7d48-4cc8-849b-dfe915fa8f3f",
-            "fromPort": "e5fdd402-c9c6-4e1c-a288-aec1d7d9737c",
+            "fromPort": "37f6ae6c-4fec-42b3-9e66-4512879bfb85",
             "loop_aware": "0",
             "to": "11e053bd-0f6f-482f-8c94-621aec1215fa",
             "toPort": "9fe60c54-cacb-44db-ac9e-55ad85251cdc"
@@ -11,7 +13,7 @@
         {
             "closesLoop": false,
             "from": "606a2520-dff8-417a-af43-7bb071153423",
-            "fromPort": "e5fdd402-c9c6-4e1c-a288-aec1d7d9737c",
+            "fromPort": "eea002c3-faea-421b-9e34-83cf95e833b1",
             "loop_aware": "0",
             "to": "8000b997-0542-4b61-b4fd-395593acee4c",
             "toPort": "af373c7c-69fa-48e3-aabb-237820a5aa8a"
@@ -22,7 +24,7 @@
             "fromPort": "af373c7c-69fa-48e3-aabb-237820a5aa8a",
             "loop_aware": "0",
             "to": "902765fb-7d48-4cc8-849b-dfe915fa8f3f",
-            "toPort": "e5fdd402-c9c6-4e1c-a288-aec1d7d9737c"
+            "toPort": "37f6ae6c-4fec-42b3-9e66-4512879bfb85"
         }
     ],
     "modelData": {
@@ -31,10 +33,10 @@
         "downloadUrl": "",
         "filePath": "HelloSPython.graph",
         "fileType": "Graph",
-        "generatorCommitHash": "070e82b7293b6bdc4b2f229395c20c8a6f0a9a48",
+        "generatorCommitHash": "558775b2b42a4f218c4f766cbf3465a7bf56cd92",
         "generatorName": "EAGLE",
-        "generatorVersion": "v6.4.1:issue-273",
-        "lastModifiedDatetime": 0,
+        "generatorVersion": "v6.5.0",
+        "lastModifiedDatetime": 1742307499.923812,
         "lastModifiedEmail": "",
         "lastModifiedName": "",
         "numLGNodes": 4,
@@ -51,13 +53,11 @@
         {
             "category": "PythonApp",
             "categoryType": "Application",
-            "collapsed": false,
             "color": "#0059a5",
             "commitHash": "",
             "dataHash": "",
             "description": "An application component in the form of a Python app",
             "drawOrderHint": 0,
-            "expanded": true,
             "fields": [
                 {
                     "defaultValue": "",
@@ -149,7 +149,6 @@
             "outputApplicationName": "",
             "outputApplicationType": "None",
             "paletteDownloadUrl": "",
-            "radius": 25,
             "repositoryUrl": "",
             "subject": null,
             "x": 381.5,
@@ -158,13 +157,11 @@
         {
             "category": "File",
             "categoryType": "Data",
-            "collapsed": false,
             "color": "#2c2c2c",
             "commitHash": "",
             "dataHash": "",
             "description": "",
             "drawOrderHint": 0,
-            "expanded": true,
             "fields": [
                 {
                     "defaultValue": "",
@@ -285,51 +282,6 @@
                     "type": "String",
                     "usage": "NoPort",
                     "value": "dlg.data.drops.file.FileDROP"
-                },
-                {
-                    "defaultValue": "dlg.data.drops.file.FileDROP",
-                    "description": "",
-                    "encoding": "pickle",
-                    "id": "e9f156d5-6a81-495d-b66a-f4d3bd0c49de",
-                    "name": "dropclass",
-                    "options": [],
-                    "parameterType": "ComponentParameter",
-                    "positional": false,
-                    "precious": false,
-                    "readonly": false,
-                    "type": "String",
-                    "usage": "NoPort",
-                    "value": "dlg.data.drops.file.FileDROP"
-                },
-                {
-                    "defaultValue": "dlg.data.drops.file.FileDROP",
-                    "description": "",
-                    "encoding": "pickle",
-                    "id": "dfe70f29-b356-441f-999f-1cc923f6b507",
-                    "name": "dropclass",
-                    "options": [],
-                    "parameterType": "ComponentParameter",
-                    "positional": false,
-                    "precious": false,
-                    "readonly": false,
-                    "type": "String",
-                    "usage": "NoPort",
-                    "value": "dlg.data.drops.file.FileDROP"
-                },
-                {
-                    "defaultValue": "dlg.data.drops.file.FileDROP",
-                    "description": "",
-                    "encoding": "pickle",
-                    "id": "f6a6d363-10f9-418f-b764-185f87b3ff3e",
-                    "name": "dropclass",
-                    "options": [],
-                    "parameterType": "ComponentParameter",
-                    "positional": false,
-                    "precious": false,
-                    "readonly": false,
-                    "type": "String",
-                    "usage": "NoPort",
-                    "value": "dlg.data.drops.file.FileDROP"
                 }
             ],
             "id": "8000b997-0542-4b61-b4fd-395593acee4c",
@@ -346,7 +298,6 @@
             "outputApplicationName": "",
             "outputApplicationType": "None",
             "paletteDownloadUrl": "",
-            "radius": 25,
             "repositoryUrl": "",
             "subject": null,
             "x": 700.5,
@@ -355,13 +306,11 @@
         {
             "category": "PythonApp",
             "categoryType": "Application",
-            "collapsed": false,
             "color": "#0059a5",
             "commitHash": "",
             "dataHash": "",
             "description": "An application component in the form of a Python app",
             "drawOrderHint": 0,
-            "expanded": true,
             "fields": [
                 {
                     "defaultValue": "",
@@ -427,7 +376,7 @@
                     "defaultValue": "",
                     "description": "",
                     "encoding": "pickle",
-                    "id": "e5fdd402-c9c6-4e1c-a288-aec1d7d9737c",
+                    "id": "37f6ae6c-4fec-42b3-9e66-4512879bfb85",
                     "name": "event",
                     "options": [],
                     "parameterType": "ApplicationArgument",
@@ -453,7 +402,6 @@
             "outputApplicationName": "",
             "outputApplicationType": "None",
             "paletteDownloadUrl": "",
-            "radius": 25,
             "repositoryUrl": "",
             "subject": null,
             "x": 989.5,
@@ -462,13 +410,11 @@
         {
             "category": "File",
             "categoryType": "Data",
-            "collapsed": false,
             "color": "#2c2c2c",
             "commitHash": "",
             "dataHash": "",
             "description": "",
             "drawOrderHint": 0,
-            "expanded": true,
             "fields": [
                 {
                     "defaultValue": "",
@@ -589,51 +535,6 @@
                     "type": "String",
                     "usage": "NoPort",
                     "value": "dlg.data.drops.file.FileDROP"
-                },
-                {
-                    "defaultValue": "dlg.data.drops.file.FileDROP",
-                    "description": "",
-                    "encoding": "pickle",
-                    "id": "a8a9b97d-88e9-4271-919c-b7f571cb5d98",
-                    "name": "dropclass",
-                    "options": [],
-                    "parameterType": "ComponentParameter",
-                    "positional": false,
-                    "precious": false,
-                    "readonly": false,
-                    "type": "String",
-                    "usage": "NoPort",
-                    "value": "dlg.data.drops.file.FileDROP"
-                },
-                {
-                    "defaultValue": "dlg.data.drops.file.FileDROP",
-                    "description": "",
-                    "encoding": "pickle",
-                    "id": "df02701d-3aa6-4ce0-b9a0-0c3ad7d2d89c",
-                    "name": "dropclass",
-                    "options": [],
-                    "parameterType": "ComponentParameter",
-                    "positional": false,
-                    "precious": false,
-                    "readonly": false,
-                    "type": "String",
-                    "usage": "NoPort",
-                    "value": "dlg.data.drops.file.FileDROP"
-                },
-                {
-                    "defaultValue": "dlg.data.drops.file.FileDROP",
-                    "description": "",
-                    "encoding": "pickle",
-                    "id": "049d3823-e356-45ec-a4f2-aaf05da3d861",
-                    "name": "dropclass",
-                    "options": [],
-                    "parameterType": "ComponentParameter",
-                    "positional": false,
-                    "precious": false,
-                    "readonly": false,
-                    "type": "String",
-                    "usage": "NoPort",
-                    "value": "dlg.data.drops.file.FileDROP"
                 }
             ],
             "id": "11e053bd-0f6f-482f-8c94-621aec1215fa",
@@ -650,7 +551,6 @@
             "outputApplicationName": "",
             "outputApplicationType": "None",
             "paletteDownloadUrl": "",
-            "radius": 25,
             "repositoryUrl": "",
             "subject": null,
             "x": 1303.5,
