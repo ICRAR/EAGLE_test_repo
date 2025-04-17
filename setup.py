@@ -4,9 +4,8 @@ from setuptools.command.install import install
 
 setup(
     name="eagle-test-graphs",
-    version="0.1.0",
+    version="0.1.4",
     packages=find_packages(where="eagle_test_graphs"),
     package_dir={"": "eagle_test_graphs"},
-    package_data={
-        "" :["*.graph", "*.pkl", "*.json", "*.spec"]}
+    package_data={"": ["*.graph", "*.pkl", "*.json", "*.spec"]},
 )
