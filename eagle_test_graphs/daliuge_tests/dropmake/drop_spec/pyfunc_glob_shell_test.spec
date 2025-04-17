@@ -947,7 +947,7 @@
         "readonly": false,
         "type": "String",
         "usage": "NoPort",
-        "value": "echo \"True\" > %recursive%"
+        "value": "echo \"True\" > {recursive}"
       },
       "input_redirection": {
         "defaultValue": "",
@@ -1099,7 +1099,7 @@
         "readonly": false,
         "type": "String",
         "usage": "NoPort",
-        "value": "echo \"True\" > %recursive%"
+        "value": "echo \"True\" > {recursive}"
       },
       {
         "defaultValue": "false",
@@ -1254,7 +1254,7 @@
     ],
     "persist": false,
     "streaming": false,
-    "command": "echo \"True\" > %recursive%",
+    "command": "echo \"True\" > {recursive}",
     "recursive": false,
     "input_redirection": "",
     "output_redirection": "",
@@ -1396,7 +1396,7 @@
         "readonly": false,
         "type": "String",
         "usage": "NoPort",
-        "value": "cat %content%"
+        "value": "cat {content}"
       },
       "output_redirection": {
         "defaultValue": "",
@@ -1563,7 +1563,7 @@
         "readonly": false,
         "type": "String",
         "usage": "NoPort",
-        "value": "cat %content%"
+        "value": "cat {content}"
       },
       {
         "defaultValue": "",
@@ -1748,7 +1748,7 @@
     ],
     "persist": false,
     "streaming": false,
-    "command": "cat %content%",
+    "command": "cat {content}",
     "input_redirection": "",
     "output_redirection": "",
     "command_line_arguments": "",
@@ -2130,7 +2130,7 @@
         "readonly": false,
         "type": "String",
         "usage": "NoPort",
-        "value": "echo \"'**'\" > %content%"
+        "value": "echo \"'**'\" > {content}"
       },
       "input_redirection": {
         "defaultValue": "",
@@ -2327,7 +2327,7 @@
         "readonly": false,
         "type": "String",
         "usage": "NoPort",
-        "value": "echo \"'**'\" > %content%"
+        "value": "echo \"'**'\" > {content}"
       },
       {
         "defaultValue": "",
@@ -2527,7 +2527,7 @@
     ],
     "persist": false,
     "streaming": false,
-    "command": "echo \"'**'\" > %content%",
+    "command": "echo \"'**'\" > {content}",
     "input_redirection": "",
     "output_redirection": "",
     "command_line_arguments": "",
