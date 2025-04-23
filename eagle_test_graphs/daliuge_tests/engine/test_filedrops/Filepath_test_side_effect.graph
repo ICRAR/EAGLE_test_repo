@@ -2,8 +2,8 @@
     "modelData": {
         "filePath": "eagle_test_graphs/daliuge_tests/engine/test_filedrops/Filepath_test_side_effect.graph",
         "fileType": "Graph",
-        "shortDescription": "",
-        "detailedDescription": "",
+        "shortDescription": "Graph with side-effect writing to file",
+        "detailedDescription": "Demonstration graph showing and testing a PyFuncApp opening and writing to a file internally. The function accepts the filepath and the content to be written as inputs. The graph is configured to use the same filepath. In addition the function also returns another string, which is written to a separate file by the engine and gets a standard DALiuGE filename.",
         "repoService": "GitHub",
         "repoBranch": "master",
         "repo": "ICRAR/EAGLE_test_repo",
@@ -19,9 +19,9 @@
         "lastModifiedName": "",
         "lastModifiedEmail": "",
         "lastModifiedDatetime": 0,
-        "numLGNodes": 4
+        "numLGNodes": 5
     },
-    "activeGraphConfigId": "c78e6328-44cf-4899-b206-a4e98382bdd1",
+    "activeGraphConfigId": "de501d36-afb6-43ac-aae7-eade3381f2df",
     "graphConfigurations": {
         "c78e6328-44cf-4899-b206-a4e98382bdd1": {
             "name": "Default Configuration",
@@ -30,7 +30,7 @@
                 "7db6b709-e82f-4927-91e2-d6a12142b1b0": {
                     "fields": {
                         "6350e780-16ed-4fd6-a468-1c886f855952": {
-                            "value": "Hello World",
+                            "value": "Hello Ryan",
                             "comment": ""
                         }
                     }
@@ -50,7 +50,7 @@
         },
         "de501d36-afb6-43ac-aae7-eade3381f2df": {
             "name": "Ryan",
-            "description": "Just to run with a different content",
+            "description": "",
             "nodes": {
                 "7db6b709-e82f-4927-91e2-d6a12142b1b0": {
                     "fields": {
@@ -76,7 +76,7 @@
     },
     "nodeDataArray": [
         {
-            "category": "PythonApp",
+            "category": "PyFuncApp",
             "categoryType": "Application",
             "isGroup": false,
             "color": "#0059a5",
@@ -84,8 +84,8 @@
             "id": "3eff622c-12b0-4eb9-ac32-1d9f1971ae5d",
             "name": "write_file",
             "description": "An application that wraps a python function. The inputs of the application are treated as the arguments of the function. Conversely, the output of the function is treated as the output of the application. If the application has more than one output, the result of calling the function is treated as an iterable, with each individual object being written to its corresponding output.",
-            "x": 341.16665445742814,
-            "y": 67.82055191732385,
+            "x": 377.8095576209608,
+            "y": 78.0430209789939,
             "subject": null,
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
             "commitHash": "8059e41",
@@ -109,7 +109,7 @@
                 },
                 {
                     "name": "func_code",
-                    "value": "def write_file(filepath:str=\"testfile.out\", content:str=\"Hello DALiuGE\"):     \n    with open(filepath, 'w') as f:\n        f.write(content)\n    return",
+                    "value": "def write_file(filepath:str=\"testfile.out\", content:str=\"Hello DALiuGE\"):     \n    with open(filepath, 'w') as f:\n        f.write(content)\n    return \"Hello from write_file\"\n",
                     "defaultValue": "",
                     "description": "Python function code, e.g. 'def func_name(args): return args'. Note that func_name above needs to match the defined name here.",
                     "readonly": false,
@@ -138,6 +138,21 @@
                     "usage": "InputOutput"
                 },
                 {
+                    "name": "output",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "encoding": "utf-8",
+                    "id": "27ebf597-737c-4950-919e-fa2cc5d4c0ef",
+                    "parameterType": "ComponentParameter",
+                    "usage": "OutputPort"
+                },
+                {
                     "name": "content",
                     "value": "",
                     "defaultValue": "",
@@ -151,21 +166,6 @@
                     "id": "6c2395af-30f6-4570-a4b6-20ac7fb2001a",
                     "parameterType": "ApplicationArgument",
                     "usage": "InputPort"
-                },
-                {
-                    "name": "output",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "encoding": "pickle",
-                    "id": "288b7c7d-d8eb-4fad-973f-c117231a328a",
-                    "parameterType": "ComponentParameter",
-                    "usage": "OutputPort"
                 },
                 {
                     "name": "log_level",
@@ -315,8 +315,8 @@
             "id": "5d1c90bc-53ef-4b1c-8eb7-7df927663cd1",
             "name": "hello.txt",
             "description": "A standard file on a filesystem mounted to the deployment machine",
-            "x": 482.3760401145087,
-            "y": 54.89216103939743,
+            "x": 486.81267226048686,
+            "y": 117.10268552516428,
             "subject": null,
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
             "commitHash": "8059e41",
@@ -324,7 +324,7 @@
             "dataHash": "5faefd22ae766dfd92d43538fea82985904d48084e2036fac39de111fc1648ca",
             "fields": [
                 {
-                    "name": "filepath",
+                    "name": "output",
                     "value": "",
                     "defaultValue": "",
                     "description": "File path for this file. In many cases this does not need to be specified. If it has a \\/ at the end it will be treated as a directory name and the filename will be generated. If it does not have a \\/, the last part will be treated as a filename. If filepath does not start with \\/ (relative path) then the session directory will be prepended to make the path absolute.\"",
@@ -336,21 +336,6 @@
                     "encoding": "pickle",
                     "id": "1b106c84-8507-4918-9237-5918a067d3cc",
                     "parameterType": "ApplicationArgument",
-                    "usage": "NoPort"
-                },
-                {
-                    "name": "output",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "encoding": "pickle",
-                    "id": "8a11c882-c4ca-4bf9-9373-7a3f5899797b",
-                    "parameterType": "ComponentParameter",
                     "usage": "InputPort"
                 },
                 {
@@ -472,21 +457,6 @@
                     "id": "faeac949-8622-41f9-b427-7ec6b76afa04",
                     "parameterType": "ComponentParameter",
                     "usage": "NoPort"
-                },
-                {
-                    "name": "filepath",
-                    "value": "",
-                    "defaultValue": "",
-                    "description": "Dummy port",
-                    "readonly": false,
-                    "type": "Object",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "encoding": "pickle",
-                    "id": "d7bb0ab4-1dba-48bf-af18-e65079f1bb2f",
-                    "parameterType": "ApplicationArgument",
-                    "usage": "InputPort"
                 }
             ],
             "inputAppFields": [],
@@ -509,8 +479,8 @@
             "id": "7db6b709-e82f-4927-91e2-d6a12142b1b0",
             "name": "content",
             "description": "In-memory storage of intermediate data products",
-            "x": 260.87284959423687,
-            "y": 133.3988046195041,
+            "x": 289.63450580202164,
+            "y": 141.97337982524928,
             "subject": null,
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
             "commitHash": "8059e41",
@@ -673,8 +643,8 @@
             "id": "a2fe7589-3d5a-4485-82f9-e4a262096a3f",
             "name": "filepath",
             "description": "In-memory storage of intermediate data products",
-            "x": 254.5773533393173,
-            "y": 13.362014259240476,
+            "x": 269.44272556452006,
+            "y": 25.54056267747412,
             "subject": null,
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
             "commitHash": "8059e41",
@@ -827,25 +797,188 @@
             "outputApplicationType": "None",
             "outputApplicationId": null,
             "outputApplicationDescription": ""
+        },
+        {
+            "category": "File",
+            "categoryType": "Data",
+            "isGroup": false,
+            "color": "#2c2c2c",
+            "drawOrderHint": 0,
+            "id": "b4f9078d-a0a6-4818-b54b-b8259bcadaac",
+            "name": "output",
+            "description": "A standard file on a filesystem mounted to the deployment machine",
+            "x": 464.0856679730923,
+            "y": -19.607578725128775,
+            "subject": null,
+            "repositoryUrl": "https://github.com/ICRAR/daliuge",
+            "commitHash": "8059e41",
+            "paletteDownloadUrl": "https://raw.githubusercontent.com/ICRAR/EAGLE-graph-repo/master/daliuge/daliuge-master.palette",
+            "dataHash": "5faefd22ae766dfd92d43538fea82985904d48084e2036fac39de111fc1648ca",
+            "fields": [
+                {
+                    "name": "filepath",
+                    "value": "output.txt",
+                    "defaultValue": "",
+                    "description": "File path for this file. In many cases this does not need to be specified. If it has a \\/ at the end it will be treated as a directory name and the filename will be generated. If it does not have a \\/, the last part will be treated as a filename. If filepath does not start with \\/ (relative path) then the session directory will be prepended to make the path absolute.\"",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "encoding": "pickle",
+                    "id": "9187232e-535c-4114-b82a-417f3f1b3024",
+                    "parameterType": "ApplicationArgument",
+                    "usage": "NoPort"
+                },
+                {
+                    "name": "check_filepath_exists",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Perform a check to make sure the file path exists before proceeding with the application",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "encoding": "pickle",
+                    "id": "dc8028d9-3377-4331-9281-0e2ff7dd5afc",
+                    "parameterType": "ComponentParameter",
+                    "usage": "NoPort"
+                },
+                {
+                    "name": "dropclass",
+                    "value": "dlg.data.drops.file.FileDROP",
+                    "defaultValue": "dlg.data.drops.file.FileDROP",
+                    "description": "Drop class",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "encoding": "pickle",
+                    "id": "06b89b85-483b-4ba1-8bfc-17946789f722",
+                    "parameterType": "ComponentParameter",
+                    "usage": "NoPort"
+                },
+                {
+                    "name": "base_name",
+                    "value": "file",
+                    "defaultValue": "file",
+                    "description": "Base name of application class",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "encoding": "pickle",
+                    "id": "3ffb2464-bc56-4867-86f7-df54dc89123c",
+                    "parameterType": "ComponentParameter",
+                    "usage": "NoPort"
+                },
+                {
+                    "name": "streaming",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Specifies whether this data component streams input and output data",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "encoding": "pickle",
+                    "id": "d0ea44f1-49f7-45ad-ba8a-fba345918452",
+                    "parameterType": "ComponentParameter",
+                    "usage": "NoPort"
+                },
+                {
+                    "name": "persist",
+                    "value": true,
+                    "defaultValue": "True",
+                    "description": "Specifies whether this data component contains data that should not be deleted after execution",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "encoding": "pickle",
+                    "id": "737d7464-2bc0-4c2f-8324-6c7ed7d7a1b4",
+                    "parameterType": "ComponentParameter",
+                    "usage": "NoPort"
+                },
+                {
+                    "name": "block_skip",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "If set the drop will block a skipping chain until the last producer has finished and is not also skipped.",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "encoding": "pickle",
+                    "id": "bbe2f53f-2a54-4c24-9a5d-bf7f79137637",
+                    "parameterType": "ComponentParameter",
+                    "usage": "NoPort"
+                },
+                {
+                    "name": "data_volume",
+                    "value": 5,
+                    "defaultValue": "5",
+                    "description": "Estimated size of the data contained in this node",
+                    "readonly": false,
+                    "type": "Float",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "encoding": "pickle",
+                    "id": "a85d56e6-4d01-4d65-88c4-e6ae80727866",
+                    "parameterType": "ConstraintParameter",
+                    "usage": "NoPort"
+                },
+                {
+                    "name": "group_end",
+                    "value": false,
+                    "defaultValue": "False",
+                    "description": "Is this node the end of a group?",
+                    "readonly": false,
+                    "type": "Boolean",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "encoding": "pickle",
+                    "id": "a0f1d74b-3683-4372-8159-5c76420ce6de",
+                    "parameterType": "ComponentParameter",
+                    "usage": "NoPort"
+                },
+                {
+                    "name": "output",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "Dummy port",
+                    "readonly": false,
+                    "type": "Object",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "encoding": "pickle",
+                    "id": "09787c99-0217-4b4b-9a6d-8433cb5972ff",
+                    "parameterType": "ApplicationArgument",
+                    "usage": "InputPort"
+                }
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputApplicationId": null,
+            "inputApplicationDescription": "",
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationId": null,
+            "outputApplicationDescription": ""
         }
     ],
     "linkDataArray": [
-        {
-            "from": "3eff622c-12b0-4eb9-ac32-1d9f1971ae5d",
-            "fromPort": "ddbd1e00-cb55-45fa-acd0-adde7989fab3",
-            "to": "5d1c90bc-53ef-4b1c-8eb7-7df927663cd1",
-            "toPort": "d7bb0ab4-1dba-48bf-af18-e65079f1bb2f",
-            "loop_aware": "0",
-            "closesLoop": false
-        },
-        {
-            "from": "3eff622c-12b0-4eb9-ac32-1d9f1971ae5d",
-            "fromPort": "288b7c7d-d8eb-4fad-973f-c117231a328a",
-            "to": "5d1c90bc-53ef-4b1c-8eb7-7df927663cd1",
-            "toPort": "8a11c882-c4ca-4bf9-9373-7a3f5899797b",
-            "loop_aware": "0",
-            "closesLoop": false
-        },
         {
             "from": "7db6b709-e82f-4927-91e2-d6a12142b1b0",
             "fromPort": "0e37d693-af92-4668-a22f-967d220598d7",
@@ -859,6 +992,22 @@
             "fromPort": "8f9b6380-f98b-43cd-a86c-2afa3149612e",
             "to": "3eff622c-12b0-4eb9-ac32-1d9f1971ae5d",
             "toPort": "ddbd1e00-cb55-45fa-acd0-adde7989fab3",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": "3eff622c-12b0-4eb9-ac32-1d9f1971ae5d",
+            "fromPort": "ddbd1e00-cb55-45fa-acd0-adde7989fab3",
+            "to": "5d1c90bc-53ef-4b1c-8eb7-7df927663cd1",
+            "toPort": "1b106c84-8507-4918-9237-5918a067d3cc",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": "3eff622c-12b0-4eb9-ac32-1d9f1971ae5d",
+            "fromPort": "27ebf597-737c-4950-919e-fa2cc5d4c0ef",
+            "to": "b4f9078d-a0a6-4818-b54b-b8259bcadaac",
+            "toPort": "09787c99-0217-4b4b-9a6d-8433cb5972ff",
             "loop_aware": "0",
             "closesLoop": false
         }
