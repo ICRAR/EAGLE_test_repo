@@ -122,7 +122,7 @@
                     "defaultValue": "",
                     "description": "Input File Object",
                     "readonly": false,
-                    "type": "Object.File",
+                    "type": "Event",
                     "precious": false,
                     "options": [],
                     "positional": false,
@@ -1713,7 +1713,7 @@
                     "usage": "NoPort"
                 },
                 {
-                    "name": "ReturnfileObject",
+                    "name": "ReturnFileObject",
                     "value": "",
                     "defaultValue": "",
                     "description": "Input File Object",
@@ -2270,7 +2270,7 @@
                     "defaultValue": "",
                     "description": "",
                     "readonly": false,
-                    "type": "Object.File",
+                    "type": "Event",
                     "precious": false,
                     "options": [],
                     "positional": false,
@@ -2285,13 +2285,13 @@
                     "defaultValue": "",
                     "description": "",
                     "readonly": false,
-                    "type": "Object.File",
+                    "type": "Event",
                     "precious": false,
                     "options": [],
                     "positional": false,
                     "encoding": "pickle",
                     "id": "720e0aa1-a60a-443c-91c6-a0df1aef9f4a",
-                    "parameterType": "ComponentParameter",
+                    "parameterType": "ApplicationArgument",
                     "usage": "InputPort"
                 }
             ],
@@ -2397,18 +2397,18 @@
             "closesLoop": false
         },
         {
-            "from": "32a40bba-c762-418c-9646-9b492c4775e0",
-            "fromPort": "389627c6-5f0d-4b07-bb10-49e4c1184b3b",
-            "to": "516fc098-c5c9-45a0-8d29-969871092afe",
-            "toPort": "720e0aa1-a60a-443c-91c6-a0df1aef9f4a",
-            "loop_aware": "0",
-            "closesLoop": false
-        },
-        {
             "from": "488b13a8-2d34-4d20-829f-bc9414f3826b",
             "fromPort": "65a5c91b-132f-4256-9d7b-992842011565",
             "to": "453bcd1f-2df2-4554-ace2-f1b2f4004a97",
             "toPort": "77d39004-b53c-4d1a-8bbc-89c37e894b63",
+            "loop_aware": "0",
+            "closesLoop": false
+        },
+        {
+            "from": "32a40bba-c762-418c-9646-9b492c4775e0",
+            "fromPort": "389627c6-5f0d-4b07-bb10-49e4c1184b3b",
+            "to": "516fc098-c5c9-45a0-8d29-969871092afe",
+            "toPort": "720e0aa1-a60a-443c-91c6-a0df1aef9f4a",
             "loop_aware": "0",
             "closesLoop": false
         }
