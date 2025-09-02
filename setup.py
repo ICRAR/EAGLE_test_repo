@@ -9,4 +9,3 @@ setup(
     package_dir={"": "eagle_test_graphs"},
     package_data={"": ["*.graph", "*.pkl", "*.json", "*.spec"]},
 )
-a
