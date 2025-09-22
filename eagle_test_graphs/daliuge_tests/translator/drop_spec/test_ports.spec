@@ -27,7 +27,7 @@
         "readonly": false,
         "type": "Integer",
         "usage": "InputPort",
-        "value": null
+        "value": ""
       },
       "v2": {
         "defaultValue": "0",
@@ -42,7 +42,7 @@
         "readonly": false,
         "type": "Integer",
         "usage": "InputPort",
-        "value": null
+        "value": ""
       }
     },
     "constraintParams": {
@@ -106,7 +106,7 @@
         "readonly": false,
         "type": "Integer",
         "usage": "OutputPort",
-        "value": null
+        "value": ""
       },
       "out2": {
         "defaultValue": "0",
@@ -121,7 +121,7 @@
         "readonly": false,
         "type": "Integer",
         "usage": "OutputPort",
-        "value": null
+        "value": ""
       },
       "dropclass": {
         "defaultValue": "dlg.apps.pyfunc.PyFuncApp",
@@ -272,7 +272,7 @@
         "readonly": false,
         "type": "Integer",
         "usage": "OutputPort",
-        "value": null
+        "value": ""
       },
       {
         "defaultValue": "0",
@@ -287,7 +287,7 @@
         "readonly": false,
         "type": "Integer",
         "usage": "OutputPort",
-        "value": null
+        "value": ""
       },
       {
         "defaultValue": "0",
@@ -302,7 +302,7 @@
         "readonly": false,
         "type": "Integer",
         "usage": "InputPort",
-        "value": null
+        "value": ""
       },
       {
         "defaultValue": "0",
@@ -317,7 +317,7 @@
         "readonly": false,
         "type": "Integer",
         "usage": "InputPort",
-        "value": null
+        "value": ""
       },
       {
         "defaultValue": "dlg.apps.pyfunc.PyFuncApp",
@@ -470,10 +470,10 @@
       }
     ],
     "func_name": "dlg.apps.simple_functions.createMultiOut",
-    "out1": null,
-    "out2": null,
-    "v1": null,
-    "v2": null,
+    "out1": "",
+    "out2": "",
+    "v1": "",
+    "v2": "",
     "execution_time": 5,
     "group_start": false,
     "input_error_threshold": 0,
@@ -483,6 +483,30 @@
     "func_arg_mapping": "",
     "iid": "0",
     "lg_key": "ca38fdbd-dca8-416f-959d-0d6b6d255dd3",
+    "outputPorts": {
+      "3df116c1-69e5-49b9-b1e0-9f043d872343": {
+        "type": "OutputPort",
+        "name": "out1",
+        "target_id": "4d8e58e2-bf53-45a9-98a4-8ffdcbfc396f"
+      },
+      "cfe583b6-a7f2-4bea-bcaa-e5d9e46202c6": {
+        "type": "OutputPort",
+        "name": "out2",
+        "target_id": "396dd655-fe08-44e7-b664-a18c9a604cbd"
+      }
+    },
+    "inputPorts": {
+      "e2762df0-7d33-4e1a-a002-7169f7391fe1": {
+        "type": "InputPort",
+        "name": "v1",
+        "source_id": "a1f17de0-bfab-4942-b935-dc9feb2d0443"
+      },
+      "583fbab8-79f9-4df9-927c-433bbce9b0e1": {
+        "type": "InputPort",
+        "name": "v2",
+        "source_id": "1dae4240-efc8-4a09-97ac-f3833c82c685"
+      }
+    },
     "inputs": [
       {
         "test_pg_gen_a1f17de0-bfab-4942-b935-dc9feb2d0443_0": "v1"
@@ -610,7 +634,7 @@
         "readonly": false,
         "type": "Integer",
         "usage": "OutputPort",
-        "value": null
+        "value": ""
       },
       "out2": {
         "defaultValue": "0",
@@ -625,7 +649,7 @@
         "readonly": false,
         "type": "Integer",
         "usage": "OutputPort",
-        "value": null
+        "value": ""
       },
       "dropclass": {
         "defaultValue": "dlg.apps.pyfunc.PyFuncApp",
@@ -776,7 +800,7 @@
         "readonly": false,
         "type": "Integer",
         "usage": "OutputPort",
-        "value": null
+        "value": ""
       },
       {
         "defaultValue": "0",
@@ -791,7 +815,7 @@
         "readonly": false,
         "type": "Integer",
         "usage": "OutputPort",
-        "value": null
+        "value": ""
       },
       {
         "defaultValue": "",
@@ -974,8 +998,8 @@
       }
     ],
     "func_name": "dlg.apps.simple_functions.createMultiOut",
-    "out1": null,
-    "out2": null,
+    "out1": "",
+    "out2": "",
     "v1": 2,
     "v2": 8,
     "execution_time": 5,
@@ -987,6 +1011,19 @@
     "func_arg_mapping": "",
     "iid": "0",
     "lg_key": "e36a7eb3-8370-42ca-a755-c55a6f15ae47",
+    "outputPorts": {
+      "cb55d6bb-a6d3-457d-87b0-48e76630cc29": {
+        "type": "OutputPort",
+        "name": "out1",
+        "target_id": "a1f17de0-bfab-4942-b935-dc9feb2d0443"
+      },
+      "795b4766-80b0-43d4-91b8-1fe6aae5408f": {
+        "type": "OutputPort",
+        "name": "out2",
+        "target_id": "1dae4240-efc8-4a09-97ac-f3833c82c685"
+      }
+    },
+    "inputPorts": {},
     "outputs": [
       {
         "test_pg_gen_a1f17de0-bfab-4942-b935-dc9feb2d0443_0": "out1"
@@ -1024,7 +1061,7 @@
         "positional": false,
         "precious": false,
         "readonly": false,
-        "type": "String",
+        "type": "Object",
         "usage": "NoPort",
         "value": "None"
       },
@@ -1041,7 +1078,7 @@
         "readonly": false,
         "type": "Integer",
         "usage": "InputOutput",
-        "value": null
+        "value": ""
       }
     },
     "constraintParams": {
@@ -1150,7 +1187,7 @@
         "positional": false,
         "precious": false,
         "readonly": false,
-        "type": "String",
+        "type": "Object",
         "usage": "NoPort",
         "value": "None"
       },
@@ -1257,7 +1294,7 @@
         "readonly": false,
         "type": "Integer",
         "usage": "InputOutput",
-        "value": null
+        "value": ""
       }
     ],
     "pydata": "None",
@@ -1266,9 +1303,20 @@
     "group_end": false,
     "streaming": false,
     "base_name": "memory",
-    "out1": null,
+    "out1": "",
     "iid": "0",
     "lg_key": "a1f17de0-bfab-4942-b935-dc9feb2d0443",
+    "outputPorts": {},
+    "inputPorts": {
+      "395f859d-a32c-4c64-bdad-19197ca0e341": {
+        "type": "InputOutput",
+        "name": "out1",
+        "source_id": "e36a7eb3-8370-42ca-a755-c55a6f15ae47"
+      }
+    },
+    "port_map": {
+      "out1": "out1"
+    },
     "producers": [
       {
         "test_pg_gen_e36a7eb3-8370-42ca-a755-c55a6f15ae47_0": "out1"
@@ -1308,7 +1356,7 @@
         "positional": false,
         "precious": false,
         "readonly": false,
-        "type": "String",
+        "type": "Object",
         "usage": "NoPort",
         "value": "None"
       },
@@ -1325,7 +1373,7 @@
         "readonly": false,
         "type": "Integer",
         "usage": "InputOutput",
-        "value": null
+        "value": ""
       }
     },
     "constraintParams": {
@@ -1434,7 +1482,7 @@
         "positional": false,
         "precious": false,
         "readonly": false,
-        "type": "String",
+        "type": "Object",
         "usage": "NoPort",
         "value": "None"
       },
@@ -1541,7 +1589,7 @@
         "readonly": false,
         "type": "Integer",
         "usage": "InputOutput",
-        "value": null
+        "value": ""
       }
     ],
     "pydata": "None",
@@ -1550,9 +1598,20 @@
     "group_end": false,
     "streaming": false,
     "base_name": "memory",
-    "out2": null,
+    "out2": "",
     "iid": "0",
     "lg_key": "1dae4240-efc8-4a09-97ac-f3833c82c685",
+    "outputPorts": {},
+    "inputPorts": {
+      "adb0607b-2aed-483c-b953-faec60697d83": {
+        "type": "InputOutput",
+        "name": "out2",
+        "source_id": "e36a7eb3-8370-42ca-a755-c55a6f15ae47"
+      }
+    },
+    "port_map": {
+      "out2": "out2"
+    },
     "producers": [
       {
         "test_pg_gen_e36a7eb3-8370-42ca-a755-c55a6f15ae47_0": "out2"
@@ -1868,6 +1927,17 @@
     "dummy": "",
     "iid": "0",
     "lg_key": "4d8e58e2-bf53-45a9-98a4-8ffdcbfc396f",
+    "outputPorts": {},
+    "inputPorts": {
+      "2503a65b-9633-4d5a-9e15-09a4cc830055": {
+        "type": "InputOutput",
+        "name": "dummy",
+        "source_id": "ca38fdbd-dca8-416f-959d-0d6b6d255dd3"
+      }
+    },
+    "port_map": {
+      "dummy": "out1"
+    },
     "producers": [
       {
         "test_pg_gen_ca38fdbd-dca8-416f-959d-0d6b6d255dd3_0": "dummy"
@@ -2178,6 +2248,17 @@
     "out2": "",
     "iid": "0",
     "lg_key": "396dd655-fe08-44e7-b664-a18c9a604cbd",
+    "outputPorts": {},
+    "inputPorts": {
+      "d5b6e3f5-1d4a-460f-a87f-73bb380ec0b0": {
+        "type": "InputOutput",
+        "name": "out2",
+        "source_id": "ca38fdbd-dca8-416f-959d-0d6b6d255dd3"
+      }
+    },
+    "port_map": {
+      "out2": "out2"
+    },
     "producers": [
       {
         "test_pg_gen_ca38fdbd-dca8-416f-959d-0d6b6d255dd3_0": "out2"

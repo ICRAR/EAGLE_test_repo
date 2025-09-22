@@ -145,11 +145,28 @@
     "MS-out": "",
     "iid": "0",
     "lg_key": "ba7d20ac-9ae2-4ba2-ad13-fb0512dd928c",
+    "outputPorts": {
+      "f0aa9a05-beb0-4671-8b00-e7d34f87b8d3": {
+        "type": "OutputPort",
+        "name": "MS-out",
+        "target_id": "592cec22-e25c-4f97-aa00-796d38efbd6b"
+      }
+    },
+    "inputPorts": {
+      "cedb37c2-4db5-4397-a120-1ade0280d6cf": {
+        "type": "InputPort",
+        "name": "MS-in",
+        "source_id": "10b4e22f-0d08-496e-98d2-6be4babfe074"
+      }
+    },
     "consumers": [
       {
         "test_pg_gen_592cec22-e25c-4f97-aa00-796d38efbd6b_0": "MS-out"
       }
     ],
+    "port_map": {
+      "MS-in": "MS-in"
+    },
     "producers": [
       {
         "test_pg_gen_10b4e22f-0d08-496e-98d2-6be4babfe074_0": "MS-in"
@@ -336,9 +353,17 @@
     "MS-in": "",
     "iid": "0",
     "lg_key": "10b4e22f-0d08-496e-98d2-6be4babfe074",
+    "outputPorts": {},
+    "inputPorts": {
+      "7c4a0d74-974e-4f0b-ac07-5c60c70bf576": {
+        "type": "InputOutput",
+        "name": "MS-in",
+        "source_id": "b0dbff4d-484a-419d-bab9-2a1b06875a2d"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_ba7d20ac-9ae2-4ba2-ad13-fb0512dd928c_0": "MS-in"
+        "test_pg_gen_ba7d20ac-9ae2-4ba2-ad13-fb0512dd928c_0": "7c4a0d74-974e-4f0b-ac07-5c60c70bf576"
       }
     ],
     "inputs": [
@@ -620,6 +645,14 @@
     "MS-in": "",
     "iid": "0",
     "lg_key": "b0dbff4d-484a-419d-bab9-2a1b06875a2d",
+    "outputPorts": {
+      "af6487c4-bcd7-44d5-8f0a-677f9141fcf1": {
+        "type": "OutputPort",
+        "name": "MS-in",
+        "target_id": "ea9b76bc-15cf-4d4e-b1a6-175f2de211a7"
+      }
+    },
+    "inputPorts": {},
     "consumers": [
       {
         "test_pg_gen_10b4e22f-0d08-496e-98d2-6be4babfe074_0": "MS-in"
@@ -809,9 +842,17 @@
     "MS-out": "",
     "iid": "0",
     "lg_key": "592cec22-e25c-4f97-aa00-796d38efbd6b",
+    "outputPorts": {},
+    "inputPorts": {
+      "f71063d9-7728-486c-b1f6-b08f4480a474": {
+        "type": "InputOutput",
+        "name": "MS-out",
+        "source_id": "ba7d20ac-9ae2-4ba2-ad13-fb0512dd928c"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_5ca3eddb-b786-4925-9153-c1d6c12139ba_0": "MS-out"
+        "test_pg_gen_5ca3eddb-b786-4925-9153-c1d6c12139ba_0": "f71063d9-7728-486c-b1f6-b08f4480a474"
       }
     ],
     "inputs": [
@@ -1093,6 +1134,17 @@
     "MS-out": "",
     "iid": "0",
     "lg_key": "5ca3eddb-b786-4925-9153-c1d6c12139ba",
+    "outputPorts": {},
+    "inputPorts": {
+      "397652a9-99de-4449-a186-9ca3c77f90fc": {
+        "type": "InputOutput",
+        "name": "MS-out",
+        "source_id": "592cec22-e25c-4f97-aa00-796d38efbd6b"
+      }
+    },
+    "port_map": {
+      "MS-out": "MS-out"
+    },
     "producers": [
       {
         "test_pg_gen_592cec22-e25c-4f97-aa00-796d38efbd6b_0": "MS-out"
@@ -1346,6 +1398,25 @@
     "result": "",
     "iid": "0",
     "lg_key": "ea9b76bc-15cf-4d4e-b1a6-175f2de211a7",
+    "outputPorts": {
+      "d9b69336-b1a3-4507-a4b3-1f442c3b5b8f": {
+        "type": "OutputPort",
+        "name": "result",
+        "target_id": ""
+      }
+    },
+    "inputPorts": {
+      "87d4376d-639c-400b-a8c1-6958c8e6abb3": {
+        "type": "InputPort",
+        "name": "MS-out",
+        "source_id": "5ca3eddb-b786-4925-9153-c1d6c12139ba"
+      },
+      "acd9d843-fcb3-4590-b217-a02a2f132dcd": {
+        "type": "InputPort",
+        "name": "MS-in",
+        "source_id": "b0dbff4d-484a-419d-bab9-2a1b06875a2d"
+      }
+    },
     "inputs": [
       {
         "test_pg_gen_b0dbff4d-484a-419d-bab9-2a1b06875a2d_0": "MS-in"

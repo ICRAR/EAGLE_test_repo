@@ -1,6 +1,6 @@
 [
   {
-    "oid": "test_pg_gen_140bb20f-cd64-4589-b54b-8830aad4e055_0/0",
+    "oid": "test_pg_gen_140bb20f-cd64-4589-b54b-8830aad4e055_0-0",
     "name": "image per freq",
     "categoryType": "Data",
     "category": "Memory",
@@ -175,22 +175,39 @@
     "group_end": "0",
     "string": "",
     "stringcopy": "",
-    "iid": "0/0",
+    "iid": "0-0",
     "lg_key": "140bb20f-cd64-4589-b54b-8830aad4e055",
+    "outputPorts": {
+      "f8b13f8f-091b-4282-9c81-237cd058252e": {
+        "type": "OutputPort",
+        "name": "stringcopy",
+        "target_id": "e9471a82-e1c0-44e2-924d-b72149fbfede"
+      }
+    },
+    "inputPorts": {
+      "add668b4-f4f1-4ea9-91fc-80e3315d0f10": {
+        "type": "InputPort",
+        "name": "string",
+        "source_id": "5d612631-5358-4df9-86f1-4806352a3a99"
+      }
+    },
+    "port_map": {
+      "string": "stringcopy"
+    },
     "producers": [
       {
-        "test_pg_gen_5d612631-5358-4df9-86f1-4806352a3a99_0/0": "string"
+        "test_pg_gen_5d612631-5358-4df9-86f1-4806352a3a99_0-0": "string"
       }
     ],
     "consumers": [
-      "test_pg_gen_9d873c53-a9c3-486b-b18a-4b7e0c6403e9_0/0"
+      "test_pg_gen_9d873c53-a9c3-486b-b18a-4b7e0c6403e9_0-0"
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "1_0/0"
+    "humanReadableKey": "1_0-0"
   },
   {
-    "oid": "test_pg_gen_140bb20f-cd64-4589-b54b-8830aad4e055_0/1",
+    "oid": "test_pg_gen_140bb20f-cd64-4589-b54b-8830aad4e055_0-1",
     "name": "image per freq",
     "categoryType": "Data",
     "category": "Memory",
@@ -365,22 +382,39 @@
     "group_end": "0",
     "string": "",
     "stringcopy": "",
-    "iid": "0/1",
+    "iid": "0-1",
     "lg_key": "140bb20f-cd64-4589-b54b-8830aad4e055",
+    "outputPorts": {
+      "f8b13f8f-091b-4282-9c81-237cd058252e": {
+        "type": "OutputPort",
+        "name": "stringcopy",
+        "target_id": "e9471a82-e1c0-44e2-924d-b72149fbfede"
+      }
+    },
+    "inputPorts": {
+      "add668b4-f4f1-4ea9-91fc-80e3315d0f10": {
+        "type": "InputPort",
+        "name": "string",
+        "source_id": "5d612631-5358-4df9-86f1-4806352a3a99"
+      }
+    },
+    "port_map": {
+      "string": "stringcopy"
+    },
     "producers": [
       {
-        "test_pg_gen_5d612631-5358-4df9-86f1-4806352a3a99_0/1": "string"
+        "test_pg_gen_5d612631-5358-4df9-86f1-4806352a3a99_0-1": "string"
       }
     ],
     "consumers": [
-      "test_pg_gen_9d873c53-a9c3-486b-b18a-4b7e0c6403e9_0/0"
+      "test_pg_gen_9d873c53-a9c3-486b-b18a-4b7e0c6403e9_0-0"
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "2_0/1"
+    "humanReadableKey": "2_0-1"
   },
   {
-    "oid": "test_pg_gen_140bb20f-cd64-4589-b54b-8830aad4e055_0/2",
+    "oid": "test_pg_gen_140bb20f-cd64-4589-b54b-8830aad4e055_0-2",
     "name": "image per freq",
     "categoryType": "Data",
     "category": "Memory",
@@ -555,22 +589,39 @@
     "group_end": "0",
     "string": "",
     "stringcopy": "",
-    "iid": "0/2",
+    "iid": "0-2",
     "lg_key": "140bb20f-cd64-4589-b54b-8830aad4e055",
+    "outputPorts": {
+      "f8b13f8f-091b-4282-9c81-237cd058252e": {
+        "type": "OutputPort",
+        "name": "stringcopy",
+        "target_id": "e9471a82-e1c0-44e2-924d-b72149fbfede"
+      }
+    },
+    "inputPorts": {
+      "add668b4-f4f1-4ea9-91fc-80e3315d0f10": {
+        "type": "InputPort",
+        "name": "string",
+        "source_id": "5d612631-5358-4df9-86f1-4806352a3a99"
+      }
+    },
+    "port_map": {
+      "string": "stringcopy"
+    },
     "producers": [
       {
-        "test_pg_gen_5d612631-5358-4df9-86f1-4806352a3a99_0/2": "string"
+        "test_pg_gen_5d612631-5358-4df9-86f1-4806352a3a99_0-2": "string"
       }
     ],
     "consumers": [
-      "test_pg_gen_9d873c53-a9c3-486b-b18a-4b7e0c6403e9_0/1"
+      "test_pg_gen_9d873c53-a9c3-486b-b18a-4b7e0c6403e9_0-1"
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "3_0/2"
+    "humanReadableKey": "3_0-2"
   },
   {
-    "oid": "test_pg_gen_140bb20f-cd64-4589-b54b-8830aad4e055_0/3",
+    "oid": "test_pg_gen_140bb20f-cd64-4589-b54b-8830aad4e055_0-3",
     "name": "image per freq",
     "categoryType": "Data",
     "category": "Memory",
@@ -745,22 +796,39 @@
     "group_end": "0",
     "string": "",
     "stringcopy": "",
-    "iid": "0/3",
+    "iid": "0-3",
     "lg_key": "140bb20f-cd64-4589-b54b-8830aad4e055",
+    "outputPorts": {
+      "f8b13f8f-091b-4282-9c81-237cd058252e": {
+        "type": "OutputPort",
+        "name": "stringcopy",
+        "target_id": "e9471a82-e1c0-44e2-924d-b72149fbfede"
+      }
+    },
+    "inputPorts": {
+      "add668b4-f4f1-4ea9-91fc-80e3315d0f10": {
+        "type": "InputPort",
+        "name": "string",
+        "source_id": "5d612631-5358-4df9-86f1-4806352a3a99"
+      }
+    },
+    "port_map": {
+      "string": "stringcopy"
+    },
     "producers": [
       {
-        "test_pg_gen_5d612631-5358-4df9-86f1-4806352a3a99_0/3": "string"
+        "test_pg_gen_5d612631-5358-4df9-86f1-4806352a3a99_0-3": "string"
       }
     ],
     "consumers": [
-      "test_pg_gen_9d873c53-a9c3-486b-b18a-4b7e0c6403e9_0/1"
+      "test_pg_gen_9d873c53-a9c3-486b-b18a-4b7e0c6403e9_0-1"
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "4_0/3"
+    "humanReadableKey": "4_0-3"
   },
   {
-    "oid": "test_pg_gen_5d612631-5358-4df9-86f1-4806352a3a99_0/0",
+    "oid": "test_pg_gen_5d612631-5358-4df9-86f1-4806352a3a99_0-0",
     "name": "Clean",
     "categoryType": "Application",
     "category": "BashShellApp",
@@ -966,27 +1034,41 @@
     "group_start": "0",
     "string": "",
     "stringcopy": "",
-    "iid": "0/0",
+    "iid": "0-0",
     "lg_key": "5d612631-5358-4df9-86f1-4806352a3a99",
+    "outputPorts": {
+      "1a09e9ce-6ead-4eb0-b72c-2610233bc5de": {
+        "type": "OutputPort",
+        "name": "stringcopy",
+        "target_id": "a9f42050-6358-4b35-a88f-a15f2862971f"
+      }
+    },
+    "inputPorts": {
+      "input_string": {
+        "type": "InputPort",
+        "name": "string",
+        "source_id": "d64893b7-36d3-4751-81ed-c4e99c818d62"
+      }
+    },
     "inputs": [
       {
-        "test_pg_gen_d64893b7-36d3-4751-81ed-c4e99c818d62_0/0": "string"
+        "test_pg_gen_d64893b7-36d3-4751-81ed-c4e99c818d62_0-0": "string"
       }
     ],
     "outputs": [
       {
-        "test_pg_gen_140bb20f-cd64-4589-b54b-8830aad4e055_0/0": "stringcopy"
+        "test_pg_gen_140bb20f-cd64-4589-b54b-8830aad4e055_0-0": "1a09e9ce-6ead-4eb0-b72c-2610233bc5de"
       },
       {
-        "test_pg_gen_a9f42050-6358-4b35-a88f-a15f2862971f_0/0": "stringcopy"
+        "test_pg_gen_a9f42050-6358-4b35-a88f-a15f2862971f_0-0": "stringcopy"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "5_0/0"
+    "humanReadableKey": "5_0-0"
   },
   {
-    "oid": "test_pg_gen_5d612631-5358-4df9-86f1-4806352a3a99_0/1",
+    "oid": "test_pg_gen_5d612631-5358-4df9-86f1-4806352a3a99_0-1",
     "name": "Clean",
     "categoryType": "Application",
     "category": "BashShellApp",
@@ -1192,27 +1274,41 @@
     "group_start": "0",
     "string": "",
     "stringcopy": "",
-    "iid": "0/1",
+    "iid": "0-1",
     "lg_key": "5d612631-5358-4df9-86f1-4806352a3a99",
+    "outputPorts": {
+      "1a09e9ce-6ead-4eb0-b72c-2610233bc5de": {
+        "type": "OutputPort",
+        "name": "stringcopy",
+        "target_id": "a9f42050-6358-4b35-a88f-a15f2862971f"
+      }
+    },
+    "inputPorts": {
+      "input_string": {
+        "type": "InputPort",
+        "name": "string",
+        "source_id": "d64893b7-36d3-4751-81ed-c4e99c818d62"
+      }
+    },
     "inputs": [
       {
-        "test_pg_gen_d64893b7-36d3-4751-81ed-c4e99c818d62_0/1": "string"
+        "test_pg_gen_d64893b7-36d3-4751-81ed-c4e99c818d62_0-1": "string"
       }
     ],
     "outputs": [
       {
-        "test_pg_gen_140bb20f-cd64-4589-b54b-8830aad4e055_0/1": "stringcopy"
+        "test_pg_gen_140bb20f-cd64-4589-b54b-8830aad4e055_0-1": "1a09e9ce-6ead-4eb0-b72c-2610233bc5de"
       },
       {
-        "test_pg_gen_a9f42050-6358-4b35-a88f-a15f2862971f_0/1": "stringcopy"
+        "test_pg_gen_a9f42050-6358-4b35-a88f-a15f2862971f_0-1": "stringcopy"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "6_0/1"
+    "humanReadableKey": "6_0-1"
   },
   {
-    "oid": "test_pg_gen_5d612631-5358-4df9-86f1-4806352a3a99_0/2",
+    "oid": "test_pg_gen_5d612631-5358-4df9-86f1-4806352a3a99_0-2",
     "name": "Clean",
     "categoryType": "Application",
     "category": "BashShellApp",
@@ -1418,27 +1514,41 @@
     "group_start": "0",
     "string": "",
     "stringcopy": "",
-    "iid": "0/2",
+    "iid": "0-2",
     "lg_key": "5d612631-5358-4df9-86f1-4806352a3a99",
+    "outputPorts": {
+      "1a09e9ce-6ead-4eb0-b72c-2610233bc5de": {
+        "type": "OutputPort",
+        "name": "stringcopy",
+        "target_id": "a9f42050-6358-4b35-a88f-a15f2862971f"
+      }
+    },
+    "inputPorts": {
+      "input_string": {
+        "type": "InputPort",
+        "name": "string",
+        "source_id": "d64893b7-36d3-4751-81ed-c4e99c818d62"
+      }
+    },
     "inputs": [
       {
-        "test_pg_gen_d64893b7-36d3-4751-81ed-c4e99c818d62_0/2": "string"
+        "test_pg_gen_d64893b7-36d3-4751-81ed-c4e99c818d62_0-2": "string"
       }
     ],
     "outputs": [
       {
-        "test_pg_gen_140bb20f-cd64-4589-b54b-8830aad4e055_0/2": "stringcopy"
+        "test_pg_gen_140bb20f-cd64-4589-b54b-8830aad4e055_0-2": "1a09e9ce-6ead-4eb0-b72c-2610233bc5de"
       },
       {
-        "test_pg_gen_a9f42050-6358-4b35-a88f-a15f2862971f_0/2": "stringcopy"
+        "test_pg_gen_a9f42050-6358-4b35-a88f-a15f2862971f_0-2": "stringcopy"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "7_0/2"
+    "humanReadableKey": "7_0-2"
   },
   {
-    "oid": "test_pg_gen_5d612631-5358-4df9-86f1-4806352a3a99_0/3",
+    "oid": "test_pg_gen_5d612631-5358-4df9-86f1-4806352a3a99_0-3",
     "name": "Clean",
     "categoryType": "Application",
     "category": "BashShellApp",
@@ -1644,27 +1754,41 @@
     "group_start": "0",
     "string": "",
     "stringcopy": "",
-    "iid": "0/3",
+    "iid": "0-3",
     "lg_key": "5d612631-5358-4df9-86f1-4806352a3a99",
+    "outputPorts": {
+      "1a09e9ce-6ead-4eb0-b72c-2610233bc5de": {
+        "type": "OutputPort",
+        "name": "stringcopy",
+        "target_id": "a9f42050-6358-4b35-a88f-a15f2862971f"
+      }
+    },
+    "inputPorts": {
+      "input_string": {
+        "type": "InputPort",
+        "name": "string",
+        "source_id": "d64893b7-36d3-4751-81ed-c4e99c818d62"
+      }
+    },
     "inputs": [
       {
-        "test_pg_gen_d64893b7-36d3-4751-81ed-c4e99c818d62_0/3": "string"
+        "test_pg_gen_d64893b7-36d3-4751-81ed-c4e99c818d62_0-3": "string"
       }
     ],
     "outputs": [
       {
-        "test_pg_gen_140bb20f-cd64-4589-b54b-8830aad4e055_0/3": "stringcopy"
+        "test_pg_gen_140bb20f-cd64-4589-b54b-8830aad4e055_0-3": "1a09e9ce-6ead-4eb0-b72c-2610233bc5de"
       },
       {
-        "test_pg_gen_a9f42050-6358-4b35-a88f-a15f2862971f_0/3": "stringcopy"
+        "test_pg_gen_a9f42050-6358-4b35-a88f-a15f2862971f_0-3": "stringcopy"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "8_0/3"
+    "humanReadableKey": "8_0-3"
   },
   {
-    "oid": "test_pg_gen_d64893b7-36d3-4751-81ed-c4e99c818d62_0/0",
+    "oid": "test_pg_gen_d64893b7-36d3-4751-81ed-c4e99c818d62_0-0",
     "name": "buffer",
     "categoryType": "Data",
     "category": "File",
@@ -1839,8 +1963,25 @@
     "group_end": "0",
     "string": "",
     "stringcopy": "",
-    "iid": "0/0",
+    "iid": "0-0",
     "lg_key": "d64893b7-36d3-4751-81ed-c4e99c818d62",
+    "outputPorts": {
+      "943b08ea-a790-4539-8372-5948223c14dc": {
+        "type": "OutputPort",
+        "name": "stringcopy",
+        "target_id": "5d612631-5358-4df9-86f1-4806352a3a99"
+      }
+    },
+    "inputPorts": {
+      "111b3131-57a7-4023-ab14-ca67f6eec728": {
+        "type": "InputPort",
+        "name": "string",
+        "source_id": "11083363-f766-4e45-bcf3-2f9057fe3726"
+      }
+    },
+    "port_map": {
+      "string": "array"
+    },
     "producers": [
       {
         "test_pg_gen_11083363-f766-4e45-bcf3-2f9057fe3726_0": "string"
@@ -1848,15 +1989,15 @@
     ],
     "consumers": [
       {
-        "test_pg_gen_5d612631-5358-4df9-86f1-4806352a3a99_0/0": "stringcopy"
+        "test_pg_gen_5d612631-5358-4df9-86f1-4806352a3a99_0-0": "stringcopy"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "9_0/0"
+    "humanReadableKey": "9_0-0"
   },
   {
-    "oid": "test_pg_gen_d64893b7-36d3-4751-81ed-c4e99c818d62_0/1",
+    "oid": "test_pg_gen_d64893b7-36d3-4751-81ed-c4e99c818d62_0-1",
     "name": "buffer",
     "categoryType": "Data",
     "category": "File",
@@ -2031,8 +2172,25 @@
     "group_end": "0",
     "string": "",
     "stringcopy": "",
-    "iid": "0/1",
+    "iid": "0-1",
     "lg_key": "d64893b7-36d3-4751-81ed-c4e99c818d62",
+    "outputPorts": {
+      "943b08ea-a790-4539-8372-5948223c14dc": {
+        "type": "OutputPort",
+        "name": "stringcopy",
+        "target_id": "5d612631-5358-4df9-86f1-4806352a3a99"
+      }
+    },
+    "inputPorts": {
+      "111b3131-57a7-4023-ab14-ca67f6eec728": {
+        "type": "InputPort",
+        "name": "string",
+        "source_id": "11083363-f766-4e45-bcf3-2f9057fe3726"
+      }
+    },
+    "port_map": {
+      "string": "array"
+    },
     "producers": [
       {
         "test_pg_gen_11083363-f766-4e45-bcf3-2f9057fe3726_0": "string"
@@ -2040,15 +2198,15 @@
     ],
     "consumers": [
       {
-        "test_pg_gen_5d612631-5358-4df9-86f1-4806352a3a99_0/1": "stringcopy"
+        "test_pg_gen_5d612631-5358-4df9-86f1-4806352a3a99_0-1": "stringcopy"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "10_0/1"
+    "humanReadableKey": "10_0-1"
   },
   {
-    "oid": "test_pg_gen_d64893b7-36d3-4751-81ed-c4e99c818d62_0/2",
+    "oid": "test_pg_gen_d64893b7-36d3-4751-81ed-c4e99c818d62_0-2",
     "name": "buffer",
     "categoryType": "Data",
     "category": "File",
@@ -2223,8 +2381,25 @@
     "group_end": "0",
     "string": "",
     "stringcopy": "",
-    "iid": "0/2",
+    "iid": "0-2",
     "lg_key": "d64893b7-36d3-4751-81ed-c4e99c818d62",
+    "outputPorts": {
+      "943b08ea-a790-4539-8372-5948223c14dc": {
+        "type": "OutputPort",
+        "name": "stringcopy",
+        "target_id": "5d612631-5358-4df9-86f1-4806352a3a99"
+      }
+    },
+    "inputPorts": {
+      "111b3131-57a7-4023-ab14-ca67f6eec728": {
+        "type": "InputPort",
+        "name": "string",
+        "source_id": "11083363-f766-4e45-bcf3-2f9057fe3726"
+      }
+    },
+    "port_map": {
+      "string": "array"
+    },
     "producers": [
       {
         "test_pg_gen_11083363-f766-4e45-bcf3-2f9057fe3726_0": "string"
@@ -2232,15 +2407,15 @@
     ],
     "consumers": [
       {
-        "test_pg_gen_5d612631-5358-4df9-86f1-4806352a3a99_0/2": "stringcopy"
+        "test_pg_gen_5d612631-5358-4df9-86f1-4806352a3a99_0-2": "stringcopy"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "11_0/2"
+    "humanReadableKey": "11_0-2"
   },
   {
-    "oid": "test_pg_gen_d64893b7-36d3-4751-81ed-c4e99c818d62_0/3",
+    "oid": "test_pg_gen_d64893b7-36d3-4751-81ed-c4e99c818d62_0-3",
     "name": "buffer",
     "categoryType": "Data",
     "category": "File",
@@ -2415,8 +2590,25 @@
     "group_end": "0",
     "string": "",
     "stringcopy": "",
-    "iid": "0/3",
+    "iid": "0-3",
     "lg_key": "d64893b7-36d3-4751-81ed-c4e99c818d62",
+    "outputPorts": {
+      "943b08ea-a790-4539-8372-5948223c14dc": {
+        "type": "OutputPort",
+        "name": "stringcopy",
+        "target_id": "5d612631-5358-4df9-86f1-4806352a3a99"
+      }
+    },
+    "inputPorts": {
+      "111b3131-57a7-4023-ab14-ca67f6eec728": {
+        "type": "InputPort",
+        "name": "string",
+        "source_id": "11083363-f766-4e45-bcf3-2f9057fe3726"
+      }
+    },
+    "port_map": {
+      "string": "array"
+    },
     "producers": [
       {
         "test_pg_gen_11083363-f766-4e45-bcf3-2f9057fe3726_0": "string"
@@ -2424,15 +2616,15 @@
     ],
     "consumers": [
       {
-        "test_pg_gen_5d612631-5358-4df9-86f1-4806352a3a99_0/3": "stringcopy"
+        "test_pg_gen_5d612631-5358-4df9-86f1-4806352a3a99_0-3": "stringcopy"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "12_0/3"
+    "humanReadableKey": "12_0-3"
   },
   {
-    "oid": "test_pg_gen_a9f42050-6358-4b35-a88f-a15f2862971f_0/0",
+    "oid": "test_pg_gen_a9f42050-6358-4b35-a88f-a15f2862971f_0-0",
     "name": "clean statistics",
     "categoryType": "Data",
     "category": "Memory",
@@ -2576,19 +2768,30 @@
     "data_volume": "5",
     "group_end": "0",
     "string": "",
-    "iid": "0/0",
+    "iid": "0-0",
     "lg_key": "a9f42050-6358-4b35-a88f-a15f2862971f",
+    "outputPorts": {},
+    "inputPorts": {
+      "d5653abf-b12f-4d97-ac15-d26702b20748": {
+        "type": "InputOutput",
+        "name": "string",
+        "source_id": "5d612631-5358-4df9-86f1-4806352a3a99"
+      }
+    },
+    "port_map": {
+      "string": "stringcopy"
+    },
     "producers": [
       {
-        "test_pg_gen_5d612631-5358-4df9-86f1-4806352a3a99_0/0": "string"
+        "test_pg_gen_5d612631-5358-4df9-86f1-4806352a3a99_0-0": "string"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "13_0/0"
+    "humanReadableKey": "13_0-0"
   },
   {
-    "oid": "test_pg_gen_a9f42050-6358-4b35-a88f-a15f2862971f_0/1",
+    "oid": "test_pg_gen_a9f42050-6358-4b35-a88f-a15f2862971f_0-1",
     "name": "clean statistics",
     "categoryType": "Data",
     "category": "Memory",
@@ -2732,19 +2935,30 @@
     "data_volume": "5",
     "group_end": "0",
     "string": "",
-    "iid": "0/1",
+    "iid": "0-1",
     "lg_key": "a9f42050-6358-4b35-a88f-a15f2862971f",
+    "outputPorts": {},
+    "inputPorts": {
+      "d5653abf-b12f-4d97-ac15-d26702b20748": {
+        "type": "InputOutput",
+        "name": "string",
+        "source_id": "5d612631-5358-4df9-86f1-4806352a3a99"
+      }
+    },
+    "port_map": {
+      "string": "stringcopy"
+    },
     "producers": [
       {
-        "test_pg_gen_5d612631-5358-4df9-86f1-4806352a3a99_0/1": "string"
+        "test_pg_gen_5d612631-5358-4df9-86f1-4806352a3a99_0-1": "string"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "14_0/1"
+    "humanReadableKey": "14_0-1"
   },
   {
-    "oid": "test_pg_gen_a9f42050-6358-4b35-a88f-a15f2862971f_0/2",
+    "oid": "test_pg_gen_a9f42050-6358-4b35-a88f-a15f2862971f_0-2",
     "name": "clean statistics",
     "categoryType": "Data",
     "category": "Memory",
@@ -2888,19 +3102,30 @@
     "data_volume": "5",
     "group_end": "0",
     "string": "",
-    "iid": "0/2",
+    "iid": "0-2",
     "lg_key": "a9f42050-6358-4b35-a88f-a15f2862971f",
+    "outputPorts": {},
+    "inputPorts": {
+      "d5653abf-b12f-4d97-ac15-d26702b20748": {
+        "type": "InputOutput",
+        "name": "string",
+        "source_id": "5d612631-5358-4df9-86f1-4806352a3a99"
+      }
+    },
+    "port_map": {
+      "string": "stringcopy"
+    },
     "producers": [
       {
-        "test_pg_gen_5d612631-5358-4df9-86f1-4806352a3a99_0/2": "string"
+        "test_pg_gen_5d612631-5358-4df9-86f1-4806352a3a99_0-2": "string"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "15_0/2"
+    "humanReadableKey": "15_0-2"
   },
   {
-    "oid": "test_pg_gen_a9f42050-6358-4b35-a88f-a15f2862971f_0/3",
+    "oid": "test_pg_gen_a9f42050-6358-4b35-a88f-a15f2862971f_0-3",
     "name": "clean statistics",
     "categoryType": "Data",
     "category": "Memory",
@@ -3044,16 +3269,27 @@
     "data_volume": "5",
     "group_end": "0",
     "string": "",
-    "iid": "0/3",
+    "iid": "0-3",
     "lg_key": "a9f42050-6358-4b35-a88f-a15f2862971f",
+    "outputPorts": {},
+    "inputPorts": {
+      "d5653abf-b12f-4d97-ac15-d26702b20748": {
+        "type": "InputOutput",
+        "name": "string",
+        "source_id": "5d612631-5358-4df9-86f1-4806352a3a99"
+      }
+    },
+    "port_map": {
+      "string": "stringcopy"
+    },
     "producers": [
       {
-        "test_pg_gen_5d612631-5358-4df9-86f1-4806352a3a99_0/3": "string"
+        "test_pg_gen_5d612631-5358-4df9-86f1-4806352a3a99_0-3": "string"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "16_0/3"
+    "humanReadableKey": "16_0-3"
   },
   {
     "oid": "test_pg_gen_4a136156-821a-4b29-b08b-b4f22d80d865_0",
@@ -3263,6 +3499,20 @@
     "stringcopy": "",
     "iid": "0",
     "lg_key": "4a136156-821a-4b29-b08b-b4f22d80d865",
+    "outputPorts": {
+      "2dae9a28-f783-45fc-a734-bbe56d7e176a": {
+        "type": "OutputPort",
+        "name": "stringcopy",
+        "target_id": "cb83269d-b8d4-470f-a570-06d63fa1f075"
+      }
+    },
+    "inputPorts": {
+      "49a85b2a-6535-45aa-aa1a-a0e035cc4ef2": {
+        "type": "InputPort",
+        "name": "string",
+        "source_id": ""
+      }
+    },
     "outputs": [
       {
         "test_pg_gen_cb83269d-b8d4-470f-a570-06d63fa1f075_0": "stringcopy"
@@ -3573,6 +3823,23 @@
     "stringcopy": "",
     "iid": "0",
     "lg_key": "cb83269d-b8d4-470f-a570-06d63fa1f075",
+    "outputPorts": {
+      "4b3f7c02-fdd4-4c73-953d-a2b6d6e4a3fa": {
+        "type": "OutputPort",
+        "name": "stringcopy",
+        "target_id": "11083363-f766-4e45-bcf3-2f9057fe3726"
+      }
+    },
+    "inputPorts": {
+      "fa25afa9-43a1-4383-b10f-7e8570bb41d2": {
+        "type": "InputPort",
+        "name": "string",
+        "source_id": "4a136156-821a-4b29-b08b-b4f22d80d865"
+      }
+    },
+    "port_map": {
+      "string": "stringcopy"
+    },
     "producers": [
       {
         "test_pg_gen_4a136156-821a-4b29-b08b-b4f22d80d865_0": "string"
@@ -3588,7 +3855,7 @@
     "humanReadableKey": "18_0"
   },
   {
-    "oid": "test_pg_gen_2c58a3cd-fc09-4e32-8d3d-347e2f60026f_0/0",
+    "oid": "test_pg_gen_2c58a3cd-fc09-4e32-8d3d-347e2f60026f_0-0",
     "name": "Cube",
     "categoryType": "Data",
     "category": "File",
@@ -3887,19 +4154,36 @@
     "persist": false,
     "string": "",
     "stringcopy": "",
-    "iid": "0/0",
+    "iid": "0-0",
     "lg_key": "2c58a3cd-fc09-4e32-8d3d-347e2f60026f",
+    "outputPorts": {
+      "163c2387-8e94-4859-a17e-456aa3d6126b": {
+        "type": "OutputPort",
+        "name": "stringcopy",
+        "target_id": ""
+      }
+    },
+    "inputPorts": {
+      "6539b8fc-633b-4431-9149-8625ca6cde6a": {
+        "type": "InputPort",
+        "name": "string",
+        "source_id": "d6214cc0-5545-4117-8d1a-158d0b5deaa2"
+      }
+    },
+    "port_map": {
+      "string": "stringcopy"
+    },
     "producers": [
       {
-        "test_pg_gen_d6214cc0-5545-4117-8d1a-158d0b5deaa2_0/0": "string"
+        "test_pg_gen_d6214cc0-5545-4117-8d1a-158d0b5deaa2_0-0": "string"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "19_0/0"
+    "humanReadableKey": "19_0-0"
   },
   {
-    "oid": "test_pg_gen_2c58a3cd-fc09-4e32-8d3d-347e2f60026f_0/1",
+    "oid": "test_pg_gen_2c58a3cd-fc09-4e32-8d3d-347e2f60026f_0-1",
     "name": "Cube",
     "categoryType": "Data",
     "category": "File",
@@ -4198,19 +4482,36 @@
     "persist": false,
     "string": "",
     "stringcopy": "",
-    "iid": "0/1",
+    "iid": "0-1",
     "lg_key": "2c58a3cd-fc09-4e32-8d3d-347e2f60026f",
+    "outputPorts": {
+      "163c2387-8e94-4859-a17e-456aa3d6126b": {
+        "type": "OutputPort",
+        "name": "stringcopy",
+        "target_id": ""
+      }
+    },
+    "inputPorts": {
+      "6539b8fc-633b-4431-9149-8625ca6cde6a": {
+        "type": "InputPort",
+        "name": "string",
+        "source_id": "d6214cc0-5545-4117-8d1a-158d0b5deaa2"
+      }
+    },
+    "port_map": {
+      "string": "stringcopy"
+    },
     "producers": [
       {
-        "test_pg_gen_d6214cc0-5545-4117-8d1a-158d0b5deaa2_0/1": "string"
+        "test_pg_gen_d6214cc0-5545-4117-8d1a-158d0b5deaa2_0-1": "string"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "20_0/1"
+    "humanReadableKey": "20_0-1"
   },
   {
-    "oid": "test_pg_gen_d6214cc0-5545-4117-8d1a-158d0b5deaa2_0/0",
+    "oid": "test_pg_gen_d6214cc0-5545-4117-8d1a-158d0b5deaa2_0-0",
     "name": "Clean",
     "categoryType": "Application",
     "category": "BashShellApp",
@@ -4416,27 +4717,41 @@
     "group_start": "0",
     "string": "",
     "stringcopy": "",
-    "iid": "0/0",
+    "iid": "0-0",
     "lg_key": "d6214cc0-5545-4117-8d1a-158d0b5deaa2",
+    "outputPorts": {
+      "b5711674-e0f5-41d2-9c8e-ec5f77a9e3b1": {
+        "type": "OutputPort",
+        "name": "stringcopy",
+        "target_id": "2c58a3cd-fc09-4e32-8d3d-347e2f60026f"
+      }
+    },
+    "inputPorts": {
+      "a3cb3b12-7933-4db4-8a5b-82e30ae5280a": {
+        "type": "InputPort",
+        "name": "string",
+        "source_id": "e6b86cae-8c1e-4437-8143-5400d63988d5"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_6e72719d-cb0e-45f8-bcc1-cd6339ee87ac_0/0": "stringcopy"
+        "test_pg_gen_6e72719d-cb0e-45f8-bcc1-cd6339ee87ac_0-0": "b5711674-e0f5-41d2-9c8e-ec5f77a9e3b1"
       },
       {
-        "test_pg_gen_2c58a3cd-fc09-4e32-8d3d-347e2f60026f_0/0": "stringcopy"
+        "test_pg_gen_2c58a3cd-fc09-4e32-8d3d-347e2f60026f_0-0": "stringcopy"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_e6b86cae-8c1e-4437-8143-5400d63988d5_0/0": "string"
+        "test_pg_gen_e6b86cae-8c1e-4437-8143-5400d63988d5_0-0": "string"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "21_0/0"
+    "humanReadableKey": "21_0-0"
   },
   {
-    "oid": "test_pg_gen_d6214cc0-5545-4117-8d1a-158d0b5deaa2_0/1",
+    "oid": "test_pg_gen_d6214cc0-5545-4117-8d1a-158d0b5deaa2_0-1",
     "name": "Clean",
     "categoryType": "Application",
     "category": "BashShellApp",
@@ -4642,27 +4957,41 @@
     "group_start": "0",
     "string": "",
     "stringcopy": "",
-    "iid": "0/1",
+    "iid": "0-1",
     "lg_key": "d6214cc0-5545-4117-8d1a-158d0b5deaa2",
+    "outputPorts": {
+      "b5711674-e0f5-41d2-9c8e-ec5f77a9e3b1": {
+        "type": "OutputPort",
+        "name": "stringcopy",
+        "target_id": "2c58a3cd-fc09-4e32-8d3d-347e2f60026f"
+      }
+    },
+    "inputPorts": {
+      "a3cb3b12-7933-4db4-8a5b-82e30ae5280a": {
+        "type": "InputPort",
+        "name": "string",
+        "source_id": "e6b86cae-8c1e-4437-8143-5400d63988d5"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_6e72719d-cb0e-45f8-bcc1-cd6339ee87ac_0/1": "stringcopy"
+        "test_pg_gen_6e72719d-cb0e-45f8-bcc1-cd6339ee87ac_0-1": "b5711674-e0f5-41d2-9c8e-ec5f77a9e3b1"
       },
       {
-        "test_pg_gen_2c58a3cd-fc09-4e32-8d3d-347e2f60026f_0/1": "stringcopy"
+        "test_pg_gen_2c58a3cd-fc09-4e32-8d3d-347e2f60026f_0-1": "stringcopy"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_e6b86cae-8c1e-4437-8143-5400d63988d5_0/1": "string"
+        "test_pg_gen_e6b86cae-8c1e-4437-8143-5400d63988d5_0-1": "string"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "22_0/1"
+    "humanReadableKey": "22_0-1"
   },
   {
-    "oid": "test_pg_gen_e6b86cae-8c1e-4437-8143-5400d63988d5_0/0",
+    "oid": "test_pg_gen_e6b86cae-8c1e-4437-8143-5400d63988d5_0-0",
     "name": "Enter label",
     "categoryType": "Data",
     "category": "File",
@@ -4837,24 +5166,41 @@
     "group_end": "0",
     "string": "",
     "stringcopy": "",
-    "iid": "0/0",
+    "iid": "0-0",
     "lg_key": "e6b86cae-8c1e-4437-8143-5400d63988d5",
+    "outputPorts": {
+      "5f006bcf-7463-4e0b-a0ec-46354c427cab": {
+        "type": "OutputPort",
+        "name": "stringcopy",
+        "target_id": "d6214cc0-5545-4117-8d1a-158d0b5deaa2"
+      }
+    },
+    "inputPorts": {
+      "0c408803-5d21-4f76-9f11-ee96e8a53411": {
+        "type": "InputPort",
+        "name": "string",
+        "source_id": "9d873c53-a9c3-486b-b18a-4b7e0c6403e9"
+      }
+    },
+    "port_map": {
+      "string": "array"
+    },
     "producers": [
       {
-        "test_pg_gen_9d873c53-a9c3-486b-b18a-4b7e0c6403e9_0/0": "string"
+        "test_pg_gen_9d873c53-a9c3-486b-b18a-4b7e0c6403e9_0-0": "string"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_d6214cc0-5545-4117-8d1a-158d0b5deaa2_0/0": "stringcopy"
+        "test_pg_gen_d6214cc0-5545-4117-8d1a-158d0b5deaa2_0-0": "stringcopy"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "23_0/0"
+    "humanReadableKey": "23_0-0"
   },
   {
-    "oid": "test_pg_gen_e6b86cae-8c1e-4437-8143-5400d63988d5_0/1",
+    "oid": "test_pg_gen_e6b86cae-8c1e-4437-8143-5400d63988d5_0-1",
     "name": "Enter label",
     "categoryType": "Data",
     "category": "File",
@@ -5029,24 +5375,41 @@
     "group_end": "0",
     "string": "",
     "stringcopy": "",
-    "iid": "0/1",
+    "iid": "0-1",
     "lg_key": "e6b86cae-8c1e-4437-8143-5400d63988d5",
+    "outputPorts": {
+      "5f006bcf-7463-4e0b-a0ec-46354c427cab": {
+        "type": "OutputPort",
+        "name": "stringcopy",
+        "target_id": "d6214cc0-5545-4117-8d1a-158d0b5deaa2"
+      }
+    },
+    "inputPorts": {
+      "0c408803-5d21-4f76-9f11-ee96e8a53411": {
+        "type": "InputPort",
+        "name": "string",
+        "source_id": "9d873c53-a9c3-486b-b18a-4b7e0c6403e9"
+      }
+    },
+    "port_map": {
+      "string": "array"
+    },
     "producers": [
       {
-        "test_pg_gen_9d873c53-a9c3-486b-b18a-4b7e0c6403e9_0/1": "string"
+        "test_pg_gen_9d873c53-a9c3-486b-b18a-4b7e0c6403e9_0-1": "string"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_d6214cc0-5545-4117-8d1a-158d0b5deaa2_0/1": "stringcopy"
+        "test_pg_gen_d6214cc0-5545-4117-8d1a-158d0b5deaa2_0-1": "stringcopy"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "24_0/1"
+    "humanReadableKey": "24_0-1"
   },
   {
-    "oid": "test_pg_gen_6e72719d-cb0e-45f8-bcc1-cd6339ee87ac_0/0",
+    "oid": "test_pg_gen_6e72719d-cb0e-45f8-bcc1-cd6339ee87ac_0-0",
     "name": "Enter label",
     "categoryType": "Data",
     "category": "Memory",
@@ -5221,19 +5584,36 @@
     "group_end": "0",
     "string": "",
     "stringcopy": "",
-    "iid": "0/0",
+    "iid": "0-0",
     "lg_key": "6e72719d-cb0e-45f8-bcc1-cd6339ee87ac",
+    "outputPorts": {
+      "2abc17fc-ee1f-44d1-be4d-1cf78171ba68": {
+        "type": "OutputPort",
+        "name": "stringcopy",
+        "target_id": ""
+      }
+    },
+    "inputPorts": {
+      "eda46751-ff55-48dc-9c95-67a5f3ca220d": {
+        "type": "InputPort",
+        "name": "string",
+        "source_id": "d6214cc0-5545-4117-8d1a-158d0b5deaa2"
+      }
+    },
+    "port_map": {
+      "string": "stringcopy"
+    },
     "producers": [
       {
-        "test_pg_gen_d6214cc0-5545-4117-8d1a-158d0b5deaa2_0/0": "string"
+        "test_pg_gen_d6214cc0-5545-4117-8d1a-158d0b5deaa2_0-0": "string"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "25_0/0"
+    "humanReadableKey": "25_0-0"
   },
   {
-    "oid": "test_pg_gen_6e72719d-cb0e-45f8-bcc1-cd6339ee87ac_0/1",
+    "oid": "test_pg_gen_6e72719d-cb0e-45f8-bcc1-cd6339ee87ac_0-1",
     "name": "Enter label",
     "categoryType": "Data",
     "category": "Memory",
@@ -5408,19 +5788,36 @@
     "group_end": "0",
     "string": "",
     "stringcopy": "",
-    "iid": "0/1",
+    "iid": "0-1",
     "lg_key": "6e72719d-cb0e-45f8-bcc1-cd6339ee87ac",
+    "outputPorts": {
+      "2abc17fc-ee1f-44d1-be4d-1cf78171ba68": {
+        "type": "OutputPort",
+        "name": "stringcopy",
+        "target_id": ""
+      }
+    },
+    "inputPorts": {
+      "eda46751-ff55-48dc-9c95-67a5f3ca220d": {
+        "type": "InputPort",
+        "name": "string",
+        "source_id": "d6214cc0-5545-4117-8d1a-158d0b5deaa2"
+      }
+    },
+    "port_map": {
+      "string": "stringcopy"
+    },
     "producers": [
       {
-        "test_pg_gen_d6214cc0-5545-4117-8d1a-158d0b5deaa2_0/1": "string"
+        "test_pg_gen_d6214cc0-5545-4117-8d1a-158d0b5deaa2_0-1": "string"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "26_0/1"
+    "humanReadableKey": "26_0-1"
   },
   {
-    "oid": "test_pg_gen_9d873c53-a9c3-486b-b18a-4b7e0c6403e9_0/0",
+    "oid": "test_pg_gen_9d873c53-a9c3-486b-b18a-4b7e0c6403e9_0-0",
     "name": "ImageConcat",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -5784,23 +6181,25 @@
     "array": "",
     "num_of_inputs": "2",
     "gather_axis": "frequency",
-    "iid": "0/0",
+    "iid": "0-0",
     "lg_key": "9d873c53-a9c3-486b-b18a-4b7e0c6403e9",
+    "outputPorts": {},
+    "inputPorts": {},
     "outputs": [
       {
-        "test_pg_gen_e6b86cae-8c1e-4437-8143-5400d63988d5_0/0": "array"
+        "test_pg_gen_e6b86cae-8c1e-4437-8143-5400d63988d5_0-0": "7b6b475f-3bc8-4fb8-bfd5-10ccf381a61b"
       }
     ],
     "inputs": [
-      "test_pg_gen_140bb20f-cd64-4589-b54b-8830aad4e055_0/0",
-      "test_pg_gen_140bb20f-cd64-4589-b54b-8830aad4e055_0/1"
+      "test_pg_gen_140bb20f-cd64-4589-b54b-8830aad4e055_0-0",
+      "test_pg_gen_140bb20f-cd64-4589-b54b-8830aad4e055_0-1"
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "27_0/0"
+    "humanReadableKey": "27_0-0"
   },
   {
-    "oid": "test_pg_gen_9d873c53-a9c3-486b-b18a-4b7e0c6403e9_0/1",
+    "oid": "test_pg_gen_9d873c53-a9c3-486b-b18a-4b7e0c6403e9_0-1",
     "name": "ImageConcat",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -6164,20 +6563,22 @@
     "array": "",
     "num_of_inputs": "2",
     "gather_axis": "frequency",
-    "iid": "0/1",
+    "iid": "0-1",
     "lg_key": "9d873c53-a9c3-486b-b18a-4b7e0c6403e9",
+    "outputPorts": {},
+    "inputPorts": {},
     "outputs": [
       {
-        "test_pg_gen_e6b86cae-8c1e-4437-8143-5400d63988d5_0/1": "array"
+        "test_pg_gen_e6b86cae-8c1e-4437-8143-5400d63988d5_0-1": "7b6b475f-3bc8-4fb8-bfd5-10ccf381a61b"
       }
     ],
     "inputs": [
-      "test_pg_gen_140bb20f-cd64-4589-b54b-8830aad4e055_0/2",
-      "test_pg_gen_140bb20f-cd64-4589-b54b-8830aad4e055_0/3"
+      "test_pg_gen_140bb20f-cd64-4589-b54b-8830aad4e055_0-2",
+      "test_pg_gen_140bb20f-cd64-4589-b54b-8830aad4e055_0-3"
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "28_0/1"
+    "humanReadableKey": "28_0-1"
   },
   {
     "oid": "test_pg_gen_11083363-f766-4e45-bcf3-2f9057fe3726_0",
@@ -6495,6 +6896,8 @@
     "scatter_axis": "time",
     "iid": "0",
     "lg_key": "11083363-f766-4e45-bcf3-2f9057fe3726",
+    "outputPorts": {},
+    "inputPorts": {},
     "inputs": [
       {
         "test_pg_gen_cb83269d-b8d4-470f-a570-06d63fa1f075_0": "array"
@@ -6502,16 +6905,16 @@
     ],
     "outputs": [
       {
-        "test_pg_gen_d64893b7-36d3-4751-81ed-c4e99c818d62_0/0": "array"
+        "test_pg_gen_d64893b7-36d3-4751-81ed-c4e99c818d62_0-0": "153420d8-21f9-4e39-bd9b-5ed487aa907c"
       },
       {
-        "test_pg_gen_d64893b7-36d3-4751-81ed-c4e99c818d62_0/1": "array"
+        "test_pg_gen_d64893b7-36d3-4751-81ed-c4e99c818d62_0-1": "153420d8-21f9-4e39-bd9b-5ed487aa907c"
       },
       {
-        "test_pg_gen_d64893b7-36d3-4751-81ed-c4e99c818d62_0/2": "array"
+        "test_pg_gen_d64893b7-36d3-4751-81ed-c4e99c818d62_0-2": "153420d8-21f9-4e39-bd9b-5ed487aa907c"
       },
       {
-        "test_pg_gen_d64893b7-36d3-4751-81ed-c4e99c818d62_0/3": "array"
+        "test_pg_gen_d64893b7-36d3-4751-81ed-c4e99c818d62_0-3": "153420d8-21f9-4e39-bd9b-5ed487aa907c"
       }
     ],
     "node": "10.128.0.12",

@@ -207,6 +207,14 @@
     "hello": "",
     "iid": "0",
     "lg_key": "19877332-6fd7-455c-b7b5-9e3dc90560ac",
+    "outputPorts": {
+      "09b9f140-837d-40eb-99b9-060a5559ce15": {
+        "type": "OutputPort",
+        "name": "hello",
+        "target_id": "f3ebe6e1-7f28-4f3e-aa7c-874cd40a2a24"
+      }
+    },
+    "inputPorts": {},
     "outputs": [
       {
         "test_pg_gen_f3ebe6e1-7f28-4f3e-aa7c-874cd40a2a24_0": "hello"
@@ -486,6 +494,17 @@
     "hello": "",
     "iid": "0",
     "lg_key": "f3ebe6e1-7f28-4f3e-aa7c-874cd40a2a24",
+    "outputPorts": {},
+    "inputPorts": {
+      "9bf94db3-c563-4141-8dde-20b843e3d82d": {
+        "type": "InputOutput",
+        "name": "hello",
+        "source_id": "19877332-6fd7-455c-b7b5-9e3dc90560ac"
+      }
+    },
+    "port_map": {
+      "hello": "hello"
+    },
     "producers": [
       {
         "test_pg_gen_19877332-6fd7-455c-b7b5-9e3dc90560ac_0": "hello"

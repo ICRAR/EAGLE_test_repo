@@ -176,6 +176,14 @@
     "hello": "",
     "iid": "0",
     "lg_key": "0cca28df-03d1-4e60-9422-d4ff985e5e57",
+    "outputPorts": {
+      "b845e9f8-d19c-4fc7-a073-8bcc64e086e2": {
+        "type": "OutputPort",
+        "name": "hello",
+        "target_id": "cd274ac6-7e66-4216-adc2-a13799ea46da"
+      }
+    },
+    "inputPorts": {},
     "outputs": [
       {
         "test_pg_gen_cd274ac6-7e66-4216-adc2-a13799ea46da_0": "hello"
@@ -362,6 +370,23 @@
     "data": "",
     "iid": "0",
     "lg_key": "cd274ac6-7e66-4216-adc2-a13799ea46da",
+    "outputPorts": {
+      "7c3bdeac-cb1d-4502-9ada-d7fc65344200": {
+        "type": "OutputPort",
+        "name": "data",
+        "target_id": "7e01974d-2611-4358-82e7-c7ef796de0c5"
+      }
+    },
+    "inputPorts": {
+      "a8ecb5d5-55d3-4d2e-80d4-7f019afdf179": {
+        "type": "InputPort",
+        "name": "hello",
+        "source_id": "0cca28df-03d1-4e60-9422-d4ff985e5e57"
+      }
+    },
+    "port_map": {
+      "hello": "hello"
+    },
     "producers": [
       {
         "test_pg_gen_0cca28df-03d1-4e60-9422-d4ff985e5e57_0": "hello"
@@ -559,6 +584,14 @@
     "data": "",
     "iid": "0",
     "lg_key": "6c904754-5fd8-4960-aaf6-c1af72dab142",
+    "outputPorts": {},
+    "inputPorts": {
+      "03b96b10-8f1a-4fec-b1d9-f6799146dd77": {
+        "type": "InputOutput",
+        "name": "data",
+        "source_id": "cd274ac6-7e66-4216-adc2-a13799ea46da"
+      }
+    },
     "inputs": [
       {
         "test_pg_gen_cd274ac6-7e66-4216-adc2-a13799ea46da_0": "data"
@@ -566,7 +599,7 @@
     ],
     "outputs": [
       {
-        "test_pg_gen_4c44a7b5-02d0-414a-a089-0af4394486f4_0": "data"
+        "test_pg_gen_4c44a7b5-02d0-414a-a089-0af4394486f4_0": "03b96b10-8f1a-4fec-b1d9-f6799146dd77"
       }
     ],
     "node": "10.128.0.12",
@@ -750,6 +783,14 @@
     "data": "",
     "iid": "0",
     "lg_key": "7e01974d-2611-4358-82e7-c7ef796de0c5",
+    "outputPorts": {},
+    "inputPorts": {
+      "2b5dc75a-2588-4ef2-bf5a-b2a22b32ba23": {
+        "type": "InputOutput",
+        "name": "data",
+        "source_id": "cd274ac6-7e66-4216-adc2-a13799ea46da"
+      }
+    },
     "inputs": [
       {
         "test_pg_gen_cd274ac6-7e66-4216-adc2-a13799ea46da_0": "data"
@@ -757,7 +798,7 @@
     ],
     "outputs": [
       {
-        "test_pg_gen_3779f145-e738-46b2-ac9b-cecee40811a9_0": "data"
+        "test_pg_gen_3779f145-e738-46b2-ac9b-cecee40811a9_0": "2b5dc75a-2588-4ef2-bf5a-b2a22b32ba23"
       }
     ],
     "node": "10.128.0.12",
@@ -941,6 +982,14 @@
     "data": "",
     "iid": "0",
     "lg_key": "9aa5cc70-c08b-4c99-9607-64e0436c12ce",
+    "outputPorts": {},
+    "inputPorts": {
+      "72238898-292f-4a5f-85c0-6474b810caad": {
+        "type": "InputOutput",
+        "name": "data",
+        "source_id": "cd274ac6-7e66-4216-adc2-a13799ea46da"
+      }
+    },
     "inputs": [
       {
         "test_pg_gen_cd274ac6-7e66-4216-adc2-a13799ea46da_0": "data"
@@ -948,7 +997,7 @@
     ],
     "outputs": [
       {
-        "test_pg_gen_9f1011e5-6e52-42df-810d-861ea0482747_0": "data"
+        "test_pg_gen_9f1011e5-6e52-42df-810d-861ea0482747_0": "72238898-292f-4a5f-85c0-6474b810caad"
       }
     ],
     "node": "10.128.0.12",
@@ -1101,6 +1150,17 @@
     "data": "",
     "iid": "0",
     "lg_key": "4c44a7b5-02d0-414a-a089-0af4394486f4",
+    "outputPorts": {},
+    "inputPorts": {
+      "9857a4e2-2f05-4850-bafd-24581f530e32": {
+        "type": "InputPort",
+        "name": "data",
+        "source_id": "6c904754-5fd8-4960-aaf6-c1af72dab142"
+      }
+    },
+    "port_map": {
+      "data": "data"
+    },
     "producers": [
       {
         "test_pg_gen_6c904754-5fd8-4960-aaf6-c1af72dab142_0": "data"
@@ -1256,6 +1316,17 @@
     "data": "",
     "iid": "0",
     "lg_key": "9f1011e5-6e52-42df-810d-861ea0482747",
+    "outputPorts": {},
+    "inputPorts": {
+      "b221cb23-e256-49c5-b3d2-0bc6f2b3c53a": {
+        "type": "InputPort",
+        "name": "data",
+        "source_id": "9aa5cc70-c08b-4c99-9607-64e0436c12ce"
+      }
+    },
+    "port_map": {
+      "data": "data"
+    },
     "producers": [
       {
         "test_pg_gen_9aa5cc70-c08b-4c99-9607-64e0436c12ce_0": "data"
@@ -1411,6 +1482,17 @@
     "data": "",
     "iid": "0",
     "lg_key": "3779f145-e738-46b2-ac9b-cecee40811a9",
+    "outputPorts": {},
+    "inputPorts": {
+      "9b6ec8c5-6cd9-4b0b-a52b-394b018d5bbd": {
+        "type": "InputPort",
+        "name": "data",
+        "source_id": "7e01974d-2611-4358-82e7-c7ef796de0c5"
+      }
+    },
+    "port_map": {
+      "data": "data"
+    },
     "producers": [
       {
         "test_pg_gen_7e01974d-2611-4358-82e7-c7ef796de0c5_0": "data"

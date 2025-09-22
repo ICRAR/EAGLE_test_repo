@@ -238,12 +238,29 @@
     "R-L": "",
     "iid": "0",
     "lg_key": "8b87f276-9c1e-412c-8320-99793ed18626",
+    "outputPorts": {
+      "21d922ba-1dd3-4fc5-855a-c09a56e87724": {
+        "type": "OutputPort",
+        "name": "R-L",
+        "target_id": ""
+      }
+    },
+    "inputPorts": {
+      "61b08427-f2ff-4e4d-991d-a818a562f8d0": {
+        "type": "InputPort",
+        "name": "T-B",
+        "source_id": "b9d70134-99e2-4509-8796-de67022f0319"
+      }
+    },
+    "port_map": {
+      "T-B": "T-B"
+    },
     "producers": [
       {
-        "test_pg_gen_b9d70134-99e2-4509-8796-de67022f0319_0/0": "T-B"
+        "test_pg_gen_b9d70134-99e2-4509-8796-de67022f0319_0-0": "T-B"
       },
       {
-        "test_pg_gen_b9d70134-99e2-4509-8796-de67022f0319_0/1": "T-B"
+        "test_pg_gen_b9d70134-99e2-4509-8796-de67022f0319_0-1": "T-B"
       }
     ],
     "node": "10.128.0.12",
@@ -458,18 +475,26 @@
     "B-T": "",
     "iid": "0",
     "lg_key": "638d7bd5-91ab-4946-9282-0f11156add11",
+    "outputPorts": {
+      "231c2f70-ec94-48f9-b45c-98d7e4387474": {
+        "type": "OutputPort",
+        "name": "B-T",
+        "target_id": "9bc7d378-35e1-4982-8745-6e929efd0afd"
+      }
+    },
+    "inputPorts": {},
     "consumers": [
       {
-        "test_pg_gen_9bc7d378-35e1-4982-8745-6e929efd0afd_0/0/0": "B-T"
+        "test_pg_gen_9bc7d378-35e1-4982-8745-6e929efd0afd_0-0-0": "B-T"
       },
       {
-        "test_pg_gen_9bc7d378-35e1-4982-8745-6e929efd0afd_0/0/1": "B-T"
+        "test_pg_gen_9bc7d378-35e1-4982-8745-6e929efd0afd_0-0-1": "B-T"
       },
       {
-        "test_pg_gen_9bc7d378-35e1-4982-8745-6e929efd0afd_0/1/0": "B-T"
+        "test_pg_gen_9bc7d378-35e1-4982-8745-6e929efd0afd_0-1-0": "B-T"
       },
       {
-        "test_pg_gen_9bc7d378-35e1-4982-8745-6e929efd0afd_0/1/1": "B-T"
+        "test_pg_gen_9bc7d378-35e1-4982-8745-6e929efd0afd_0-1-1": "B-T"
       }
     ],
     "node": "10.128.0.12",
@@ -477,7 +502,7 @@
     "humanReadableKey": "2_0"
   },
   {
-    "oid": "test_pg_gen_b9d70134-99e2-4509-8796-de67022f0319_0/0",
+    "oid": "test_pg_gen_b9d70134-99e2-4509-8796-de67022f0319_0-0",
     "name": "Update GSM",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -807,24 +832,46 @@
     "group_start": true,
     "execution_time": 5,
     "Group start": true,
-    "iid": "0/0",
+    "iid": "0-0",
     "lg_key": "b9d70134-99e2-4509-8796-de67022f0319",
+    "outputPorts": {
+      "d07e5093-3c2c-4361-9bd3-c16175adb70d": {
+        "type": "OutputPort",
+        "name": "T-B",
+        "target_id": "8b87f276-9c1e-412c-8320-99793ed18626"
+      }
+    },
+    "inputPorts": {
+      "c4bf8a4c-5659-45fe-834c-d0574eed41b0": {
+        "type": "InputPort",
+        "name": "Y",
+        "source_id": "e0a6c22b-7209-47d2-a764-32834e7ad78d"
+      },
+      "9de69018-44fb-4fd6-817a-7f8d7d4e695e": {
+        "type": "InputPort",
+        "name": "T-R",
+        "source_id": "1a9d7189-d4ba-4ab4-8156-36d8074acbb5"
+      }
+    },
     "outputs": [
       {
         "test_pg_gen_8b87f276-9c1e-412c-8320-99793ed18626_0": "T-B"
       }
     ],
+    "port_map": {
+      "Y": "Y"
+    },
     "producers": [
       {
-        "test_pg_gen_e0a6c22b-7209-47d2-a764-32834e7ad78d_0/0": "T-R"
+        "test_pg_gen_e0a6c22b-7209-47d2-a764-32834e7ad78d_0-0": "Y"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "3_0/0"
+    "humanReadableKey": "3_0-0"
   },
   {
-    "oid": "test_pg_gen_b9d70134-99e2-4509-8796-de67022f0319_0/1",
+    "oid": "test_pg_gen_b9d70134-99e2-4509-8796-de67022f0319_0-1",
     "name": "Update GSM",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -1154,8 +1201,27 @@
     "group_start": true,
     "execution_time": 5,
     "Group start": true,
-    "iid": "0/1",
+    "iid": "0-1",
     "lg_key": "b9d70134-99e2-4509-8796-de67022f0319",
+    "outputPorts": {
+      "d07e5093-3c2c-4361-9bd3-c16175adb70d": {
+        "type": "OutputPort",
+        "name": "T-B",
+        "target_id": "8b87f276-9c1e-412c-8320-99793ed18626"
+      }
+    },
+    "inputPorts": {
+      "c4bf8a4c-5659-45fe-834c-d0574eed41b0": {
+        "type": "InputPort",
+        "name": "Y",
+        "source_id": "e0a6c22b-7209-47d2-a764-32834e7ad78d"
+      },
+      "9de69018-44fb-4fd6-817a-7f8d7d4e695e": {
+        "type": "InputPort",
+        "name": "T-R",
+        "source_id": "1a9d7189-d4ba-4ab4-8156-36d8074acbb5"
+      }
+    },
     "outputs": [
       {
         "test_pg_gen_8b87f276-9c1e-412c-8320-99793ed18626_0": "T-B"
@@ -1163,26 +1229,29 @@
     ],
     "inputs": [
       {
-        "test_pg_gen_1a9d7189-d4ba-4ab4-8156-36d8074acbb5_0/0": "T-R"
+        "test_pg_gen_1a9d7189-d4ba-4ab4-8156-36d8074acbb5_0-0": "T-R"
       },
       {
-        "test_pg_gen_1a9d7189-d4ba-4ab4-8156-36d8074acbb5_0/0": "T-R"
+        "test_pg_gen_1a9d7189-d4ba-4ab4-8156-36d8074acbb5_0-0": "T-R"
       },
       {
-        "test_pg_gen_cc3a8d73-97b4-418c-8e56-41dec99b6016_0/0": "T-R"
+        "test_pg_gen_cc3a8d73-97b4-418c-8e56-41dec99b6016_0-0": "T-R"
       }
     ],
+    "port_map": {
+      "Y": "Y"
+    },
     "producers": [
       {
-        "test_pg_gen_e0a6c22b-7209-47d2-a764-32834e7ad78d_0/1": "T-R"
+        "test_pg_gen_e0a6c22b-7209-47d2-a764-32834e7ad78d_0-1": "Y"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "4_0/1"
+    "humanReadableKey": "4_0-1"
   },
   {
-    "oid": "test_pg_gen_8489a992-ad80-4672-80f9-6ea22169a930_0/0",
+    "oid": "test_pg_gen_8489a992-ad80-4672-80f9-6ea22169a930_0-0",
     "name": "Update LSM",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -1419,24 +1488,38 @@
     "T-L": "",
     "T-R": "",
     "execution_time": 5,
-    "iid": "0/0",
+    "iid": "0-0",
     "lg_key": "8489a992-ad80-4672-80f9-6ea22169a930",
+    "outputPorts": {
+      "31182eb8-6a63-414d-8a46-80ffba4cd33c": {
+        "type": "OutputPort",
+        "name": "T-R",
+        "target_id": "1a9d7189-d4ba-4ab4-8156-36d8074acbb5"
+      }
+    },
+    "inputPorts": {
+      "26d487a6-7fa2-4244-809e-8a977489b149": {
+        "type": "InputPort",
+        "name": "T-L",
+        "source_id": "f85a1437-35cf-4fe1-a192-12100732130e"
+      }
+    },
     "inputs": [
       {
-        "test_pg_gen_f85a1437-35cf-4fe1-a192-12100732130e_0/0": "T-L"
+        "test_pg_gen_f85a1437-35cf-4fe1-a192-12100732130e_0-0": "T-L"
       }
     ],
     "outputs": [
       {
-        "test_pg_gen_1a9d7189-d4ba-4ab4-8156-36d8074acbb5_0/0": "T-R"
+        "test_pg_gen_1a9d7189-d4ba-4ab4-8156-36d8074acbb5_0-0": "T-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "5_0/0"
+    "humanReadableKey": "5_0-0"
   },
   {
-    "oid": "test_pg_gen_8489a992-ad80-4672-80f9-6ea22169a930_0/1",
+    "oid": "test_pg_gen_8489a992-ad80-4672-80f9-6ea22169a930_0-1",
     "name": "Update LSM",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -1673,24 +1756,38 @@
     "T-L": "",
     "T-R": "",
     "execution_time": 5,
-    "iid": "0/1",
+    "iid": "0-1",
     "lg_key": "8489a992-ad80-4672-80f9-6ea22169a930",
+    "outputPorts": {
+      "31182eb8-6a63-414d-8a46-80ffba4cd33c": {
+        "type": "OutputPort",
+        "name": "T-R",
+        "target_id": "1a9d7189-d4ba-4ab4-8156-36d8074acbb5"
+      }
+    },
+    "inputPorts": {
+      "26d487a6-7fa2-4244-809e-8a977489b149": {
+        "type": "InputPort",
+        "name": "T-L",
+        "source_id": "f85a1437-35cf-4fe1-a192-12100732130e"
+      }
+    },
     "inputs": [
       {
-        "test_pg_gen_f85a1437-35cf-4fe1-a192-12100732130e_0/1": "T-L"
+        "test_pg_gen_f85a1437-35cf-4fe1-a192-12100732130e_0-1": "T-L"
       }
     ],
     "outputs": [
       {
-        "test_pg_gen_1a9d7189-d4ba-4ab4-8156-36d8074acbb5_0/1": "T-R"
+        "test_pg_gen_1a9d7189-d4ba-4ab4-8156-36d8074acbb5_0-1": "T-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "6_0/1"
+    "humanReadableKey": "6_0-1"
   },
   {
-    "oid": "test_pg_gen_2b5d6936-3e3e-4637-a441-52b28b6c1792_0/0",
+    "oid": "test_pg_gen_2b5d6936-3e3e-4637-a441-52b28b6c1792_0-0",
     "name": "Cal. Source\nFinding",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -1927,24 +2024,38 @@
     "R-B": "",
     "L-B": "",
     "execution_time": 5,
-    "iid": "0/0",
+    "iid": "0-0",
     "lg_key": "2b5d6936-3e3e-4637-a441-52b28b6c1792",
+    "outputPorts": {
+      "744fb772-a260-456d-b93e-c6d50b69f3e9": {
+        "type": "OutputPort",
+        "name": "L-B",
+        "target_id": "f85a1437-35cf-4fe1-a192-12100732130e"
+      }
+    },
+    "inputPorts": {
+      "ca9f5cc1-05ef-4bde-852a-d4516d3ed2a6": {
+        "type": "InputPort",
+        "name": "R-B",
+        "source_id": "012b37f0-91d8-472c-8968-dbbcaddd6a18"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_f85a1437-35cf-4fe1-a192-12100732130e_0/0": "L-B"
+        "test_pg_gen_f85a1437-35cf-4fe1-a192-12100732130e_0-0": "L-B"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_012b37f0-91d8-472c-8968-dbbcaddd6a18_0/0": "R-B"
+        "test_pg_gen_012b37f0-91d8-472c-8968-dbbcaddd6a18_0-0": "R-B"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "7_0/0"
+    "humanReadableKey": "7_0-0"
   },
   {
-    "oid": "test_pg_gen_2b5d6936-3e3e-4637-a441-52b28b6c1792_0/1",
+    "oid": "test_pg_gen_2b5d6936-3e3e-4637-a441-52b28b6c1792_0-1",
     "name": "Cal. Source\nFinding",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -2181,24 +2292,38 @@
     "R-B": "",
     "L-B": "",
     "execution_time": 5,
-    "iid": "0/1",
+    "iid": "0-1",
     "lg_key": "2b5d6936-3e3e-4637-a441-52b28b6c1792",
+    "outputPorts": {
+      "744fb772-a260-456d-b93e-c6d50b69f3e9": {
+        "type": "OutputPort",
+        "name": "L-B",
+        "target_id": "f85a1437-35cf-4fe1-a192-12100732130e"
+      }
+    },
+    "inputPorts": {
+      "ca9f5cc1-05ef-4bde-852a-d4516d3ed2a6": {
+        "type": "InputPort",
+        "name": "R-B",
+        "source_id": "012b37f0-91d8-472c-8968-dbbcaddd6a18"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_f85a1437-35cf-4fe1-a192-12100732130e_0/1": "L-B"
+        "test_pg_gen_f85a1437-35cf-4fe1-a192-12100732130e_0-1": "L-B"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_012b37f0-91d8-472c-8968-dbbcaddd6a18_0/1": "R-B"
+        "test_pg_gen_012b37f0-91d8-472c-8968-dbbcaddd6a18_0-1": "R-B"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "8_0/1"
+    "humanReadableKey": "8_0-1"
   },
   {
-    "oid": "test_pg_gen_e53d1b5e-8617-4315-96e4-66b826a72f29_0/0",
+    "oid": "test_pg_gen_e53d1b5e-8617-4315-96e4-66b826a72f29_0-0",
     "name": "Image Plane\nSpectral Averaging",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -2435,27 +2560,41 @@
     "B-R": "",
     "L-B": "",
     "execution_time": 5,
-    "iid": "0/0",
+    "iid": "0-0",
     "lg_key": "e53d1b5e-8617-4315-96e4-66b826a72f29",
+    "outputPorts": {
+      "fa7527b4-203a-4c16-9ff7-63984e47bcbd": {
+        "type": "OutputPort",
+        "name": "L-B",
+        "target_id": "012b37f0-91d8-472c-8968-dbbcaddd6a18"
+      }
+    },
+    "inputPorts": {
+      "12208ab6-9c66-4956-a337-f7bacddeb80b": {
+        "type": "InputPort",
+        "name": "B-R",
+        "source_id": "153018c4-7095-4744-a5a8-f43f1d1429c0"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_012b37f0-91d8-472c-8968-dbbcaddd6a18_0/0": "L-B"
+        "test_pg_gen_012b37f0-91d8-472c-8968-dbbcaddd6a18_0-0": "L-B"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0/0/0": "B-R"
+        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0-0-0": "B-R"
       },
       {
-        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0/0/1": "B-R"
+        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0-0-1": "B-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "9_0/0"
+    "humanReadableKey": "9_0-0"
   },
   {
-    "oid": "test_pg_gen_e53d1b5e-8617-4315-96e4-66b826a72f29_0/1",
+    "oid": "test_pg_gen_e53d1b5e-8617-4315-96e4-66b826a72f29_0-1",
     "name": "Image Plane\nSpectral Averaging",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -2692,27 +2831,41 @@
     "B-R": "",
     "L-B": "",
     "execution_time": 5,
-    "iid": "0/1",
+    "iid": "0-1",
     "lg_key": "e53d1b5e-8617-4315-96e4-66b826a72f29",
+    "outputPorts": {
+      "fa7527b4-203a-4c16-9ff7-63984e47bcbd": {
+        "type": "OutputPort",
+        "name": "L-B",
+        "target_id": "012b37f0-91d8-472c-8968-dbbcaddd6a18"
+      }
+    },
+    "inputPorts": {
+      "12208ab6-9c66-4956-a337-f7bacddeb80b": {
+        "type": "InputPort",
+        "name": "B-R",
+        "source_id": "153018c4-7095-4744-a5a8-f43f1d1429c0"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_012b37f0-91d8-472c-8968-dbbcaddd6a18_0/1": "L-B"
+        "test_pg_gen_012b37f0-91d8-472c-8968-dbbcaddd6a18_0-1": "L-B"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0/1/0": "B-R"
+        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0-1-0": "B-R"
       },
       {
-        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0/1/1": "B-R"
+        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0-1-1": "B-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "10_0/1"
+    "humanReadableKey": "10_0-1"
   },
   {
-    "oid": "test_pg_gen_b6ad3061-2e67-4386-a20a-feeef589f9d3_0/0",
+    "oid": "test_pg_gen_b6ad3061-2e67-4386-a20a-feeef589f9d3_0-0",
     "name": "Predict 01",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -2980,29 +3133,51 @@
     "T-R": "",
     "R-L": "",
     "execution_time": 5,
-    "iid": "0/0",
+    "iid": "0-0",
     "lg_key": "b6ad3061-2e67-4386-a20a-feeef589f9d3",
+    "outputPorts": {
+      "111fa9fb-abac-45d6-894a-21172cd453b6": {
+        "type": "OutputPort",
+        "name": "R-L",
+        "target_id": "bb45d861-d188-4dd9-8372-bc24ccc9c5cd"
+      }
+    },
+    "inputPorts": {
+      "e7704477-dd4f-4a2c-8ef2-4b8680c16310": {
+        "type": "InputPort",
+        "name": "N",
+        "source_id": "e0a6c22b-7209-47d2-a764-32834e7ad78d"
+      },
+      "aaf085ce-6bbf-4a64-9ffd-6d3fbafd3ca2": {
+        "type": "InputPort",
+        "name": "T-R",
+        "source_id": "cc3a8d73-97b4-418c-8e56-41dec99b6016"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_bb45d861-d188-4dd9-8372-bc24ccc9c5cd_0/0": "R-L"
+        "test_pg_gen_bb45d861-d188-4dd9-8372-bc24ccc9c5cd_0-0": "R-L"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_cc3a8d73-97b4-418c-8e56-41dec99b6016_0/0": "T-R"
+        "test_pg_gen_cc3a8d73-97b4-418c-8e56-41dec99b6016_0-0": "T-R"
       }
     ],
+    "port_map": {
+      "N": "N"
+    },
     "producers": [
       {
-        "test_pg_gen_e0a6c22b-7209-47d2-a764-32834e7ad78d_0/0": "T-R"
+        "test_pg_gen_e0a6c22b-7209-47d2-a764-32834e7ad78d_0-0": "N"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "11_0/0"
+    "humanReadableKey": "11_0-0"
   },
   {
-    "oid": "test_pg_gen_b6ad3061-2e67-4386-a20a-feeef589f9d3_0/1",
+    "oid": "test_pg_gen_b6ad3061-2e67-4386-a20a-feeef589f9d3_0-1",
     "name": "Predict 01",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -3270,29 +3445,51 @@
     "T-R": "",
     "R-L": "",
     "execution_time": 5,
-    "iid": "0/1",
+    "iid": "0-1",
     "lg_key": "b6ad3061-2e67-4386-a20a-feeef589f9d3",
+    "outputPorts": {
+      "111fa9fb-abac-45d6-894a-21172cd453b6": {
+        "type": "OutputPort",
+        "name": "R-L",
+        "target_id": "bb45d861-d188-4dd9-8372-bc24ccc9c5cd"
+      }
+    },
+    "inputPorts": {
+      "e7704477-dd4f-4a2c-8ef2-4b8680c16310": {
+        "type": "InputPort",
+        "name": "N",
+        "source_id": "e0a6c22b-7209-47d2-a764-32834e7ad78d"
+      },
+      "aaf085ce-6bbf-4a64-9ffd-6d3fbafd3ca2": {
+        "type": "InputPort",
+        "name": "T-R",
+        "source_id": "cc3a8d73-97b4-418c-8e56-41dec99b6016"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_bb45d861-d188-4dd9-8372-bc24ccc9c5cd_0/1": "R-L"
+        "test_pg_gen_bb45d861-d188-4dd9-8372-bc24ccc9c5cd_0-1": "R-L"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_cc3a8d73-97b4-418c-8e56-41dec99b6016_0/1": "T-R"
+        "test_pg_gen_cc3a8d73-97b4-418c-8e56-41dec99b6016_0-1": "T-R"
       }
     ],
+    "port_map": {
+      "N": "N"
+    },
     "producers": [
       {
-        "test_pg_gen_e0a6c22b-7209-47d2-a764-32834e7ad78d_0/1": "T-R"
+        "test_pg_gen_e0a6c22b-7209-47d2-a764-32834e7ad78d_0-1": "N"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "12_0/1"
+    "humanReadableKey": "12_0-1"
   },
   {
-    "oid": "test_pg_gen_bd2271bf-ca18-4486-9070-538a263cf2a2_0/0",
+    "oid": "test_pg_gen_bd2271bf-ca18-4486-9070-538a263cf2a2_0-0",
     "name": "Solve",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -3591,27 +3788,51 @@
     "L-R": "",
     "execution_time": 5,
     "dummy": "~param1",
-    "iid": "0/0",
+    "iid": "0-0",
     "lg_key": "bd2271bf-ca18-4486-9070-538a263cf2a2",
+    "outputPorts": {
+      "39fe655c-5a60-4f94-8e28-abfb010ea9aa": {
+        "type": "OutputPort",
+        "name": "R-B",
+        "target_id": "466bf500-2a45-4b58-91b1-faf43f83f8a8"
+      },
+      "784969a8-4f6a-4f0e-9c89-b86c1a4e96bd": {
+        "type": "OutputPort",
+        "name": "L-R",
+        "target_id": "843a6cb9-53b6-4fef-82a0-90461d70baa5"
+      },
+      "caae2b87-66d8-4ae1-af1f-a62702629919": {
+        "type": "OutputPort",
+        "name": "dummy",
+        "target_id": ""
+      }
+    },
+    "inputPorts": {
+      "5f158f20-87b0-4045-a575-2db8f14900db": {
+        "type": "InputPort",
+        "name": "R-T",
+        "source_id": "bb45d861-d188-4dd9-8372-bc24ccc9c5cd"
+      }
+    },
     "inputs": [
       {
-        "test_pg_gen_bb45d861-d188-4dd9-8372-bc24ccc9c5cd_0/0": "R-T"
+        "test_pg_gen_bb45d861-d188-4dd9-8372-bc24ccc9c5cd_0-0": "R-T"
       }
     ],
     "outputs": [
       {
-        "test_pg_gen_466bf500-2a45-4b58-91b1-faf43f83f8a8_0/0": "R-B"
+        "test_pg_gen_466bf500-2a45-4b58-91b1-faf43f83f8a8_0-0": "R-B"
       },
       {
-        "test_pg_gen_843a6cb9-53b6-4fef-82a0-90461d70baa5_0/0": "L-R"
+        "test_pg_gen_843a6cb9-53b6-4fef-82a0-90461d70baa5_0-0": "L-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "13_0/0"
+    "humanReadableKey": "13_0-0"
   },
   {
-    "oid": "test_pg_gen_bd2271bf-ca18-4486-9070-538a263cf2a2_0/1",
+    "oid": "test_pg_gen_bd2271bf-ca18-4486-9070-538a263cf2a2_0-1",
     "name": "Solve",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -3910,27 +4131,51 @@
     "L-R": "",
     "execution_time": 5,
     "dummy": "~param1",
-    "iid": "0/1",
+    "iid": "0-1",
     "lg_key": "bd2271bf-ca18-4486-9070-538a263cf2a2",
+    "outputPorts": {
+      "39fe655c-5a60-4f94-8e28-abfb010ea9aa": {
+        "type": "OutputPort",
+        "name": "R-B",
+        "target_id": "466bf500-2a45-4b58-91b1-faf43f83f8a8"
+      },
+      "784969a8-4f6a-4f0e-9c89-b86c1a4e96bd": {
+        "type": "OutputPort",
+        "name": "L-R",
+        "target_id": "843a6cb9-53b6-4fef-82a0-90461d70baa5"
+      },
+      "caae2b87-66d8-4ae1-af1f-a62702629919": {
+        "type": "OutputPort",
+        "name": "dummy",
+        "target_id": ""
+      }
+    },
+    "inputPorts": {
+      "5f158f20-87b0-4045-a575-2db8f14900db": {
+        "type": "InputPort",
+        "name": "R-T",
+        "source_id": "bb45d861-d188-4dd9-8372-bc24ccc9c5cd"
+      }
+    },
     "inputs": [
       {
-        "test_pg_gen_bb45d861-d188-4dd9-8372-bc24ccc9c5cd_0/1": "R-T"
+        "test_pg_gen_bb45d861-d188-4dd9-8372-bc24ccc9c5cd_0-1": "R-T"
       }
     ],
     "outputs": [
       {
-        "test_pg_gen_466bf500-2a45-4b58-91b1-faf43f83f8a8_0/1": "R-B"
+        "test_pg_gen_466bf500-2a45-4b58-91b1-faf43f83f8a8_0-1": "R-B"
       },
       {
-        "test_pg_gen_843a6cb9-53b6-4fef-82a0-90461d70baa5_0/1": "L-R"
+        "test_pg_gen_843a6cb9-53b6-4fef-82a0-90461d70baa5_0-1": "L-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "14_0/1"
+    "humanReadableKey": "14_0-1"
   },
   {
-    "oid": "test_pg_gen_94951d2d-47f2-4481-961d-304f7de7d200_0/0",
+    "oid": "test_pg_gen_94951d2d-47f2-4481-961d-304f7de7d200_0-0",
     "name": "Correct",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -4167,24 +4412,38 @@
     "R-T": "",
     "R-B": "",
     "execution_time": 5,
-    "iid": "0/0",
+    "iid": "0-0",
     "lg_key": "94951d2d-47f2-4481-961d-304f7de7d200",
+    "outputPorts": {
+      "9618cbde-55b5-49a0-9039-1dda60844834": {
+        "type": "OutputPort",
+        "name": "R-B",
+        "target_id": "25512f0f-6cdd-4688-8d71-38f65e3c26f3"
+      }
+    },
+    "inputPorts": {
+      "f5b8efc6-eda3-4f05-9794-d27480d30e11": {
+        "type": "InputPort",
+        "name": "R-T",
+        "source_id": "466bf500-2a45-4b58-91b1-faf43f83f8a8"
+      }
+    },
     "inputs": [
       {
-        "test_pg_gen_466bf500-2a45-4b58-91b1-faf43f83f8a8_0/0": "R-T"
+        "test_pg_gen_466bf500-2a45-4b58-91b1-faf43f83f8a8_0-0": "R-T"
       }
     ],
     "outputs": [
       {
-        "test_pg_gen_25512f0f-6cdd-4688-8d71-38f65e3c26f3_0/0": "R-B"
+        "test_pg_gen_25512f0f-6cdd-4688-8d71-38f65e3c26f3_0-0": "R-B"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "15_0/0"
+    "humanReadableKey": "15_0-0"
   },
   {
-    "oid": "test_pg_gen_94951d2d-47f2-4481-961d-304f7de7d200_0/1",
+    "oid": "test_pg_gen_94951d2d-47f2-4481-961d-304f7de7d200_0-1",
     "name": "Correct",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -4421,24 +4680,38 @@
     "R-T": "",
     "R-B": "",
     "execution_time": 5,
-    "iid": "0/1",
+    "iid": "0-1",
     "lg_key": "94951d2d-47f2-4481-961d-304f7de7d200",
+    "outputPorts": {
+      "9618cbde-55b5-49a0-9039-1dda60844834": {
+        "type": "OutputPort",
+        "name": "R-B",
+        "target_id": "25512f0f-6cdd-4688-8d71-38f65e3c26f3"
+      }
+    },
+    "inputPorts": {
+      "f5b8efc6-eda3-4f05-9794-d27480d30e11": {
+        "type": "InputPort",
+        "name": "R-T",
+        "source_id": "466bf500-2a45-4b58-91b1-faf43f83f8a8"
+      }
+    },
     "inputs": [
       {
-        "test_pg_gen_466bf500-2a45-4b58-91b1-faf43f83f8a8_0/1": "R-T"
+        "test_pg_gen_466bf500-2a45-4b58-91b1-faf43f83f8a8_0-1": "R-T"
       }
     ],
     "outputs": [
       {
-        "test_pg_gen_25512f0f-6cdd-4688-8d71-38f65e3c26f3_0/1": "R-B"
+        "test_pg_gen_25512f0f-6cdd-4688-8d71-38f65e3c26f3_0-1": "R-B"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "16_0/1"
+    "humanReadableKey": "16_0-1"
   },
   {
-    "oid": "test_pg_gen_266503ff-d987-4f17-8f21-005f87b9c586_0/0",
+    "oid": "test_pg_gen_266503ff-d987-4f17-8f21-005f87b9c586_0-0",
     "name": "Subtract",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -4706,29 +4979,51 @@
     "R-T": "",
     "R-L": "",
     "R-B": "",
-    "iid": "0/0",
+    "iid": "0-0",
     "lg_key": "266503ff-d987-4f17-8f21-005f87b9c586",
+    "outputPorts": {
+      "e756c5fe-f73a-493c-bd3d-39f42177625b": {
+        "type": "OutputPort",
+        "name": "R-B",
+        "target_id": "bba893d1-18e6-401d-85de-3cd73af2536b"
+      }
+    },
+    "inputPorts": {
+      "1d93ade2-607f-4d83-ae46-c5893785bf5d": {
+        "type": "InputPort",
+        "name": "R-T",
+        "source_id": "f29b1462-5764-49c6-8d19-67c46effe670"
+      },
+      "e9a0eba8-74b6-4194-a000-ad99477be36e": {
+        "type": "InputPort",
+        "name": "R-L",
+        "source_id": "25512f0f-6cdd-4688-8d71-38f65e3c26f3"
+      }
+    },
+    "port_map": {
+      "R-T": "R-T"
+    },
     "producers": [
       {
-        "test_pg_gen_f29b1462-5764-49c6-8d19-67c46effe670_0/0": "R-L"
+        "test_pg_gen_f29b1462-5764-49c6-8d19-67c46effe670_0-0": "R-T"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_25512f0f-6cdd-4688-8d71-38f65e3c26f3_0/0": "R-L"
+        "test_pg_gen_25512f0f-6cdd-4688-8d71-38f65e3c26f3_0-0": "R-L"
       }
     ],
     "outputs": [
       {
-        "test_pg_gen_bba893d1-18e6-401d-85de-3cd73af2536b_0/0": "R-B"
+        "test_pg_gen_bba893d1-18e6-401d-85de-3cd73af2536b_0-0": "R-B"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "17_0/0"
+    "humanReadableKey": "17_0-0"
   },
   {
-    "oid": "test_pg_gen_266503ff-d987-4f17-8f21-005f87b9c586_0/1",
+    "oid": "test_pg_gen_266503ff-d987-4f17-8f21-005f87b9c586_0-1",
     "name": "Subtract",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -4996,29 +5291,51 @@
     "R-T": "",
     "R-L": "",
     "R-B": "",
-    "iid": "0/1",
+    "iid": "0-1",
     "lg_key": "266503ff-d987-4f17-8f21-005f87b9c586",
+    "outputPorts": {
+      "e756c5fe-f73a-493c-bd3d-39f42177625b": {
+        "type": "OutputPort",
+        "name": "R-B",
+        "target_id": "bba893d1-18e6-401d-85de-3cd73af2536b"
+      }
+    },
+    "inputPorts": {
+      "1d93ade2-607f-4d83-ae46-c5893785bf5d": {
+        "type": "InputPort",
+        "name": "R-T",
+        "source_id": "f29b1462-5764-49c6-8d19-67c46effe670"
+      },
+      "e9a0eba8-74b6-4194-a000-ad99477be36e": {
+        "type": "InputPort",
+        "name": "R-L",
+        "source_id": "25512f0f-6cdd-4688-8d71-38f65e3c26f3"
+      }
+    },
+    "port_map": {
+      "R-T": "R-T"
+    },
     "producers": [
       {
-        "test_pg_gen_f29b1462-5764-49c6-8d19-67c46effe670_0/1": "R-L"
+        "test_pg_gen_f29b1462-5764-49c6-8d19-67c46effe670_0-1": "R-T"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_25512f0f-6cdd-4688-8d71-38f65e3c26f3_0/1": "R-L"
+        "test_pg_gen_25512f0f-6cdd-4688-8d71-38f65e3c26f3_0-1": "R-L"
       }
     ],
     "outputs": [
       {
-        "test_pg_gen_bba893d1-18e6-401d-85de-3cd73af2536b_0/1": "R-B"
+        "test_pg_gen_bba893d1-18e6-401d-85de-3cd73af2536b_0-1": "R-B"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "18_0/1"
+    "humanReadableKey": "18_0-1"
   },
   {
-    "oid": "test_pg_gen_8b7c1163-7ece-4def-a009-c4d6304b86ba_0/0",
+    "oid": "test_pg_gen_8b7c1163-7ece-4def-a009-c4d6304b86ba_0-0",
     "name": "Flag",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -5255,24 +5572,38 @@
     "R-L": "",
     "B-T": "",
     "execution_time": 1,
-    "iid": "0/0",
+    "iid": "0-0",
     "lg_key": "8b7c1163-7ece-4def-a009-c4d6304b86ba",
+    "outputPorts": {
+      "cc5799b2-5202-490f-b0af-3abfd0904d83": {
+        "type": "OutputPort",
+        "name": "B-T",
+        "target_id": "da7f9ec6-a981-42b2-8b46-40e0e3220566"
+      }
+    },
+    "inputPorts": {
+      "5ba0fd6a-37cf-45ea-8ab1-604657743cfe": {
+        "type": "InputPort",
+        "name": "R-L",
+        "source_id": "bba893d1-18e6-401d-85de-3cd73af2536b"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_da7f9ec6-a981-42b2-8b46-40e0e3220566_0/0": "B-T"
+        "test_pg_gen_da7f9ec6-a981-42b2-8b46-40e0e3220566_0-0": "B-T"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_bba893d1-18e6-401d-85de-3cd73af2536b_0/0": "R-L"
+        "test_pg_gen_bba893d1-18e6-401d-85de-3cd73af2536b_0-0": "R-L"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "19_0/0"
+    "humanReadableKey": "19_0-0"
   },
   {
-    "oid": "test_pg_gen_8b7c1163-7ece-4def-a009-c4d6304b86ba_0/1",
+    "oid": "test_pg_gen_8b7c1163-7ece-4def-a009-c4d6304b86ba_0-1",
     "name": "Flag",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -5509,24 +5840,38 @@
     "R-L": "",
     "B-T": "",
     "execution_time": 1,
-    "iid": "0/1",
+    "iid": "0-1",
     "lg_key": "8b7c1163-7ece-4def-a009-c4d6304b86ba",
+    "outputPorts": {
+      "cc5799b2-5202-490f-b0af-3abfd0904d83": {
+        "type": "OutputPort",
+        "name": "B-T",
+        "target_id": "da7f9ec6-a981-42b2-8b46-40e0e3220566"
+      }
+    },
+    "inputPorts": {
+      "5ba0fd6a-37cf-45ea-8ab1-604657743cfe": {
+        "type": "InputPort",
+        "name": "R-L",
+        "source_id": "bba893d1-18e6-401d-85de-3cd73af2536b"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_da7f9ec6-a981-42b2-8b46-40e0e3220566_0/1": "B-T"
+        "test_pg_gen_da7f9ec6-a981-42b2-8b46-40e0e3220566_0-1": "B-T"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_bba893d1-18e6-401d-85de-3cd73af2536b_0/1": "R-L"
+        "test_pg_gen_bba893d1-18e6-401d-85de-3cd73af2536b_0-1": "R-L"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "20_0/1"
+    "humanReadableKey": "20_0-1"
   },
   {
-    "oid": "test_pg_gen_843a6cb9-53b6-4fef-82a0-90461d70baa5_0/0",
+    "oid": "test_pg_gen_843a6cb9-53b6-4fef-82a0-90461d70baa5_0-0",
     "name": "Calibration\nParameters",
     "categoryType": "Data",
     "category": "Memory",
@@ -5732,27 +6077,44 @@
     "data_volume": "5",
     "L-R": "",
     "B-T": "",
-    "iid": "0/0",
+    "iid": "0-0",
     "lg_key": "843a6cb9-53b6-4fef-82a0-90461d70baa5",
+    "outputPorts": {
+      "8ef5a6fb-a003-4f68-8a50-cba09b024895": {
+        "type": "OutputPort",
+        "name": "B-T",
+        "target_id": "040bd874-761a-43f8-91a4-312f154d9947"
+      }
+    },
+    "inputPorts": {
+      "b6451ec6-1d77-4606-824e-668c943c7ea7": {
+        "type": "InputPort",
+        "name": "L-R",
+        "source_id": "bd2271bf-ca18-4486-9070-538a263cf2a2"
+      }
+    },
     "consumers": [
       {
-        "test_pg_gen_040bd874-761a-43f8-91a4-312f154d9947_0/0/0": "B-T"
+        "test_pg_gen_040bd874-761a-43f8-91a4-312f154d9947_0-0-0": "B-T"
       },
       {
-        "test_pg_gen_040bd874-761a-43f8-91a4-312f154d9947_0/0/1": "B-T"
+        "test_pg_gen_040bd874-761a-43f8-91a4-312f154d9947_0-0-1": "B-T"
       }
     ],
+    "port_map": {
+      "L-R": "L-R"
+    },
     "producers": [
       {
-        "test_pg_gen_bd2271bf-ca18-4486-9070-538a263cf2a2_0/0": "L-R"
+        "test_pg_gen_bd2271bf-ca18-4486-9070-538a263cf2a2_0-0": "L-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "21_0/0"
+    "humanReadableKey": "21_0-0"
   },
   {
-    "oid": "test_pg_gen_843a6cb9-53b6-4fef-82a0-90461d70baa5_0/1",
+    "oid": "test_pg_gen_843a6cb9-53b6-4fef-82a0-90461d70baa5_0-1",
     "name": "Calibration\nParameters",
     "categoryType": "Data",
     "category": "Memory",
@@ -5958,27 +6320,44 @@
     "data_volume": "5",
     "L-R": "",
     "B-T": "",
-    "iid": "0/1",
+    "iid": "0-1",
     "lg_key": "843a6cb9-53b6-4fef-82a0-90461d70baa5",
+    "outputPorts": {
+      "8ef5a6fb-a003-4f68-8a50-cba09b024895": {
+        "type": "OutputPort",
+        "name": "B-T",
+        "target_id": "040bd874-761a-43f8-91a4-312f154d9947"
+      }
+    },
+    "inputPorts": {
+      "b6451ec6-1d77-4606-824e-668c943c7ea7": {
+        "type": "InputPort",
+        "name": "L-R",
+        "source_id": "bd2271bf-ca18-4486-9070-538a263cf2a2"
+      }
+    },
     "consumers": [
       {
-        "test_pg_gen_040bd874-761a-43f8-91a4-312f154d9947_0/1/0": "B-T"
+        "test_pg_gen_040bd874-761a-43f8-91a4-312f154d9947_0-1-0": "B-T"
       },
       {
-        "test_pg_gen_040bd874-761a-43f8-91a4-312f154d9947_0/1/1": "B-T"
+        "test_pg_gen_040bd874-761a-43f8-91a4-312f154d9947_0-1-1": "B-T"
       }
     ],
+    "port_map": {
+      "L-R": "L-R"
+    },
     "producers": [
       {
-        "test_pg_gen_bd2271bf-ca18-4486-9070-538a263cf2a2_0/1": "L-R"
+        "test_pg_gen_bd2271bf-ca18-4486-9070-538a263cf2a2_0-1": "L-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "22_0/1"
+    "humanReadableKey": "22_0-1"
   },
   {
-    "oid": "test_pg_gen_f85a1437-35cf-4fe1-a192-12100732130e_0/0",
+    "oid": "test_pg_gen_f85a1437-35cf-4fe1-a192-12100732130e_0-0",
     "name": "Model Sources",
     "categoryType": "Data",
     "category": "Memory",
@@ -6215,24 +6594,41 @@
     "group_end": "0",
     "L-B": "",
     "T-L": "",
-    "iid": "0/0",
+    "iid": "0-0",
     "lg_key": "f85a1437-35cf-4fe1-a192-12100732130e",
+    "outputPorts": {
+      "7dffe793-27d7-4539-af9c-f2b14917e14e": {
+        "type": "OutputPort",
+        "name": "T-L",
+        "target_id": "8489a992-ad80-4672-80f9-6ea22169a930"
+      }
+    },
+    "inputPorts": {
+      "28ac6dfa-6651-45f8-98ca-dd450e07acf6": {
+        "type": "InputPort",
+        "name": "L-B",
+        "source_id": "2b5d6936-3e3e-4637-a441-52b28b6c1792"
+      }
+    },
+    "port_map": {
+      "L-B": "L-B"
+    },
     "producers": [
       {
-        "test_pg_gen_2b5d6936-3e3e-4637-a441-52b28b6c1792_0/0": "L-B"
+        "test_pg_gen_2b5d6936-3e3e-4637-a441-52b28b6c1792_0-0": "L-B"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_8489a992-ad80-4672-80f9-6ea22169a930_0/0": "T-L"
+        "test_pg_gen_8489a992-ad80-4672-80f9-6ea22169a930_0-0": "T-L"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "23_0/0"
+    "humanReadableKey": "23_0-0"
   },
   {
-    "oid": "test_pg_gen_f85a1437-35cf-4fe1-a192-12100732130e_0/1",
+    "oid": "test_pg_gen_f85a1437-35cf-4fe1-a192-12100732130e_0-1",
     "name": "Model Sources",
     "categoryType": "Data",
     "category": "Memory",
@@ -6469,24 +6865,41 @@
     "group_end": "0",
     "L-B": "",
     "T-L": "",
-    "iid": "0/1",
+    "iid": "0-1",
     "lg_key": "f85a1437-35cf-4fe1-a192-12100732130e",
+    "outputPorts": {
+      "7dffe793-27d7-4539-af9c-f2b14917e14e": {
+        "type": "OutputPort",
+        "name": "T-L",
+        "target_id": "8489a992-ad80-4672-80f9-6ea22169a930"
+      }
+    },
+    "inputPorts": {
+      "28ac6dfa-6651-45f8-98ca-dd450e07acf6": {
+        "type": "InputPort",
+        "name": "L-B",
+        "source_id": "2b5d6936-3e3e-4637-a441-52b28b6c1792"
+      }
+    },
+    "port_map": {
+      "L-B": "L-B"
+    },
     "producers": [
       {
-        "test_pg_gen_2b5d6936-3e3e-4637-a441-52b28b6c1792_0/1": "L-B"
+        "test_pg_gen_2b5d6936-3e3e-4637-a441-52b28b6c1792_0-1": "L-B"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_8489a992-ad80-4672-80f9-6ea22169a930_0/1": "T-L"
+        "test_pg_gen_8489a992-ad80-4672-80f9-6ea22169a930_0-1": "T-L"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "24_0/1"
+    "humanReadableKey": "24_0-1"
   },
   {
-    "oid": "test_pg_gen_012b37f0-91d8-472c-8968-dbbcaddd6a18_0/0",
+    "oid": "test_pg_gen_012b37f0-91d8-472c-8968-dbbcaddd6a18_0-0",
     "name": "AM-Image",
     "categoryType": "Data",
     "category": "Memory",
@@ -6723,24 +7136,41 @@
     "group_end": "0",
     "L-B": "",
     "R-B": "",
-    "iid": "0/0",
+    "iid": "0-0",
     "lg_key": "012b37f0-91d8-472c-8968-dbbcaddd6a18",
+    "outputPorts": {
+      "234f5507-f428-4d67-aa48-c1905a7d58e6": {
+        "type": "OutputPort",
+        "name": "R-B",
+        "target_id": "2b5d6936-3e3e-4637-a441-52b28b6c1792"
+      }
+    },
+    "inputPorts": {
+      "dc477069-65e3-45cd-b90d-e989be025700": {
+        "type": "InputPort",
+        "name": "L-B",
+        "source_id": "e53d1b5e-8617-4315-96e4-66b826a72f29"
+      }
+    },
+    "port_map": {
+      "L-B": "L-B"
+    },
     "producers": [
       {
-        "test_pg_gen_e53d1b5e-8617-4315-96e4-66b826a72f29_0/0": "L-B"
+        "test_pg_gen_e53d1b5e-8617-4315-96e4-66b826a72f29_0-0": "L-B"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_2b5d6936-3e3e-4637-a441-52b28b6c1792_0/0": "R-B"
+        "test_pg_gen_2b5d6936-3e3e-4637-a441-52b28b6c1792_0-0": "R-B"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "25_0/0"
+    "humanReadableKey": "25_0-0"
   },
   {
-    "oid": "test_pg_gen_012b37f0-91d8-472c-8968-dbbcaddd6a18_0/1",
+    "oid": "test_pg_gen_012b37f0-91d8-472c-8968-dbbcaddd6a18_0-1",
     "name": "AM-Image",
     "categoryType": "Data",
     "category": "Memory",
@@ -6977,24 +7407,41 @@
     "group_end": "0",
     "L-B": "",
     "R-B": "",
-    "iid": "0/1",
+    "iid": "0-1",
     "lg_key": "012b37f0-91d8-472c-8968-dbbcaddd6a18",
+    "outputPorts": {
+      "234f5507-f428-4d67-aa48-c1905a7d58e6": {
+        "type": "OutputPort",
+        "name": "R-B",
+        "target_id": "2b5d6936-3e3e-4637-a441-52b28b6c1792"
+      }
+    },
+    "inputPorts": {
+      "dc477069-65e3-45cd-b90d-e989be025700": {
+        "type": "InputPort",
+        "name": "L-B",
+        "source_id": "e53d1b5e-8617-4315-96e4-66b826a72f29"
+      }
+    },
+    "port_map": {
+      "L-B": "L-B"
+    },
     "producers": [
       {
-        "test_pg_gen_e53d1b5e-8617-4315-96e4-66b826a72f29_0/1": "L-B"
+        "test_pg_gen_e53d1b5e-8617-4315-96e4-66b826a72f29_0-1": "L-B"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_2b5d6936-3e3e-4637-a441-52b28b6c1792_0/1": "R-B"
+        "test_pg_gen_2b5d6936-3e3e-4637-a441-52b28b6c1792_0-1": "R-B"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "26_0/1"
+    "humanReadableKey": "26_0-1"
   },
   {
-    "oid": "test_pg_gen_bb45d861-d188-4dd9-8372-bc24ccc9c5cd_0/0",
+    "oid": "test_pg_gen_bb45d861-d188-4dd9-8372-bc24ccc9c5cd_0-0",
     "name": "Data",
     "categoryType": "Data",
     "category": "Memory",
@@ -7231,24 +7678,41 @@
     "group_end": "0",
     "R-L": "",
     "R-T": "",
-    "iid": "0/0",
+    "iid": "0-0",
     "lg_key": "bb45d861-d188-4dd9-8372-bc24ccc9c5cd",
+    "outputPorts": {
+      "6f9b61e3-4029-4284-b62d-9bf9adba1ec0": {
+        "type": "OutputPort",
+        "name": "R-T",
+        "target_id": "bd2271bf-ca18-4486-9070-538a263cf2a2"
+      }
+    },
+    "inputPorts": {
+      "2efa72ee-f1a7-408b-bc6e-674834c6d220": {
+        "type": "InputPort",
+        "name": "R-L",
+        "source_id": "b6ad3061-2e67-4386-a20a-feeef589f9d3"
+      }
+    },
+    "port_map": {
+      "R-L": "R-L"
+    },
     "producers": [
       {
-        "test_pg_gen_b6ad3061-2e67-4386-a20a-feeef589f9d3_0/0": "R-L"
+        "test_pg_gen_b6ad3061-2e67-4386-a20a-feeef589f9d3_0-0": "R-L"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_bd2271bf-ca18-4486-9070-538a263cf2a2_0/0": "R-T"
+        "test_pg_gen_bd2271bf-ca18-4486-9070-538a263cf2a2_0-0": "R-T"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "27_0/0"
+    "humanReadableKey": "27_0-0"
   },
   {
-    "oid": "test_pg_gen_bb45d861-d188-4dd9-8372-bc24ccc9c5cd_0/1",
+    "oid": "test_pg_gen_bb45d861-d188-4dd9-8372-bc24ccc9c5cd_0-1",
     "name": "Data",
     "categoryType": "Data",
     "category": "Memory",
@@ -7485,24 +7949,41 @@
     "group_end": "0",
     "R-L": "",
     "R-T": "",
-    "iid": "0/1",
+    "iid": "0-1",
     "lg_key": "bb45d861-d188-4dd9-8372-bc24ccc9c5cd",
+    "outputPorts": {
+      "6f9b61e3-4029-4284-b62d-9bf9adba1ec0": {
+        "type": "OutputPort",
+        "name": "R-T",
+        "target_id": "bd2271bf-ca18-4486-9070-538a263cf2a2"
+      }
+    },
+    "inputPorts": {
+      "2efa72ee-f1a7-408b-bc6e-674834c6d220": {
+        "type": "InputPort",
+        "name": "R-L",
+        "source_id": "b6ad3061-2e67-4386-a20a-feeef589f9d3"
+      }
+    },
+    "port_map": {
+      "R-L": "R-L"
+    },
     "producers": [
       {
-        "test_pg_gen_b6ad3061-2e67-4386-a20a-feeef589f9d3_0/1": "R-L"
+        "test_pg_gen_b6ad3061-2e67-4386-a20a-feeef589f9d3_0-1": "R-L"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_bd2271bf-ca18-4486-9070-538a263cf2a2_0/1": "R-T"
+        "test_pg_gen_bd2271bf-ca18-4486-9070-538a263cf2a2_0-1": "R-T"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "28_0/1"
+    "humanReadableKey": "28_0-1"
   },
   {
-    "oid": "test_pg_gen_466bf500-2a45-4b58-91b1-faf43f83f8a8_0/0",
+    "oid": "test_pg_gen_466bf500-2a45-4b58-91b1-faf43f83f8a8_0-0",
     "name": "Data",
     "categoryType": "Data",
     "category": "Memory",
@@ -7739,24 +8220,41 @@
     "group_end": "0",
     "R-B": "",
     "R-T": "",
-    "iid": "0/0",
+    "iid": "0-0",
     "lg_key": "466bf500-2a45-4b58-91b1-faf43f83f8a8",
+    "outputPorts": {
+      "23a08eff-9999-4191-98cb-93e58afb46e8": {
+        "type": "OutputPort",
+        "name": "R-T",
+        "target_id": "94951d2d-47f2-4481-961d-304f7de7d200"
+      }
+    },
+    "inputPorts": {
+      "ee2b8e94-0a86-43d9-9dde-8fd635dbf4b0": {
+        "type": "InputPort",
+        "name": "R-B",
+        "source_id": "bd2271bf-ca18-4486-9070-538a263cf2a2"
+      }
+    },
     "consumers": [
       {
-        "test_pg_gen_94951d2d-47f2-4481-961d-304f7de7d200_0/0": "R-T"
+        "test_pg_gen_94951d2d-47f2-4481-961d-304f7de7d200_0-0": "R-T"
       }
     ],
+    "port_map": {
+      "R-B": "R-B"
+    },
     "producers": [
       {
-        "test_pg_gen_bd2271bf-ca18-4486-9070-538a263cf2a2_0/0": "R-B"
+        "test_pg_gen_bd2271bf-ca18-4486-9070-538a263cf2a2_0-0": "R-B"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "29_0/0"
+    "humanReadableKey": "29_0-0"
   },
   {
-    "oid": "test_pg_gen_466bf500-2a45-4b58-91b1-faf43f83f8a8_0/1",
+    "oid": "test_pg_gen_466bf500-2a45-4b58-91b1-faf43f83f8a8_0-1",
     "name": "Data",
     "categoryType": "Data",
     "category": "Memory",
@@ -7993,24 +8491,41 @@
     "group_end": "0",
     "R-B": "",
     "R-T": "",
-    "iid": "0/1",
+    "iid": "0-1",
     "lg_key": "466bf500-2a45-4b58-91b1-faf43f83f8a8",
+    "outputPorts": {
+      "23a08eff-9999-4191-98cb-93e58afb46e8": {
+        "type": "OutputPort",
+        "name": "R-T",
+        "target_id": "94951d2d-47f2-4481-961d-304f7de7d200"
+      }
+    },
+    "inputPorts": {
+      "ee2b8e94-0a86-43d9-9dde-8fd635dbf4b0": {
+        "type": "InputPort",
+        "name": "R-B",
+        "source_id": "bd2271bf-ca18-4486-9070-538a263cf2a2"
+      }
+    },
     "consumers": [
       {
-        "test_pg_gen_94951d2d-47f2-4481-961d-304f7de7d200_0/1": "R-T"
+        "test_pg_gen_94951d2d-47f2-4481-961d-304f7de7d200_0-1": "R-T"
       }
     ],
+    "port_map": {
+      "R-B": "R-B"
+    },
     "producers": [
       {
-        "test_pg_gen_bd2271bf-ca18-4486-9070-538a263cf2a2_0/1": "R-B"
+        "test_pg_gen_bd2271bf-ca18-4486-9070-538a263cf2a2_0-1": "R-B"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "30_0/1"
+    "humanReadableKey": "30_0-1"
   },
   {
-    "oid": "test_pg_gen_25512f0f-6cdd-4688-8d71-38f65e3c26f3_0/0",
+    "oid": "test_pg_gen_25512f0f-6cdd-4688-8d71-38f65e3c26f3_0-0",
     "name": "Data",
     "categoryType": "Data",
     "category": "Memory",
@@ -8247,24 +8762,41 @@
     "group_end": "0",
     "R-B": "",
     "R-L": "",
-    "iid": "0/0",
+    "iid": "0-0",
     "lg_key": "25512f0f-6cdd-4688-8d71-38f65e3c26f3",
+    "outputPorts": {
+      "ae172a4f-d50b-4404-8401-4fef1d29c01c": {
+        "type": "OutputPort",
+        "name": "R-L",
+        "target_id": "266503ff-d987-4f17-8f21-005f87b9c586"
+      }
+    },
+    "inputPorts": {
+      "2d6163a2-e682-49ec-a9b4-421798a253f5": {
+        "type": "InputPort",
+        "name": "R-B",
+        "source_id": "94951d2d-47f2-4481-961d-304f7de7d200"
+      }
+    },
+    "port_map": {
+      "R-B": "R-B"
+    },
     "producers": [
       {
-        "test_pg_gen_94951d2d-47f2-4481-961d-304f7de7d200_0/0": "R-B"
+        "test_pg_gen_94951d2d-47f2-4481-961d-304f7de7d200_0-0": "R-B"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_266503ff-d987-4f17-8f21-005f87b9c586_0/0": "R-L"
+        "test_pg_gen_266503ff-d987-4f17-8f21-005f87b9c586_0-0": "R-L"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "31_0/0"
+    "humanReadableKey": "31_0-0"
   },
   {
-    "oid": "test_pg_gen_25512f0f-6cdd-4688-8d71-38f65e3c26f3_0/1",
+    "oid": "test_pg_gen_25512f0f-6cdd-4688-8d71-38f65e3c26f3_0-1",
     "name": "Data",
     "categoryType": "Data",
     "category": "Memory",
@@ -8501,24 +9033,41 @@
     "group_end": "0",
     "R-B": "",
     "R-L": "",
-    "iid": "0/1",
+    "iid": "0-1",
     "lg_key": "25512f0f-6cdd-4688-8d71-38f65e3c26f3",
+    "outputPorts": {
+      "ae172a4f-d50b-4404-8401-4fef1d29c01c": {
+        "type": "OutputPort",
+        "name": "R-L",
+        "target_id": "266503ff-d987-4f17-8f21-005f87b9c586"
+      }
+    },
+    "inputPorts": {
+      "2d6163a2-e682-49ec-a9b4-421798a253f5": {
+        "type": "InputPort",
+        "name": "R-B",
+        "source_id": "94951d2d-47f2-4481-961d-304f7de7d200"
+      }
+    },
+    "port_map": {
+      "R-B": "R-B"
+    },
     "producers": [
       {
-        "test_pg_gen_94951d2d-47f2-4481-961d-304f7de7d200_0/1": "R-B"
+        "test_pg_gen_94951d2d-47f2-4481-961d-304f7de7d200_0-1": "R-B"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_266503ff-d987-4f17-8f21-005f87b9c586_0/1": "R-L"
+        "test_pg_gen_266503ff-d987-4f17-8f21-005f87b9c586_0-1": "R-L"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "32_0/1"
+    "humanReadableKey": "32_0-1"
   },
   {
-    "oid": "test_pg_gen_bba893d1-18e6-401d-85de-3cd73af2536b_0/0",
+    "oid": "test_pg_gen_bba893d1-18e6-401d-85de-3cd73af2536b_0-0",
     "name": "Data",
     "categoryType": "Data",
     "category": "Memory",
@@ -8755,24 +9304,41 @@
     "group_end": "0",
     "R-B": "",
     "R-L": "",
-    "iid": "0/0",
+    "iid": "0-0",
     "lg_key": "bba893d1-18e6-401d-85de-3cd73af2536b",
+    "outputPorts": {
+      "86bf01fc-0027-430b-85a4-48ad3ad17534": {
+        "type": "OutputPort",
+        "name": "R-L",
+        "target_id": "8b7c1163-7ece-4def-a009-c4d6304b86ba"
+      }
+    },
+    "inputPorts": {
+      "da4bc3ed-6284-4462-98f5-5c373ac49208": {
+        "type": "InputPort",
+        "name": "R-B",
+        "source_id": "266503ff-d987-4f17-8f21-005f87b9c586"
+      }
+    },
+    "port_map": {
+      "R-B": "R-B"
+    },
     "producers": [
       {
-        "test_pg_gen_266503ff-d987-4f17-8f21-005f87b9c586_0/0": "R-B"
+        "test_pg_gen_266503ff-d987-4f17-8f21-005f87b9c586_0-0": "R-B"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_8b7c1163-7ece-4def-a009-c4d6304b86ba_0/0": "R-L"
+        "test_pg_gen_8b7c1163-7ece-4def-a009-c4d6304b86ba_0-0": "R-L"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "33_0/0"
+    "humanReadableKey": "33_0-0"
   },
   {
-    "oid": "test_pg_gen_bba893d1-18e6-401d-85de-3cd73af2536b_0/1",
+    "oid": "test_pg_gen_bba893d1-18e6-401d-85de-3cd73af2536b_0-1",
     "name": "Data",
     "categoryType": "Data",
     "category": "Memory",
@@ -9009,24 +9575,41 @@
     "group_end": "0",
     "R-B": "",
     "R-L": "",
-    "iid": "0/1",
+    "iid": "0-1",
     "lg_key": "bba893d1-18e6-401d-85de-3cd73af2536b",
+    "outputPorts": {
+      "86bf01fc-0027-430b-85a4-48ad3ad17534": {
+        "type": "OutputPort",
+        "name": "R-L",
+        "target_id": "8b7c1163-7ece-4def-a009-c4d6304b86ba"
+      }
+    },
+    "inputPorts": {
+      "da4bc3ed-6284-4462-98f5-5c373ac49208": {
+        "type": "InputPort",
+        "name": "R-B",
+        "source_id": "266503ff-d987-4f17-8f21-005f87b9c586"
+      }
+    },
+    "port_map": {
+      "R-B": "R-B"
+    },
     "producers": [
       {
-        "test_pg_gen_266503ff-d987-4f17-8f21-005f87b9c586_0/1": "R-B"
+        "test_pg_gen_266503ff-d987-4f17-8f21-005f87b9c586_0-1": "R-B"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_8b7c1163-7ece-4def-a009-c4d6304b86ba_0/1": "R-L"
+        "test_pg_gen_8b7c1163-7ece-4def-a009-c4d6304b86ba_0-1": "R-L"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "34_0/1"
+    "humanReadableKey": "34_0-1"
   },
   {
-    "oid": "test_pg_gen_da7f9ec6-a981-42b2-8b46-40e0e3220566_0/0",
+    "oid": "test_pg_gen_da7f9ec6-a981-42b2-8b46-40e0e3220566_0-0",
     "name": "Data",
     "categoryType": "Data",
     "category": "Memory",
@@ -9232,27 +9815,38 @@
     "data_volume": "5",
     "group_end": "0",
     "B-T": "",
-    "iid": "0/0",
+    "iid": "0-0",
     "lg_key": "da7f9ec6-a981-42b2-8b46-40e0e3220566",
+    "outputPorts": {},
+    "inputPorts": {
+      "c978d842-d5c5-41c7-a29a-f93afc926858": {
+        "type": "InputOutput",
+        "name": "B-T",
+        "source_id": "8b7c1163-7ece-4def-a009-c4d6304b86ba"
+      }
+    },
+    "port_map": {
+      "B-T": "B-T"
+    },
     "producers": [
       {
-        "test_pg_gen_8b7c1163-7ece-4def-a009-c4d6304b86ba_0/0": "B-T"
+        "test_pg_gen_8b7c1163-7ece-4def-a009-c4d6304b86ba_0-0": "B-T"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0/0/0": "B-T"
+        "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0-0-0": "B-T"
       },
       {
-        "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0/0/1": "B-T"
+        "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0-0-1": "B-T"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "35_0/0"
+    "humanReadableKey": "35_0-0"
   },
   {
-    "oid": "test_pg_gen_da7f9ec6-a981-42b2-8b46-40e0e3220566_0/1",
+    "oid": "test_pg_gen_da7f9ec6-a981-42b2-8b46-40e0e3220566_0-1",
     "name": "Data",
     "categoryType": "Data",
     "category": "Memory",
@@ -9458,27 +10052,38 @@
     "data_volume": "5",
     "group_end": "0",
     "B-T": "",
-    "iid": "0/1",
+    "iid": "0-1",
     "lg_key": "da7f9ec6-a981-42b2-8b46-40e0e3220566",
+    "outputPorts": {},
+    "inputPorts": {
+      "c978d842-d5c5-41c7-a29a-f93afc926858": {
+        "type": "InputOutput",
+        "name": "B-T",
+        "source_id": "8b7c1163-7ece-4def-a009-c4d6304b86ba"
+      }
+    },
+    "port_map": {
+      "B-T": "B-T"
+    },
     "producers": [
       {
-        "test_pg_gen_8b7c1163-7ece-4def-a009-c4d6304b86ba_0/1": "B-T"
+        "test_pg_gen_8b7c1163-7ece-4def-a009-c4d6304b86ba_0-1": "B-T"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0/1/0": "B-T"
+        "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0-1-0": "B-T"
       },
       {
-        "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0/1/1": "B-T"
+        "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0-1-1": "B-T"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "36_0/1"
+    "humanReadableKey": "36_0-1"
   },
   {
-    "oid": "test_pg_gen_f452db57-9752-438a-b574-b7cb0435d2fb_0/0/0",
+    "oid": "test_pg_gen_f452db57-9752-438a-b574-b7cb0435d2fb_0-0-0",
     "name": "iFFT",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -9490,7 +10095,7 @@
       0
     ],
     "reprodata": {},
-    "loop_ctx": "0/0",
+    "loop_ctx": "0-0",
     "weight": 5,
     "num_cpus": 1,
     "applicationArgs": {
@@ -9716,30 +10321,44 @@
     "L-R": "",
     "T-B": "",
     "execution_time": 5,
-    "iid": "0/0/0",
+    "iid": "0-0-0",
     "lg_key": "f452db57-9752-438a-b574-b7cb0435d2fb",
+    "outputPorts": {
+      "68a641b6-6e6e-4ed9-860b-b4a0e7f071ff": {
+        "type": "OutputPort",
+        "name": "T-B",
+        "target_id": "7c6fd876-933a-4df3-9c22-7394c9c543be"
+      }
+    },
+    "inputPorts": {
+      "3be3affd-fa19-4085-9a32-6d9bd07be03c": {
+        "type": "InputPort",
+        "name": "L-R",
+        "source_id": "4eeea134-e884-4df7-b4a4-fc035d398d43"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_7c6fd876-933a-4df3-9c22-7394c9c543be_0/0/0": "T-B"
+        "test_pg_gen_7c6fd876-933a-4df3-9c22-7394c9c543be_0-0-0": "T-B"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/0/0/0": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-0-0-0": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/0/0/1": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-0-0-1": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/0/0/2": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-0-0-2": "L-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "37_0/0/0"
+    "humanReadableKey": "37_0-0-0"
   },
   {
-    "oid": "test_pg_gen_f452db57-9752-438a-b574-b7cb0435d2fb_0/0/1",
+    "oid": "test_pg_gen_f452db57-9752-438a-b574-b7cb0435d2fb_0-0-1",
     "name": "iFFT",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -9751,7 +10370,7 @@
       1
     ],
     "reprodata": {},
-    "loop_ctx": "0/1",
+    "loop_ctx": "0-1",
     "weight": 5,
     "num_cpus": 1,
     "applicationArgs": {
@@ -9977,30 +10596,44 @@
     "L-R": "",
     "T-B": "",
     "execution_time": 5,
-    "iid": "0/0/1",
+    "iid": "0-0-1",
     "lg_key": "f452db57-9752-438a-b574-b7cb0435d2fb",
+    "outputPorts": {
+      "68a641b6-6e6e-4ed9-860b-b4a0e7f071ff": {
+        "type": "OutputPort",
+        "name": "T-B",
+        "target_id": "7c6fd876-933a-4df3-9c22-7394c9c543be"
+      }
+    },
+    "inputPorts": {
+      "3be3affd-fa19-4085-9a32-6d9bd07be03c": {
+        "type": "InputPort",
+        "name": "L-R",
+        "source_id": "4eeea134-e884-4df7-b4a4-fc035d398d43"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_7c6fd876-933a-4df3-9c22-7394c9c543be_0/0/1": "T-B"
+        "test_pg_gen_7c6fd876-933a-4df3-9c22-7394c9c543be_0-0-1": "T-B"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/0/1/0": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-0-1-0": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/0/1/1": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-0-1-1": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/0/1/2": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-0-1-2": "L-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "38_0/0/1"
+    "humanReadableKey": "38_0-0-1"
   },
   {
-    "oid": "test_pg_gen_f452db57-9752-438a-b574-b7cb0435d2fb_0/1/0",
+    "oid": "test_pg_gen_f452db57-9752-438a-b574-b7cb0435d2fb_0-1-0",
     "name": "iFFT",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -10012,7 +10645,7 @@
       0
     ],
     "reprodata": {},
-    "loop_ctx": "1/0",
+    "loop_ctx": "1-0",
     "weight": 5,
     "num_cpus": 1,
     "applicationArgs": {
@@ -10238,30 +10871,44 @@
     "L-R": "",
     "T-B": "",
     "execution_time": 5,
-    "iid": "0/1/0",
+    "iid": "0-1-0",
     "lg_key": "f452db57-9752-438a-b574-b7cb0435d2fb",
+    "outputPorts": {
+      "68a641b6-6e6e-4ed9-860b-b4a0e7f071ff": {
+        "type": "OutputPort",
+        "name": "T-B",
+        "target_id": "7c6fd876-933a-4df3-9c22-7394c9c543be"
+      }
+    },
+    "inputPorts": {
+      "3be3affd-fa19-4085-9a32-6d9bd07be03c": {
+        "type": "InputPort",
+        "name": "L-R",
+        "source_id": "4eeea134-e884-4df7-b4a4-fc035d398d43"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_7c6fd876-933a-4df3-9c22-7394c9c543be_0/1/0": "T-B"
+        "test_pg_gen_7c6fd876-933a-4df3-9c22-7394c9c543be_0-1-0": "T-B"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/1/0/0": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-1-0-0": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/1/0/1": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-1-0-1": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/1/0/2": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-1-0-2": "L-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "39_0/1/0"
+    "humanReadableKey": "39_0-1-0"
   },
   {
-    "oid": "test_pg_gen_f452db57-9752-438a-b574-b7cb0435d2fb_0/1/1",
+    "oid": "test_pg_gen_f452db57-9752-438a-b574-b7cb0435d2fb_0-1-1",
     "name": "iFFT",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -10273,7 +10920,7 @@
       1
     ],
     "reprodata": {},
-    "loop_ctx": "1/1",
+    "loop_ctx": "1-1",
     "weight": 5,
     "num_cpus": 1,
     "applicationArgs": {
@@ -10499,30 +11146,44 @@
     "L-R": "",
     "T-B": "",
     "execution_time": 5,
-    "iid": "0/1/1",
+    "iid": "0-1-1",
     "lg_key": "f452db57-9752-438a-b574-b7cb0435d2fb",
+    "outputPorts": {
+      "68a641b6-6e6e-4ed9-860b-b4a0e7f071ff": {
+        "type": "OutputPort",
+        "name": "T-B",
+        "target_id": "7c6fd876-933a-4df3-9c22-7394c9c543be"
+      }
+    },
+    "inputPorts": {
+      "3be3affd-fa19-4085-9a32-6d9bd07be03c": {
+        "type": "InputPort",
+        "name": "L-R",
+        "source_id": "4eeea134-e884-4df7-b4a4-fc035d398d43"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_7c6fd876-933a-4df3-9c22-7394c9c543be_0/1/1": "T-B"
+        "test_pg_gen_7c6fd876-933a-4df3-9c22-7394c9c543be_0-1-1": "T-B"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/1/1/0": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-1-1-0": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/1/1/1": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-1-1-1": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/1/1/2": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-1-1-2": "L-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "40_0/1/1"
+    "humanReadableKey": "40_0-1-1"
   },
   {
-    "oid": "test_pg_gen_040bd874-761a-43f8-91a4-312f154d9947_0/0/0",
+    "oid": "test_pg_gen_040bd874-761a-43f8-91a4-312f154d9947_0-0-0",
     "name": "deGrid",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -10534,7 +11195,7 @@
       0
     ],
     "reprodata": {},
-    "loop_ctx": "0/0",
+    "loop_ctx": "0-0",
     "weight": 5,
     "num_cpus": 1,
     "applicationArgs": {
@@ -10791,27 +11452,46 @@
     "T-L": "",
     "R-T": "",
     "execution_time": 5,
-    "iid": "0/0/0",
+    "iid": "0-0-0",
     "lg_key": "040bd874-761a-43f8-91a4-312f154d9947",
+    "outputPorts": {
+      "d9335b35-d489-46ca-acfa-206acacf2c00": {
+        "type": "OutputPort",
+        "name": "R-T",
+        "target_id": "476c080e-6670-4ce5-8e6c-16a09456d7be"
+      }
+    },
+    "inputPorts": {
+      "5fcdac19-f038-4e20-b03a-4c1a42242c30": {
+        "type": "InputPort",
+        "name": "B-T",
+        "source_id": "843a6cb9-53b6-4fef-82a0-90461d70baa5"
+      },
+      "e7cc0eec-e98f-4142-9ed7-04c62cd51753": {
+        "type": "InputPort",
+        "name": "T-L",
+        "source_id": "7c6fd876-933a-4df3-9c22-7394c9c543be"
+      }
+    },
     "inputs": [
       {
-        "test_pg_gen_843a6cb9-53b6-4fef-82a0-90461d70baa5_0/0": "B-T"
+        "test_pg_gen_843a6cb9-53b6-4fef-82a0-90461d70baa5_0-0": "B-T"
       },
       {
-        "test_pg_gen_7c6fd876-933a-4df3-9c22-7394c9c543be_0/0/0": "T-L"
+        "test_pg_gen_7c6fd876-933a-4df3-9c22-7394c9c543be_0-0-0": "T-L"
       }
     ],
     "outputs": [
       {
-        "test_pg_gen_476c080e-6670-4ce5-8e6c-16a09456d7be_0/0/0": "R-T"
+        "test_pg_gen_476c080e-6670-4ce5-8e6c-16a09456d7be_0-0-0": "R-T"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "41_0/0/0"
+    "humanReadableKey": "41_0-0-0"
   },
   {
-    "oid": "test_pg_gen_040bd874-761a-43f8-91a4-312f154d9947_0/0/1",
+    "oid": "test_pg_gen_040bd874-761a-43f8-91a4-312f154d9947_0-0-1",
     "name": "deGrid",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -10823,7 +11503,7 @@
       1
     ],
     "reprodata": {},
-    "loop_ctx": "0/1",
+    "loop_ctx": "0-1",
     "weight": 5,
     "num_cpus": 1,
     "applicationArgs": {
@@ -11080,27 +11760,46 @@
     "T-L": "",
     "R-T": "",
     "execution_time": 5,
-    "iid": "0/0/1",
+    "iid": "0-0-1",
     "lg_key": "040bd874-761a-43f8-91a4-312f154d9947",
+    "outputPorts": {
+      "d9335b35-d489-46ca-acfa-206acacf2c00": {
+        "type": "OutputPort",
+        "name": "R-T",
+        "target_id": "476c080e-6670-4ce5-8e6c-16a09456d7be"
+      }
+    },
+    "inputPorts": {
+      "5fcdac19-f038-4e20-b03a-4c1a42242c30": {
+        "type": "InputPort",
+        "name": "B-T",
+        "source_id": "843a6cb9-53b6-4fef-82a0-90461d70baa5"
+      },
+      "e7cc0eec-e98f-4142-9ed7-04c62cd51753": {
+        "type": "InputPort",
+        "name": "T-L",
+        "source_id": "7c6fd876-933a-4df3-9c22-7394c9c543be"
+      }
+    },
     "inputs": [
       {
-        "test_pg_gen_843a6cb9-53b6-4fef-82a0-90461d70baa5_0/0": "B-T"
+        "test_pg_gen_843a6cb9-53b6-4fef-82a0-90461d70baa5_0-0": "B-T"
       },
       {
-        "test_pg_gen_7c6fd876-933a-4df3-9c22-7394c9c543be_0/0/1": "T-L"
+        "test_pg_gen_7c6fd876-933a-4df3-9c22-7394c9c543be_0-0-1": "T-L"
       }
     ],
     "outputs": [
       {
-        "test_pg_gen_476c080e-6670-4ce5-8e6c-16a09456d7be_0/0/1": "R-T"
+        "test_pg_gen_476c080e-6670-4ce5-8e6c-16a09456d7be_0-0-1": "R-T"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "42_0/0/1"
+    "humanReadableKey": "42_0-0-1"
   },
   {
-    "oid": "test_pg_gen_040bd874-761a-43f8-91a4-312f154d9947_0/1/0",
+    "oid": "test_pg_gen_040bd874-761a-43f8-91a4-312f154d9947_0-1-0",
     "name": "deGrid",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -11112,7 +11811,7 @@
       0
     ],
     "reprodata": {},
-    "loop_ctx": "1/0",
+    "loop_ctx": "1-0",
     "weight": 5,
     "num_cpus": 1,
     "applicationArgs": {
@@ -11369,27 +12068,46 @@
     "T-L": "",
     "R-T": "",
     "execution_time": 5,
-    "iid": "0/1/0",
+    "iid": "0-1-0",
     "lg_key": "040bd874-761a-43f8-91a4-312f154d9947",
+    "outputPorts": {
+      "d9335b35-d489-46ca-acfa-206acacf2c00": {
+        "type": "OutputPort",
+        "name": "R-T",
+        "target_id": "476c080e-6670-4ce5-8e6c-16a09456d7be"
+      }
+    },
+    "inputPorts": {
+      "5fcdac19-f038-4e20-b03a-4c1a42242c30": {
+        "type": "InputPort",
+        "name": "B-T",
+        "source_id": "843a6cb9-53b6-4fef-82a0-90461d70baa5"
+      },
+      "e7cc0eec-e98f-4142-9ed7-04c62cd51753": {
+        "type": "InputPort",
+        "name": "T-L",
+        "source_id": "7c6fd876-933a-4df3-9c22-7394c9c543be"
+      }
+    },
     "inputs": [
       {
-        "test_pg_gen_843a6cb9-53b6-4fef-82a0-90461d70baa5_0/1": "B-T"
+        "test_pg_gen_843a6cb9-53b6-4fef-82a0-90461d70baa5_0-1": "B-T"
       },
       {
-        "test_pg_gen_7c6fd876-933a-4df3-9c22-7394c9c543be_0/1/0": "T-L"
+        "test_pg_gen_7c6fd876-933a-4df3-9c22-7394c9c543be_0-1-0": "T-L"
       }
     ],
     "outputs": [
       {
-        "test_pg_gen_476c080e-6670-4ce5-8e6c-16a09456d7be_0/1/0": "R-T"
+        "test_pg_gen_476c080e-6670-4ce5-8e6c-16a09456d7be_0-1-0": "R-T"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "43_0/1/0"
+    "humanReadableKey": "43_0-1-0"
   },
   {
-    "oid": "test_pg_gen_040bd874-761a-43f8-91a4-312f154d9947_0/1/1",
+    "oid": "test_pg_gen_040bd874-761a-43f8-91a4-312f154d9947_0-1-1",
     "name": "deGrid",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -11401,7 +12119,7 @@
       1
     ],
     "reprodata": {},
-    "loop_ctx": "1/1",
+    "loop_ctx": "1-1",
     "weight": 5,
     "num_cpus": 1,
     "applicationArgs": {
@@ -11658,27 +12376,46 @@
     "T-L": "",
     "R-T": "",
     "execution_time": 5,
-    "iid": "0/1/1",
+    "iid": "0-1-1",
     "lg_key": "040bd874-761a-43f8-91a4-312f154d9947",
+    "outputPorts": {
+      "d9335b35-d489-46ca-acfa-206acacf2c00": {
+        "type": "OutputPort",
+        "name": "R-T",
+        "target_id": "476c080e-6670-4ce5-8e6c-16a09456d7be"
+      }
+    },
+    "inputPorts": {
+      "5fcdac19-f038-4e20-b03a-4c1a42242c30": {
+        "type": "InputPort",
+        "name": "B-T",
+        "source_id": "843a6cb9-53b6-4fef-82a0-90461d70baa5"
+      },
+      "e7cc0eec-e98f-4142-9ed7-04c62cd51753": {
+        "type": "InputPort",
+        "name": "T-L",
+        "source_id": "7c6fd876-933a-4df3-9c22-7394c9c543be"
+      }
+    },
     "inputs": [
       {
-        "test_pg_gen_843a6cb9-53b6-4fef-82a0-90461d70baa5_0/1": "B-T"
+        "test_pg_gen_843a6cb9-53b6-4fef-82a0-90461d70baa5_0-1": "B-T"
       },
       {
-        "test_pg_gen_7c6fd876-933a-4df3-9c22-7394c9c543be_0/1/1": "T-L"
+        "test_pg_gen_7c6fd876-933a-4df3-9c22-7394c9c543be_0-1-1": "T-L"
       }
     ],
     "outputs": [
       {
-        "test_pg_gen_476c080e-6670-4ce5-8e6c-16a09456d7be_0/1/1": "R-T"
+        "test_pg_gen_476c080e-6670-4ce5-8e6c-16a09456d7be_0-1-1": "R-T"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "44_0/1/1"
+    "humanReadableKey": "44_0-1-1"
   },
   {
-    "oid": "test_pg_gen_9bc7d378-35e1-4982-8745-6e929efd0afd_0/0/0",
+    "oid": "test_pg_gen_9bc7d378-35e1-4982-8745-6e929efd0afd_0-0-0",
     "name": "Subtract",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -11690,7 +12427,7 @@
       0
     ],
     "reprodata": {},
-    "loop_ctx": "0/0",
+    "loop_ctx": "0-0",
     "weight": 5,
     "num_cpus": 1,
     "applicationArgs": {
@@ -11916,11 +12653,24 @@
     "B-T": "",
     "R-L": "",
     "execution_time": 5,
-    "iid": "0/0/0",
+    "iid": "0-0-0",
     "lg_key": "9bc7d378-35e1-4982-8745-6e929efd0afd",
+    "outputPorts": {},
+    "inputPorts": {
+      "9035c101-d883-4e37-ac0a-e88d7aa3b27e": {
+        "type": "InputPort",
+        "name": "B-T",
+        "source_id": "638d7bd5-91ab-4946-9282-0f11156add11"
+      },
+      "c1126fba-c38f-4d22-bb35-9a61ead4fcd8": {
+        "type": "InputOutput",
+        "name": "R-L",
+        "source_id": "476c080e-6670-4ce5-8e6c-16a09456d7be"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_2803f8e8-bcd4-4a78-8d28-2414da4a1bb0_0/0/0": "R-L"
+        "test_pg_gen_2803f8e8-bcd4-4a78-8d28-2414da4a1bb0_0-0-0": "c1126fba-c38f-4d22-bb35-9a61ead4fcd8"
       }
     ],
     "inputs": [
@@ -11928,15 +12678,15 @@
         "test_pg_gen_638d7bd5-91ab-4946-9282-0f11156add11_0": "B-T"
       },
       {
-        "test_pg_gen_476c080e-6670-4ce5-8e6c-16a09456d7be_0/0/0": "R-L"
+        "test_pg_gen_476c080e-6670-4ce5-8e6c-16a09456d7be_0-0-0": "R-L"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "45_0/0/0"
+    "humanReadableKey": "45_0-0-0"
   },
   {
-    "oid": "test_pg_gen_9bc7d378-35e1-4982-8745-6e929efd0afd_0/0/1",
+    "oid": "test_pg_gen_9bc7d378-35e1-4982-8745-6e929efd0afd_0-0-1",
     "name": "Subtract",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -11948,7 +12698,7 @@
       1
     ],
     "reprodata": {},
-    "loop_ctx": "0/1",
+    "loop_ctx": "0-1",
     "weight": 5,
     "num_cpus": 1,
     "applicationArgs": {
@@ -12174,11 +12924,24 @@
     "B-T": "",
     "R-L": "",
     "execution_time": 5,
-    "iid": "0/0/1",
+    "iid": "0-0-1",
     "lg_key": "9bc7d378-35e1-4982-8745-6e929efd0afd",
+    "outputPorts": {},
+    "inputPorts": {
+      "9035c101-d883-4e37-ac0a-e88d7aa3b27e": {
+        "type": "InputPort",
+        "name": "B-T",
+        "source_id": "638d7bd5-91ab-4946-9282-0f11156add11"
+      },
+      "c1126fba-c38f-4d22-bb35-9a61ead4fcd8": {
+        "type": "InputOutput",
+        "name": "R-L",
+        "source_id": "476c080e-6670-4ce5-8e6c-16a09456d7be"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_2803f8e8-bcd4-4a78-8d28-2414da4a1bb0_0/0/1": "R-L"
+        "test_pg_gen_2803f8e8-bcd4-4a78-8d28-2414da4a1bb0_0-0-1": "c1126fba-c38f-4d22-bb35-9a61ead4fcd8"
       }
     ],
     "inputs": [
@@ -12186,15 +12949,15 @@
         "test_pg_gen_638d7bd5-91ab-4946-9282-0f11156add11_0": "B-T"
       },
       {
-        "test_pg_gen_476c080e-6670-4ce5-8e6c-16a09456d7be_0/0/1": "R-L"
+        "test_pg_gen_476c080e-6670-4ce5-8e6c-16a09456d7be_0-0-1": "R-L"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "46_0/0/1"
+    "humanReadableKey": "46_0-0-1"
   },
   {
-    "oid": "test_pg_gen_9bc7d378-35e1-4982-8745-6e929efd0afd_0/1/0",
+    "oid": "test_pg_gen_9bc7d378-35e1-4982-8745-6e929efd0afd_0-1-0",
     "name": "Subtract",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -12206,7 +12969,7 @@
       0
     ],
     "reprodata": {},
-    "loop_ctx": "1/0",
+    "loop_ctx": "1-0",
     "weight": 5,
     "num_cpus": 1,
     "applicationArgs": {
@@ -12432,11 +13195,24 @@
     "B-T": "",
     "R-L": "",
     "execution_time": 5,
-    "iid": "0/1/0",
+    "iid": "0-1-0",
     "lg_key": "9bc7d378-35e1-4982-8745-6e929efd0afd",
+    "outputPorts": {},
+    "inputPorts": {
+      "9035c101-d883-4e37-ac0a-e88d7aa3b27e": {
+        "type": "InputPort",
+        "name": "B-T",
+        "source_id": "638d7bd5-91ab-4946-9282-0f11156add11"
+      },
+      "c1126fba-c38f-4d22-bb35-9a61ead4fcd8": {
+        "type": "InputOutput",
+        "name": "R-L",
+        "source_id": "476c080e-6670-4ce5-8e6c-16a09456d7be"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_2803f8e8-bcd4-4a78-8d28-2414da4a1bb0_0/1/0": "R-L"
+        "test_pg_gen_2803f8e8-bcd4-4a78-8d28-2414da4a1bb0_0-1-0": "c1126fba-c38f-4d22-bb35-9a61ead4fcd8"
       }
     ],
     "inputs": [
@@ -12444,15 +13220,15 @@
         "test_pg_gen_638d7bd5-91ab-4946-9282-0f11156add11_0": "B-T"
       },
       {
-        "test_pg_gen_476c080e-6670-4ce5-8e6c-16a09456d7be_0/1/0": "R-L"
+        "test_pg_gen_476c080e-6670-4ce5-8e6c-16a09456d7be_0-1-0": "R-L"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "47_0/1/0"
+    "humanReadableKey": "47_0-1-0"
   },
   {
-    "oid": "test_pg_gen_9bc7d378-35e1-4982-8745-6e929efd0afd_0/1/1",
+    "oid": "test_pg_gen_9bc7d378-35e1-4982-8745-6e929efd0afd_0-1-1",
     "name": "Subtract",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -12464,7 +13240,7 @@
       1
     ],
     "reprodata": {},
-    "loop_ctx": "1/1",
+    "loop_ctx": "1-1",
     "weight": 5,
     "num_cpus": 1,
     "applicationArgs": {
@@ -12690,11 +13466,24 @@
     "B-T": "",
     "R-L": "",
     "execution_time": 5,
-    "iid": "0/1/1",
+    "iid": "0-1-1",
     "lg_key": "9bc7d378-35e1-4982-8745-6e929efd0afd",
+    "outputPorts": {},
+    "inputPorts": {
+      "9035c101-d883-4e37-ac0a-e88d7aa3b27e": {
+        "type": "InputPort",
+        "name": "B-T",
+        "source_id": "638d7bd5-91ab-4946-9282-0f11156add11"
+      },
+      "c1126fba-c38f-4d22-bb35-9a61ead4fcd8": {
+        "type": "InputOutput",
+        "name": "R-L",
+        "source_id": "476c080e-6670-4ce5-8e6c-16a09456d7be"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_2803f8e8-bcd4-4a78-8d28-2414da4a1bb0_0/1/1": "R-L"
+        "test_pg_gen_2803f8e8-bcd4-4a78-8d28-2414da4a1bb0_0-1-1": "c1126fba-c38f-4d22-bb35-9a61ead4fcd8"
       }
     ],
     "inputs": [
@@ -12702,15 +13491,15 @@
         "test_pg_gen_638d7bd5-91ab-4946-9282-0f11156add11_0": "B-T"
       },
       {
-        "test_pg_gen_476c080e-6670-4ce5-8e6c-16a09456d7be_0/1/1": "R-L"
+        "test_pg_gen_476c080e-6670-4ce5-8e6c-16a09456d7be_0-1-1": "R-L"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "48_0/1/1"
+    "humanReadableKey": "48_0-1-1"
   },
   {
-    "oid": "test_pg_gen_c4546a4f-605f-48ba-893e-62aefb63f901_0/0/0",
+    "oid": "test_pg_gen_c4546a4f-605f-48ba-893e-62aefb63f901_0-0-0",
     "name": "Flag",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -12722,7 +13511,7 @@
       0
     ],
     "reprodata": {},
-    "loop_ctx": "0/0",
+    "loop_ctx": "0-0",
     "weight": 1,
     "num_cpus": 1,
     "applicationArgs": {
@@ -12979,24 +13768,38 @@
     "R-L": "",
     "dummy": "~param2",
     "execution_time": 1,
-    "iid": "0/0/0",
+    "iid": "0-0-0",
     "lg_key": "c4546a4f-605f-48ba-893e-62aefb63f901",
+    "outputPorts": {
+      "caae2b87-66d8-4ae1-af1f-a62702629919": {
+        "type": "OutputPort",
+        "name": "dummy",
+        "target_id": "8df028df-0620-4705-9c51-1a05b5a78af8"
+      }
+    },
+    "inputPorts": {
+      "5bfb6cc4-f4cc-4015-9650-d3bf3a39d792": {
+        "type": "InputPort",
+        "name": "T-B",
+        "source_id": "2803f8e8-bcd4-4a78-8d28-2414da4a1bb0"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_8df028df-0620-4705-9c51-1a05b5a78af8_0/0/0": "R-L"
+        "test_pg_gen_8df028df-0620-4705-9c51-1a05b5a78af8_0-0-0": "dummy"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_2803f8e8-bcd4-4a78-8d28-2414da4a1bb0_0/0/0": "T-B"
+        "test_pg_gen_2803f8e8-bcd4-4a78-8d28-2414da4a1bb0_0-0-0": "T-B"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "49_0/0/0"
+    "humanReadableKey": "49_0-0-0"
   },
   {
-    "oid": "test_pg_gen_c4546a4f-605f-48ba-893e-62aefb63f901_0/0/1",
+    "oid": "test_pg_gen_c4546a4f-605f-48ba-893e-62aefb63f901_0-0-1",
     "name": "Flag",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -13008,7 +13811,7 @@
       1
     ],
     "reprodata": {},
-    "loop_ctx": "0/1",
+    "loop_ctx": "0-1",
     "weight": 1,
     "num_cpus": 1,
     "applicationArgs": {
@@ -13265,24 +14068,38 @@
     "R-L": "",
     "dummy": "~param2",
     "execution_time": 1,
-    "iid": "0/0/1",
+    "iid": "0-0-1",
     "lg_key": "c4546a4f-605f-48ba-893e-62aefb63f901",
+    "outputPorts": {
+      "caae2b87-66d8-4ae1-af1f-a62702629919": {
+        "type": "OutputPort",
+        "name": "dummy",
+        "target_id": "8df028df-0620-4705-9c51-1a05b5a78af8"
+      }
+    },
+    "inputPorts": {
+      "5bfb6cc4-f4cc-4015-9650-d3bf3a39d792": {
+        "type": "InputPort",
+        "name": "T-B",
+        "source_id": "2803f8e8-bcd4-4a78-8d28-2414da4a1bb0"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_8df028df-0620-4705-9c51-1a05b5a78af8_0/0/1": "R-L"
+        "test_pg_gen_8df028df-0620-4705-9c51-1a05b5a78af8_0-0-1": "dummy"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_2803f8e8-bcd4-4a78-8d28-2414da4a1bb0_0/0/1": "T-B"
+        "test_pg_gen_2803f8e8-bcd4-4a78-8d28-2414da4a1bb0_0-0-1": "T-B"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "50_0/0/1"
+    "humanReadableKey": "50_0-0-1"
   },
   {
-    "oid": "test_pg_gen_c4546a4f-605f-48ba-893e-62aefb63f901_0/1/0",
+    "oid": "test_pg_gen_c4546a4f-605f-48ba-893e-62aefb63f901_0-1-0",
     "name": "Flag",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -13294,7 +14111,7 @@
       0
     ],
     "reprodata": {},
-    "loop_ctx": "1/0",
+    "loop_ctx": "1-0",
     "weight": 1,
     "num_cpus": 1,
     "applicationArgs": {
@@ -13551,24 +14368,38 @@
     "R-L": "",
     "dummy": "~param2",
     "execution_time": 1,
-    "iid": "0/1/0",
+    "iid": "0-1-0",
     "lg_key": "c4546a4f-605f-48ba-893e-62aefb63f901",
+    "outputPorts": {
+      "caae2b87-66d8-4ae1-af1f-a62702629919": {
+        "type": "OutputPort",
+        "name": "dummy",
+        "target_id": "8df028df-0620-4705-9c51-1a05b5a78af8"
+      }
+    },
+    "inputPorts": {
+      "5bfb6cc4-f4cc-4015-9650-d3bf3a39d792": {
+        "type": "InputPort",
+        "name": "T-B",
+        "source_id": "2803f8e8-bcd4-4a78-8d28-2414da4a1bb0"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_8df028df-0620-4705-9c51-1a05b5a78af8_0/1/0": "R-L"
+        "test_pg_gen_8df028df-0620-4705-9c51-1a05b5a78af8_0-1-0": "dummy"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_2803f8e8-bcd4-4a78-8d28-2414da4a1bb0_0/1/0": "T-B"
+        "test_pg_gen_2803f8e8-bcd4-4a78-8d28-2414da4a1bb0_0-1-0": "T-B"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "51_0/1/0"
+    "humanReadableKey": "51_0-1-0"
   },
   {
-    "oid": "test_pg_gen_c4546a4f-605f-48ba-893e-62aefb63f901_0/1/1",
+    "oid": "test_pg_gen_c4546a4f-605f-48ba-893e-62aefb63f901_0-1-1",
     "name": "Flag",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -13580,7 +14411,7 @@
       1
     ],
     "reprodata": {},
-    "loop_ctx": "1/1",
+    "loop_ctx": "1-1",
     "weight": 1,
     "num_cpus": 1,
     "applicationArgs": {
@@ -13837,24 +14668,38 @@
     "R-L": "",
     "dummy": "~param2",
     "execution_time": 1,
-    "iid": "0/1/1",
+    "iid": "0-1-1",
     "lg_key": "c4546a4f-605f-48ba-893e-62aefb63f901",
+    "outputPorts": {
+      "caae2b87-66d8-4ae1-af1f-a62702629919": {
+        "type": "OutputPort",
+        "name": "dummy",
+        "target_id": "8df028df-0620-4705-9c51-1a05b5a78af8"
+      }
+    },
+    "inputPorts": {
+      "5bfb6cc4-f4cc-4015-9650-d3bf3a39d792": {
+        "type": "InputPort",
+        "name": "T-B",
+        "source_id": "2803f8e8-bcd4-4a78-8d28-2414da4a1bb0"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_8df028df-0620-4705-9c51-1a05b5a78af8_0/1/1": "R-L"
+        "test_pg_gen_8df028df-0620-4705-9c51-1a05b5a78af8_0-1-1": "dummy"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_2803f8e8-bcd4-4a78-8d28-2414da4a1bb0_0/1/1": "T-B"
+        "test_pg_gen_2803f8e8-bcd4-4a78-8d28-2414da4a1bb0_0-1-1": "T-B"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "52_0/1/1"
+    "humanReadableKey": "52_0-1-1"
   },
   {
-    "oid": "test_pg_gen_c3c3e8aa-ef76-4175-87b9-9d570f52f27a_0/0/0",
+    "oid": "test_pg_gen_c3c3e8aa-ef76-4175-87b9-9d570f52f27a_0-0-0",
     "name": "FFT",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -13866,7 +14711,7 @@
       0
     ],
     "reprodata": {},
-    "loop_ctx": "0/0",
+    "loop_ctx": "0-0",
     "weight": 5,
     "num_cpus": 1,
     "applicationArgs": {
@@ -14061,24 +14906,32 @@
     "streaming": false,
     "B-T": "",
     "execution_time": 5,
-    "iid": "0/0/0",
+    "iid": "0-0-0",
     "lg_key": "c3c3e8aa-ef76-4175-87b9-9d570f52f27a",
+    "outputPorts": {},
+    "inputPorts": {
+      "eee1cc5f-6fec-4774-8baf-aeaef083d704": {
+        "type": "InputOutput",
+        "name": "B-T",
+        "source_id": "6e8e68f8-65e0-4475-9f6e-0cd7063de2ba"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0/0/0": "B-T"
+        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0-0-0": "eee1cc5f-6fec-4774-8baf-aeaef083d704"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_6e8e68f8-65e0-4475-9f6e-0cd7063de2ba_0/0/0": "B-T"
+        "test_pg_gen_6e8e68f8-65e0-4475-9f6e-0cd7063de2ba_0-0-0": "B-T"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "53_0/0/0"
+    "humanReadableKey": "53_0-0-0"
   },
   {
-    "oid": "test_pg_gen_c3c3e8aa-ef76-4175-87b9-9d570f52f27a_0/0/1",
+    "oid": "test_pg_gen_c3c3e8aa-ef76-4175-87b9-9d570f52f27a_0-0-1",
     "name": "FFT",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -14090,7 +14943,7 @@
       1
     ],
     "reprodata": {},
-    "loop_ctx": "0/1",
+    "loop_ctx": "0-1",
     "weight": 5,
     "num_cpus": 1,
     "applicationArgs": {
@@ -14285,24 +15138,32 @@
     "streaming": false,
     "B-T": "",
     "execution_time": 5,
-    "iid": "0/0/1",
+    "iid": "0-0-1",
     "lg_key": "c3c3e8aa-ef76-4175-87b9-9d570f52f27a",
+    "outputPorts": {},
+    "inputPorts": {
+      "eee1cc5f-6fec-4774-8baf-aeaef083d704": {
+        "type": "InputOutput",
+        "name": "B-T",
+        "source_id": "6e8e68f8-65e0-4475-9f6e-0cd7063de2ba"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0/0/1": "B-T"
+        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0-0-1": "eee1cc5f-6fec-4774-8baf-aeaef083d704"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_6e8e68f8-65e0-4475-9f6e-0cd7063de2ba_0/0/1": "B-T"
+        "test_pg_gen_6e8e68f8-65e0-4475-9f6e-0cd7063de2ba_0-0-1": "B-T"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "54_0/0/1"
+    "humanReadableKey": "54_0-0-1"
   },
   {
-    "oid": "test_pg_gen_c3c3e8aa-ef76-4175-87b9-9d570f52f27a_0/1/0",
+    "oid": "test_pg_gen_c3c3e8aa-ef76-4175-87b9-9d570f52f27a_0-1-0",
     "name": "FFT",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -14314,7 +15175,7 @@
       0
     ],
     "reprodata": {},
-    "loop_ctx": "1/0",
+    "loop_ctx": "1-0",
     "weight": 5,
     "num_cpus": 1,
     "applicationArgs": {
@@ -14509,24 +15370,32 @@
     "streaming": false,
     "B-T": "",
     "execution_time": 5,
-    "iid": "0/1/0",
+    "iid": "0-1-0",
     "lg_key": "c3c3e8aa-ef76-4175-87b9-9d570f52f27a",
+    "outputPorts": {},
+    "inputPorts": {
+      "eee1cc5f-6fec-4774-8baf-aeaef083d704": {
+        "type": "InputOutput",
+        "name": "B-T",
+        "source_id": "6e8e68f8-65e0-4475-9f6e-0cd7063de2ba"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0/1/0": "B-T"
+        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0-1-0": "eee1cc5f-6fec-4774-8baf-aeaef083d704"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_6e8e68f8-65e0-4475-9f6e-0cd7063de2ba_0/1/0": "B-T"
+        "test_pg_gen_6e8e68f8-65e0-4475-9f6e-0cd7063de2ba_0-1-0": "B-T"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "55_0/1/0"
+    "humanReadableKey": "55_0-1-0"
   },
   {
-    "oid": "test_pg_gen_c3c3e8aa-ef76-4175-87b9-9d570f52f27a_0/1/1",
+    "oid": "test_pg_gen_c3c3e8aa-ef76-4175-87b9-9d570f52f27a_0-1-1",
     "name": "FFT",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -14538,7 +15407,7 @@
       1
     ],
     "reprodata": {},
-    "loop_ctx": "1/1",
+    "loop_ctx": "1-1",
     "weight": 5,
     "num_cpus": 1,
     "applicationArgs": {
@@ -14733,24 +15602,32 @@
     "streaming": false,
     "B-T": "",
     "execution_time": 5,
-    "iid": "0/1/1",
+    "iid": "0-1-1",
     "lg_key": "c3c3e8aa-ef76-4175-87b9-9d570f52f27a",
+    "outputPorts": {},
+    "inputPorts": {
+      "eee1cc5f-6fec-4774-8baf-aeaef083d704": {
+        "type": "InputOutput",
+        "name": "B-T",
+        "source_id": "6e8e68f8-65e0-4475-9f6e-0cd7063de2ba"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0/1/1": "B-T"
+        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0-1-1": "eee1cc5f-6fec-4774-8baf-aeaef083d704"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_6e8e68f8-65e0-4475-9f6e-0cd7063de2ba_0/1/1": "B-T"
+        "test_pg_gen_6e8e68f8-65e0-4475-9f6e-0cd7063de2ba_0-1-1": "B-T"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "56_0/1/1"
+    "humanReadableKey": "56_0-1-1"
   },
   {
-    "oid": "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/0/0/0",
+    "oid": "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-0-0-0",
     "name": "Subtract",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -14763,7 +15640,7 @@
       0
     ],
     "reprodata": {},
-    "loop_ctx": "0/0/0",
+    "loop_ctx": "0-0-0",
     "weight": 5,
     "num_cpus": 1,
     "applicationArgs": {
@@ -14989,27 +15866,40 @@
     "L-R": "",
     "B-R": "",
     "execution_time": 5,
-    "iid": "0/0/0/0",
+    "iid": "0-0-0-0",
     "lg_key": "d54738f2-b025-4230-95e2-ec9f921775ff",
+    "outputPorts": {},
+    "inputPorts": {
+      "1123bd73-c7a8-405b-9546-aa5570791ca2": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "96b6f0a8-c814-4d4d-b0c8-46352c83448f"
+      },
+      "99b0f6b2-0870-4868-afa5-e13c56aaf79b": {
+        "type": "InputPort",
+        "name": "B-R",
+        "source_id": "153018c4-7095-4744-a5a8-f43f1d1429c0"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/0/0/0": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-0-0-0": "1123bd73-c7a8-405b-9546-aa5570791ca2"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0/0/0/0": "L-R"
+        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0-0-0-0": "L-R"
       },
       {
-        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0/0/0": "B-R"
+        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0-0-0": "B-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "57_0/0/0/0"
+    "humanReadableKey": "57_0-0-0-0"
   },
   {
-    "oid": "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/0/0/1",
+    "oid": "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-0-0-1",
     "name": "Subtract",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -15022,7 +15912,7 @@
       1
     ],
     "reprodata": {},
-    "loop_ctx": "0/0/1",
+    "loop_ctx": "0-0-1",
     "weight": 5,
     "num_cpus": 1,
     "applicationArgs": {
@@ -15248,27 +16138,40 @@
     "L-R": "",
     "B-R": "",
     "execution_time": 5,
-    "iid": "0/0/0/1",
+    "iid": "0-0-0-1",
     "lg_key": "d54738f2-b025-4230-95e2-ec9f921775ff",
+    "outputPorts": {},
+    "inputPorts": {
+      "1123bd73-c7a8-405b-9546-aa5570791ca2": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "96b6f0a8-c814-4d4d-b0c8-46352c83448f"
+      },
+      "99b0f6b2-0870-4868-afa5-e13c56aaf79b": {
+        "type": "InputPort",
+        "name": "B-R",
+        "source_id": "153018c4-7095-4744-a5a8-f43f1d1429c0"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/0/0/1": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-0-0-1": "1123bd73-c7a8-405b-9546-aa5570791ca2"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0/0/0/1": "L-R"
+        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0-0-0-1": "L-R"
       },
       {
-        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0/0/0": "B-R"
+        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0-0-0": "B-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "58_0/0/0/1"
+    "humanReadableKey": "58_0-0-0-1"
   },
   {
-    "oid": "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/0/0/2",
+    "oid": "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-0-0-2",
     "name": "Subtract",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -15281,7 +16184,7 @@
       2
     ],
     "reprodata": {},
-    "loop_ctx": "0/0/2",
+    "loop_ctx": "0-0-2",
     "weight": 5,
     "num_cpus": 1,
     "applicationArgs": {
@@ -15507,27 +16410,40 @@
     "L-R": "",
     "B-R": "",
     "execution_time": 5,
-    "iid": "0/0/0/2",
+    "iid": "0-0-0-2",
     "lg_key": "d54738f2-b025-4230-95e2-ec9f921775ff",
+    "outputPorts": {},
+    "inputPorts": {
+      "1123bd73-c7a8-405b-9546-aa5570791ca2": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "96b6f0a8-c814-4d4d-b0c8-46352c83448f"
+      },
+      "99b0f6b2-0870-4868-afa5-e13c56aaf79b": {
+        "type": "InputPort",
+        "name": "B-R",
+        "source_id": "153018c4-7095-4744-a5a8-f43f1d1429c0"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/0/0/2": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-0-0-2": "1123bd73-c7a8-405b-9546-aa5570791ca2"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0/0/0/2": "L-R"
+        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0-0-0-2": "L-R"
       },
       {
-        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0/0/0": "B-R"
+        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0-0-0": "B-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "59_0/0/0/2"
+    "humanReadableKey": "59_0-0-0-2"
   },
   {
-    "oid": "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/0/1/0",
+    "oid": "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-0-1-0",
     "name": "Subtract",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -15540,7 +16456,7 @@
       0
     ],
     "reprodata": {},
-    "loop_ctx": "0/1/0",
+    "loop_ctx": "0-1-0",
     "weight": 5,
     "num_cpus": 1,
     "applicationArgs": {
@@ -15766,27 +16682,40 @@
     "L-R": "",
     "B-R": "",
     "execution_time": 5,
-    "iid": "0/0/1/0",
+    "iid": "0-0-1-0",
     "lg_key": "d54738f2-b025-4230-95e2-ec9f921775ff",
+    "outputPorts": {},
+    "inputPorts": {
+      "1123bd73-c7a8-405b-9546-aa5570791ca2": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "96b6f0a8-c814-4d4d-b0c8-46352c83448f"
+      },
+      "99b0f6b2-0870-4868-afa5-e13c56aaf79b": {
+        "type": "InputPort",
+        "name": "B-R",
+        "source_id": "153018c4-7095-4744-a5a8-f43f1d1429c0"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/0/1/0": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-0-1-0": "1123bd73-c7a8-405b-9546-aa5570791ca2"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0/0/1/0": "L-R"
+        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0-0-1-0": "L-R"
       },
       {
-        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0/0/1": "B-R"
+        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0-0-1": "B-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "60_0/0/1/0"
+    "humanReadableKey": "60_0-0-1-0"
   },
   {
-    "oid": "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/0/1/1",
+    "oid": "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-0-1-1",
     "name": "Subtract",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -15799,7 +16728,7 @@
       1
     ],
     "reprodata": {},
-    "loop_ctx": "0/1/1",
+    "loop_ctx": "0-1-1",
     "weight": 5,
     "num_cpus": 1,
     "applicationArgs": {
@@ -16025,27 +16954,40 @@
     "L-R": "",
     "B-R": "",
     "execution_time": 5,
-    "iid": "0/0/1/1",
+    "iid": "0-0-1-1",
     "lg_key": "d54738f2-b025-4230-95e2-ec9f921775ff",
+    "outputPorts": {},
+    "inputPorts": {
+      "1123bd73-c7a8-405b-9546-aa5570791ca2": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "96b6f0a8-c814-4d4d-b0c8-46352c83448f"
+      },
+      "99b0f6b2-0870-4868-afa5-e13c56aaf79b": {
+        "type": "InputPort",
+        "name": "B-R",
+        "source_id": "153018c4-7095-4744-a5a8-f43f1d1429c0"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/0/1/1": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-0-1-1": "1123bd73-c7a8-405b-9546-aa5570791ca2"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0/0/1/1": "L-R"
+        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0-0-1-1": "L-R"
       },
       {
-        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0/0/1": "B-R"
+        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0-0-1": "B-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "61_0/0/1/1"
+    "humanReadableKey": "61_0-0-1-1"
   },
   {
-    "oid": "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/0/1/2",
+    "oid": "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-0-1-2",
     "name": "Subtract",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -16058,7 +17000,7 @@
       2
     ],
     "reprodata": {},
-    "loop_ctx": "0/1/2",
+    "loop_ctx": "0-1-2",
     "weight": 5,
     "num_cpus": 1,
     "applicationArgs": {
@@ -16284,27 +17226,40 @@
     "L-R": "",
     "B-R": "",
     "execution_time": 5,
-    "iid": "0/0/1/2",
+    "iid": "0-0-1-2",
     "lg_key": "d54738f2-b025-4230-95e2-ec9f921775ff",
+    "outputPorts": {},
+    "inputPorts": {
+      "1123bd73-c7a8-405b-9546-aa5570791ca2": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "96b6f0a8-c814-4d4d-b0c8-46352c83448f"
+      },
+      "99b0f6b2-0870-4868-afa5-e13c56aaf79b": {
+        "type": "InputPort",
+        "name": "B-R",
+        "source_id": "153018c4-7095-4744-a5a8-f43f1d1429c0"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/0/1/2": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-0-1-2": "1123bd73-c7a8-405b-9546-aa5570791ca2"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0/0/1/2": "L-R"
+        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0-0-1-2": "L-R"
       },
       {
-        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0/0/1": "B-R"
+        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0-0-1": "B-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "62_0/0/1/2"
+    "humanReadableKey": "62_0-0-1-2"
   },
   {
-    "oid": "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/1/0/0",
+    "oid": "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-1-0-0",
     "name": "Subtract",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -16317,7 +17272,7 @@
       0
     ],
     "reprodata": {},
-    "loop_ctx": "1/0/0",
+    "loop_ctx": "1-0-0",
     "weight": 5,
     "num_cpus": 1,
     "applicationArgs": {
@@ -16543,27 +17498,40 @@
     "L-R": "",
     "B-R": "",
     "execution_time": 5,
-    "iid": "0/1/0/0",
+    "iid": "0-1-0-0",
     "lg_key": "d54738f2-b025-4230-95e2-ec9f921775ff",
+    "outputPorts": {},
+    "inputPorts": {
+      "1123bd73-c7a8-405b-9546-aa5570791ca2": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "96b6f0a8-c814-4d4d-b0c8-46352c83448f"
+      },
+      "99b0f6b2-0870-4868-afa5-e13c56aaf79b": {
+        "type": "InputPort",
+        "name": "B-R",
+        "source_id": "153018c4-7095-4744-a5a8-f43f1d1429c0"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/1/0/0": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-1-0-0": "1123bd73-c7a8-405b-9546-aa5570791ca2"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0/1/0/0": "L-R"
+        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0-1-0-0": "L-R"
       },
       {
-        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0/1/0": "B-R"
+        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0-1-0": "B-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "63_0/1/0/0"
+    "humanReadableKey": "63_0-1-0-0"
   },
   {
-    "oid": "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/1/0/1",
+    "oid": "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-1-0-1",
     "name": "Subtract",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -16576,7 +17544,7 @@
       1
     ],
     "reprodata": {},
-    "loop_ctx": "1/0/1",
+    "loop_ctx": "1-0-1",
     "weight": 5,
     "num_cpus": 1,
     "applicationArgs": {
@@ -16802,27 +17770,40 @@
     "L-R": "",
     "B-R": "",
     "execution_time": 5,
-    "iid": "0/1/0/1",
+    "iid": "0-1-0-1",
     "lg_key": "d54738f2-b025-4230-95e2-ec9f921775ff",
+    "outputPorts": {},
+    "inputPorts": {
+      "1123bd73-c7a8-405b-9546-aa5570791ca2": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "96b6f0a8-c814-4d4d-b0c8-46352c83448f"
+      },
+      "99b0f6b2-0870-4868-afa5-e13c56aaf79b": {
+        "type": "InputPort",
+        "name": "B-R",
+        "source_id": "153018c4-7095-4744-a5a8-f43f1d1429c0"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/1/0/1": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-1-0-1": "1123bd73-c7a8-405b-9546-aa5570791ca2"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0/1/0/1": "L-R"
+        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0-1-0-1": "L-R"
       },
       {
-        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0/1/0": "B-R"
+        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0-1-0": "B-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "64_0/1/0/1"
+    "humanReadableKey": "64_0-1-0-1"
   },
   {
-    "oid": "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/1/0/2",
+    "oid": "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-1-0-2",
     "name": "Subtract",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -16835,7 +17816,7 @@
       2
     ],
     "reprodata": {},
-    "loop_ctx": "1/0/2",
+    "loop_ctx": "1-0-2",
     "weight": 5,
     "num_cpus": 1,
     "applicationArgs": {
@@ -17061,27 +18042,40 @@
     "L-R": "",
     "B-R": "",
     "execution_time": 5,
-    "iid": "0/1/0/2",
+    "iid": "0-1-0-2",
     "lg_key": "d54738f2-b025-4230-95e2-ec9f921775ff",
+    "outputPorts": {},
+    "inputPorts": {
+      "1123bd73-c7a8-405b-9546-aa5570791ca2": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "96b6f0a8-c814-4d4d-b0c8-46352c83448f"
+      },
+      "99b0f6b2-0870-4868-afa5-e13c56aaf79b": {
+        "type": "InputPort",
+        "name": "B-R",
+        "source_id": "153018c4-7095-4744-a5a8-f43f1d1429c0"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/1/0/2": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-1-0-2": "1123bd73-c7a8-405b-9546-aa5570791ca2"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0/1/0/2": "L-R"
+        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0-1-0-2": "L-R"
       },
       {
-        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0/1/0": "B-R"
+        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0-1-0": "B-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "65_0/1/0/2"
+    "humanReadableKey": "65_0-1-0-2"
   },
   {
-    "oid": "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/1/1/0",
+    "oid": "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-1-1-0",
     "name": "Subtract",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -17094,7 +18088,7 @@
       0
     ],
     "reprodata": {},
-    "loop_ctx": "1/1/0",
+    "loop_ctx": "1-1-0",
     "weight": 5,
     "num_cpus": 1,
     "applicationArgs": {
@@ -17320,27 +18314,40 @@
     "L-R": "",
     "B-R": "",
     "execution_time": 5,
-    "iid": "0/1/1/0",
+    "iid": "0-1-1-0",
     "lg_key": "d54738f2-b025-4230-95e2-ec9f921775ff",
+    "outputPorts": {},
+    "inputPorts": {
+      "1123bd73-c7a8-405b-9546-aa5570791ca2": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "96b6f0a8-c814-4d4d-b0c8-46352c83448f"
+      },
+      "99b0f6b2-0870-4868-afa5-e13c56aaf79b": {
+        "type": "InputPort",
+        "name": "B-R",
+        "source_id": "153018c4-7095-4744-a5a8-f43f1d1429c0"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/1/1/0": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-1-1-0": "1123bd73-c7a8-405b-9546-aa5570791ca2"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0/1/1/0": "L-R"
+        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0-1-1-0": "L-R"
       },
       {
-        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0/1/1": "B-R"
+        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0-1-1": "B-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "66_0/1/1/0"
+    "humanReadableKey": "66_0-1-1-0"
   },
   {
-    "oid": "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/1/1/1",
+    "oid": "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-1-1-1",
     "name": "Subtract",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -17353,7 +18360,7 @@
       1
     ],
     "reprodata": {},
-    "loop_ctx": "1/1/1",
+    "loop_ctx": "1-1-1",
     "weight": 5,
     "num_cpus": 1,
     "applicationArgs": {
@@ -17579,27 +18586,40 @@
     "L-R": "",
     "B-R": "",
     "execution_time": 5,
-    "iid": "0/1/1/1",
+    "iid": "0-1-1-1",
     "lg_key": "d54738f2-b025-4230-95e2-ec9f921775ff",
+    "outputPorts": {},
+    "inputPorts": {
+      "1123bd73-c7a8-405b-9546-aa5570791ca2": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "96b6f0a8-c814-4d4d-b0c8-46352c83448f"
+      },
+      "99b0f6b2-0870-4868-afa5-e13c56aaf79b": {
+        "type": "InputPort",
+        "name": "B-R",
+        "source_id": "153018c4-7095-4744-a5a8-f43f1d1429c0"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/1/1/1": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-1-1-1": "1123bd73-c7a8-405b-9546-aa5570791ca2"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0/1/1/1": "L-R"
+        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0-1-1-1": "L-R"
       },
       {
-        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0/1/1": "B-R"
+        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0-1-1": "B-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "67_0/1/1/1"
+    "humanReadableKey": "67_0-1-1-1"
   },
   {
-    "oid": "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/1/1/2",
+    "oid": "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-1-1-2",
     "name": "Subtract",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -17612,7 +18632,7 @@
       2
     ],
     "reprodata": {},
-    "loop_ctx": "1/1/2",
+    "loop_ctx": "1-1-2",
     "weight": 5,
     "num_cpus": 1,
     "applicationArgs": {
@@ -17838,27 +18858,40 @@
     "L-R": "",
     "B-R": "",
     "execution_time": 5,
-    "iid": "0/1/1/2",
+    "iid": "0-1-1-2",
     "lg_key": "d54738f2-b025-4230-95e2-ec9f921775ff",
+    "outputPorts": {},
+    "inputPorts": {
+      "1123bd73-c7a8-405b-9546-aa5570791ca2": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "96b6f0a8-c814-4d4d-b0c8-46352c83448f"
+      },
+      "99b0f6b2-0870-4868-afa5-e13c56aaf79b": {
+        "type": "InputPort",
+        "name": "B-R",
+        "source_id": "153018c4-7095-4744-a5a8-f43f1d1429c0"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/1/1/2": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-1-1-2": "1123bd73-c7a8-405b-9546-aa5570791ca2"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0/1/1/2": "L-R"
+        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0-1-1-2": "L-R"
       },
       {
-        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0/1/1": "B-R"
+        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0-1-1": "B-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "68_0/1/1/2"
+    "humanReadableKey": "68_0-1-1-2"
   },
   {
-    "oid": "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/0/0/0",
+    "oid": "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-0-0-0",
     "name": "Identify\nComponent",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -17871,7 +18904,7 @@
       0
     ],
     "reprodata": {},
-    "loop_ctx": "0/0/0",
+    "loop_ctx": "0-0-0",
     "weight": 5,
     "num_cpus": 1,
     "applicationArgs": {
@@ -18128,24 +19161,32 @@
     "group_start": true,
     "L-R": "",
     "Group start": true,
-    "iid": "0/0/0/0",
+    "iid": "0-0-0-0",
     "lg_key": "bd689d19-d526-4912-95bc-f1e9f50be488",
+    "outputPorts": {},
+    "inputPorts": {
+      "dfbca43a-d603-4f43-81a6-dc73d1b97275": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "4eeea134-e884-4df7-b4a4-fc035d398d43"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0/0/0/0": "L-R"
+        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0-0-0-0": "dfbca43a-d603-4f43-81a6-dc73d1b97275"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0/0/0": "L-R"
+        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0-0-0": "L-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "69_0/0/0/0"
+    "humanReadableKey": "69_0-0-0-0"
   },
   {
-    "oid": "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/0/0/1",
+    "oid": "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-0-0-1",
     "name": "Identify\nComponent",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -18158,7 +19199,7 @@
       1
     ],
     "reprodata": {},
-    "loop_ctx": "0/0/1",
+    "loop_ctx": "0-0-1",
     "weight": 5,
     "num_cpus": 1,
     "applicationArgs": {
@@ -18415,39 +19456,47 @@
     "group_start": true,
     "L-R": "",
     "Group start": true,
-    "iid": "0/0/0/1",
+    "iid": "0-0-0-1",
     "lg_key": "bd689d19-d526-4912-95bc-f1e9f50be488",
+    "outputPorts": {},
+    "inputPorts": {
+      "dfbca43a-d603-4f43-81a6-dc73d1b97275": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "4eeea134-e884-4df7-b4a4-fc035d398d43"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0/0/0/1": "L-R"
+        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0-0-0-1": "dfbca43a-d603-4f43-81a6-dc73d1b97275"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0/0/0": "L-R"
+        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0-0-0": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/0/0/0": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-0-0-0": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/0/0/0": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-0-0-0": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/0/0/0": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-0-0-0": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/0/0/0": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-0-0-0": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/0/0/0": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-0-0-0": "L-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "70_0/0/0/1"
+    "humanReadableKey": "70_0-0-0-1"
   },
   {
-    "oid": "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/0/0/2",
+    "oid": "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-0-0-2",
     "name": "Identify\nComponent",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -18460,7 +19509,7 @@
       2
     ],
     "reprodata": {},
-    "loop_ctx": "0/0/2",
+    "loop_ctx": "0-0-2",
     "weight": 5,
     "num_cpus": 1,
     "applicationArgs": {
@@ -18717,39 +19766,47 @@
     "group_start": true,
     "L-R": "",
     "Group start": true,
-    "iid": "0/0/0/2",
+    "iid": "0-0-0-2",
     "lg_key": "bd689d19-d526-4912-95bc-f1e9f50be488",
+    "outputPorts": {},
+    "inputPorts": {
+      "dfbca43a-d603-4f43-81a6-dc73d1b97275": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "4eeea134-e884-4df7-b4a4-fc035d398d43"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0/0/0/2": "L-R"
+        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0-0-0-2": "dfbca43a-d603-4f43-81a6-dc73d1b97275"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0/0/0": "L-R"
+        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0-0-0": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/0/0/1": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-0-0-1": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/0/0/1": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-0-0-1": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/0/0/1": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-0-0-1": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/0/0/1": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-0-0-1": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/0/0/1": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-0-0-1": "L-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "71_0/0/0/2"
+    "humanReadableKey": "71_0-0-0-2"
   },
   {
-    "oid": "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/0/1/0",
+    "oid": "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-0-1-0",
     "name": "Identify\nComponent",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -18762,7 +19819,7 @@
       0
     ],
     "reprodata": {},
-    "loop_ctx": "0/1/0",
+    "loop_ctx": "0-1-0",
     "weight": 5,
     "num_cpus": 1,
     "applicationArgs": {
@@ -19019,24 +20076,32 @@
     "group_start": true,
     "L-R": "",
     "Group start": true,
-    "iid": "0/0/1/0",
+    "iid": "0-0-1-0",
     "lg_key": "bd689d19-d526-4912-95bc-f1e9f50be488",
+    "outputPorts": {},
+    "inputPorts": {
+      "dfbca43a-d603-4f43-81a6-dc73d1b97275": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "4eeea134-e884-4df7-b4a4-fc035d398d43"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0/0/1/0": "L-R"
+        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0-0-1-0": "dfbca43a-d603-4f43-81a6-dc73d1b97275"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0/0/1": "L-R"
+        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0-0-1": "L-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "72_0/0/1/0"
+    "humanReadableKey": "72_0-0-1-0"
   },
   {
-    "oid": "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/0/1/1",
+    "oid": "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-0-1-1",
     "name": "Identify\nComponent",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -19049,7 +20114,7 @@
       1
     ],
     "reprodata": {},
-    "loop_ctx": "0/1/1",
+    "loop_ctx": "0-1-1",
     "weight": 5,
     "num_cpus": 1,
     "applicationArgs": {
@@ -19306,39 +20371,47 @@
     "group_start": true,
     "L-R": "",
     "Group start": true,
-    "iid": "0/0/1/1",
+    "iid": "0-0-1-1",
     "lg_key": "bd689d19-d526-4912-95bc-f1e9f50be488",
+    "outputPorts": {},
+    "inputPorts": {
+      "dfbca43a-d603-4f43-81a6-dc73d1b97275": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "4eeea134-e884-4df7-b4a4-fc035d398d43"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0/0/1/1": "L-R"
+        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0-0-1-1": "dfbca43a-d603-4f43-81a6-dc73d1b97275"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0/0/1": "L-R"
+        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0-0-1": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/0/1/0": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-0-1-0": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/0/1/0": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-0-1-0": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/0/1/0": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-0-1-0": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/0/1/0": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-0-1-0": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/0/1/0": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-0-1-0": "L-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "73_0/0/1/1"
+    "humanReadableKey": "73_0-0-1-1"
   },
   {
-    "oid": "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/0/1/2",
+    "oid": "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-0-1-2",
     "name": "Identify\nComponent",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -19351,7 +20424,7 @@
       2
     ],
     "reprodata": {},
-    "loop_ctx": "0/1/2",
+    "loop_ctx": "0-1-2",
     "weight": 5,
     "num_cpus": 1,
     "applicationArgs": {
@@ -19608,39 +20681,47 @@
     "group_start": true,
     "L-R": "",
     "Group start": true,
-    "iid": "0/0/1/2",
+    "iid": "0-0-1-2",
     "lg_key": "bd689d19-d526-4912-95bc-f1e9f50be488",
+    "outputPorts": {},
+    "inputPorts": {
+      "dfbca43a-d603-4f43-81a6-dc73d1b97275": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "4eeea134-e884-4df7-b4a4-fc035d398d43"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0/0/1/2": "L-R"
+        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0-0-1-2": "dfbca43a-d603-4f43-81a6-dc73d1b97275"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0/0/1": "L-R"
+        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0-0-1": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/0/1/1": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-0-1-1": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/0/1/1": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-0-1-1": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/0/1/1": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-0-1-1": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/0/1/1": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-0-1-1": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/0/1/1": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-0-1-1": "L-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "74_0/0/1/2"
+    "humanReadableKey": "74_0-0-1-2"
   },
   {
-    "oid": "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/1/0/0",
+    "oid": "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-1-0-0",
     "name": "Identify\nComponent",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -19653,7 +20734,7 @@
       0
     ],
     "reprodata": {},
-    "loop_ctx": "1/0/0",
+    "loop_ctx": "1-0-0",
     "weight": 5,
     "num_cpus": 1,
     "applicationArgs": {
@@ -19910,24 +20991,32 @@
     "group_start": true,
     "L-R": "",
     "Group start": true,
-    "iid": "0/1/0/0",
+    "iid": "0-1-0-0",
     "lg_key": "bd689d19-d526-4912-95bc-f1e9f50be488",
+    "outputPorts": {},
+    "inputPorts": {
+      "dfbca43a-d603-4f43-81a6-dc73d1b97275": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "4eeea134-e884-4df7-b4a4-fc035d398d43"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0/1/0/0": "L-R"
+        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0-1-0-0": "dfbca43a-d603-4f43-81a6-dc73d1b97275"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0/1/0": "L-R"
+        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0-1-0": "L-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "75_0/1/0/0"
+    "humanReadableKey": "75_0-1-0-0"
   },
   {
-    "oid": "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/1/0/1",
+    "oid": "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-1-0-1",
     "name": "Identify\nComponent",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -19940,7 +21029,7 @@
       1
     ],
     "reprodata": {},
-    "loop_ctx": "1/0/1",
+    "loop_ctx": "1-0-1",
     "weight": 5,
     "num_cpus": 1,
     "applicationArgs": {
@@ -20197,39 +21286,47 @@
     "group_start": true,
     "L-R": "",
     "Group start": true,
-    "iid": "0/1/0/1",
+    "iid": "0-1-0-1",
     "lg_key": "bd689d19-d526-4912-95bc-f1e9f50be488",
+    "outputPorts": {},
+    "inputPorts": {
+      "dfbca43a-d603-4f43-81a6-dc73d1b97275": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "4eeea134-e884-4df7-b4a4-fc035d398d43"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0/1/0/1": "L-R"
+        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0-1-0-1": "dfbca43a-d603-4f43-81a6-dc73d1b97275"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0/1/0": "L-R"
+        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0-1-0": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/1/0/0": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-1-0-0": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/1/0/0": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-1-0-0": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/1/0/0": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-1-0-0": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/1/0/0": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-1-0-0": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/1/0/0": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-1-0-0": "L-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "76_0/1/0/1"
+    "humanReadableKey": "76_0-1-0-1"
   },
   {
-    "oid": "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/1/0/2",
+    "oid": "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-1-0-2",
     "name": "Identify\nComponent",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -20242,7 +21339,7 @@
       2
     ],
     "reprodata": {},
-    "loop_ctx": "1/0/2",
+    "loop_ctx": "1-0-2",
     "weight": 5,
     "num_cpus": 1,
     "applicationArgs": {
@@ -20499,39 +21596,47 @@
     "group_start": true,
     "L-R": "",
     "Group start": true,
-    "iid": "0/1/0/2",
+    "iid": "0-1-0-2",
     "lg_key": "bd689d19-d526-4912-95bc-f1e9f50be488",
+    "outputPorts": {},
+    "inputPorts": {
+      "dfbca43a-d603-4f43-81a6-dc73d1b97275": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "4eeea134-e884-4df7-b4a4-fc035d398d43"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0/1/0/2": "L-R"
+        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0-1-0-2": "dfbca43a-d603-4f43-81a6-dc73d1b97275"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0/1/0": "L-R"
+        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0-1-0": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/1/0/1": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-1-0-1": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/1/0/1": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-1-0-1": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/1/0/1": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-1-0-1": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/1/0/1": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-1-0-1": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/1/0/1": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-1-0-1": "L-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "77_0/1/0/2"
+    "humanReadableKey": "77_0-1-0-2"
   },
   {
-    "oid": "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/1/1/0",
+    "oid": "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-1-1-0",
     "name": "Identify\nComponent",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -20544,7 +21649,7 @@
       0
     ],
     "reprodata": {},
-    "loop_ctx": "1/1/0",
+    "loop_ctx": "1-1-0",
     "weight": 5,
     "num_cpus": 1,
     "applicationArgs": {
@@ -20801,24 +21906,32 @@
     "group_start": true,
     "L-R": "",
     "Group start": true,
-    "iid": "0/1/1/0",
+    "iid": "0-1-1-0",
     "lg_key": "bd689d19-d526-4912-95bc-f1e9f50be488",
+    "outputPorts": {},
+    "inputPorts": {
+      "dfbca43a-d603-4f43-81a6-dc73d1b97275": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "4eeea134-e884-4df7-b4a4-fc035d398d43"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0/1/1/0": "L-R"
+        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0-1-1-0": "dfbca43a-d603-4f43-81a6-dc73d1b97275"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0/1/1": "L-R"
+        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0-1-1": "L-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "78_0/1/1/0"
+    "humanReadableKey": "78_0-1-1-0"
   },
   {
-    "oid": "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/1/1/1",
+    "oid": "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-1-1-1",
     "name": "Identify\nComponent",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -20831,7 +21944,7 @@
       1
     ],
     "reprodata": {},
-    "loop_ctx": "1/1/1",
+    "loop_ctx": "1-1-1",
     "weight": 5,
     "num_cpus": 1,
     "applicationArgs": {
@@ -21088,39 +22201,47 @@
     "group_start": true,
     "L-R": "",
     "Group start": true,
-    "iid": "0/1/1/1",
+    "iid": "0-1-1-1",
     "lg_key": "bd689d19-d526-4912-95bc-f1e9f50be488",
+    "outputPorts": {},
+    "inputPorts": {
+      "dfbca43a-d603-4f43-81a6-dc73d1b97275": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "4eeea134-e884-4df7-b4a4-fc035d398d43"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0/1/1/1": "L-R"
+        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0-1-1-1": "dfbca43a-d603-4f43-81a6-dc73d1b97275"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0/1/1": "L-R"
+        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0-1-1": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/1/1/0": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-1-1-0": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/1/1/0": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-1-1-0": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/1/1/0": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-1-1-0": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/1/1/0": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-1-1-0": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/1/1/0": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-1-1-0": "L-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "79_0/1/1/1"
+    "humanReadableKey": "79_0-1-1-1"
   },
   {
-    "oid": "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/1/1/2",
+    "oid": "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-1-1-2",
     "name": "Identify\nComponent",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -21133,7 +22254,7 @@
       2
     ],
     "reprodata": {},
-    "loop_ctx": "1/1/2",
+    "loop_ctx": "1-1-2",
     "weight": 5,
     "num_cpus": 1,
     "applicationArgs": {
@@ -21390,39 +22511,47 @@
     "group_start": true,
     "L-R": "",
     "Group start": true,
-    "iid": "0/1/1/2",
+    "iid": "0-1-1-2",
     "lg_key": "bd689d19-d526-4912-95bc-f1e9f50be488",
+    "outputPorts": {},
+    "inputPorts": {
+      "dfbca43a-d603-4f43-81a6-dc73d1b97275": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "4eeea134-e884-4df7-b4a4-fc035d398d43"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0/1/1/2": "L-R"
+        "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0-1-1-2": "dfbca43a-d603-4f43-81a6-dc73d1b97275"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0/1/1": "L-R"
+        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0-1-1": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/1/1/1": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-1-1-1": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/1/1/1": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-1-1-1": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/1/1/1": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-1-1-1": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/1/1/1": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-1-1-1": "L-R"
       },
       {
-        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/1/1/1": "L-R"
+        "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-1-1-1": "L-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "80_0/1/1/2"
+    "humanReadableKey": "80_0-1-1-2"
   },
   {
-    "oid": "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/0/0/0",
+    "oid": "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-0-0-0",
     "name": "RMI",
     "categoryType": "Data",
     "category": "Memory",
@@ -21435,7 +22564,7 @@
       0
     ],
     "reprodata": {},
-    "loop_ctx": "0/0/0",
+    "loop_ctx": "0-0-0",
     "weight": 5,
     "applicationArgs": {
       "L-R": {
@@ -21661,39 +22790,50 @@
     "group_end": "true",
     "L-R": "",
     "Group end": true,
-    "iid": "0/0/0/0",
+    "iid": "0-0-0-0",
     "lg_key": "4eeea134-e884-4df7-b4a4-fc035d398d43",
+    "outputPorts": {},
+    "inputPorts": {
+      "0317b979-6e21-430e-b714-9e73900e49a0": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "d54738f2-b025-4230-95e2-ec9f921775ff"
+      }
+    },
+    "port_map": {
+      "L-R": "L-R"
+    },
     "producers": [
       {
-        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/0/0/0": "L-R"
+        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-0-0-0": "L-R"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_f452db57-9752-438a-b574-b7cb0435d2fb_0/0/0": "L-R"
+        "test_pg_gen_f452db57-9752-438a-b574-b7cb0435d2fb_0-0-0": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/0/0/1": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-0-0-1": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/0/0/1": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-0-0-1": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/0/0/1": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-0-0-1": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/0/0/1": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-0-0-1": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/0/0/1": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-0-0-1": "L-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "81_0/0/0/0"
+    "humanReadableKey": "81_0-0-0-0"
   },
   {
-    "oid": "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/0/0/1",
+    "oid": "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-0-0-1",
     "name": "RMI",
     "categoryType": "Data",
     "category": "Memory",
@@ -21706,7 +22846,7 @@
       1
     ],
     "reprodata": {},
-    "loop_ctx": "0/0/1",
+    "loop_ctx": "0-0-1",
     "weight": 5,
     "applicationArgs": {
       "L-R": {
@@ -21932,39 +23072,50 @@
     "group_end": "true",
     "L-R": "",
     "Group end": true,
-    "iid": "0/0/0/1",
+    "iid": "0-0-0-1",
     "lg_key": "4eeea134-e884-4df7-b4a4-fc035d398d43",
+    "outputPorts": {},
+    "inputPorts": {
+      "0317b979-6e21-430e-b714-9e73900e49a0": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "d54738f2-b025-4230-95e2-ec9f921775ff"
+      }
+    },
+    "port_map": {
+      "L-R": "L-R"
+    },
     "producers": [
       {
-        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/0/0/1": "L-R"
+        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-0-0-1": "L-R"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_f452db57-9752-438a-b574-b7cb0435d2fb_0/0/0": "L-R"
+        "test_pg_gen_f452db57-9752-438a-b574-b7cb0435d2fb_0-0-0": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/0/0/2": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-0-0-2": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/0/0/2": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-0-0-2": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/0/0/2": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-0-0-2": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/0/0/2": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-0-0-2": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/0/0/2": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-0-0-2": "L-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "82_0/0/0/1"
+    "humanReadableKey": "82_0-0-0-1"
   },
   {
-    "oid": "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/0/0/2",
+    "oid": "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-0-0-2",
     "name": "RMI",
     "categoryType": "Data",
     "category": "Memory",
@@ -21977,7 +23128,7 @@
       2
     ],
     "reprodata": {},
-    "loop_ctx": "0/0/2",
+    "loop_ctx": "0-0-2",
     "weight": 5,
     "applicationArgs": {
       "L-R": {
@@ -22203,24 +23354,35 @@
     "group_end": "true",
     "L-R": "",
     "Group end": true,
-    "iid": "0/0/0/2",
+    "iid": "0-0-0-2",
     "lg_key": "4eeea134-e884-4df7-b4a4-fc035d398d43",
+    "outputPorts": {},
+    "inputPorts": {
+      "0317b979-6e21-430e-b714-9e73900e49a0": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "d54738f2-b025-4230-95e2-ec9f921775ff"
+      }
+    },
+    "port_map": {
+      "L-R": "L-R"
+    },
     "producers": [
       {
-        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/0/0/2": "L-R"
+        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-0-0-2": "L-R"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_f452db57-9752-438a-b574-b7cb0435d2fb_0/0/0": "L-R"
+        "test_pg_gen_f452db57-9752-438a-b574-b7cb0435d2fb_0-0-0": "L-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "83_0/0/0/2"
+    "humanReadableKey": "83_0-0-0-2"
   },
   {
-    "oid": "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/0/1/0",
+    "oid": "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-0-1-0",
     "name": "RMI",
     "categoryType": "Data",
     "category": "Memory",
@@ -22233,7 +23395,7 @@
       0
     ],
     "reprodata": {},
-    "loop_ctx": "0/1/0",
+    "loop_ctx": "0-1-0",
     "weight": 5,
     "applicationArgs": {
       "L-R": {
@@ -22459,39 +23621,50 @@
     "group_end": "true",
     "L-R": "",
     "Group end": true,
-    "iid": "0/0/1/0",
+    "iid": "0-0-1-0",
     "lg_key": "4eeea134-e884-4df7-b4a4-fc035d398d43",
+    "outputPorts": {},
+    "inputPorts": {
+      "0317b979-6e21-430e-b714-9e73900e49a0": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "d54738f2-b025-4230-95e2-ec9f921775ff"
+      }
+    },
+    "port_map": {
+      "L-R": "L-R"
+    },
     "producers": [
       {
-        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/0/1/0": "L-R"
+        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-0-1-0": "L-R"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_f452db57-9752-438a-b574-b7cb0435d2fb_0/0/1": "L-R"
+        "test_pg_gen_f452db57-9752-438a-b574-b7cb0435d2fb_0-0-1": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/0/1/1": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-0-1-1": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/0/1/1": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-0-1-1": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/0/1/1": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-0-1-1": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/0/1/1": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-0-1-1": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/0/1/1": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-0-1-1": "L-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "84_0/0/1/0"
+    "humanReadableKey": "84_0-0-1-0"
   },
   {
-    "oid": "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/0/1/1",
+    "oid": "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-0-1-1",
     "name": "RMI",
     "categoryType": "Data",
     "category": "Memory",
@@ -22504,7 +23677,7 @@
       1
     ],
     "reprodata": {},
-    "loop_ctx": "0/1/1",
+    "loop_ctx": "0-1-1",
     "weight": 5,
     "applicationArgs": {
       "L-R": {
@@ -22730,39 +23903,50 @@
     "group_end": "true",
     "L-R": "",
     "Group end": true,
-    "iid": "0/0/1/1",
+    "iid": "0-0-1-1",
     "lg_key": "4eeea134-e884-4df7-b4a4-fc035d398d43",
+    "outputPorts": {},
+    "inputPorts": {
+      "0317b979-6e21-430e-b714-9e73900e49a0": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "d54738f2-b025-4230-95e2-ec9f921775ff"
+      }
+    },
+    "port_map": {
+      "L-R": "L-R"
+    },
     "producers": [
       {
-        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/0/1/1": "L-R"
+        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-0-1-1": "L-R"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_f452db57-9752-438a-b574-b7cb0435d2fb_0/0/1": "L-R"
+        "test_pg_gen_f452db57-9752-438a-b574-b7cb0435d2fb_0-0-1": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/0/1/2": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-0-1-2": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/0/1/2": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-0-1-2": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/0/1/2": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-0-1-2": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/0/1/2": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-0-1-2": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/0/1/2": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-0-1-2": "L-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "85_0/0/1/1"
+    "humanReadableKey": "85_0-0-1-1"
   },
   {
-    "oid": "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/0/1/2",
+    "oid": "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-0-1-2",
     "name": "RMI",
     "categoryType": "Data",
     "category": "Memory",
@@ -22775,7 +23959,7 @@
       2
     ],
     "reprodata": {},
-    "loop_ctx": "0/1/2",
+    "loop_ctx": "0-1-2",
     "weight": 5,
     "applicationArgs": {
       "L-R": {
@@ -23001,24 +24185,35 @@
     "group_end": "true",
     "L-R": "",
     "Group end": true,
-    "iid": "0/0/1/2",
+    "iid": "0-0-1-2",
     "lg_key": "4eeea134-e884-4df7-b4a4-fc035d398d43",
+    "outputPorts": {},
+    "inputPorts": {
+      "0317b979-6e21-430e-b714-9e73900e49a0": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "d54738f2-b025-4230-95e2-ec9f921775ff"
+      }
+    },
+    "port_map": {
+      "L-R": "L-R"
+    },
     "producers": [
       {
-        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/0/1/2": "L-R"
+        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-0-1-2": "L-R"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_f452db57-9752-438a-b574-b7cb0435d2fb_0/0/1": "L-R"
+        "test_pg_gen_f452db57-9752-438a-b574-b7cb0435d2fb_0-0-1": "L-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "86_0/0/1/2"
+    "humanReadableKey": "86_0-0-1-2"
   },
   {
-    "oid": "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/1/0/0",
+    "oid": "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-1-0-0",
     "name": "RMI",
     "categoryType": "Data",
     "category": "Memory",
@@ -23031,7 +24226,7 @@
       0
     ],
     "reprodata": {},
-    "loop_ctx": "1/0/0",
+    "loop_ctx": "1-0-0",
     "weight": 5,
     "applicationArgs": {
       "L-R": {
@@ -23257,39 +24452,50 @@
     "group_end": "true",
     "L-R": "",
     "Group end": true,
-    "iid": "0/1/0/0",
+    "iid": "0-1-0-0",
     "lg_key": "4eeea134-e884-4df7-b4a4-fc035d398d43",
+    "outputPorts": {},
+    "inputPorts": {
+      "0317b979-6e21-430e-b714-9e73900e49a0": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "d54738f2-b025-4230-95e2-ec9f921775ff"
+      }
+    },
+    "port_map": {
+      "L-R": "L-R"
+    },
     "producers": [
       {
-        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/1/0/0": "L-R"
+        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-1-0-0": "L-R"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_f452db57-9752-438a-b574-b7cb0435d2fb_0/1/0": "L-R"
+        "test_pg_gen_f452db57-9752-438a-b574-b7cb0435d2fb_0-1-0": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/1/0/1": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-1-0-1": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/1/0/1": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-1-0-1": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/1/0/1": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-1-0-1": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/1/0/1": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-1-0-1": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/1/0/1": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-1-0-1": "L-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "87_0/1/0/0"
+    "humanReadableKey": "87_0-1-0-0"
   },
   {
-    "oid": "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/1/0/1",
+    "oid": "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-1-0-1",
     "name": "RMI",
     "categoryType": "Data",
     "category": "Memory",
@@ -23302,7 +24508,7 @@
       1
     ],
     "reprodata": {},
-    "loop_ctx": "1/0/1",
+    "loop_ctx": "1-0-1",
     "weight": 5,
     "applicationArgs": {
       "L-R": {
@@ -23528,39 +24734,50 @@
     "group_end": "true",
     "L-R": "",
     "Group end": true,
-    "iid": "0/1/0/1",
+    "iid": "0-1-0-1",
     "lg_key": "4eeea134-e884-4df7-b4a4-fc035d398d43",
+    "outputPorts": {},
+    "inputPorts": {
+      "0317b979-6e21-430e-b714-9e73900e49a0": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "d54738f2-b025-4230-95e2-ec9f921775ff"
+      }
+    },
+    "port_map": {
+      "L-R": "L-R"
+    },
     "producers": [
       {
-        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/1/0/1": "L-R"
+        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-1-0-1": "L-R"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_f452db57-9752-438a-b574-b7cb0435d2fb_0/1/0": "L-R"
+        "test_pg_gen_f452db57-9752-438a-b574-b7cb0435d2fb_0-1-0": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/1/0/2": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-1-0-2": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/1/0/2": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-1-0-2": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/1/0/2": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-1-0-2": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/1/0/2": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-1-0-2": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/1/0/2": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-1-0-2": "L-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "88_0/1/0/1"
+    "humanReadableKey": "88_0-1-0-1"
   },
   {
-    "oid": "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/1/0/2",
+    "oid": "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-1-0-2",
     "name": "RMI",
     "categoryType": "Data",
     "category": "Memory",
@@ -23573,7 +24790,7 @@
       2
     ],
     "reprodata": {},
-    "loop_ctx": "1/0/2",
+    "loop_ctx": "1-0-2",
     "weight": 5,
     "applicationArgs": {
       "L-R": {
@@ -23799,24 +25016,35 @@
     "group_end": "true",
     "L-R": "",
     "Group end": true,
-    "iid": "0/1/0/2",
+    "iid": "0-1-0-2",
     "lg_key": "4eeea134-e884-4df7-b4a4-fc035d398d43",
+    "outputPorts": {},
+    "inputPorts": {
+      "0317b979-6e21-430e-b714-9e73900e49a0": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "d54738f2-b025-4230-95e2-ec9f921775ff"
+      }
+    },
+    "port_map": {
+      "L-R": "L-R"
+    },
     "producers": [
       {
-        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/1/0/2": "L-R"
+        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-1-0-2": "L-R"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_f452db57-9752-438a-b574-b7cb0435d2fb_0/1/0": "L-R"
+        "test_pg_gen_f452db57-9752-438a-b574-b7cb0435d2fb_0-1-0": "L-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "89_0/1/0/2"
+    "humanReadableKey": "89_0-1-0-2"
   },
   {
-    "oid": "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/1/1/0",
+    "oid": "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-1-1-0",
     "name": "RMI",
     "categoryType": "Data",
     "category": "Memory",
@@ -23829,7 +25057,7 @@
       0
     ],
     "reprodata": {},
-    "loop_ctx": "1/1/0",
+    "loop_ctx": "1-1-0",
     "weight": 5,
     "applicationArgs": {
       "L-R": {
@@ -24055,39 +25283,50 @@
     "group_end": "true",
     "L-R": "",
     "Group end": true,
-    "iid": "0/1/1/0",
+    "iid": "0-1-1-0",
     "lg_key": "4eeea134-e884-4df7-b4a4-fc035d398d43",
+    "outputPorts": {},
+    "inputPorts": {
+      "0317b979-6e21-430e-b714-9e73900e49a0": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "d54738f2-b025-4230-95e2-ec9f921775ff"
+      }
+    },
+    "port_map": {
+      "L-R": "L-R"
+    },
     "producers": [
       {
-        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/1/1/0": "L-R"
+        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-1-1-0": "L-R"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_f452db57-9752-438a-b574-b7cb0435d2fb_0/1/1": "L-R"
+        "test_pg_gen_f452db57-9752-438a-b574-b7cb0435d2fb_0-1-1": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/1/1/1": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-1-1-1": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/1/1/1": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-1-1-1": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/1/1/1": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-1-1-1": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/1/1/1": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-1-1-1": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/1/1/1": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-1-1-1": "L-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "90_0/1/1/0"
+    "humanReadableKey": "90_0-1-1-0"
   },
   {
-    "oid": "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/1/1/1",
+    "oid": "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-1-1-1",
     "name": "RMI",
     "categoryType": "Data",
     "category": "Memory",
@@ -24100,7 +25339,7 @@
       1
     ],
     "reprodata": {},
-    "loop_ctx": "1/1/1",
+    "loop_ctx": "1-1-1",
     "weight": 5,
     "applicationArgs": {
       "L-R": {
@@ -24326,39 +25565,50 @@
     "group_end": "true",
     "L-R": "",
     "Group end": true,
-    "iid": "0/1/1/1",
+    "iid": "0-1-1-1",
     "lg_key": "4eeea134-e884-4df7-b4a4-fc035d398d43",
+    "outputPorts": {},
+    "inputPorts": {
+      "0317b979-6e21-430e-b714-9e73900e49a0": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "d54738f2-b025-4230-95e2-ec9f921775ff"
+      }
+    },
+    "port_map": {
+      "L-R": "L-R"
+    },
     "producers": [
       {
-        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/1/1/1": "L-R"
+        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-1-1-1": "L-R"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_f452db57-9752-438a-b574-b7cb0435d2fb_0/1/1": "L-R"
+        "test_pg_gen_f452db57-9752-438a-b574-b7cb0435d2fb_0-1-1": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/1/1/2": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-1-1-2": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/1/1/2": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-1-1-2": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/1/1/2": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-1-1-2": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/1/1/2": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-1-1-2": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/1/1/2": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-1-1-2": "L-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "91_0/1/1/1"
+    "humanReadableKey": "91_0-1-1-1"
   },
   {
-    "oid": "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0/1/1/2",
+    "oid": "test_pg_gen_4eeea134-e884-4df7-b4a4-fc035d398d43_0-1-1-2",
     "name": "RMI",
     "categoryType": "Data",
     "category": "Memory",
@@ -24371,7 +25621,7 @@
       2
     ],
     "reprodata": {},
-    "loop_ctx": "1/1/2",
+    "loop_ctx": "1-1-2",
     "weight": 5,
     "applicationArgs": {
       "L-R": {
@@ -24597,24 +25847,35 @@
     "group_end": "true",
     "L-R": "",
     "Group end": true,
-    "iid": "0/1/1/2",
+    "iid": "0-1-1-2",
     "lg_key": "4eeea134-e884-4df7-b4a4-fc035d398d43",
+    "outputPorts": {},
+    "inputPorts": {
+      "0317b979-6e21-430e-b714-9e73900e49a0": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "d54738f2-b025-4230-95e2-ec9f921775ff"
+      }
+    },
+    "port_map": {
+      "L-R": "L-R"
+    },
     "producers": [
       {
-        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/1/1/2": "L-R"
+        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-1-1-2": "L-R"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_f452db57-9752-438a-b574-b7cb0435d2fb_0/1/1": "L-R"
+        "test_pg_gen_f452db57-9752-438a-b574-b7cb0435d2fb_0-1-1": "L-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "92_0/1/1/2"
+    "humanReadableKey": "92_0-1-1-2"
   },
   {
-    "oid": "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0/0/0/0",
+    "oid": "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0-0-0-0",
     "name": "CC",
     "categoryType": "Data",
     "category": "Memory",
@@ -24627,7 +25888,7 @@
       0
     ],
     "reprodata": {},
-    "loop_ctx": "0/0/0",
+    "loop_ctx": "0-0-0",
     "weight": 5,
     "applicationArgs": {
       "L-R": {
@@ -24853,24 +26114,41 @@
     "group_end": "0",
     "L-R": "",
     "dummy": "~param4.what",
-    "iid": "0/0/0/0",
+    "iid": "0-0-0-0",
     "lg_key": "96b6f0a8-c814-4d4d-b0c8-46352c83448f",
+    "outputPorts": {
+      "caae2b87-66d8-4ae1-af1f-a62702629919": {
+        "type": "OutputPort",
+        "name": "dummy",
+        "target_id": ""
+      }
+    },
+    "inputPorts": {
+      "56afe407-72bd-402b-9704-a3f6ab67f559": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "bd689d19-d526-4912-95bc-f1e9f50be488"
+      }
+    },
+    "port_map": {
+      "L-R": "L-R"
+    },
     "producers": [
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/0/0/0": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-0-0-0": "L-R"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/0/0/0": "L-R"
+        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-0-0-0": "dummy"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "93_0/0/0/0"
+    "humanReadableKey": "93_0-0-0-0"
   },
   {
-    "oid": "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0/0/0/1",
+    "oid": "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0-0-0-1",
     "name": "CC",
     "categoryType": "Data",
     "category": "Memory",
@@ -24883,7 +26161,7 @@
       1
     ],
     "reprodata": {},
-    "loop_ctx": "0/0/1",
+    "loop_ctx": "0-0-1",
     "weight": 5,
     "applicationArgs": {
       "L-R": {
@@ -25109,24 +26387,41 @@
     "group_end": "0",
     "L-R": "",
     "dummy": "~param4.what",
-    "iid": "0/0/0/1",
+    "iid": "0-0-0-1",
     "lg_key": "96b6f0a8-c814-4d4d-b0c8-46352c83448f",
+    "outputPorts": {
+      "caae2b87-66d8-4ae1-af1f-a62702629919": {
+        "type": "OutputPort",
+        "name": "dummy",
+        "target_id": ""
+      }
+    },
+    "inputPorts": {
+      "56afe407-72bd-402b-9704-a3f6ab67f559": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "bd689d19-d526-4912-95bc-f1e9f50be488"
+      }
+    },
+    "port_map": {
+      "L-R": "L-R"
+    },
     "producers": [
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/0/0/1": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-0-0-1": "L-R"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/0/0/1": "L-R"
+        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-0-0-1": "dummy"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "94_0/0/0/1"
+    "humanReadableKey": "94_0-0-0-1"
   },
   {
-    "oid": "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0/0/0/2",
+    "oid": "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0-0-0-2",
     "name": "CC",
     "categoryType": "Data",
     "category": "Memory",
@@ -25139,7 +26434,7 @@
       2
     ],
     "reprodata": {},
-    "loop_ctx": "0/0/2",
+    "loop_ctx": "0-0-2",
     "weight": 5,
     "applicationArgs": {
       "L-R": {
@@ -25365,24 +26660,41 @@
     "group_end": "0",
     "L-R": "",
     "dummy": "~param4.what",
-    "iid": "0/0/0/2",
+    "iid": "0-0-0-2",
     "lg_key": "96b6f0a8-c814-4d4d-b0c8-46352c83448f",
+    "outputPorts": {
+      "caae2b87-66d8-4ae1-af1f-a62702629919": {
+        "type": "OutputPort",
+        "name": "dummy",
+        "target_id": ""
+      }
+    },
+    "inputPorts": {
+      "56afe407-72bd-402b-9704-a3f6ab67f559": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "bd689d19-d526-4912-95bc-f1e9f50be488"
+      }
+    },
+    "port_map": {
+      "L-R": "L-R"
+    },
     "producers": [
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/0/0/2": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-0-0-2": "L-R"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/0/0/2": "L-R"
+        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-0-0-2": "dummy"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "95_0/0/0/2"
+    "humanReadableKey": "95_0-0-0-2"
   },
   {
-    "oid": "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0/0/1/0",
+    "oid": "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0-0-1-0",
     "name": "CC",
     "categoryType": "Data",
     "category": "Memory",
@@ -25395,7 +26707,7 @@
       0
     ],
     "reprodata": {},
-    "loop_ctx": "0/1/0",
+    "loop_ctx": "0-1-0",
     "weight": 5,
     "applicationArgs": {
       "L-R": {
@@ -25621,24 +26933,41 @@
     "group_end": "0",
     "L-R": "",
     "dummy": "~param4.what",
-    "iid": "0/0/1/0",
+    "iid": "0-0-1-0",
     "lg_key": "96b6f0a8-c814-4d4d-b0c8-46352c83448f",
+    "outputPorts": {
+      "caae2b87-66d8-4ae1-af1f-a62702629919": {
+        "type": "OutputPort",
+        "name": "dummy",
+        "target_id": ""
+      }
+    },
+    "inputPorts": {
+      "56afe407-72bd-402b-9704-a3f6ab67f559": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "bd689d19-d526-4912-95bc-f1e9f50be488"
+      }
+    },
+    "port_map": {
+      "L-R": "L-R"
+    },
     "producers": [
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/0/1/0": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-0-1-0": "L-R"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/0/1/0": "L-R"
+        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-0-1-0": "dummy"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "96_0/0/1/0"
+    "humanReadableKey": "96_0-0-1-0"
   },
   {
-    "oid": "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0/0/1/1",
+    "oid": "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0-0-1-1",
     "name": "CC",
     "categoryType": "Data",
     "category": "Memory",
@@ -25651,7 +26980,7 @@
       1
     ],
     "reprodata": {},
-    "loop_ctx": "0/1/1",
+    "loop_ctx": "0-1-1",
     "weight": 5,
     "applicationArgs": {
       "L-R": {
@@ -25877,24 +27206,41 @@
     "group_end": "0",
     "L-R": "",
     "dummy": "~param4.what",
-    "iid": "0/0/1/1",
+    "iid": "0-0-1-1",
     "lg_key": "96b6f0a8-c814-4d4d-b0c8-46352c83448f",
+    "outputPorts": {
+      "caae2b87-66d8-4ae1-af1f-a62702629919": {
+        "type": "OutputPort",
+        "name": "dummy",
+        "target_id": ""
+      }
+    },
+    "inputPorts": {
+      "56afe407-72bd-402b-9704-a3f6ab67f559": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "bd689d19-d526-4912-95bc-f1e9f50be488"
+      }
+    },
+    "port_map": {
+      "L-R": "L-R"
+    },
     "producers": [
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/0/1/1": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-0-1-1": "L-R"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/0/1/1": "L-R"
+        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-0-1-1": "dummy"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "97_0/0/1/1"
+    "humanReadableKey": "97_0-0-1-1"
   },
   {
-    "oid": "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0/0/1/2",
+    "oid": "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0-0-1-2",
     "name": "CC",
     "categoryType": "Data",
     "category": "Memory",
@@ -25907,7 +27253,7 @@
       2
     ],
     "reprodata": {},
-    "loop_ctx": "0/1/2",
+    "loop_ctx": "0-1-2",
     "weight": 5,
     "applicationArgs": {
       "L-R": {
@@ -26133,24 +27479,41 @@
     "group_end": "0",
     "L-R": "",
     "dummy": "~param4.what",
-    "iid": "0/0/1/2",
+    "iid": "0-0-1-2",
     "lg_key": "96b6f0a8-c814-4d4d-b0c8-46352c83448f",
+    "outputPorts": {
+      "caae2b87-66d8-4ae1-af1f-a62702629919": {
+        "type": "OutputPort",
+        "name": "dummy",
+        "target_id": ""
+      }
+    },
+    "inputPorts": {
+      "56afe407-72bd-402b-9704-a3f6ab67f559": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "bd689d19-d526-4912-95bc-f1e9f50be488"
+      }
+    },
+    "port_map": {
+      "L-R": "L-R"
+    },
     "producers": [
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/0/1/2": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-0-1-2": "L-R"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/0/1/2": "L-R"
+        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-0-1-2": "dummy"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "98_0/0/1/2"
+    "humanReadableKey": "98_0-0-1-2"
   },
   {
-    "oid": "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0/1/0/0",
+    "oid": "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0-1-0-0",
     "name": "CC",
     "categoryType": "Data",
     "category": "Memory",
@@ -26163,7 +27526,7 @@
       0
     ],
     "reprodata": {},
-    "loop_ctx": "1/0/0",
+    "loop_ctx": "1-0-0",
     "weight": 5,
     "applicationArgs": {
       "L-R": {
@@ -26389,24 +27752,41 @@
     "group_end": "0",
     "L-R": "",
     "dummy": "~param4.what",
-    "iid": "0/1/0/0",
+    "iid": "0-1-0-0",
     "lg_key": "96b6f0a8-c814-4d4d-b0c8-46352c83448f",
+    "outputPorts": {
+      "caae2b87-66d8-4ae1-af1f-a62702629919": {
+        "type": "OutputPort",
+        "name": "dummy",
+        "target_id": ""
+      }
+    },
+    "inputPorts": {
+      "56afe407-72bd-402b-9704-a3f6ab67f559": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "bd689d19-d526-4912-95bc-f1e9f50be488"
+      }
+    },
+    "port_map": {
+      "L-R": "L-R"
+    },
     "producers": [
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/1/0/0": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-1-0-0": "L-R"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/1/0/0": "L-R"
+        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-1-0-0": "dummy"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "99_0/1/0/0"
+    "humanReadableKey": "99_0-1-0-0"
   },
   {
-    "oid": "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0/1/0/1",
+    "oid": "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0-1-0-1",
     "name": "CC",
     "categoryType": "Data",
     "category": "Memory",
@@ -26419,7 +27799,7 @@
       1
     ],
     "reprodata": {},
-    "loop_ctx": "1/0/1",
+    "loop_ctx": "1-0-1",
     "weight": 5,
     "applicationArgs": {
       "L-R": {
@@ -26645,24 +28025,41 @@
     "group_end": "0",
     "L-R": "",
     "dummy": "~param4.what",
-    "iid": "0/1/0/1",
+    "iid": "0-1-0-1",
     "lg_key": "96b6f0a8-c814-4d4d-b0c8-46352c83448f",
+    "outputPorts": {
+      "caae2b87-66d8-4ae1-af1f-a62702629919": {
+        "type": "OutputPort",
+        "name": "dummy",
+        "target_id": ""
+      }
+    },
+    "inputPorts": {
+      "56afe407-72bd-402b-9704-a3f6ab67f559": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "bd689d19-d526-4912-95bc-f1e9f50be488"
+      }
+    },
+    "port_map": {
+      "L-R": "L-R"
+    },
     "producers": [
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/1/0/1": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-1-0-1": "L-R"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/1/0/1": "L-R"
+        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-1-0-1": "dummy"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "100_0/1/0/1"
+    "humanReadableKey": "100_0-1-0-1"
   },
   {
-    "oid": "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0/1/0/2",
+    "oid": "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0-1-0-2",
     "name": "CC",
     "categoryType": "Data",
     "category": "Memory",
@@ -26675,7 +28072,7 @@
       2
     ],
     "reprodata": {},
-    "loop_ctx": "1/0/2",
+    "loop_ctx": "1-0-2",
     "weight": 5,
     "applicationArgs": {
       "L-R": {
@@ -26901,24 +28298,41 @@
     "group_end": "0",
     "L-R": "",
     "dummy": "~param4.what",
-    "iid": "0/1/0/2",
+    "iid": "0-1-0-2",
     "lg_key": "96b6f0a8-c814-4d4d-b0c8-46352c83448f",
+    "outputPorts": {
+      "caae2b87-66d8-4ae1-af1f-a62702629919": {
+        "type": "OutputPort",
+        "name": "dummy",
+        "target_id": ""
+      }
+    },
+    "inputPorts": {
+      "56afe407-72bd-402b-9704-a3f6ab67f559": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "bd689d19-d526-4912-95bc-f1e9f50be488"
+      }
+    },
+    "port_map": {
+      "L-R": "L-R"
+    },
     "producers": [
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/1/0/2": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-1-0-2": "L-R"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/1/0/2": "L-R"
+        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-1-0-2": "dummy"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "101_0/1/0/2"
+    "humanReadableKey": "101_0-1-0-2"
   },
   {
-    "oid": "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0/1/1/0",
+    "oid": "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0-1-1-0",
     "name": "CC",
     "categoryType": "Data",
     "category": "Memory",
@@ -26931,7 +28345,7 @@
       0
     ],
     "reprodata": {},
-    "loop_ctx": "1/1/0",
+    "loop_ctx": "1-1-0",
     "weight": 5,
     "applicationArgs": {
       "L-R": {
@@ -27157,24 +28571,41 @@
     "group_end": "0",
     "L-R": "",
     "dummy": "~param4.what",
-    "iid": "0/1/1/0",
+    "iid": "0-1-1-0",
     "lg_key": "96b6f0a8-c814-4d4d-b0c8-46352c83448f",
+    "outputPorts": {
+      "caae2b87-66d8-4ae1-af1f-a62702629919": {
+        "type": "OutputPort",
+        "name": "dummy",
+        "target_id": ""
+      }
+    },
+    "inputPorts": {
+      "56afe407-72bd-402b-9704-a3f6ab67f559": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "bd689d19-d526-4912-95bc-f1e9f50be488"
+      }
+    },
+    "port_map": {
+      "L-R": "L-R"
+    },
     "producers": [
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/1/1/0": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-1-1-0": "L-R"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/1/1/0": "L-R"
+        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-1-1-0": "dummy"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "102_0/1/1/0"
+    "humanReadableKey": "102_0-1-1-0"
   },
   {
-    "oid": "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0/1/1/1",
+    "oid": "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0-1-1-1",
     "name": "CC",
     "categoryType": "Data",
     "category": "Memory",
@@ -27187,7 +28618,7 @@
       1
     ],
     "reprodata": {},
-    "loop_ctx": "1/1/1",
+    "loop_ctx": "1-1-1",
     "weight": 5,
     "applicationArgs": {
       "L-R": {
@@ -27413,24 +28844,41 @@
     "group_end": "0",
     "L-R": "",
     "dummy": "~param4.what",
-    "iid": "0/1/1/1",
+    "iid": "0-1-1-1",
     "lg_key": "96b6f0a8-c814-4d4d-b0c8-46352c83448f",
+    "outputPorts": {
+      "caae2b87-66d8-4ae1-af1f-a62702629919": {
+        "type": "OutputPort",
+        "name": "dummy",
+        "target_id": ""
+      }
+    },
+    "inputPorts": {
+      "56afe407-72bd-402b-9704-a3f6ab67f559": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "bd689d19-d526-4912-95bc-f1e9f50be488"
+      }
+    },
+    "port_map": {
+      "L-R": "L-R"
+    },
     "producers": [
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/1/1/1": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-1-1-1": "L-R"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/1/1/1": "L-R"
+        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-1-1-1": "dummy"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "103_0/1/1/1"
+    "humanReadableKey": "103_0-1-1-1"
   },
   {
-    "oid": "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0/1/1/2",
+    "oid": "test_pg_gen_96b6f0a8-c814-4d4d-b0c8-46352c83448f_0-1-1-2",
     "name": "CC",
     "categoryType": "Data",
     "category": "Memory",
@@ -27443,7 +28891,7 @@
       2
     ],
     "reprodata": {},
-    "loop_ctx": "1/1/2",
+    "loop_ctx": "1-1-2",
     "weight": 5,
     "applicationArgs": {
       "L-R": {
@@ -27669,24 +29117,41 @@
     "group_end": "0",
     "L-R": "",
     "dummy": "~param4.what",
-    "iid": "0/1/1/2",
+    "iid": "0-1-1-2",
     "lg_key": "96b6f0a8-c814-4d4d-b0c8-46352c83448f",
+    "outputPorts": {
+      "caae2b87-66d8-4ae1-af1f-a62702629919": {
+        "type": "OutputPort",
+        "name": "dummy",
+        "target_id": ""
+      }
+    },
+    "inputPorts": {
+      "56afe407-72bd-402b-9704-a3f6ab67f559": {
+        "type": "InputOutput",
+        "name": "L-R",
+        "source_id": "bd689d19-d526-4912-95bc-f1e9f50be488"
+      }
+    },
+    "port_map": {
+      "L-R": "L-R"
+    },
     "producers": [
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/1/1/2": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-1-1-2": "L-R"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/1/1/2": "L-R"
+        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-1-1-2": "dummy"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "104_0/1/1/2"
+    "humanReadableKey": "104_0-1-1-2"
   },
   {
-    "oid": "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0/0/0",
+    "oid": "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0-0-0",
     "name": "Model Image",
     "categoryType": "Data",
     "category": "Memory",
@@ -27698,7 +29163,7 @@
       0
     ],
     "reprodata": {},
-    "loop_ctx": "0/0",
+    "loop_ctx": "0-0",
     "weight": 5,
     "applicationArgs": {
       "B-T": {
@@ -27986,48 +29451,75 @@
     "L-R": "",
     "B-R": "",
     "dummy": "~param1.param2",
-    "iid": "0/0/0",
+    "iid": "0-0-0",
     "lg_key": "153018c4-7095-4744-a5a8-f43f1d1429c0",
+    "outputPorts": {
+      "e2c6f1b9-3dfc-4cf8-bf0e-5bc359e2c03a": {
+        "type": "OutputPort",
+        "name": "L-R",
+        "target_id": "bd689d19-d526-4912-95bc-f1e9f50be488"
+      },
+      "3e5fff6b-396a-4749-b666-5ad8c02ddacc": {
+        "type": "OutputPort",
+        "name": "B-R",
+        "target_id": "d54738f2-b025-4230-95e2-ec9f921775ff"
+      },
+      "caae2b87-66d8-4ae1-af1f-a62702629919": {
+        "type": "OutputPort",
+        "name": "dummy",
+        "target_id": ""
+      }
+    },
+    "inputPorts": {
+      "48931bdd-bb50-449c-88e2-d046d7f1e27f": {
+        "type": "InputPort",
+        "name": "B-T",
+        "source_id": "c3c3e8aa-ef76-4175-87b9-9d570f52f27a"
+      }
+    },
+    "port_map": {
+      "B-T": "B-T"
+    },
     "producers": [
       {
-        "test_pg_gen_c3c3e8aa-ef76-4175-87b9-9d570f52f27a_0/0/0": "B-T"
+        "test_pg_gen_c3c3e8aa-ef76-4175-87b9-9d570f52f27a_0-0-0": "B-T"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/0/0/0": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-0-0-0": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/0/0/1": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-0-0-1": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/0/0/2": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-0-0-2": "L-R"
       },
       {
-        "test_pg_gen_e53d1b5e-8617-4315-96e4-66b826a72f29_0/0": "B-R"
+        "test_pg_gen_e53d1b5e-8617-4315-96e4-66b826a72f29_0-0": "dummy"
       },
       {
-        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/0/0/0": "B-R"
+        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-0-0-0": "B-R"
       },
       {
-        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/0/0/1": "B-R"
+        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-0-0-1": "B-R"
       },
       {
-        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/0/0/2": "B-R"
+        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-0-0-2": "B-R"
       },
       {
-        "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0/0/1": "dummy"
+        "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0-0-1": "dummy"
       },
       {
-        "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0/0/1": "dummy"
+        "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0-0-1": "dummy"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "105_0/0/0"
+    "humanReadableKey": "105_0-0-0"
   },
   {
-    "oid": "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0/0/1",
+    "oid": "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0-0-1",
     "name": "Model Image",
     "categoryType": "Data",
     "category": "Memory",
@@ -28039,7 +29531,7 @@
       1
     ],
     "reprodata": {},
-    "loop_ctx": "0/1",
+    "loop_ctx": "0-1",
     "weight": 5,
     "applicationArgs": {
       "B-T": {
@@ -28327,42 +29819,69 @@
     "L-R": "",
     "B-R": "",
     "dummy": "~param1.param2",
-    "iid": "0/0/1",
+    "iid": "0-0-1",
     "lg_key": "153018c4-7095-4744-a5a8-f43f1d1429c0",
+    "outputPorts": {
+      "e2c6f1b9-3dfc-4cf8-bf0e-5bc359e2c03a": {
+        "type": "OutputPort",
+        "name": "L-R",
+        "target_id": "bd689d19-d526-4912-95bc-f1e9f50be488"
+      },
+      "3e5fff6b-396a-4749-b666-5ad8c02ddacc": {
+        "type": "OutputPort",
+        "name": "B-R",
+        "target_id": "d54738f2-b025-4230-95e2-ec9f921775ff"
+      },
+      "caae2b87-66d8-4ae1-af1f-a62702629919": {
+        "type": "OutputPort",
+        "name": "dummy",
+        "target_id": ""
+      }
+    },
+    "inputPorts": {
+      "48931bdd-bb50-449c-88e2-d046d7f1e27f": {
+        "type": "InputPort",
+        "name": "B-T",
+        "source_id": "c3c3e8aa-ef76-4175-87b9-9d570f52f27a"
+      }
+    },
+    "port_map": {
+      "B-T": "B-T"
+    },
     "producers": [
       {
-        "test_pg_gen_c3c3e8aa-ef76-4175-87b9-9d570f52f27a_0/0/1": "B-T"
+        "test_pg_gen_c3c3e8aa-ef76-4175-87b9-9d570f52f27a_0-0-1": "B-T"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/0/1/0": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-0-1-0": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/0/1/1": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-0-1-1": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/0/1/2": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-0-1-2": "L-R"
       },
       {
-        "test_pg_gen_e53d1b5e-8617-4315-96e4-66b826a72f29_0/0": "B-R"
+        "test_pg_gen_e53d1b5e-8617-4315-96e4-66b826a72f29_0-0": "dummy"
       },
       {
-        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/0/1/0": "B-R"
+        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-0-1-0": "B-R"
       },
       {
-        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/0/1/1": "B-R"
+        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-0-1-1": "B-R"
       },
       {
-        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/0/1/2": "B-R"
+        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-0-1-2": "B-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "106_0/0/1"
+    "humanReadableKey": "106_0-0-1"
   },
   {
-    "oid": "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0/1/0",
+    "oid": "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0-1-0",
     "name": "Model Image",
     "categoryType": "Data",
     "category": "Memory",
@@ -28374,7 +29893,7 @@
       0
     ],
     "reprodata": {},
-    "loop_ctx": "1/0",
+    "loop_ctx": "1-0",
     "weight": 5,
     "applicationArgs": {
       "B-T": {
@@ -28662,48 +30181,75 @@
     "L-R": "",
     "B-R": "",
     "dummy": "~param1.param2",
-    "iid": "0/1/0",
+    "iid": "0-1-0",
     "lg_key": "153018c4-7095-4744-a5a8-f43f1d1429c0",
+    "outputPorts": {
+      "e2c6f1b9-3dfc-4cf8-bf0e-5bc359e2c03a": {
+        "type": "OutputPort",
+        "name": "L-R",
+        "target_id": "bd689d19-d526-4912-95bc-f1e9f50be488"
+      },
+      "3e5fff6b-396a-4749-b666-5ad8c02ddacc": {
+        "type": "OutputPort",
+        "name": "B-R",
+        "target_id": "d54738f2-b025-4230-95e2-ec9f921775ff"
+      },
+      "caae2b87-66d8-4ae1-af1f-a62702629919": {
+        "type": "OutputPort",
+        "name": "dummy",
+        "target_id": ""
+      }
+    },
+    "inputPorts": {
+      "48931bdd-bb50-449c-88e2-d046d7f1e27f": {
+        "type": "InputPort",
+        "name": "B-T",
+        "source_id": "c3c3e8aa-ef76-4175-87b9-9d570f52f27a"
+      }
+    },
+    "port_map": {
+      "B-T": "B-T"
+    },
     "producers": [
       {
-        "test_pg_gen_c3c3e8aa-ef76-4175-87b9-9d570f52f27a_0/1/0": "B-T"
+        "test_pg_gen_c3c3e8aa-ef76-4175-87b9-9d570f52f27a_0-1-0": "B-T"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/1/0/0": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-1-0-0": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/1/0/1": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-1-0-1": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/1/0/2": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-1-0-2": "L-R"
       },
       {
-        "test_pg_gen_e53d1b5e-8617-4315-96e4-66b826a72f29_0/1": "B-R"
+        "test_pg_gen_e53d1b5e-8617-4315-96e4-66b826a72f29_0-1": "dummy"
       },
       {
-        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/1/0/0": "B-R"
+        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-1-0-0": "B-R"
       },
       {
-        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/1/0/1": "B-R"
+        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-1-0-1": "B-R"
       },
       {
-        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/1/0/2": "B-R"
+        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-1-0-2": "B-R"
       },
       {
-        "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0/1/1": "dummy"
+        "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0-1-1": "dummy"
       },
       {
-        "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0/1/1": "dummy"
+        "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0-1-1": "dummy"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "107_0/1/0"
+    "humanReadableKey": "107_0-1-0"
   },
   {
-    "oid": "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0/1/1",
+    "oid": "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0-1-1",
     "name": "Model Image",
     "categoryType": "Data",
     "category": "Memory",
@@ -28715,7 +30261,7 @@
       1
     ],
     "reprodata": {},
-    "loop_ctx": "1/1",
+    "loop_ctx": "1-1",
     "weight": 5,
     "applicationArgs": {
       "B-T": {
@@ -29003,42 +30549,69 @@
     "L-R": "",
     "B-R": "",
     "dummy": "~param1.param2",
-    "iid": "0/1/1",
+    "iid": "0-1-1",
     "lg_key": "153018c4-7095-4744-a5a8-f43f1d1429c0",
+    "outputPorts": {
+      "e2c6f1b9-3dfc-4cf8-bf0e-5bc359e2c03a": {
+        "type": "OutputPort",
+        "name": "L-R",
+        "target_id": "bd689d19-d526-4912-95bc-f1e9f50be488"
+      },
+      "3e5fff6b-396a-4749-b666-5ad8c02ddacc": {
+        "type": "OutputPort",
+        "name": "B-R",
+        "target_id": "d54738f2-b025-4230-95e2-ec9f921775ff"
+      },
+      "caae2b87-66d8-4ae1-af1f-a62702629919": {
+        "type": "OutputPort",
+        "name": "dummy",
+        "target_id": ""
+      }
+    },
+    "inputPorts": {
+      "48931bdd-bb50-449c-88e2-d046d7f1e27f": {
+        "type": "InputPort",
+        "name": "B-T",
+        "source_id": "c3c3e8aa-ef76-4175-87b9-9d570f52f27a"
+      }
+    },
+    "port_map": {
+      "B-T": "B-T"
+    },
     "producers": [
       {
-        "test_pg_gen_c3c3e8aa-ef76-4175-87b9-9d570f52f27a_0/1/1": "B-T"
+        "test_pg_gen_c3c3e8aa-ef76-4175-87b9-9d570f52f27a_0-1-1": "B-T"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/1/1/0": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-1-1-0": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/1/1/1": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-1-1-1": "L-R"
       },
       {
-        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0/1/1/2": "L-R"
+        "test_pg_gen_bd689d19-d526-4912-95bc-f1e9f50be488_0-1-1-2": "L-R"
       },
       {
-        "test_pg_gen_e53d1b5e-8617-4315-96e4-66b826a72f29_0/1": "B-R"
+        "test_pg_gen_e53d1b5e-8617-4315-96e4-66b826a72f29_0-1": "dummy"
       },
       {
-        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/1/1/0": "B-R"
+        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-1-1-0": "B-R"
       },
       {
-        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/1/1/1": "B-R"
+        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-1-1-1": "B-R"
       },
       {
-        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0/1/1/2": "B-R"
+        "test_pg_gen_d54738f2-b025-4230-95e2-ec9f921775ff_0-1-1-2": "B-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "108_0/1/1"
+    "humanReadableKey": "108_0-1-1"
   },
   {
-    "oid": "test_pg_gen_7c6fd876-933a-4df3-9c22-7394c9c543be_0/0/0",
+    "oid": "test_pg_gen_7c6fd876-933a-4df3-9c22-7394c9c543be_0-0-0",
     "name": "GRMV",
     "categoryType": "Data",
     "category": "Memory",
@@ -29050,7 +30623,7 @@
       0
     ],
     "reprodata": {},
-    "loop_ctx": "0/0",
+    "loop_ctx": "0-0",
     "weight": 5,
     "applicationArgs": {
       "T-B": {
@@ -29276,24 +30849,41 @@
     "group_end": "0",
     "T-B": "",
     "T-L": "",
-    "iid": "0/0/0",
+    "iid": "0-0-0",
     "lg_key": "7c6fd876-933a-4df3-9c22-7394c9c543be",
+    "outputPorts": {
+      "347bd5df-e58f-45f3-97ae-9ef011b19181": {
+        "type": "OutputPort",
+        "name": "T-L",
+        "target_id": "040bd874-761a-43f8-91a4-312f154d9947"
+      }
+    },
+    "inputPorts": {
+      "4977eeee-7c83-4249-aede-4846be45434a": {
+        "type": "InputPort",
+        "name": "T-B",
+        "source_id": "f452db57-9752-438a-b574-b7cb0435d2fb"
+      }
+    },
+    "port_map": {
+      "T-B": "T-B"
+    },
     "producers": [
       {
-        "test_pg_gen_f452db57-9752-438a-b574-b7cb0435d2fb_0/0/0": "T-B"
+        "test_pg_gen_f452db57-9752-438a-b574-b7cb0435d2fb_0-0-0": "T-B"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_040bd874-761a-43f8-91a4-312f154d9947_0/0/0": "T-L"
+        "test_pg_gen_040bd874-761a-43f8-91a4-312f154d9947_0-0-0": "T-L"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "109_0/0/0"
+    "humanReadableKey": "109_0-0-0"
   },
   {
-    "oid": "test_pg_gen_7c6fd876-933a-4df3-9c22-7394c9c543be_0/0/1",
+    "oid": "test_pg_gen_7c6fd876-933a-4df3-9c22-7394c9c543be_0-0-1",
     "name": "GRMV",
     "categoryType": "Data",
     "category": "Memory",
@@ -29305,7 +30895,7 @@
       1
     ],
     "reprodata": {},
-    "loop_ctx": "0/1",
+    "loop_ctx": "0-1",
     "weight": 5,
     "applicationArgs": {
       "T-B": {
@@ -29531,24 +31121,41 @@
     "group_end": "0",
     "T-B": "",
     "T-L": "",
-    "iid": "0/0/1",
+    "iid": "0-0-1",
     "lg_key": "7c6fd876-933a-4df3-9c22-7394c9c543be",
+    "outputPorts": {
+      "347bd5df-e58f-45f3-97ae-9ef011b19181": {
+        "type": "OutputPort",
+        "name": "T-L",
+        "target_id": "040bd874-761a-43f8-91a4-312f154d9947"
+      }
+    },
+    "inputPorts": {
+      "4977eeee-7c83-4249-aede-4846be45434a": {
+        "type": "InputPort",
+        "name": "T-B",
+        "source_id": "f452db57-9752-438a-b574-b7cb0435d2fb"
+      }
+    },
+    "port_map": {
+      "T-B": "T-B"
+    },
     "producers": [
       {
-        "test_pg_gen_f452db57-9752-438a-b574-b7cb0435d2fb_0/0/1": "T-B"
+        "test_pg_gen_f452db57-9752-438a-b574-b7cb0435d2fb_0-0-1": "T-B"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_040bd874-761a-43f8-91a4-312f154d9947_0/0/1": "T-L"
+        "test_pg_gen_040bd874-761a-43f8-91a4-312f154d9947_0-0-1": "T-L"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "110_0/0/1"
+    "humanReadableKey": "110_0-0-1"
   },
   {
-    "oid": "test_pg_gen_7c6fd876-933a-4df3-9c22-7394c9c543be_0/1/0",
+    "oid": "test_pg_gen_7c6fd876-933a-4df3-9c22-7394c9c543be_0-1-0",
     "name": "GRMV",
     "categoryType": "Data",
     "category": "Memory",
@@ -29560,7 +31167,7 @@
       0
     ],
     "reprodata": {},
-    "loop_ctx": "1/0",
+    "loop_ctx": "1-0",
     "weight": 5,
     "applicationArgs": {
       "T-B": {
@@ -29786,24 +31393,41 @@
     "group_end": "0",
     "T-B": "",
     "T-L": "",
-    "iid": "0/1/0",
+    "iid": "0-1-0",
     "lg_key": "7c6fd876-933a-4df3-9c22-7394c9c543be",
+    "outputPorts": {
+      "347bd5df-e58f-45f3-97ae-9ef011b19181": {
+        "type": "OutputPort",
+        "name": "T-L",
+        "target_id": "040bd874-761a-43f8-91a4-312f154d9947"
+      }
+    },
+    "inputPorts": {
+      "4977eeee-7c83-4249-aede-4846be45434a": {
+        "type": "InputPort",
+        "name": "T-B",
+        "source_id": "f452db57-9752-438a-b574-b7cb0435d2fb"
+      }
+    },
+    "port_map": {
+      "T-B": "T-B"
+    },
     "producers": [
       {
-        "test_pg_gen_f452db57-9752-438a-b574-b7cb0435d2fb_0/1/0": "T-B"
+        "test_pg_gen_f452db57-9752-438a-b574-b7cb0435d2fb_0-1-0": "T-B"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_040bd874-761a-43f8-91a4-312f154d9947_0/1/0": "T-L"
+        "test_pg_gen_040bd874-761a-43f8-91a4-312f154d9947_0-1-0": "T-L"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "111_0/1/0"
+    "humanReadableKey": "111_0-1-0"
   },
   {
-    "oid": "test_pg_gen_7c6fd876-933a-4df3-9c22-7394c9c543be_0/1/1",
+    "oid": "test_pg_gen_7c6fd876-933a-4df3-9c22-7394c9c543be_0-1-1",
     "name": "GRMV",
     "categoryType": "Data",
     "category": "Memory",
@@ -29815,7 +31439,7 @@
       1
     ],
     "reprodata": {},
-    "loop_ctx": "1/1",
+    "loop_ctx": "1-1",
     "weight": 5,
     "applicationArgs": {
       "T-B": {
@@ -30041,24 +31665,41 @@
     "group_end": "0",
     "T-B": "",
     "T-L": "",
-    "iid": "0/1/1",
+    "iid": "0-1-1",
     "lg_key": "7c6fd876-933a-4df3-9c22-7394c9c543be",
+    "outputPorts": {
+      "347bd5df-e58f-45f3-97ae-9ef011b19181": {
+        "type": "OutputPort",
+        "name": "T-L",
+        "target_id": "040bd874-761a-43f8-91a4-312f154d9947"
+      }
+    },
+    "inputPorts": {
+      "4977eeee-7c83-4249-aede-4846be45434a": {
+        "type": "InputPort",
+        "name": "T-B",
+        "source_id": "f452db57-9752-438a-b574-b7cb0435d2fb"
+      }
+    },
+    "port_map": {
+      "T-B": "T-B"
+    },
     "producers": [
       {
-        "test_pg_gen_f452db57-9752-438a-b574-b7cb0435d2fb_0/1/1": "T-B"
+        "test_pg_gen_f452db57-9752-438a-b574-b7cb0435d2fb_0-1-1": "T-B"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_040bd874-761a-43f8-91a4-312f154d9947_0/1/1": "T-L"
+        "test_pg_gen_040bd874-761a-43f8-91a4-312f154d9947_0-1-1": "T-L"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "112_0/1/1"
+    "humanReadableKey": "112_0-1-1"
   },
   {
-    "oid": "test_pg_gen_476c080e-6670-4ce5-8e6c-16a09456d7be_0/0/0",
+    "oid": "test_pg_gen_476c080e-6670-4ce5-8e6c-16a09456d7be_0-0-0",
     "name": "RMV",
     "categoryType": "Data",
     "category": "Memory",
@@ -30070,7 +31711,7 @@
       0
     ],
     "reprodata": {},
-    "loop_ctx": "0/0",
+    "loop_ctx": "0-0",
     "weight": 5,
     "applicationArgs": {
       "R-T": {
@@ -30296,24 +31937,41 @@
     "group_end": "0",
     "R-T": "",
     "R-L": "",
-    "iid": "0/0/0",
+    "iid": "0-0-0",
     "lg_key": "476c080e-6670-4ce5-8e6c-16a09456d7be",
+    "outputPorts": {
+      "416842a8-f187-430c-94f6-23932d997b75": {
+        "type": "OutputPort",
+        "name": "R-L",
+        "target_id": "9bc7d378-35e1-4982-8745-6e929efd0afd"
+      }
+    },
+    "inputPorts": {
+      "38da44cb-062c-4e3f-8d21-99b6a72c73b1": {
+        "type": "InputPort",
+        "name": "R-T",
+        "source_id": "040bd874-761a-43f8-91a4-312f154d9947"
+      }
+    },
     "consumers": [
       {
-        "test_pg_gen_9bc7d378-35e1-4982-8745-6e929efd0afd_0/0/0": "R-L"
+        "test_pg_gen_9bc7d378-35e1-4982-8745-6e929efd0afd_0-0-0": "R-L"
       }
     ],
+    "port_map": {
+      "R-T": "R-T"
+    },
     "producers": [
       {
-        "test_pg_gen_040bd874-761a-43f8-91a4-312f154d9947_0/0/0": "R-T"
+        "test_pg_gen_040bd874-761a-43f8-91a4-312f154d9947_0-0-0": "R-T"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "113_0/0/0"
+    "humanReadableKey": "113_0-0-0"
   },
   {
-    "oid": "test_pg_gen_476c080e-6670-4ce5-8e6c-16a09456d7be_0/0/1",
+    "oid": "test_pg_gen_476c080e-6670-4ce5-8e6c-16a09456d7be_0-0-1",
     "name": "RMV",
     "categoryType": "Data",
     "category": "Memory",
@@ -30325,7 +31983,7 @@
       1
     ],
     "reprodata": {},
-    "loop_ctx": "0/1",
+    "loop_ctx": "0-1",
     "weight": 5,
     "applicationArgs": {
       "R-T": {
@@ -30551,24 +32209,41 @@
     "group_end": "0",
     "R-T": "",
     "R-L": "",
-    "iid": "0/0/1",
+    "iid": "0-0-1",
     "lg_key": "476c080e-6670-4ce5-8e6c-16a09456d7be",
+    "outputPorts": {
+      "416842a8-f187-430c-94f6-23932d997b75": {
+        "type": "OutputPort",
+        "name": "R-L",
+        "target_id": "9bc7d378-35e1-4982-8745-6e929efd0afd"
+      }
+    },
+    "inputPorts": {
+      "38da44cb-062c-4e3f-8d21-99b6a72c73b1": {
+        "type": "InputPort",
+        "name": "R-T",
+        "source_id": "040bd874-761a-43f8-91a4-312f154d9947"
+      }
+    },
     "consumers": [
       {
-        "test_pg_gen_9bc7d378-35e1-4982-8745-6e929efd0afd_0/0/1": "R-L"
+        "test_pg_gen_9bc7d378-35e1-4982-8745-6e929efd0afd_0-0-1": "R-L"
       }
     ],
+    "port_map": {
+      "R-T": "R-T"
+    },
     "producers": [
       {
-        "test_pg_gen_040bd874-761a-43f8-91a4-312f154d9947_0/0/1": "R-T"
+        "test_pg_gen_040bd874-761a-43f8-91a4-312f154d9947_0-0-1": "R-T"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "114_0/0/1"
+    "humanReadableKey": "114_0-0-1"
   },
   {
-    "oid": "test_pg_gen_476c080e-6670-4ce5-8e6c-16a09456d7be_0/1/0",
+    "oid": "test_pg_gen_476c080e-6670-4ce5-8e6c-16a09456d7be_0-1-0",
     "name": "RMV",
     "categoryType": "Data",
     "category": "Memory",
@@ -30580,7 +32255,7 @@
       0
     ],
     "reprodata": {},
-    "loop_ctx": "1/0",
+    "loop_ctx": "1-0",
     "weight": 5,
     "applicationArgs": {
       "R-T": {
@@ -30806,24 +32481,41 @@
     "group_end": "0",
     "R-T": "",
     "R-L": "",
-    "iid": "0/1/0",
+    "iid": "0-1-0",
     "lg_key": "476c080e-6670-4ce5-8e6c-16a09456d7be",
+    "outputPorts": {
+      "416842a8-f187-430c-94f6-23932d997b75": {
+        "type": "OutputPort",
+        "name": "R-L",
+        "target_id": "9bc7d378-35e1-4982-8745-6e929efd0afd"
+      }
+    },
+    "inputPorts": {
+      "38da44cb-062c-4e3f-8d21-99b6a72c73b1": {
+        "type": "InputPort",
+        "name": "R-T",
+        "source_id": "040bd874-761a-43f8-91a4-312f154d9947"
+      }
+    },
     "consumers": [
       {
-        "test_pg_gen_9bc7d378-35e1-4982-8745-6e929efd0afd_0/1/0": "R-L"
+        "test_pg_gen_9bc7d378-35e1-4982-8745-6e929efd0afd_0-1-0": "R-L"
       }
     ],
+    "port_map": {
+      "R-T": "R-T"
+    },
     "producers": [
       {
-        "test_pg_gen_040bd874-761a-43f8-91a4-312f154d9947_0/1/0": "R-T"
+        "test_pg_gen_040bd874-761a-43f8-91a4-312f154d9947_0-1-0": "R-T"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "115_0/1/0"
+    "humanReadableKey": "115_0-1-0"
   },
   {
-    "oid": "test_pg_gen_476c080e-6670-4ce5-8e6c-16a09456d7be_0/1/1",
+    "oid": "test_pg_gen_476c080e-6670-4ce5-8e6c-16a09456d7be_0-1-1",
     "name": "RMV",
     "categoryType": "Data",
     "category": "Memory",
@@ -30835,7 +32527,7 @@
       1
     ],
     "reprodata": {},
-    "loop_ctx": "1/1",
+    "loop_ctx": "1-1",
     "weight": 5,
     "applicationArgs": {
       "R-T": {
@@ -31061,24 +32753,41 @@
     "group_end": "0",
     "R-T": "",
     "R-L": "",
-    "iid": "0/1/1",
+    "iid": "0-1-1",
     "lg_key": "476c080e-6670-4ce5-8e6c-16a09456d7be",
+    "outputPorts": {
+      "416842a8-f187-430c-94f6-23932d997b75": {
+        "type": "OutputPort",
+        "name": "R-L",
+        "target_id": "9bc7d378-35e1-4982-8745-6e929efd0afd"
+      }
+    },
+    "inputPorts": {
+      "38da44cb-062c-4e3f-8d21-99b6a72c73b1": {
+        "type": "InputPort",
+        "name": "R-T",
+        "source_id": "040bd874-761a-43f8-91a4-312f154d9947"
+      }
+    },
     "consumers": [
       {
-        "test_pg_gen_9bc7d378-35e1-4982-8745-6e929efd0afd_0/1/1": "R-L"
+        "test_pg_gen_9bc7d378-35e1-4982-8745-6e929efd0afd_0-1-1": "R-L"
       }
     ],
+    "port_map": {
+      "R-T": "R-T"
+    },
     "producers": [
       {
-        "test_pg_gen_040bd874-761a-43f8-91a4-312f154d9947_0/1/1": "R-T"
+        "test_pg_gen_040bd874-761a-43f8-91a4-312f154d9947_0-1-1": "R-T"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "116_0/1/1"
+    "humanReadableKey": "116_0-1-1"
   },
   {
-    "oid": "test_pg_gen_2803f8e8-bcd4-4a78-8d28-2414da4a1bb0_0/0/0",
+    "oid": "test_pg_gen_2803f8e8-bcd4-4a78-8d28-2414da4a1bb0_0-0-0",
     "name": "Residual Vis",
     "categoryType": "Data",
     "category": "Memory",
@@ -31090,7 +32799,7 @@
       0
     ],
     "reprodata": {},
-    "loop_ctx": "0/0",
+    "loop_ctx": "0-0",
     "weight": 5,
     "applicationArgs": {
       "R-L": {
@@ -31316,24 +33025,41 @@
     "group_end": "0",
     "R-L": "",
     "T-B": "",
-    "iid": "0/0/0",
+    "iid": "0-0-0",
     "lg_key": "2803f8e8-bcd4-4a78-8d28-2414da4a1bb0",
+    "outputPorts": {
+      "147d19a2-0ba1-497e-bdf3-bacc282b319c": {
+        "type": "OutputPort",
+        "name": "T-B",
+        "target_id": "c4546a4f-605f-48ba-893e-62aefb63f901"
+      }
+    },
+    "inputPorts": {
+      "ae17900e-6696-4e76-85b8-430819c23a46": {
+        "type": "InputPort",
+        "name": "R-L",
+        "source_id": "9bc7d378-35e1-4982-8745-6e929efd0afd"
+      }
+    },
+    "port_map": {
+      "R-L": "R-L"
+    },
     "producers": [
       {
-        "test_pg_gen_9bc7d378-35e1-4982-8745-6e929efd0afd_0/0/0": "R-L"
+        "test_pg_gen_9bc7d378-35e1-4982-8745-6e929efd0afd_0-0-0": "R-L"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_c4546a4f-605f-48ba-893e-62aefb63f901_0/0/0": "T-B"
+        "test_pg_gen_c4546a4f-605f-48ba-893e-62aefb63f901_0-0-0": "T-B"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "117_0/0/0"
+    "humanReadableKey": "117_0-0-0"
   },
   {
-    "oid": "test_pg_gen_2803f8e8-bcd4-4a78-8d28-2414da4a1bb0_0/0/1",
+    "oid": "test_pg_gen_2803f8e8-bcd4-4a78-8d28-2414da4a1bb0_0-0-1",
     "name": "Residual Vis",
     "categoryType": "Data",
     "category": "Memory",
@@ -31345,7 +33071,7 @@
       1
     ],
     "reprodata": {},
-    "loop_ctx": "0/1",
+    "loop_ctx": "0-1",
     "weight": 5,
     "applicationArgs": {
       "R-L": {
@@ -31571,24 +33297,41 @@
     "group_end": "0",
     "R-L": "",
     "T-B": "",
-    "iid": "0/0/1",
+    "iid": "0-0-1",
     "lg_key": "2803f8e8-bcd4-4a78-8d28-2414da4a1bb0",
+    "outputPorts": {
+      "147d19a2-0ba1-497e-bdf3-bacc282b319c": {
+        "type": "OutputPort",
+        "name": "T-B",
+        "target_id": "c4546a4f-605f-48ba-893e-62aefb63f901"
+      }
+    },
+    "inputPorts": {
+      "ae17900e-6696-4e76-85b8-430819c23a46": {
+        "type": "InputPort",
+        "name": "R-L",
+        "source_id": "9bc7d378-35e1-4982-8745-6e929efd0afd"
+      }
+    },
+    "port_map": {
+      "R-L": "R-L"
+    },
     "producers": [
       {
-        "test_pg_gen_9bc7d378-35e1-4982-8745-6e929efd0afd_0/0/1": "R-L"
+        "test_pg_gen_9bc7d378-35e1-4982-8745-6e929efd0afd_0-0-1": "R-L"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_c4546a4f-605f-48ba-893e-62aefb63f901_0/0/1": "T-B"
+        "test_pg_gen_c4546a4f-605f-48ba-893e-62aefb63f901_0-0-1": "T-B"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "118_0/0/1"
+    "humanReadableKey": "118_0-0-1"
   },
   {
-    "oid": "test_pg_gen_2803f8e8-bcd4-4a78-8d28-2414da4a1bb0_0/1/0",
+    "oid": "test_pg_gen_2803f8e8-bcd4-4a78-8d28-2414da4a1bb0_0-1-0",
     "name": "Residual Vis",
     "categoryType": "Data",
     "category": "Memory",
@@ -31600,7 +33343,7 @@
       0
     ],
     "reprodata": {},
-    "loop_ctx": "1/0",
+    "loop_ctx": "1-0",
     "weight": 5,
     "applicationArgs": {
       "R-L": {
@@ -31826,24 +33569,41 @@
     "group_end": "0",
     "R-L": "",
     "T-B": "",
-    "iid": "0/1/0",
+    "iid": "0-1-0",
     "lg_key": "2803f8e8-bcd4-4a78-8d28-2414da4a1bb0",
+    "outputPorts": {
+      "147d19a2-0ba1-497e-bdf3-bacc282b319c": {
+        "type": "OutputPort",
+        "name": "T-B",
+        "target_id": "c4546a4f-605f-48ba-893e-62aefb63f901"
+      }
+    },
+    "inputPorts": {
+      "ae17900e-6696-4e76-85b8-430819c23a46": {
+        "type": "InputPort",
+        "name": "R-L",
+        "source_id": "9bc7d378-35e1-4982-8745-6e929efd0afd"
+      }
+    },
+    "port_map": {
+      "R-L": "R-L"
+    },
     "producers": [
       {
-        "test_pg_gen_9bc7d378-35e1-4982-8745-6e929efd0afd_0/1/0": "R-L"
+        "test_pg_gen_9bc7d378-35e1-4982-8745-6e929efd0afd_0-1-0": "R-L"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_c4546a4f-605f-48ba-893e-62aefb63f901_0/1/0": "T-B"
+        "test_pg_gen_c4546a4f-605f-48ba-893e-62aefb63f901_0-1-0": "T-B"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "119_0/1/0"
+    "humanReadableKey": "119_0-1-0"
   },
   {
-    "oid": "test_pg_gen_2803f8e8-bcd4-4a78-8d28-2414da4a1bb0_0/1/1",
+    "oid": "test_pg_gen_2803f8e8-bcd4-4a78-8d28-2414da4a1bb0_0-1-1",
     "name": "Residual Vis",
     "categoryType": "Data",
     "category": "Memory",
@@ -31855,7 +33615,7 @@
       1
     ],
     "reprodata": {},
-    "loop_ctx": "1/1",
+    "loop_ctx": "1-1",
     "weight": 5,
     "applicationArgs": {
       "R-L": {
@@ -32081,24 +33841,41 @@
     "group_end": "0",
     "R-L": "",
     "T-B": "",
-    "iid": "0/1/1",
+    "iid": "0-1-1",
     "lg_key": "2803f8e8-bcd4-4a78-8d28-2414da4a1bb0",
+    "outputPorts": {
+      "147d19a2-0ba1-497e-bdf3-bacc282b319c": {
+        "type": "OutputPort",
+        "name": "T-B",
+        "target_id": "c4546a4f-605f-48ba-893e-62aefb63f901"
+      }
+    },
+    "inputPorts": {
+      "ae17900e-6696-4e76-85b8-430819c23a46": {
+        "type": "InputPort",
+        "name": "R-L",
+        "source_id": "9bc7d378-35e1-4982-8745-6e929efd0afd"
+      }
+    },
+    "port_map": {
+      "R-L": "R-L"
+    },
     "producers": [
       {
-        "test_pg_gen_9bc7d378-35e1-4982-8745-6e929efd0afd_0/1/1": "R-L"
+        "test_pg_gen_9bc7d378-35e1-4982-8745-6e929efd0afd_0-1-1": "R-L"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_c4546a4f-605f-48ba-893e-62aefb63f901_0/1/1": "T-B"
+        "test_pg_gen_c4546a4f-605f-48ba-893e-62aefb63f901_0-1-1": "T-B"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "120_0/1/1"
+    "humanReadableKey": "120_0-1-1"
   },
   {
-    "oid": "test_pg_gen_8df028df-0620-4705-9c51-1a05b5a78af8_0/0/0",
+    "oid": "test_pg_gen_8df028df-0620-4705-9c51-1a05b5a78af8_0-0-0",
     "name": "FRV",
     "categoryType": "Data",
     "category": "Memory",
@@ -32110,7 +33887,7 @@
       0
     ],
     "reprodata": {},
-    "loop_ctx": "0/0",
+    "loop_ctx": "0-0",
     "weight": 5,
     "applicationArgs": {
       "R-L": {
@@ -32336,30 +34113,41 @@
     "group_end": true,
     "R-L": "",
     "Group end": true,
-    "iid": "0/0/0",
+    "iid": "0-0-0",
     "lg_key": "8df028df-0620-4705-9c51-1a05b5a78af8",
+    "outputPorts": {},
+    "inputPorts": {
+      "69c50f6f-8f94-4235-bf4f-f31bca99a014": {
+        "type": "InputOutput",
+        "name": "R-L",
+        "source_id": "c4546a4f-605f-48ba-893e-62aefb63f901"
+      }
+    },
+    "port_map": {
+      "R-L": "R-L"
+    },
     "producers": [
       {
-        "test_pg_gen_c4546a4f-605f-48ba-893e-62aefb63f901_0/0/0": "R-L"
+        "test_pg_gen_c4546a4f-605f-48ba-893e-62aefb63f901_0-0-0": "R-L"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0/0/1": "R-L"
+        "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0-0-1": "R-L"
       },
       {
-        "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0/0/1": "R-L"
+        "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0-0-1": "R-L"
       },
       {
-        "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0/0/1": "R-L"
+        "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0-0-1": "R-L"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "121_0/0/0"
+    "humanReadableKey": "121_0-0-0"
   },
   {
-    "oid": "test_pg_gen_8df028df-0620-4705-9c51-1a05b5a78af8_0/0/1",
+    "oid": "test_pg_gen_8df028df-0620-4705-9c51-1a05b5a78af8_0-0-1",
     "name": "FRV",
     "categoryType": "Data",
     "category": "Memory",
@@ -32371,7 +34159,7 @@
       1
     ],
     "reprodata": {},
-    "loop_ctx": "0/1",
+    "loop_ctx": "0-1",
     "weight": 5,
     "applicationArgs": {
       "R-L": {
@@ -32597,19 +34385,30 @@
     "group_end": true,
     "R-L": "",
     "Group end": true,
-    "iid": "0/0/1",
+    "iid": "0-0-1",
     "lg_key": "8df028df-0620-4705-9c51-1a05b5a78af8",
+    "outputPorts": {},
+    "inputPorts": {
+      "69c50f6f-8f94-4235-bf4f-f31bca99a014": {
+        "type": "InputOutput",
+        "name": "R-L",
+        "source_id": "c4546a4f-605f-48ba-893e-62aefb63f901"
+      }
+    },
+    "port_map": {
+      "R-L": "R-L"
+    },
     "producers": [
       {
-        "test_pg_gen_c4546a4f-605f-48ba-893e-62aefb63f901_0/0/1": "R-L"
+        "test_pg_gen_c4546a4f-605f-48ba-893e-62aefb63f901_0-0-1": "R-L"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "122_0/0/1"
+    "humanReadableKey": "122_0-0-1"
   },
   {
-    "oid": "test_pg_gen_8df028df-0620-4705-9c51-1a05b5a78af8_0/1/0",
+    "oid": "test_pg_gen_8df028df-0620-4705-9c51-1a05b5a78af8_0-1-0",
     "name": "FRV",
     "categoryType": "Data",
     "category": "Memory",
@@ -32621,7 +34420,7 @@
       0
     ],
     "reprodata": {},
-    "loop_ctx": "1/0",
+    "loop_ctx": "1-0",
     "weight": 5,
     "applicationArgs": {
       "R-L": {
@@ -32847,30 +34646,41 @@
     "group_end": true,
     "R-L": "",
     "Group end": true,
-    "iid": "0/1/0",
+    "iid": "0-1-0",
     "lg_key": "8df028df-0620-4705-9c51-1a05b5a78af8",
+    "outputPorts": {},
+    "inputPorts": {
+      "69c50f6f-8f94-4235-bf4f-f31bca99a014": {
+        "type": "InputOutput",
+        "name": "R-L",
+        "source_id": "c4546a4f-605f-48ba-893e-62aefb63f901"
+      }
+    },
+    "port_map": {
+      "R-L": "R-L"
+    },
     "producers": [
       {
-        "test_pg_gen_c4546a4f-605f-48ba-893e-62aefb63f901_0/1/0": "R-L"
+        "test_pg_gen_c4546a4f-605f-48ba-893e-62aefb63f901_0-1-0": "R-L"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0/1/1": "R-L"
+        "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0-1-1": "R-L"
       },
       {
-        "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0/1/1": "R-L"
+        "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0-1-1": "R-L"
       },
       {
-        "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0/1/1": "R-L"
+        "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0-1-1": "R-L"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "123_0/1/0"
+    "humanReadableKey": "123_0-1-0"
   },
   {
-    "oid": "test_pg_gen_8df028df-0620-4705-9c51-1a05b5a78af8_0/1/1",
+    "oid": "test_pg_gen_8df028df-0620-4705-9c51-1a05b5a78af8_0-1-1",
     "name": "FRV",
     "categoryType": "Data",
     "category": "Memory",
@@ -32882,7 +34692,7 @@
       1
     ],
     "reprodata": {},
-    "loop_ctx": "1/1",
+    "loop_ctx": "1-1",
     "weight": 5,
     "applicationArgs": {
       "R-L": {
@@ -33108,19 +34918,30 @@
     "group_end": true,
     "R-L": "",
     "Group end": true,
-    "iid": "0/1/1",
+    "iid": "0-1-1",
     "lg_key": "8df028df-0620-4705-9c51-1a05b5a78af8",
+    "outputPorts": {},
+    "inputPorts": {
+      "69c50f6f-8f94-4235-bf4f-f31bca99a014": {
+        "type": "InputOutput",
+        "name": "R-L",
+        "source_id": "c4546a4f-605f-48ba-893e-62aefb63f901"
+      }
+    },
+    "port_map": {
+      "R-L": "R-L"
+    },
     "producers": [
       {
-        "test_pg_gen_c4546a4f-605f-48ba-893e-62aefb63f901_0/1/1": "R-L"
+        "test_pg_gen_c4546a4f-605f-48ba-893e-62aefb63f901_0-1-1": "R-L"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "124_0/1/1"
+    "humanReadableKey": "124_0-1-1"
   },
   {
-    "oid": "test_pg_gen_6e8e68f8-65e0-4475-9f6e-0cd7063de2ba_0/0/0",
+    "oid": "test_pg_gen_6e8e68f8-65e0-4475-9f6e-0cd7063de2ba_0-0-0",
     "name": "GFRV",
     "categoryType": "Data",
     "category": "Memory",
@@ -33132,7 +34953,7 @@
       0
     ],
     "reprodata": {},
-    "loop_ctx": "0/0",
+    "loop_ctx": "0-0",
     "weight": 5,
     "applicationArgs": {
       "B-T": {
@@ -33358,24 +35179,35 @@
     "group_end": "0",
     "arg10": "True",
     "B-T": "",
-    "iid": "0/0/0",
+    "iid": "0-0-0",
     "lg_key": "6e8e68f8-65e0-4475-9f6e-0cd7063de2ba",
+    "outputPorts": {},
+    "inputPorts": {
+      "913d60fe-23c6-403c-b97f-d466e3881fa9": {
+        "type": "InputOutput",
+        "name": "B-T",
+        "source_id": "45943d2f-3ef7-4c62-9170-4d6484965aa9"
+      }
+    },
     "consumers": [
       {
-        "test_pg_gen_c3c3e8aa-ef76-4175-87b9-9d570f52f27a_0/0/0": "B-T"
+        "test_pg_gen_c3c3e8aa-ef76-4175-87b9-9d570f52f27a_0-0-0": "B-T"
       }
     ],
+    "port_map": {
+      "B-T": "B-T"
+    },
     "producers": [
       {
-        "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0/0/0": "B-T"
+        "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0-0-0": "B-T"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "125_0/0/0"
+    "humanReadableKey": "125_0-0-0"
   },
   {
-    "oid": "test_pg_gen_6e8e68f8-65e0-4475-9f6e-0cd7063de2ba_0/0/1",
+    "oid": "test_pg_gen_6e8e68f8-65e0-4475-9f6e-0cd7063de2ba_0-0-1",
     "name": "GFRV",
     "categoryType": "Data",
     "category": "Memory",
@@ -33387,7 +35219,7 @@
       1
     ],
     "reprodata": {},
-    "loop_ctx": "0/1",
+    "loop_ctx": "0-1",
     "weight": 5,
     "applicationArgs": {
       "B-T": {
@@ -33613,24 +35445,35 @@
     "group_end": "0",
     "arg10": "True",
     "B-T": "",
-    "iid": "0/0/1",
+    "iid": "0-0-1",
     "lg_key": "6e8e68f8-65e0-4475-9f6e-0cd7063de2ba",
+    "outputPorts": {},
+    "inputPorts": {
+      "913d60fe-23c6-403c-b97f-d466e3881fa9": {
+        "type": "InputOutput",
+        "name": "B-T",
+        "source_id": "45943d2f-3ef7-4c62-9170-4d6484965aa9"
+      }
+    },
     "consumers": [
       {
-        "test_pg_gen_c3c3e8aa-ef76-4175-87b9-9d570f52f27a_0/0/1": "B-T"
+        "test_pg_gen_c3c3e8aa-ef76-4175-87b9-9d570f52f27a_0-0-1": "B-T"
       }
     ],
+    "port_map": {
+      "B-T": "B-T"
+    },
     "producers": [
       {
-        "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0/0/1": "B-T"
+        "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0-0-1": "B-T"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "126_0/0/1"
+    "humanReadableKey": "126_0-0-1"
   },
   {
-    "oid": "test_pg_gen_6e8e68f8-65e0-4475-9f6e-0cd7063de2ba_0/1/0",
+    "oid": "test_pg_gen_6e8e68f8-65e0-4475-9f6e-0cd7063de2ba_0-1-0",
     "name": "GFRV",
     "categoryType": "Data",
     "category": "Memory",
@@ -33642,7 +35485,7 @@
       0
     ],
     "reprodata": {},
-    "loop_ctx": "1/0",
+    "loop_ctx": "1-0",
     "weight": 5,
     "applicationArgs": {
       "B-T": {
@@ -33868,24 +35711,35 @@
     "group_end": "0",
     "arg10": "True",
     "B-T": "",
-    "iid": "0/1/0",
+    "iid": "0-1-0",
     "lg_key": "6e8e68f8-65e0-4475-9f6e-0cd7063de2ba",
+    "outputPorts": {},
+    "inputPorts": {
+      "913d60fe-23c6-403c-b97f-d466e3881fa9": {
+        "type": "InputOutput",
+        "name": "B-T",
+        "source_id": "45943d2f-3ef7-4c62-9170-4d6484965aa9"
+      }
+    },
     "consumers": [
       {
-        "test_pg_gen_c3c3e8aa-ef76-4175-87b9-9d570f52f27a_0/1/0": "B-T"
+        "test_pg_gen_c3c3e8aa-ef76-4175-87b9-9d570f52f27a_0-1-0": "B-T"
       }
     ],
+    "port_map": {
+      "B-T": "B-T"
+    },
     "producers": [
       {
-        "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0/1/0": "B-T"
+        "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0-1-0": "B-T"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "127_0/1/0"
+    "humanReadableKey": "127_0-1-0"
   },
   {
-    "oid": "test_pg_gen_6e8e68f8-65e0-4475-9f6e-0cd7063de2ba_0/1/1",
+    "oid": "test_pg_gen_6e8e68f8-65e0-4475-9f6e-0cd7063de2ba_0-1-1",
     "name": "GFRV",
     "categoryType": "Data",
     "category": "Memory",
@@ -33897,7 +35751,7 @@
       1
     ],
     "reprodata": {},
-    "loop_ctx": "1/1",
+    "loop_ctx": "1-1",
     "weight": 5,
     "applicationArgs": {
       "B-T": {
@@ -34123,24 +35977,35 @@
     "group_end": "0",
     "arg10": "True",
     "B-T": "",
-    "iid": "0/1/1",
+    "iid": "0-1-1",
     "lg_key": "6e8e68f8-65e0-4475-9f6e-0cd7063de2ba",
+    "outputPorts": {},
+    "inputPorts": {
+      "913d60fe-23c6-403c-b97f-d466e3881fa9": {
+        "type": "InputOutput",
+        "name": "B-T",
+        "source_id": "45943d2f-3ef7-4c62-9170-4d6484965aa9"
+      }
+    },
     "consumers": [
       {
-        "test_pg_gen_c3c3e8aa-ef76-4175-87b9-9d570f52f27a_0/1/1": "B-T"
+        "test_pg_gen_c3c3e8aa-ef76-4175-87b9-9d570f52f27a_0-1-1": "B-T"
       }
     ],
+    "port_map": {
+      "B-T": "B-T"
+    },
     "producers": [
       {
-        "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0/1/1": "B-T"
+        "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0-1-1": "B-T"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "128_0/1/1"
+    "humanReadableKey": "128_0-1-1"
   },
   {
-    "oid": "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0/0/0",
+    "oid": "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0-0-0",
     "name": "Grid",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -34152,7 +36017,7 @@
       0
     ],
     "reprodata": {},
-    "loop_ctx": "0/0",
+    "loop_ctx": "0-0",
     "weight": 10,
     "num_cpus": 1,
     "applicationArgs": {
@@ -34440,24 +36305,37 @@
     "B-T": "",
     "R-L": "",
     "Group start": true,
-    "iid": "0/0/0",
+    "iid": "0-0-0",
     "lg_key": "45943d2f-3ef7-4c62-9170-4d6484965aa9",
+    "outputPorts": {},
+    "inputPorts": {
+      "dcb4dd3b-aa5e-4261-a0a0-ae69b767db69": {
+        "type": "InputOutput",
+        "name": "B-T",
+        "source_id": "da7f9ec6-a981-42b2-8b46-40e0e3220566"
+      },
+      "83e8fe4a-bfa9-483f-82a0-6f09229f5214": {
+        "type": "InputPort",
+        "name": "R-L",
+        "source_id": "8df028df-0620-4705-9c51-1a05b5a78af8"
+      }
+    },
     "inputs": [
       {
-        "test_pg_gen_da7f9ec6-a981-42b2-8b46-40e0e3220566_0/0": "B-T"
+        "test_pg_gen_da7f9ec6-a981-42b2-8b46-40e0e3220566_0-0": "B-T"
       }
     ],
     "outputs": [
       {
-        "test_pg_gen_6e8e68f8-65e0-4475-9f6e-0cd7063de2ba_0/0/0": "B-T"
+        "test_pg_gen_6e8e68f8-65e0-4475-9f6e-0cd7063de2ba_0-0-0": "dcb4dd3b-aa5e-4261-a0a0-ae69b767db69"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "129_0/0/0"
+    "humanReadableKey": "129_0-0-0"
   },
   {
-    "oid": "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0/0/1",
+    "oid": "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0-0-1",
     "name": "Grid",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -34469,7 +36347,7 @@
       1
     ],
     "reprodata": {},
-    "loop_ctx": "0/1",
+    "loop_ctx": "0-1",
     "weight": 10,
     "num_cpus": 1,
     "applicationArgs": {
@@ -34757,39 +36635,52 @@
     "B-T": "",
     "R-L": "",
     "Group start": true,
-    "iid": "0/0/1",
+    "iid": "0-0-1",
     "lg_key": "45943d2f-3ef7-4c62-9170-4d6484965aa9",
+    "outputPorts": {},
+    "inputPorts": {
+      "dcb4dd3b-aa5e-4261-a0a0-ae69b767db69": {
+        "type": "InputOutput",
+        "name": "B-T",
+        "source_id": "da7f9ec6-a981-42b2-8b46-40e0e3220566"
+      },
+      "83e8fe4a-bfa9-483f-82a0-6f09229f5214": {
+        "type": "InputPort",
+        "name": "R-L",
+        "source_id": "8df028df-0620-4705-9c51-1a05b5a78af8"
+      }
+    },
     "inputs": [
       {
-        "test_pg_gen_da7f9ec6-a981-42b2-8b46-40e0e3220566_0/0": "B-T"
+        "test_pg_gen_da7f9ec6-a981-42b2-8b46-40e0e3220566_0-0": "B-T"
       },
       {
-        "test_pg_gen_8df028df-0620-4705-9c51-1a05b5a78af8_0/0/0": "R-L"
+        "test_pg_gen_8df028df-0620-4705-9c51-1a05b5a78af8_0-0-0": "R-L"
       },
       {
-        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0/0/0": "R-L"
+        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0-0-0": "R-L"
       },
       {
-        "test_pg_gen_8df028df-0620-4705-9c51-1a05b5a78af8_0/0/0": "R-L"
+        "test_pg_gen_8df028df-0620-4705-9c51-1a05b5a78af8_0-0-0": "R-L"
       },
       {
-        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0/0/0": "R-L"
+        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0-0-0": "R-L"
       },
       {
-        "test_pg_gen_8df028df-0620-4705-9c51-1a05b5a78af8_0/0/0": "R-L"
+        "test_pg_gen_8df028df-0620-4705-9c51-1a05b5a78af8_0-0-0": "R-L"
       }
     ],
     "outputs": [
       {
-        "test_pg_gen_6e8e68f8-65e0-4475-9f6e-0cd7063de2ba_0/0/1": "B-T"
+        "test_pg_gen_6e8e68f8-65e0-4475-9f6e-0cd7063de2ba_0-0-1": "dcb4dd3b-aa5e-4261-a0a0-ae69b767db69"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "130_0/0/1"
+    "humanReadableKey": "130_0-0-1"
   },
   {
-    "oid": "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0/1/0",
+    "oid": "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0-1-0",
     "name": "Grid",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -34801,7 +36692,7 @@
       0
     ],
     "reprodata": {},
-    "loop_ctx": "1/0",
+    "loop_ctx": "1-0",
     "weight": 10,
     "num_cpus": 1,
     "applicationArgs": {
@@ -35089,24 +36980,37 @@
     "B-T": "",
     "R-L": "",
     "Group start": true,
-    "iid": "0/1/0",
+    "iid": "0-1-0",
     "lg_key": "45943d2f-3ef7-4c62-9170-4d6484965aa9",
+    "outputPorts": {},
+    "inputPorts": {
+      "dcb4dd3b-aa5e-4261-a0a0-ae69b767db69": {
+        "type": "InputOutput",
+        "name": "B-T",
+        "source_id": "da7f9ec6-a981-42b2-8b46-40e0e3220566"
+      },
+      "83e8fe4a-bfa9-483f-82a0-6f09229f5214": {
+        "type": "InputPort",
+        "name": "R-L",
+        "source_id": "8df028df-0620-4705-9c51-1a05b5a78af8"
+      }
+    },
     "inputs": [
       {
-        "test_pg_gen_da7f9ec6-a981-42b2-8b46-40e0e3220566_0/1": "B-T"
+        "test_pg_gen_da7f9ec6-a981-42b2-8b46-40e0e3220566_0-1": "B-T"
       }
     ],
     "outputs": [
       {
-        "test_pg_gen_6e8e68f8-65e0-4475-9f6e-0cd7063de2ba_0/1/0": "B-T"
+        "test_pg_gen_6e8e68f8-65e0-4475-9f6e-0cd7063de2ba_0-1-0": "dcb4dd3b-aa5e-4261-a0a0-ae69b767db69"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "131_0/1/0"
+    "humanReadableKey": "131_0-1-0"
   },
   {
-    "oid": "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0/1/1",
+    "oid": "test_pg_gen_45943d2f-3ef7-4c62-9170-4d6484965aa9_0-1-1",
     "name": "Grid",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -35118,7 +37022,7 @@
       1
     ],
     "reprodata": {},
-    "loop_ctx": "1/1",
+    "loop_ctx": "1-1",
     "weight": 10,
     "num_cpus": 1,
     "applicationArgs": {
@@ -35406,39 +37310,52 @@
     "B-T": "",
     "R-L": "",
     "Group start": true,
-    "iid": "0/1/1",
+    "iid": "0-1-1",
     "lg_key": "45943d2f-3ef7-4c62-9170-4d6484965aa9",
+    "outputPorts": {},
+    "inputPorts": {
+      "dcb4dd3b-aa5e-4261-a0a0-ae69b767db69": {
+        "type": "InputOutput",
+        "name": "B-T",
+        "source_id": "da7f9ec6-a981-42b2-8b46-40e0e3220566"
+      },
+      "83e8fe4a-bfa9-483f-82a0-6f09229f5214": {
+        "type": "InputPort",
+        "name": "R-L",
+        "source_id": "8df028df-0620-4705-9c51-1a05b5a78af8"
+      }
+    },
     "inputs": [
       {
-        "test_pg_gen_da7f9ec6-a981-42b2-8b46-40e0e3220566_0/1": "B-T"
+        "test_pg_gen_da7f9ec6-a981-42b2-8b46-40e0e3220566_0-1": "B-T"
       },
       {
-        "test_pg_gen_8df028df-0620-4705-9c51-1a05b5a78af8_0/1/0": "R-L"
+        "test_pg_gen_8df028df-0620-4705-9c51-1a05b5a78af8_0-1-0": "R-L"
       },
       {
-        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0/1/0": "R-L"
+        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0-1-0": "R-L"
       },
       {
-        "test_pg_gen_8df028df-0620-4705-9c51-1a05b5a78af8_0/1/0": "R-L"
+        "test_pg_gen_8df028df-0620-4705-9c51-1a05b5a78af8_0-1-0": "R-L"
       },
       {
-        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0/1/0": "R-L"
+        "test_pg_gen_153018c4-7095-4744-a5a8-f43f1d1429c0_0-1-0": "R-L"
       },
       {
-        "test_pg_gen_8df028df-0620-4705-9c51-1a05b5a78af8_0/1/0": "R-L"
+        "test_pg_gen_8df028df-0620-4705-9c51-1a05b5a78af8_0-1-0": "R-L"
       }
     ],
     "outputs": [
       {
-        "test_pg_gen_6e8e68f8-65e0-4475-9f6e-0cd7063de2ba_0/1/1": "B-T"
+        "test_pg_gen_6e8e68f8-65e0-4475-9f6e-0cd7063de2ba_0-1-1": "dcb4dd3b-aa5e-4261-a0a0-ae69b767db69"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "132_0/1/1"
+    "humanReadableKey": "132_0-1-1"
   },
   {
-    "oid": "test_pg_gen_1a9d7189-d4ba-4ab4-8156-36d8074acbb5_0/0",
+    "oid": "test_pg_gen_1a9d7189-d4ba-4ab4-8156-36d8074acbb5_0-0",
     "name": "LSM",
     "categoryType": "Data",
     "category": "Memory",
@@ -35706,27 +37623,38 @@
     "dummy": "~param4.what",
     "T-R": "",
     "Group end": true,
-    "iid": "0/0",
+    "iid": "0-0",
     "lg_key": "1a9d7189-d4ba-4ab4-8156-36d8074acbb5",
+    "outputPorts": {},
+    "inputPorts": {
+      "133660ac-b803-4227-b602-03155ae0d5c9": {
+        "type": "InputOutput",
+        "name": "T-R",
+        "source_id": "8489a992-ad80-4672-80f9-6ea22169a930"
+      }
+    },
+    "port_map": {
+      "T-R": "T-R"
+    },
     "producers": [
       {
-        "test_pg_gen_8489a992-ad80-4672-80f9-6ea22169a930_0/0": "T-R"
+        "test_pg_gen_8489a992-ad80-4672-80f9-6ea22169a930_0-0": "T-R"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_b9d70134-99e2-4509-8796-de67022f0319_0/1": "T-R"
+        "test_pg_gen_b9d70134-99e2-4509-8796-de67022f0319_0-1": "T-R"
       },
       {
-        "test_pg_gen_b9d70134-99e2-4509-8796-de67022f0319_0/1": "T-R"
+        "test_pg_gen_b9d70134-99e2-4509-8796-de67022f0319_0-1": "T-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "133_0/0"
+    "humanReadableKey": "133_0-0"
   },
   {
-    "oid": "test_pg_gen_1a9d7189-d4ba-4ab4-8156-36d8074acbb5_0/1",
+    "oid": "test_pg_gen_1a9d7189-d4ba-4ab4-8156-36d8074acbb5_0-1",
     "name": "LSM",
     "categoryType": "Data",
     "category": "Memory",
@@ -35994,19 +37922,30 @@
     "dummy": "~param4.what",
     "T-R": "",
     "Group end": true,
-    "iid": "0/1",
+    "iid": "0-1",
     "lg_key": "1a9d7189-d4ba-4ab4-8156-36d8074acbb5",
+    "outputPorts": {},
+    "inputPorts": {
+      "133660ac-b803-4227-b602-03155ae0d5c9": {
+        "type": "InputOutput",
+        "name": "T-R",
+        "source_id": "8489a992-ad80-4672-80f9-6ea22169a930"
+      }
+    },
+    "port_map": {
+      "T-R": "T-R"
+    },
     "producers": [
       {
-        "test_pg_gen_8489a992-ad80-4672-80f9-6ea22169a930_0/1": "T-R"
+        "test_pg_gen_8489a992-ad80-4672-80f9-6ea22169a930_0-1": "T-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "134_0/1"
+    "humanReadableKey": "134_0-1"
   },
   {
-    "oid": "test_pg_gen_f29b1462-5764-49c6-8d19-67c46effe670_0/0",
+    "oid": "test_pg_gen_f29b1462-5764-49c6-8d19-67c46effe670_0-0",
     "name": "Predict 02",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -36274,24 +38213,38 @@
     "group_start": false,
     "T-R": "",
     "R-T": "",
-    "iid": "0/0",
+    "iid": "0-0",
     "lg_key": "f29b1462-5764-49c6-8d19-67c46effe670",
+    "outputPorts": {
+      "4f710a1b-9c24-4b0e-8f5f-d62797f7fc58": {
+        "type": "OutputPort",
+        "name": "R-T",
+        "target_id": "266503ff-d987-4f17-8f21-005f87b9c586"
+      }
+    },
+    "inputPorts": {
+      "0c7b6196-c2f0-4523-b1e9-7364be3410aa": {
+        "type": "InputPort",
+        "name": "T-R",
+        "source_id": "cc3a8d73-97b4-418c-8e56-41dec99b6016"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_266503ff-d987-4f17-8f21-005f87b9c586_0/0": "R-T"
+        "test_pg_gen_266503ff-d987-4f17-8f21-005f87b9c586_0-0": "R-T"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_cc3a8d73-97b4-418c-8e56-41dec99b6016_0/0": "T-R"
+        "test_pg_gen_cc3a8d73-97b4-418c-8e56-41dec99b6016_0-0": "T-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "135_0/0"
+    "humanReadableKey": "135_0-0"
   },
   {
-    "oid": "test_pg_gen_f29b1462-5764-49c6-8d19-67c46effe670_0/1",
+    "oid": "test_pg_gen_f29b1462-5764-49c6-8d19-67c46effe670_0-1",
     "name": "Predict 02",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -36559,24 +38512,38 @@
     "group_start": false,
     "T-R": "",
     "R-T": "",
-    "iid": "0/1",
+    "iid": "0-1",
     "lg_key": "f29b1462-5764-49c6-8d19-67c46effe670",
+    "outputPorts": {
+      "4f710a1b-9c24-4b0e-8f5f-d62797f7fc58": {
+        "type": "OutputPort",
+        "name": "R-T",
+        "target_id": "266503ff-d987-4f17-8f21-005f87b9c586"
+      }
+    },
+    "inputPorts": {
+      "0c7b6196-c2f0-4523-b1e9-7364be3410aa": {
+        "type": "InputPort",
+        "name": "T-R",
+        "source_id": "cc3a8d73-97b4-418c-8e56-41dec99b6016"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_266503ff-d987-4f17-8f21-005f87b9c586_0/1": "R-T"
+        "test_pg_gen_266503ff-d987-4f17-8f21-005f87b9c586_0-1": "R-T"
       }
     ],
     "inputs": [
       {
-        "test_pg_gen_cc3a8d73-97b4-418c-8e56-41dec99b6016_0/1": "T-R"
+        "test_pg_gen_cc3a8d73-97b4-418c-8e56-41dec99b6016_0-1": "T-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "136_0/1"
+    "humanReadableKey": "136_0-1"
   },
   {
-    "oid": "test_pg_gen_cc3a8d73-97b4-418c-8e56-41dec99b6016_0/0",
+    "oid": "test_pg_gen_cc3a8d73-97b4-418c-8e56-41dec99b6016_0-0",
     "name": "LSM",
     "categoryType": "Data",
     "category": "Memory",
@@ -36813,30 +38780,41 @@
     "group_end": "1",
     "arg10": "hi",
     "T-R": "",
-    "iid": "0/0",
+    "iid": "0-0",
     "lg_key": "cc3a8d73-97b4-418c-8e56-41dec99b6016",
+    "outputPorts": {},
+    "inputPorts": {
+      "4b7b3d8f-aaf6-4229-8f60-8bcafd9ab406": {
+        "type": "InputOutput",
+        "name": "T-R",
+        "source_id": "fc7fd5c7-ea38-4421-bde0-6d76f1c8754d"
+      }
+    },
     "consumers": [
       {
-        "test_pg_gen_b6ad3061-2e67-4386-a20a-feeef589f9d3_0/0": "T-R"
+        "test_pg_gen_b6ad3061-2e67-4386-a20a-feeef589f9d3_0-0": "T-R"
       },
       {
-        "test_pg_gen_f29b1462-5764-49c6-8d19-67c46effe670_0/0": "T-R"
+        "test_pg_gen_f29b1462-5764-49c6-8d19-67c46effe670_0-0": "T-R"
       },
       {
-        "test_pg_gen_b9d70134-99e2-4509-8796-de67022f0319_0/1": "T-R"
+        "test_pg_gen_b9d70134-99e2-4509-8796-de67022f0319_0-1": "T-R"
       }
     ],
+    "port_map": {
+      "T-R": "T-R"
+    },
     "producers": [
       {
-        "test_pg_gen_fc7fd5c7-ea38-4421-bde0-6d76f1c8754d_0/0": "T-R"
+        "test_pg_gen_fc7fd5c7-ea38-4421-bde0-6d76f1c8754d_0-0": "T-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "137_0/0"
+    "humanReadableKey": "137_0-0"
   },
   {
-    "oid": "test_pg_gen_cc3a8d73-97b4-418c-8e56-41dec99b6016_0/1",
+    "oid": "test_pg_gen_cc3a8d73-97b4-418c-8e56-41dec99b6016_0-1",
     "name": "LSM",
     "categoryType": "Data",
     "category": "Memory",
@@ -37073,27 +39051,38 @@
     "group_end": "1",
     "arg10": "hi",
     "T-R": "",
-    "iid": "0/1",
+    "iid": "0-1",
     "lg_key": "cc3a8d73-97b4-418c-8e56-41dec99b6016",
+    "outputPorts": {},
+    "inputPorts": {
+      "4b7b3d8f-aaf6-4229-8f60-8bcafd9ab406": {
+        "type": "InputOutput",
+        "name": "T-R",
+        "source_id": "fc7fd5c7-ea38-4421-bde0-6d76f1c8754d"
+      }
+    },
     "consumers": [
       {
-        "test_pg_gen_b6ad3061-2e67-4386-a20a-feeef589f9d3_0/1": "T-R"
+        "test_pg_gen_b6ad3061-2e67-4386-a20a-feeef589f9d3_0-1": "T-R"
       },
       {
-        "test_pg_gen_f29b1462-5764-49c6-8d19-67c46effe670_0/1": "T-R"
+        "test_pg_gen_f29b1462-5764-49c6-8d19-67c46effe670_0-1": "T-R"
       }
     ],
+    "port_map": {
+      "T-R": "T-R"
+    },
     "producers": [
       {
-        "test_pg_gen_fc7fd5c7-ea38-4421-bde0-6d76f1c8754d_0/1": "T-R"
+        "test_pg_gen_fc7fd5c7-ea38-4421-bde0-6d76f1c8754d_0-1": "T-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "138_0/1"
+    "humanReadableKey": "138_0-1"
   },
   {
-    "oid": "test_pg_gen_fc7fd5c7-ea38-4421-bde0-6d76f1c8754d_0/0",
+    "oid": "test_pg_gen_fc7fd5c7-ea38-4421-bde0-6d76f1c8754d_0-0",
     "name": "Extract LSM",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -37330,11 +39319,25 @@
     "R-L": "",
     "T-R": "",
     "execution_time": 5,
-    "iid": "0/0",
+    "iid": "0-0",
     "lg_key": "fc7fd5c7-ea38-4421-bde0-6d76f1c8754d",
+    "outputPorts": {
+      "97e4e75f-0718-4390-a223-9ddb3c2816fe": {
+        "type": "OutputPort",
+        "name": "T-R",
+        "target_id": "cc3a8d73-97b4-418c-8e56-41dec99b6016"
+      }
+    },
+    "inputPorts": {
+      "da23127f-a961-4009-a657-e0b722e609b7": {
+        "type": "InputPort",
+        "name": "R-L",
+        "source_id": "865c5259-6602-437b-86ea-336125c04d3a"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_cc3a8d73-97b4-418c-8e56-41dec99b6016_0/0": "T-R"
+        "test_pg_gen_cc3a8d73-97b4-418c-8e56-41dec99b6016_0-0": "T-R"
       }
     ],
     "inputs": [
@@ -37344,10 +39347,10 @@
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "139_0/0"
+    "humanReadableKey": "139_0-0"
   },
   {
-    "oid": "test_pg_gen_fc7fd5c7-ea38-4421-bde0-6d76f1c8754d_0/1",
+    "oid": "test_pg_gen_fc7fd5c7-ea38-4421-bde0-6d76f1c8754d_0-1",
     "name": "Extract LSM",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -37584,19 +39587,33 @@
     "R-L": "",
     "T-R": "",
     "execution_time": 5,
-    "iid": "0/1",
+    "iid": "0-1",
     "lg_key": "fc7fd5c7-ea38-4421-bde0-6d76f1c8754d",
+    "outputPorts": {
+      "97e4e75f-0718-4390-a223-9ddb3c2816fe": {
+        "type": "OutputPort",
+        "name": "T-R",
+        "target_id": "cc3a8d73-97b4-418c-8e56-41dec99b6016"
+      }
+    },
+    "inputPorts": {
+      "da23127f-a961-4009-a657-e0b722e609b7": {
+        "type": "InputPort",
+        "name": "R-L",
+        "source_id": "865c5259-6602-437b-86ea-336125c04d3a"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_cc3a8d73-97b4-418c-8e56-41dec99b6016_0/1": "T-R"
+        "test_pg_gen_cc3a8d73-97b4-418c-8e56-41dec99b6016_0-1": "T-R"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "140_0/1"
+    "humanReadableKey": "140_0-1"
   },
   {
-    "oid": "test_pg_gen_e0a6c22b-7209-47d2-a764-32834e7ad78d_0/0",
+    "oid": "test_pg_gen_e0a6c22b-7209-47d2-a764-32834e7ad78d_0-0",
     "name": "Self-CalConverge?",
     "categoryType": "Application",
     "category": "Branch",
@@ -37958,14 +39975,43 @@
     "N": "",
     "true": "",
     "false": "",
-    "iid": "0/0",
+    "iid": "0-0",
     "lg_key": "e0a6c22b-7209-47d2-a764-32834e7ad78d",
+    "outputPorts": {
+      "5e4a0f32-7e82-499b-b785-82342c67e79d": {
+        "type": "OutputPort",
+        "name": "Y",
+        "target_id": "b9d70134-99e2-4509-8796-de67022f0319"
+      },
+      "498413ee-08a6-4668-8ea4-0f8e3dda7384": {
+        "type": "OutputPort",
+        "name": "N",
+        "target_id": "b6ad3061-2e67-4386-a20a-feeef589f9d3"
+      },
+      "dc24f3d5-f6a4-45c6-b39d-acf9a04b829c": {
+        "type": "OutputPort",
+        "name": "true",
+        "target_id": ""
+      },
+      "7b648ee4-37fb-48ad-814b-1d43b4e7aef9": {
+        "type": "OutputPort",
+        "name": "false",
+        "target_id": ""
+      }
+    },
+    "inputPorts": {
+      "0ce4ad3a-5794-4a5f-a68c-9767d6421a2e": {
+        "type": "InputPort",
+        "name": "L-T",
+        "source_id": "c122515f-08fc-48ad-af20-7260f30c2be8"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_b9d70134-99e2-4509-8796-de67022f0319_0/0": "Y"
+        "test_pg_gen_b9d70134-99e2-4509-8796-de67022f0319_0-0": "Y"
       },
       {
-        "test_pg_gen_b6ad3061-2e67-4386-a20a-feeef589f9d3_0/0": "N"
+        "test_pg_gen_b6ad3061-2e67-4386-a20a-feeef589f9d3_0-0": "N"
       }
     ],
     "inputs": [
@@ -37975,10 +40021,10 @@
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "141_0/0"
+    "humanReadableKey": "141_0-0"
   },
   {
-    "oid": "test_pg_gen_e0a6c22b-7209-47d2-a764-32834e7ad78d_0/1",
+    "oid": "test_pg_gen_e0a6c22b-7209-47d2-a764-32834e7ad78d_0-1",
     "name": "Self-CalConverge?",
     "categoryType": "Application",
     "category": "Branch",
@@ -38340,19 +40386,48 @@
     "N": "",
     "true": "",
     "false": "",
-    "iid": "0/1",
+    "iid": "0-1",
     "lg_key": "e0a6c22b-7209-47d2-a764-32834e7ad78d",
+    "outputPorts": {
+      "5e4a0f32-7e82-499b-b785-82342c67e79d": {
+        "type": "OutputPort",
+        "name": "Y",
+        "target_id": "b9d70134-99e2-4509-8796-de67022f0319"
+      },
+      "498413ee-08a6-4668-8ea4-0f8e3dda7384": {
+        "type": "OutputPort",
+        "name": "N",
+        "target_id": "b6ad3061-2e67-4386-a20a-feeef589f9d3"
+      },
+      "dc24f3d5-f6a4-45c6-b39d-acf9a04b829c": {
+        "type": "OutputPort",
+        "name": "true",
+        "target_id": ""
+      },
+      "7b648ee4-37fb-48ad-814b-1d43b4e7aef9": {
+        "type": "OutputPort",
+        "name": "false",
+        "target_id": ""
+      }
+    },
+    "inputPorts": {
+      "0ce4ad3a-5794-4a5f-a68c-9767d6421a2e": {
+        "type": "InputPort",
+        "name": "L-T",
+        "source_id": "c122515f-08fc-48ad-af20-7260f30c2be8"
+      }
+    },
     "outputs": [
       {
-        "test_pg_gen_b9d70134-99e2-4509-8796-de67022f0319_0/1": "Y"
+        "test_pg_gen_b9d70134-99e2-4509-8796-de67022f0319_0-1": "Y"
       },
       {
-        "test_pg_gen_b6ad3061-2e67-4386-a20a-feeef589f9d3_0/1": "N"
+        "test_pg_gen_b6ad3061-2e67-4386-a20a-feeef589f9d3_0-1": "N"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "142_0/1"
+    "humanReadableKey": "142_0-1"
   },
   {
     "oid": "test_pg_gen_c122515f-08fc-48ad-af20-7260f30c2be8_0",
@@ -38593,9 +40668,23 @@
     "L-T": "",
     "iid": "0",
     "lg_key": "c122515f-08fc-48ad-af20-7260f30c2be8",
+    "outputPorts": {
+      "6bd70866-7378-46d9-af42-ac4121f083bd": {
+        "type": "OutputPort",
+        "name": "L-T",
+        "target_id": "e0a6c22b-7209-47d2-a764-32834e7ad78d"
+      }
+    },
+    "inputPorts": {
+      "fa88a5ba-24aa-416e-b391-0699f6e2b8b1": {
+        "type": "InputPort",
+        "name": "B-T",
+        "source_id": ""
+      }
+    },
     "consumers": [
       {
-        "test_pg_gen_e0a6c22b-7209-47d2-a764-32834e7ad78d_0/0": "L-T"
+        "test_pg_gen_e0a6c22b-7209-47d2-a764-32834e7ad78d_0-0": "L-T"
       }
     ],
     "node": "10.128.0.12",
@@ -38841,9 +40930,23 @@
     "R-L": "",
     "iid": "0",
     "lg_key": "865c5259-6602-437b-86ea-336125c04d3a",
+    "outputPorts": {
+      "f3599b49-4739-46ab-8798-cf735fc8faab": {
+        "type": "OutputPort",
+        "name": "R-L",
+        "target_id": "fc7fd5c7-ea38-4421-bde0-6d76f1c8754d"
+      }
+    },
+    "inputPorts": {
+      "d7db7d73-003f-4ed0-9887-42e8157d76fa": {
+        "type": "InputPort",
+        "name": "T-B",
+        "source_id": ""
+      }
+    },
     "consumers": [
       {
-        "test_pg_gen_fc7fd5c7-ea38-4421-bde0-6d76f1c8754d_0/0": "R-L"
+        "test_pg_gen_fc7fd5c7-ea38-4421-bde0-6d76f1c8754d_0-0": "R-L"
       }
     ],
     "node": "10.128.0.12",
