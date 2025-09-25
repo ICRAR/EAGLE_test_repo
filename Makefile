@@ -48,6 +48,7 @@ virtualenv:       ## Create a virtual environment.
 release:          ## Create a new tag for release.
 	@echo "WARNING: This operation will create s version tag and push to github"
 	@read -p "Version? (provide the next x.y.z semver) : " TAG
+	@git add setup.py
 	@git commit -m "Release: version v$${TAG} 🚀"
 	@echo "creating git tag : v$${TAG}"
 	@git tag v$${TAG}
