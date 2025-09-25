@@ -508,6 +508,25 @@
     "content": "",
     "iid": "0",
     "lg_key": "e7c8f312-d267-4837-b29c-69c5f8bfb0dc",
+    "outputPorts": {
+      "8b8bf43c-ecd9-4bb9-b196-00fe5d107628": {
+        "type": "OutputPort",
+        "name": "content",
+        "target_id": "4f9c0432-2515-4e38-8dcb-61d968d981cc"
+      }
+    },
+    "inputPorts": {
+      "f82a000e-8cae-4cce-8f3c-d8b79fbd3d39": {
+        "type": "InputPort",
+        "name": "pathname",
+        "source_id": "90756f41-6b98-42b5-9570-b5f2658be497"
+      },
+      "a27dc73b-201d-40c0-8c02-4a8da9f4a455": {
+        "type": "InputPort",
+        "name": "recursive",
+        "source_id": "230ed0fa-2d23-4177-913c-091386addbc2"
+      }
+    },
     "inputs": [
       {
         "test_pg_gen_90756f41-6b98-42b5-9570-b5f2658be497_0": "pathname"
@@ -826,6 +845,17 @@
     "recursive": false,
     "iid": "0",
     "lg_key": "230ed0fa-2d23-4177-913c-091386addbc2",
+    "outputPorts": {},
+    "inputPorts": {
+      "c3441383-e511-4899-bfe7-fc27e46a9dc7": {
+        "type": "InputOutput",
+        "name": "recursive",
+        "source_id": "92d00e38-4875-45a2-ad97-01e39fc2d1dd"
+      }
+    },
+    "port_map": {
+      "recursive": "recursive"
+    },
     "producers": [
       {
         "test_pg_gen_92d00e38-4875-45a2-ad97-01e39fc2d1dd_0": "recursive"
@@ -1265,6 +1295,14 @@
     "group_start": false,
     "iid": "0",
     "lg_key": "92d00e38-4875-45a2-ad97-01e39fc2d1dd",
+    "outputPorts": {
+      "84777fe6-f52c-4dac-a270-e602d7e91258": {
+        "type": "OutputPort",
+        "name": "recursive",
+        "target_id": "230ed0fa-2d23-4177-913c-091386addbc2"
+      }
+    },
+    "inputPorts": {},
     "outputs": [
       {
         "test_pg_gen_230ed0fa-2d23-4177-913c-091386addbc2_0": "recursive"
@@ -1761,6 +1799,14 @@
     "content": "",
     "iid": "0",
     "lg_key": "b988ed98-e11b-4bcb-b561-d90ead73debe",
+    "outputPorts": {},
+    "inputPorts": {
+      "3a2e3ac4-f343-46bb-ad65-9e87fe22c88e": {
+        "type": "InputOutput",
+        "name": "content",
+        "source_id": "4f9c0432-2515-4e38-8dcb-61d968d981cc"
+      }
+    },
     "inputs": [
       {
         "test_pg_gen_4f9c0432-2515-4e38-8dcb-61d968d981cc_0": "content"
@@ -2009,6 +2055,23 @@
     "pathname": "",
     "iid": "0",
     "lg_key": "90756f41-6b98-42b5-9570-b5f2658be497",
+    "outputPorts": {
+      "eaf21119-5bc7-45b1-980d-d6c6d428dedc": {
+        "type": "OutputPort",
+        "name": "pathname",
+        "target_id": "e7c8f312-d267-4837-b29c-69c5f8bfb0dc"
+      }
+    },
+    "inputPorts": {
+      "a64b0f82-9f7f-40dc-b3bf-ecab0632cde3": {
+        "type": "InputPort",
+        "name": "content",
+        "source_id": "d82796af-40ef-4d07-b5c8-423714511c73"
+      }
+    },
+    "port_map": {
+      "content": "content"
+    },
     "producers": [
       {
         "test_pg_gen_d82796af-40ef-4d07-b5c8-423714511c73_0": "content"
@@ -2541,6 +2604,14 @@
     "New Parameter": "",
     "iid": "0",
     "lg_key": "d82796af-40ef-4d07-b5c8-423714511c73",
+    "outputPorts": {
+      "41b66724-e51b-43d2-8c5b-1dd58dc97cfd": {
+        "type": "OutputPort",
+        "name": "content",
+        "target_id": "90756f41-6b98-42b5-9570-b5f2658be497"
+      }
+    },
+    "inputPorts": {},
     "outputs": [
       {
         "test_pg_gen_90756f41-6b98-42b5-9570-b5f2658be497_0": "content"
@@ -2820,6 +2891,17 @@
     "dummy": "",
     "iid": "0",
     "lg_key": "4f9c0432-2515-4e38-8dcb-61d968d981cc",
+    "outputPorts": {},
+    "inputPorts": {
+      "2f6bd9b1-ce75-472b-a291-2c59f0d01066": {
+        "type": "InputOutput",
+        "name": "filepath",
+        "source_id": "e7c8f312-d267-4837-b29c-69c5f8bfb0dc"
+      }
+    },
+    "port_map": {
+      "filepath": "content"
+    },
     "producers": [
       {
         "test_pg_gen_e7c8f312-d267-4837-b29c-69c5f8bfb0dc_0": "filepath"

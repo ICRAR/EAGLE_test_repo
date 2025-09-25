@@ -145,9 +145,17 @@
     "execution_time": 5,
     "iid": "0",
     "lg_key": "b340d25b-9d97-4f10-8430-629a6eb7846d",
+    "outputPorts": {
+      "78ed45a3-6799-4d2b-bc3e-22885a91092b": {
+        "type": "OutputPort",
+        "name": "B-T",
+        "target_id": "01d5c602-c75e-4b25-8b71-7ad67696570f"
+      }
+    },
+    "inputPorts": {},
     "outputs": [
       {
-        "test_pg_gen_01d5c602-c75e-4b25-8b71-7ad67696570f_0/0/0": "B-T"
+        "test_pg_gen_01d5c602-c75e-4b25-8b71-7ad67696570f_0-0-0": "B-T"
       }
     ],
     "node": "10.128.0.12",
@@ -269,9 +277,17 @@
     "R-L": "",
     "iid": "0",
     "lg_key": "612cdb69-c6ce-4099-bbdf-1ff3ff4fd541",
+    "outputPorts": {
+      "5801c229-f580-4704-abf5-c15a7139901a": {
+        "type": "OutputPort",
+        "name": "R-L",
+        "target_id": "3015f162-47bd-4594-a298-684a43dcdcaa"
+      }
+    },
+    "inputPorts": {},
     "consumers": [
       {
-        "test_pg_gen_3015f162-47bd-4594-a298-684a43dcdcaa_0/0/0": "R-L"
+        "test_pg_gen_3015f162-47bd-4594-a298-684a43dcdcaa_0-0-0": "R-L"
       }
     ],
     "node": "10.128.0.12",
@@ -279,7 +295,7 @@
     "humanReadableKey": "2_0"
   },
   {
-    "oid": "test_pg_gen_3015f162-47bd-4594-a298-684a43dcdcaa_0/0/0",
+    "oid": "test_pg_gen_3015f162-47bd-4594-a298-684a43dcdcaa_0-0-0",
     "name": "Component1",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -765,27 +781,40 @@
     "Arg10": "",
     "R-L": "",
     "B-T": "",
-    "iid": "0/0/0",
+    "iid": "0-0-0",
     "lg_key": "3015f162-47bd-4594-a298-684a43dcdcaa",
+    "outputPorts": {},
+    "inputPorts": {
+      "c44431f5-770d-4148-9835-774e2f638755": {
+        "type": "InputPort",
+        "name": "R-L",
+        "source_id": "612cdb69-c6ce-4099-bbdf-1ff3ff4fd541"
+      },
+      "a7d7e3bc-5de5-48b5-b4a4-49267c230381": {
+        "type": "InputOutput",
+        "name": "B-T",
+        "source_id": "01d5c602-c75e-4b25-8b71-7ad67696570f"
+      }
+    },
     "inputs": [
       {
         "test_pg_gen_612cdb69-c6ce-4099-bbdf-1ff3ff4fd541_0": "R-L"
       },
       {
-        "test_pg_gen_01d5c602-c75e-4b25-8b71-7ad67696570f_0/0/0": "B-T"
+        "test_pg_gen_01d5c602-c75e-4b25-8b71-7ad67696570f_0-0-0": "B-T"
       }
     ],
     "outputs": [
       {
-        "test_pg_gen_182d34dd-9ab2-40df-bf9b-79bad75f697a_0/0/0": "B-T"
+        "test_pg_gen_182d34dd-9ab2-40df-bf9b-79bad75f697a_0-0-0": "a7d7e3bc-5de5-48b5-b4a4-49267c230381"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "3_0/0/0"
+    "humanReadableKey": "3_0-0-0"
   },
   {
-    "oid": "test_pg_gen_01d5c602-c75e-4b25-8b71-7ad67696570f_0/0/0",
+    "oid": "test_pg_gen_01d5c602-c75e-4b25-8b71-7ad67696570f_0-0-0",
     "name": "Data1",
     "categoryType": "Data",
     "category": "Memory",
@@ -899,8 +928,19 @@
     ],
     "data_volume": "5",
     "B-T": "",
-    "iid": "0/0/0",
+    "iid": "0-0-0",
     "lg_key": "01d5c602-c75e-4b25-8b71-7ad67696570f",
+    "outputPorts": {},
+    "inputPorts": {
+      "dbb1f921-984f-4bac-a71a-a98118f3f2ee": {
+        "type": "InputOutput",
+        "name": "B-T",
+        "source_id": "b340d25b-9d97-4f10-8430-629a6eb7846d"
+      }
+    },
+    "port_map": {
+      "B-T": "B-T"
+    },
     "producers": [
       {
         "test_pg_gen_b340d25b-9d97-4f10-8430-629a6eb7846d_0": "B-T"
@@ -908,15 +948,15 @@
     ],
     "consumers": [
       {
-        "test_pg_gen_3015f162-47bd-4594-a298-684a43dcdcaa_0/0/0": "B-T"
+        "test_pg_gen_3015f162-47bd-4594-a298-684a43dcdcaa_0-0-0": "B-T"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "4_0/0/0"
+    "humanReadableKey": "4_0-0-0"
   },
   {
-    "oid": "test_pg_gen_182d34dd-9ab2-40df-bf9b-79bad75f697a_0/0/0",
+    "oid": "test_pg_gen_182d34dd-9ab2-40df-bf9b-79bad75f697a_0-0-0",
     "name": "Data3",
     "categoryType": "Data",
     "category": "Memory",
@@ -1123,31 +1163,58 @@
     "R-T": "",
     "L-R": "",
     "R-L": "",
-    "iid": "0/0/0",
+    "iid": "0-0-0",
     "lg_key": "182d34dd-9ab2-40df-bf9b-79bad75f697a",
+    "outputPorts": {
+      "fd25d411-9f3e-4f6c-815b-3c3d6df21cd3": {
+        "type": "OutputPort",
+        "name": "R-T",
+        "target_id": "c1ecaf2b-57e6-48d5-a034-5535608f8076"
+      },
+      "7b2151d1-d0b6-40bf-bdd2-7c5aca2e268f": {
+        "type": "OutputPort",
+        "name": "L-R",
+        "target_id": "7b5d3fa3-88ff-476c-949c-139a1eaa721d"
+      },
+      "3f4e8bce-566b-4668-8af5-a9255ba37592": {
+        "type": "OutputPort",
+        "name": "R-L",
+        "target_id": "7a0184e8-d5e4-4cd0-a892-6aaf03515869"
+      }
+    },
+    "inputPorts": {
+      "f08652fd-df55-4988-8c2c-6d236661d1f3": {
+        "type": "InputOutput",
+        "name": "B-T",
+        "source_id": "3015f162-47bd-4594-a298-684a43dcdcaa"
+      }
+    },
+    "port_map": {
+      "B-T": "B-T"
+    },
     "producers": [
       {
-        "test_pg_gen_3015f162-47bd-4594-a298-684a43dcdcaa_0/0/0": "B-T"
+        "test_pg_gen_3015f162-47bd-4594-a298-684a43dcdcaa_0-0-0": "B-T"
       }
     ],
     "consumers": [
       {
-        "test_pg_gen_c1ecaf2b-57e6-48d5-a034-5535608f8076_0/0": "R-T"
+        "test_pg_gen_c1ecaf2b-57e6-48d5-a034-5535608f8076_0-0": "R-T"
       },
       {
-        "test_pg_gen_c1e9a25b-44fa-4ed0-ac7a-b7fbe0f3ffd9_0/0": "B-T"
+        "test_pg_gen_c1e9a25b-44fa-4ed0-ac7a-b7fbe0f3ffd9_0-0": "B-T"
       },
       {
-        "test_pg_gen_7a0184e8-d5e4-4cd0-a892-6aaf03515869_0/0": "R-L"
+        "test_pg_gen_7a0184e8-d5e4-4cd0-a892-6aaf03515869_0-0": "R-L"
       },
-      "test_pg_gen_59efc3a1-9504-48fa-ad90-a7acab00e00f_0/0"
+      "test_pg_gen_59efc3a1-9504-48fa-ad90-a7acab00e00f_0-0"
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "5_0/0/0"
+    "humanReadableKey": "5_0-0-0"
   },
   {
-    "oid": "test_pg_gen_c1ecaf2b-57e6-48d5-a034-5535608f8076_0/0",
+    "oid": "test_pg_gen_c1ecaf2b-57e6-48d5-a034-5535608f8076_0-0",
     "name": "Component",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -1601,19 +1668,27 @@
     "Arg09": "",
     "Arg10": "",
     "R-T": "",
-    "iid": "0/0",
+    "iid": "0-0",
     "lg_key": "c1ecaf2b-57e6-48d5-a034-5535608f8076",
+    "outputPorts": {},
+    "inputPorts": {
+      "122638ae-eb3a-41c9-8da1-580f47863f13": {
+        "type": "InputPort",
+        "name": "R-T",
+        "source_id": "182d34dd-9ab2-40df-bf9b-79bad75f697a"
+      }
+    },
     "inputs": [
       {
-        "test_pg_gen_182d34dd-9ab2-40df-bf9b-79bad75f697a_0/0/0": "R-T"
+        "test_pg_gen_182d34dd-9ab2-40df-bf9b-79bad75f697a_0-0-0": "R-T"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "6_0/0"
+    "humanReadableKey": "6_0-0"
   },
   {
-    "oid": "test_pg_gen_59efc3a1-9504-48fa-ad90-a7acab00e00f_0/0",
+    "oid": "test_pg_gen_59efc3a1-9504-48fa-ad90-a7acab00e00f_0-0",
     "name": "Component4",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -2067,22 +2142,30 @@
     "Arg09": "",
     "Arg10": "",
     "B-T": "",
-    "iid": "0/0",
+    "iid": "0-0",
     "lg_key": "59efc3a1-9504-48fa-ad90-a7acab00e00f",
+    "outputPorts": {
+      "a3a49415-bef4-4095-a23c-40c63db7af7a": {
+        "type": "OutputPort",
+        "name": "B-T",
+        "target_id": "a1b3e5f5-5548-4518-a792-190f477c00ec"
+      }
+    },
+    "inputPorts": {},
     "outputs": [
       {
-        "test_pg_gen_a1b3e5f5-5548-4518-a792-190f477c00ec_0/0": "B-T"
+        "test_pg_gen_a1b3e5f5-5548-4518-a792-190f477c00ec_0-0": "B-T"
       }
     ],
     "inputs": [
-      "test_pg_gen_182d34dd-9ab2-40df-bf9b-79bad75f697a_0/0/0"
+      "test_pg_gen_182d34dd-9ab2-40df-bf9b-79bad75f697a_0-0-0"
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "7_0/0"
+    "humanReadableKey": "7_0-0"
   },
   {
-    "oid": "test_pg_gen_a1b3e5f5-5548-4518-a792-190f477c00ec_0/0",
+    "oid": "test_pg_gen_a1b3e5f5-5548-4518-a792-190f477c00ec_0-0",
     "name": "Data5",
     "categoryType": "Data",
     "category": "Memory",
@@ -2195,19 +2278,30 @@
     ],
     "data_volume": "5",
     "B-T": "",
-    "iid": "0/0",
+    "iid": "0-0",
     "lg_key": "a1b3e5f5-5548-4518-a792-190f477c00ec",
+    "outputPorts": {},
+    "inputPorts": {
+      "5ac5c5b2-e9af-4305-af33-3900e30ca835": {
+        "type": "InputPort",
+        "name": "B-T",
+        "source_id": "59efc3a1-9504-48fa-ad90-a7acab00e00f"
+      }
+    },
+    "port_map": {
+      "B-T": "B-T"
+    },
     "producers": [
       {
-        "test_pg_gen_59efc3a1-9504-48fa-ad90-a7acab00e00f_0/0": "B-T"
+        "test_pg_gen_59efc3a1-9504-48fa-ad90-a7acab00e00f_0-0": "B-T"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "8_0/0"
+    "humanReadableKey": "8_0-0"
   },
   {
-    "oid": "test_pg_gen_c1e9a25b-44fa-4ed0-ac7a-b7fbe0f3ffd9_0/0",
+    "oid": "test_pg_gen_c1e9a25b-44fa-4ed0-ac7a-b7fbe0f3ffd9_0-0",
     "name": "Group By 2",
     "categoryType": "Application",
     "category": "GroupBy",
@@ -2222,7 +2316,7 @@
     "sleep_time": 1,
     "outputs": [
       {
-        "test_pg_gen_c1e9a25b-44fa-4ed0-ac7a-b7fbe0f3ffd9_0/0-grp-data": "grpdata"
+        "test_pg_gen_c1e9a25b-44fa-4ed0-ac7a-b7fbe0f3ffd9_0-0-grp-data": "grpdata"
       }
     ],
     "applicationArgs": {},
@@ -2246,17 +2340,19 @@
       }
     ],
     "num_of_inputs": 1,
-    "iid": "0/0",
+    "iid": "0-0",
     "lg_key": "c1e9a25b-44fa-4ed0-ac7a-b7fbe0f3ffd9",
+    "outputPorts": {},
+    "inputPorts": {},
     "inputs": [
-      "test_pg_gen_182d34dd-9ab2-40df-bf9b-79bad75f697a_0/0/0"
+      "test_pg_gen_182d34dd-9ab2-40df-bf9b-79bad75f697a_0-0-0"
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "9_0/0"
+    "humanReadableKey": "9_0-0"
   },
   {
-    "oid": "test_pg_gen_c1e9a25b-44fa-4ed0-ac7a-b7fbe0f3ffd9_0/0-grp-data",
+    "oid": "test_pg_gen_c1e9a25b-44fa-4ed0-ac7a-b7fbe0f3ffd9_0-0-grp-data",
     "categoryType": "Data",
     "dropclass": "dlg.data.drops.memory.InMemoryDROP",
     "name": "grpdata",
@@ -2268,11 +2364,11 @@
     "reprodata": {},
     "producers": [
       {
-        "test_pg_gen_c1e9a25b-44fa-4ed0-ac7a-b7fbe0f3ffd9_0/0": "grpdata"
+        "test_pg_gen_c1e9a25b-44fa-4ed0-ac7a-b7fbe0f3ffd9_0-0": "grpdata"
       }
     ],
     "consumers": [
-      "test_pg_gen_b047cb26-87f2-4495-8538-c3a83dc775e3_0/0"
+      "test_pg_gen_b047cb26-87f2-4495-8538-c3a83dc775e3_0-0"
     ],
     "iid": 0,
     "node": "10.128.0.12",
@@ -2280,7 +2376,7 @@
     "humanReadableKey": "10_0"
   },
   {
-    "oid": "test_pg_gen_7a0184e8-d5e4-4cd0-a892-6aaf03515869_0/0-grp-data",
+    "oid": "test_pg_gen_7a0184e8-d5e4-4cd0-a892-6aaf03515869_0-0-grp-data",
     "categoryType": "Data",
     "dropclass": "dlg.data.drops.memory.InMemoryDROP",
     "name": "grpdata",
@@ -2292,11 +2388,11 @@
     "reprodata": {},
     "producers": [
       {
-        "test_pg_gen_7a0184e8-d5e4-4cd0-a892-6aaf03515869_0/0": "grpdata"
+        "test_pg_gen_7a0184e8-d5e4-4cd0-a892-6aaf03515869_0-0": "grpdata"
       }
     ],
     "consumers": [
-      "test_pg_gen_6cabf9d3-c926-49ea-bb8c-e2e8d66477c3_0/0"
+      "test_pg_gen_6cabf9d3-c926-49ea-bb8c-e2e8d66477c3_0-0"
     ],
     "iid": 0,
     "node": "10.128.0.12",
@@ -2304,7 +2400,7 @@
     "humanReadableKey": "11_0"
   },
   {
-    "oid": "test_pg_gen_b047cb26-87f2-4495-8538-c3a83dc775e3_0/0",
+    "oid": "test_pg_gen_b047cb26-87f2-4495-8538-c3a83dc775e3_0-0",
     "name": "Component 2",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -2726,17 +2822,19 @@
     "Arg08": "",
     "Arg09": "",
     "Arg10": "",
-    "iid": "0/0",
+    "iid": "0-0",
     "lg_key": "b047cb26-87f2-4495-8538-c3a83dc775e3",
+    "outputPorts": {},
+    "inputPorts": {},
     "inputs": [
-      "test_pg_gen_c1e9a25b-44fa-4ed0-ac7a-b7fbe0f3ffd9_0/0-grp-data"
+      "test_pg_gen_c1e9a25b-44fa-4ed0-ac7a-b7fbe0f3ffd9_0-0-grp-data"
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "12_0/0"
+    "humanReadableKey": "12_0-0"
   },
   {
-    "oid": "test_pg_gen_b54eca47-482b-4f8d-bb54-f7077fa2ff1a_0/0",
+    "oid": "test_pg_gen_b54eca47-482b-4f8d-bb54-f7077fa2ff1a_0-0",
     "name": "Data4",
     "categoryType": "Data",
     "category": "Memory",
@@ -2849,19 +2947,30 @@
     ],
     "data_volume": "5",
     "B-T": "",
-    "iid": "0/0",
+    "iid": "0-0",
     "lg_key": "b54eca47-482b-4f8d-bb54-f7077fa2ff1a",
+    "outputPorts": {},
+    "inputPorts": {
+      "540b6f17-6630-482e-806e-c1d78c8a8002": {
+        "type": "InputPort",
+        "name": "B-T",
+        "source_id": "6cabf9d3-c926-49ea-bb8c-e2e8d66477c3"
+      }
+    },
+    "port_map": {
+      "B-T": "B-T"
+    },
     "producers": [
       {
-        "test_pg_gen_6cabf9d3-c926-49ea-bb8c-e2e8d66477c3_0/0": "B-T"
+        "test_pg_gen_6cabf9d3-c926-49ea-bb8c-e2e8d66477c3_0-0": "B-T"
       }
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "13_0/0"
+    "humanReadableKey": "13_0-0"
   },
   {
-    "oid": "test_pg_gen_6cabf9d3-c926-49ea-bb8c-e2e8d66477c3_0/0",
+    "oid": "test_pg_gen_6cabf9d3-c926-49ea-bb8c-e2e8d66477c3_0-0",
     "name": "Component3",
     "categoryType": "Application",
     "category": "PythonApp",
@@ -3346,22 +3455,30 @@
     "Arg09": "",
     "Arg10": "",
     "B-T": "",
-    "iid": "0/0",
+    "iid": "0-0",
     "lg_key": "6cabf9d3-c926-49ea-bb8c-e2e8d66477c3",
+    "outputPorts": {
+      "aa55f675-f141-4ae2-b834-38a8ebbbb7d5": {
+        "type": "OutputPort",
+        "name": "B-T",
+        "target_id": "b54eca47-482b-4f8d-bb54-f7077fa2ff1a"
+      }
+    },
+    "inputPorts": {},
     "outputs": [
       {
-        "test_pg_gen_b54eca47-482b-4f8d-bb54-f7077fa2ff1a_0/0": "B-T"
+        "test_pg_gen_b54eca47-482b-4f8d-bb54-f7077fa2ff1a_0-0": "B-T"
       }
     ],
     "inputs": [
-      "test_pg_gen_7a0184e8-d5e4-4cd0-a892-6aaf03515869_0/0-grp-data"
+      "test_pg_gen_7a0184e8-d5e4-4cd0-a892-6aaf03515869_0-0-grp-data"
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "14_0/0"
+    "humanReadableKey": "14_0-0"
   },
   {
-    "oid": "test_pg_gen_7a0184e8-d5e4-4cd0-a892-6aaf03515869_0/0",
+    "oid": "test_pg_gen_7a0184e8-d5e4-4cd0-a892-6aaf03515869_0-0",
     "name": "Group By 1",
     "categoryType": "Application",
     "category": "GroupBy",
@@ -3376,7 +3493,7 @@
     "sleep_time": 1,
     "outputs": [
       {
-        "test_pg_gen_7a0184e8-d5e4-4cd0-a892-6aaf03515869_0/0-grp-data": "grpdata"
+        "test_pg_gen_7a0184e8-d5e4-4cd0-a892-6aaf03515869_0-0-grp-data": "grpdata"
       }
     ],
     "applicationArgs": {},
@@ -3400,13 +3517,15 @@
       }
     ],
     "num_of_inputs": 1,
-    "iid": "0/0",
+    "iid": "0-0",
     "lg_key": "7a0184e8-d5e4-4cd0-a892-6aaf03515869",
+    "outputPorts": {},
+    "inputPorts": {},
     "inputs": [
-      "test_pg_gen_182d34dd-9ab2-40df-bf9b-79bad75f697a_0/0/0"
+      "test_pg_gen_182d34dd-9ab2-40df-bf9b-79bad75f697a_0-0-0"
     ],
     "node": "10.128.0.12",
     "island": "10.128.0.11",
-    "humanReadableKey": "15_0/0"
+    "humanReadableKey": "15_0-0"
   }
 ]
