@@ -52,7 +52,7 @@ release:          ## Create a new tag for release.
 	@git commit -m "Release: version v$${TAG} 🚀"
 	@echo "creating git tag : v$${TAG}"
 	@git tag v$${TAG}
-	@git push -u origin --tags
+	@git push -u --set-upstream origin ${TAG} --tags
 #	@echo "Github Actions will detect the new tag and release the new version."
 
 # This Makefile has been based on the existing ICRAR/daliuge-component-template.
